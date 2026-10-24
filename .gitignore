@@ -1,0 +1,8 @@
+.venv/
+.env
+__pycache__/
+.DS_Store
+
+# Kişisel tıbbi belgeler depoya girmesin
+belgeler/*
+!belgeler/.gitkeep
