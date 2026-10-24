@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent / ".env")
 
-from asistan.bilgi_bankasi import DESTEKLENEN_UZANTILAR, BilgiBankasi  # noqa: E402
+from asistan.bilgi_bankasi import DESTEKLENEN_UZANTILAR, BilgiBankasi, kutuphaneyi_oku  # noqa: E402
 from asistan.claude_client import (  # noqa: E402
     MODEL,
     bilgi_bankasi_bloklari,
@@ -20,6 +20,7 @@ from asistan.claude_client import (  # noqa: E402
 )
 
 BELGE_KLASORU = Path(__file__).parent / "belgeler"
+KUTUPHANE = Path(__file__).parent / "kaynaklar" / "kaynaklar.json"
 BELGE_KLASORU.mkdir(exist_ok=True)
 
 st.set_page_config(page_title="Tıbbi Yapay Zeka Asistanı", page_icon="🩺", layout="centered")
@@ -32,7 +33,7 @@ def istemci() -> anthropic.Anthropic:
 
 @st.cache_resource
 def bilgi_bankasi() -> BilgiBankasi:
-    return BilgiBankasi(BELGE_KLASORU)
+    return BilgiBankasi(BELGE_KLASORU, kutuphaneyi_oku(KUTUPHANE))
 
 
 if "mesajlar" not in st.session_state:
@@ -44,8 +45,14 @@ bb = bilgi_bankasi()
 # ---------------------------------------------------------------- Kenar çubuğu
 with st.sidebar:
     st.header("⚙️ Ayarlar")
+    kutuphane_acik = st.toggle(
+        "Güvenilir kaynak kütüphanesi",
+        value=bool(bb.kutuphane),
+        disabled=not bb.kutuphane,
+        help="Sağlık Bakanlığı, üniversite ve özel hastaneler ile MedlinePlus'tan derlenmiş özetler.",
+    )
     rag_acik = st.toggle(
-        "Bilgi bankasını kullan",
+        "Kendi belgelerimi kullan",
         value=bool(bb.parcalar),
         disabled=not bb.parcalar,
         help="Sorunuzla ilgili parçalar 'belgeler' klasöründeki dosyalardan bulunup Claude'a verilir.",
@@ -53,7 +60,8 @@ with st.sidebar:
     web_acik = st.toggle(
         "Güvenilir sitelerde doğrula",
         value=False,
-        help="WHO, NIH, MedlinePlus, FDA, TİTCK gibi kaynaklarda web araması yapar. Daha yavaştır.",
+        help="Sağlık Bakanlığı, TİTCK, üniversite ve özel hastane siteleri ile MedlinePlus, WHO gibi "
+        "kaynaklarda canlı web araması yapar. Daha yavaştır.",
     )
     dusunce_goster = st.toggle("Düşünme sürecini göster", value=False)
     efor = st.select_slider(
@@ -64,7 +72,9 @@ with st.sidebar:
     )
 
     st.divider()
-    st.subheader("📚 Bilgi bankası")
+    if bb.kutuphane:
+        st.caption(f"📗 Kütüphane: {len(bb.kutuphane)} güvenilir kaynak özeti")
+    st.subheader("📚 Kendi belgelerim")
     if bb.dosyalar:
         st.caption(f"{len(bb.dosyalar)} belge, {len(bb.parcalar)} parça")
         for ad in bb.dosyalar:
@@ -151,8 +161,8 @@ if girdi:
         st.error(str(e))
         st.stop()
 
-    if rag_acik:
-        icerik.extend(bilgi_bankasi_bloklari(bb.ara(soru)))
+    if rag_acik or kutuphane_acik:
+        icerik.extend(bilgi_bankasi_bloklari(bb.ara(soru, belgeler=rag_acik, kutuphane=kutuphane_acik)))
     icerik.append({"type": "text", "text": soru})
 
     kullanici = {"rol": "user", "api_icerik": icerik, "metin": soru, "ekler": ekler}
@@ -212,6 +222,9 @@ if girdi:
             uyari = f"Bu cevap yedek model ({sonuc.yedek_model}) tarafından verildi."
         if not sonuc.metin.strip():
             sonuc.metin = "_(Boş cevap döndü, lütfen tekrar deneyin.)_"
+
+        for k in sonuc.kaynaklar:
+            k.url = k.url or bb.url_bul(k.baslik)
 
         asistan = {
             "rol": "assistant",

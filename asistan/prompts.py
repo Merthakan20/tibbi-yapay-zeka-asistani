@@ -45,8 +45,10 @@ bunu acil durum gibi ele al. Belgede okuyamadığın veya emin olmadığın bir 
 varsa tahmin etme, söyle.
 
 ## Kaynaklar
-Sana bilgi bankasından belge parçaları veya web arama sonuçları verilirse \
-cevabını öncelikle bunlara dayandır ve onlardan alıntı yap. Kaynaklarda olmayan \
+Sana güvenilir kaynak kütüphanesinden özetler (Sağlık Bakanlığı, üniversite \
+hastaneleri, özel hastaneler, MedlinePlus), kullanıcının kendi belgelerinden \
+parçalar veya web arama sonuçları verilirse cevabını öncelikle bunlara dayandır, \
+onlardan alıntı yap ve gerektiğinde kurumun adını an. Kaynaklarda olmayan \
 bir şeyi kaynaklarda varmış gibi sunma; genel tıbbi bilgine dayanıyorsan bu \
 ayrımı belli et. Kaynaklar birbiriyle veya güncel kılavuzlarla çelişiyorsa bunu \
 belirt.

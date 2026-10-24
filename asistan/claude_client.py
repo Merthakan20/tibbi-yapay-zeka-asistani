@@ -16,18 +16,33 @@ MODEL = os.getenv("CLAUDE_MODEL", "claude-opus-5")
 MAKS_TOKEN = 64000
 MAKS_DOSYA_MB = 30  # API istek sınırı 32 MB; base64 şişmesi için pay bırakıyoruz
 
-# İlaç / hastalık doğrulamasında web aramasının bakacağı güvenilir kaynaklar
+# Canlı web aramasının bakacağı güvenilir kaynaklar (alt alan adları da dahildir)
 GUVENILIR_ALANLAR = [
+    # Resmi kurumlar
+    "saglik.gov.tr",
+    "titck.gov.tr",
     "who.int",
-    "nih.gov",
+    # Üniversite hastaneleri
+    "hacettepe.edu.tr",
+    "ankara.edu.tr",
+    "istanbul.edu.tr",
+    "iuc.edu.tr",
+    "ege.edu.tr",
+    "gazi.edu.tr",
+    # Özel hastaneler
+    "acibadem.com.tr",
+    "memorial.com.tr",
+    "medicalpark.com.tr",
+    "florence.com.tr",
+    "amerikanhastanesi.org",
+    # Uluslararası
     "medlineplus.gov",
+    "nih.gov",
     "cdc.gov",
     "fda.gov",
     "ema.europa.eu",
     "nhs.uk",
     "mayoclinic.org",
-    "titck.gov.tr",
-    "saglik.gov.tr",
 ]
 
 RESIM_TURLERI = {"image/png", "image/jpeg", "image/webp", "image/gif"}
@@ -73,7 +88,11 @@ def bilgi_bankasi_bloklari(parcalar: list[Parca]) -> list[dict]:
             "type": "document",
             "source": {"type": "text", "media_type": "text/plain", "data": p.metin},
             "title": p.baslik,
-            "context": "Yerel tıbbi bilgi bankasından alınan belge parçası.",
+            "context": (
+                f"Güvenilir kaynak kütüphanesinden özet. Kaynak: {p.url}"
+                if p.url
+                else "Kullanıcının bilgi bankasına eklediği belgeden bir parça."
+            ),
             "citations": {"enabled": True},
         }
         for p in parcalar

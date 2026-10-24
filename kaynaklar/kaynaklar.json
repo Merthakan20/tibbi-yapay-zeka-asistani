@@ -1,0 +1,879 @@
+{
+  "aciklama": "Güvenilir tıbbi kaynakların Türkçe özetleri. Özetler kaynak sayfalardan derlenmiştir; asıl metin için bağlantıya bakın.",
+  "guncelleme": "2026-10-25",
+  "kaynaklar": [
+    {
+      "id": "hipertansiyon-hsgm",
+      "konu": "Hipertansiyon",
+      "anahtar_kelimeler": [
+        "yüksek tansiyon",
+        "tansiyon",
+        "kan basıncı",
+        "hipertansiyon",
+        "baş ağrısı",
+        "burun kanaması",
+        "ense ağrısı"
+      ],
+      "baslik": "Hipertansiyon",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/kronik-hastaliklar/bobrek-hastaliklari/hipertansiyon.html",
+      "dil": "tr",
+      "ozet": "Yüksek tansiyon çoğu zaman belirti vermeden ilerlediği için 'sessiz düşman' olarak anılır; dünya nüfusunun yaklaşık %30'unda görülür ve hastaların yarısı durumunun farkında değildir. Uzun vadede böbrek, beyin, kalp ve damarlara zarar verir. Görülebilecek belirtiler halsizlik, nefes darlığı, göğüs ağrısı, burun kanaması, görme bozukluğu ve bacaklarda şişliktir. Tansiyonun en az yılda bir kez ölçtürülmesi önerilir. Tedavide ilaç tek başına yeterli değildir: dengeli beslenme, kilo verme, düzenli fiziksel aktivite, tuzu azaltma ve ilacın önerilen dozda kullanılması birlikte gerekir. Hastalık hekim gözetiminde izlenmelidir."
+    },
+    {
+      "id": "hipertansiyon-acibadem",
+      "konu": "Hipertansiyon",
+      "anahtar_kelimeler": [
+        "yüksek tansiyon",
+        "tansiyon",
+        "kan basıncı",
+        "hipertansiyon",
+        "baş dönmesi",
+        "bulanık görme"
+      ],
+      "baslik": "Yüksek Tansiyon (Hipertansiyon) Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/yuksek-tansiyon-belirtileri-hipertansiyon-nedir/",
+      "dil": "tr",
+      "ozet": "Yüksek tansiyon çoğunlukla belirtisizdir; bazen baş ağrısı, baş dönmesi, bulanık görme ve nefes darlığı yapar. Normal tansiyon 120/80 mmHg'nin altındadır, 140/90 mmHg ve üzeri hipertansiyon kabul edilir; 180/120 mmHg üzeri acil müdahale gerektirir. Genetik yatkınlık, fazla tuz, hareketsizlik, alkol ve sigara başlıca nedenlerdir. Tanı tansiyon ölçümü, EKG ve kan testleriyle konur. Tedavi düşük tuzlu beslenme, düzenli egzersiz, stres yönetimi ve gerekirse ilaçtır. Kontrol edilmezse kalp krizi, inme, böbrek yetmezliği ve görme kaybına yol açabilir."
+    },
+    {
+      "id": "hipertansiyon-medlineplus",
+      "konu": "Hipertansiyon",
+      "anahtar_kelimeler": [
+        "yüksek tansiyon",
+        "tansiyon",
+        "kan basıncı",
+        "hipertansiyon",
+        "evre 1",
+        "evre 2",
+        "hipertansif kriz"
+      ],
+      "baslik": "High Blood Pressure (Yüksek Kan Basıncı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/highbloodpressure.html",
+      "dil": "en",
+      "ozet": "Kan basıncı iki değerle ifade edilir: sistolik (kalp kasılırken) ve diastolik (kalp dinlenirken). Normal değer 120/80'in altıdır. 130-139/80-89 evre 1, 140/90 ve üzeri evre 2 hipertansiyondur. 180/120'nin üzeri hipertansif kriz olup acil tıbbi yardım gerektirir. Çoğu zaman belirti olmadığından düzenli ölçüm önemlidir. Tedavi edilmezse kalp krizi, inme, kalp yetmezliği ve böbrek hasarına yol açabilir. Tedavide sağlıklı beslenme ve egzersiz gibi yaşam tarzı değişiklikleri, gerekirse ilaç kullanılır; başka bir hastalığa bağlıysa o hastalığın tedavisi tansiyonu düşürebilir."
+    },
+    {
+      "id": "diyabet-acibadem",
+      "konu": "Tip 2 diyabet",
+      "anahtar_kelimeler": [
+        "şeker hastalığı",
+        "diyabet",
+        "kan şekeri",
+        "insülin direnci",
+        "çok su içme",
+        "sık idrar",
+        "ağız kuruluğu"
+      ],
+      "baslik": "Tip 2 Diyabet Nedir, Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/tip-2-diyabet/",
+      "dil": "tr",
+      "ozet": "Tip 2 diyabette pankreas insülin üretse de hücreler insüline direnç gösterir ve kan şekeri yüksek kalır. Obezite, hareketsizlik, genetik ve yaş risk faktörleridir. Belirtiler sık idrara çıkma, ağız kuruluğu, aşırı susama, yorgunluk, yaraların geç iyileşmesi ve sinirle ilgili şikayetlerdir. Tedavinin temeli sağlıklı beslenme ve düzenli egzersizdir; haftada en az 3 gün olmak üzere toplam 150 dakika orta yoğunlukta egzersiz önerilir. Beslenme planı kişiye göre düzenlenir, gerekirse ilaç eklenir. Yaşam alışkanlıkları düzeltildiğinde birçok hastada hastalık kontrol altına alınabilir."
+    },
+    {
+      "id": "diyabet-medicalpark",
+      "konu": "Tip 2 diyabet",
+      "anahtar_kelimeler": [
+        "şeker hastalığı",
+        "diyabet",
+        "HbA1c",
+        "açlık kan şekeri",
+        "prediyabet",
+        "bulanık görme",
+        "uyuşma"
+      ],
+      "baslik": "Tip 2 Diyabet Nedir? Tip 2 Diyabet Belirtileri Nelerdir?",
+      "kurum": "Medical Park Hastaneleri",
+      "tur": "ozel",
+      "url": "https://www.medicalpark.com.tr/saglik-rehberi/tip2-diyabet-nedir",
+      "dil": "tr",
+      "ozet": "Tip 2 diyabet insülinin etkili kullanılamaması veya yetersiz üretilmesiyle kan şekerinin yükseldiği kronik bir hastalıktır. Sık susama, sık idrara çıkma, ağız kuruluğu, halsizlik, bulanık görme, yaraların geç iyileşmesi, ani açlık hissi, gece idrara kalkma, uyuşma ve sık enfeksiyon görülebilir. Risk faktörleri obezite, hareketsizlik, aile öyküsü, yüksek tansiyon ve prediyabettir. Tanıda HbA1c %6,5 ve üzeri ya da açlık kan şekeri 126 mg/dL ve üzeri diyabeti gösterir; glukoz tolerans testi de kullanılır. Tedavi yaşam tarzı değişikliği, diyet, egzersiz ve gerekirse ilaç veya insülindir."
+    },
+    {
+      "id": "diyabet-medlineplus",
+      "konu": "Tip 2 diyabet",
+      "anahtar_kelimeler": [
+        "şeker hastalığı",
+        "diyabet",
+        "A1C",
+        "kan şekeri",
+        "insülin"
+      ],
+      "baslik": "Diabetes Type 2 (Tip 2 Diyabet)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/diabetestype2.html",
+      "dil": "en",
+      "ozet": "Tip 2 diyabette vücut insülini yeterince üretemez veya iyi kullanamaz ve kan şekeri yükselir. Fazla kilo, hareketsizlik, aile öyküsü, 45 yaş üstü olmak, yüksek tansiyon ve kalp hastalığı risk faktörleridir. Belirtiler yavaş gelişir, bazı kişilerde hiç olmaz; görüldüğünde susama, açlık, yorgunluk, bulanık görme ve iyileşmeyen yaralar olabilir. Tanıda A1C testi, açlık plazma glukozu ve rastgele plazma glukozu testleri kullanılır. Tedavi sağlıklı beslenme, egzersiz ve kan şekeri takibiyle başlar; gerekirse ağızdan ilaçlar, insülin veya diğer enjeksiyonlar eklenir. Tansiyon ve kolesterolün hedefte tutulması da önemlidir."
+    },
+    {
+      "id": "anemi-acibadem",
+      "konu": "Demir eksikliği anemisi",
+      "anahtar_kelimeler": [
+        "kansızlık",
+        "anemi",
+        "demir eksikliği",
+        "ferritin",
+        "hemoglobin",
+        "yorgunluk",
+        "solukluk",
+        "saç dökülmesi"
+      ],
+      "baslik": "Demir Eksikliği Anemisi Nedir? Nedenleri ve Tedavi Yöntemleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/demir-eksikligi-anemisi/",
+      "dil": "tr",
+      "ozet": "Demir eksikliği anemisinde vücut yeterli hemoglobin üretemez; hemoglobin demir olmadan yapılamaz. Yorgunluk, soluk cilt, nefes darlığı, baş dönmesi ve çarpıntı başlıca belirtilerdir. Nedenler yetersiz demir alımı, ağır adet kanamaları, gebelik, sindirim sistemi kanamaları ve çölyak gibi emilim bozukluklarıdır. Tanı hemoglobin, hematokrit, ferritin ve serum demiri ile konur. Tedavi demir takviyesidir ve 3-6 ay sürebilir. C vitamini demir emilimini artırır; kırmızı et, karaciğer, ıspanak ve baklagiller önerilir, çay ve kahve emilimi azalttığı için sınırlanmalıdır."
+    },
+    {
+      "id": "grip-saglik-arnavutkoy",
+      "konu": "Grip ve soğuk algınlığı",
+      "anahtar_kelimeler": [
+        "grip",
+        "influenza",
+        "soğuk algınlığı",
+        "nezle",
+        "ateş",
+        "öksürük",
+        "kas ağrısı",
+        "grip aşısı",
+        "burun akıntısı",
+        "hapşırma",
+        "boğaz ağrısı",
+        "titreme"
+      ],
+      "baslik": "Mevsimsel grip, soğuk algınlığı nedir?",
+      "kurum": "T.C. Sağlık Bakanlığı Arnavutköy Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://arnavutkoydh.saglik.gov.tr/TR-905180/mevsimsel-grip-soguk-alginligi-nedir.html",
+      "dil": "tr",
+      "ozet": "Mevsimsel grip influenza virüsünün yaptığı, sonbahar sonundan ilkbahar başına kadar sık görülen bulaşıcı bir hastalıktır. Belirtiler bulaştan 1-3 gün sonra başlar: 38°C üzeri ateş, titreme, kuru öksürük, boğaz ağrısı, baş ağrısı, kas ve eklem ağrıları, halsizlik. Hastalık genellikle 7 gün sürer; ilk 2-3 gün ağırlaşır, sonra düzelir. Öksürük ve hapşırıkla saçılan damlacıklarla bulaşır. Yaşlılar, küçük çocuklar, kronik hastalığı olanlar ve bağışıklığı baskılanmış kişiler risk grubundadır. En etkili korunma grip aşısıdır; hijyen kuralları ve hastalarla temastan kaçınma da önerilir."
+    },
+    {
+      "id": "grip-acibadem",
+      "konu": "Grip ve soğuk algınlığı",
+      "anahtar_kelimeler": [
+        "grip",
+        "influenza",
+        "yüksek ateş",
+        "öksürük",
+        "halsizlik",
+        "antiviral",
+        "burun akıntısı",
+        "hapşırma",
+        "boğaz ağrısı",
+        "titreme"
+      ],
+      "baslik": "Grip Belirtileri Nelerdir? Gribe Ne İyi Gelir, Nasıl Geçer?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/grip/",
+      "dil": "tr",
+      "ozet": "Grip influenza virüslerinin yaptığı bir solunum yolu enfeksiyonudur. Yüksek ateş, kuru öksürük, kas ağrısı, baş ağrısı ve belirgin halsizlik tipiktir; boğaz ağrısı ve burun tıkanıklığı da olabilir. Küçük çocuklarda, yaşlılarda, gebelerde ve kronik hastalığı olanlarda ağır seyredebilir. Tanı belirtiler, muayene ve gerekirse solunum yolu testleriyle konur. Tedavide dinlenme, sıvı alımı ve ateş kontrolü önemlidir; gereken hastalarda antiviral ilaç verilir. Nefes darlığı, göğüs ağrısı veya bilinç değişikliği acil başvuru gerektirir. Aşı ve hijyen korunmaya yardımcı olur."
+    },
+    {
+      "id": "grip-medlineplus",
+      "konu": "Grip ve soğuk algınlığı",
+      "anahtar_kelimeler": [
+        "grip",
+        "influenza",
+        "grip testi",
+        "antiviral",
+        "grip aşısı",
+        "burun akıntısı",
+        "hapşırma",
+        "boğaz ağrısı",
+        "titreme"
+      ],
+      "baslik": "Flu (Grip)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/flu.html",
+      "dil": "en",
+      "ozet": "Grip virüslerin yaptığı bir solunum yolu enfeksiyonudur. Belirtiler aniden başlar: ateş, öksürük, boğaz ağrısı, burun tıkanıklığı, kas ağrıları, baş ağrısı ve yorgunluk; bazı kişilerde kusma ve ishal olabilir. Tanıda burundan veya boğazdan sürüntü alınır; hızlı testler 15-20 dakikada sonuç verir. Çoğu kişi kendiliğinden iyileşir. Ağır durumlarda antiviral ilaçlar hastalığı hafifletip süresini kısaltır ve en iyi sonuç için belirtiler başladıktan sonraki 2 gün içinde başlanmalıdır. En iyi korunma her yıl grip aşısı olmaktır; el yıkama ve öksürük adabı da önemlidir."
+    },
+    {
+      "id": "migren-acibadem",
+      "konu": "Migren",
+      "anahtar_kelimeler": [
+        "migren",
+        "baş ağrısı",
+        "zonklayan ağrı",
+        "tek taraflı baş ağrısı",
+        "bulantı",
+        "ışığa hassasiyet",
+        "aura"
+      ],
+      "baslik": "Migren Nedir? Migren Belirtileri ve Nedenleri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/migren-nedir-migren-belirtileri-nelerdir/",
+      "dil": "tr",
+      "ozet": "Migren tekrarlayan, zonklayıcı baş ağrısı ataklarıyla seyreden nörolojik bir hastalıktır. Ağrı çoğunlukla başın bir tarafındadır; bulantı, ışığa ve sese hassasiyet ve yorgunluk eşlik eder. Genetik yatkınlık ve sinir sisteminin hassasiyeti rol oynar; CGRP adlı madde ağrı sinyallerini güçlendirir. Stres, hormonal değişiklikler, uyku bozukluğu, bazı yiyecekler ve parlak ışık tetikleyebilir. Tanı muayene ve baş ağrısı günlüğüyle konur; görüntüleme yalnızca alışılmadık belirtilerde gerekir. Tedavide atak ilaçları ve koruyucu tedaviler kullanılır. Ani başlayan çok şiddetli baş ağrısı, konuşma bozukluğu veya görme kaybında acile başvurulmalıdır."
+    },
+    {
+      "id": "migren-medlineplus",
+      "konu": "Migren",
+      "anahtar_kelimeler": [
+        "migren",
+        "baş ağrısı",
+        "aura",
+        "prodrom",
+        "tetikleyici"
+      ],
+      "baslik": "Migraine (Migren)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/migraine.html",
+      "dil": "en",
+      "ozet": "Migren orta-şiddetli, zonklayıcı ve genellikle tek taraflı tekrarlayan bir baş ağrısıdır; bulantı, halsizlik, ışık ve sese hassasiyet eşlik edebilir. Genetik yatkınlık olduğu düşünülür; stres, hormonal değişiklikler, parlak ışık, düzensiz uyku, hava değişimi ve bazı yiyecekler (çikolata, eski peynirler, alkol) tetikleyebilir. Dört evresi vardır: prodrom (ağrıdan önceki gün), aura (parlak ışıklar, zikzak çizgiler), ağrı evresi ve postdrom (sonrasında yorgunluk). Tanı öykü ve muayeneyle konur; kan testi, MR veya BT başka nedenleri dışlamak için yapılabilir. Tedavide ilaçlar, dinlenme, soğuk kompres ve sıvı; korunmada tetikleyicilerden kaçınma, stres yönetimi ve düzenli uyku önerilir."
+    },
+    {
+      "id": "reflu-saglik-kosuyolu",
+      "konu": "Reflü",
+      "anahtar_kelimeler": [
+        "reflü",
+        "mide yanması",
+        "mide ekşimesi",
+        "GÖRH",
+        "GERD",
+        "ağza acı su gelmesi",
+        "göğüste yanma",
+        "geğirme",
+        "boğazda yanma"
+      ],
+      "baslik": "Gastroözofageal Reflü (GERD) ve Tedavi Yöntemleri",
+      "kurum": "T.C. Sağlık Bakanlığı Koşuyolu Yüksek İhtisas Eğitim ve Araştırma Hastanesi",
+      "tur": "resmi",
+      "url": "https://kosuyolueah.saglik.gov.tr/TR-1326954/gastroozofageal-reflu-gerd-ve-tedavi-yontemleri.html",
+      "dil": "tr",
+      "ozet": "Reflü mide içeriğinin yemek borusuna geri kaçmasıdır; göğüste yanma (mide yanması), ağızda ekşi tat ve yutma güçlüğü yapar. Obezite, gebelik, yanlış beslenme, sigara ve bazı ilaçlar risk faktörüdür. Tanı muayene ve öyküyle başlar; endoskopi ve pH ölçümü kullanılabilir. Yaşam tarzı değişiklikleri tedavinin temelidir: asitli ve yağlı yiyeceklerden kaçınmak, az ve sık yemek, yatmadan 2-3 saat önce yememek, yatak başını yükseltmek, kilo vermek ve sigarayı bırakmak. İlaç olarak antiasitler, H2 reseptör blokerleri ve proton pompa inhibitörleri kullanılır; yanıt alınamazsa cerrahi düşünülebilir."
+    },
+    {
+      "id": "reflu-acibadem",
+      "konu": "Reflü",
+      "anahtar_kelimeler": [
+        "reflü",
+        "GÖRH",
+        "kronik öksürük",
+        "ses kısıklığı",
+        "mide fıtığı",
+        "endoskopi",
+        "mide ekşimesi",
+        "geğirme",
+        "boğazda yanma"
+      ],
+      "baslik": "Gastroözofageal Reflü (GÖRH) Nedir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/gastroozofageal-reflu-gorh/",
+      "dil": "tr",
+      "ozet": "Reflü, alt yemek borusu kapakçığının (alt özofagus sfinkteri) yetersiz çalışması nedeniyle mide asidinin yemek borusuna kaçtığı kronik bir sindirim sorunudur. Göğüs kemiği arkasında yanma, boğazda rahatsızlık, kronik öksürük ve ses kısıklığı yapabilir. Sigara, alkol, düzensiz beslenme, fazla kilo, mide fıtığı ve gebelik risk faktörleridir. Tanıda ayrıntılı öykü alınır ve endoskopi yapılır. Tedavi yaşam tarzı değişiklikleri ve asit baskılayıcı ilaçlardır; ağır durumlarda cerrahi gerekebilir. Uzun süre kontrol altına alınmazsa ciddi komplikasyonlar gelişebilir."
+    },
+    {
+      "id": "reflu-medlineplus",
+      "konu": "Reflü",
+      "anahtar_kelimeler": [
+        "reflü",
+        "GERD",
+        "Barrett",
+        "göğüs ağrısı",
+        "yutma güçlüğü",
+        "mide ekşimesi",
+        "geğirme",
+        "boğazda yanma"
+      ],
+      "baslik": "GERD (Gastroözofageal Reflü Hastalığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/gerd.html",
+      "dil": "en",
+      "ozet": "GERD'de yemek borusunun sonundaki kas düzgün kapanmaz ve mide içeriği yukarı kaçar. Belirtilerin haftada iki veya daha sık olması kronik hastalığa işaret eder. Fazla kilo, gebelik, sigara ve hiatal fıtık risk faktörüdür. Ana belirti göğüste veya boğazda yanmadır; ağızda asit tadı, kuru öksürük, ses kısıklığı ve yutma güçlüğü de olabilir. Göğüs ağrısı ve nefes darlığı acil tıbbi yardım gerektirir. Tanıda endoskopi, biyopsi, röntgen, pH testi ve manometri kullanılabilir. Tedavi yaşam tarzı değişiklikleri ve ilaçlardır; nadiren cerrahi gerekir. Tedavi edilmezse özofajit ve Barrett özofagusu gelişebilir."
+    },
+    {
+      "id": "iye-acibadem",
+      "konu": "İdrar yolu enfeksiyonu",
+      "anahtar_kelimeler": [
+        "idrar yolu enfeksiyonu",
+        "sistit",
+        "idrarda yanma",
+        "sık idrara çıkma",
+        "kasık ağrısı",
+        "böbrek enfeksiyonu",
+        "piyelonefrit"
+      ],
+      "baslik": "İdrar Yolu Enfeksiyonu Nedir? İdrar Yolu Enfeksiyonu Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/idrar-yolu-enfeksiyonu/",
+      "dil": "tr",
+      "ozet": "İdrar yolu enfeksiyonu, E. coli gibi bakterilerin idrar kanalından girerek mesanede (sistit), idrar kanalında (üretrit) veya böbreklerde (piyelonefrit) enfeksiyon yapmasıdır. Sık idrara çıkma, idrar yaparken yanma, bulanık veya kötü kokulu idrar ve alt karın ağrısı tipiktir; ağır durumlarda ateş, titreme ve halsizlik olur. Kadınlarda idrar kanalı kısa olduğu için daha sık görülür; cinsel ilişki, hijyen eksikliği, diyabet, böbrek taşı ve sonda kullanımı risktir. Tanı idrar tahlili ve kültürle konur, tedavi doktor kontrolünde antibiyotiktir. Böbrek enfeksiyonu belirtileri veya yüksek ateşte acil değerlendirme gerekir."
+    },
+    {
+      "id": "iye-medlineplus",
+      "konu": "İdrar yolu enfeksiyonu",
+      "anahtar_kelimeler": [
+        "idrar yolu enfeksiyonu",
+        "UTI",
+        "idrarda yanma",
+        "bel ağrısı",
+        "ateş"
+      ],
+      "baslik": "Urinary Tract Infections (İdrar Yolu Enfeksiyonları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/urinarytractinfections.html",
+      "dil": "en",
+      "ozet": "İdrar yolu enfeksiyonları böbrekler, üreterler, mesane ve üretrayı tutabilir. İdrar yaparken ağrı veya yanma, ateş, yorgunluk, sık idrar isteği, alt karında basınç, kötü kokulu veya bulanık idrar görülür; bel ve kaburga altında ağrı böbreğe ulaşan enfeksiyonu düşündürebilir. Her yaşta ve cinsiyette görülebilir ama kadınlarda erkeklerden dört kat sıktır. Diyabet, sonda kullanımı ve omurilik hasarı riski artırır. Tanı idrar testiyle konur, tedavi antibiyotiktir; enfeksiyon şüphesinde doktora başvurulmalıdır."
+    },
+    {
+      "id": "astim-acibadem",
+      "konu": "Astım",
+      "anahtar_kelimeler": [
+        "astım",
+        "nefes darlığı",
+        "hırıltı",
+        "hışıltı",
+        "gece öksürüğü",
+        "göğüste sıkışma",
+        "inhaler",
+        "sprey"
+      ],
+      "baslik": "Astım Nedir? Astım Belirtileri, Nedenleri ve Tedavi Yöntemleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/astim/",
+      "dil": "tr",
+      "ozet": "Astım hava yollarının iltihaplanıp daralmasıyla nefes almayı zorlaştıran kronik bir hastalıktır. Nefes darlığı, özellikle gece artan öksürük, hırıltılı solunum ve göğüste sıkışma başlıca belirtilerdir. Genetik yatkınlık, alerjenler, sigara dumanı, hava kirliliği ve solunum yolu enfeksiyonları rol oynar; polen, ev tozu akarı, soğuk hava, egzersiz ve stres tetikleyebilir. Tanıda solunum fonksiyon testi (spirometri), bronş provokasyon testi ve PEF ölçümü kullanılır. Tedavide kortikosteroidler ve bronş genişletici ilaçlar kullanılır; tetikleyicilerden kaçınma ve düzenli ilaç kullanımı önemlidir. Belirtiler kötüleşirse doktora başvurulmalıdır."
+    },
+    {
+      "id": "astim-medlineplus",
+      "konu": "Astım",
+      "anahtar_kelimeler": [
+        "astım",
+        "astım krizi",
+        "hırıltı",
+        "alerji",
+        "kurtarıcı ilaç"
+      ],
+      "baslik": "Asthma (Astım)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/asthma.html",
+      "dil": "en",
+      "ozet": "Astım hava yollarını etkileyen kronik bir akciğer hastalığıdır; hava yolları iltihaplanıp daralır ve hışıltı, öksürük, göğüste sıkışma yapar. Belirtiler hafiften ağıra değişir ve atak sırasında kötüleşir. Tetikleyiciler alerjik (ev tozu akarı, küf, evcil hayvan, polen) veya alerjik olmayan (soğuk hava, enfeksiyon, hava kirliliği) olabilir; iş yerindeki kimyasallar mesleki astıma yol açabilir. Pasif sigara içiciliği, aile öyküsü, obezite ve alerjiler risk faktörüdür. Tanıda solunum fonksiyon testleri, muayene ve alerji testleri kullanılır. Tedavi hızlı etkili kurtarıcı ilaçlar, kontrol ilaçları ve tetikleyicilerden kaçınmadır; ağır ataklar acil müdahale gerektirir."
+    },
+    {
+      "id": "kalpkrizi-acibadem",
+      "konu": "Kalp krizi",
+      "anahtar_kelimeler": [
+        "kalp krizi",
+        "göğüs ağrısı",
+        "sol kol ağrısı",
+        "soğuk terleme",
+        "miyokard enfarktüsü",
+        "112",
+        "acil",
+        "göğsüm sıkışıyor",
+        "göğüs sıkışması",
+        "kola vuran ağrı",
+        "çeneye vuran ağrı"
+      ],
+      "baslik": "Kalp Krizi Belirtileri Nelerdir? Kalp Krizi Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/kalp-krizi-belirtileri-nedenleri-tedavisi/",
+      "dil": "tr",
+      "ozet": "Kalp krizi, kalbi besleyen koroner damarların yağ birikintileriyle tıkanması sonucu kalp kasının oksijensiz kalmasıdır. Göğüste sıkışma ve ağrı, sol kola yayılan ağrı, nefes darlığı, soğuk terleme, bulantı ve baş dönmesi başlıca belirtilerdir. Yüksek tansiyon, yüksek kolesterol, sigara, diyabet ve obezite temel risk faktörleridir. Tanı EKG, kan testleri ve anjiyografiyle konur; tedavide kan sulandırıcılar, ilaçlar, anjiyoplasti ve stent kullanılır. Belirtiler görüldüğünde hemen acile başvurulmalıdır; ilk 60 dakika kritik önemdedir. Kişi bilinçsiz ve nefes almıyorsa ambulans çağrılıp kalp masajı (CPR) uygulanmalıdır."
+    },
+    {
+      "id": "kalpkrizi-medlineplus",
+      "konu": "Kalp krizi",
+      "anahtar_kelimeler": [
+        "kalp krizi",
+        "göğüs ağrısı",
+        "troponin",
+        "koroner arter",
+        "kadınlarda kalp krizi",
+        "göğsüm sıkışıyor",
+        "göğüs sıkışması",
+        "kola vuran ağrı",
+        "çeneye vuran ağrı"
+      ],
+      "baslik": "Heart Attack (Kalp Krizi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/heartattack.html",
+      "dil": "en",
+      "ozet": "Kalp krizi kalbe giden kan akışının aniden kesilmesidir; oksijensiz kalan kalp kası ölmeye başlar, bu yüzden hızlı tedavi hasarı sınırlar. En sık belirtiler göğüste baskı veya sıkışma hissi, nefes darlığı ve kol, sırt, omuz, boyun, çene veya mide bölgesinde rahatsızlıktır; bulantı, baş dönmesi, soğuk ter ve yorgunluk da olabilir. Kadınlarda farklı belirtiler daha sık görülebilir. Tanıda troponin gibi kan testleri ve kalp görüntüleme kullanılır. En sık neden koroner arter hastalığıdır. Tedavide kan sulandırıcılar, oksijen, anjiyoplasti veya bypass uygulanır. Belirtilerde hemen acil yardım (Türkiye'de 112) aranmalıdır."
+    },
+    {
+      "id": "inme-saglik-aksaray",
+      "konu": "İnme",
+      "anahtar_kelimeler": [
+        "inme",
+        "felç",
+        "yüzde kayma",
+        "konuşma bozukluğu",
+        "kolda güçsüzlük",
+        "uyuşma",
+        "112",
+        "acil",
+        "konuşması bozuldu",
+        "kolunu kaldıramıyor",
+        "ağzı kaydı",
+        "yüzü kaydı",
+        "dili dolaşıyor",
+        "bir tarafı tutmuyor"
+      ],
+      "baslik": "İnme (felç) nedir? Nelere dikkat edilmelidir?",
+      "kurum": "T.C. Sağlık Bakanlığı Aksaray İl Sağlık Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://aksarayism.saglik.gov.tr/TR-263827/inmefelcnedir-nelere-dikkat-edilmelidir.html",
+      "dil": "tr",
+      "ozet": "İnme beyin damarlarında oluşan ve dünyada işlev kaybının en önemli nedeni olan bir hastalıktır. Yüzde, kolda veya bacakta aniden başlayan güçsüzlük ya da uyuşma, konuşma güçlüğü, görme kaybı ve şiddetli baş ağrısı ana belirtilerdir. Tütün kullanımı, sağlıksız beslenme, hareketsizlik, yüksek tansiyon, diyabet ve yüksek kolesterol başlıca risk faktörleridir. Belirtiler görüldüğünde durum ilerleyebileceği için hemen hastaneye gidilmelidir. Riski azaltmak için sigara ve alkol bırakılmalı, günde 30 dakika hareket edilmeli, yağ-şeker-tuz kısıtlanmalı ve günde beş porsiyon sebze-meyve tüketilmelidir."
+    },
+    {
+      "id": "inme-acibadem",
+      "konu": "İnme",
+      "anahtar_kelimeler": [
+        "inme",
+        "felç",
+        "iskemik inme",
+        "beyin kanaması",
+        "yüz asimetrisi",
+        "acil",
+        "konuşması bozuldu",
+        "kolunu kaldıramıyor",
+        "ağzı kaydı",
+        "yüzü kaydı",
+        "dili dolaşıyor",
+        "bir tarafı tutmuyor"
+      ],
+      "baslik": "İnme (Felç) Nedir? İnme Neden Olur? İnme Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/inme-felc/",
+      "dil": "tr",
+      "ozet": "İnme, beyne giden kan akışının aniden kesilmesi veya azalmasıyla oluşan bir acil durumdur; beyin hücreleri dakikalar içinde ölmeye başlar. İki tipi vardır: damar tıkanmasına bağlı iskemik inme ve kanamaya bağlı hemorajik inme. Yüzde asimetri, kol veya bacakta ani güçsüzlük, konuşma güçlüğü, görme kaybı ve şiddetli baş ağrısı belirtilerdir. Erken tedavi beyin hasarını azalttığı için her dakika önemlidir. Risk faktörleri yüksek tansiyon, sigara, diyabet, obezite, kalp hastalığı, yüksek kolesterol ve uyku apnesidir. Tanıda BT, MR ve anjiyografi kullanılır. Hemen acil yardım çağrılmalı, sonrasında rehabilitasyon gerekir."
+    },
+    {
+      "id": "inme-medlineplus",
+      "konu": "İnme",
+      "anahtar_kelimeler": [
+        "inme",
+        "felç",
+        "stroke",
+        "pıhtı eritici",
+        "denge kaybı",
+        "konuşması bozuldu",
+        "kolunu kaldıramıyor",
+        "ağzı kaydı",
+        "yüzü kaydı",
+        "dili dolaşıyor",
+        "bir tarafı tutmuyor"
+      ],
+      "baslik": "Stroke (İnme)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/stroke.html",
+      "dil": "en",
+      "ozet": "İnme beyne giden kan akışının kesilmesidir; beyin hücreleri dakikalar içinde ölmeye başlar ve kalıcı hasar, sakatlık veya ölüm görülebilir. İnmelerin yaklaşık %80'i damar tıkanmasına bağlı iskemik inme, geri kalanı damar kanamasına bağlı hemorajik inmedir. Yüzde, kolda veya bacakta ani güçsüzlük, konuşma güçlüğü, görme sorunları, denge kaybı ve şiddetli baş ağrısı başlıca belirtilerdir. Yüksek tansiyon, diyabet, kalp hastalığı, sigara ve ileri yaş risk faktörüdür. Tanıda muayene, beyin görüntüleme (BT veya MR) ve kalp testleri kullanılır. İskemik inmede pıhtı eritici veya kan sulandırıcı ilaçlar, kanamada kanamayı durduran yöntemler uygulanır. Şüphede hemen acil yardım (112) aranmalıdır."
+    },
+    {
+      "id": "tiroid-acibadem",
+      "konu": "Tiroid (TSH, hipotiroidi)",
+      "anahtar_kelimeler": [
+        "tiroid",
+        "TSH",
+        "hipotiroidi",
+        "hipertiroidi",
+        "Hashimoto",
+        "guatr",
+        "kilo alma",
+        "saç dökülmesi",
+        "levotiroksin"
+      ],
+      "baslik": "TSH Nedir? TSH Düşüklüğü ve TSH Yüksekliği Ne Anlama Gelir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/test-ve-tetkikler/tsh-nedir-tsh-yuksekligi-dusuklugu/",
+      "dil": "tr",
+      "ozet": "TSH (tiroid uyarıcı hormon) hipofiz bezinden salgılanır ve tiroidin T3 ile T4 üretimini düzenler. Yetişkinlerde normal değer yaklaşık 0,4-4 mU/L'dir. Yüksek TSH tiroidin az çalıştığını (hipotiroidi) gösterir; yorgunluk, kilo artışı, saç dökülmesi ve adet düzensizliği yapabilir; Hashimoto hastalığı, tiroid ameliyatı ve iyot eksikliği sık nedenlerdir. Düşük TSH tiroidin fazla çalıştığını (hipertiroidi) gösterir; hızlı kalp atışı, kilo kaybı, sinirlilik ve el titremesi görülür; Graves hastalığı, nodüller ve fazla hormon kullanımı nedenler arasındadır. Tedavi nedene göre değişir: hipotiroidide levotiroksin, hipertiroidide antitiroid ilaçlar veya radyoaktif iyot. Düzenli doktor takibi gerekir."
+    },
+    {
+      "id": "tiroid-medlineplus",
+      "konu": "Tiroid (TSH, hipotiroidi)",
+      "anahtar_kelimeler": [
+        "hipotiroidi",
+        "Hashimoto",
+        "tiroid hormonu",
+        "TSH",
+        "T4",
+        "üşüme",
+        "kabızlık"
+      ],
+      "baslik": "Hypothyroidism (Hipotiroidi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/hypothyroidism.html",
+      "dil": "en",
+      "ozet": "Hipotiroidide tiroid bezi vücudun ihtiyacı kadar hormon üretemez; bu hormonlar solunum, kalp hızı, kilo, sindirim ve ruh halini etkiler. En sık neden Hashimoto hastalığıdır; tiroid iltihabı, doğuştan hipotiroidi, ameliyat, radyasyon ve bazı ilaçlar da neden olabilir. Kadınlar, 60 yaş üstü kişiler, daha önce tiroid sorunu olanlar, doğum sonrası dönemdeki kadınlar ve otoimmün hastalığı olanlar risk altındadır. Yorgunluk, kilo alma, yüzde şişlik, soğuğa hassasiyet, eklem-kas ağrıları, kabızlık, kuru cilt ve saç, azalmış terleme, düzensiz adet ve depresyon görülebilir. Tanı TSH, T3, T4 testleriyle konur. Tedavi tiroid hormonu ilacıdır; hormon düzeyi 6-8 hafta sonra kontrol edilir."
+    },
+    {
+      "id": "b12-acibadem",
+      "konu": "B12 vitamini eksikliği",
+      "anahtar_kelimeler": [
+        "B12",
+        "B12 eksikliği",
+        "uyuşma",
+        "karıncalanma",
+        "unutkanlık",
+        "metformin",
+        "vegan",
+        "pernisiyöz anemi"
+      ],
+      "baslik": "B12 Vitamini Nedir? Vitamin B12 Faydaları, Eksikliği ve Belirtileri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/b12-vitamini-nedir-b12-eksikligi-belirtileri/",
+      "dil": "tr",
+      "ozet": "B12 suda çözünen, kırmızı kan hücresi yapımı, sinir sistemi sağlığı ve DNA sentezi için gerekli bir vitamindir; et, balık, yumurta ve süt ürünlerinde bulunur. Eksikliğinde yorgunluk, uyuşma, unutkanlık ve baş dönmesi görülür; veganlarda, yaşlılarda ve emilim bozukluğu olanlarda daha sıktır. Normal kan düzeyi 200-900 pg/mL'dir; 200 pg/mL'nin altı eksikliği gösterir. Yetersiz beslenme, mide asidinin azalması, Crohn hastalığı, mide ameliyatı ve metformin kullanımı nedenler arasındadır. Uzun süren eksiklik anemi ve kalıcı sinir hasarı yapabilir. Tanı kan testiyle konur; tedavi takviye veya iğne şeklindedir."
+    },
+    {
+      "id": "b12-medicalpark",
+      "konu": "B12 vitamini eksikliği",
+      "anahtar_kelimeler": [
+        "B12",
+        "B12 eksikliği",
+        "halsizlik",
+        "konsantrasyon",
+        "B12 iğnesi"
+      ],
+      "baslik": "B12 Vitamini Nedir? B12 Vitamini Eksikliği Belirtileri",
+      "kurum": "Medical Park Hastaneleri",
+      "tur": "ozel",
+      "url": "https://www.medicalpark.com.tr/saglik-rehberi/b12-vitamini-nedir",
+      "dil": "tr",
+      "ozet": "B12 vitamini sinir sistemi ve kırmızı kan hücrelerinin gelişiminde kritik bir besindir; vücut üretemediği için et, balık, yumurta, süt ve süt ürünleri gibi hayvansal gıdalardan alınmalıdır. Eksiklikte halsizlik, yorgunluk, unutkanlık, konsantrasyon güçlüğü, el ve ayaklarda uyuşma ve baş dönmesi görülür; ağır durumlarda kansızlık, sinir hasarı ve ruh hali değişiklikleri olabilir. Yetersiz hayvansal gıda tüketimi, mide-bağırsak emilim sorunları ve bazı ilaçların uzun süreli kullanımı başlıca nedenlerdir. Tanı kan testiyle konur. Tedavi eksikliğin derecesine göre tablet veya iğneyle yapılır; hafif vakalarda birkaç hafta, ağır vakalarda birkaç ay sürebilir."
+    },
+    {
+      "id": "dvit-saglik-kosuyolu",
+      "konu": "D vitamini eksikliği",
+      "anahtar_kelimeler": [
+        "D vitamini",
+        "D vitamini eksikliği",
+        "25-OH D",
+        "kemik ağrısı",
+        "kas güçsüzlüğü",
+        "güneş",
+        "kemik erimesi"
+      ],
+      "baslik": "D Vitamini Eksikliği",
+      "kurum": "T.C. Sağlık Bakanlığı Koşuyolu Yüksek İhtisas Eğitim ve Araştırma Hastanesi",
+      "tur": "resmi",
+      "url": "https://kosuyolueah.saglik.gov.tr/TR-1223452/d-vitamini-eksikligi.html",
+      "dil": "tr",
+      "ozet": "D vitamini güneş ışığıyla ciltte üretilen, kemik sağlığı için kritik, yağda çözünen bir vitamindir; ihtiyacın %80-90'ı güneşten karşılanır, bu yüzden yetersiz güneşlenme en önemli nedendir. Hafif eksiklikte halsizlik, kas güçsüzlüğü ve kemik ağrıları, ileri eksiklikte kemik erimesi ve kırıklar görülür. Tanıda en iyi yöntem 25-hidroksi D vitamini ölçümüdür; güvenli aralık 30-50 ng/mL kabul edilir. Tedavide güneşlenmenin yanında gerekirse doktor gözetiminde vitamin preparatları kullanılır. Yaşlılar, koyu tenliler ve kapalı ortamda yaşayanlar risk altındadır."
+    },
+    {
+      "id": "dvit-medicalpark",
+      "konu": "D vitamini eksikliği",
+      "anahtar_kelimeler": [
+        "D vitamini",
+        "raşitizm",
+        "nmol/L",
+        "yağlı balık",
+        "D vitamini takviyesi"
+      ],
+      "baslik": "D Vitamini Nelerde Var? D Vitamini Eksikliği",
+      "kurum": "Medical Park Hastaneleri",
+      "tur": "ozel",
+      "url": "https://www.medicalpark.com.tr/saglik-rehberi/d-vitamini-eksikligi",
+      "dil": "tr",
+      "ozet": "D vitamini kemik ve diş sağlığı için gerekli, güneşle ciltte üretilen yağda çözünen bir vitamindir; yağlı balık, yumurta sarısı, bazı mantarlar ve zenginleştirilmiş ürünlerde de bulunur. Eksiklikte kemik ağrısı, kas güçsüzlüğü, yorgunluk ve çocuklarda raşitizm görülür. Kan testinde 25-hidroksi D vitamini ölçülür: 30 nmol/L altı ciddi eksiklik, 30-50 nmol/L hafif eksiklik, 50-125 nmol/L normal, 125 nmol/L üzeri yüksektir (1 ng/mL yaklaşık 2,5 nmol/L). Koyu tenliler, kapalı ortamda çok vakit geçirenler, yaşlılar ve gebeler risk grubundadır. Tedavi takviye, iğne veya ilaçlarladır; yağlı bir yemekle alınması emilimi artırır."
+    },
+    {
+      "id": "anemi-ankara",
+      "konu": "Demir eksikliği anemisi",
+      "tur": "universite",
+      "dil": "tr",
+      "kurum": "Ankara Üniversitesi Tıp Fakültesi Aile Hekimliği Anabilim Dalı",
+      "baslik": "Yetişkinlerde Demir Eksikliği Anemisi (eğitim sunumu)",
+      "url": "https://ailehekimi.medicine.ankara.edu.tr/wp-content/uploads/sites/581/2015/02/Yeti%C5%9Fkinlerde-Demir-Eksikli%C4%9Fi-Anemisi.pdf",
+      "anahtar_kelimeler": [
+        "kansızlık",
+        "anemi",
+        "demir eksikliği",
+        "ferritin",
+        "MCV",
+        "talasemi",
+        "demir ilacı",
+        "gebelikte demir"
+      ],
+      "ozet": "DSÖ tanımına göre anemi, 15 yaş üstü erkeklerde hemoglobinin 13 g/dL, gebe olmayan kadınlarda 12 g/dL, gebelerde 11 g/dL altına inmesidir. Önce depolar boşalır (ferritin düşer, anemi yoktur), sonra demir eksikliği anemisi gelişir. Ferritin 40-200 ng/mL normal kabul edilir; 20'nin altı hafif, 10'un altı ağır eksiklikle uyumludur. Demir eksikliğinde kırmızı kan hücreleri küçülür (MCV 80 fL altı, mikrositer anemi); talasemi taşıyıcılığı da benzer tablo verdiği için ayırıcı tanıda eritrosit sayısı (talasemide genellikle 5,5 milyonun üzerinde) ve RDW'ye bakılır. Erkeklerde ve menopoz sonrası kadınlarda belirgin bir kanama kaynağı yoksa sindirim sistemi endoskopik olarak incelenmeli, çölyak araştırılmalıdır. Tedavide ilk seçenek ağızdan iki değerlikli (Fe+2) demir preparatlarıdır; yetişkinde günlük elementer demir genellikle 100-200 mg arasıdır. Bulantı, kabızlık ve koyu dışkı sık yan etkilerdir; düşük dozla başlayıp artırmak yardımcı olur. Demir aç karnına daha iyi emilir, C vitamini emilimi artırır; çay, kalsiyum ve antiasitler azaltır, diğer ilaçlarla arasında en az 2 saat bırakılmalıdır. Bir ay sonunda hemoglobinde 1-2 g/dL artış beklenir."
+    },
+    {
+      "id": "anemi-medlineplus",
+      "konu": "Demir eksikliği anemisi",
+      "tur": "uluslararasi",
+      "dil": "en",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "baslik": "Iron Deficiency Anemia (Demir Eksikliği Anemisi)",
+      "url": "https://medlineplus.gov/ency/article/000584.htm",
+      "anahtar_kelimeler": [
+        "kansızlık",
+        "anemi",
+        "demir eksikliği",
+        "ferritin",
+        "tırnak kırılması",
+        "dışkıda kan"
+      ],
+      "ozet": "Demir eksikliği anemisi en sık görülen anemi türüdür; demir kırmızı kan hücresi yapımı için gereklidir. Kan kaybı, emilim sorunu veya yetersiz beslenmeyle gelişir. Yorgunluk, baş dönmesi, baş ağrısı ve konsantrasyon güçlüğü görülür; ağır durumlarda nefes darlığı, kırılgan tırnaklar ve dilde ağrı olabilir. Tanıda tam kan sayımı, serum demiri, demir bağlama kapasitesi ve ferritin ölçülür. Tedavi demir takviyesidir; genellikle 6 hafta içinde düzelme görülür ve depoları doldurmak için tedaviye birkaç ay daha devam edilir. C vitamini kaynakları emilimi destekler. Dışkıda kan, ağır adet kanaması veya anemi belirtileri varsa doktora başvurulmalıdır."
+    },
+    {
+      "id": "tiroid-ankara",
+      "konu": "Tiroid (TSH, hipotiroidi)",
+      "tur": "universite",
+      "dil": "tr",
+      "kurum": "Ankara Üniversitesi Tıp Fakültesi Aile Hekimliği Anabilim Dalı",
+      "baslik": "Hipotiroidi (eğitim sunumu)",
+      "url": "https://ailehekimi.medicine.ankara.edu.tr/wp-content/uploads/sites/581/2019/04/Hipotiroidi.pdf",
+      "anahtar_kelimeler": [
+        "hipotiroidi",
+        "TSH",
+        "sT4",
+        "levotiroksin",
+        "Hashimoto",
+        "anti-TPO",
+        "gebelikte tiroid",
+        "yaşlılarda TSH"
+      ],
+      "ozet": "Hipotiroidi aile hekimliğinde en sık görülen hastalıklardan biridir; kadınlarda daha sık, yaşla artar. En sık neden Hashimoto (otoimmün) tiroiditidir; tiroid ameliyatı, radyoaktif iyot, bazı ilaçlar (amiodaron, lityum) ve iyot eksikliği de neden olabilir. Belirtiler özgül değildir (halsizlik, üşüme, kilo alma, kabızlık, kuru cilt, depresyon), bu yüzden tanı TSH ve serbest T4 ile laboratuvarda konur. TSH alt sınırı yaklaşık 0,5 mIU/L'dir; üst sınır sağlıklı erişkinde 4, 70-79 yaşta 6, 80 yaş üstünde 7,5 mIU/L kabul edilir; gebelikte ilk üç ayda 2,5, sonrasında 3,0 mIU/L'dir. Tedavide levotiroksin kullanılır; sabah aç karnına, su ile, tek seferde alınmalı, en az 30 dakika sonra yemek yenmeli ve diğer ilaçlarla arasına zaman konmalıdır. Preparat değiştirilmemesi önerilir. Doz ayarı için TSH 6-8 hafta sonra kontrol edilir; hedefe ulaşınca 6 ay-1 yılda bir takip yeterlidir. Yaşlılarda ve kalp riski yüksek kişilerde düşük dozla başlanır."
+    },
+    {
+      "id": "kolesterol-acibadem",
+      "konu": "Yüksek kolesterol",
+      "tur": "ozel",
+      "dil": "tr",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "baslik": "LDL Kolesterol Nedir? LDL Kolesterol Yüksekliği ve Düşüklüğü Anlamı",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/ldl-kolesterol-nedir/",
+      "anahtar_kelimeler": [
+        "kolesterol",
+        "LDL",
+        "kötü kolesterol",
+        "yüksek kolesterol",
+        "statin",
+        "damar sertliği",
+        "lipid"
+      ],
+      "ozet": "LDL 'kötü kolesterol' olarak bilinir; kolesterolü karaciğerden hücrelere taşır ve yüksekliği damar duvarında plak birikimiyle damar sertliği ve kalp hastalığı riskini artırır. Sayfada normal aralık 50-130 mg/dL, 130 mg/dL üzeri yüksek olarak verilir (hedef değer kişinin kalp-damar riskine göre doktorca belirlenir). Doymuş yağ tüketimi, hareketsizlik, obezite, sigara, genetik ve hipotiroidi nedenler arasındadır. Genellikle belirti vermez; ileri dönemde göğüs ağrısı, nefes darlığı veya inme belirtileri ortaya çıkabilir. Kan testinden önce 9-12 saat açlık önerilir. Tedavi sağlıklı beslenme, egzersiz, kilo verme ve gerekirse statin gibi ilaçlardır."
+    },
+    {
+      "id": "kolesterol-medlineplus",
+      "konu": "Yüksek kolesterol",
+      "tur": "uluslararasi",
+      "dil": "en",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "baslik": "Cholesterol (Kolesterol)",
+      "url": "https://medlineplus.gov/cholesterol.html",
+      "anahtar_kelimeler": [
+        "kolesterol",
+        "HDL",
+        "LDL",
+        "VLDL",
+        "trigliserit",
+        "statin"
+      ],
+      "ozet": "Kolesterol vücuttaki tüm hücrelerde bulunan yağlı bir maddedir; hormon, D vitamini ve sindirim maddelerinin yapımı için gereklidir. Kanda çok yüksek olursa damarlarda plak oluşturur ve damar sertliği yoluyla kalp hastalığına yol açar. HDL 'iyi' kolesteroldür, kolesterolün vücuttan uzaklaştırılmasına yardım eder; LDL 'kötü' kolesteroldür, plak birikimini hızlandırır; trigliserit taşıyan VLDL de zararlıdır. Başlıca nedenler doymuş yağdan zengin beslenme, hareketsizlik, sigara, stres ve fazla alkoldür; genetik, yaş, aile öyküsü, bazı hastalıklar ve ilaçlar da riski artırır. Tanı kan testiyle konur. Tedavide ilk adım yaşam tarzı değişikliğidir; gerekirse statin gibi ilaçlar kullanılır."
+    },
+    {
+      "id": "tonsillit-acibadem",
+      "konu": "Boğaz enfeksiyonu (tonsillit)",
+      "tur": "ozel",
+      "dil": "tr",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "baslik": "Akut Tonsilit Nedir? Belirtileri, Nedenleri ve Tedavisi",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/akut-tonsilit-nedir/",
+      "anahtar_kelimeler": [
+        "boğaz ağrısı",
+        "bademcik",
+        "tonsillit",
+        "anjin",
+        "beta mikrobu",
+        "strep",
+        "yutkunma güçlüğü",
+        "antibiyotik"
+      ],
+      "ozet": "Akut tonsillit bademciklerin virüs veya bakteri nedeniyle iltihaplanmasıdır. Boğaz ağrısı, yutma güçlüğü, bademciklerde şişlik ve kızarıklık, 38°C üzeri ateş, baş ağrısı ve boyundaki lenf bezlerinde şişme tipiktir. Epstein-Barr virüsü ve A grubu streptokok (Streptococcus pyogenes, halk arasında 'beta mikrobu') sık etkenlerdir. Tanıda muayene, hızlı antijen testi ve boğaz kültürü kullanılır. Viral enfeksiyonlar destek tedavisiyle geçer; bakteriyel enfeksiyonlar antibiyotik gerektirir. Bol sıvı, dinlenme ve ağrı kesiciler yardımcıdır. Tedavi edilmezse bademcik çevresi apsesi, romatizmal ateş gibi ciddi komplikasyonlar gelişebilir. Belirtiler birkaç günde hafiflemezse veya ağırlaşırsa doktora başvurulmalıdır."
+    },
+    {
+      "id": "hemogram-acibadem",
+      "konu": "Hemogram (tam kan sayımı)",
+      "tur": "ozel",
+      "dil": "tr",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "baslik": "Hemogram (Tam Kan Sayımı)",
+      "url": "https://www.acibadem.com.tr/hayat/hemogram-tam-kan-sayimi/",
+      "anahtar_kelimeler": [
+        "hemogram",
+        "tam kan sayımı",
+        "kan tahlili",
+        "hemoglobin",
+        "HGB",
+        "hematokrit",
+        "WBC",
+        "lökosit",
+        "trombosit",
+        "PLT"
+      ],
+      "ozet": "Hemogram kırmızı kan hücreleri, beyaz kan hücreleri ve trombositleri inceleyen kapsamlı bir kan testidir; anemi, enfeksiyonlar, bazı kanserler ve kemik iliği sorunlarının tanısına yardımcı olur. Halsizlik, yorgunluk, baş dönmesi, kolay morarma, kanama ve yüksek ateş gibi şikayetlerde istenebilir. Sayfada verilen referans değerler: hemoglobin erkekte 13,0-17,0 g/dL, kadında 11,5-15,5 g/dL; hematokrit erkekte %40-55, kadında %36-48; trombosit 150.000-450.000; beyaz kan hücresi 4.000-10.000 (mm³ başına). Laboratuvarlar arasında küçük farklar olabileceğinden sonuç kağıdındaki referans esas alınmalıdır. Genellikle açlık gerekmez, sonuçlar birkaç saatte çıkar ve doktor tarafından yorumlanmalıdır."
+    },
+    {
+      "id": "hemogram-medlineplus",
+      "konu": "Hemogram (tam kan sayımı)",
+      "tur": "uluslararasi",
+      "dil": "en",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "baslik": "Complete Blood Count (CBC) (Tam Kan Sayımı)",
+      "url": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+      "anahtar_kelimeler": [
+        "hemogram",
+        "tam kan sayımı",
+        "CBC",
+        "MCV",
+        "kan tahlili"
+      ],
+      "ozet": "Tam kan sayımı kandaki hücrelerin sayısını ve boyutunu ölçen bir test grubudur: kırmızı ve beyaz kan hücreleri, trombositler, hemoglobin, hematokrit ve ortalama eritrosit hacmi (MCV). Rutin kontrollerde veya enfeksiyon, anemi, bağışıklık sistemi bozuklukları ve kan kanserleri gibi durumların izlenmesinde kullanılır. Koldan kan alınarak birkaç dakikada yapılır, genellikle hazırlık gerekmez. Normal aralık dışındaki sonuçlar sıvı kaybı, anemi, kalp hastalığı veya enfeksiyon gibi durumlara işaret edebilir; ancak anormal bir değer her zaman tedavi gerektirmez, beslenme, fiziksel aktivite ve ilaçlar da sonuçları etkileyebilir. Sonuçlar doktorla değerlendirilmelidir."
+    },
+    {
+      "id": "karaciger-acibadem",
+      "konu": "Karaciğer enzimleri (ALT, AST)",
+      "tur": "ozel",
+      "dil": "tr",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "baslik": "Karaciğer Enzimleri Neden Yükselir?",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/karaciger-enzimleri-neden-yukselir/",
+      "anahtar_kelimeler": [
+        "karaciğer enzimleri",
+        "ALT",
+        "AST",
+        "SGPT",
+        "SGOT",
+        "karaciğer yağlanması",
+        "hepatit"
+      ],
+      "ozet": "Karaciğer enzimleri karaciğer hücrelerinden salınan ve organın durumunu yansıtan proteinlerdir; ALT ve AST'nin yükselmesi hücre hasarına işaret eder. Yükselmenin nedenleri arasında alkol, viral hepatitler, ilaç yan etkileri, karaciğer yağlanması, safra kesesi hastalıkları, siroz ve otoimmün hastalıklar vardır. Tanıda kan testleri, ultrason ve gerekirse biyopsi kullanılır. Tedavi altta yatan nedeni ortadan kaldırmaya yöneliktir; sağlıklı beslenme, egzersiz ve alkolü bırakma önerilir. Düzenli doktor kontrolü önemlidir; tedavi edilmeyen yüksek enzimler karaciğer yetmezliğine kadar ilerleyebilir."
+    },
+    {
+      "id": "karaciger-medlineplus",
+      "konu": "Karaciğer enzimleri (ALT, AST)",
+      "tur": "uluslararasi",
+      "dil": "en",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "baslik": "Liver Function Tests (Karaciğer Fonksiyon Testleri)",
+      "url": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+      "anahtar_kelimeler": [
+        "karaciğer fonksiyon testleri",
+        "ALT",
+        "AST",
+        "GGT",
+        "ALP",
+        "bilirubin",
+        "albümin",
+        "sarılık"
+      ],
+      "ozet": "Karaciğer fonksiyon testleri kanda albümin, total protein, alkalen fosfataz (ALP), ALT, AST, GGT, bilirubin, LDH ve protrombin zamanı gibi değerleri ölçer; karaciğer hastalığının tanısı, hasarın değerlendirilmesi ve tedavinin izlenmesi için kullanılır. Bulantı, iştahsızlık, yorgunluk, sarılık, karında şişlik, koyu renkli idrar ve kaşıntı karaciğer hasarını düşündüren belirtilerdir. Ailede karaciğer hastalığı, alkol bağımlılığı, obezite, diyabet ve hepatit teması risk faktörüdür. Koldan kan alınarak yapılır; bazen 10-12 saat açlık istenir. Anormal sonuçlar karaciğer iltihabı, hepatit, safra yolu sorunları veya ilaca bağlı hasar gibi durumlara işaret edebilir ve doktorla değerlendirilmelidir."
+    },
+    {
+      "id": "parasetamol-titck",
+      "konu": "Ağrı kesiciler (parasetamol, ibuprofen)",
+      "tur": "resmi",
+      "dil": "tr",
+      "kurum": "T.C. Türkiye İlaç ve Tıbbi Cihaz Kurumu (TİTCK) - onaylı kullanma talimatı",
+      "baslik": "Kullanma Talimatı: PAROL 500 mg tablet (parasetamol)",
+      "url": "https://www.titck.gov.tr/storage/Archive/2020/kubKtAttachments/T%C4%B0TCK%20Onayl%C4%B1%20KT%20PAROL%20500%20MG%20TB.pdf_7ba04d1d-47e3-4e69-9fbc-440eff063819.pdf",
+      "anahtar_kelimeler": [
+        "parasetamol",
+        "Parol",
+        "ağrı kesici",
+        "ateş düşürücü",
+        "asetaminofen",
+        "doz",
+        "alkol",
+        "karaciğer",
+        "Calpol",
+        "Tylol",
+        "Minoset",
+        "Nurofen",
+        "Brufen",
+        "Dolven",
+        "Pedifen"
+      ],
+      "ozet": "Parasetamol hafif ve orta şiddetli ağrı ile ateşin belirtilerini gideren bir ilaçtır. Kullanma talimatına göre yetişkinlerde ve 12 yaş üstü çocuklarda doz 500 mg'lık 1-2 tablettir, gerekirse 4 saatte bir tekrarlanabilir; günlük en yüksek doz 4000 mg'dır. Alkol alanlarda karaciğer zehirlenmesi riski nedeniyle günlük doz 2000 mg'ı geçmemelidir. Şiddetli karaciğer veya böbrek yetmezliğinde kullanılmaz; anemi, akciğer hastalığı, karaciğer-böbrek bozukluğu, düşük kilo, beslenme yetersizliği ve Gilbert sendromunda dikkatli kullanılmalıdır. Parasetamol içeren başka bir ilaçla (grip ilaçları, kombine ağrı kesiciler) birlikte alınmamalıdır; doz aşımı ciddi karaciğer hasarı yapar. Varfarin, bazı sara ilaçları, rifampisin ve sarı kantaron ile etkileşebilir. Deride kızarıklık veya döküntü olursa ilaç bırakılmalıdır. 3-5 günde ağrı veya ateş geçmezse doktora başvurulmalıdır. Gebelik ve emzirmede hekim önerisiyle kullanılır."
+    },
+    {
+      "id": "parasetamol-medlineplus",
+      "konu": "Ağrı kesiciler (parasetamol, ibuprofen)",
+      "tur": "uluslararasi",
+      "dil": "en",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "baslik": "Acetaminophen (Parasetamol)",
+      "url": "https://medlineplus.gov/druginfo/meds/a681004.html",
+      "anahtar_kelimeler": [
+        "parasetamol",
+        "asetaminofen",
+        "doz aşımı",
+        "karaciğer",
+        "alkol",
+        "Parol",
+        "Calpol",
+        "Tylol",
+        "Minoset",
+        "Nurofen",
+        "Brufen",
+        "Dolven",
+        "Pedifen",
+        "ateş düşürücü"
+      ],
+      "ozet": "Asetaminofen (Türkiye'de parasetamol) hafif-orta ağrıları gidermek ve ateşi düşürmek için kullanılır. Günlük 4000 mg aşılmamalıdır. Karaciğer hastalığı olanlar ve günde üç veya daha fazla alkollü içki tüketenler doktora danışmadan kullanmamalıdır. Aynı anda asetaminofen içeren birden fazla ürün alınmamalıdır; birçok grip ve kombine ağrı ilacında bulunduğu için etiketler kontrol edilmelidir. Döküntü, sarılık, karın ağrısı veya nefes darlığı gibi ciddi yan etkilerde ilaç kesilip tıbbi yardım alınmalıdır. Doz aşımından şüphelenilirse belirti olmasa bile hemen acil yardım aranmalıdır (Türkiye'de 112 veya Ulusal Zehir Danışma Merkezi 114)."
+    },
+    {
+      "id": "ibuprofen-medlineplus",
+      "konu": "Ağrı kesiciler (parasetamol, ibuprofen)",
+      "tur": "uluslararasi",
+      "dil": "en",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "baslik": "Ibuprofen (İbuprofen)",
+      "url": "https://medlineplus.gov/druginfo/meds/a682159.html",
+      "anahtar_kelimeler": [
+        "ibuprofen",
+        "NSAİİ",
+        "ağrı kesici",
+        "mide kanaması",
+        "böbrek",
+        "kan sulandırıcı",
+        "gebelik",
+        "Parol",
+        "Calpol",
+        "Tylol",
+        "Minoset",
+        "Nurofen",
+        "Brufen",
+        "Dolven",
+        "Pedifen",
+        "ateş düşürücü"
+      ],
+      "ozet": "İbuprofen ağrı, ateş ve iltihabı azaltan steroid olmayan bir antiinflamatuvar ilaçtır (NSAİİ); eklem ağrıları, adet ağrısı ve baş ağrısında kullanılır. Reçetesiz kullanımda yetişkinler ve 12 yaş üstü çocuklar gerektiğinde 4-6 saatte bir alabilir; paketteki günlük üst sınır aşılmamalıdır; mide rahatsızlığını azaltmak için yemekle alınabilir. Kalp hastalığı veya inme öyküsü olanlar, 75 yaş üstü kişiler, ülser veya mide kanaması öyküsü, karaciğer ya da böbrek hastalığı olanlar doktora danışmalıdır; gebeliğin ileri döneminde doktor önermedikçe kullanılmamalıdır. Kan sulandırıcılar, aspirin, diğer NSAİİ'ler, kortizon ve bazı antidepresanlarla birlikte kanama riski artar; alkol de riski yükseltir. Mide-bağırsak kanaması (siyah dışkı, kanlı kusma), alerjik reaksiyon ve böbrek sorunları ciddi yan etkilerdir ve acil değerlendirme gerektirir."
+    }
+  ]
+}

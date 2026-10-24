@@ -289,6 +289,14 @@ button { cursor: pointer; }
 .sources summary { font: 500 12px var(--f-mono); color: var(--ink-2); cursor: pointer; letter-spacing: .03em; }
 .sources ol { margin: 8px 0 0; padding-left: 1.4em; font-size: 13px; display: grid; gap: 8px; }
 .sources .src-title { font-weight: 600; }
+.sources a.src-title { color: var(--accent); text-decoration: none; }
+.sources a.src-title:hover { text-decoration: underline; }
+.sources .src-kind { font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2); margin-left: 6px; }
+.lib-stats { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.lib-stats span { font: 500 11.5px/1 var(--f-mono); background: var(--accent-soft); color: var(--ink); border-radius: 999px; padding: 5px 9px; }
+.lib-topics summary { font-size: 13px; cursor: pointer; color: var(--ink-2); }
+.lib-topics ul { margin: 8px 0 0; padding-left: 1.1em; font-size: 13px; columns: 2; column-gap: 14px; }
+.lib-topics li { break-inside: avoid; margin-bottom: 2px; }
 .sources .src-text { color: var(--ink-2); display: block; }
 .msg-note { font-size: 12.5px; color: var(--ink-2); }
 .msg-error {
@@ -381,7 +389,14 @@ button { cursor: pointer; }
     </section>
 
     <section class="section">
-      <h2>Bilgi bankası</h2>
+      <h2>Güvenilir kaynaklar</h2>
+      <p class="muted" id="libInfo">Kaynak kütüphanesi yükleniyor…</p>
+      <div class="lib-stats" id="libStats" hidden></div>
+      <details class="lib-topics" id="libTopicsWrap" hidden><summary>Kapsanan konular</summary><ul id="libTopics"></ul></details>
+    </section>
+
+    <section class="section">
+      <h2>Kendi belgelerim</h2>
       <p class="muted" id="docsEmpty">Kılavuz, prospektüs veya notlarınızı ekleyin. Cevaplar bu belgelerden kaynak göstererek verilir.</p>
       <ul class="docs-list" id="docsList"></ul>
       <input type="file" id="docInput" accept=".pdf,.txt,.md,application/pdf,text/plain,text/markdown" multiple hidden>
@@ -390,7 +405,8 @@ button { cursor: pointer; }
 
     <section class="section settings">
       <h2>Ayarlar</h2>
-      <label class="switch"><input type="checkbox" id="useDocs" checked><span>Bilgi bankasını kullan<em>İlgili belge parçaları soruya eklenir</em></span></label>
+      <label class="switch"><input type="checkbox" id="useLib" checked><span>Güvenilir kaynakları kullan<em>Sağlık Bakanlığı, üniversite ve özel hastaneler, MedlinePlus</em></span></label>
+      <label class="switch"><input type="checkbox" id="useDocs" checked><span>Kendi belgelerimi kullan<em>Eklediğiniz belgelerden ilgili parçalar</em></span></label>
       <label class="switch"><input type="checkbox" id="deep"><span>Derin analiz<em>En güçlü model; tahlil ve karmaşık sorular için. Daha yavaştır.</em></span></label>
     </section>
 
@@ -489,7 +505,7 @@ Semptomlar: Önemli bilgi eksikse önce kısa netleştirici sorular sor (yaş, s
 
 Tahlil sonuçları: Ekli belgedeki veya görseldeki değerleri tek tek oku. Önce değerleri bir Markdown tablosunda listele (Test | Sonuç | Referans | Durum), sonra referans dışındakileri sade dille açıkla ve birlikte yorumla (ör. düşük hemoglobin + düşük ferritin). Laboratuvarın kendi referans aralıklarını esas al. Okuyamadığın veya emin olmadığın bir değeri tahmin etme, söyle. Görseller sonraki mesajlarda tekrar gönderilmez; bu yüzden görseldeki değerleri cevabına mutlaka yaz.
 
-Kaynaklar: Mesajda <kaynaklar> içinde numaralı belge parçaları verilirse cevabını öncelikle bunlara dayandır ve kullandığın bilgiden hemen sonra [1], [2] gibi numarayla kaynak göster. Kaynaklarda olmayan bir şeyi kaynaklarda varmış gibi sunma; genel tıbbi bilgine dayanıyorsan bu ayrımı belli et.
+Kaynaklar: Mesajda <kaynaklar> içinde numaralı belge parçaları verilirse (bunlar Sağlık Bakanlığı, üniversite hastaneleri, özel hastaneler ve MedlinePlus gibi güvenilir kaynakların özetleri veya kullanıcının kendi belgeleri olabilir) cevabını öncelikle bunlara dayandır, gerektiğinde kurumun adını an ve kullandığın bilgiden hemen sonra [1], [2] gibi numarayla kaynak göster. Kaynaklarda olmayan bir şeyi kaynaklarda varmış gibi sunma; genel tıbbi bilgine dayanıyorsan bu ayrımı belli et.
 
 Üslup: Sıcak, sakin ve net ol; korkutma ama gerçeği de yumuşatma. Tıbbi terimleri parantez içinde açıkla. Başlık ve madde işaretlerini yalnızca okumayı gerçekten kolaylaştırdığında kullan; basit bir soruya kısa cevap ver. Markdown kullanabilirsin.
 
@@ -514,12 +530,13 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     prompt: $("prompt"), send: $("sendBtn"), composer: $("composer"),
     pending: $("pending"), fileInput: $("fileInput"), attach: $("attachBtn"),
     docsList: $("docsList"), docsEmpty: $("docsEmpty"), docInput: $("docInput"),
-    useDocs: $("useDocs"), deep: $("deep"), unavailable: $("unavailable"),
+    useDocs: $("useDocs"), useLib: $("useLib"), deep: $("deep"), unavailable: $("unavailable"),
   };
 
   // messages: {role:"user"|"assistant", content (Claude'a giden), text (ekranda), files?, sources?, triage?, error?}
   let messages = load(STORE_CHAT, []);
   let docs = load(STORE_DOCS, []);   // {id, name, chunks:[{page, text}]}
+  let library = [];   // güvenilir kaynak kütüphanesi: {title, text, url, kind, kw}
   let pendingFiles = [];
   let sample = null;
   let sampleReady = false;
@@ -644,9 +661,13 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
       used.sort((a, b) => a - b).forEach((n) => {
         const src = sources[n - 1];
         const li = document.createElement("li"); li.value = n;
-        const t = document.createElement("span"); t.className = "src-title"; t.textContent = src.title;
+        let t;
+        if (src.url) { t = document.createElement("a"); t.href = src.url; t.target = "_blank"; t.rel = "noopener"; }
+        else t = document.createElement("span");
+        t.className = "src-title"; t.textContent = src.title;
+        if (src.kind && KIND[src.kind]) { const kd = document.createElement("span"); kd.className = "src-kind"; kd.textContent = KIND[src.kind]; li.append(t, kd); }
         const x = document.createElement("span"); x.className = "src-text"; x.textContent = src.text.slice(0, 280) + (src.text.length > 280 ? "…" : "");
-        li.append(t, x); ol.appendChild(li);
+        if (!li.contains(t)) li.append(t); li.append(x); ol.appendChild(li);
       });
       d.append(s, ol); card.appendChild(d);
     }
@@ -683,16 +704,25 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     return out.filter(Boolean);
   }
 
-  function search(query, k = 5) {
+  const KIND = { resmi: "Resmi kurum", universite: "Üniversite", ozel: "Özel hastane", uluslararasi: "Uluslararası" };
+
+  function search(query, { useDocs = true, useLib = true } = {}, k = 5) {
     const all = [];
-    docs.forEach((d) => d.chunks.forEach((c) => all.push({ doc: d, ...c })));
+    if (useDocs) docs.forEach((d) => d.chunks.forEach((c) => all.push({ title: c.page ? `${d.name} (s. ${c.page})` : d.name, text: c.text })));
+    if (useLib) all.push(...library);
     if (!all.length) return [];
-    const tfs = all.map((c) => { const m = new Map(); terms(c.text).forEach((t) => m.set(t, (m.get(t) || 0) + 1)); return m; });
+    // Konu ve anahtar kelimelerdeki eşleşmeler özet metnindekilerden 3 kat ağır sayılır
+    const tfs = all.map((c) => {
+      const m = new Map();
+      terms(c.text).forEach((t) => m.set(t, (m.get(t) || 0) + 1));
+      if (c.kw) terms(c.kw).forEach((t) => m.set(t, (m.get(t) || 0) + 3));
+      return m;
+    });
     const df = new Map(); tfs.forEach((m) => m.forEach((_, t) => df.set(t, (df.get(t) || 0) + 1)));
     const lens = tfs.map((m) => [...m.values()].reduce((a, b) => a + b, 0));
     const avg = lens.reduce((a, b) => a + b, 0) / lens.length || 1;
     const q = [...new Set(terms(query))], N = all.length, k1 = 1.5, b = 0.75;
-    return all.map((c, i) => {
+    const hits = all.map((c, i) => {
       let s = 0;
       for (const t of q) {
         const f = tfs[i].get(t); if (!f) continue;
@@ -700,8 +730,35 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
         s += idf * f * (k1 + 1) / (f + k1 * (1 - b + b * lens[i] / avg));
       }
       return { s, c };
-    }).filter((x) => x.s > 0).sort((a, b) => b.s - a.s).slice(0, k)
-      .map(({ c }) => ({ title: c.page ? `${c.doc.name} (s. ${c.page})` : c.doc.name, text: c.text }));
+    }).filter((x) => x.s > 0).sort((a, b) => b.s - a.s).slice(0, k);
+    // En iyi eşleşmenin yanında çok zayıf kalan sonuçları ele
+    const min = hits.length ? hits[0].s * 0.4 : 0;
+    return hits.filter((x) => x.s >= min).map(({ c }) => ({ title: c.title, text: c.text, url: c.url, kind: c.kind }));
+  }
+
+  async function loadLibrary() {
+    try {
+      const res = await fetch("kaynaklar.json");
+      if (!res.ok) throw new Error(res.status);
+      const data = await res.json();
+      library = (data.kaynaklar || []).map((k) => ({
+        title: `${k.kurum}: ${k.baslik}`, text: k.ozet, url: k.url, kind: k.tur,
+        kw: [k.konu, ...(k.anahtar_kelimeler || [])].join(" "), topic: k.konu,
+      }));
+      const counts = {};
+      library.forEach((k) => { counts[k.kind] = (counts[k.kind] || 0) + 1; });
+      $("libInfo").textContent = `${library.length} kaynak özeti, güncelleme: ${new Date(data.guncelleme).toLocaleDateString("tr-TR")}. Cevaplarda bağlantılı olarak gösterilir.`;
+      const stats = $("libStats"); stats.replaceChildren();
+      Object.keys(KIND).filter((k) => counts[k]).forEach((k) => { const c = document.createElement("span"); c.textContent = `${KIND[k]} · ${counts[k]}`; stats.appendChild(c); });
+      stats.hidden = false;
+      const ul = $("libTopics"); ul.replaceChildren();
+      [...new Set(library.map((k) => k.topic))].forEach((t) => { const li = document.createElement("li"); li.textContent = t; ul.appendChild(li); });
+      $("libTopicsWrap").hidden = false;
+    } catch {
+      library = [];
+      $("libInfo").textContent = "Kaynak kütüphanesi yüklenemedi; cevaplar genel tıbbi bilgiye dayanacak.";
+      el.useLib.disabled = true;
+    }
   }
 
   function renderDocs() {
@@ -845,9 +902,9 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
       parts.push(`(Mesaja ${images.length} görsel eklendi; bunlar kullanıcının tahlil sonucu veya ilaç kutusu gibi tıbbi belgeleri olabilir.)`);
     }
 
-    const sources = el.useDocs.checked && docs.length ? search(text) : [];
+    const sources = search(text, { useDocs: el.useDocs.checked, useLib: el.useLib.checked });
     if (sources.length) {
-      parts.push("<kaynaklar>\n" + sources.map((s, i) => `[${i + 1}] (${s.title})\n${s.text}`).join("\n\n") + "\n</kaynaklar>");
+      parts.push("<kaynaklar>\n" + sources.map((s, i) => `[${i + 1}] (${s.title}${s.url ? " · " + s.url : ""})\n${s.text}`).join("\n\n") + "\n</kaynaklar>");
     }
     parts.push(text);
 
@@ -955,6 +1012,8 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   try { el.deep.checked = localStorage.getItem("nabiz.deep") === "1"; el.useDocs.checked = localStorage.getItem("nabiz.useDocs") !== "0"; } catch {}
   el.deep.onchange = () => { try { localStorage.setItem("nabiz.deep", el.deep.checked ? "1" : "0"); } catch {} };
   el.useDocs.onchange = () => { try { localStorage.setItem("nabiz.useDocs", el.useDocs.checked ? "1" : "0"); } catch {} };
+  try { el.useLib.checked = localStorage.getItem("nabiz.useLib") !== "0"; } catch {}
+  el.useLib.onchange = () => { try { localStorage.setItem("nabiz.useLib", el.useLib.checked ? "1" : "0"); } catch {} };
 
   // ------------------------------------------------------------------ Başlat
   // pdf.worker betiği sayfada yüklü olduğu için pdf.js ayrı bir Worker açmadan ana iş parçacığında çalışır
@@ -962,6 +1021,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   messages = messages.filter((m) => !m.error);
   render();
   renderDocs();
+  loadLibrary();
 
   (async () => {
     sample = window.claude?.use ? await window.claude.use("sample") : null;

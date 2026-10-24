@@ -10,6 +10,7 @@ büyürse embedding tabanlı bir aramaya geçmek mantıklı olur.
 
 from __future__ import annotations
 
+import json
 import math
 import re
 from collections import Counter
@@ -32,12 +33,17 @@ DURAK_KELIMELER = set(
 
 @dataclass
 class Parca:
-    kaynak: str  # dosya adı
+    kaynak: str  # dosya adı veya kütüphanedeki kaynağın başlığı
     sayfa: int | None  # PDF ise sayfa numarası
     metin: str
+    url: str | None = None  # yalnızca güvenilir kaynak kütüphanesinden gelenlerde
+    kurum: str | None = None
+    arama_metni: str | None = None  # aramada metne ek olarak kullanılan anahtar kelimeler
 
     @property
     def baslik(self) -> str:
+        if self.kurum:
+            return f"{self.kurum}: {self.kaynak}"
         return f"{self.kaynak} (s. {self.sayfa})" if self.sayfa else self.kaynak
 
 
@@ -88,11 +94,31 @@ def _dosyayi_oku(yol: Path) -> list[Parca]:
     return [Parca(yol.name, None, p) for p in _parcala(metin)]
 
 
+def kutuphaneyi_oku(yol: Path) -> list[Parca]:
+    """`kaynaklar/kaynaklar.json` içindeki güvenilir kaynak özetlerini okur."""
+    if not yol.exists():
+        return []
+    veri = json.loads(yol.read_text(encoding="utf-8"))
+    return [
+        Parca(
+            kaynak=k["baslik"],
+            sayfa=None,
+            metin=k["ozet"],
+            url=k["url"],
+            kurum=k["kurum"],
+            arama_metni=" ".join([k["konu"], *k.get("anahtar_kelimeler", [])]),
+        )
+        for k in veri.get("kaynaklar", [])
+    ]
+
+
 class BilgiBankasi:
-    def __init__(self, klasor: Path):
+    def __init__(self, klasor: Path, kutuphane: list[Parca] | None = None):
         self.klasor = klasor
+        self.kutuphane = kutuphane or []
         self.parcalar: list[Parca] = []
         self.hatalar: dict[str, str] = {}
+        self._tum: list[Parca] = []
         self._terimler: list[Counter] = []
         self._df: Counter = Counter()
         self._ort_uzunluk = 0.0
@@ -112,22 +138,36 @@ class BilgiBankasi:
             except Exception as e:  # bozuk / şifreli PDF vb.
                 self.hatalar[yol.name] = str(e)
 
-        self._terimler = [Counter(map(_govde, _kelimeler(p.metin))) for p in self.parcalar]
+        # Kullanıcı belgeleri ve güvenilir kaynak kütüphanesi tek bir dizinde aranır
+        self._tum = self.parcalar + self.kutuphane
+        # Konu ve anahtar kelimelerdeki eşleşmeler özet metnindekilerden 3 kat ağır sayılır
+        self._terimler = []
+        for p in self._tum:
+            t = Counter(map(_govde, _kelimeler(p.metin)))
+            for kelime in map(_govde, _kelimeler(p.arama_metni or "")):
+                t[kelime] += 3
+            self._terimler.append(t)
         self._df = Counter()
         for t in self._terimler:
             self._df.update(t.keys())
         toplam = sum(sum(t.values()) for t in self._terimler)
         self._ort_uzunluk = toplam / len(self._terimler) if self._terimler else 0.0
 
-    def ara(self, sorgu: str, k: int = 5) -> list[Parca]:
+    def url_bul(self, baslik: str) -> str | None:
+        """Claude'un alıntıda verdiği belge başlığından kaynağın bağlantısını bulur."""
+        return next((p.url for p in self.kutuphane if p.baslik == baslik), None)
+
+    def ara(self, sorgu: str, k: int = 5, belgeler: bool = True, kutuphane: bool = True) -> list[Parca]:
         """BM25 ile sorguya en uygun `k` parçayı döndürür."""
-        if not self.parcalar:
+        if not self._tum or not (belgeler or kutuphane):
             return []
         k1, b = 1.5, 0.75
-        n = len(self.parcalar)
+        n = len(self._tum)
         sorgu_terimleri = set(map(_govde, _kelimeler(sorgu)))
         puanlar = []
         for i, terimler in enumerate(self._terimler):
+            if not (kutuphane if self._tum[i].url else belgeler):
+                continue
             uzunluk = sum(terimler.values())
             puan = 0.0
             for t in sorgu_terimleri:
@@ -139,4 +179,6 @@ class BilgiBankasi:
             if puan > 0:
                 puanlar.append((puan, i))
         puanlar.sort(reverse=True)
-        return [self.parcalar[i] for _, i in puanlar[:k]]
+        # En iyi eşleşmenin yanında çok zayıf kalan (tek ortak kelimeli) sonuçları ele
+        esik = puanlar[0][0] * 0.4 if puanlar else 0
+        return [self._tum[i] for puan, i in puanlar[:k] if puan >= esik]
