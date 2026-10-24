@@ -960,6 +960,2087 @@
         "ateş düşürücü"
       ],
       "ozet": "İbuprofen ağrı, ateş ve iltihabı azaltan steroid olmayan bir antiinflamatuvar ilaçtır (NSAİİ); eklem ağrıları, adet ağrısı ve baş ağrısında kullanılır. Reçetesiz kullanımda yetişkinler ve 12 yaş üstü çocuklar gerektiğinde 4-6 saatte bir alabilir; paketteki günlük üst sınır aşılmamalıdır; mide rahatsızlığını azaltmak için yemekle alınabilir. Kalp hastalığı veya inme öyküsü olanlar, 75 yaş üstü kişiler, ülser veya mide kanaması öyküsü, karaciğer ya da böbrek hastalığı olanlar doktora danışmalıdır; gebeliğin ileri döneminde doktor önermedikçe kullanılmamalıdır. Kan sulandırıcılar, aspirin, diğer NSAİİ'ler, kortizon ve bazı antidepresanlarla birlikte kanama riski artar; alkol de riski yükseltir. Mide-bağırsak kanaması (siyah dışkı, kanlı kusma), alerjik reaksiyon ve böbrek sorunları ciddi yan etkilerdir ve acil değerlendirme gerektirir."
+    },
+    {
+      "id": "varis-saglik-kosuyolu",
+      "konu": "Varis",
+      "kategori": "Kalp ve damar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "varis",
+        "bacakta damar",
+        "kıvrımlı damar",
+        "bacakta ağırlık",
+        "gece krampı",
+        "varis çorabı",
+        "toplardamar"
+      ],
+      "baslik": "Varis Nedir?",
+      "kurum": "T.C. Sağlık Bakanlığı Koşuyolu Yüksek İhtisas Eğitim ve Araştırma Hastanesi",
+      "tur": "resmi",
+      "url": "https://kosuyolueah.saglik.gov.tr/TR,493489/varis-nedir.html",
+      "dil": "tr",
+      "ozet": "Varis, bacaktaki toplardamarların kapakçıkları yetersiz kaldığında kanın geri kaçması sonucu damarların genişleyip uzaması ve kıvrımlı hale gelmesidir; toplumun %20-40'ında görülür. Bacakta görünür çıkıntılar, ağırlık hissi, gece krampları, ağrı, şişlik, yanma ve kaşıntı yapar; ileri evrede yara (ülser), kanama ve pıhtı gelişebilir. Genetik yatkınlık, kadın cinsiyet, yaş, uzun süre ayakta durma veya oturma, sıcak iklim, hormonlar, gebelik, kilo alma, yüksek tansiyon ve diyabet risk faktörleridir. Tanı muayeneyle konur; kapak yetmezliğini göstermek için Doppler ultrason kullanılır. Tedavide varis çorabı, ilaçlar, skleroterapi (damar kurutma iğnesi), lazer, radyofrekans ve açık ameliyat seçenekleri vardır; yöntem doktorla belirlenir."
+    },
+    {
+      "id": "varis-medlineplus",
+      "konu": "Varis",
+      "kategori": "Kalp ve damar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "varis",
+        "varikoz ven",
+        "skleroterapi",
+        "bacak ağrısı"
+      ],
+      "baslik": "Varicose Veins (Varis)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/varicoseveins.html",
+      "dil": "en",
+      "ozet": "Varisler cilt altında görülen şişkin ve kıvrımlı damarlardır, en sık bacaklarda olur. Damarlardaki tek yönlü kapakçıklar zayıflayınca kan geri akıp damarda birikir. İleri yaş, kadın cinsiyet, obezite, hareketsizlik ve aile öyküsü risk faktörüdür; gebelikte daha sık görülür. Tanı genellikle muayeneyle konur, gerekirse ultrason yapılır. Egzersiz, kilo verme, bacakları yükseltme, bol giysiler ve uzun süre ayakta kalmaktan kaçınmak yardımcıdır. Ağrı veya görünüm nedeniyle tedavi istenirse skleroterapi ve damar içi ablasyon gibi işlemler uygulanabilir."
+    },
+    {
+      "id": "aritmi-acibadem",
+      "konu": "Çarpıntı ve ritim bozukluğu",
+      "kategori": "Kalp ve damar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "çarpıntı",
+        "aritmi",
+        "ritim bozukluğu",
+        "kalp hızlı atıyor",
+        "taşikardi",
+        "kalp tekliyor",
+        "nabız düzensiz"
+      ],
+      "baslik": "Kalp Ritim Bozukluğu (Aritmi) Nedir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/aritmiler/",
+      "dil": "tr",
+      "ozet": "Aritmi, kalbin elektrik sisteminin düzensiz çalışmasıyla kalp hızının çok yükselmesi, çok düşmesi veya ritmin bozulmasıdır. Hızlı ya da yavaş kalp atışı, çarpıntı, baş dönmesi, nefes darlığı ve göğüs ağrısı yapabilir. Koroner arter hastalığı, yüksek tansiyon, diyabet, tiroidin fazla çalışması ve alkol risk faktörleridir. Tanıda EKG, kan testleri, efor testi ve ekokardiyografi kullanılır. Tedavide ritim düzenleyici ilaçlar, kateter ablasyonu, cerrahi ve kalp pili seçenekleri vardır. Ani bayılma, şiddetli nefes darlığı veya göğüs ağrısı acil müdahale gerektirir."
+    },
+    {
+      "id": "aritmi-medlineplus",
+      "konu": "Çarpıntı ve ritim bozukluğu",
+      "kategori": "Kalp ve damar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "aritmi",
+        "çarpıntı",
+        "bradikardi",
+        "taşikardi",
+        "EKG",
+        "kalp pili"
+      ],
+      "baslik": "Arrhythmia (Ritim Bozukluğu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/arrhythmia.html",
+      "dil": "en",
+      "ozet": "Aritmide kalp çok hızlı (taşikardi), çok yavaş (bradikardi) veya düzensiz atar; nedeni kalbi yöneten elektrik sinyallerindeki değişikliklerdir. Hızlı ya da yavaş atış, atlama veya güçlü vuru hissi, göğüs ağrısı, baş dönmesi, bayılma, nefes darlığı, terleme ve yorgunluk görülebilir. Kalp hastalığı, yüksek tansiyon, akciğer ve böbrek hastalıkları, obezite, uyku apnesi, ileri yaş, sigara ve stres riski artırır. Temel test EKG'dir; öykü, muayene ve kan testleri de kullanılır. Tedavi ilaçlar, kalp pili veya şok cihazı (defibrilatör) ya da cerrahi olabilir. Göğüs ağrısı, nefes darlığı veya kalp krizi şüphesinde hemen acile başvurulmalıdır."
+    },
+    {
+      "id": "kalpyetmezligi-saglik-sanliurfa",
+      "konu": "Kalp yetmezliği",
+      "kategori": "Kalp ve damar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kalp yetmezliği",
+        "nefes darlığı",
+        "bacakta şişlik",
+        "ödem",
+        "çabuk yorulma",
+        "kalp büyümesi"
+      ],
+      "baslik": "Kalp Yetmezliği Belirtileri ve Tedavi Yöntemleri",
+      "kurum": "T.C. Sağlık Bakanlığı Şanlıurfa İl Sağlık Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://sanliurfaism.saglik.gov.tr/TR-303178/kalp-yetmezligi-belirtileri-ve-tedavi-yontemleri.html",
+      "dil": "tr",
+      "ozet": "Kalp yetmezliği, kalbin vücudun ihtiyacı kadar kan pompalayamamasıdır. Nefes darlığı, çabuk yorulma, halsizlik, çarpıntı ve göğüs ağrısı başlıca belirtilerdir. Koroner damar hastalıkları, kapak hastalıkları, ritim bozuklukları ve yüksek tansiyon sık nedenlerdir. Tanı muayene, laboratuvar testleri, EKG ve ekokardiyografiyle konur. Modern ilaçların yanında yaşam tarzı değişiklikleri önemlidir: düzenli egzersiz, tuz kısıtlaması, kilo kontrolü ve sigarayı bırakmak. Enfeksiyonlar ve diyete uyulmaması tabloyu kötüleştirir. Yeni başlayan veya artan nefes darlığında vakit kaybetmeden kardiyoloğa başvurulmalıdır."
+    },
+    {
+      "id": "kalpyetmezligi-medlineplus",
+      "konu": "Kalp yetmezliği",
+      "kategori": "Kalp ve damar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kalp yetmezliği",
+        "BNP",
+        "ödem",
+        "kilo artışı",
+        "yatınca nefes darlığı"
+      ],
+      "baslik": "Heart Failure (Kalp Yetmezliği)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/heartfailure.html",
+      "dil": "en",
+      "ozet": "Kalp yetmezliğinde kalp, vücuda yeterli oksijenli kanı pompalayacak gücü kaybeder; kalp kasının zayıflaması veya sertleşmesi sonucu gelişir. Nefes darlığı, yorgunluk, ayak-bacak şişliği, hızlı kilo artışı, düz yatınca nefes almakta zorlanma, öksürük, iştahsızlık ve sık idrara çıkma görülebilir. Yüksek tansiyon, kalp hastalıkları, diyabet, obezite, sigara, hareketsizlik ve ileri yaş risk faktörüdür. Tanıda öykü, muayene, EKG, ekokardiyografi ve BNP kan testi kullanılır. Tedavi ilaçlar, tuz kısıtlaması, yaşam tarzı değişiklikleri ve gerekirse cihaz takılmasıdır; ileri vakalarda nakil gerekebilir. Ani nefes darlığı, göğüs ağrısı veya bayılmada acil yardım çağrılmalıdır."
+    },
+    {
+      "id": "dvt-acibadem",
+      "konu": "Derin ven trombozu (bacakta pıhtı)",
+      "kategori": "Kalp ve damar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "derin ven trombozu",
+        "DVT",
+        "bacakta pıhtı",
+        "tek bacakta şişlik",
+        "baldır ağrısı",
+        "pulmoner emboli",
+        "akciğer pıhtısı"
+      ],
+      "baslik": "Derin Ven Trombozu Nedir? Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/derin-ven-trombozunda-ilk-iki-hafta-kritik/",
+      "dil": "tr",
+      "ozet": "Derin ven trombozu, bacak ve kasıktaki derin toplardamarlarda pıhtı oluşmasıdır; daha çok 40 yaş üstünde görülür. Tipik belirti tek bacakta aniden gelişen, ayak bileğinden yukarı doğru yayılan şişlik ve yürümeyi zorlaştırabilen ağrıdır. Kalıtsal pıhtılaşma bozuklukları, hormon tedavisi, obezite, ameliyat, gebelik, kanser tedavisi ve hareketsizlik risk faktörleridir. Pıhtının kopup akciğere gitmesi (pulmoner emboli) hayatı tehdit eder. İlk iki hafta tedavi için kritiktir: sınırlı pıhtılarda kan sulandırıcılar, geniş pıhtılarda kateterle pıhtı eritme uygulanabilir. Bacakta ani şişlik veya ağrıda hemen doktora; nefes darlığı veya göğüs ağrısı eklenirse 112'ye başvurulmalıdır."
+    },
+    {
+      "id": "dvt-medlineplus",
+      "konu": "Derin ven trombozu (bacakta pıhtı)",
+      "kategori": "Kalp ve damar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "DVT",
+        "D-dimer",
+        "Doppler",
+        "kan sulandırıcı",
+        "uzun yolculuk"
+      ],
+      "baslik": "Deep Vein Thrombosis (Derin Ven Trombozu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/deepveinthrombosis.html",
+      "dil": "en",
+      "ozet": "Derin ven trombozu, genellikle bacak veya uyluktaki derin damarlarda oluşan kan pıhtısıdır. Etkilenen bölgede sıcaklık, ağrı, şişlik ve kızarıklık görülür. Uzun süre hareketsiz oturmak (ör. uzun yolculuklar), bazı ilaçlar ve pıhtılaşmayı artıran hastalıklar riski yükseltir. Tanıda D-dimer kan testi ve Doppler ultrason kullanılır. Tedavide pıhtının büyümesini ve yenisinin oluşmasını önleyen kan sulandırıcılar verilir. Pıhtı akciğere giderse ani nefes darlığı ve göğüs ağrısı yapar; bu durumda acil yardım gerekir."
+    },
+    {
+      "id": "koah-medlineplus",
+      "konu": "KOAH",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "KOAH",
+        "kronik bronşit",
+        "amfizem",
+        "sigara öksürüğü",
+        "balgam",
+        "nefes darlığı",
+        "spirometri"
+      ],
+      "baslik": "COPD (Kronik Obstrüktif Akciğer Hastalığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/copd.html",
+      "dil": "en",
+      "ozet": "KOAH, hava yollarını ve hava keseciklerini bozan, zamanla ilerleyen akciğer hastalıkları grubudur (kronik bronşit ve amfizem); hava kesecikleri esnekliğini kaybeder ve hava yollarında mukus birikir. Kronik öksürük, balgam, hırıltı, nefes darlığı, göğüste sıkışma ve yorgunluk yavaş yavaş artar. En önemli neden sigaradır; pasif içicilik, hava kirliliği ve kimyasallara maruz kalma da risktir, nadiren alfa-1 antitripsin eksikliği rol oynar. Tanıda solunum fonksiyon testi (spirometri), akciğer grafisi ve kan testleri kullanılır. Kesin tedavisi yoktur ama sigarayı bırakmak, bronş genişletici ilaçlar, aşılar, solunum rehabilitasyonu ve gerektiğinde oksijen belirtileri azaltır. Şiddetli nefes darlığında acile, alevlenme veya enfeksiyon belirtilerinde doktora başvurulmalıdır."
+    },
+    {
+      "id": "zaturre-acibadem",
+      "konu": "Zatürre (pnömoni)",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "zatürre",
+        "pnömoni",
+        "akciğer enfeksiyonu",
+        "balgamlı öksürük",
+        "yüksek ateş",
+        "göğüs ağrısı"
+      ],
+      "baslik": "Zatürre (Pnömoni) Nedir? Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/zaturre-pnomoni-nedir/",
+      "dil": "tr",
+      "ozet": "Zatürre, akciğerdeki hava keseciklerinin bakteri, virüs veya mantar nedeniyle iltihaplanmasıdır; en sık etken Streptococcus pneumoniae bakterisidir. 40°C'ye varan yüksek ateş, balgamlı öksürük, nefes darlığı, göğüs ağrısı ve halsizlik tipiktir; yaşlılarda bilinç bulanıklığı tek belirti olabilir. Sigara, 65 yaş üstü olmak ve zayıf bağışıklık risk faktörüdür. Tanı akciğer grafisi, kan testleri, balgam kültürü ve parmaktan oksijen ölçümüyle konur. Bakteriyel zatürrede antibiyotik, viral zatürrede destek tedavisi, gerekirse oksijen verilir; bol sıvı ve dinlenme önemlidir. Üç günden uzun süren yüksek ateş, şiddetli nefes darlığı, dudaklarda morarma veya bilinç bulanıklığında acile başvurulmalıdır."
+    },
+    {
+      "id": "zaturre-medlineplus",
+      "konu": "Zatürre (pnömoni)",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "zatürre",
+        "pnömoni",
+        "akciğer grafisi",
+        "antibiyotik"
+      ],
+      "baslik": "Pneumonia (Zatürre)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/pneumonia.html",
+      "dil": "en",
+      "ozet": "Zatürre akciğerde hava keseciklerinin sıvı veya irinle dolduğu bir enfeksiyondur; bakteri, virüs veya mantar neden olabilir, en sık etken bakteridir. 65 yaş üstü olmak, sigara, zayıf bağışıklık ve kronik hastalıklar riski artırır. Ateş, öksürük, nefes darlığı ve göğüs ağrısı başlıca belirtilerdir. Tanıda muayene, akciğer grafisi ve kan testleri kullanılır. Tedavi etkene göre antibiyotik, antiviral veya antifungal ilaçlardır. Nefes almakta zorlanma acil başvuru gerektirir."
+    },
+    {
+      "id": "sinuzit-acibadem",
+      "konu": "Sinüzit",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "sinüzit",
+        "yüzde ağrı",
+        "alında baskı",
+        "geniz akıntısı",
+        "burun tıkanıklığı",
+        "koyu burun akıntısı"
+      ],
+      "baslik": "Sinüzit Nedir? Sinüzit Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/sinuzit-nedir-sinuzit-belirtileri-tedavisi/",
+      "dil": "tr",
+      "ozet": "Sinüzit, yüz kemiklerindeki hava boşluklarının (sinüsler) virüs, bakteri veya alerji nedeniyle iltihaplanıp tıkanmasıdır. Yüzde baskı ve ağrı, burun tıkanıklığı, koyu kıvamlı burun akıntısı, geniz akıntısı ve baş ağrısı tipiktir. Grip, soğuk algınlığı, alerjiler ve burundaki yapısal sorunlar tetikler. Tanıda muayene, endoskopi, gerektiğinde tomografi ve alerji testleri kullanılır. Tuzlu suyla burun yıkama, buhar, bol sıvı ve sıcak kompres yardımcıdır; gerekirse antibiyotik verilir, kronik vakalarda ameliyat gerekebilir. Belirtiler birkaç günden uzun sürer veya ağırlaşırsa KBB uzmanına başvurulmalıdır."
+    },
+    {
+      "id": "sinuzit-medlineplus",
+      "konu": "Sinüzit",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "sinüzit",
+        "akut sinüzit",
+        "kronik sinüzit",
+        "geniz akıntısı"
+      ],
+      "baslik": "Sinusitis (Sinüzit)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/sinusitis.html",
+      "dil": "en",
+      "ozet": "Sinüzit, burun çevresindeki kemiklerde bulunan hava boşluklarının (sinüslerin) şişmesidir; burun şişince sinüs ağızları tıkanır ve ağrı olur. Ateş, halsizlik, yorgunluk, öksürük, burun tıkanıklığı ve geniz akıntısı görülebilir. Çoğunlukla viral soğuk algınlığından sonra başlar, bazen bakteriyel enfeksiyona döner; alerjiler ve burun sorunları da tetikleyebilir. Akut sinüzit 4 haftaya kadar, kronik sinüzit 12 haftadan uzun sürer. Tanı belirtiler ve muayeneyle konur, bazen görüntüleme gerekir. Tedavide gerekirse antibiyotik, burun açıcılar, ağrı kesiciler, sıcak uygulama ve tuzlu su spreyleri kullanılır. Belirtiler 4 haftayı geçer veya kötüleşirse doktora başvurulmalıdır."
+    },
+    {
+      "id": "alerjikrinit-acibadem",
+      "konu": "Alerjik rinit (saman nezlesi)",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "saman nezlesi",
+        "alerjik rinit",
+        "polen alerjisi",
+        "hapşırma",
+        "göz kaşıntısı",
+        "burun akıntısı",
+        "bahar alerjisi"
+      ],
+      "baslik": "Saman Nezlesi Nedir? Saman Nezlesi Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/saman-nezlesi/",
+      "dil": "tr",
+      "ozet": "Saman nezlesi (alerjik rinit), polen, ev tozu akarı ve hayvan tüyü gibi havadaki maddelere karşı bağışıklık sisteminin aşırı tepkisidir. Burun akıntısı ve tıkanıklığı, gözlerde sulanma ve kaşıntı, hapşırma atakları başlıca belirtilerdir; en sık 18-25 yaş arasında görülür ve aile öyküsü önemlidir. Sigara dumanı ve hava kirliliği riski artırır. Tanı deri testi ve kan testiyle konur. Tedavide öncelik alerjenden kaçınmaktır; antihistaminik ilaçlar, alerji aşıları ve dil altı tabletler kullanılabilir. Polen alerjisi olanlarda ilaca sezondan yaklaşık 2 hafta önce başlanması önerilir. Tedavi edilmezse uyku bozukluğu ve astımda kötüleşme görülebilir."
+    },
+    {
+      "id": "alerjikrinit-medlineplus",
+      "konu": "Alerjik rinit (saman nezlesi)",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "saman nezlesi",
+        "polen",
+        "alerji aşısı",
+        "burun spreyi"
+      ],
+      "baslik": "Hay Fever (Saman Nezlesi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/hayfever.html",
+      "dil": "en",
+      "ozet": "Saman nezlesi, ilkbahar, yaz ve sonbaharda ağaç ve ot polenlerinin yol açtığı alerjik bir hastalıktır. Hapşırma, burun akıntısı veya tıkanıklığı, öksürük, burun ve boğazda kaşıntı, kızarık ve sulu gözler başlıca belirtilerdir; göz altlarında koyu halkalar olabilir. Tanı muayene ve belirtilere dayanır, bazen deri veya kan testi yapılır. Tedavide ilaçlar ve burun spreyleri kullanılır; burun yıkamada distile veya steril su tercih edilmelidir. Alerji aşıları uzun süreli rahatlama sağlayabilir. Belirtiler ağırlaşır veya günlük yaşamı etkilerse doktora başvurulmalıdır."
+    },
+    {
+      "id": "gastrit-acibadem",
+      "konu": "Gastrit",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "gastrit",
+        "mide iltihabı",
+        "mide ağrısı",
+        "üst karın ağrısı",
+        "bulantı",
+        "şişkinlik",
+        "mide yanması"
+      ],
+      "baslik": "Gastrit Nedir? Gastrit Belirtileri Nelerdir? Gastrite Ne İyi Gelir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/gastrit-nedir-gastrit-belirtileri-gastrite-ne-iyi-gelir/",
+      "dil": "tr",
+      "ozet": "Gastrit mide iç zarının iltihaplanmasıdır. Helicobacter pylori enfeksiyonu, uzun süreli ağrı kesici (NSAİİ) kullanımı, alkol ve stres başlıca nedenlerdir. Üst karın ağrısı, bulantı, kusma, şişkinlik ve iştahsızlık görülür. Tanıda endoskopi yapılır; H. pylori kan, dışkı veya nefes testiyle araştırılır. Tedavi nedene göre planlanır: H. pylori varsa 7-14 günlük antibiyotik kombinasyonu, asidi azaltan ilaçlar (proton pompa inhibitörleri, H2 blokerleri) kullanılır; ağrı kesici veya alkol kaynaklıysa bunların bırakılması genellikle hızlı düzelme sağlar. Beslenme düzeni ve stres yönetimi destekleyicidir. Tedavi edilmezse ülser ve kanamaya yol açabilir; şikayetler sürerse doktora başvurulmalıdır."
+    },
+    {
+      "id": "ulser-saglik-kosuyolu",
+      "konu": "Mide ülseri ve H. pylori",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ülser",
+        "mide ülseri",
+        "onikiparmak bağırsağı ülseri",
+        "helikobakter",
+        "H. pylori",
+        "açlık ağrısı",
+        "siyah dışkı",
+        "mide kanaması"
+      ],
+      "baslik": "Peptik Ülser Hastalığı",
+      "kurum": "T.C. Sağlık Bakanlığı Koşuyolu Yüksek İhtisas Eğitim ve Araştırma Hastanesi",
+      "tur": "resmi",
+      "url": "https://kosuyolueah.saglik.gov.tr/TR,345056/peptik-ulser-hastaligi.html",
+      "dil": "tr",
+      "ozet": "Peptik ülser, mide veya onikiparmak bağırsağında asidin yol açtığı doku kaybıdır (yara). En önemli belirti mide çukurunda ağrıdır; onikiparmak bağırsağı ülserinde ağrı açken, mide ülserinde yemekle ilişkili olabilir. Başlıca nedenler Helicobacter pylori enfeksiyonu, sigara, alkol ve aspirin gibi ağrı kesicilerdir; stres ve kortizon da risk oluşturur. Tanı endoskopiyle konur; biyopsiyle kanser dışlanır ve bakteri araştırılır. Tedavide asidi azaltan ilaçlar, H. pylori varsa antibiyotik tedavisi uygulanır; kanamada endoskopik müdahale gerekebilir. Şiddetli ağrı, kusma veya dışkıda kan (siyah katran renkli dışkı) varsa acil başvuru gerekir."
+    },
+    {
+      "id": "ulser-medlineplus",
+      "konu": "Mide ülseri ve H. pylori",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ülser",
+        "H. pylori",
+        "nefes testi",
+        "ağrı kesici",
+        "mide ağrısı"
+      ],
+      "baslik": "Peptic Ulcer (Peptik Ülser)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/pepticulcer.html",
+      "dil": "en",
+      "ozet": "Peptik ülser mide veya ince bağırsağın ilk kısmında oluşan yaralardır; en sık belirti yanıcı mide ağrısıdır. Ağrı öğün aralarında veya gece başlayabilir, antiasitle geçebilir, dakikalar-saatler sürebilir. Nedenleri Helicobacter pylori enfeksiyonu ve aspirin, ibuprofen gibi ağrı kesicilerin uzun süreli kullanımıdır. Tanıda kan, nefes veya dışkı testleri, endoskopi ya da röntgen kullanılabilir. Tedavi mide asidini azaltan ilaçlar ve H. pylori'yi yok eden antibiyotiklerdir; iyileşmeyen ülserlerde cerrahi gerekebilir. Geçmeyen ağrıda doktora başvurulmalıdır."
+    },
+    {
+      "id": "kabizlik-medicalpark",
+      "konu": "Kabızlık",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kabızlık",
+        "tuvalete çıkamama",
+        "sert dışkı",
+        "ıkınma",
+        "lifli beslenme",
+        "gaz"
+      ],
+      "baslik": "Kabızlığa Ne İyi Gelir? Kabızlık Neden Olur? Nasıl Geçer?",
+      "kurum": "Medical Park Hastaneleri",
+      "tur": "ozel",
+      "url": "https://www.medicalpark.com.tr/saglik-rehberi/kabizliga-ne-iyi-gelir",
+      "dil": "tr",
+      "ozet": "Kabızlık bağırsak hareketlerinin yavaşlamasıyla dışkılama sıklığının azalması ve dışkının sertleşmesidir. Dışkılarken zorlanma, karında şişkinlik, gaz ve rahatsızlık yapar. Yetersiz lif ve sıvı alımı, hareketsizlik, stres, bazı ilaçlar ve tuvalet ihtiyacını ertelemek başlıca nedenlerdir; çocuklarda beslenme ve tuvalet eğitimi önemlidir. Beslenmeye lif eklemek, su tüketimini artırmak, düzenli egzersiz ve düzenli tuvalet alışkanlığı önerilir. Uzun sürüyorsa, dışkıda kan görülüyorsa veya şiddetli ağrı varsa doktora başvurulmalıdır."
+    },
+    {
+      "id": "kabizlik-medlineplus",
+      "konu": "Kabızlık",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kabızlık",
+        "laksatif",
+        "müshil",
+        "haftada üçten az"
+      ],
+      "baslik": "Constipation (Kabızlık)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/constipation.html",
+      "dil": "en",
+      "ozet": "Kabızlık haftada üçten az dışkılama demektir; dışkı sert ve kuru olabilir, çıkarmak ağrılı olabilir. Hemen herkes zaman zaman yaşar, genellikle kısa sürer ve ciddi değildir. Az lif, az su, hareketsizlik ve bazı ilaçlar başlıca nedenlerdir. Gerekirse görüntüleme veya kolonoskopi yapılabilir. Meyve, sebze ve tam tahılları artırmak, bol su içmek ve düzenli egzersiz önerilir; müshil (laksatif) ilaçlar doktor önerisiyle kullanılmalıdır. Bağırsak alışkanlığı belirgin değişirse veya şikayet sürerse doktora başvurulmalıdır."
+    },
+    {
+      "id": "ishal-acibadem",
+      "konu": "İshal ve mide üşütmesi",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ishal",
+        "gastroenterit",
+        "mide gribi",
+        "mide üşütmesi",
+        "kusma",
+        "norovirüs",
+        "besin zehirlenmesi",
+        "sıvı kaybı"
+      ],
+      "baslik": "Gastroenterit Nedir? Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/gastroenterit-nedir/",
+      "dil": "tr",
+      "ozet": "Gastroenterit (halk arasında mide gribi, mide üşütmesi), mide ve ince bağırsağın virüs, bakteri veya parazitle enfeksiyonudur. Ani başlayan sulu ishal, kusma, karın ağrısı, bulantı ve bazen ateş görülür; belirtiler ilk 24-48 saatte en yoğundur. Norovirüs, rotavirüs, Salmonella ve Campylobacter sık etkenlerdir; kirli su-yiyecek, yetersiz hijyen ve temasla bulaşır. Tanıda öykü, muayene, gerekirse dışkı ve kan testleri kullanılır, sıvı kaybının derecesi değerlendirilir. Tedavi bol sıvı, elektrolit desteği ve dinlenmedir; gerekirse bulantı ilacı veya antibiyotik verilir. 38,5°C üzeri ateş, kanlı ishal, şiddetli karın ağrısı, sürekli kusma veya iki günden uzun süren şikayetlerde doktora başvurulmalıdır; bebekler, yaşlılar ve bağışıklığı zayıf kişilerde erken değerlendirme önemlidir."
+    },
+    {
+      "id": "ishal-medlineplus",
+      "konu": "İshal ve mide üşütmesi",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ishal",
+        "sulu dışkı",
+        "ORS",
+        "ağızdan sıvı tedavisi",
+        "kronik ishal"
+      ],
+      "baslik": "Diarrhea (İshal)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/diarrhea.html",
+      "dil": "en",
+      "ozet": "İshal günde üç veya daha fazla sulu dışkılamadır. Akut ishal birkaç gün sürer; dört haftadan uzun süren kronik ishal başka bir hastalığın belirtisi olabilir. Karın krampı, ani tuvalet ihtiyacı, ateş ve sıvı kaybı görülebilir. Nedenler kirli yiyecek-su, virüsler (norovirüs, rotavirüs), parazitler, antibiyotikler, besin intoleransları, Crohn hastalığı ve irritabl bağırsak sendromudur. Tedavide kaybedilen sıvı ve tuzların yerine konması esastır; çocuklarda ağızdan sıvı tedavisi (ORS) solüsyonları önerilir. İki günden uzun süren ishal, sıvı kaybı belirtileri, 39°C civarı veya üzeri ateş, kanlı ya da irinli dışkı veya şiddetli ağrıda doktora başvurulmalıdır."
+    },
+    {
+      "id": "ibs-saglik-diyadin",
+      "konu": "İrritabl bağırsak sendromu",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "irritabl bağırsak",
+        "huzursuz bağırsak",
+        "spastik kolon",
+        "IBS",
+        "şişkinlik",
+        "gaz",
+        "ishal kabızlık"
+      ],
+      "baslik": "Huzursuz Bağırsak Sendromu Nedir?",
+      "kurum": "T.C. Sağlık Bakanlığı Diyadin Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://diyadindh.saglik.gov.tr/TR-331102/huzursuz-bagirsak-sendromu-nedir.html",
+      "dil": "tr",
+      "ozet": "Huzursuz (irritabl) bağırsak sendromu, kalın bağırsağı etkileyen fonksiyonel bir sindirim sorunudur ve toplumun yaklaşık %15'inde görülür. Karın ağrısı, kramp, şişkinlik, gaz, ishal ve kabızlık yapar; şikayetler dışkılamadan sonra genellikle azalır. Nedeni tam bilinmez; bağırsak kasılmalarındaki ve sinir sistemindeki düzensizlikler, hafif iltihap ve bağırsak florasındaki dengesizlik rol oynar. Çoğunlukla 45 yaş altında ve kadınlarda iki kat sık görülür; stres ve hormonlar tetikler. Tedavi yaşam tarzı ve beslenme düzenlemeleri ile ilaçlardır. Kilo kaybı, makattan kanama veya açıklanamayan kusma varsa doktora başvurulmalıdır."
+    },
+    {
+      "id": "ibs-medlineplus",
+      "konu": "İrritabl bağırsak sendromu",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "IBS",
+        "irritabl bağırsak",
+        "probiyotik",
+        "stres"
+      ],
+      "baslik": "Irritable Bowel Syndrome (İrritabl Bağırsak Sendromu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/irritablebowelsyndrome.html",
+      "dil": "en",
+      "ozet": "İrritabl bağırsak sendromu kalın bağırsağı etkileyen bir rahatsızlıktır; karın krampları, şişkinlik ve bağırsak alışkanlığında değişiklik yapar. Bazı kişilerde kabızlık, bazılarında ishal, bazılarında ikisi dönüşümlü görülür. Bağırsağa kalıcı zarar vermez. Kadınlarda erkeklerin iki katı sıktır ve çoğunlukla 45 yaş altında başlar; kesin nedeni bilinmez. Doktor başka hastalıkları dışlamak için dışkı ve kan testleri, görüntüleme veya kolonoskopi isteyebilir. Tedavi beslenme düzenlemesi, stres yönetimi, probiyotikler ve ilaçlardır; çoğu kişi bu yöntemlerle şikayetlerini kontrol edebilir."
+    },
+    {
+      "id": "hemoroid-saglik-of",
+      "konu": "Hemoroid (basur)",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hemoroid",
+        "basur",
+        "makattan kanama",
+        "makatta ağrı",
+        "makatta şişlik",
+        "kaşıntı"
+      ],
+      "baslik": "Hemoroid (Basur) Hastalığı",
+      "kurum": "T.C. Sağlık Bakanlığı Of Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://ofdh.saglik.gov.tr/TR-679490/hemoroid-basur-hastaligi.html",
+      "dil": "tr",
+      "ozet": "Hemoroid, kalın bağırsağın son kısmındaki damarlı yastıkçıkların şişmesidir; iç ve dış olmak üzere iki tipi vardır. Dış hemoroidler ağrılı ve mor renkli olabilir, iç hemoroidler ileri evreye kadar genellikle ağrı yapmaz. Makatta ağrı, parlak kırmızı kanama, kaşıntı ve akıntı başlıca belirtilerdir; kanamaya bağlı kansızlık ve yorgunluk olabilir. Lifsiz beslenme, az su içme, uzun süre oturma, gebelik, şişmanlık, genetik yatkınlık ve tuvalette uzun kalma risk faktörleridir. Tanı muayeneyle konur; kanama başka hastalıkların (tümör gibi) belirtisi de olabileceğinden 45 yaş üstünde kolonoskopi önerilir. Hastaların yaklaşık %90'ı ilaç ve beslenme düzenlemesiyle (bol su, lifli gıda) tedavi edilir, %10'unda cerrahi gerekir."
+    },
+    {
+      "id": "hemoroid-medlineplus",
+      "konu": "Hemoroid (basur)",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hemoroid",
+        "basur",
+        "oturma banyosu",
+        "makattan kanama"
+      ],
+      "baslik": "Hemorrhoids (Hemoroid)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/hemorrhoids.html",
+      "dil": "en",
+      "ozet": "Hemoroidler anüs ve rektumun alt kısmındaki şişmiş, iltihaplı damarlardır; dış hemoroidler anüs çevresinde, iç hemoroidler rektum içinde oluşur. Dışkılarken ıkınma, uzun süre oturma, kabızlık veya ishal, az lifli beslenme, yaşlanma, gebelik ve ağır kaldırma neden olabilir. Dış hemoroid kaşıntı, ağrı ve sert şişlik; iç hemoroid makattan parlak kırmızı kanama veya dışarı sarkma yapar. Lifli beslenme, bol su, tuvalette kısa kalma, dışkı yumuşatıcılar, ılık oturma banyoları ve reçetesiz kremler yardımcıdır. Bir haftada düzelme olmazsa veya makattan kanama varsa doktora başvurulmalıdır."
+    },
+    {
+      "id": "safra-acibadem",
+      "konu": "Safra kesesi taşı",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "safra taşı",
+        "safra kesesi",
+        "sağ üst karın ağrısı",
+        "sağ omza vuran ağrı",
+        "yağlı yemek sonrası ağrı",
+        "kolesistit"
+      ],
+      "baslik": "Safra Kesesi Taşı Nedir? Safra Kesesi Taşı Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/safra-kesesi-tasi/",
+      "dil": "tr",
+      "ozet": "Safra kesesi taşı, safradaki kolesterol ve pigmentlerin kristalleşmesiyle oluşur. Birçok kişide belirti vermez; bazılarında sağ üst karın ağrısı, sağ omza yayılan ağrı, bulantı ve kusma olur. Tipik şikayet 'safra koliği'dir: yemekten sonra aniden başlayan ve birkaç saat sürebilen ağrı. Obezite, hızlı kilo kaybı, ileri yaş ve kadın cinsiyet risk faktörleridir. Tanıda ultrason, tomografi ve kan testleri kullanılır. Belirti vermeyen taşlar genellikle tedavi gerektirmez; şikayet yapan taşlarda safra kesesinin ameliyatla alınması (kolesistektomi) tercih edilir. Şiddetli ağrı, kusma veya yüksek ateşte hemen doktora başvurulmalıdır."
+    },
+    {
+      "id": "safra-medlineplus",
+      "konu": "Safra kesesi taşı",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "safra taşı",
+        "kolesistektomi",
+        "ultrason"
+      ],
+      "baslik": "Gallstones (Safra Taşları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/gallstones.html",
+      "dil": "en",
+      "ozet": "Safra taşları, karaciğerin ürettiği safrayı depolayan safra kesesinde oluşan katı parçacıklardır. Yemekten sonra bulantı, kusma ve karın ağrısı yapabilir. İleri yaş, kadın cinsiyet ve fazla kilo riski artırır. Tanıda ultrason, HIDA sintigrafisi veya MR kullanılır. Belirti vermeyen taşlar genellikle tedavi gerektirmez; belirti verenlerde en sık tedavi safra kesesinin alınmasıdır. Ameliyattan sonra bazı kişilerde ishal görülebilir, ancak yaşam kalitesi genellikle etkilenmez."
+    },
+    {
+      "id": "karacigeryaglanmasi-acibadem",
+      "konu": "Karaciğer yağlanması",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "karaciğer yağlanması",
+        "yağlı karaciğer",
+        "steatoz",
+        "MASLD",
+        "sağ üst karın",
+        "karaciğer enzimleri yüksek"
+      ],
+      "baslik": "Karaciğer Yağlanması Nedir? Karaciğer Yağlanması Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/karaciger-yaglanmasi/",
+      "dil": "tr",
+      "ozet": "Karaciğer yağlanması, karaciğer hücrelerinde normalden fazla yağ birikmesidir; alkol veya metabolik sorunlar (obezite, insülin direnci, yüksek kolesterol) nedeniyle gelişir. Erken evrede genellikle belirti vermez; ilerledikçe yorgunluk, sağ üst karında ağrı, halsizlik ve sarılık görülebilir. Tanı ultrason, karaciğer enzimleri ve gerekirse biyopsiyle konur. Hastalık basit yağlanmadan iltihaplanmaya (steatohepatit), sertleşmeye (fibrozis) ve siroza ilerleyebilir. Tedavinin temeli sağlıklı beslenme, kilo verme ve egzersizdir; ileri vakalarda ilaç gerekebilir. Şikayetler sürerse gastroenteroloji uzmanına başvurulmalıdır."
+    },
+    {
+      "id": "karacigeryaglanmasi-medlineplus",
+      "konu": "Karaciğer yağlanması",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "yağlı karaciğer",
+        "MASLD",
+        "alkol",
+        "kilo verme"
+      ],
+      "baslik": "Fatty Liver Disease (Yağlı Karaciğer Hastalığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/fattyliverdisease.html",
+      "dil": "en",
+      "ozet": "Karaciğerde fazla yağ birikmesine steatotik (yağlı) karaciğer hastalığı denir. İki ana tipi vardır: metabolik bozukluklarla ilişkili olan (MASLD) ve ağır alkol kullanımına bağlı olan. MASLD çoğunlukla belirti vermez, ama ağırlaşırsa karaciğerde iltihap ve yara dokusu gelişebilir. Tip 2 diyabet, obezite, yüksek kolesterol, yüksek tansiyon, bazı ilaçlar ve metabolik sendrom risk faktörleridir. Belirti olursa yorgunluk ve sağ üst karında rahatsızlıktır. Tanıda öykü, muayene, karaciğer testleri ve görüntüleme kullanılır. MASLD'de kilo vermek, alkole bağlı tipte alkolü bırakmak tedavinin temelidir; sağlıklı beslenme, egzersiz ve aşılar önerilir."
+    },
+    {
+      "id": "colyak-saglik-cerkes",
+      "konu": "Çölyak hastalığı",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "çölyak",
+        "gluten",
+        "glutensiz diyet",
+        "buğday",
+        "kronik ishal",
+        "kilo kaybı",
+        "demir eksikliği"
+      ],
+      "baslik": "Çölyak Hastalığı",
+      "kurum": "T.C. Sağlık Bakanlığı Çerkeş Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://cerkesdh.saglik.gov.tr/TR-1289591/colyak-hastaligi.html",
+      "dil": "tr",
+      "ozet": "Çölyak hastalığı, buğday, arpa ve çavdarda bulunan gluten proteininin tetiklediği ve ince bağırsağa zarar veren bir hastalıktır. Glutenli besin tüketildiğinde kronik ishal, kilo kaybı, karında şişkinlik, yorgunluk ve kansızlık görülebilir. Genetik yatkınlık zemininde gelişir; enfeksiyon veya stres tetikleyebilir. Tanıda kanda glutene karşı antikorlar ölçülür, gerekirse ince bağırsaktan biyopsi alınır. Tek etkili tedavi ömür boyu glutensiz beslenmedir. Belirtiler hafif görünse de uzun vadede bağırsak hasarı yapabileceği için şikayeti olanların gastroenteroloji uzmanına başvurması önerilir."
+    },
+    {
+      "id": "colyak-medlineplus",
+      "konu": "Çölyak hastalığı",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "çölyak",
+        "gluten",
+        "biyopsi",
+        "doku transglutaminaz"
+      ],
+      "baslik": "Celiac Disease (Çölyak Hastalığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/celiacdisease.html",
+      "dil": "en",
+      "ozet": "Çölyak, gluten tüketildiğinde ince bağırsakta hasar oluşturan kronik bir sindirim ve bağışıklık sistemi hastalığıdır; gluten buğday, arpa ve çavdarda bulunur. Belirtiler kişiden kişiye değişir: şişkinlik, ishal, kabızlık, karın ağrısı, yetişkinlerde kilo kaybı gibi sindirim şikayetlerinin yanında yorgunluk ve depresyon görülebilir. Aile öyküsü, Down ve Turner sendromları risk faktörüdür; kadınlarda daha sıktır. Tanı kan testleri ve ince bağırsak biyopsisiyle konur; testlerden önce glutenin kesilmemesi önemlidir. Tedavi ömür boyu glutensiz beslenmedir ve diyetisyen desteği önerilir. Belirti veya aile öyküsü varsa doktora danışılmalıdır."
+    },
+    {
+      "id": "apandisit-saglik-izmir",
+      "konu": "Apandisit",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "apandisit",
+        "sağ alt karın ağrısı",
+        "göbek çevresinde ağrı",
+        "karın ağrısı ve kusma",
+        "iştahsızlık",
+        "kör bağırsak"
+      ],
+      "baslik": "Akut Apandisit",
+      "kurum": "T.C. Sağlık Bakanlığı İzmir İl Sağlık Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://izmirism.saglik.gov.tr/TR-196939/akut-apandisit.html",
+      "dil": "tr",
+      "ozet": "Akut apandisit, kalın bağırsağın başındaki parmak şeklindeki uzantının (apendiks) iltihaplanmasıdır; her 100 kişiden yaklaşık 8'i hayatında bir kez yaşar ve en sık 20-30 yaşlarda görülür. İştahsızlık, bulantı ve karın ağrısı tipiktir: ağrı çoğunlukla mide-göbek çevresinde başlar, 4-6 saat içinde sağ alt karına yerleşir; ateş ve kusma eşlik edebilir. Tıkanma sıklıkla dışkı birikintisinden kaynaklanır. Tanı öykü, muayene, kan testleri ve ultrason veya tomografiyle konur; ağrı kesici kullanmak tanıyı geciktirebilir. Tedavisi apendiksin ameliyatla alınmasıdır; gecikilirse apendiks delinebilir ve hayati tehlike oluşur. Bu belirtileri yaşayanlar hemen en yakın acil servise başvurmalıdır."
+    },
+    {
+      "id": "apandisit-medlineplus",
+      "konu": "Apandisit",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "apandisit",
+        "apendektomi",
+        "karın ağrısı"
+      ],
+      "baslik": "Appendicitis (Apandisit)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/appendicitis.html",
+      "dil": "en",
+      "ozet": "Apandisit, kalın bağırsağın başlangıcındaki küçük tüp şeklindeki organın (apendiks) tıkanıp iltihaplanmasıyla oluşan acil bir durumdur. Ana belirti aniden başlayıp giderek şiddetlenen, özellikle sağ taraftaki karın ağrısıdır; şişkinlik, iştahsızlık, bulantı, kusma, kabızlık veya ishal eşlik edebilir. Tedavi edilmezse apendiks patlayarak karın içinde enfeksiyona yol açabilir. Tanıda ultrason ve tomografi kullanılır; tedavi neredeyse her zaman ameliyattır (apendektomi). En sık 10-30 yaş arasında görülür. Belirtiler başlar başlamaz doktora veya acile başvurulmalıdır."
+    },
+    {
+      "id": "hipertiroidi-acibadem",
+      "konu": "Hipertiroidi (tiroidin fazla çalışması)",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hipertiroidi",
+        "tiroid fazla çalışıyor",
+        "Graves",
+        "TSH düşük",
+        "el titremesi",
+        "kilo kaybı",
+        "çarpıntı",
+        "göz büyümesi"
+      ],
+      "baslik": "Hipertiroidi Nedir? Hipertiroidi Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/hipertiroidi/",
+      "dil": "tr",
+      "ozet": "Hipertiroidi, tiroid bezinin fazla çalışarak kana gereğinden çok T3 ve T4 hormonu salgılamasıdır; kadınlarda erkeklerden yaklaşık 10 kat sık görülür ve tipik olarak 20-40 yaşlarında başlar. Çarpıntı, yüksek tansiyon, hızlı kilo kaybı, aşırı terleme, sinirlilik, el titremesi, adet düzensizliği, gözlerde öne çıkma ve ışığa hassasiyet görülebilir. Graves hastalığı (otoimmün), toksik nodüler guatr, tiroidit, gebelik ve bazı ilaçlar (amiodaron, interferon) neden olabilir. Kan testinde TSH düşük, T3-T4 yüksektir; ultrason ve sintigrafi yapılır. Tedavide antitiroid ilaçlar, radyoaktif iyot veya ameliyat uygulanır; seçim kişiye göre yapılır. Belirtiler başladığında endokrinoloji uzmanına başvurulmalıdır."
+    },
+    {
+      "id": "hipertiroidi-medlineplus",
+      "konu": "Hipertiroidi (tiroidin fazla çalışması)",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hipertiroidi",
+        "Graves",
+        "tiroid nodülü",
+        "beta bloker",
+        "sıcağa tahammülsüzlük"
+      ],
+      "baslik": "Hyperthyroidism (Hipertiroidi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/hyperthyroidism.html",
+      "dil": "en",
+      "ozet": "Hipertiroidide tiroid bezi vücudun ihtiyacından fazla hormon üretir; bu hormonlar solunum, kalp hızı, kilo, sindirim ve ruh halini etkiler. Sinirlilik, yorgunluk, kas güçsüzlüğü, sıcağa tahammülsüzlük, uyku sorunları, titreme, hızlı veya düzensiz kalp atışı, sık dışkılama, kilo kaybı ve boyunda şişlik (guatr) görülebilir. En sık neden Graves hastalığıdır; nodüller, tiroid iltihabı, aşırı iyot ve fazla tiroid ilacı da neden olabilir. Kadınlar, 60 yaş üstü kişiler, gebeler ve ailede tiroid hastalığı olanlar risk altındadır. Tanıda TSH, T3, T4 testleri ve tiroid görüntülemesi kullanılır. Tedavi antitiroid ilaçlar, beta blokerler, radyoaktif iyot veya ameliyattır; tedavi edilmezse kalp sorunları, kemik erimesi ve kısırlığa yol açabilir."
+    },
+    {
+      "id": "insulindirenci-acibadem",
+      "konu": "İnsülin direnci ve prediyabet",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "insülin direnci",
+        "HOMA-IR",
+        "prediyabet",
+        "gizli şeker",
+        "tatlı krizi",
+        "yemek sonrası uyku",
+        "göbek yağlanması",
+        "boyunda kararma"
+      ],
+      "baslik": "İnsülin Direnci Nedir? Belirtileri, Nedenleri ve Tedavi Seçenekleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/insulin-direnci-nedir-ve-nasil-kontrol-altina-alinir/",
+      "dil": "tr",
+      "ozet": "İnsülin direnci, hücrelerin pankreasın salgıladığı insüline yeterli yanıt vermemesidir; zamanla kan şekeri yükselir ve metabolik dengesizlik gelişir. Karın bölgesinde yağlanma, sık acıkma, tatlı isteği, yemek sonrası uyku hali, kilo vermede güçlük ve boyun-koltuk altında ciltte koyulaşma görülebilir. Fazla kilo, hareketsizlik, rafine şeker tüketimi, kronik stres, uyku apnesi, sigara, yaş ve genetik yatkınlık risk faktörleridir. Değerlendirmede HOMA-IR (açlık insülini × açlık şekeri / 405; 2,5'in altı normal kabul edilir), açlık kan şekeri, şeker yükleme testi ve HbA1c kullanılır. Tedavi sağlıklı beslenme, haftada en az 150 dakika egzersiz, kilo kaybı, lifli gıdalar ve gerekirse ilaçtır."
+    },
+    {
+      "id": "prediyabet-medlineplus",
+      "konu": "İnsülin direnci ve prediyabet",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "prediyabet",
+        "bozulmuş açlık glukozu",
+        "HbA1c 5,7",
+        "açlık şekeri 100"
+      ],
+      "baslik": "Prediabetes (Prediyabet)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/prediabetes.html",
+      "dil": "en",
+      "ozet": "Prediyabet, kan şekerinin normalden yüksek ama diyabet sınırının altında olmasıdır. Çoğu kişide belirti yoktur; bazılarında boyun ve koltuk altında ciltte koyulaşma görülebilir. Nedeni insülin direnci ve yetersiz insülin üretimidir; fazla kilo, hareketsizlik, 45 yaş üstü olmak, aile öyküsü ve yüksek tansiyon risk faktörüdür. Açlık kan şekerinin 100-125 mg/dL veya HbA1c'nin %5,7-6,4 olması prediyabet olarak değerlendirilir. Kilo vermek, düzenli egzersiz ve sağlıklı beslenme diyabete ilerlemeyi önleyebilir; bazı kişilere ilaç verilebilir."
+    },
+    {
+      "id": "obezite-hsgm",
+      "konu": "Obezite",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "obezite",
+        "şişmanlık",
+        "beden kitle indeksi",
+        "BKİ",
+        "bel çevresi",
+        "kilo verme",
+        "fazla kilo"
+      ],
+      "baslik": "Obezite",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/obezite",
+      "dil": "tr",
+      "ozet": "Obezite, vücut yağ kütlesinin artmasıyla vücut ağırlığının boya göre normalin üzerine çıkmasıdır; alınan enerji harcanandan fazla olduğunda gelişir. Tanıda beden kitle indeksi (BKİ = kilo / boyun metre cinsinden karesi) kullanılır; yetişkinde 30 ve üzeri obezitedir. Bel çevresinin erkekte 94 cm, kadında 80 cm üzerinde olması hastalık riskini artırır. Yanlış beslenme, hareketsizlik, genetik, psikolojik ve hormonal etkenler rol oynar. Diyabet, yüksek tansiyon, kalp hastalığı, bazı kanserler, uyku apnesi ve ruhsal sorunlara yol açabilir. Tedavi beslenme düzenlemesi, egzersiz, davranış değişikliği, ilaç ve uygun hastalarda cerrahidir; vücut ağırlığının %10'unu kaybetmek bile sağlık risklerini belirgin azaltır."
+    },
+    {
+      "id": "obezite-medlineplus",
+      "konu": "Obezite",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "obezite",
+        "BMI",
+        "morbid obezite",
+        "obezite cerrahisi",
+        "kilo verme ilacı"
+      ],
+      "baslik": "Obesity (Obezite)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/obesity.html",
+      "dil": "en",
+      "ozet": "Obezite vücutta fazla yağ birikmesidir. Yetişkinde beden kitle indeksi 30 ve üzeri obezite, 40 ve üzeri ağır (morbid) obezite olarak kabul edilir. Alınan kalorinin harcanandan fazla olmasıyla zamanla gelişir; genetik, beslenme alışkanlıkları, fiziksel aktivite ve bazı ilaçlar rol oynar. Tip 2 diyabet, kalp hastalığı, yüksek tansiyon, uyku apnesi ve bazı kanserlerin riskini artırır. Değerlendirmede öykü, muayene, kan testleri ve BKİ kullanılır. Tedavi beslenme değişikliği, egzersiz, danışmanlık, kilo verme ilaçları veya obezite cerrahisidir; %5-10 kilo kaybı bile birçok hastalığı geciktirebilir."
+    },
+    {
+      "id": "osteoporoz-saglik-denizli",
+      "konu": "Osteoporoz (kemik erimesi)",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "osteoporoz",
+        "kemik erimesi",
+        "kemik yoğunluğu",
+        "DEXA",
+        "boy kısalması",
+        "kamburluk",
+        "menopoz"
+      ],
+      "baslik": "Osteoporoz (Kemik Erimesi) Nedir, Belirtileri Nelerdir, Nasıl Önlenir?",
+      "kurum": "T.C. Sağlık Bakanlığı Denizli İl Sağlık Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://denizliism.saglik.gov.tr/TR-326709/osteoporoz-kemik-erimesi-nedir-belirtileri-nelerdir-nasil-onlenir.html",
+      "dil": "tr",
+      "ozet": "Osteoporoz, kalsiyum ve mineral kaybıyla kemiklerin kırılgan hale gelmesidir; 50 yaş üstünde her üç kadından birinde, her beş erkekten birinde görülür. Sırt ve bel ağrısı, boy kısalması ve kolay kırıklar başlıca belirtilerdir. Tanıda kemik yoğunluğu ölçümü (DEXA) kullanılır; menopoz sonrası kadınlar, ileri yaştakiler ve D vitamini düşük olanların düzenli ölçüm yaptırması önerilir. Korunmak için süt, yoğurt, peynir gibi kalsiyum kaynakları tüketmek, güneşten D vitamini almak, düzenli yürüyüş ve egzersiz yapmak ve sigara içmemek önemlidir."
+    },
+    {
+      "id": "osteoporoz-medlineplus",
+      "konu": "Osteoporoz (kemik erimesi)",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "osteoporoz",
+        "kalça kırığı",
+        "omurga kırığı",
+        "kortizon",
+        "düşme"
+      ],
+      "baslik": "Osteoporosis (Osteoporoz)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/osteoporosis.html",
+      "dil": "en",
+      "ozet": "Osteoporoz kemiklerin zayıflayıp kolay kırılır hale gelmesidir; sessiz ilerler ve çoğu zaman bir kırık olana kadar belirti vermez. En sık kalça, omurga ve el bileği etkilenir. Kemik kaybı yenilenmeden hızlı olduğunda gelişir ve risk özellikle 50 yaştan sonra artar. Kadın cinsiyet, menopoz sonrası dönem, ince yapı, aile öyküsü, kalsiyum ve D vitamininden fakir beslenme, uzun süreli kortizon kullanımı ve hareketsizlik risk faktörleridir. Tanı kemik yoğunluğu ölçümüyle konur. Tedavide kalsiyum, D vitamini, egzersiz, sigarayı bırakma ve kemik kaybını yavaşlatan ilaçlar kullanılır; düşmeleri önlemek kırık riskini azaltır."
+    },
+    {
+      "id": "gut-acibadem",
+      "konu": "Gut hastalığı (ürik asit)",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "gut",
+        "ürik asit",
+        "ayak başparmağında ağrı",
+        "eklemde şişlik ve kızarıklık",
+        "pürin",
+        "kolşisin"
+      ],
+      "baslik": "Gut Hastalığı Nedir? Gut Hastalığı Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/gut-hastaligi/",
+      "dil": "tr",
+      "ozet": "Gut, vücutta biriken ürik asit kristallerinin eklemlere çökerek iltihaplı artrit yaptığı metabolik bir hastalıktır. Tipik olarak ayak başparmağında aniden başlayan şiddetli ağrı, şişlik, kızarıklık ve dokunmaya hassasiyet görülür; ağrı gece hastayı uyandırabilir. Bazı hastalarda böbrek taşı da gelişir. Genetik yatkınlık, pürinden zengin gıdalar (kırmızı et, deniz ürünleri), alkol, obezite, böbrek yetmezliği ve bazı ilaçlar risk faktörleridir. Tanıda eklem sıvısı incelemesi, kanda ürik asit ölçümü, röntgen ve ultrason kullanılır. Atakta ağrı kesici-iltihap giderici ilaçlar veya kolşisin, uzun vadede ürik asit düşürücü ilaçlar (ör. allopurinol) verilir; beslenme düzenlemesi, bol su ve kilo kontrolü önemlidir."
+    },
+    {
+      "id": "gut-medlineplus",
+      "konu": "Gut hastalığı (ürik asit)",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "gut",
+        "ürik asit",
+        "gut atağı",
+        "fruktoz",
+        "idrar söktürücü"
+      ],
+      "baslik": "Gout (Gut)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/gout.html",
+      "dil": "en",
+      "ozet": "Gut, eklemde ağrı, şişlik ve kızarıklık yapan yaygın bir iltihaplı artrit türüdür; ataklar genellikle bir-iki haftada geçer ve çoğunlukla ayak başparmağını tutar. Vücutta uzun süre fazla ürik asit birikip eklemde kristal oluşturmasıyla gelişir. Erkek cinsiyet, ileri yaş, obezite, kalp yetmezliği, yüksek tansiyon, kronik böbrek hastalığı, kırmızı et ve deniz ürünleri, alkol, fruktozlu içecekler ve idrar söktürücü ilaçlar riski artırır. Tanıda muayene, kan-idrar testleri ve eklem sıvısı incelemesi kullanılır. Atak tedavisinde NSAİİ, kolşisin veya kortizon; atakları önlemek için yaşam tarzı değişikliği ve ürik asit düşürücü ilaçlar kullanılır."
+    },
+    {
+      "id": "gerilimbasagrisi-medlineplus",
+      "konu": "Gerilim tipi baş ağrısı",
+      "kategori": "Beyin ve sinir",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "baş ağrısı",
+        "gerilim tipi baş ağrısı",
+        "stres baş ağrısı",
+        "başta mengene hissi",
+        "ense ağrısı",
+        "küme baş ağrısı"
+      ],
+      "baslik": "Headache (Baş Ağrısı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/headache.html",
+      "dil": "en",
+      "ozet": "Baş ağrısı en sık görülen ağrı türüdür. En yaygın tipi gerilim tipi baş ağrısıdır; boyun, omuz, saçlı deri ve çene kaslarının gerilmesinden kaynaklanır ve çoğunlukla başın iki yanında baskı veya sıkışma şeklinde hissedilir. Stres, depresyon, kaygı, aşırı çalışma, uykusuzluk ve öğün atlamak tetikler. Diğer sık türler migren, küme baş ağrısı ve sinüs kaynaklı baş ağrısıdır. Çoğu durumda yaşam tarzı düzenlemesi ve ağrı kesiciler yeterlidir. Ani başlayan çok şiddetli baş ağrısı, kafa travması sonrası baş ağrısı, ense sertliği, ateş, bilinç bulanıklığı, bayılma veya göz-kulak ağrısıyla birlikte olan baş ağrısında hemen tıbbi yardım alınmalıdır."
+    },
+    {
+      "id": "vertigo-acibadem",
+      "konu": "Baş dönmesi ve vertigo",
+      "kategori": "Beyin ve sinir",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "vertigo",
+        "baş dönmesi",
+        "kristal oynaması",
+        "BPPV",
+        "Meniere",
+        "denge kaybı",
+        "dünya dönüyor"
+      ],
+      "baslik": "Vertigo Nedir? Vertigo Belirtileri Nelerdir, Neden Olur?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/vertigo/",
+      "dil": "tr",
+      "ozet": "Vertigo, kişinin kendisinin veya çevresinin döndüğünü hissettiği, denge sistemindeki bir sorundan kaynaklanan baş dönmesidir. Bulantı, kusma, denge kaybı, gözlerde istemsiz hareketler (nistagmus) ve kulak çınlaması eşlik edebilir; bazen işitme azalması olur. En sık neden iç kulaktaki kristallerin yerinden oynamasıdır (BPPV); iç kulak enfeksiyonları, Meniere hastalığı, vestibüler migren, beyin damar hastalıkları, MS, düşük tansiyon, kansızlık ve kaygı da neden olabilir. Tanıda Dix-Hallpike testi, videonistagmografi ve gerekirse MR kullanılır. Kristal oynamasında Epley manevrası, diğer nedenlerde ilaç ve denge egzersizleri uygulanır. Ani ve şiddetli baş dönmesi veya birkaç gün süren şikayette doktora başvurulmalıdır."
+    },
+    {
+      "id": "vertigo-medlineplus",
+      "konu": "Baş dönmesi ve vertigo",
+      "kategori": "Beyin ve sinir",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "baş dönmesi",
+        "sersemlik",
+        "vertigo",
+        "tansiyon düşmesi",
+        "inme"
+      ],
+      "baslik": "Dizziness and Vertigo (Baş Dönmesi ve Vertigo)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/dizzinessandvertigo.html",
+      "dil": "en",
+      "ozet": "Baş dönmesi sersemlik veya bayılacak gibi olma hissidir; vertigo ise kişinin veya odanın döndüğü hissidir. Yürürken, ayağa kalkarken veya başı çevirirken kötüleşebilir; bulantı, kusma, terleme ve kulak çınlaması eşlik edebilir. Yaşla daha sık görülür. Tansiyon düşmesi, sıvı kaybı, iç kulak sorunları (en sık BPPV), migren, kafa travması ve bazı ilaçlar neden olabilir. Tanıda belirtiler ve kullanılan ilaçlar sorgulanır, muayene yapılır; inme şüphesinde görüntüleme gerekir. Tedavi nedene göre denge egzersizleri ve ilaçlardır. Ani ve şiddetli baş dönmesiyle birlikte görme bozukluğu, konuşma güçlüğü veya güçsüzlük varsa acil yardım (112) gerekir."
+    },
+    {
+      "id": "epilepsi-saglik-bakirkoy",
+      "konu": "Epilepsi (sara) ve nöbet",
+      "kategori": "Beyin ve sinir",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "epilepsi",
+        "sara",
+        "nöbet",
+        "kasılma",
+        "bayılıp kasılma",
+        "EEG",
+        "nöbet ilk yardım"
+      ],
+      "baslik": "Epilepsi",
+      "kurum": "T.C. Sağlık Bakanlığı Bakırköy Prof. Dr. Mazhar Osman Ruh Sağlığı ve Sinir Hastalıkları EAH",
+      "tur": "resmi",
+      "url": "https://bakirkoyruhsinireah.saglik.gov.tr/TR,101813/epilepsi.html",
+      "dil": "tr",
+      "ozet": "Epilepsi, beyin hücrelerinde geçici olarak anormal elektrik boşalmalarına bağlı kısa süreli beyin işlev bozukluklarıdır (nöbetler). Nöbetler beynin bir bölümünü (parsiyel) veya tamamını (jeneralize) etkileyebilir; bilinç kaybı, kasılmalar, ani korku hissi, görme bozuklukları veya otomatik hareketler görülebilir. Kafa travması, aile öyküsü ve beyin yapısındaki anormallikler neden olabilir. Tanıda EEG, MR ve kan testleri kullanılır; tedavi temel olarak nöbet ilaçlarıdır, dirençli olgularda cerrahi düşünülebilir. Nöbette kişiyi güvenli bir yere yatırın, hareketlerini engellemeyin, ağzına hiçbir şey sokmayın ve yan çevirerek nefes almasını kolaylaştırın. Nöbet 5 dakikadan uzun sürerse, bilinç açılmazsa veya ilk nöbetse acile başvurun (112)."
+    },
+    {
+      "id": "epilepsi-medlineplus",
+      "konu": "Epilepsi (sara) ve nöbet",
+      "kategori": "Beyin ve sinir",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "epilepsi",
+        "nöbet",
+        "nöbet ilacı",
+        "vagus sinir uyarıcı"
+      ],
+      "baslik": "Epilepsy (Epilepsi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/epilepsy.html",
+      "dil": "en",
+      "ozet": "Epilepside beyin sinir hücreleri hatalı sinyaller göndererek tekrarlayan nöbetlere yol açar; kişi garip hisler yaşayabilir, kaslarında kontrolsüz kasılmalar olabilir veya bilincini kaybedebilir. Beyin hasarı, hastalıklar ve beyin gelişimindeki anormallikler neden olabilir, ancak çoğu zaman neden bulunamaz. Tanıda beyin görüntülemesi ve EEG kullanılır. İlaçlar çoğu kişide nöbetleri kontrol eder; ilaçlar yetmezse cerrahi, vagus sinir uyarıcı cihazlar veya bazı çocuklarda özel diyetler yardımcı olabilir. Nöbet 5 dakikadan uzun sürerse, nöbetler arka arkaya tekrarlarsa veya bilinç geri gelmezse hemen acil yardım alınmalıdır."
+    },
+    {
+      "id": "uykusuzluk-medicalpark",
+      "konu": "Uykusuzluk",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "uykusuzluk",
+        "insomnia",
+        "uyuyamıyorum",
+        "gece uyanma",
+        "erken uyanma",
+        "uyku ilacı",
+        "uyku hijyeni"
+      ],
+      "baslik": "Uykusuzluk (İnsomnia) Nedir? Uykusuzluk Tedavisi",
+      "kurum": "Medical Park Hastaneleri",
+      "tur": "ozel",
+      "url": "https://www.medicalpark.com.tr/saglik-rehberi/uykusuzluk-insomnia",
+      "dil": "tr",
+      "ozet": "Uykusuzluk (insomnia), uykuya dalmayı ve uykuyu sürdürmeyi zorlaştıran yaygın bir uyku bozukluğudur. Gece uykuya dalmakta zorlanma, sık uyanma, çok erken uyanma ve gündüz yorgunluğu görülür. Stres, kötü uyku alışkanlıkları, seyahat, kafein ve alkol ile çeşitli hastalıklar neden olabilir; kadınlar, 60 yaş üstü kişiler ve ruhsal sorunu olanlar daha risklidir. Tanıda muayene ve uyku alışkanlıklarının değerlendirilmesi, gerekirse uyku laboratuvarı testi kullanılır. Tedavi bilişsel davranışçı terapi, yaşam tarzı değişiklikleri ve gerektiğinde ilaçlardır. Uykusuzluk süreğen hale gelirse doktora başvurulmalıdır."
+    },
+    {
+      "id": "uykusuzluk-medlineplus",
+      "konu": "Uykusuzluk",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "uykusuzluk",
+        "insomnia",
+        "uyku çalışması",
+        "davranışçı terapi"
+      ],
+      "baslik": "Insomnia (Uykusuzluk)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/insomnia.html",
+      "dil": "en",
+      "ozet": "Uykusuzluk sık görülen bir uyku sorunudur: kişi uykuya dalmakta zorlanır, gece uyanır veya her ikisini birden yaşar; uzun süre uyanık yatma, kısa uyku ve erken uyanma tipiktir. Stres, ilaçlar, kafeinli içecekler ve çeşitli hastalıklar neden olabilir; kadınlar, yaşlılar ve stres altındaki kişilerde daha sıktır. Doktor öykü alır, uyku alışkanlıklarını sorar ve muayene eder; gerekirse uyku çalışması önerir. Tedavi yaşam tarzı değişiklikleri, davranışçı terapi ve ilaçlardır; altta yatan sağlık sorunları da tedavi edilmelidir. Belirtiler iki haftadan uzun sürerse doktora danışılmalıdır."
+    },
+    {
+      "id": "belfitigi-acibadem",
+      "konu": "Bel fıtığı ve bel ağrısı",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "bel fıtığı",
+        "bel ağrısı",
+        "siyatik",
+        "bacağa vuran ağrı",
+        "bacakta uyuşma",
+        "disk kayması"
+      ],
+      "baslik": "Bel Fıtığı Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/bel-fitigi/",
+      "dil": "tr",
+      "ozet": "Bel fıtığı, omurlar arasındaki diskin yerinden taşarak sinir köklerine baskı yapmasıdır. Belde sürekli veya aralıklı ağrı ve bacağa yayılan sinir ağrısı (siyatik) başlıca belirtilerdir; uyuşma, karıncalanma ve kas güçsüzlüğü de görülür. Yaşlanma, ağır kaldırma, kötü duruş, travma ve genetik yatkınlık neden olabilir. Tanı muayene, MR ve gerektiğinde EMG ile konur. Hafif vakalarda dinlenme, fizik tedavi ve ağrı kesiciler etkilidir; ileri durumlarda cerrahi gerekebilir. Egzersiz, doğru oturma ve kilo kontrolü korunmaya yardımcıdır. İdrar veya dışkı kontrolünün kaybı ya da bacakta belirgin güç kaybı acil başvuru gerektirir."
+    },
+    {
+      "id": "diskfitigi-medlineplus",
+      "konu": "Bel fıtığı ve bel ağrısı",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "disk fıtığı",
+        "bel fıtığı",
+        "siyatik",
+        "MR"
+      ],
+      "baslik": "Herniated Disk (Disk Fıtığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/herniateddisk.html",
+      "dil": "en",
+      "ozet": "Omurlar arasındaki yumuşak diskler zamanla yıpranır; diskin dış tabakası yırtılıp içindeki jel benzeri madde dışarı taşınca sinirleri tahriş eder ve bel ya da bacak ağrısına yol açar. Yaşlanma ve omurgaya binen yük risk faktörleridir. Tanı muayene ve görüntüleme (BT, MR) ile konur. Çoğu kişi dinlenme, ağrı kesiciler ve fizik tedaviyle iyileşir; bazılarında ameliyat gerekir. Şiddetli veya geçmeyen ağrı, bacaklarda güçsüzlük ya da idrar-dışkı kontrolünün kaybında acil tıbbi yardım alınmalıdır."
+    },
+    {
+      "id": "boyunfitigi-acibadem",
+      "konu": "Boyun fıtığı ve boyun ağrısı",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "boyun fıtığı",
+        "boyun ağrısı",
+        "kola vuran ağrı",
+        "elde uyuşma",
+        "omuz ağrısı",
+        "servikal disk"
+      ],
+      "baslik": "Boyun Fıtığı Nedir? Boyun Fıtığı Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/boyun-fitigi-nedir-boyun-fitigi-belirtileri-nedenleri-ve-tedavisi/",
+      "dil": "tr",
+      "ozet": "Boyun fıtığı, boyun omurları arasındaki diskin yerinden kayarak sinir köklerine veya omuriliğe baskı yapmasıdır. Boyun ve omuz ağrısı, kollara yayılan ağrı, uyuşma, karıncalanma ve güçsüzlük görülür. Yaşa bağlı disk yıpranması, travma ve tekrarlayan zorlanmalar başlıca nedenlerdir; sigara, kötü duruş ve obezite riski artırır. Tanıda muayene, röntgen ve özellikle MR kullanılır. Hafif vakalarda fizik tedavi, ağrı kesiciler ve egzersizler etkilidir; tedaviye yanıt vermeyen ileri vakalarda cerrahi uygulanır. Şiddetli ağrı, kolda güç kaybı veya denge bozukluğunda vakit kaybetmeden doktora başvurulmalıdır."
+    },
+    {
+      "id": "boyunfitigi-saglik-egirdir",
+      "konu": "Boyun fıtığı ve boyun ağrısı",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "boyun fıtığı",
+        "kola vuran ağrı",
+        "ele vuran ağrı",
+        "yürüme güçlüğü"
+      ],
+      "baslik": "Boyun Fıtığı Ağrısı Nereye Vurur?",
+      "kurum": "T.C. Sağlık Bakanlığı Eğirdir Kemik Hastalıkları Tedavi ve Rehabilitasyon Hastanesi",
+      "tur": "resmi",
+      "url": "https://egirdirkemikhastanesi.saglik.gov.tr/TR-743071/boyun-fitigi-agrisi-nereye-vurur.html",
+      "dil": "tr",
+      "ozet": "Boyun fıtığında ağrı genellikle boyunda başlar, omuzlara, kollara ve ellere yayılır; kol ve elde uyuşma ve güç kaybı görülebilir. İleri durumlarda omurilik baskısına bağlı bacaklarda kasılma, yürüme güçlüğü ve bacak ağrıları ortaya çıkabilir. Yaş, ağır bedensel işler, kötü duruş ve travmalar neden olabilir. Tanıda MR ve BT kullanılır. Hafif vakalar fizik tedavi ve ilaçlarla, ağır vakalar cerrahiyle tedavi edilir. Şiddetli ağrı veya kolda güç kaybında mutlaka doktora başvurulmalıdır."
+    },
+    {
+      "id": "osteoartrit-acibadem",
+      "konu": "Kireçlenme (osteoartrit)",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kireçlenme",
+        "osteoartrit",
+        "diz ağrısı",
+        "eklem ağrısı",
+        "dizde çıtırtı",
+        "kalça ağrısı",
+        "artroz"
+      ],
+      "baslik": "Osteoartrit Nedir? Belirtileri, Nedenleri ve Tedavi Yöntemleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/osteoartrit/",
+      "dil": "tr",
+      "ozet": "Osteoartrit (kireçlenme), eklem kıkırdağının zamanla aşınmasıyla oluşan kronik bir hastalıktır; en çok diz, kalça, omurga ve elleri etkiler. Eklem ağrısı, sertlik, hareket kısıtlılığı ve şişlik başlıca belirtilerdir. Yaşlanma, fazla kilo, eklem yaralanmaları ve genetik yatkınlık risk faktörleridir. Tanı muayene, röntgen ve gerekirse MR ile konur. Tedavide kilo verme ve egzersiz gibi yaşam tarzı değişiklikleri, fizik tedavi, ağrı kesiciler ve ileri durumlarda cerrahi (protez) kullanılır. Süren eklem ağrısı veya hareket güçlüğünde doktora başvurulmalıdır."
+    },
+    {
+      "id": "osteoartrit-medlineplus",
+      "konu": "Kireçlenme (osteoartrit)",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "osteoartrit",
+        "kıkırdak",
+        "sabah tutukluğu",
+        "eklem enjeksiyonu"
+      ],
+      "baslik": "Osteoarthritis (Osteoartrit)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/osteoarthritis.html",
+      "dil": "en",
+      "ozet": "Osteoartrit en sık görülen eklem iltihabı (artrit) türüdür. Sağlıklı eklemde kemik uçlarını kaplayan kıkırdak aşınır, kemikler birbirine sürtünür ve kemik çıkıntıları oluşabilir. Hareketle artan ağrı, özellikle uyandıktan sonraki 30 dakika içinde sertlik, eklem şişliği ve hareket kısıtlılığı görülür. Yavaş ilerler ve belirtiler kontrol altına alınabilir. Yaş, fazla kilo, eski yaralanma veya ameliyat, eklemi aşırı kullanma ve genetik risk faktörleridir. Tanı muayene ve gerekirse röntgenle konur. Tedavi egzersiz, kilo kontrolü, destek cihazları, ağrı kesiciler, eklem içi enjeksiyonlar veya cerrahidir."
+    },
+    {
+      "id": "romatoidartrit-hsgm",
+      "konu": "Romatoid artrit (iltihaplı romatizma)",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "romatoid artrit",
+        "iltihaplı romatizma",
+        "sabah tutukluğu",
+        "el eklemlerinde şişlik",
+        "romatizma",
+        "RF"
+      ],
+      "baslik": "Romatoid Artrit",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/kronik-hastaliklar/kas-iskelet-sistemi-hastaliklari/romatoid-artrit.html",
+      "dil": "tr",
+      "ozet": "Romatoid artrit, eklemlerde simetrik (iki tarafta birden) ağrı, şişlik ve tutukluk yapan kronik bir hastalıktır; kalp, akciğer ve göz gibi organları da etkileyebilir. Genetik yatkınlığı olanlarda sigara gibi çevresel faktörler tetikleyicidir. En sık 40-50 yaşlarında başlar, kadınlarda daha sıktır. Sabah kalkınca ellerdeki tutukluğun yarım saati aşması önemli bir işarettir; yorgunluk ve halsizlik eşlik eder, ileri evrede eklemlerde kalıcı şekil bozuklukları gelişebilir. Tanıyı romatolog öykü, muayene ve laboratuvar testleriyle koyar. Tedavi hastalığı tamamen ortadan kaldırmasa da ağrıyı azaltır ve eklem hasarını önler; erken tanı ve tedavi çok önemlidir."
+    },
+    {
+      "id": "romatoidartrit-medlineplus",
+      "konu": "Romatoid artrit (iltihaplı romatizma)",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "romatoid artrit",
+        "otoimmün",
+        "eklem şişliği",
+        "romatolog"
+      ],
+      "baslik": "Rheumatoid Arthritis (Romatoid Artrit)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/rheumatoidarthritis.html",
+      "dil": "en",
+      "ozet": "Romatoid artrit, bağışıklık sisteminin eklemlere saldırdığı kronik bir otoimmün hastalıktır; ağrı, şişlik ve sertlik yapar ve kadınlarda daha sık görülür. Eklem ağrısı, şişlik, kızarıklık, sabah sertliği ve yorgunluk başlıca belirtilerdir. Genetik yatkınlık, sigara ve aile öyküsü risk faktörüdür. Tanıda kan testleri, röntgen ve ultrason kullanılır. Tedavide ilaçlar, yaşam tarzı değişiklikleri ve fizik tedavi uygulanır; erken tedavi eklem hasarını azaltır. Eklemlerde süren ağrı, şişlik, sabah sertliği veya günlük işlerde zorlanma olursa doktora başvurulmalıdır."
+    },
+    {
+      "id": "karpaltunel-acibadem",
+      "konu": "Karpal tünel sendromu",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "karpal tünel",
+        "elde uyuşma",
+        "parmaklarda karıncalanma",
+        "gece el uyuşması",
+        "bilek ağrısı",
+        "sinir sıkışması"
+      ],
+      "baslik": "Karpal Tünel Sendromu Nedir? Nedenleri, Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/karpal-tunel-sendromu-nedir-belirtileri-tedavisi/",
+      "dil": "tr",
+      "ozet": "Karpal tünel sendromu, el bileğindeki median sinirin sıkışmasıdır. El ve parmaklarda uyuşma, karıncalanma, güçsüzlük ve ağrı yapar; şikayetlerin gece artması ve kişiyi uykudan uyandırması tipiktir. Tekrarlayan el hareketleri, bilgisayar kullanımı, gebelik ve diyabet risk faktörleridir; kadınlarda üç kat sıktır ve 30-60 yaşlarında yaygındır. Tanıda muayene, Tinel testi ve sinir iletim testleri (EMG) kullanılır. Hafif vakalarda ergonomik düzenlemeler, bileklik (atel) ve egzersizler etkilidir; ileri vakalarda ameliyat gerekebilir. Belirtiler ilerliyorsa doktora başvurulmalıdır."
+    },
+    {
+      "id": "karpaltunel-medlineplus",
+      "konu": "Karpal tünel sendromu",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "karpal tünel",
+        "atel",
+        "başparmak uyuşması"
+      ],
+      "baslik": "Carpal Tunnel Syndrome (Karpal Tünel Sendromu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/carpaltunnelsyndrome.html",
+      "dil": "en",
+      "ozet": "Karpal tünel sendromu, el bileğinden geçen bir sinirin sıkışmasıyla uyuşma, karıncalanma ve güçsüzlük yapar; başparmak ve ilk üç parmakta uyuşma tipiktir ve özellikle bilek bükülü uyunan gecelerde belirginleşir. Bilek yaralanması, diyabet, romatoid artrit, tekrarlayan el hareketleri ve hormonal değişiklikler neden olabilir; kadınlarda üç kat sıktır. Tanıda muayene, öykü ve gerekirse sinir testleri, röntgen veya ultrason kullanılır. Tedavi bilek ateli, dinlenme, ağrı kesiciler ve enjeksiyondur; ağır durumlarda cerrahi gerekebilir. Erken tedavi kalıcı sinir hasarını önler."
+    },
+    {
+      "id": "bobrektasi-acibadem",
+      "konu": "Böbrek taşı",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "böbrek taşı",
+        "böğür ağrısı",
+        "renal kolik",
+        "belden kasığa vuran ağrı",
+        "idrarda kan",
+        "kum dökme",
+        "ESWL"
+      ],
+      "baslik": "Böbrek Taşı Belirtileri, Nedenleri ve Tedavi Yöntemleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/bobrek-tasi/",
+      "dil": "tr",
+      "ozet": "Böbrek taşı, idrardaki mineral ve tuzların kristalleşmesiyle böbrekte oluşan sert yapılardır. Şiddetli bel, yan (böğür) ve böbrek ağrısı, idrar yaparken yanma, sık idrara çıkma ve idrarda kan başlıca belirtilerdir; ağrı belden kasığa doğru yayılabilir. Az sıvı tüketimi, fazla protein ve tuz, genetik yatkınlık ve idrar yolu enfeksiyonları risk faktörleridir. Tanıda ultrason, tomografi ve laboratuvar testleri kullanılır. Küçük taşlar bol su ve ilaçla düşebilir; büyük taşlarda vücut dışından şok dalgası (ESWL), üreteroskopi veya cerrahi gerekir. Korunmak için bol su içmek, dengeli beslenmek ve tuzu sınırlamak önemlidir. Dayanılmaz ağrı veya ateş gibi enfeksiyon belirtileri acil başvuru gerektirir."
+    },
+    {
+      "id": "bobrektasi-medlineplus",
+      "konu": "Böbrek taşı",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "böbrek taşı",
+        "idrarda kan",
+        "ateş ve titreme",
+        "taş düşürme"
+      ],
+      "baslik": "Kidney Stones (Böbrek Taşları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/kidneystones.html",
+      "dil": "en",
+      "ozet": "Böbrek taşları idrardaki maddelerden böbrekte oluşan, kum tanesinden inci büyüklüğüne kadar değişebilen katı parçalardır. Çoğu taş tedavi gerekmeden idrarla atılır; ancak bazıları sıkışıp idrar akışını engeller ve şiddetli ağrı yapar. Sırtta veya yanda geçmeyen şiddetli ağrı, idrarda kan, ateş ve titreme, kusma, kötü kokulu veya bulanık idrar ve idrar yaparken yanma görülebilir. Genetik yatkınlık, beslenme, sıvı kaybı ve idrar yolu enfeksiyonları riski artırır. Tanıda idrar ve kan testleri ile BT, ultrason veya röntgen kullanılır. Tedavide şok dalgası, endoskopik işlemler veya cerrahi uygulanabilir. Şiddetli ağrı, idrarda kan, ateş, kusma veya idrar yapamama durumunda hemen tıbbi yardım alınmalıdır."
+    },
+    {
+      "id": "prostat-acibadem",
+      "konu": "Prostat büyümesi",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "prostat büyümesi",
+        "BPH",
+        "gece idrara kalkma",
+        "idrar akışı zayıf",
+        "idrar yapmakta zorlanma",
+        "PSA"
+      ],
+      "baslik": "Prostat Büyümesi Nedir? İyi Huylu Prostat Büyümesi (BPH) Belirtileri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/prostat-buyumesi-benign-prostat-hiperplazisi/",
+      "dil": "tr",
+      "ozet": "İyi huylu prostat büyümesi (BPH), yaşla birlikte büyüyen prostat bezinin idrar kanalını sıkıştırmasıdır; 50 yaş üstü erkeklerde yaygındır, 65 yaş üzerinde yaklaşık %29-33 oranında görülür. Sık idrara çıkma, gece idrara kalkma, zayıf idrar akışı, mesaneyi tam boşaltamama hissi ve kesik kesik idrar yapma başlıca belirtilerdir. Hormonal değişiklikler (testosteron, DHT) ve genetik rol oynar; yaş, aile öyküsü, obezite ve hareketsizlik riski artırır. Tanıda parmakla rektal muayene, PSA testi, idrar tahlili, idrar akım hızı ölçümü ve ultrason kullanılır. Tedavi ilaçlar, az girişimsel yöntemler veya cerrahidir. Şikayetler yaşamı etkiliyorsa ya da enfeksiyon, taş gibi sorunlar gelişirse doktora başvurulmalıdır."
+    },
+    {
+      "id": "prostat-medlineplus",
+      "konu": "Prostat büyümesi",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "prostat büyümesi",
+        "idrar yapamama",
+        "alfa bloker"
+      ],
+      "baslik": "Enlarged Prostate (BPH) (Prostat Büyümesi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/enlargedprostatebph.html",
+      "dil": "en",
+      "ozet": "Prostat, mesanenin altında bulunan ve meni sıvısı üreten bir bezdir. BPH prostatın normalden büyük olmasıdır; kanser değildir ve kanser riskini artırmaz. Sık ve ani idrar ihtiyacı, gece idrara kalkma, zayıf veya kesik akım, idrar kaçırma ve tam boşaltamama hissi görülebilir. 40 yaştan sonra risk artar; aile öyküsü, obezite, kalp hastalığı, tip 2 diyabet ve hareketsizlik de risk faktörüdür. Tanıda öykü, rektal muayene, PSA, idrar testleri ve ultrason kullanılır. Tedavi kafein ve alkolü azaltmak gibi yaşam değişiklikleri, ilaçlar (ör. alfa blokerler), girişimsel işlemler veya cerrahidir. Hiç idrar yapamama, ateşle birlikte ağrılı idrar, idrarda kan veya alt karın ağrısı acil durumdur."
+    },
+    {
+      "id": "kbh-acibadem",
+      "konu": "Kronik böbrek hastalığı",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "böbrek yetmezliği",
+        "kronik böbrek hastalığı",
+        "kreatinin yüksek",
+        "GFR",
+        "diyaliz",
+        "ödem",
+        "idrar azalması"
+      ],
+      "baslik": "Böbrek Yetmezliği Nedir? Böbrek Yetmezliği Belirtileri ve Nedenleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/bobrek-yetmezligi-nedir-belirtileri-nedenleri-ve-tedavisi/",
+      "dil": "tr",
+      "ozet": "Böbrek yetmezliği, böbreklerin atık maddeleri ve fazla sıvıyı yeterince süzememesidir; ani gelişen (akut) veya yavaş ilerleyen (kronik) olabilir. Yorgunluk, iştahsızlık, bulantı, vücutta şişlik, idrar miktarında azalma ve yüksek tansiyon görülebilir; akut formda nefes darlığı ve bilinç bulanıklığı da olabilir. En sık nedenler diyabet, yüksek tansiyon, böbrek iltihapları, idrar yolu tıkanıklığı ve uzun süreli ağrı kesici kullanımıdır. Tanıda kreatinin ve üre gibi kan testleri, idrar tahlili ve görüntüleme kullanılır; GFR böbrek işlevini gösterir: evre 1-2 hafif, evre 3 orta, evre 4-5 ileri hasar. Tedavi ilaçlar, beslenme düzenlemesi, diyaliz veya böbrek naklidir; erken tanı çok önemlidir."
+    },
+    {
+      "id": "kbh-medlineplus",
+      "konu": "Kronik böbrek hastalığı",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kronik böbrek hastalığı",
+        "diyabet",
+        "tansiyon",
+        "tuz kısıtlaması"
+      ],
+      "baslik": "Chronic Kidney Disease (Kronik Böbrek Hastalığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/chronickidneydisease.html",
+      "dil": "en",
+      "ozet": "Kronik böbrek hastalığında böbrekler zamanla hasar görür ve kanı iyi süzemez. Böbrekler atıkları ve fazla suyu idrarla atar, kimyasal dengeyi korur ve hormon üretir. En sık nedenler diyabet ve yüksek tansiyondur. Çoğu kişide erken evrede belirti yoktur; hastalık ancak kan ve idrar testleriyle saptanabilir. Tedavi hastalığı iyileştirmez ama ilerlemesini yavaşlatır: tansiyonu düşüren, şeker ve kolesterolü kontrol eden ilaçlar kullanılır. İlerlerse böbrek yetmezliği gelişir ve diyaliz veya nakil gerekebilir. Az tuzlu beslenme, tansiyon ve şeker kontrolü, alkolü sınırlama, kilo verme, egzersiz ve sigarayı bırakma önerilir."
+    },
+    {
+      "id": "pkos-saglik-ankarasehir",
+      "konu": "Polikistik over sendromu (PKOS)",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "polikistik over",
+        "PKOS",
+        "PCOS",
+        "adet düzensizliği",
+        "tüylenme",
+        "kısırlık",
+        "yumurtalık kisti"
+      ],
+      "baslik": "Polikistik Over Sendromu",
+      "kurum": "T.C. Sağlık Bakanlığı Ankara Bilkent Şehir Hastanesi",
+      "tur": "resmi",
+      "url": "https://ankarasehir.saglik.gov.tr/TR-658454/polikistik-over-sendromu.html",
+      "dil": "tr",
+      "ozet": "Polikistik over sendromu, yumurtalıklarda çok sayıda küçük kist (folikül), adet düzensizliği ve erkeklik hormonu yüksekliğiyle seyreden bir durumdur; kadınların yaklaşık %6-10'unda görülür ve tanı genellikle 18 yaştan sonra konur. Adet gecikmesi veya düzensizliği ve aşırı tüylenme başlıca belirtilerdir. Genetik eğilim olabilir; uzun vadede obezite, yüksek tansiyon, kalp hastalığı ve rahim iç zarı kanseri riski artar. Tanı yumurtalıkların ultrasonla görüntülenmesi ve hormon testleriyle konur. Adet düzensizliği ve tüylenme için ilaç tedavisi, çocuk isteyenlere yumurtlamayı uyaran ilaçlar uygulanır; yaşam tarzı değişiklikleri destekleyicidir. Adet düzensizliği, tüylenme veya gebe kalamama sorununda doktora başvurulmalıdır."
+    },
+    {
+      "id": "pkos-medlineplus",
+      "konu": "Polikistik over sendromu (PKOS)",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "PKOS",
+        "insülin direnci",
+        "sivilce",
+        "kilo verememe"
+      ],
+      "baslik": "Polycystic Ovary Syndrome (Polikistik Over Sendromu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/polycysticovarysyndrome.html",
+      "dil": "en",
+      "ozet": "Polikistik over sendromu hormonları etkileyen bir durumdur: yumurtalıklar düzenli çalışmayabilir, erkeklik hormonu düzeyi yüksek olabilir ve yumurtalıklarda kistler oluşabilir. Düzensiz adet, fazla kıllanma, kilo vermede zorluk, şiddetli sivilce ve kısırlık görülebilir; belirtiler kişiden kişiye değişir. Kesin nedeni bilinmez; genetik, insülin direnci ve hormon dengesizlikleri rol oynar. Tek bir tanı testi yoktur; muayene, kan testleri ve ultrason kullanılır. Tedavi egzersiz ve sağlıklı beslenme gibi yaşam tarzı değişiklikleri ile doğum kontrol hapları, erkeklik hormonunu baskılayan ilaçlar ve gerekirse kısırlık tedavisidir. Düzensiz adet, gebe kalamama veya aşırı kıllanmada doktora başvurulmalıdır."
+    },
+    {
+      "id": "adet-acibadem",
+      "konu": "Adet düzensizliği ve adet sancısı",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "adet düzensizliği",
+        "regl düzensizliği",
+        "adet gecikmesi",
+        "şiddetli adet kanaması",
+        "ara kanama",
+        "adet döngüsü"
+      ],
+      "baslik": "Adet Düzensizliği Nedir? Adet Düzensizliği Neden Olur ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/adet-duzensizligi/",
+      "dil": "tr",
+      "ozet": "Normal adet döngüsü 21-35 gün arasındadır; döngünün 21 günden kısa veya 35 günden uzun olması, kanamanın 2 günden az veya 7 günden fazla sürmesi, çok yoğun kanama, ağrı ve yorgunluk adet düzensizliği olarak değerlendirilir. Hormonal dengesizlikler, miyom, polip, enfeksiyonlar ve yumurtlama sorunları başlıca nedenlerdir; stres, kilo değişiklikleri, polikistik over sendromu ve tiroid hastalıkları da düzensizlik yapabilir. Tanıda jinekolojik muayene, ultrason ve kan testleri kullanılır. Tedavi hormon düzenleyici ilaçlar veya altta yatan nedenin giderilmesidir. Düzensizlik yaşayanların kadın doğum uzmanına danışması önerilir."
+    },
+    {
+      "id": "adetagrisi-medlineplus",
+      "konu": "Adet düzensizliği ve adet sancısı",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "adet sancısı",
+        "dismenore",
+        "regl ağrısı",
+        "endometriozis",
+        "miyom"
+      ],
+      "baslik": "Period Pain (Adet Sancısı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/periodpain.html",
+      "dil": "en",
+      "ozet": "Adet sancısı (dismenore) adet döngüsünün sık görülen bir parçasıdır; genellikle alt karında zonklayıcı ağrıdır ve bel ağrısı, bulantı, ishal ve baş ağrısı eşlik edebilir. Birincil dismenore en sık tiptir ve rahmin ürettiği prostaglandin adlı maddelerin fazlalığından kaynaklanır; ikincil dismenore endometriozis veya miyom gibi başka bir hastalığa bağlıdır. Sıcak uygulama, egzersiz, ılık banyo ve gevşeme teknikleri ile ibuprofen, naproksen gibi ağrı kesiciler rahatlatır; alkol ve sigaradan kaçınılmalıdır. Ağrı bu yöntemlerle geçmiyorsa, aniden kötüleşiyorsa veya 25 yaşından sonra başladıysa doktora başvurulmalıdır; tanıda pelvik muayene ve ultrason kullanılabilir."
+    },
+    {
+      "id": "menopoz-saglik-izmir",
+      "konu": "Menopoz",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "menopoz",
+        "sıcak basması",
+        "ateş basması",
+        "gece terlemesi",
+        "vajinal kuruluk",
+        "hormon tedavisi"
+      ],
+      "baslik": "Menopoz Nedir? Hangi Yaşlarda Görülür?",
+      "kurum": "T.C. Sağlık Bakanlığı İzmir İl Sağlık Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://izmirism.saglik.gov.tr/TR-196936/menopoz-nedir-hangi-yaslarda-gorulur.html",
+      "dil": "tr",
+      "ozet": "Menopoz, en az bir yıl adet görülmemesiyle tanımlanan dönemin başlangıcıdır ve doğal bir süreçtir; Türkiye'de ortalama 47 yaşında başlar. Sigara menopozu yaklaşık 2 yıl öne çekebilir; en önemli belirleyici genetiktir. Ateş basması, terleme, çarpıntı, vajinal kuruluk, uyku bozukluğu ve duygusal değişiklikler görülür; belirtiler ortalama 1-2 yıl, bazen 5 yıla kadar sürebilir. Hormon tedavisi 60 yaş öncesi sağlıklı kadınlarda genellikle güvenli kabul edilir, ancak kalp hastalığı, inme ve meme kanseri riskleri nedeniyle uzman tarafından kişiye özel planlanmalıdır. Düzenli egzersiz, sağlıklı beslenme, yeterli uyku ve gerektiğinde psikolojik destek belirtileri hafifletir; bazı hastanelerde menopoz okulları vardır."
+    },
+    {
+      "id": "menopoz-medlineplus",
+      "konu": "Menopoz",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "menopoz",
+        "perimenopoz",
+        "kemik kaybı",
+        "sıcak basması"
+      ],
+      "baslik": "Menopause (Menopoz)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/menopause.html",
+      "dil": "en",
+      "ozet": "Menopoz, 12 ay boyunca adet görülmemesiyle tanımlanan yaşam dönemidir; genellikle 45-55 yaşlarında olur ve öncesinde perimenopoz adı verilen geçiş dönemi yaşanır. Düzensiz adetler, sıcak basmaları, uyku sorunları, vajinal kuruluk ve ruh hali değişiklikleri görülebilir. Menopozdan sonra kemik kaybı, kalp hastalığı ve kolesterol yükselmesi riski artar. Tedavi seçenekleri yaşam tarzı değişiklikleri (egzersiz, stres yönetimi, katmanlı giyinme), hormon dışı ilaçlar ve hormon tedavisidir. Belirtiler günlük yaşamı etkiliyorsa doktora başvurulmalıdır."
+    },
+    {
+      "id": "vajinalmantar-acibadem",
+      "konu": "Vajinal mantar enfeksiyonu",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "vajinal mantar",
+        "kandida",
+        "genital kaşıntı",
+        "beyaz akıntı",
+        "peynirimsi akıntı",
+        "vajinit"
+      ],
+      "baslik": "Vajinal Mantar Nedir, Neden Olur? Vajinal Mantar Belirtileri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/vajinal-mantar/",
+      "dil": "tr",
+      "ozet": "Vajinal mantar (vajinal kandidiyaz), Candida albicans mantarının kontrolsüz çoğalmasıyla vajina ve dış genital bölgede oluşan enfeksiyondur; her dört kadından üçü hayatında en az bir kez yaşar. Vajinal kaşıntı ve tahriş, ilişki sırasında yanma, dış genital bölgede şişlik ve kızarıklık ile yoğun kıvamlı beyaz akıntı tipiktir; idrar yaparken yanma olabilir. Vajinal floranın bozulması, antibiyotik kullanımı, gebelik, diyabet ve zayıf bağışıklık neden olur. Cinsel yolla bulaşan bir hastalık sayılmaz. Tanı muayeneyle, gerekirse akıntının laboratuvar incelemesiyle konur. Tedavide 3-7 gün mantar ilacı krem, fitil veya tablet kullanılır; ağır durumlarda 14 günlük tedavi gerekebilir. Şikayetler geçmezse veya sık tekrarlarsa doktora danışılmalıdır."
+    },
+    {
+      "id": "cocukates-saglik-behcetuz",
+      "konu": "Çocuklarda ateş",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "çocukta ateş",
+        "bebekte ateş",
+        "ateş düşürücü",
+        "yüksek ateş",
+        "havale",
+        "ateş kaç derece"
+      ],
+      "baslik": "Ateş",
+      "kurum": "T.C. Sağlık Bakanlığı İzmir Dr. Behçet Uz Çocuk Hastanesi",
+      "tur": "resmi",
+      "url": "https://behcetuzch.saglik.gov.tr/TR-107608/ates.html",
+      "dil": "tr",
+      "ozet": "Ateş, enfeksiyon yapan bakteri ve virüslerin uyarısıyla vücut ısısının yükselmesidir. Koltuk altından ölçümde 37-37,5°C çok hafif, 37,6-37,9°C hafif, 38-38,5°C orta, 38,5-39,5°C yüksek, 40°C üzeri çok yüksek ateştir. Evde çocuğun kalın giysileri çıkarılmalı, oda sıcaklığı 21-22°C civarında tutulmalı ve ılık (30-32°C) suyla banyo yapılabilir. Hekimin önerdiği dozda parasetamol (genellikle 4-6 saatte bir, kilogram başına 10-15 mg) veya ibuprofen (6-8 saatte bir, kilogram başına 5-10 mg) kullanılabilir. 3 aydan küçük bebekte her ateş, düşmeyen 40°C üzeri ateş, ense sertliği, morumsu döküntü, nefes almada güçlük, kusma-ishal, bilinç değişikliği veya havale (nöbet) varsa hemen doktora başvurulmalıdır."
+    },
+    {
+      "id": "ates-medlineplus",
+      "konu": "Çocuklarda ateş",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ateş",
+        "aspirin çocuklara verilmez",
+        "febril konvülsiyon",
+        "sıvı"
+      ],
+      "baslik": "Fever (Ateş)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/fever.html",
+      "dil": "en",
+      "ozet": "Ateş vücut sıcaklığının normalin (yaklaşık 37°C) üzerine çıkmasıdır; bir hastalık değil, vücudun enfeksiyonla savaştığını gösteren bir işarettir. En sık neden virüs ve bakteri enfeksiyonlarıdır; bazı ilaçlar, sıcak çarpması, kanserler, otoimmün hastalıklar ve aşılar da ateş yapabilir. Tedavi nedene bağlıdır; rahatsız edici yüksek ateşte parasetamol veya ibuprofen kullanılabilir. Çocuklara aspirin verilmemelidir. Sıvı kaybını önlemek için bol sıvı alınmalıdır. Bebek ve küçük çocuklarda yüksek ateş havaleye (febril nöbet) yol açabilir; bu durumda hekime başvurulmalıdır."
+    },
+    {
+      "id": "ortakulak-acibadem",
+      "konu": "Orta kulak iltihabı",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "orta kulak iltihabı",
+        "kulak ağrısı",
+        "otitis",
+        "çocukta kulak ağrısı",
+        "kulak akıntısı",
+        "kulağını tutuyor"
+      ],
+      "baslik": "Orta Kulak İltihabı Nedir? Belirtileri Nelerdir? Nasıl Geçer?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/orta-kulak-iltihabi/",
+      "dil": "tr",
+      "ozet": "Orta kulak iltihabı (otitis media), kulak zarının arkasındaki boşlukta enfeksiyonla birlikte sıvı birikmesidir ve özellikle çocuklarda görülür. Üst solunum yolu enfeksiyonları, östaki borusu tıkanıklığı ve alerjiler başlıca nedenlerdir; çocuklarda östaki borusu daha kısa ve yatay olduğu için daha sıktır. Kulak ağrısı, işitme azalması, ateş ve huzursuzluk tipiktir; küçük çocuklarda sürekli ağlama ve kulağını tutma görülebilir. Tanı otoskopla kulak zarına bakılarak ve timpanometriyle konur. Tedavide ağrı kesiciler ve gerekirse antibiyotik kullanılır; sık tekrarlayan vakalarda kulağa tüp takılabilir. Uzun süren veya şiddetli şikayetlerde KBB uzmanına başvurulmalıdır."
+    },
+    {
+      "id": "ortakulak-medlineplus",
+      "konu": "Orta kulak iltihabı",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kulak enfeksiyonu",
+        "otitis media",
+        "kulak tüpü",
+        "antibiyotik"
+      ],
+      "baslik": "Ear Infections (Kulak Enfeksiyonları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/earinfections.html",
+      "dil": "en",
+      "ozet": "Orta kulak enfeksiyonu çocuklarda en sık görülen enfeksiyonlardan biridir; kulak içindeki kanallar sıvı ve mukusla tıkanır ve işitme etkilenebilir. Kulaktan akıntı, ağlama, kulağı çekiştirme ve uyku sorunları görülebilir. Tanıda doktor otoskopla kulağın içine bakar. Çoğu enfeksiyon kendiliğinden geçer; ağrı kesiciler kullanılabilir, bazı durumlarda antibiyotik gerekir. Sık tekrarlayan enfeksiyonlarda kulağa tüp takılabilir. Belirtiler sürer, işitme sorunu olur veya 3 gün içinde düzelme görülmezse doktora başvurulmalıdır."
+    },
+    {
+      "id": "sucicegi-saglik-asi",
+      "konu": "Suçiçeği",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "suçiçeği",
+        "su çiçeği",
+        "varisella",
+        "kaşıntılı döküntü",
+        "içi su dolu kabarcık",
+        "suçiçeği aşısı"
+      ],
+      "baslik": "Suçiçeği Hastalığı",
+      "kurum": "T.C. Sağlık Bakanlığı Aşı Portalı",
+      "tur": "resmi",
+      "url": "https://asi.saglik.gov.tr/asi-ile-oenlenebilir-hastaliklar/sucicegi-hastaligi.html",
+      "dil": "tr",
+      "ozet": "Suçiçeği, varisella-zoster virüsünün yaptığı, ateşle birlikte yaygın, kaşıntılı ve içi sıvı dolu döküntülerle seyreden bulaşıcı bir hastalıktır. Belirtiler virüsle temastan 10-21 gün sonra başlar; ateş ve halsizlik görülür, döküntüler en çok gövdededir. Solunum yoluyla veya kabarcık sıvısıyla bulaşır; bulaştırıcılık döküntüler çıkmadan yaklaşık bir gün önce başlar ve tüm döküntüler kabuklanana kadar sürer. Ev içinde duyarlı kişilere bulaşma oranı %80-90'dır. Bebeklerde, yetişkinlerde ve bağışıklığı zayıf kişilerde zatürre, beyin iltihabı ve karaciğer sorunları gibi ciddi komplikasyonlar gelişebilir. En etkili korunma aşıdır; temas şüphesinde hekime danışılmalıdır."
+    },
+    {
+      "id": "sucicegi-medlineplus",
+      "konu": "Suçiçeği",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "suçiçeği",
+        "Reye sendromu",
+        "kalamin losyonu",
+        "antiviral"
+      ],
+      "baslik": "Chickenpox (Suçiçeği)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/chickenpox.html",
+      "dil": "en",
+      "ozet": "Suçiçeği varisella-zoster virüsünün yaptığı bir enfeksiyondur; çoğunlukla 15 yaş altındaki çocuklarda görülür. Kaşıntılı, sıvı dolu kabarcıklar tipiktir; ateş, baş ağrısı, yorgunluk ve iştahsızlık eşlik eder. Genellikle hafif seyreder ve 5-10 gün sürer. Kaşıntı için kalamin losyonu ve yulaf banyosu, ateş için parasetamol kullanılabilir; Reye sendromu riski nedeniyle çocuklara aspirin verilmemelidir. Yetişkinler, bebekler, gebeler ve bağışıklığı zayıf kişilerde daha ağır seyredebilir ve antiviral ilaç gerekebilir. Aşı hastalığı önlemede etkilidir. Belirtiler ağırlaşırsa veya komplikasyon gelişirse doktora başvurulmalıdır."
+    },
+    {
+      "id": "depresyon-acibadem",
+      "konu": "Depresyon",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "depresyon",
+        "mutsuzluk",
+        "isteksizlik",
+        "hiçbir şeyden keyif alamama",
+        "umutsuzluk",
+        "antidepresan",
+        "intihar düşüncesi"
+      ],
+      "baslik": "Depresyon Nedir? Depresyon Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/depresyon/",
+      "dil": "tr",
+      "ozet": "Depresyon, sürekli üzüntü hali, ilgi kaybı ve günlük etkinliklerden keyif alamamayla kendini gösteren ciddi bir ruh sağlığı bozukluğudur. Belirtilerin en az iki hafta sürmesi önemlidir; yorgunluk, uyku bozukluğu, konsantrasyon güçlüğü, değersizlik hissi ve intihar düşünceleri görülebilir. Genetik yatkınlık, beyin kimyasındaki dengesizlik, travmatik yaşantılar ve hormonal değişiklikler rol oynar. Tanı muayene, gerekirse laboratuvar testleri ve psikiyatrik değerlendirmeyle konur. Tedavide antidepresan ilaçlar, psikoterapi ve yaşam tarzı değişiklikleri kullanılır. Belirtiler sürüyorsa profesyonel yardım alınmalıdır; intihar düşüncesi varsa beklemeden 112 aranmalıdır."
+    },
+    {
+      "id": "depresyon-medlineplus",
+      "konu": "Depresyon",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "depresyon",
+        "psikoterapi",
+        "antidepresan",
+        "intihar"
+      ],
+      "baslik": "Depression (Depresyon)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/depression.html",
+      "dil": "en",
+      "ozet": "Depresyon sıradan üzüntüden öte, ciddi bir ruh sağlığı hastalığıdır. Belirtilerin en az iki hafta sürmesi gerekir: boşluk hissi, umutsuzluk, uyku değişiklikleri, yorgunluk ve günlük işleri yapmakta zorlanma. Genetik, biyolojik, çevresel ve psikolojik etkenler rol oynar; kadınlarda daha sıktır, aile öyküsü ve stresli yaşam olayları riski artırır. Tanıda öykü, muayene, testler ve ruh sağlığı değerlendirmesi kullanılır. Tedavi antidepresan ilaçlar ve psikoterapinin birlikte kullanılmasıdır; ağır vakalarda elektrokonvülsif tedavi veya beyin uyarım yöntemleri uygulanabilir. İntihar düşüncesi olan biri için hemen acil yardım (Türkiye'de 112) aranmalıdır."
+    },
+    {
+      "id": "anksiyete-saglik-erenkoy",
+      "konu": "Kaygı bozukluğu ve panik atak",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "anksiyete",
+        "kaygı bozukluğu",
+        "panik atak",
+        "panik bozukluk",
+        "çarpıntı ve korku",
+        "fobi",
+        "sürekli endişe"
+      ],
+      "baslik": "Anksiyete Bozuklukları",
+      "kurum": "T.C. Sağlık Bakanlığı Erenköy Ruh ve Sinir Hastalıkları EAH",
+      "tur": "resmi",
+      "url": "https://erenkoyruhsinireah.saglik.gov.tr/TR-127745/anksiyete-bozukluklari.html",
+      "dil": "tr",
+      "ozet": "Anksiyete, gerçek bir nedeni olmayan aşırı kaygı halidir; kişi kendisinin veya yakınlarının başına bir şey geleceği endişesi taşır. Dikkat dağınıklığı ve unutkanlık gibi zihinsel belirtilerin yanında nefes darlığı, terleme, çarpıntı ve uyuşma gibi bedensel belirtiler görülür. Yaşam boyu görülme sıklığı %15-30'dur. Başlıca türleri yaygın anksiyete bozukluğu, panik bozukluk, sosyal fobi ve özgül fobilerdir; panik bozukluk ani ve yoğun korku nöbetleriyle karakterizedir. Psikiyatrik değerlendirme sonrası ilaç tedavisi ve psikoterapi uygulanır."
+    },
+    {
+      "id": "panik-medlineplus",
+      "konu": "Kaygı bozukluğu ve panik atak",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "panik atak",
+        "panik bozukluk",
+        "bilişsel davranışçı terapi",
+        "göğüs ağrısı"
+      ],
+      "baslik": "Panic Disorder (Panik Bozukluk)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/panicdisorder.html",
+      "dil": "en",
+      "ozet": "Panik bozukluk, ani korku, sıkıntı veya kontrolü kaybetme hissiyle gelen ataklarla seyreden bir kaygı bozukluğudur. Hızlı kalp atışı, terleme, titreme, nefes darlığı, göğüs ağrısı ve baş dönmesi görülür; ataklar birkaç dakikadan bir saate kadar sürebilir. Genetik, beyin kimyası, çevresel faktörler ve stres rol oynar; kadınlarda daha sıktır ve çoğunlukla gençlikte başlar. Doktor öykü alır, muayene eder ve kalp sorunları gibi başka nedenleri dışlamak için testler isteyebilir. Tedavide bilişsel davranışçı terapi, antidepresanlar ve kaygı giderici ilaçlar kullanılır; sağlıklı yaşam alışkanlıkları ve destek grupları da yararlıdır."
+    },
+    {
+      "id": "egzama-acibadem",
+      "konu": "Egzama (atopik dermatit)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "egzama",
+        "atopik dermatit",
+        "kaşıntı",
+        "cilt kuruluğu",
+        "kızarıklık",
+        "pullanma",
+        "bebekte egzama"
+      ],
+      "baslik": "Atopik Dermatit Nedir? Atopik Dermatit Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/atopik-dermatit-nedir-belirtileri-tedavisi/",
+      "dil": "tr",
+      "ozet": "Atopik dermatit (egzama), genetik yatkınlık ve bağışıklık sisteminin aşırı tepkisiyle gelişen kronik bir cilt hastalığıdır; çoğunlukla bebeklikte başlar. Şiddetli kaşıntı, kızarıklık, kuruluk ve pullanma tipiktir; en çok dirsek içi, diz arkası, eller ve yüzde görülür. Stres, soğuk hava, deterjanlar ve alerjenler alevlenmeleri tetikler. Tanı dermatolojik muayene ve gerekirse alerji testleriyle konur. Tedavide nemlendiriciler, kortizonlu kremler ve antihistaminikler kullanılır; ileri vakalarda ışık tedavisi (fototerapi) ve biyolojik ilaçlar uygulanabilir. Belirtiler kontrol altına alınamazsa dermatoloğa başvurulmalıdır."
+    },
+    {
+      "id": "egzama-medlineplus",
+      "konu": "Egzama (atopik dermatit)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "egzama",
+        "dermatit",
+        "kaşıntı",
+        "nemlendirici"
+      ],
+      "baslik": "Eczema (Egzama)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/eczema.html",
+      "dil": "en",
+      "ozet": "Egzama, ciltte iltihaplanmaya yol açan birkaç hastalığın ortak adıdır; en sık tipi atopik dermatittir ve özellikle bebek ve çocuklarda görülür. Kuruluk, kaşıntı ve yüzde, dirsek içinde, diz arkasında, el ve ayaklarda kızarık döküntüler yapar; kaşıdıkça cilt daha da tahriş olur. Nedeni tam bilinmez; genetik ve çevresel etkenler rol oynar. Bazı sabunlar, kumaşlar, stres ve alerjenler tetikleyebilir. Tedavide ilaçlar, cilt kremleri, ışık tedavisi ve düzenli cilt bakımı kullanılır; belirtiler dönem dönem iyileşip kötüleşebilir. Süren kaşıntı, uyku bozukluğu veya ağır durumlarda dermatoloğa başvurulmalıdır."
+    },
+    {
+      "id": "sedef-acibadem",
+      "konu": "Sedef hastalığı (psoriasis)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "sedef",
+        "psoriasis",
+        "pullu kırmızı lekeler",
+        "dirsekte pullanma",
+        "saçlı deride pullanma",
+        "tırnakta çukurlaşma"
+      ],
+      "baslik": "Sedef (Psorias) Hastalığı Nedir? Sedef Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/sedef-hastaligi/",
+      "dil": "tr",
+      "ozet": "Sedef hastalığı (psoriasis), bağışıklık sisteminin aşırı tepkisiyle cilt hücrelerinin çok hızlı çoğalmasına yol açan kronik bir deri hastalığıdır. Ciltte keskin sınırlı, kabarık, üzeri gümüş renkli pullarla kaplı kırmızı lekeler, kaşıntı ve yanma ile tırnak değişiklikleri görülür; en sık dirsek, diz, saçlı deri ve tırnaklarda olur. Genetik yatkınlık, stres, enfeksiyonlar, bazı ilaçlar, sigara ve alkol tetikleyebilir. Tanı muayeneyle, gerekirse deri biyopsisiyle konur. Tedavide cilde sürülen kremler, ışık tedavisi, sistemik ve biyolojik ilaçlar kullanılır. Şikayetler artarsa veya yaşam kalitesi etkilenirse dermatoloğa başvurulmalıdır."
+    },
+    {
+      "id": "sedef-medlineplus",
+      "konu": "Sedef hastalığı (psoriasis)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "sedef",
+        "psoriasis",
+        "psoriatik artrit",
+        "ışık tedavisi"
+      ],
+      "baslik": "Psoriasis (Sedef Hastalığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/psoriasis.html",
+      "dil": "en",
+      "ozet": "Sedef, bağışıklık sistemiyle ilgili bir cilt hastalığıdır; kaşıntılı veya hassas, kalın, kırmızı ve üzeri gümüş renkli pullu lekeler yapar. Genellikle dirsek, diz, saçlı deri ve ayaklarda görülür. Normalde yaklaşık bir ayda yenilenen cilt hücreleri sedefte birkaç günde yenilenir ve birikir. Enfeksiyonlar, stres, cilt kuruluğu ve bazı ilaçlar alevlenmeleri tetikleyebilir. Tanıda bazen cilt örneği mikroskopta incelenir. Tedavi kremler, ilaçlar ve ışık tedavisidir. Ömür boyu sürebilir, ailede görülebilir ve dönem dönem alevlenir; bazı kişilerde eklemleri tutan psoriatik artrit eşlik edebilir."
+    },
+    {
+      "id": "akne-acibadem",
+      "konu": "Sivilce (akne)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "sivilce",
+        "akne",
+        "siyah nokta",
+        "yağlı cilt",
+        "sivilce izi",
+        "benzoil peroksit"
+      ],
+      "baslik": "Sivilce (Akne) Nasıl Geçer? Sivilce Neden Çıkar?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/sivilce-nasil-gecer-neden-cikar/",
+      "dil": "tr",
+      "ozet": "Sivilce (akne), gözeneklerin yağ ve ölü deri hücreleriyle tıkanmasıyla oluşan yaygın bir deri sorunudur. Hormonal değişiklikler, genetik yatkınlık, stres ve yanlış cilt bakımı başlıca nedenlerdir. Tedavi düzenli temizlik, yağsız ürünler ve salisilik asit veya benzoil peroksit içeren kremlerle başlar; orta-şiddetli vakalarda ağızdan ilaçlar, kimyasal peeling ve lazer uygulanabilir. Sivilceler sıkılmamalıdır; iz kalmaması için erken tedavi önemlidir. Uzun süren veya ağırlaşan sivilcelerde dermatoloğa başvurulmalıdır."
+    },
+    {
+      "id": "akne-medlineplus",
+      "konu": "Sivilce (akne)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "akne",
+        "sivilce",
+        "ergenlik",
+        "hormon"
+      ],
+      "baslik": "Acne (Akne)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/acne.html",
+      "dil": "en",
+      "ozet": "Akne, kıl köklerinin tıkanmasıyla oluşan yaygın bir cilt hastalığıdır; genellikle yüz, boyun, sırt ve göğüste görülür ve en sık gençlerde ve genç yetişkinlerde olur. Ergenlik ve gebelik gibi hormonal değişiklikler ana nedendir. Çikolata ve yağlı yiyeceklerin akne yaptığı yaygın bir inanıştır, ancak kanıtı sınırlıdır; kirli cilt de akneye yol açmaz. Tedavide ilaçlar ve kremler kullanılır; cildi nazikçe temizlemek, yüze dokunmamak ve güneşten korunmak önerilir. Ciddi bir hastalık değildir ama iz bırakabilir; kötüleşirse veya iz oluşursa dermatoloğa başvurulmalıdır."
+    },
+    {
+      "id": "urtiker-acibadem",
+      "konu": "Kurdeşen (ürtiker)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kurdeşen",
+        "ürtiker",
+        "kabarık kaşıntılı döküntü",
+        "alerji",
+        "antihistaminik",
+        "dudak şişmesi"
+      ],
+      "baslik": "Kurdeşen (Ürtiker) Nedir? Kurdeşen Neden Olur?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/kurdesen-urtiker/",
+      "dil": "tr",
+      "ozet": "Kurdeşen (ürtiker), ciltte aniden ortaya çıkan kaşıntılı, kabarık ve kızarık döküntülerle seyreden bir reaksiyondur; döküntüler saatler içinde kaybolup başka yerlerde yeniden çıkabilir. Besin alerjileri, ilaçlar, enfeksiyonlar, stres ve basınç, sıcak-soğuk gibi fiziksel etkenler tetikleyebilir; mast hücrelerinden histamin salınmasıyla oluşur. Altı haftadan kısa süren tipe akut, daha uzun sürene kronik ürtiker denir. Tedavide antihistaminik ilaçlar, tetikleyiciden kaçınma ve soğuk kompres kullanılır. Nefes darlığı, dil-dudak-boğaz şişmesi gibi ağır belirtilerde acil tıbbi müdahale gerekir."
+    },
+    {
+      "id": "urtiker-medlineplus",
+      "konu": "Kurdeşen (ürtiker)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kurdeşen",
+        "ürtiker",
+        "anjiyoödem",
+        "boğazda şişlik"
+      ],
+      "baslik": "Hives (Kurdeşen)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/hives.html",
+      "dil": "en",
+      "ozet": "Kurdeşen, vücudun alerjiye karşı salgıladığı kimyasallar nedeniyle ciltte oluşan kızarık ve kaşıntılı kabarıklıklardır; çoğunlukla bir ilaç veya besine karşı alerjik tepki olarak ortaya çıkar, enfeksiyon ve stres de tetikleyebilir. Çoğu zaman kendiliğinden geçer; ağır durumlarda ilaç veya iğne gerekebilir. Nadiren hava yollarında tehlikeli şişlik gelişerek nefes almayı zorlaştırabilir. Nefes darlığı, yüzde şişme veya boğazda sıkışma hissi varsa hemen acil servise başvurulmalıdır."
+    },
+    {
+      "id": "konjonktivit-acibadem",
+      "konu": "Konjonktivit (göz nezlesi)",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "konjonktivit",
+        "göz nezlesi",
+        "göz kızarıklığı",
+        "gözde çapak",
+        "göz sulanması",
+        "göz kaşıntısı"
+      ],
+      "baslik": "Konjonktivit Nedir? Konjonktivit Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/konjonktivit/",
+      "dil": "tr",
+      "ozet": "Konjonktivit (göz nezlesi), gözün beyaz kısmını örten zarın (konjonktiva) iltihaplanmasıdır; virüs, bakteri veya alerjiler neden olur. Kızarıklık, yanma, sulanma, göz kapaklarında şişlik, ışığa hassasiyet ve bulanık görme görülebilir. Viral tip çok bulaşıcıdır ve genellikle kendiliğinden geçer; bakteriyel tipte yapışkan akıntı ve çapak belirgindir ve antibiyotikli damla gerekebilir; alerjik tip bulaşıcı değildir. Tedavide hijyen kuralları, uygun damla ve merhemler kullanılır. Şikayetler uzun sürerse göz doktoruna başvurulmalıdır."
+    },
+    {
+      "id": "konjonktivit-medlineplus",
+      "konu": "Konjonktivit (göz nezlesi)",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "konjonktivit",
+        "pembe göz",
+        "antibiyotikli göz damlası",
+        "bulaşıcı"
+      ],
+      "baslik": "Pink Eye (Konjonktivit)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/pinkeye.html",
+      "dil": "en",
+      "ozet": "Konjonktivit, göz beyazını ve göz kapağının iç yüzünü kaplayan zarın iltihaplanmasıdır. Kaşıntı, yanma, kızarıklık ve akıntı yapar. Virüs veya bakteri, alerji, kontakt lens ürünleri ve tahriş edici maddeler neden olabilir. Enfeksiyona bağlı olan tipi kişiden kişiye kolayca bulaşır ama görmeyi etkilemez. Çoğu zaman tedavisiz geçer; bakteriyel enfeksiyonlarda antibiyotikli göz damlası veya merhemi gerekir. Şikayetler ağırsa, uzun sürerse veya yenidoğan bebekte göz enfeksiyonu varsa doktora başvurulmalıdır."
+    },
+    {
+      "id": "crp-acibadem",
+      "konu": "CRP ve sedimantasyon",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "CRP",
+        "C-reaktif protein",
+        "enfeksiyon değeri",
+        "iltihap değeri",
+        "sedimantasyon",
+        "sedim",
+        "hs-CRP"
+      ],
+      "baslik": "CRP Nedir? CRP Yüksekliği Neden Olur?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/crp-nedir/",
+      "dil": "tr",
+      "ozet": "CRP (C-reaktif protein), karaciğerde üretilen ve enfeksiyon ile iltihap durumlarında artan bir proteindir. Sayfada sağlıklı yetişkinde normal değer 3 mg/L'nin altı olarak verilir; 10-50 mg/L hafif-orta iltihabı, 50-100 mg/L şiddetli enfeksiyonu, 100 mg/L üzeri ciddi akut bakteriyel enfeksiyonu düşündürür (laboratuvarlar farklı birim kullanabilir: 1 mg/dL = 10 mg/L). Enfeksiyonlar, romatoid artrit ve lupus gibi otoimmün hastalıklar, kalp krizi, obezite ve diyabet yükseltebilir; sigara ve stres de etkiler. CRP tek başına tanı koydurmaz, ancak iltihabın şiddetini ve tedaviye yanıtı izlemede kullanılır; genellikle sedimantasyonla birlikte değerlendirilir. Yüksek değerlerde doktor kontrolü gerekir."
+    },
+    {
+      "id": "crp-medlineplus",
+      "konu": "CRP ve sedimantasyon",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "CRP testi",
+        "hs-CRP",
+        "kalp hastalığı riski",
+        "iltihap"
+      ],
+      "baslik": "C-Reactive Protein (CRP) Test (CRP Testi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/lab-tests/c-reactive-protein-crp-test/",
+      "dil": "en",
+      "ozet": "CRP testi, karaciğerin ürettiği ve vücuttaki iltihap düzeyini yansıtan bir proteinin kandaki miktarını ölçer. Bakteriyel enfeksiyonlar, otoimmün hastalıklar ve kronik iltihabi durumları saptamak ve izlemek için istenir; ateş, hızlı nabız ve hızlı solunumu olan hastalarda sık kullanılır. Özel bir hazırlık veya açlık gerekmez, ancak kullanılan ilaçlar doktora bildirilmelidir. Yüksek sonuç vücutta iltihap olduğunu gösterir ama nedenini söylemez. Yüksek duyarlıklı CRP (hs-CRP) ise kalp hastalığı riskini tahmin etmek için kullanılan ayrı, daha hassas bir testtir."
+    },
+    {
+      "id": "kreatinin-acibadem",
+      "konu": "Böbrek testleri (kreatinin, üre, eGFR)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kreatinin",
+        "kreatinin yüksekliği",
+        "üre",
+        "BUN",
+        "eGFR",
+        "böbrek fonksiyon testi"
+      ],
+      "baslik": "Kreatinin Nedir? Kreatinin Düşüklüğü ve Yüksekliği Nedir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/kreatinin/",
+      "dil": "tr",
+      "ozet": "Kreatinin, kas metabolizması sırasında oluşan ve böbreklerle atılan bir atık maddedir; kandaki düzeyi böbrek işlevinin önemli bir göstergesidir. Sayfada normal değerler erkeklerde 0,6-1,2 mg/dL, kadınlarda 0,5-1,1 mg/dL olarak verilir. Yüksekliği böbrek enfeksiyonu, diyabet, yüksek tansiyon ve böbrek yetmezliğiyle ilişkili olabilir; düşüklüğü düşük kas kütlesi, yetersiz protein alımı ve karaciğer hastalıklarıyla ilişkilidir. Kreatinin, böbreğin süzme hızını gösteren eGFR'nin hesaplanmasında kullanılır. 2,0 mg/dL üzeri değerler dikkat gerektirir, 5,0 mg/dL ve üzeri ciddi böbrek sorununa işaret eder. Anormal sonuçlarda uzman değerlendirmesi gerekir."
+    },
+    {
+      "id": "kreatinin-medlineplus",
+      "konu": "Böbrek testleri (kreatinin, üre, eGFR)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kreatinin testi",
+        "eGFR",
+        "24 saatlik idrar",
+        "böbrek hastalığı"
+      ],
+      "baslik": "Creatinine Test (Kreatinin Testi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/lab-tests/creatinine-test/",
+      "dil": "en",
+      "ozet": "Kreatinin testi, kas dokusunun yıkımıyla oluşan normal bir atık ürünün kandaki veya idrardaki düzeyini ölçer. Sağlıklı böbrekler kreatinini süzüp atar; böbrek hastalığında kanda birikir. Test böbrek sağlığını değerlendirmek, böbrek hastalığını tanımak ve tedaviyi izlemek için istenir; diyabet, yüksek tansiyon, kalp hastalığı olanlar ve 50 yaş üstü kişiler daha risklidir. Testten önceki gün et yememeniz istenebilir; idrar testi için 24 saatlik idrar toplanabilir. Normal değerler kas kütlesi, yaş ve beslenmeye göre değişir. Kreatininden hesaplanan eGFR böbrek işlevini daha doğru gösterir ve hastalığın evresini belirler."
+    },
+    {
+      "id": "idrartahlili-acibadem",
+      "konu": "Tam idrar tahlili",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "idrar tahlili",
+        "tam idrar tahlili",
+        "idrarda lökosit",
+        "nitrit",
+        "idrarda protein",
+        "idrarda kan",
+        "idrarda şeker",
+        "keton"
+      ],
+      "baslik": "İdrar Tahlili Nedir? Tam İdrar Tahlili Nasıl Yapılır?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/idrar-tahlili-nedir-tam-idrar-tahlili-nasil-yapilir/",
+      "dil": "tr",
+      "ozet": "Tam idrar tahlili, idrarın fiziksel (renk, berraklık), kimyasal ve mikroskobik özelliklerini inceleyerek böbrek, idrar yolu ve metabolik hastalıkları değerlendirir. Tercihen sabah ilk idrarından, 'orta akım' yöntemiyle (ilk kısmı tuvalete bırakıp ortasını kaba alarak) örnek verilir. Normalde protein, glukoz, keton, nitrit, lökosit esteraz ve bilirubin negatiftir; mikroskopta eritrosit büyük büyütme alanında 0-3 arasındadır. Lökosit ve nitrit pozitifliği idrar yolu enfeksiyonunu, protein böbrek hasarını, glukoz ve keton diyabeti, kristaller taş eğilimini düşündürebilir. Sonuçlar belirtilerle birlikte doktorca yorumlanmalıdır; enfeksiyon şüphesinde idrar kültürü istenebilir."
+    },
+    {
+      "id": "antibiyotik-saglik",
+      "konu": "Akılcı antibiyotik kullanımı",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "antibiyotik",
+        "antibiyotik direnci",
+        "grip antibiyotik",
+        "akılcı ilaç",
+        "reçetesiz antibiyotik",
+        "antibiyotiği yarıda bırakmak"
+      ],
+      "baslik": "Antibiyotiklerin Geleceği İçin Akılcı Antibiyotik Kullanımı Önemlidir",
+      "kurum": "T.C. Sağlık Bakanlığı",
+      "tur": "resmi",
+      "url": "https://www.saglik.gov.tr/TR-100793/antibiyotiklerin-gelecegi-icin-akilci-antibiyotik-kullanimi-onemlidir.html",
+      "dil": "tr",
+      "ozet": "Antibiyotikler yalnızca bakterilerin yaptığı enfeksiyonlara etkilidir; grip ve soğuk algınlığı gibi virüs kaynaklı hastalıklarda işe yaramaz. Gereksiz ve yanlış kullanım bakterilerde direnç gelişmesine yol açar; dirençli bakteriler enfeksiyonların tedavisini zorlaştırır ve ölüm riskini artırır. Antibiyotikler yalnızca hekim reçetesiyle, önerilen doz ve sürede kullanılmalı, iyileşme hissedilse bile tedavi yarıda bırakılmamalıdır. Evde kalan antibiyotikler saklanıp başka bir hastalıkta kendiliğinden kullanılmamalıdır. Dünya Sağlık Örgütü, antibiyotik direncinin 2050'ye kadar dünyada yılda 10 milyon ölüme yol açabileceğini tahmin etmektedir."
+    },
+    {
+      "id": "antibiyotik-medlineplus",
+      "konu": "Akılcı antibiyotik kullanımı",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "antibiyotik",
+        "yan etki",
+        "ishal",
+        "alerjik reaksiyon",
+        "direnç"
+      ],
+      "baslik": "Antibiotics (Antibiyotikler)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/antibiotics.html",
+      "dil": "en",
+      "ozet": "Antibiyotikler bakterilerin yaptığı enfeksiyonları tedavi eden ilaçlardır; ağızdan, cilde sürülerek veya iğneyle verilebilir. Bazı boğaz enfeksiyonları ve idrar yolu enfeksiyonları gibi bakteriyel hastalıklarda etkilidir, grip veya soğuk algınlığı gibi viral enfeksiyonlarda fayda sağlamaz. Kendinizi iyi hissetseniz bile tedaviyi tamamlamak önemlidir; başkasından kalan antibiyotiği kullanmak veya ilacınızı paylaşmak tehlikelidir. Sık yan etkiler bulantı ve ishaldir; ciddi alerjik reaksiyonlar olabilir. Gereksiz kullanım bakteri direncine yol açar; antibiyotik yalnızca gerektiğinde, sağlık profesyonelinin kararıyla kullanılmalıdır."
+    },
+    {
+      "id": "anafilaksi-acibadem",
+      "konu": "Anafilaksi (alerjik şok)",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "anafilaksi",
+        "alerjik şok",
+        "arı sokması",
+        "dil şişmesi",
+        "boğazda şişlik",
+        "adrenalin kalemi",
+        "nefes alamama"
+      ],
+      "baslik": "Anafilaksi Nedir? Anafilaksi Belirtileri Nelerdir? Anafilaksi Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/anafilaksi/",
+      "dil": "tr",
+      "ozet": "Anafilaksi, bir alerjene karşı hızla gelişen ve hayatı tehdit edebilen ciddi bir alerjik tepkidir. Besinler, ilaçlar, arı gibi böcek sokmaları ve lateks tetikleyebilir. Yaygın kızarıklık ve kabarıklık, dudak-dil-boğaz şişmesi, nefes almada zorluk, hırıltı, tansiyon düşmesi, çarpıntı, baş dönmesi ve bayılma görülebilir. İlk yardımda varsa adrenalin (epinefrin) oto-enjektörü hemen uyluğun dış yan yüzüne uygulanmalı ve 112 aranmalıdır. Hastanede oksijen, antihistaminik ve kortizon verilir. Ağır alerjisi olanlar alerjenden kaçınmalı, tıbbi uyarı kartı taşımalı ve adrenalin oto-enjektörünü her zaman yanında bulundurmalıdır."
+    },
+    {
+      "id": "anafilaksi-medlineplus",
+      "konu": "Anafilaksi (alerjik şok)",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "anafilaksi",
+        "epinefrin",
+        "bacakları yükseltme",
+        "alerji"
+      ],
+      "baslik": "Anaphylaxis (Anafilaksi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000844.htm",
+      "dil": "en",
+      "ozet": "Anafilaksi tüm vücudu etkileyen, hayatı tehdit eden bir alerjik tepkidir; salınan histamin gibi maddeler hava yollarını daraltır. En sık nedenler arı sokması, ilaçlar ve besin alerjileridir. Belirtiler saniyeler-dakikalar içinde başlar: nefes darlığı, şişlik, baş dönmesi, bulantı ve bilinç kaybı görülebilir. Hemen acil yardım (Türkiye'de 112) aranmalı, varsa adrenalin oto-enjektörü uygulanmalı, kişi sırtüstü yatırılıp bacakları kaldırılmalı ve hava yolu kontrol edilmelidir; nefes almakta zorlanan kişiye ağızdan bir şey verilmemelidir. Tedavi edilmezse kalp durması ve ölüm görülebilir; hızlı müdahaleyle iyileşme beklenir. Ağır alerjisi olanlar alerjenden kaçınmalı ve yanında adrenalin taşımalıdır."
+    },
+    {
+      "id": "yanik-acibadem",
+      "konu": "Yanık ve ilk yardım",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "yanık",
+        "haşlanma",
+        "sıcak su yanığı",
+        "yanık derecesi",
+        "yanıkta ilk yardım",
+        "kabarcık"
+      ],
+      "baslik": "Yanık Nedir? Yanık Dereceleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/yanik-tedavisi/",
+      "dil": "tr",
+      "ozet": "Yanıklar cildin ısı, kimyasal madde veya elektrikle hasar görmesidir. Birinci derece yanıkta kızarıklık ve ağrı, ikinci derecede su dolu kabarcıklar ve şiddetli ağrı olur; üçüncü derece yanık cildin tüm katmanlarını tutar ve sinirler hasar gördüğü için ağrı az olabilir. İlk yardımda yanık bölge 10-15 dakika serin suyla soğutulmalı ve temiz bir bezle örtülmelidir; buz, diş macunu, yoğurt veya yağ sürülmemeli, kabarcıklar patlatılmamalıdır. Vücut yüzeyinin %10'undan fazlasını kaplayan yanıklar, yüz, el, ayak ve kasıktaki yanıklar ile ikinci-üçüncü derece yanıklar acil tıbbi müdahale gerektirir. Tedavide pansuman, ağrı kesici, enfeksiyon önleme ve ağır vakalarda deri nakli uygulanır."
+    },
+    {
+      "id": "yanik-medlineplus",
+      "konu": "Yanık ve ilk yardım",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "yanık",
+        "kimyasal yanık",
+        "elektrik yanığı",
+        "güneş yanığı"
+      ],
+      "baslik": "Burns (Yanıklar)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/burns.html",
+      "dil": "en",
+      "ozet": "Yanıklar ısı, kimyasal maddeler, elektrik, güneş ışığı veya radyasyondan kaynaklanır; en sık nedenler sıcak sıvılar, buhar ve yangındır. Birinci derece yanık yalnızca cildin dış tabakasını, ikinci derece dış ve altındaki tabakayı, üçüncü derece en derin tabakayı ve altındaki dokuları etkiler. Hafif yanıklarda serin suyla soğutma ve antibiyotikli krem yeterli olabilir. Ağır yanıklarda şok, enfeksiyon ve ölüm riski vardır ve hastane tedavisi gerekir. Geniş alanı kaplayan, üçüncü derece veya yüz ve eklemleri tutan yanıklarda ve bilinç kaybında acil servise başvurulmalıdır."
+    },
+    {
+      "id": "zehirlenme-saglik-goynuk",
+      "konu": "Zehirlenme ve ilk yardım",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "zehirlenme",
+        "114",
+        "zehir danışma",
+        "çamaşır suyu içti",
+        "ilaç zehirlenmesi",
+        "mantar zehirlenmesi",
+        "karbonmonoksit",
+        "soba zehirlenmesi"
+      ],
+      "baslik": "Zehirlenmelerde İlk Yardım",
+      "kurum": "T.C. Sağlık Bakanlığı Göynük Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://goynukdh.saglik.gov.tr/TR-740959/zehirlenmelerde-ilk-yardim.html",
+      "dil": "tr",
+      "ozet": "Zehirlenme, zehirli bir maddenin vücuda girmesiyle normal işlevlerin bozulmasıdır; ağız (zehirli maddeler, mantarlar, bozuk besinler, fazla ilaç), solunum (karbonmonoksit, klor) veya deri yoluyla (temas, ısırma, sokma) olabilir. Bulantı, kusma, baş ağrısı, nefes darlığı, nabız bozukluğu ve bilinç kaybı görülebilir. Ağız yoluyla zehirlenmede bilinç kontrol edilir, ağız suyla çalkalanır; yakıcı madde içildiyse kesinlikle kusturulmaz; bilinç kapalıysa kişi yan yatırılır (koma pozisyonu). Solunum yoluyla zehirlenmede ortam havalandırılır, kişi temiz havaya çıkarılıp yarı oturur pozisyonda tutulur. Deri yoluyla bulaşmada giysiler çıkarılır ve bölge 15-20 dakika bol suyla yıkanır. Her durumda 112 ve Ulusal Zehir Danışma Merkezi 114 aranmalıdır."
+    },
+    {
+      "id": "zehirlenme-medlineplus",
+      "konu": "Zehirlenme ve ilk yardım",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "zehirlenme",
+        "çocuklarda zehirlenme",
+        "temizlik ürünleri",
+        "ilaç saklama"
+      ],
+      "baslik": "Poisoning (Zehirlenme)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/poisoning.html",
+      "dil": "en",
+      "ozet": "Zehir; yutulduğunda, solunduğunda, enjekte edildiğinde veya ciltten emildiğinde zarar veren her maddedir. İlaçlar, uyuşturucular, karbonmonoksit, temizlik ürünleri, tarım ilaçları, bazı bitkiler ve metaller sık kaynaklardır. Belirtiler hafif rahatsızlıktan beyin hasarı, koma ve ölüme kadar değişebilir; hızlı veya yavaş ortaya çıkabilir. Zehirlenme şüphesinde hemen zehir danışma hattı (Türkiye'de 114) veya acil yardım (112) aranmalıdır; tedavi zehrin türüne göre değişir. Çocukları korumak için tehlikeli maddeler ulaşamayacakları yerlerde, orijinal kaplarında saklanmalı ve etiketler okunmalıdır."
     }
   ],
   "kategoriler": [

@@ -26,7 +26,7 @@ kurum, kaynak türü (`resmi`, `universite`, `ozel`, `uluslararasi`), bağlantı
 
 - Özetler kaynak sayfalardan kendi cümlelerimizle derlenmiştir; özel hastanelerin telifli metinleri kopyalanmaz, bağlantı verilir.
 - Otomatik erişimi engelleyen siteler (ör. memorial.com.tr) kütüphaneye eklenmemiştir; canlı aramada yer alır.
-- Yeni konu eklemek için aynı yapıda kayıt ekleyip `guncelleme` tarihini değiştirin, ardından artifact'i yeniden yayınlayın.
+- Yeni kayıt eklemek için kayıtları bir JSON listesine yazıp `python kaynaklar/ekle.py dosya.json` çalıştırın; betik alanları doğrular ve güncelleme tarihini yeniler. Ardından artifact'i yeniden yayınlayın.
 
 ## Kurulum
 ```bash
