@@ -5,6 +5,8 @@
     {
       "id": "hipertansiyon-hsgm",
       "konu": "Hipertansiyon",
+      "kategori": "Kalp ve damar",
+      "acil": false,
       "anahtar_kelimeler": [
         "yüksek tansiyon",
         "tansiyon",
@@ -24,6 +26,8 @@
     {
       "id": "hipertansiyon-acibadem",
       "konu": "Hipertansiyon",
+      "kategori": "Kalp ve damar",
+      "acil": false,
       "anahtar_kelimeler": [
         "yüksek tansiyon",
         "tansiyon",
@@ -42,6 +46,8 @@
     {
       "id": "hipertansiyon-medlineplus",
       "konu": "Hipertansiyon",
+      "kategori": "Kalp ve damar",
+      "acil": false,
       "anahtar_kelimeler": [
         "yüksek tansiyon",
         "tansiyon",
@@ -61,6 +67,8 @@
     {
       "id": "diyabet-acibadem",
       "konu": "Tip 2 diyabet",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
       "anahtar_kelimeler": [
         "şeker hastalığı",
         "diyabet",
@@ -80,6 +88,8 @@
     {
       "id": "diyabet-medicalpark",
       "konu": "Tip 2 diyabet",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
       "anahtar_kelimeler": [
         "şeker hastalığı",
         "diyabet",
@@ -99,6 +109,8 @@
     {
       "id": "diyabet-medlineplus",
       "konu": "Tip 2 diyabet",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
       "anahtar_kelimeler": [
         "şeker hastalığı",
         "diyabet",
@@ -116,6 +128,8 @@
     {
       "id": "anemi-acibadem",
       "konu": "Demir eksikliği anemisi",
+      "kategori": "Kan",
+      "acil": false,
       "anahtar_kelimeler": [
         "kansızlık",
         "anemi",
@@ -136,6 +150,8 @@
     {
       "id": "grip-saglik-arnavutkoy",
       "konu": "Grip ve soğuk algınlığı",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
       "anahtar_kelimeler": [
         "grip",
         "influenza",
@@ -160,6 +176,8 @@
     {
       "id": "grip-acibadem",
       "konu": "Grip ve soğuk algınlığı",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
       "anahtar_kelimeler": [
         "grip",
         "influenza",
@@ -182,6 +200,8 @@
     {
       "id": "grip-medlineplus",
       "konu": "Grip ve soğuk algınlığı",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
       "anahtar_kelimeler": [
         "grip",
         "influenza",
@@ -203,6 +223,8 @@
     {
       "id": "migren-acibadem",
       "konu": "Migren",
+      "kategori": "Beyin ve sinir",
+      "acil": false,
       "anahtar_kelimeler": [
         "migren",
         "baş ağrısı",
@@ -222,6 +244,8 @@
     {
       "id": "migren-medlineplus",
       "konu": "Migren",
+      "kategori": "Beyin ve sinir",
+      "acil": false,
       "anahtar_kelimeler": [
         "migren",
         "baş ağrısı",
@@ -239,6 +263,8 @@
     {
       "id": "reflu-saglik-kosuyolu",
       "konu": "Reflü",
+      "kategori": "Sindirim",
+      "acil": false,
       "anahtar_kelimeler": [
         "reflü",
         "mide yanması",
@@ -260,6 +286,8 @@
     {
       "id": "reflu-acibadem",
       "konu": "Reflü",
+      "kategori": "Sindirim",
+      "acil": false,
       "anahtar_kelimeler": [
         "reflü",
         "GÖRH",
@@ -281,6 +309,8 @@
     {
       "id": "reflu-medlineplus",
       "konu": "Reflü",
+      "kategori": "Sindirim",
+      "acil": false,
       "anahtar_kelimeler": [
         "reflü",
         "GERD",
@@ -301,6 +331,8 @@
     {
       "id": "iye-acibadem",
       "konu": "İdrar yolu enfeksiyonu",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
       "anahtar_kelimeler": [
         "idrar yolu enfeksiyonu",
         "sistit",
@@ -320,6 +352,8 @@
     {
       "id": "iye-medlineplus",
       "konu": "İdrar yolu enfeksiyonu",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
       "anahtar_kelimeler": [
         "idrar yolu enfeksiyonu",
         "UTI",
@@ -337,6 +371,8 @@
     {
       "id": "astim-acibadem",
       "konu": "Astım",
+      "kategori": "Solunum",
+      "acil": false,
       "anahtar_kelimeler": [
         "astım",
         "nefes darlığı",
@@ -357,6 +393,8 @@
     {
       "id": "astim-medlineplus",
       "konu": "Astım",
+      "kategori": "Solunum",
+      "acil": false,
       "anahtar_kelimeler": [
         "astım",
         "astım krizi",
@@ -374,6 +412,8 @@
     {
       "id": "kalpkrizi-acibadem",
       "konu": "Kalp krizi",
+      "kategori": "Kalp ve damar",
+      "acil": true,
       "anahtar_kelimeler": [
         "kalp krizi",
         "göğüs ağrısı",
@@ -397,6 +437,8 @@
     {
       "id": "kalpkrizi-medlineplus",
       "konu": "Kalp krizi",
+      "kategori": "Kalp ve damar",
+      "acil": true,
       "anahtar_kelimeler": [
         "kalp krizi",
         "göğüs ağrısı",
@@ -418,6 +460,8 @@
     {
       "id": "inme-saglik-aksaray",
       "konu": "İnme",
+      "kategori": "Beyin ve sinir",
+      "acil": true,
       "anahtar_kelimeler": [
         "inme",
         "felç",
@@ -444,6 +488,8 @@
     {
       "id": "inme-acibadem",
       "konu": "İnme",
+      "kategori": "Beyin ve sinir",
+      "acil": true,
       "anahtar_kelimeler": [
         "inme",
         "felç",
@@ -468,6 +514,8 @@
     {
       "id": "inme-medlineplus",
       "konu": "İnme",
+      "kategori": "Beyin ve sinir",
+      "acil": true,
       "anahtar_kelimeler": [
         "inme",
         "felç",
@@ -491,6 +539,8 @@
     {
       "id": "tiroid-acibadem",
       "konu": "Tiroid (TSH, hipotiroidi)",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
       "anahtar_kelimeler": [
         "tiroid",
         "TSH",
@@ -512,6 +562,8 @@
     {
       "id": "tiroid-medlineplus",
       "konu": "Tiroid (TSH, hipotiroidi)",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
       "anahtar_kelimeler": [
         "hipotiroidi",
         "Hashimoto",
@@ -531,6 +583,8 @@
     {
       "id": "b12-acibadem",
       "konu": "B12 vitamini eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
       "anahtar_kelimeler": [
         "B12",
         "B12 eksikliği",
@@ -551,6 +605,8 @@
     {
       "id": "b12-medicalpark",
       "konu": "B12 vitamini eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
       "anahtar_kelimeler": [
         "B12",
         "B12 eksikliği",
@@ -568,6 +624,8 @@
     {
       "id": "dvit-saglik-kosuyolu",
       "konu": "D vitamini eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
       "anahtar_kelimeler": [
         "D vitamini",
         "D vitamini eksikliği",
@@ -587,6 +645,8 @@
     {
       "id": "dvit-medicalpark",
       "konu": "D vitamini eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
       "anahtar_kelimeler": [
         "D vitamini",
         "raşitizm",
@@ -604,6 +664,8 @@
     {
       "id": "anemi-ankara",
       "konu": "Demir eksikliği anemisi",
+      "kategori": "Kan",
+      "acil": false,
       "tur": "universite",
       "dil": "tr",
       "kurum": "Ankara Üniversitesi Tıp Fakültesi Aile Hekimliği Anabilim Dalı",
@@ -624,6 +686,8 @@
     {
       "id": "anemi-medlineplus",
       "konu": "Demir eksikliği anemisi",
+      "kategori": "Kan",
+      "acil": false,
       "tur": "uluslararasi",
       "dil": "en",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -642,6 +706,8 @@
     {
       "id": "tiroid-ankara",
       "konu": "Tiroid (TSH, hipotiroidi)",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
       "tur": "universite",
       "dil": "tr",
       "kurum": "Ankara Üniversitesi Tıp Fakültesi Aile Hekimliği Anabilim Dalı",
@@ -662,6 +728,8 @@
     {
       "id": "kolesterol-acibadem",
       "konu": "Yüksek kolesterol",
+      "kategori": "Kalp ve damar",
+      "acil": false,
       "tur": "ozel",
       "dil": "tr",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -681,6 +749,8 @@
     {
       "id": "kolesterol-medlineplus",
       "konu": "Yüksek kolesterol",
+      "kategori": "Kalp ve damar",
+      "acil": false,
       "tur": "uluslararasi",
       "dil": "en",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -699,6 +769,8 @@
     {
       "id": "tonsillit-acibadem",
       "konu": "Boğaz enfeksiyonu (tonsillit)",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
       "tur": "ozel",
       "dil": "tr",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -719,6 +791,8 @@
     {
       "id": "hemogram-acibadem",
       "konu": "Hemogram (tam kan sayımı)",
+      "kategori": "Tahliller",
+      "acil": false,
       "tur": "ozel",
       "dil": "tr",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -741,6 +815,8 @@
     {
       "id": "hemogram-medlineplus",
       "konu": "Hemogram (tam kan sayımı)",
+      "kategori": "Tahliller",
+      "acil": false,
       "tur": "uluslararasi",
       "dil": "en",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -758,6 +834,8 @@
     {
       "id": "karaciger-acibadem",
       "konu": "Karaciğer enzimleri (ALT, AST)",
+      "kategori": "Tahliller",
+      "acil": false,
       "tur": "ozel",
       "dil": "tr",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -777,6 +855,8 @@
     {
       "id": "karaciger-medlineplus",
       "konu": "Karaciğer enzimleri (ALT, AST)",
+      "kategori": "Tahliller",
+      "acil": false,
       "tur": "uluslararasi",
       "dil": "en",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -797,6 +877,8 @@
     {
       "id": "parasetamol-titck",
       "konu": "Ağrı kesiciler (parasetamol, ibuprofen)",
+      "kategori": "İlaçlar",
+      "acil": false,
       "tur": "resmi",
       "dil": "tr",
       "kurum": "T.C. Türkiye İlaç ve Tıbbi Cihaz Kurumu (TİTCK) - onaylı kullanma talimatı",
@@ -824,6 +906,8 @@
     {
       "id": "parasetamol-medlineplus",
       "konu": "Ağrı kesiciler (parasetamol, ibuprofen)",
+      "kategori": "İlaçlar",
+      "acil": false,
       "tur": "uluslararasi",
       "dil": "en",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -850,6 +934,8 @@
     {
       "id": "ibuprofen-medlineplus",
       "konu": "Ağrı kesiciler (parasetamol, ibuprofen)",
+      "kategori": "İlaçlar",
+      "acil": false,
       "tur": "uluslararasi",
       "dil": "en",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -875,5 +961,26 @@
       ],
       "ozet": "İbuprofen ağrı, ateş ve iltihabı azaltan steroid olmayan bir antiinflamatuvar ilaçtır (NSAİİ); eklem ağrıları, adet ağrısı ve baş ağrısında kullanılır. Reçetesiz kullanımda yetişkinler ve 12 yaş üstü çocuklar gerektiğinde 4-6 saatte bir alabilir; paketteki günlük üst sınır aşılmamalıdır; mide rahatsızlığını azaltmak için yemekle alınabilir. Kalp hastalığı veya inme öyküsü olanlar, 75 yaş üstü kişiler, ülser veya mide kanaması öyküsü, karaciğer ya da böbrek hastalığı olanlar doktora danışmalıdır; gebeliğin ileri döneminde doktor önermedikçe kullanılmamalıdır. Kan sulandırıcılar, aspirin, diğer NSAİİ'ler, kortizon ve bazı antidepresanlarla birlikte kanama riski artar; alkol de riski yükseltir. Mide-bağırsak kanaması (siyah dışkı, kanlı kusma), alerjik reaksiyon ve böbrek sorunları ciddi yan etkilerdir ve acil değerlendirme gerektirir."
     }
+  ],
+  "kategoriler": [
+    "Acil durumlar",
+    "Kalp ve damar",
+    "Solunum",
+    "Sindirim",
+    "Hormon ve metabolizma",
+    "Beyin ve sinir",
+    "Kas ve iskelet",
+    "Böbrek ve idrar yolları",
+    "Kadın sağlığı",
+    "Çocuk sağlığı",
+    "Ruh sağlığı",
+    "Cilt",
+    "Göz",
+    "Kulak burun boğaz",
+    "Enfeksiyonlar",
+    "Kan",
+    "Vitamin ve mineraller",
+    "Tahliller",
+    "İlaçlar"
   ]
 }

@@ -63,6 +63,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html, body { height: 100%; }
 body {
   background: var(--bg);
@@ -351,6 +352,108 @@ button { cursor: pointer; }
 
 .scrim { display: none; }
 
+/* ---------- Aciliyet göstergesi ---------- */
+.gauge { margin-bottom: 14px; }
+.gauge-segs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; }
+.gauge-seg { position: relative; display: grid; gap: 5px; }
+.gauge-seg i { display: block; height: 8px; border-radius: 3px; opacity: .22; }
+.gauge-seg span { font: 500 10.5px/1.2 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; color: var(--ink-2); }
+.gauge-seg.on i { opacity: 1; height: 12px; margin-top: -2px; }
+.gauge-seg.on span { color: var(--ink); font-weight: 600; }
+.gauge-seg:nth-child(1) i { background: var(--t-home); }
+.gauge-seg:nth-child(2) i { background: var(--t-gp); }
+.gauge-seg:nth-child(3) i { background: var(--t-today); }
+.gauge-seg:nth-child(4) i { background: var(--t-er); }
+.gauge-note { margin-top: 8px; font-size: 14px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.gauge-note b { font-family: var(--f-display); font-size: 15px; }
+.gauge.er .gauge-note { color: var(--t-er); }
+
+/* ---------- Tahlil grafiği ---------- */
+.labs { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin: 0 0 .9em; background: var(--bg); }
+.labs-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.labs-head b { font: 600 14px var(--f-display); }
+.labs-head span { font: 11.5px var(--f-mono); color: var(--ink-2); }
+.lab-row { display: grid; grid-template-columns: minmax(110px, 1.1fr) 96px minmax(120px, 2fr) 78px; gap: 12px; align-items: center; padding: 9px 0; border-top: 1px solid var(--line); }
+.lab-row:first-of-type { border-top: 0; }
+.lab-name { font-weight: 500; font-size: 14px; line-height: 1.3; }
+.lab-val { font: 500 14px var(--f-mono); font-variant-numeric: tabular-nums; text-align: right; }
+.lab-val small { font-size: 11px; color: var(--ink-2); margin-left: 3px; }
+.lab-track { position: relative; height: 26px; }
+.lab-track .rail { position: absolute; left: 0; right: 0; top: 7px; height: 6px; border-radius: 3px; background: var(--surface-2); }
+.lab-track .band { position: absolute; top: 7px; height: 6px; border-radius: 3px; background: var(--t-home); opacity: .45; }
+.lab-track .dot { position: absolute; top: 3px; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; border: 2px solid var(--surface); box-shadow: 0 0 0 1px var(--ink-2); }
+.lab-track .tick { position: absolute; top: 16px; font: 10px var(--f-mono); color: var(--ink-2); transform: translateX(-50%); white-space: nowrap; }
+.lab-chip { font: 500 11px/1 var(--f-mono); text-transform: uppercase; letter-spacing: .04em; padding: 5px 7px; border-radius: 5px; text-align: center; color: #fff; }
+.lab-chip.ok { background: var(--t-home); }
+.lab-chip.low, .lab-chip.high { background: var(--t-today); }
+.lab-chip.crit { background: var(--t-er); }
+.lab-chip.na { background: var(--surface-2); color: var(--ink-2); }
+.dot.ok { background: var(--t-home); } .dot.low, .dot.high { background: var(--t-today); } .dot.crit { background: var(--t-er); }
+.labs-wait { font-size: 13px; color: var(--ink-2); padding: 8px 0 12px; }
+@media (max-width: 560px) {
+  .lab-row { grid-template-columns: 1fr auto; row-gap: 4px; }
+  .lab-track { grid-column: 1 / -1; order: 3; }
+  .lab-chip { justify-self: end; }
+}
+
+/* ---------- Sekmeler ---------- */
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 6px 0 16px; overflow-x: auto; }
+.tab { border: 0; background: none; padding: 9px 12px; font-weight: 500; font-size: 14px; color: var(--ink-2); border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; }
+.tab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ---------- Vücut haritası ---------- */
+.bodymap { display: grid; grid-template-columns: 200px 1fr; gap: 22px; align-items: start; }
+.bodymap svg { width: 100%; max-width: 200px; height: auto; display: block; margin: 0 auto; }
+.region { fill: var(--surface-2); stroke: var(--line); stroke-width: 1.5; cursor: pointer; transition: fill .15s; outline: none; }
+.region:hover, .region:focus-visible { fill: var(--accent-soft); stroke: var(--accent); }
+.region.sel { fill: var(--accent); stroke: var(--accent); }
+.region-list { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.region-btn { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 11px; font-size: 13px; }
+.region-btn:hover { border-color: var(--accent); }
+.region-btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.map-side h3 { font: 600 17px var(--f-display); margin: 0 0 8px; }
+.map-side .muted { margin-bottom: 12px; }
+.complaints { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.complaint { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 8px 12px; font-size: 14px; display: inline-flex; align-items: center; gap: 7px; }
+.complaint:hover { border-color: var(--accent); color: var(--accent); }
+.complaint.er::after { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--t-er); }
+.complaint[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
+.cform { display: grid; gap: 12px; border: 1px solid var(--line); border-radius: 10px; padding: 14px; background: var(--surface); }
+.cform-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+.cform label { display: grid; gap: 5px; font-size: 12.5px; color: var(--ink-2); font-weight: 500; }
+.cform select, .cform input[type="number"], .cform textarea { border: 1px solid var(--line); border-radius: 7px; padding: 7px 9px; background: var(--bg); font-size: 14px; color: var(--ink); }
+.cform textarea { resize: vertical; min-height: 54px; }
+.cform input[type="range"] { accent-color: var(--accent); }
+.sev-out { font: 500 13px var(--f-mono); color: var(--ink); }
+.er-warn { border-left: 3px solid var(--t-er); background: var(--er-soft); padding: 8px 10px; border-radius: 0 6px 6px 0; font-size: 13.5px; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn.primary:hover { color: var(--accent-ink); opacity: .92; }
+@media (max-width: 560px) { .bodymap { grid-template-columns: 1fr; } .bodymap svg { max-width: 150px; } }
+
+/* ---------- Konu kütüphanesi ---------- */
+.cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
+.cat-card { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--surface); }
+.cat-card h3 { font: 600 14.5px var(--f-display); margin: 0 0 2px; display: flex; justify-content: space-between; gap: 8px; }
+.cat-card h3 span { font: 11px var(--f-mono); color: var(--ink-2); font-weight: 400; }
+.cat-card ul { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 2px; }
+.topic-btn { border: 0; background: none; padding: 3px 0; font-size: 13.5px; text-align: left; color: var(--ink); display: inline-flex; align-items: center; gap: 6px; }
+.topic-btn:hover { color: var(--accent); text-decoration: underline; }
+.topic-btn.er::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--t-er); flex: none; }
+.lib-filter { width: 100%; border: 1px solid var(--line); border-radius: 8px; padding: 8px 11px; background: var(--surface); margin-bottom: 12px; font-size: 14px; }
+.src-card { border-top: 1px solid var(--line); padding: 12px 0; display: grid; gap: 5px; }
+.src-card:first-of-type { border-top: 0; }
+.src-card a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.src-card a:hover { text-decoration: underline; }
+.src-card .kind { font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2); }
+.src-card p { margin: 0; font-size: 13.5px; color: var(--ink-2); }
+
+/* ---------- Kayan panel ---------- */
+.sheet { position: fixed; inset: 0; z-index: 30; display: flex; justify-content: flex-end; background: rgba(10, 20, 16, .38); }
+.sheet-panel { width: min(620px, 100%); height: 100%; background: var(--bg); display: flex; flex-direction: column; box-shadow: -8px 0 30px rgba(0,0,0,.18); padding-top: env(safe-area-inset-top, 0px); }
+.sheet-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--line); background: var(--surface); }
+.sheet-head h2 { font: 700 19px var(--f-display); margin: 0; }
+.sheet-body { flex: 1; overflow-y: auto; padding: 18px; }
+
 @media (max-width: 860px) {
   .app { grid-template-columns: 1fr; }
   .topbar { display: flex; }
@@ -366,6 +469,7 @@ button { cursor: pointer; }
   .app.panel-open .scrim { display: block; position: fixed; inset: 0; background: rgba(0,0,0,.35); z-index: 10; }
   .examples { grid-template-columns: 1fr; }
 }
+@media (max-width: 860px) { .sheet-panel { width: 100%; } }
 </style>
 
 <div class="app" id="app">
@@ -441,7 +545,15 @@ button { cursor: pointer; }
       <div class="thread" id="thread">
         <div class="welcome" id="welcome">
           <h2>Şikayetinizi, ilacınızı ya da tahlilinizi anlatın.</h2>
-          <p>Olası nedenleri ve ne kadar acil olduğunu açıklarım, ilaçlar hakkında bilgi veririm, tahlil sonuçlarınızı tek tek yorumlarım. Tahlil için PDF'i veya fotoğrafını aşağıya sürükleyin.</p>
+          <p>Olası nedenleri ve ne kadar acil olduğunu açıklarım, ilaçlar hakkında bilgi veririm, tahlil sonuçlarınızı grafikle yorumlarım. Tahlil için PDF'i veya fotoğrafını aşağıya sürükleyin.</p>
+          <div class="tabs" role="tablist" aria-label="Başlangıç">
+            <button class="tab" role="tab" id="tab-map" aria-controls="panel-map" aria-selected="true" type="button">Vücut haritası</button>
+            <button class="tab" role="tab" id="tab-topics" aria-controls="panel-topics" aria-selected="false" type="button">Konular</button>
+            <button class="tab" role="tab" id="tab-examples" aria-controls="panel-examples" aria-selected="false" type="button">Örnek sorular</button>
+          </div>
+          <div role="tabpanel" id="panel-map" aria-labelledby="tab-map"></div>
+          <div role="tabpanel" id="panel-topics" aria-labelledby="tab-topics" hidden></div>
+          <div role="tabpanel" id="panel-examples" aria-labelledby="tab-examples" hidden>
           <div class="examples" id="examples">
             <button class="example" type="button" data-q="Üç gündür 38,5 derece ateşim ve boğaz ağrım var, yutkunurken çok acıyor. 34 yaşındayım, kronik hastalığım yok.">
               <span class="kind">Semptom</span><span class="q">Üç gündür 38,5 ateş ve yutkunurken boğaz ağrısı</span>
@@ -456,6 +568,7 @@ button { cursor: pointer; }
               <span class="kind">Acil</span><span class="q">Babamın konuşması bozuldu, kolunu kaldıramıyor</span>
             </button>
           </div>
+          </div>
         </div>
       </div>
     </div>
@@ -468,6 +581,12 @@ button { cursor: pointer; }
           <button class="round" type="button" id="attachBtn" title="Tahlil PDF'i veya fotoğrafı ekle" aria-label="Dosya ekle">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5 12.5 20a5 5 0 0 1-7-7L14 4.5a3.3 3.3 0 0 1 4.7 4.7L10.2 17.7a1.7 1.7 0 0 1-2.4-2.4L15.5 7.6"/></svg>
           </button>
+          <button class="round" type="button" id="mapBtn" title="Vücut haritasından şikayet seç" aria-label="Vücut haritası">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.5" r="2.5"/><path d="M12 7v8M7 9.5l5 1.5 5-1.5M9 21l3-6 3 6"/></svg>
+          </button>
+          <button class="round" type="button" id="topicsBtn" title="Konu kütüphanesi" aria-label="Konu kütüphanesi">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M9 7h6"/></svg>
+          </button>
           <textarea id="prompt" rows="1" placeholder="Sorunuzu yazın…" aria-label="Mesaj"></textarea>
           <button class="round send" type="submit" id="sendBtn" aria-label="Gönder" disabled>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
@@ -477,6 +596,16 @@ button { cursor: pointer; }
       <p class="hint">Sorularınız Claude hesabınız üzerinden yanıtlanır. Sohbet ve belgeler yalnızca bu tarayıcıda saklanır.</p>
     </div>
   </main>
+</div>
+
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <div class="sheet-head">
+      <h2 id="sheetTitle"></h2>
+      <button class="btn" type="button" id="sheetClose">Kapat</button>
+    </div>
+    <div class="sheet-body" id="sheetBody"></div>
+  </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
@@ -503,7 +632,11 @@ Semptomlar: Önemli bilgi eksikse önce kısa netleştirici sorular sor (yaş, s
 
 İlaçlar: Etken madde, kullanım amacı, sık ve ciddi yan etkiler, önemli etkileşimler (ilaç, alkol, besin), hamilelik/emzirme ve böbrek/karaciğer uyarıları hakkında bilgi ver. Doz sorulursa prospektüsteki genel bilgiyi verebilirsin ama kişisel dozun hekim veya eczacıyla belirlenmesi gerektiğini belirt. İlacı bırakma ya da değiştirme önerisinde bulunma.
 
-Tahlil sonuçları: Ekli belgedeki veya görseldeki değerleri tek tek oku. Önce değerleri bir Markdown tablosunda listele (Test | Sonuç | Referans | Durum), sonra referans dışındakileri sade dille açıkla ve birlikte yorumla (ör. düşük hemoglobin + düşük ferritin). Laboratuvarın kendi referans aralıklarını esas al. Okuyamadığın veya emin olmadığın bir değeri tahmin etme, söyle. Görseller sonraki mesajlarda tekrar gönderilmez; bu yüzden görseldeki değerleri cevabına mutlaka yaz.
+Tahlil sonuçları: Ekli belgedeki, görseldeki veya mesajda yazılan değerleri tek tek oku. Önce tüm değerleri aşağıdaki biçimde tek bir kod bloğunda ver; sayfa bu bloğu grafiğe çevirir, bu yüzden ayrıca tablo yazma:
+\`\`\`tahlil
+[{"test":"Hemoglobin","deger":10.9,"birim":"g/dL","alt":11.5,"ust":15.5}]
+\`\`\`
+"deger", "alt" ve "ust" sayı olsun (ondalık ayırıcı nokta). Referansın bir ucu yoksa (ör. "<200") o ucu null yaz. Sonuç sayısal değilse (ör. "negatif") "deger" alanına metni yaz, "alt" ve "ust" null olsun. Hayati risk taşıyan kritik bir değer için "kritik": true ekle. Kullanıcı referans aralığı vermemişse yaygın erişkin referansını kullan ve bunu metinde belirt. Kod bloğundan sonra referans dışındaki değerleri sade dille açıkla ve birlikte yorumla (ör. düşük hemoglobin + düşük ferritin). Laboratuvarın kendi referans aralıklarını esas al. Okuyamadığın veya emin olmadığın bir değeri tahmin etme, söyle. Görseller sonraki mesajlarda tekrar gönderilmez; bu yüzden görseldeki değerleri cevabına mutlaka yaz.
 
 Kaynaklar: Mesajda <kaynaklar> içinde numaralı belge parçaları verilirse (bunlar Sağlık Bakanlığı, üniversite hastaneleri, özel hastaneler ve MedlinePlus gibi güvenilir kaynakların özetleri veya kullanıcının kendi belgeleri olabilir) cevabını öncelikle bunlara dayandır, gerektiğinde kurumun adını an ve kullandığın bilgiden hemen sonra [1], [2] gibi numarayla kaynak göster. Kaynaklarda olmayan bir şeyi kaynaklarda varmış gibi sunma; genel tıbbi bilgine dayanıyorsan bu ayrımı belli et.
 
@@ -556,11 +689,18 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
 
   // ------------------------------------------------------------------ Markdown
   marked.use({ gfm: true, breaks: true });
-  function renderMd(text, nSources) {
+  function renderMd(text, nSources, done = true) {
     let html = DOMPurify.sanitize(marked.parse(text), { ADD_ATTR: ["target"] });
     const box = document.createElement("div");
     box.className = "md";
     box.innerHTML = html;
+    box.querySelectorAll("code.language-tahlil").forEach((code) => {
+      const pre = code.closest("pre") || code;
+      let rows = null;
+      try { rows = JSON.parse(code.textContent); } catch {}
+      if (Array.isArray(rows) && rows.length) pre.replaceWith(labChart(rows));
+      else if (!done) { const w = document.createElement("div"); w.className = "labs-wait"; w.textContent = "Tahlil grafiği hazırlanıyor…"; pre.replaceWith(w); }
+    });
     box.querySelectorAll("table").forEach((t) => {
       const w = document.createElement("div"); w.className = "tbl";
       t.replaceWith(w); w.appendChild(t);
@@ -644,15 +784,11 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     return wrap;
   }
 
-  function fillCard(card, text, sources) {
+  function fillCard(card, text, sources, done = true) {
     card.replaceChildren();
     const { triage, body } = splitTriage(text);
-    if (triage) {
-      const [cls, label] = TRIAGE[triage];
-      const t = document.createElement("div"); t.className = "triage " + cls; t.textContent = label;
-      card.appendChild(t);
-    }
-    card.appendChild(renderMd(body, sources?.length || 0));
+    if (triage) card.appendChild(gauge(triage));
+    card.appendChild(renderMd(body, sources?.length || 0, done));
     const used = sources?.length ? [...new Set([...body.matchAll(/\[(\d+)\]/g)].map((x) => +x[1]))].filter((n) => n >= 1 && n <= sources.length) : [];
     if (used.length) {
       const d = document.createElement("details"); d.className = "sources";
@@ -671,6 +807,286 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
       });
       d.append(s, ol); card.appendChild(d);
     }
+  }
+
+  // ------------------------------------------------------------------ Aciliyet göstergesi
+  const TRIAGE_ORDER = ["evde", "aile-hekimi", "ayni-gun", "acil"];
+  const TRIAGE_SHORT = ["Evde", "Aile hekimi", "Aynı gün", "Acil"];
+  const TRIAGE_NOTE = {
+    "evde": "Evde izleyebilirsiniz; belirtiler kötüleşirse doktora başvurun.",
+    "aile-hekimi": "Birkaç gün içinde aile hekiminize görünün.",
+    "ayni-gun": "Bugün bir doktora muayene olun.",
+    "acil": "Hemen 112'yi arayın veya en yakın acil servise gidin.",
+  };
+  function gauge(key) {
+    const level = TRIAGE_ORDER.indexOf(key);
+    const g = document.createElement("div");
+    g.className = "gauge" + (key === "acil" ? " er" : "");
+    g.setAttribute("role", "img");
+    g.setAttribute("aria-label", `Aciliyet: ${TRIAGE[key][1]}`);
+    const segs = document.createElement("div"); segs.className = "gauge-segs";
+    TRIAGE_SHORT.forEach((label, i) => {
+      const seg = document.createElement("div"); seg.className = "gauge-seg" + (i === level ? " on" : "");
+      const bar = document.createElement("i"); const t = document.createElement("span"); t.textContent = label;
+      seg.append(bar, t); segs.appendChild(seg);
+    });
+    const note = document.createElement("div"); note.className = "gauge-note";
+    const b = document.createElement("b"); b.textContent = TRIAGE[key][1];
+    const n = document.createElement("span"); n.textContent = TRIAGE_NOTE[key];
+    note.append(b, n);
+    g.append(segs, note);
+    return g;
+  }
+
+  // ------------------------------------------------------------------ Tahlil grafiği
+  const fmt = (v) => typeof v === "number" ? v.toLocaleString("tr-TR", { maximumFractionDigits: 2 }) : String(v);
+  const num = (v) => (typeof v === "number" && isFinite(v)) ? v : (typeof v === "string" && v.trim() !== "" && isFinite(+v.replace(",", ".")) ? +v.replace(",", ".") : null);
+  function labChart(rows) {
+    const wrap = document.createElement("div"); wrap.className = "labs";
+    const counts = { low: 0, high: 0, crit: 0 };
+    const items = rows.filter((r) => r && r.test).map((r) => {
+      const v = num(r.deger), lo = num(r.alt), hi = num(r.ust);
+      let st = "na";
+      if (v !== null && (lo !== null || hi !== null)) {
+        st = lo !== null && v < lo ? "low" : hi !== null && v > hi ? "high" : "ok";
+      }
+      if (r.kritik) st = "crit";
+      if (counts[st] !== undefined) counts[st]++;
+      return { r, v, lo, hi, st };
+    });
+    const head = document.createElement("div"); head.className = "labs-head";
+    const hb = document.createElement("b"); hb.textContent = `Tahlil özeti · ${items.length} değer`;
+    const hs = document.createElement("span");
+    const off = counts.low + counts.high + counts.crit;
+    hs.textContent = off ? `${counts.low} düşük · ${counts.high} yüksek${counts.crit ? ` · ${counts.crit} kritik` : ""}` : "Tüm değerler referans aralığında";
+    head.append(hb, hs); wrap.appendChild(head);
+    const LABEL = { ok: "Normal", low: "Düşük", high: "Yüksek", crit: "Kritik", na: "—" };
+    items.forEach(({ r, v, lo, hi, st }) => {
+      const row = document.createElement("div"); row.className = "lab-row";
+      const name = document.createElement("div"); name.className = "lab-name"; name.textContent = r.test;
+      const val = document.createElement("div"); val.className = "lab-val"; val.textContent = fmt(v ?? r.deger ?? "—");
+      if (r.birim) { const u = document.createElement("small"); u.textContent = r.birim; val.appendChild(u); }
+      const track = document.createElement("div"); track.className = "lab-track";
+      if (v !== null && (lo !== null || hi !== null)) {
+        // Ölçek: referans aralığı ortada, iki yanda pay; değer dışarıdaysa ölçek genişler
+        let a = lo ?? 0, b = hi ?? Math.max(a * 2, v * 1.25, a + 1);
+        if (b <= a) b = a + 1;
+        const span = b - a;
+        let min = Math.min(a - span * 0.45, v - span * 0.08), max = Math.max(b + span * 0.45, v + span * 0.08);
+        if (a >= 0) min = Math.max(0, min);
+        const pos = (x) => ((x - min) / (max - min)) * 100;
+        const rail = document.createElement("div"); rail.className = "rail";
+        const band = document.createElement("div"); band.className = "band";
+        band.style.left = pos(lo ?? min) + "%"; band.style.width = (pos(hi ?? max) - pos(lo ?? min)) + "%";
+        const dot = document.createElement("div"); dot.className = "dot " + st; dot.style.left = Math.min(98, Math.max(2, pos(v))) + "%";
+        track.append(rail, band, dot);
+        [[lo, lo], [hi, hi]].forEach(([x]) => {
+          if (x === null) return;
+          const t = document.createElement("span"); t.className = "tick"; t.style.left = pos(x) + "%"; t.textContent = fmt(x); track.appendChild(t);
+        });
+        track.setAttribute("role", "img");
+        track.setAttribute("aria-label", `${r.test}: ${fmt(v)} ${r.birim || ""}, referans ${lo !== null ? fmt(lo) : "—"} ile ${hi !== null ? fmt(hi) : "—"} arası`);
+      }
+      const chip = document.createElement("div"); chip.className = "lab-chip " + st; chip.textContent = LABEL[st];
+      row.append(name, val, track, chip); wrap.appendChild(row);
+    });
+    return wrap;
+  }
+
+  // ------------------------------------------------------------------ Kayan panel
+  let sheetReturn = null;
+  function openSheet(title, node) {
+    sheetReturn = document.activeElement;
+    $("sheetTitle").textContent = title;
+    $("sheetBody").replaceChildren(node);
+    $("sheet").hidden = false;
+    $("sheetBody").scrollTop = 0;
+    $("sheetClose").focus();
+  }
+  function closeSheet() {
+    $("sheet").hidden = true;
+    $("sheetBody").replaceChildren();
+    sheetReturn?.focus?.();
+  }
+
+  // ------------------------------------------------------------------ Vücut haritası
+  const REGIONS = [
+    { id: "bas", ad: "Baş ve yüz", items: ["Baş ağrısı", "Baş dönmesi", "Göz kızarıklığı", "Kulak ağrısı", "Burun tıkanıklığı", "Bayılma hissi"], er: ["Bayılma hissi"] },
+    { id: "boyun", ad: "Boyun ve boğaz", items: ["Boğaz ağrısı", "Yutkunma güçlüğü", "Ses kısıklığı", "Boyunda şişlik", "Boyun ağrısı"] },
+    { id: "gogus", ad: "Göğüs", items: ["Göğüs ağrısı", "Çarpıntı", "Nefes darlığı", "Öksürük", "Hırıltılı solunum"], er: ["Göğüs ağrısı", "Nefes darlığı"] },
+    { id: "ust-karin", ad: "Üst karın", items: ["Mide yanması", "Karın ağrısı", "Bulantı", "Şişkinlik", "Hazımsızlık"] },
+    { id: "alt-karin", ad: "Alt karın ve kasık", items: ["Kasık ağrısı", "İdrarda yanma", "Sık idrara çıkma", "Kabızlık", "İshal", "Adet ağrısı"] },
+    { id: "kollar", ad: "Kollar ve eller", items: ["Kolda uyuşma", "Kolda güçsüzlük", "Eklem ağrısı", "El bileği ağrısı", "Elde karıncalanma"], er: ["Kolda güçsüzlük"] },
+    { id: "bacaklar", ad: "Bacaklar ve ayaklar", items: ["Bacakta şişlik", "Diz ağrısı", "Bacak krampları", "Varis", "Ayak başparmağında ağrı"] },
+    { id: "sirt", ad: "Sırt ve bel", items: ["Bel ağrısı", "Sırt ağrısı", "Böğür ağrısı", "Bacağa vuran bel ağrısı"] },
+    { id: "cilt", ad: "Cilt", items: ["Kaşıntı", "Döküntü", "Kurdeşen", "Sivilce", "Ciltte kuruluk"] },
+    { id: "genel", ad: "Genel", items: ["Ateş", "Halsizlik", "İstemsiz kilo kaybı", "Uykusuzluk", "Kaygı ve stres"] },
+  ];
+  const BODY_SVG = `<svg viewBox="0 0 200 430" aria-label="Vücut haritası" role="group">
+    <ellipse class="region" data-region="bas" cx="100" cy="40" rx="25" ry="30"/>
+    <rect class="region" data-region="boyun" x="88" y="68" width="24" height="22" rx="6"/>
+    <path class="region" data-region="kollar" d="M51 96 Q37 100 35 122 L27 206 Q25 222 34 223 Q42 224 43 213 L54 134 Z M149 96 Q163 100 165 122 L173 206 Q175 222 166 223 Q158 224 157 213 L146 134 Z"/>
+    <path class="region" data-region="gogus" d="M62 90 Q100 80 138 90 Q147 94 148 108 L145 168 L55 168 L52 108 Q53 94 62 90 Z"/>
+    <path class="region" data-region="ust-karin" d="M55 171 L145 171 L142 214 L58 214 Z"/>
+    <path class="region" data-region="alt-karin" d="M58 217 L142 217 Q143 242 135 260 L100 270 L65 260 Q57 242 58 217 Z"/>
+    <path class="region" data-region="bacaklar" d="M65 264 L98 273 L96 404 Q96 416 86 416 L77 416 Q69 416 69 404 Z M135 264 L102 273 L104 404 Q104 416 114 416 L123 416 Q131 416 131 404 Z"/>
+  </svg>`;
+
+  function buildBodyMap() {
+    const root = document.createElement("div"); root.className = "bodymap";
+    const fig = document.createElement("div"); fig.innerHTML = BODY_SVG;
+    const side = document.createElement("div"); side.className = "map-side";
+    root.append(fig, side);
+    const list = document.createElement("div"); list.className = "region-list";
+    REGIONS.forEach((r) => {
+      const b = document.createElement("button"); b.type = "button"; b.className = "region-btn"; b.dataset.region = r.id; b.textContent = r.ad;
+      b.setAttribute("aria-pressed", "false"); list.appendChild(b);
+    });
+    const detail = document.createElement("div");
+    side.append(list, detail);
+
+    function select(id) {
+      const r = REGIONS.find((x) => x.id === id); if (!r) return;
+      root.querySelectorAll(".region").forEach((n) => n.classList.toggle("sel", n.dataset.region === id));
+      list.querySelectorAll(".region-btn").forEach((n) => n.setAttribute("aria-pressed", String(n.dataset.region === id)));
+      detail.replaceChildren();
+      const h = document.createElement("h3"); h.textContent = r.ad;
+      const p = document.createElement("p"); p.className = "muted"; p.textContent = "Şikayetinizi seçin, birkaç bilgi ekleyin; soruyu sizin için hazırlayayım.";
+      const chips = document.createElement("div"); chips.className = "complaints";
+      const formBox = document.createElement("div");
+      r.items.forEach((c) => {
+        const b = document.createElement("button"); b.type = "button"; b.className = "complaint" + (r.er?.includes(c) ? " er" : ""); b.textContent = c;
+        b.setAttribute("aria-pressed", "false");
+        b.onclick = () => {
+          chips.querySelectorAll(".complaint").forEach((n) => n.setAttribute("aria-pressed", String(n === b)));
+          formBox.replaceChildren(complaintForm(r, c, r.er?.includes(c)));
+        };
+        chips.appendChild(b);
+      });
+      detail.append(h, p, chips, formBox);
+    }
+    root.querySelectorAll(".region").forEach((n) => {
+      const r = REGIONS.find((x) => x.id === n.dataset.region);
+      n.setAttribute("tabindex", "0"); n.setAttribute("role", "button"); n.setAttribute("aria-label", r.ad);
+      const t = document.createElementNS("http://www.w3.org/2000/svg", "title"); t.textContent = r.ad; n.appendChild(t);
+      n.addEventListener("click", () => select(n.dataset.region));
+      n.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(n.dataset.region); } });
+    });
+    list.addEventListener("click", (e) => { const b = e.target.closest(".region-btn"); if (b) select(b.dataset.region); });
+    select("gogus");
+    return root;
+  }
+
+  let formSeq = 0;
+  function complaintForm(region, complaint, isEr) {
+    const id = (x) => `cf${formSeq}-${x}`; formSeq++;
+    const f = document.createElement("form"); f.className = "cform";
+    f.innerHTML = `
+      ${isEr ? `<div class="er-warn"><b>Dikkat:</b> Ani başladıysa veya şiddetliyse beklemeyin, <b>112</b>'yi arayın.</div>` : ""}
+      <div class="cform-row">
+        <label for="${id("sure")}">Ne zamandır?
+          <select id="${id("sure")}"><option>Bugün başladı</option><option>Birkaç gündür</option><option>1-4 haftadır</option><option>Bir aydan uzun süredir</option><option>Tekrarlayan ataklar halinde</option></select>
+        </label>
+        <label for="${id("sid")}">Şiddet <span class="sev-out" id="${id("out")}">5/10</span>
+          <input type="range" id="${id("sid")}" min="1" max="10" value="5">
+        </label>
+      </div>
+      <div class="cform-row">
+        <label for="${id("yas")}">Yaş<input type="number" id="${id("yas")}" min="0" max="120" placeholder="ör. 34"></label>
+        <label for="${id("cins")}">Cinsiyet
+          <select id="${id("cins")}"><option value="">Belirtmek istemiyorum</option><option>Kadın</option><option>Erkek</option></select>
+        </label>
+      </div>
+      <label for="${id("ek")}">Eşlik eden belirtiler, kronik hastalık veya kullandığınız ilaçlar (isteğe bağlı)
+        <textarea id="${id("ek")}" placeholder="ör. ateş yok, tansiyon ilacı kullanıyorum"></textarea>
+      </label>
+      <div><button class="btn primary" type="submit">Asistana sor</button></div>`;
+    const g = (x) => f.querySelector("#" + id(x));
+    g("sid").addEventListener("input", () => { g("out").textContent = g("sid").value + "/10"; });
+    f.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!sampleReady || busy) return;
+      const parts = [`${complaint} şikayetim var (${region.ad.toLocaleLowerCase("tr-TR")} bölgesi).`, `Süre: ${g("sure").value.toLocaleLowerCase("tr-TR")}.`, `Şiddet: ${g("sid").value}/10.`];
+      if (g("yas").value) parts.push(`Yaş: ${g("yas").value}.`);
+      if (g("cins").value) parts.push(`Cinsiyet: ${g("cins").value.toLocaleLowerCase("tr-TR")}.`);
+      if (g("ek").value.trim()) parts.push(g("ek").value.trim());
+      closeSheet();
+      submit(parts.join(" "));
+    });
+    return f;
+  }
+
+  // ------------------------------------------------------------------ Konu kütüphanesi
+  let libCategories = [];
+  function topicsByCategory(filter = "") {
+    const q = filter.toLocaleLowerCase("tr-TR").trim();
+    const map = new Map();
+    library.forEach((k) => {
+      if (q && !(k.topic + " " + k.kw).toLocaleLowerCase("tr-TR").includes(q)) return;
+      if (!map.has(k.category)) map.set(k.category, new Map());
+      const topics = map.get(k.category);
+      if (!topics.has(k.topic)) topics.set(k.topic, { er: k.er, sources: [] });
+      topics.get(k.topic).sources.push(k);
+    });
+    const order = [...libCategories, ...[...map.keys()].filter((c) => !libCategories.includes(c))];
+    return order.filter((c) => map.has(c)).map((c) => [c, map.get(c)]);
+  }
+
+  function buildTopics(withFilter) {
+    const root = document.createElement("div");
+    if (!library.length) { const p = document.createElement("p"); p.className = "muted"; p.textContent = "Konu kütüphanesi yükleniyor…"; root.appendChild(p); return root; }
+    const grid = document.createElement("div"); grid.className = "cat-grid";
+    const draw = (filter) => {
+      grid.replaceChildren();
+      const cats = topicsByCategory(filter);
+      if (!cats.length) { const p = document.createElement("p"); p.className = "muted"; p.textContent = "Bu aramayla eşleşen konu yok. Sorunuzu yine de yazabilirsiniz."; grid.appendChild(p); }
+      cats.forEach(([cat, topics]) => {
+        const card = document.createElement("div"); card.className = "cat-card";
+        const h = document.createElement("h3"); h.textContent = cat;
+        const c = document.createElement("span"); c.textContent = `${topics.size} konu`; h.appendChild(c);
+        const ul = document.createElement("ul");
+        topics.forEach((info, topic) => {
+          const li = document.createElement("li");
+          const b = document.createElement("button"); b.type = "button"; b.className = "topic-btn" + (info.er ? " er" : ""); b.textContent = topic;
+          b.onclick = () => openSheet(topic, topicDetail(topic, info));
+          li.appendChild(b); ul.appendChild(li);
+        });
+        card.append(h, ul); grid.appendChild(card);
+      });
+    };
+    if (withFilter) {
+      const inp = document.createElement("input"); inp.type = "search"; inp.className = "lib-filter"; inp.id = "libFilter";
+      inp.placeholder = `${new Set(library.map((k) => k.topic)).size} konuda ara: ör. bel ağrısı, tiroid, ferritin`;
+      inp.setAttribute("aria-label", "Konularda ara");
+      inp.addEventListener("input", () => draw(inp.value));
+      root.appendChild(inp);
+    }
+    root.appendChild(grid);
+    draw("");
+    return root;
+  }
+
+  function topicDetail(topic, info) {
+    const root = document.createElement("div");
+    const p = document.createElement("p"); p.className = "muted";
+    p.textContent = `${info.sources.length} güvenilir kaynak. Özetler kaynak sayfalardan derlenmiştir; ayrıntı için bağlantıya tıklayın.`;
+    root.appendChild(p);
+    info.sources.forEach((k) => {
+      const card = document.createElement("div"); card.className = "src-card";
+      const kind = document.createElement("span"); kind.className = "kind"; kind.textContent = `${KIND[k.kind] || ""} · ${k.kurum}`;
+      const a = document.createElement("a"); a.href = k.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = k.baslik + " ↗";
+      const t = document.createElement("p"); t.textContent = k.text;
+      card.append(kind, a, t); root.appendChild(card);
+    });
+    const ask = document.createElement("button"); ask.type = "button"; ask.className = "btn primary"; ask.textContent = "Bu konuda soru sor";
+    ask.style.marginTop = "8px";
+    ask.onclick = () => { closeSheet(); el.prompt.value = `${topic} hakkında bilgi verir misin? `; autosize(); updateSend(); el.prompt.focus(); };
+    root.appendChild(ask);
+    return root;
+  }
+
+  function renderWelcomeTopics() {
+    const panel = $("panel-topics"); if (panel) panel.replaceChildren(buildTopics(true));
   }
 
   function thinkingNode(label) {
@@ -742,8 +1158,8 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
       if (!res.ok) throw new Error(res.status);
       const data = await res.json();
       library = (data.kaynaklar || []).map((k) => ({
-        title: `${k.kurum}: ${k.baslik}`, text: k.ozet, url: k.url, kind: k.tur,
-        kw: [k.konu, ...(k.anahtar_kelimeler || [])].join(" "), topic: k.konu,
+        title: `${k.kurum}: ${k.baslik}`, text: k.ozet, url: k.url, kind: k.tur, kurum: k.kurum, baslik: k.baslik,
+        kw: [k.konu, ...(k.anahtar_kelimeler || [])].join(" "), topic: k.konu, category: k.kategori || "Diğer", er: Boolean(k.acil),
       }));
       const counts = {};
       library.forEach((k) => { counts[k.kind] = (counts[k.kind] || 0) + 1; });
@@ -751,9 +1167,11 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
       const stats = $("libStats"); stats.replaceChildren();
       Object.keys(KIND).filter((k) => counts[k]).forEach((k) => { const c = document.createElement("span"); c.textContent = `${KIND[k]} · ${counts[k]}`; stats.appendChild(c); });
       stats.hidden = false;
+      libCategories = data.kategoriler || [];
       const ul = $("libTopics"); ul.replaceChildren();
       [...new Set(library.map((k) => k.topic))].forEach((t) => { const li = document.createElement("li"); li.textContent = t; ul.appendChild(li); });
       $("libTopicsWrap").hidden = false;
+      renderWelcomeTopics();
     } catch {
       library = [];
       $("libInfo").textContent = "Kaynak kütüphanesi yüklenemedi; cevaplar genel tıbbi bilgiye dayanacak.";
@@ -940,7 +1358,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
       onText: ({ text }) => {
         const nearBottom = el.chat.scrollHeight - el.chat.scrollTop - el.chat.clientHeight < 80;
         if (splitTriage(text).partial) return;
-        fillCard(card, text, last.sources);
+        fillCard(card, text, last.sources, false);
         if (nearBottom) scrollDown();
       },
     };
@@ -999,6 +1417,23 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   ["dragleave", "drop"].forEach((t) => el.composer.addEventListener(t, () => el.composer.classList.remove("drag")));
   el.composer.addEventListener("drop", (e) => { e.preventDefault(); addPending([...e.dataTransfer.files]); });
   el.prompt.addEventListener("paste", (e) => { const f = [...(e.clipboardData?.files || [])]; if (f.length) { e.preventDefault(); addPending(f); } });
+
+  // Sekmeler
+  const TABS = ["map", "topics", "examples"];
+  function showTab(name) {
+    TABS.forEach((t) => {
+      $("tab-" + t).setAttribute("aria-selected", String(t === name));
+      $("panel-" + t).hidden = t !== name;
+    });
+  }
+  TABS.forEach((t) => $("tab-" + t).addEventListener("click", () => showTab(t)));
+  $("panel-map").appendChild(buildBodyMap());
+  renderWelcomeTopics();
+  $("mapBtn").onclick = () => openSheet("Vücut haritası", buildBodyMap());
+  $("topicsBtn").onclick = () => openSheet("Konu kütüphanesi", buildTopics(true));
+  $("sheetClose").onclick = closeSheet;
+  $("sheet").addEventListener("click", (e) => { if (e.target.id === "sheet") closeSheet(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("sheet").hidden) closeSheet(); });
 
   $("examples").addEventListener("click", (e) => {
     const b = e.target.closest(".example"); if (b && sampleReady) submit(b.dataset.q);
