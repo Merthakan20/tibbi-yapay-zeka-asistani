@@ -402,11 +402,26 @@ button { cursor: pointer; }
 .tab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* ---------- Vücut haritası ---------- */
-.bodymap { display: grid; grid-template-columns: 200px 1fr; gap: 22px; align-items: start; }
-.bodymap svg { width: 100%; max-width: 200px; height: auto; display: block; margin: 0 auto; }
-.region { fill: var(--surface-2); stroke: var(--line); stroke-width: 1.5; cursor: pointer; transition: fill .15s; outline: none; }
-.region:hover, .region:focus-visible { fill: var(--accent-soft); stroke: var(--accent); }
-.region.sel { fill: var(--accent); stroke: var(--accent); }
+.bodymap { display: grid; grid-template-columns: minmax(220px, 280px) 1fr; gap: 22px; align-items: start; }
+/* X-ray paneli her temada koyu kalır */
+.xray { position: relative; background: radial-gradient(120% 80% at 50% 35%, #0a2236 0%, #04101a 60%, #02080d 100%); border-radius: 14px; padding: 10px 6px 6px; border: 1px solid #12324a; }
+.xray svg { width: 100%; height: auto; display: block; }
+.xray-label { position: absolute; left: 0; right: 0; top: 10px; text-align: center; font: 500 11px/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: #8fdcff; pointer-events: none; min-height: 11px; }
+.xray-hint { text-align: center; font: 11px var(--f-mono); color: #5d8aa6; padding: 4px 0 2px; }
+.xray .bone { fill: none; stroke: #bfeaff; stroke-linecap: round; stroke-linejoin: round; opacity: .42; }
+.xray .organ, .xray .part { cursor: pointer; outline: none; transition: fill-opacity .15s, stroke-opacity .15s, filter .15s; }
+.xray .organ { fill: #4fc8ff; fill-opacity: .22; stroke: #9be6ff; stroke-opacity: .75; stroke-width: 1.1; }
+.xray .part { fill: #4fc8ff; fill-opacity: 0; stroke: #9be6ff; stroke-opacity: 0; stroke-width: 1.2; }
+.xray .part.limb { fill: none; stroke: #4fc8ff; stroke-opacity: 0; stroke-linecap: round; pointer-events: stroke; }
+.xray .organ:hover, .xray .organ:focus-visible { fill-opacity: .5; stroke-opacity: 1; filter: url(#xglow); }
+.xray .part:hover, .xray .part:focus-visible { fill-opacity: .16; stroke-opacity: .9; }
+.xray .part.limb:hover, .xray .part.limb:focus-visible { stroke-opacity: .28; }
+.xray .sel.organ { fill: #ffd166; fill-opacity: .6; stroke: #ffe39a; stroke-opacity: 1; filter: url(#xglow); }
+.xray .sel.part { fill: #ffd166; fill-opacity: .22; stroke: #ffe39a; stroke-opacity: 1; }
+.xray .sel.part.limb { stroke: #ffd166; stroke-opacity: .35; }
+.xray .coil { fill: none; stroke: #9be6ff; stroke-opacity: .5; stroke-width: .9; pointer-events: none; }
+.region-group { margin-bottom: 10px; }
+.region-group > span { display: block; font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .07em; color: var(--ink-2); margin-bottom: 6px; }
 .region-list { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
 .region-btn { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 11px; font-size: 13px; }
 .region-btn:hover { border-color: var(--accent); }
@@ -428,7 +443,7 @@ button { cursor: pointer; }
 .er-warn { border-left: 3px solid var(--t-er); background: var(--er-soft); padding: 8px 10px; border-radius: 0 6px 6px 0; font-size: 13.5px; }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .btn.primary:hover { color: var(--accent-ink); opacity: .92; }
-@media (max-width: 560px) { .bodymap { grid-template-columns: 1fr; } .bodymap svg { max-width: 150px; } }
+@media (max-width: 640px) { .bodymap { grid-template-columns: 1fr; } .xray { max-width: 260px; margin: 0 auto; width: 100%; } }
 
 /* ---------- Konu kütüphanesi ---------- */
 .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
@@ -911,47 +926,153 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
 
   // ------------------------------------------------------------------ Vücut haritası
   const REGIONS = [
-    { id: "bas", ad: "Baş ve yüz", items: ["Baş ağrısı", "Baş dönmesi", "Göz kızarıklığı", "Kulak ağrısı", "Burun tıkanıklığı", "Bayılma hissi"], er: ["Bayılma hissi"] },
-    { id: "boyun", ad: "Boyun ve boğaz", items: ["Boğaz ağrısı", "Yutkunma güçlüğü", "Ses kısıklığı", "Boyunda şişlik", "Boyun ağrısı"] },
-    { id: "gogus", ad: "Göğüs", items: ["Göğüs ağrısı", "Çarpıntı", "Nefes darlığı", "Öksürük", "Hırıltılı solunum"], er: ["Göğüs ağrısı", "Nefes darlığı"] },
-    { id: "ust-karin", ad: "Üst karın", items: ["Mide yanması", "Karın ağrısı", "Bulantı", "Şişkinlik", "Hazımsızlık"] },
-    { id: "alt-karin", ad: "Alt karın ve kasık", items: ["Kasık ağrısı", "İdrarda yanma", "Sık idrara çıkma", "Kabızlık", "İshal", "Adet ağrısı"] },
-    { id: "kollar", ad: "Kollar ve eller", items: ["Kolda uyuşma", "Kolda güçsüzlük", "Eklem ağrısı", "El bileği ağrısı", "Elde karıncalanma"], er: ["Kolda güçsüzlük"] },
-    { id: "bacaklar", ad: "Bacaklar ve ayaklar", items: ["Bacakta şişlik", "Diz ağrısı", "Bacak krampları", "Varis", "Ayak başparmağında ağrı"] },
-    { id: "sirt", ad: "Sırt ve bel", items: ["Bel ağrısı", "Sırt ağrısı", "Böğür ağrısı", "Bacağa vuran bel ağrısı"] },
-    { id: "cilt", ad: "Cilt", items: ["Kaşıntı", "Döküntü", "Kurdeşen", "Sivilce", "Ciltte kuruluk"] },
-    { id: "genel", ad: "Genel", items: ["Ateş", "Halsizlik", "İstemsiz kilo kaybı", "Uykusuzluk", "Kaygı ve stres"] },
+    { id: "beyin", grup: "Baş ve boyun", ad: "Baş ve beyin", items: ["Baş ağrısı", "Ani ve çok şiddetli baş ağrısı", "Baş dönmesi", "Bayılma hissi", "Unutkanlık", "Konuşma bozukluğu"], er: ["Ani ve çok şiddetli baş ağrısı", "Konuşma bozukluğu", "Bayılma hissi"] },
+    { id: "yuz", grup: "Baş ve boyun", ad: "Göz, kulak, burun", items: ["Göz kızarıklığı", "Bulanık görme", "Kulak ağrısı", "Kulak çınlaması", "Burun tıkanıklığı", "Burun kanaması", "Yüzde ağrı ve baskı"], er: ["Bulanık görme"] },
+    { id: "boyun", grup: "Baş ve boyun", ad: "Boğaz ve boyun", items: ["Boğaz ağrısı", "Yutkunma güçlüğü", "Ses kısıklığı", "Boyunda şişlik", "Boyun ağrısı", "Ense sertliği"], er: ["Ense sertliği"] },
+    { id: "akciger", grup: "Göğüs", ad: "Akciğerler", items: ["Öksürük", "Balgam", "Nefes darlığı", "Hırıltılı solunum", "Kanlı balgam", "Horlama ve nefes durması"], er: ["Nefes darlığı", "Kanlı balgam"] },
+    { id: "kalp", grup: "Göğüs", ad: "Kalp", items: ["Göğüs ağrısı", "Göğüste sıkışma", "Çarpıntı", "Yüksek tansiyon", "Düşük tansiyon", "Eforla nefes darlığı"], er: ["Göğüs ağrısı", "Göğüste sıkışma"] },
+    { id: "karaciger", grup: "Karın", ad: "Karaciğer ve safra", items: ["Sağ üst karın ağrısı", "Yağlı yemekten sonra ağrı", "Ciltte ve gözde sararma", "Koyu renkli idrar"], er: ["Ciltte ve gözde sararma"] },
+    { id: "mide", grup: "Karın", ad: "Mide", items: ["Mide yanması", "Mide ağrısı", "Bulantı ve kusma", "Hazımsızlık", "Şişkinlik", "Siyah dışkı"], er: ["Siyah dışkı"] },
+    { id: "bagirsak", grup: "Karın", ad: "Bağırsaklar", items: ["Karın ağrısı", "Sağ alt karın ağrısı", "İshal", "Kabızlık", "Gaz", "Makattan kanama"], er: ["Sağ alt karın ağrısı"] },
+    { id: "bobrek", grup: "Karın", ad: "Böbrekler", items: ["Böğür ağrısı", "İdrarda kan", "Göz kapağı ve bacakta şişlik", "Köpüklü idrar"] },
+    { id: "mesane", grup: "Karın", ad: "Mesane ve kasık", items: ["İdrarda yanma", "Sık idrara çıkma", "İdrar kaçırma", "Kasık ağrısı", "Adet ağrısı", "İdrar akışında zayıflık"] },
+    { id: "omurga", grup: "Gövde ve eklemler", ad: "Omurga, sırt ve bel", items: ["Bel ağrısı", "Bacağa vuran bel ağrısı", "Sırt ağrısı", "Boyundan kola vuran ağrı", "Boy kısalması ve kamburluk"] },
+    { id: "kollar", grup: "Gövde ve eklemler", ad: "Omuz ve kollar", items: ["Omuz ağrısı", "Kolu kaldıramama", "Kolda uyuşma", "Kolda ani güçsüzlük", "Dirsek ağrısı"], er: ["Kolda ani güçsüzlük"] },
+    { id: "eller", grup: "Gövde ve eklemler", ad: "El ve bilek", items: ["Elde gece uyuşma", "Parmak eklemlerinde şişlik", "Sabah el tutukluğu", "Bilek ağrısı", "El titremesi"] },
+    { id: "eklem", grup: "Gövde ve eklemler", ad: "Kalça ve diz", items: ["Diz ağrısı", "Dizde şişlik", "Kalça ağrısı", "Eklemde çıtırtı", "Merdiven inerken ağrı"] },
+    { id: "bacak", grup: "Gövde ve eklemler", ad: "Bacaklar", items: ["Tek bacakta şişlik", "İki bacakta şişlik", "Varis", "Bacak krampları", "Yürürken baldır ağrısı"], er: ["Tek bacakta şişlik"] },
+    { id: "ayak", grup: "Gövde ve eklemler", ad: "Ayaklar", items: ["Ayak başparmağında ağrı", "Topuk ağrısı", "Ayakta uyuşma ve yanma", "Ayak parmak arası kaşıntı", "İyileşmeyen ayak yarası"] },
+    { id: "cilt", grup: "Genel", ad: "Cilt", items: ["Kaşıntı", "Döküntü", "Kurdeşen", "Sivilce", "Uçuk", "Saç dökülmesi", "Bende değişiklik"] },
+    { id: "genel", grup: "Genel", ad: "Genel belirtiler", items: ["Ateş", "Halsizlik", "İstemsiz kilo kaybı", "Gece terlemesi", "Uykusuzluk", "Sürekli susama"] },
+    { id: "ruh", grup: "Genel", ad: "Ruh sağlığı", items: ["Sürekli kaygı", "Panik atak", "Mutsuzluk ve isteksizlik", "Dikkat dağınıklığı", "Kendine zarar verme düşüncesi"], er: ["Kendine zarar verme düşüncesi"] },
   ];
-  const BODY_SVG = `<svg viewBox="0 0 200 430" aria-label="Vücut haritası" role="group">
-    <ellipse class="region" data-region="bas" cx="100" cy="40" rx="25" ry="30"/>
-    <rect class="region" data-region="boyun" x="88" y="68" width="24" height="22" rx="6"/>
-    <path class="region" data-region="kollar" d="M51 96 Q37 100 35 122 L27 206 Q25 222 34 223 Q42 224 43 213 L54 134 Z M149 96 Q163 100 165 122 L173 206 Q175 222 166 223 Q158 224 157 213 L146 134 Z"/>
-    <path class="region" data-region="gogus" d="M62 90 Q100 80 138 90 Q147 94 148 108 L145 168 L55 168 L52 108 Q53 94 62 90 Z"/>
-    <path class="region" data-region="ust-karin" d="M55 171 L145 171 L142 214 L58 214 Z"/>
-    <path class="region" data-region="alt-karin" d="M58 217 L142 217 Q143 242 135 260 L100 270 L65 260 Q57 242 58 217 Z"/>
-    <path class="region" data-region="bacaklar" d="M65 264 L98 273 L96 404 Q96 416 86 416 L77 416 Q69 416 69 404 Z M135 264 L102 273 L104 404 Q104 416 114 416 L123 416 Q131 416 131 404 Z"/>
-  </svg>`;
+
+  // X-ray tarzı vücut çizimi: iskelet süs olarak, organlar ve bölgeler tıklanabilir
+  function makeBodySvg() {
+    const M = (d) => d.replace(/(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)/g, (_, x, y) => `${(300 - x).toFixed(1)} ${y}`); // sağ-sol ayna
+    const both = (d) => d + " " + M(d);
+    const ln = (x1, y1, x2, y2, w) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke-width="${w}"/>`;
+    const lnB = (x1, y1, x2, y2, w) => ln(x1, y1, x2, y2, w) + ln(300 - x1, y1, 300 - x2, y2, w);
+
+    // Gövde silueti (dolgu ve kenar parıltısı için)
+    const armR = (w) => `<path d="M212 136 L238 246 L262 344" stroke-width="${w}" fill="none"/><path d="M88 136 L62 246 L38 344" stroke-width="${w}" fill="none"/>`;
+    const silhouette = `
+      <ellipse cx="150" cy="54" rx="29" ry="37"/>
+      <rect x="135" y="84" width="30" height="32" rx="9"/>
+      <path d="M112 108 Q150 99 188 108 Q214 113 220 132 Q224 154 214 182 Q206 222 197 260 Q199 300 205 336 Q198 374 150 384 Q102 374 95 336 Q101 300 103 260 Q94 222 86 182 Q76 154 80 132 Q86 113 112 108Z"/>
+      <g stroke-linecap="round" stroke-linejoin="round">${armR(30).replace('M212 136 L238 246 L262 344','M212 136 L238 246').replace('M88 136 L62 246 L38 344','M88 136 L62 246')}
+        <path d="M238 246 L262 344" stroke-width="23" fill="none"/><path d="M62 246 L38 344" stroke-width="23" fill="none"/>
+        <path d="M128 352 L124 500 L122 598" stroke-width="40" fill="none"/><path d="M172 352 L176 500 L178 598" stroke-width="40" fill="none"/>
+      </g>
+      <path d="${both("M262 344 Q276 352 280 372 L286 402 Q287 408 282 407 L276 390 L278 412 Q278 418 273 416 L268 394 L266 418 Q265 423 260 420 L259 395 L254 414 Q252 419 248 415 L250 388 Q246 380 244 368 Q246 350 262 344Z")}"/>
+      <path d="${both("M104 602 Q122 596 140 604 Q144 616 136 622 L104 624 Q94 622 96 612 Q98 604 104 602Z")}"/>`;
+
+    // İskelet
+    let vert = "";
+    for (let y = 92; y < 336; y += 9.5) vert += `<rect x="${y < 116 ? 145.5 : 144}" y="${y}" width="${y < 116 ? 9 : 12}" height="7" rx="2.2" stroke-width="1"/>`;
+    let ribs = "";
+    for (let i = 0; i < 10; i++) {
+      const y = 126 + i * 11.5, w = 46 - Math.abs(i - 3.5) * 2.2, drop = 10 + i * 1.6;
+      ribs += `<path d="${both(`M156 ${y} Q${150 + w + 10} ${y - 6} ${150 + w} ${y + drop}`)}" stroke-width="1.6"/>`;
+    }
+    const skeleton = `
+      <ellipse cx="150" cy="47" rx="22" ry="26" stroke-width="1.6"/>
+      <ellipse cx="141" cy="52" rx="5.5" ry="4.5" stroke-width="1.2"/><ellipse cx="159" cy="52" rx="5.5" ry="4.5" stroke-width="1.2"/>
+      <path d="M147 60 L150 66 L153 60" stroke-width="1"/>
+      <path d="M131 62 Q132 80 150 84 Q168 80 169 62" stroke-width="1.5"/>
+      ${vert}${ribs}
+      <path d="M150 120 L150 172" stroke-width="3"/>
+      <path d="${both("M150 114 Q176 108 206 118")}" stroke-width="2.4"/>
+      <path d="${both("M206 118 Q216 124 214 138 Q206 146 196 142")}" stroke-width="1.6"/>
+      <path d="M118 318 Q110 338 124 352 Q138 360 150 352 Q162 360 176 352 Q190 338 182 318 Q170 330 150 332 Q130 330 118 318Z" stroke-width="2"/>
+      <circle cx="132" cy="352" r="7" stroke-width="1.6"/><circle cx="168" cy="352" r="7" stroke-width="1.6"/>
+      ${lnB(212, 140, 236, 240, 3.4)}${lnB(237, 252, 256, 342, 2)}${lnB(242, 250, 262, 340, 2)}
+      ${lnB(134, 360, 126, 492, 4.2)}${lnB(125, 510, 123, 594, 3.2)}${lnB(132, 512, 131, 590, 1.6)}
+      <circle cx="125" cy="501" r="6.5" stroke-width="1.6"/><circle cx="175" cy="501" r="6.5" stroke-width="1.6"/>
+      ${lnB(266, 360, 280, 400, 1.3)}${lnB(262, 362, 271, 410, 1.3)}${lnB(258, 362, 262, 412, 1.3)}${lnB(254, 360, 254, 406, 1.3)}
+      ${lnB(110, 606, 132, 606, 1.2)}${lnB(112, 612, 136, 614, 1.2)}`;
+
+    // Bağırsak kıvrımları (süs)
+    let coils = "";
+    for (let i = 0; i < 4; i++) {
+      const y = 282 + i * 10;
+      coils += `<path class="coil" d="M130 ${y} q7 -6 14 0 t14 0 t14 0 t14 0"/>`;
+    }
+
+    const R = (id, cls, inner) => inner.replace(/<(path|ellipse|rect|circle)/g, `<$1 class="${cls}" data-region="${id}"`);
+    const regions = `
+      ${R("bacak", "part limb", `<path d="M128 372 L124 500 L122 588 M172 372 L176 500 L178 588" stroke-width="36"/>`)}
+      ${R("kollar", "part limb", `<path d="M212 140 L238 246 L260 336 M88 140 L62 246 L40 336" stroke-width="28"/>`)}
+      ${R("eklem", "part", `<circle cx="125" cy="501" r="17"/><circle cx="175" cy="501" r="17"/><circle cx="130" cy="352" r="13"/><circle cx="170" cy="352" r="13"/>`)}
+      ${R("eller", "part", `<path d="${both("M262 344 Q278 352 282 374 L287 404 L250 416 Q244 384 244 368 Q246 350 262 344Z")}"/>`)}
+      ${R("ayak", "part", `<path d="${both("M102 598 Q122 592 142 602 Q146 618 136 624 L102 626 Q92 622 94 610 Q96 600 102 598Z")}"/>`)}
+      ${R("boyun", "part", `<rect x="132" y="84" width="36" height="30" rx="9"/>`)}
+      ${R("yuz", "part", `<ellipse cx="150" cy="62" rx="20" ry="17"/>`)}
+      ${R("omurga", "part", `<rect x="141" y="122" width="18" height="40" rx="6"/><rect x="141" y="296" width="18" height="34" rx="6"/>`)}
+      ${R("beyin", "organ", `<path d="M128 40 Q130 18 150 16 Q170 18 172 40 Q172 48 162 48 Q156 44 150 48 Q144 44 138 48 Q128 48 128 40Z"/>`)}
+      ${R("akciger", "organ", `<path d="${both("M142 128 Q122 124 111 150 Q102 186 108 218 Q124 226 142 212 Q138 190 142 160 Z")}"/>`)}
+      ${R("kalp", "organ", `<path d="M147 178 Q162 166 172 182 Q176 202 158 220 Q146 210 142 196 Q140 182 147 178Z"/>`)}
+      ${R("karaciger", "organ", `<path d="M104 228 Q130 220 158 228 Q154 248 130 254 Q110 254 104 242Z"/>`)}
+      ${R("mide", "organ", `<path d="M162 226 Q188 220 194 240 Q196 262 174 266 Q160 258 166 246 Q158 238 162 226Z"/>`)}
+      ${R("bobrek", "organ", `<ellipse cx="114" cy="276" rx="8" ry="14"/><ellipse cx="186" cy="276" rx="8" ry="14"/>`)}
+      ${R("bagirsak", "organ", `<rect x="124" y="270" width="52" height="46" rx="16"/>`)}
+      ${R("mesane", "organ", `<ellipse cx="150" cy="340" rx="15" ry="11"/>`)}`;
+
+    return `<svg viewBox="0 0 300 640" role="group" aria-label="Vücut haritası: bir organa veya bölgeye dokunun">
+      <defs>
+        <linearGradient id="xbody" x1="0" y1="0" x2="0" y2="640" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#2c9ce0"/><stop offset=".5" stop-color="#1673b8"/><stop offset="1" stop-color="#0d4f86"/>
+        </linearGradient>
+        <filter id="xedge" x="-5%" y="-5%" width="110%" height="110%">
+          <feMorphology in="SourceAlpha" operator="erode" radius="1.6" result="er"/>
+          <feComposite in="SourceAlpha" in2="er" operator="out" result="edge"/>
+          <feFlood flood-color="#8fe4ff"/><feComposite in2="edge" operator="in" result="line"/>
+          <feGaussianBlur in="line" stdDeviation="2.2" result="glow"/>
+          <feMerge><feMergeNode in="glow"/><feMergeNode in="line"/></feMerge>
+        </filter>
+        <filter id="xglow" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <g fill="url(#xbody)" stroke="url(#xbody)" opacity=".5">${silhouette}</g>
+      <g fill="#fff" stroke="#fff" filter="url(#xedge)" opacity=".9">${silhouette}</g>
+      <g class="bone">${skeleton}</g>
+      ${coils}
+      ${regions}
+    </svg>`;
+  }
 
   function buildBodyMap() {
     const root = document.createElement("div"); root.className = "bodymap";
-    const fig = document.createElement("div"); fig.innerHTML = BODY_SVG;
+    const fig = document.createElement("div"); fig.className = "xray";
+    fig.innerHTML = `<div class="xray-label" aria-hidden="true"></div>${makeBodySvg()}<div class="xray-hint">Bir organa veya bölgeye dokunun</div>`;
+    const label = fig.querySelector(".xray-label");
     const side = document.createElement("div"); side.className = "map-side";
     root.append(fig, side);
-    const list = document.createElement("div"); list.className = "region-list";
-    REGIONS.forEach((r) => {
-      const b = document.createElement("button"); b.type = "button"; b.className = "region-btn"; b.dataset.region = r.id; b.textContent = r.ad;
-      b.setAttribute("aria-pressed", "false"); list.appendChild(b);
+    const list = document.createElement("div");
+    [...new Set(REGIONS.map((r) => r.grup))].forEach((g) => {
+      const box = document.createElement("div"); box.className = "region-group";
+      const t = document.createElement("span"); t.textContent = g;
+      const row = document.createElement("div"); row.className = "region-list"; row.style.marginBottom = "0";
+      REGIONS.filter((r) => r.grup === g).forEach((r) => {
+        const b = document.createElement("button"); b.type = "button"; b.className = "region-btn"; b.dataset.region = r.id; b.textContent = r.ad;
+        b.setAttribute("aria-pressed", "false"); row.appendChild(b);
+      });
+      box.append(t, row); list.appendChild(box);
     });
-    const detail = document.createElement("div");
+    const detail = document.createElement("div"); detail.style.marginTop = "14px";
     side.append(list, detail);
+    let current = null;
 
     function select(id) {
       const r = REGIONS.find((x) => x.id === id); if (!r) return;
-      root.querySelectorAll(".region").forEach((n) => n.classList.toggle("sel", n.dataset.region === id));
+      current = r;
+      label.textContent = r.ad;
+      fig.querySelectorAll("[data-region]").forEach((n) => n.classList.toggle("sel", n.dataset.region === id));
       list.querySelectorAll(".region-btn").forEach((n) => n.setAttribute("aria-pressed", String(n.dataset.region === id)));
       detail.replaceChildren();
       const h = document.createElement("h3"); h.textContent = r.ad;
-      const p = document.createElement("p"); p.className = "muted"; p.textContent = "Şikayetinizi seçin, birkaç bilgi ekleyin; soruyu sizin için hazırlayayım.";
+      const p = document.createElement("p"); p.className = "muted"; p.textContent = "Şikayetinizi seçin, birkaç bilgi ekleyin; soruyu sizin için hazırlayayım. Kırmızı noktalılar acil olabilir.";
       const chips = document.createElement("div"); chips.className = "complaints";
       const formBox = document.createElement("div");
       r.items.forEach((c) => {
@@ -965,15 +1086,18 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
       });
       detail.append(h, p, chips, formBox);
     }
-    root.querySelectorAll(".region").forEach((n) => {
-      const r = REGIONS.find((x) => x.id === n.dataset.region);
-      n.setAttribute("tabindex", "0"); n.setAttribute("role", "button"); n.setAttribute("aria-label", r.ad);
+    const seen = new Set();
+    fig.querySelectorAll("[data-region]").forEach((n) => {
+      const r = REGIONS.find((x) => x.id === n.dataset.region); if (!r) return;
       const t = document.createElementNS("http://www.w3.org/2000/svg", "title"); t.textContent = r.ad; n.appendChild(t);
-      n.addEventListener("click", () => select(n.dataset.region));
-      n.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(n.dataset.region); } });
+      if (!seen.has(r.id)) { seen.add(r.id); n.setAttribute("tabindex", "0"); n.setAttribute("role", "button"); n.setAttribute("aria-label", r.ad); }
+      n.addEventListener("click", () => select(r.id));
+      n.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(r.id); } });
+      n.addEventListener("mouseenter", () => { label.textContent = r.ad; });
+      n.addEventListener("mouseleave", () => { label.textContent = current ? current.ad : ""; });
     });
     list.addEventListener("click", (e) => { const b = e.target.closest(".region-btn"); if (b) select(b.dataset.region); });
-    select("gogus");
+    select("kalp");
     return root;
   }
 
