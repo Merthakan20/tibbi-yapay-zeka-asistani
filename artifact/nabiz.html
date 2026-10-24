@@ -404,13 +404,13 @@ button { cursor: pointer; }
 /* ---------- Vücut haritası ---------- */
 .bodymap { display: grid; grid-template-columns: minmax(220px, 280px) 1fr; gap: 22px; align-items: start; }
 /* X-ray paneli her temada koyu kalır */
-.xray { position: relative; background: radial-gradient(120% 80% at 50% 35%, #0a2236 0%, #04101a 60%, #02080d 100%); border-radius: 14px; padding: 10px 6px 6px; border: 1px solid #12324a; }
+.xray { position: relative; background: radial-gradient(110% 75% at 50% 40%, #2b6d88 0%, #17465c 55%, #0c2633 100%); border-radius: 14px; padding: 10px 6px 6px; border: 1px solid #23597200; }
 .xray svg { width: 100%; height: auto; display: block; }
 .xray-label { position: absolute; left: 0; right: 0; top: 10px; text-align: center; font: 500 11px/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: #8fdcff; pointer-events: none; min-height: 11px; }
-.xray-hint { text-align: center; font: 11px var(--f-mono); color: #5d8aa6; padding: 4px 0 2px; }
-.xray .bone { fill: none; stroke: #bfeaff; stroke-linecap: round; stroke-linejoin: round; opacity: .42; }
+.xray-hint { text-align: center; font: 11px var(--f-mono); color: #9cc9dd; padding: 4px 0 2px; }
+.xray .bone { fill: none; stroke: #e2f7ff; stroke-linecap: round; stroke-linejoin: round; opacity: .5; }
 .xray .organ, .xray .part { cursor: pointer; outline: none; transition: fill-opacity .15s, stroke-opacity .15s, filter .15s; }
-.xray .organ { fill: #4fc8ff; fill-opacity: .22; stroke: #9be6ff; stroke-opacity: .75; stroke-width: 1.1; }
+.xray .organ { fill: #9be6ff; fill-opacity: .14; stroke: #d6f5ff; stroke-opacity: .55; stroke-width: 1; }
 .xray .part { fill: #4fc8ff; fill-opacity: 0; stroke: #9be6ff; stroke-opacity: 0; stroke-width: 1.2; }
 .xray .part.limb { fill: none; stroke: #4fc8ff; stroke-opacity: 0; stroke-linecap: round; pointer-events: stroke; }
 .xray .organ:hover, .xray .organ:focus-visible { fill-opacity: .5; stroke-opacity: 1; filter: url(#xglow); }
@@ -947,95 +947,101 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     { id: "ruh", grup: "Genel", ad: "Ruh sağlığı", items: ["Sürekli kaygı", "Panik atak", "Mutsuzluk ve isteksizlik", "Dikkat dağınıklığı", "Kendine zarar verme düşüncesi"], er: ["Kendine zarar verme düşüncesi"] },
   ];
 
-  // X-ray tarzı vücut çizimi: iskelet süs olarak, organlar ve bölgeler tıklanabilir
+  // X-ray tarzı vücut çizimi: anatomik oranlarda tek parça siluet, iskelet süs, organlar ve bölgeler tıklanabilir
   function makeBodySvg() {
     const M = (d) => d.replace(/(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)/g, (_, x, y) => `${(300 - x).toFixed(1)} ${y}`); // sağ-sol ayna
     const both = (d) => d + " " + M(d);
     const ln = (x1, y1, x2, y2, w) => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke-width="${w}"/>`;
     const lnB = (x1, y1, x2, y2, w) => ln(x1, y1, x2, y2, w) + ln(300 - x1, y1, 300 - x2, y2, w);
 
-    // Gövde silueti (dolgu ve kenar parıltısı için)
-    const armR = (w) => `<path d="M212 136 L238 246 L262 344" stroke-width="${w}" fill="none"/><path d="M88 136 L62 246 L38 344" stroke-width="${w}" fill="none"/>`;
-    const silhouette = `
-      <ellipse cx="150" cy="54" rx="29" ry="37"/>
-      <rect x="135" y="84" width="30" height="32" rx="9"/>
-      <path d="M112 108 Q150 99 188 108 Q214 113 220 132 Q224 154 214 182 Q206 222 197 260 Q199 300 205 336 Q198 374 150 384 Q102 374 95 336 Q101 300 103 260 Q94 222 86 182 Q76 154 80 132 Q86 113 112 108Z"/>
-      <g stroke-linecap="round" stroke-linejoin="round">${armR(30).replace('M212 136 L238 246 L262 344','M212 136 L238 246').replace('M88 136 L62 246 L38 344','M88 136 L62 246')}
-        <path d="M238 246 L262 344" stroke-width="23" fill="none"/><path d="M62 246 L38 344" stroke-width="23" fill="none"/>
-        <path d="M128 352 L124 500 L122 598" stroke-width="40" fill="none"/><path d="M172 352 L176 500 L178 598" stroke-width="40" fill="none"/>
-      </g>
-      <path d="${both("M262 344 Q276 352 280 372 L286 402 Q287 408 282 407 L276 390 L278 412 Q278 418 273 416 L268 394 L266 418 Q265 423 260 420 L259 395 L254 414 Q252 419 248 415 L250 388 Q246 380 244 368 Q246 350 262 344Z")}"/>
-      <path d="${both("M104 602 Q122 596 140 604 Q144 616 136 622 L104 624 Q94 622 96 612 Q98 604 104 602Z")}"/>`;
+    // Sağ yarı silueti (orta çizgide 0,5 birim bindirme, iki yarı birleşince dikiş görünmez)
+    const half = `M150.5 18 C166 18 181 30 182 52 C183 64 180 76 175 86 C171 94 164 101 158 104 L160 116
+      C161 122 166 126 176 130 C196 136 214 140 226 148 C240 156 246 172 246 192 C247 222 250 252 252 282
+      C254 300 258 330 261 362 C263 380 264 396 265 408 C272 414 278 428 279 446 C280 460 276 474 270 484
+      C266 490 258 490 255 482 C252 470 252 456 251 446 L249 424 C248 418 247 412 247 406
+      C243 384 238 356 234 330 C232 314 230 300 228 288 C226 262 222 236 216 214 C214 208 212 204 209 202
+      C209 230 206 256 200 280 C197 296 196 312 198 328 C202 344 206 362 207 382 C208 420 204 458 197 492
+      C195 504 196 516 199 530 C202 556 198 590 190 622 C187 634 186 644 186 652 C192 660 196 668 192 674
+      C184 678 168 678 160 674 C157 668 158 660 160 652 C162 642 162 634 162 626 C160 596 159 566 162 536
+      C163 520 162 508 161 496 C159 470 158 440 156 416 C155 408 153 402 149.5 398 L149.5 18 Z`;
+    const silhouette = `<path d="${half}"/><path d="${M(half)}"/>`;
 
     // İskelet
-    let vert = "";
-    for (let y = 92; y < 336; y += 9.5) vert += `<rect x="${y < 116 ? 145.5 : 144}" y="${y}" width="${y < 116 ? 9 : 12}" height="7" rx="2.2" stroke-width="1"/>`;
+    let spine = "";
+    for (let y = 104, i = 0; y < 386; y += 10, i++) {
+      const w = 8 + Math.min(i, 24) * 0.25;
+      spine += `<rect x="${(150 - w / 2).toFixed(1)}" y="${y}" width="${w.toFixed(1)}" height="7" rx="2.4" stroke-width=".9"/>`;
+    }
     let ribs = "";
-    for (let i = 0; i < 10; i++) {
-      const y = 126 + i * 11.5, w = 46 - Math.abs(i - 3.5) * 2.2, drop = 10 + i * 1.6;
-      ribs += `<path d="${both(`M156 ${y} Q${150 + w + 10} ${y - 6} ${150 + w} ${y + drop}`)}" stroke-width="1.6"/>`;
+    for (let i = 0; i < 11; i++) {
+      const y = 148 + i * 11, w = 46 - Math.abs(i - 4) * 2.6, drop = 12 + i * 1.6, back = i < 7 ? 156 : 150 + w * 0.55;
+      const r = `M156 ${y} C${150 + w * 0.6} ${y - 7} ${150 + w + 5} ${y + 4} ${150 + w} ${y + drop} C${150 + w - 3} ${y + drop + 8} ${150 + w * 0.55} ${y + drop + 12} ${back} ${y + drop + 7}`;
+      ribs += `<path d="${both(r)}" stroke-width="1.15"/>`;
     }
     const skeleton = `
-      <ellipse cx="150" cy="47" rx="22" ry="26" stroke-width="1.6"/>
-      <ellipse cx="141" cy="52" rx="5.5" ry="4.5" stroke-width="1.2"/><ellipse cx="159" cy="52" rx="5.5" ry="4.5" stroke-width="1.2"/>
-      <path d="M147 60 L150 66 L153 60" stroke-width="1"/>
-      <path d="M131 62 Q132 80 150 84 Q168 80 169 62" stroke-width="1.5"/>
-      ${vert}${ribs}
-      <path d="M150 120 L150 172" stroke-width="3"/>
-      <path d="${both("M150 114 Q176 108 206 118")}" stroke-width="2.4"/>
-      <path d="${both("M206 118 Q216 124 214 138 Q206 146 196 142")}" stroke-width="1.6"/>
-      <path d="M118 318 Q110 338 124 352 Q138 360 150 352 Q162 360 176 352 Q190 338 182 318 Q170 330 150 332 Q130 330 118 318Z" stroke-width="2"/>
-      <circle cx="132" cy="352" r="7" stroke-width="1.6"/><circle cx="168" cy="352" r="7" stroke-width="1.6"/>
-      ${lnB(212, 140, 236, 240, 3.4)}${lnB(237, 252, 256, 342, 2)}${lnB(242, 250, 262, 340, 2)}
-      ${lnB(134, 360, 126, 492, 4.2)}${lnB(125, 510, 123, 594, 3.2)}${lnB(132, 512, 131, 590, 1.6)}
-      <circle cx="125" cy="501" r="6.5" stroke-width="1.6"/><circle cx="175" cy="501" r="6.5" stroke-width="1.6"/>
-      ${lnB(266, 360, 280, 400, 1.3)}${lnB(262, 362, 271, 410, 1.3)}${lnB(258, 362, 262, 412, 1.3)}${lnB(254, 360, 254, 406, 1.3)}
-      ${lnB(110, 606, 132, 606, 1.2)}${lnB(112, 612, 136, 614, 1.2)}`;
+      <ellipse cx="150" cy="56" rx="24" ry="30" stroke-width="1.3"/>
+      <ellipse cx="141" cy="61" rx="6" ry="5" stroke-width="1"/><ellipse cx="159" cy="61" rx="6" ry="5" stroke-width="1"/>
+      <path d="M147 70 L150 77 L153 70" stroke-width=".9"/>
+      <path d="M129 74 Q131 97 150 101 Q169 97 171 74" stroke-width="1.2"/>
+      ${spine}${ribs}
+      <rect x="146.5" y="140" width="7" height="72" rx="3" stroke-width="1.1"/>
+      <path d="${both("M153 134 Q182 127 223 145")}" stroke-width="2"/>
+      <path d="${both("M223 145 Q236 152 234 170 Q226 178 214 172")}" stroke-width="1.2"/>
+      <path d="M150 356 Q128 340 114 350 Q106 372 121 388 Q136 397 146 401 L154 401 Q164 397 179 388 Q194 372 186 350 Q172 340 150 356Z" stroke-width="1.6"/>
+      <path d="M138 396 Q150 388 162 396" stroke-width="1.1"/>
+      <circle cx="178" cy="392" r="7" stroke-width="1.2"/><circle cx="122" cy="392" r="7" stroke-width="1.2"/>
+      ${lnB(232, 162, 240, 282, 3.2)}${lnB(236, 296, 250, 402, 1.7)}${lnB(242, 296, 257, 400, 1.7)}
+      ${lnB(180, 398, 178, 492, 4)}${lnB(177, 516, 175, 640, 3)}${lnB(186, 520, 184, 636, 1.5)}
+      <circle cx="179" cy="505" r="6.5" stroke-width="1.3"/><circle cx="121" cy="505" r="6.5" stroke-width="1.3"/>
+      ${lnB(260, 414, 272, 476, 1.1)}${lnB(258, 416, 265, 484, 1.1)}${lnB(256, 416, 258, 482, 1.1)}${lnB(254, 416, 253, 472, 1.1)}${lnB(251, 424, 249, 446, 1.1)}
+      ${lnB(166, 656, 166, 672, 1)}${lnB(172, 656, 174, 673, 1)}${lnB(178, 656, 182, 670, 1)}`;
 
     // Bağırsak kıvrımları (süs)
     let coils = "";
-    for (let i = 0; i < 4; i++) {
-      const y = 282 + i * 10;
-      coils += `<path class="coil" d="M130 ${y} q7 -6 14 0 t14 0 t14 0 t14 0"/>`;
-    }
+    for (let i = 0; i < 5; i++) coils += `<path class="coil" d="M132 ${310 + i * 9} q6 -5 12 0 t12 0 t12 0 t12 0"/>`;
 
     const R = (id, cls, inner) => inner.replace(/<(path|ellipse|rect|circle)/g, `<$1 class="${cls}" data-region="${id}"`);
     const regions = `
-      ${R("bacak", "part limb", `<path d="M128 372 L124 500 L122 588 M172 372 L176 500 L178 588" stroke-width="36"/>`)}
-      ${R("kollar", "part limb", `<path d="M212 140 L238 246 L260 336 M88 140 L62 246 L40 336" stroke-width="28"/>`)}
-      ${R("eklem", "part", `<circle cx="125" cy="501" r="17"/><circle cx="175" cy="501" r="17"/><circle cx="130" cy="352" r="13"/><circle cx="170" cy="352" r="13"/>`)}
-      ${R("eller", "part", `<path d="${both("M262 344 Q278 352 282 374 L287 404 L250 416 Q244 384 244 368 Q246 350 262 344Z")}"/>`)}
-      ${R("ayak", "part", `<path d="${both("M102 598 Q122 592 142 602 Q146 618 136 624 L102 626 Q92 622 94 610 Q96 600 102 598Z")}"/>`)}
-      ${R("boyun", "part", `<rect x="132" y="84" width="36" height="30" rx="9"/>`)}
-      ${R("yuz", "part", `<ellipse cx="150" cy="62" rx="20" ry="17"/>`)}
-      ${R("omurga", "part", `<rect x="141" y="122" width="18" height="40" rx="6"/><rect x="141" y="296" width="18" height="34" rx="6"/>`)}
-      ${R("beyin", "organ", `<path d="M128 40 Q130 18 150 16 Q170 18 172 40 Q172 48 162 48 Q156 44 150 48 Q144 44 138 48 Q128 48 128 40Z"/>`)}
-      ${R("akciger", "organ", `<path d="${both("M142 128 Q122 124 111 150 Q102 186 108 218 Q124 226 142 212 Q138 190 142 160 Z")}"/>`)}
-      ${R("kalp", "organ", `<path d="M147 178 Q162 166 172 182 Q176 202 158 220 Q146 210 142 196 Q140 182 147 178Z"/>`)}
-      ${R("karaciger", "organ", `<path d="M104 228 Q130 220 158 228 Q154 248 130 254 Q110 254 104 242Z"/>`)}
-      ${R("mide", "organ", `<path d="M162 226 Q188 220 194 240 Q196 262 174 266 Q160 258 166 246 Q158 238 162 226Z"/>`)}
-      ${R("bobrek", "organ", `<ellipse cx="114" cy="276" rx="8" ry="14"/><ellipse cx="186" cy="276" rx="8" ry="14"/>`)}
-      ${R("bagirsak", "organ", `<rect x="124" y="270" width="52" height="46" rx="16"/>`)}
-      ${R("mesane", "organ", `<ellipse cx="150" cy="340" rx="15" ry="11"/>`)}`;
+      ${R("bacak", "part limb", `<path d="M181 420 L179 488 M179 522 L176 628 M119 420 L121 488 M121 522 L124 628" stroke-width="34"/>`)}
+      ${R("kollar", "part limb", `<path d="M232 162 L240 284 L256 400 M68 162 L60 284 L44 400" stroke-width="26"/>`)}
+      ${R("eklem", "part", `<circle cx="179" cy="505" r="16"/><circle cx="121" cy="505" r="16"/><circle cx="178" cy="390" r="12"/><circle cx="122" cy="390" r="12"/>`)}
+      ${R("eller", "part", `<ellipse cx="264" cy="448" rx="17" ry="36"/><ellipse cx="36" cy="448" rx="17" ry="36"/>`)}
+      ${R("ayak", "part", `<ellipse cx="174" cy="664" rx="19" ry="13"/><ellipse cx="126" cy="664" rx="19" ry="13"/>`)}
+      ${R("boyun", "part", `<rect x="136" y="100" width="28" height="28" rx="8"/>`)}
+      ${R("yuz", "part", `<ellipse cx="150" cy="72" rx="20" ry="18"/>`)}
+      ${R("omurga", "part", `<rect x="142" y="128" width="16" height="12" rx="5"/><rect x="142" y="358" width="16" height="10" rx="4"/>`)}
+      ${R("beyin", "organ", `<path d="M130 50 Q132 29 150 27 Q168 29 170 50 Q166 56 150 54 Q134 56 130 50Z"/>`)}
+      ${R("akciger", "organ", `<path d="${both("M145 150 Q127 146 119 172 Q111 210 117 252 Q133 258 145 246 Q141 210 145 150Z")}"/>`)}
+      ${R("kalp", "organ", `<path d="M148 206 Q162 194 172 210 Q174 230 156 246 Q144 236 142 222 Q142 210 148 206Z"/>`)}
+      ${R("karaciger", "organ", `<path d="M110 262 Q136 254 160 262 Q156 282 132 288 Q114 288 110 276Z"/>`)}
+      ${R("mide", "organ", `<path d="M162 260 Q188 254 192 274 Q194 294 174 298 Q162 290 168 278 Q160 270 162 260Z"/>`)}
+      ${R("bobrek", "organ", `<ellipse cx="119" cy="308" rx="8" ry="14"/><ellipse cx="181" cy="308" rx="8" ry="14"/>`)}
+      ${R("bagirsak", "organ", `<rect x="127" y="300" width="46" height="56" rx="16"/>`)}
+      ${R("mesane", "organ", `<ellipse cx="150" cy="380" rx="13" ry="9"/>`)}`;
 
-    return `<svg viewBox="0 0 300 640" role="group" aria-label="Vücut haritası: bir organa veya bölgeye dokunun">
+    return `<svg viewBox="0 0 300 690" role="group" aria-label="Vücut haritası: bir organa veya bölgeye dokunun">
       <defs>
-        <linearGradient id="xbody" x1="0" y1="0" x2="0" y2="640" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#2c9ce0"/><stop offset=".5" stop-color="#1673b8"/><stop offset="1" stop-color="#0d4f86"/>
-        </linearGradient>
-        <filter id="xedge" x="-5%" y="-5%" width="110%" height="110%">
-          <feMorphology in="SourceAlpha" operator="erode" radius="1.6" result="er"/>
+        <radialGradient id="xbody" cx="150" cy="300" r="330" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#5fd0ff"/><stop offset=".6" stop-color="#2f9fd8"/><stop offset="1" stop-color="#1c6fa6"/>
+        </radialGradient>
+        <filter id="xedge" x="-10%" y="-5%" width="120%" height="110%">
+          <feMorphology in="SourceAlpha" operator="erode" radius="1.2" result="er"/>
           <feComposite in="SourceAlpha" in2="er" operator="out" result="edge"/>
-          <feFlood flood-color="#8fe4ff"/><feComposite in2="edge" operator="in" result="line"/>
-          <feGaussianBlur in="line" stdDeviation="2.2" result="glow"/>
-          <feMerge><feMergeNode in="glow"/><feMergeNode in="line"/></feMerge>
+          <feFlood flood-color="#c4f1ff"/><feComposite in2="edge" operator="in" result="line"/>
+          <feGaussianBlur in="line" stdDeviation="3" result="glow"/>
+          <feMorphology in="SourceAlpha" operator="erode" radius="7" result="er2"/>
+          <feComposite in="SourceAlpha" in2="er2" operator="out" result="rim"/>
+          <feGaussianBlur in="rim" stdDeviation="5" result="rimb"/>
+          <feFlood flood-color="#8fe0ff" flood-opacity=".55"/><feComposite in2="rimb" operator="in" result="rimc"/>
+          <feComposite in="rimc" in2="SourceAlpha" operator="in" result="inner"/>
+          <feMerge><feMergeNode in="inner"/><feMergeNode in="glow"/><feMergeNode in="line"/></feMerge>
         </filter>
         <filter id="xglow" x="-30%" y="-30%" width="160%" height="160%">
           <feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
         </filter>
       </defs>
-      <g fill="url(#xbody)" stroke="url(#xbody)" opacity=".5">${silhouette}</g>
-      <g fill="#fff" stroke="#fff" filter="url(#xedge)" opacity=".9">${silhouette}</g>
+      <g fill="url(#xbody)" opacity=".42">${silhouette}</g>
+      <g fill="#fff" filter="url(#xedge)">${silhouette}</g>
       <g class="bone">${skeleton}</g>
       ${coils}
       ${regions}
