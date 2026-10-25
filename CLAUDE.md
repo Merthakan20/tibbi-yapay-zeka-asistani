@@ -18,14 +18,15 @@ Türkçe tıbbi bilgi asistanı. Kullanıcıyla Türkçe konuşulur.
 - Sohbet: `sample()` ile, talimat metni `RULES` sabitinde. Cevabın ilk satırı `ACİLİYET: evde|aile-hekimi|ayni-gun|acil` olursa 4 basamaklı aciliyet göstergesi çizilir.
 - Tahlil grafiği: Claude değerleri ```` ```tahlil ```` JSON bloğunda verir, sayfa referans aralığı çubuklarına çevirir.
 - Tahlil yükleme: PDF metni pdf.js ile çıkarılır; taranmış PDF ve fotoğraflar görsel olarak gönderilir.
-- Kaynak kütüphanesi: `kaynaklar.json` sayfayla birlikte yayınlanır, BM25 ile aranır (anahtar kelimeler 3 kat ağırlıklı, en iyi sonucun %40'ının altı elenir). Kelimeler `stem()` ile köke indirilir: Türkçe ekler ayıklanır ("başım ağrıyor" = "baş ağrısı"), sondaki d/t düşer, ğ→k, ilk 6 harf; "gün, hafta, yapmalıyım" gibi dolgu sözcükler (`FILLER`) atılır. Cevaplarda [1], [2] kaynak linkleri.
+- Kaynak kütüphanesi: `kaynaklar.json` sayfayla birlikte yayınlanır, BM25 ile aranır (anahtar kelimeler 3 kat ağırlıklı, en iyi sonucun %40'ının altı elenir). Kelimeler `stem()` ile köke indirilir: Türkçe ekler ayıklanır ("başım ağrıyor" = "baş ağrısı"), sondaki d/t düşer, ğ→k, ilk 6 harf; düzensiz biçimler `DROPPED` (karnım→karın, kalbim→kalp), kısaltılmayacak kökler `KEEP` (makat, boyun…); genel sözcükler `STOP`/`FILLER` ile atılır. Kütüphane kaynağı ancak sorudaki bir sözcük konusunda/anahtar kelimelerinde geçiyorsa sonuç olur (özet metninde geçmesi yetmez). Arama değişikliğinden sonra eski/yeni sonuçları karşılaştır (kök hataları sessizce kaynak kaybettirir). Cevaplarda [1], [2] kaynak linkleri.
 - Kendi belgelerim: kullanıcı PDF/TXT/MD ekler, tarayıcıda (localStorage) saklanır.
 - 3D vücut haritası (Three.js r128, cdnjs + jsdelivr): `buildBody3D()`. Gerçek kas+kemik modeli `models/muscles.json` ve `models/bones.json` içinde **base64 GLB** olarak durur (artifact servisi .glb sunmuyor), `GLTFLoader.parse` ile açılır. Yüklenemezse kodla çizilen yedek model, WebGL yoksa 2D SVG harita (`makeBodySvg`) kullanılır. 16 bölge `REGIONS` dizisinde; organlar ayrı tıklanabilir, diğer bölgeler dokunulan noktanın konumundan bulunur.
 - Açılış ekranı 3 sütun: model | bölge ve şikayetler | şikayet formu (sağda, sticky).
 - Konu kütüphanesi: kategori kartları, konuya tıklayınca kaynaklar.
 - Hasta profili (`profile`, localStorage `nabiz.profile.v1`): ad soyad (yalnızca PDF'te, Claude'a gönderilmez), yaş, cinsiyet, gebelik, kronik hastalık, ilaç, alerji. `trimmedTurns()` içinde talimat turuna `<hasta_profili>` olarak eklenir; şikayet formunu da doldurur.
 - Randevu yönlendirmesi: aciliyet satırından sonra `BÖLÜM: <MHRS klinik adı>` satırı → `careBox()` önerilen bölüm + MHRS linki + ALO 182; acilde 112 butonu. MHRS/e-Nabız'ın açık API'si yok, randevu kullanıcı adına alınamaz.
-- Doktora götürülecek özet: `openSummary()` yazışma + profilden `sample` ile özet yazar, `downloads` capability ile PDF indirir (pdfmake 0.2.10, cdnjs, ilk tıklamada yüklenir; Roboto Türkçe karakterleri destekler; yüklenemezse yazdırılabilir HTML). Yayında capabilities: `{sample:{images:true}, downloads:true}`.
+- Güvenlik testi (yalnızca sahip, `isOwner()`): panelde "Güvenlik testi" düğmesi; `RISK_CASES` (23 vaka) gerçek akışla `sample`'a sorulur, kurallarla puanlanır, `db`'de `guvenlik/<runId>/sonuclar/<id>` altına yazılır (kural: kök read/write owner). Claude sonuçları `ArtifactData list` ile okur. Yayında capabilities: `{sample:{images:true}, downloads:true, user:{}, db:{rules:[{path:"",read:"owner",write:"owner"}]}}`.
+- Doktora götürülecek özet: `openSummary()` yazışma + profilden `sample` ile özet yazar, `downloads` capability ile PDF indirir (pdfmake 0.2.10, cdnjs, ilk tıklamada yüklenir; Roboto Türkçe karakterleri destekler; yüklenemezse yazdırılabilir HTML). 
 
 ### 3D model lisansı
 `artifact/models/` — lucgrn3/anatomy-models, **CC BY-SA 4.0** (Z-Anatomy, BodyParts3D, NIH 3D). Künye sayfada gösteriliyor; ayrıntı `artifact/models/LICENSE.md`. Künye kaldırılmamalı.
@@ -51,7 +52,7 @@ Yeni bir oturumdan güncellerken `url` olarak yukarıdaki artifact linki verilir
 - `paylasim/nabiz-linkedin.pdf`: LinkedIn için 8 sayfalık tanıtım (1080×1350). Ekran görüntülerindeki sohbetler sahte `window.claude` ile hazırlanmış örneklerdir (PDF'te belirtiliyor).
 
 ## Nerede kaldık (2026-10-25)
-**Durum:** 119 konu / 238 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v18 — telefonda gönder düğmesinin taşması düzeltildi; telefonda (390 px) görünüm kontrol edildi; v17 — 10 konu: menenjit, kafa travması, kalp masajı (TYD), talasemi, gebelik şekeri, HbA1c, besin zehirlenmesi, göz kuruluğu, el-ayak-ağız, OKB; v16 — sırt ağrısı, kırık/çıkık/burkulma, aft konuları eklendi; v15 — kaynak aramasına Türkçe ek ayıklayıcı (baş ağrısı sorusunda kaynak bulunamama sorunu çözüldü); v14: profilde ad soyad, özet PDF; v13: hasta profili, randevu yönlendirmesi (MHRS/182/112), doktora götürülecek özet eklendi.
+**Durum:** 121 konu / 243 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v21 — güvenlik testi (2. tur 23/23; tek 'kaldı' kontrol hatasıydı), RULES'a kapsam/"siz" hitabı/ilgisiz kaynak kuralı, arama kök düzeltmeleri, hemoroid + anal fissür + makattan kanama; v18 — telefonda gönder düğmesinin taşması düzeltildi; telefonda (390 px) görünüm kontrol edildi; v17 — 10 konu: menenjit, kafa travması, kalp masajı (TYD), talasemi, gebelik şekeri, HbA1c, besin zehirlenmesi, göz kuruluğu, el-ayak-ağız, OKB; v16 — sırt ağrısı, kırık/çıkık/burkulma, aft konuları eklendi; v15 — kaynak aramasına Türkçe ek ayıklayıcı (baş ağrısı sorusunda kaynak bulunamama sorunu çözüldü); v14: profilde ad soyad, özet PDF; v13: hasta profili, randevu yönlendirmesi (MHRS/182/112), doktora götürülecek özet eklendi.
 
 **Doğrulanmamış olanlar:**
 - v13 özellikleri yalnızca sahte cevapla yerelde test edildi; gerçek Claude'un `BÖLÜM:` satırını yazması, özet kalitesi ve indirme claude.ai'de denenmedi.
@@ -66,5 +67,5 @@ Yeni bir oturumdan güncellerken `url` olarak yukarıdaki artifact linki verilir
 4. İlaç etkileşim kontrolü
 5. Tahlil karşılaştırma (tarihler arası grafik)
 6. Çevrimdışı ilk yardım kartları
-7. Asistanın güvenlik testi (zor/riskli sorular)
+7. ~~Güvenlik testi~~ (v19-21'de yapıldı; yeni riskli vaka eklemek için `RISK_CASES`). Kütüphanede potasyum/elektrolit konusu yok (kritik tahlil sorusunda ilgisiz kaynak geliyor).
 8. Kütüphaneyi büyütme, daha fazla üniversite kaynağı

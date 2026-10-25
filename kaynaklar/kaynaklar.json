@@ -1447,7 +1447,15 @@
         "makattan kanama",
         "makatta ağrı",
         "makatta şişlik",
-        "kaşıntı"
+        "kaşıntı",
+        "makatta meme",
+        "makattan et sarkması",
+        "dışkıda kan",
+        "tuvalet kağıdında kan",
+        "makatta kaşıntı",
+        "oturunca ağrı",
+        "popoda ağrı",
+        "anüs"
       ],
       "baslik": "Hemoroid (Basur) Hastalığı",
       "kurum": "T.C. Sağlık Bakanlığı Of Devlet Hastanesi",
@@ -1465,7 +1473,15 @@
         "hemoroid",
         "basur",
         "oturma banyosu",
-        "makattan kanama"
+        "makattan kanama",
+        "makatta meme",
+        "makattan et sarkması",
+        "dışkıda kan",
+        "tuvalet kağıdında kan",
+        "makatta kaşıntı",
+        "oturunca ağrı",
+        "popoda ağrı",
+        "anüs"
       ],
       "baslik": "Hemorrhoids (Hemoroid)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -4380,7 +4396,12 @@
         "meningokok",
         "menenjit aşısı",
         "bıngıldak şişliği",
-        "ciltte morumsu döküntü"
+        "ciltte morumsu döküntü",
+        "boyun sertliği",
+        "boynumu eğemiyorum",
+        "boyun tutulması",
+        "ışığa hassasiyet",
+        "yüksek ateş ve baş ağrısı"
       ],
       "baslik": "Meningokokal Hastalık",
       "kurum": "T.C. Sağlık Bakanlığı Aşı Portalı",
@@ -4399,7 +4420,12 @@
         "viral menenjit",
         "bakteriyel menenjit",
         "lomber ponksiyon",
-        "ense sertliği"
+        "ense sertliği",
+        "boyun sertliği",
+        "boynumu eğemiyorum",
+        "boyun tutulması",
+        "ışığa hassasiyet",
+        "yüksek ateş ve baş ağrısı"
       ],
       "baslik": "Meningitis (Menenjit)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -4780,6 +4806,119 @@
       "url": "https://medlineplus.gov/obsessivecompulsivedisorder.html",
       "dil": "en",
       "ozet": "OKB, kişinin kontrol edemediği ve günlük yaşamını bozan tekrarlayıcı düşünce ve davranışlarla giden bir ruhsal bozukluktur; yaygın inancın aksine yalnızca titiz olmak demek değildir. Sık obsesyonlar mikrop veya kirlenme korkusu, bir şeyi unutma ya da kaybetme kaygısı, kontrolü kaybetme korkusu, kendine ya da başkasına zarar verme endişesi, istenmeyen cinsel ya da dini düşünceler ve eşyaların tam düzgün dizilmesi ihtiyacıdır. Sık kompulsiyonlar aşırı temizlik ve el yıkama, kapı ve aletleri tekrar tekrar kontrol etme, sayma ve eşyaları belirli bir düzende dizmektir. Genellikle ergenlik ya da genç erişkinlikte başlar; erkeklerde daha erken tanı konur. Genetik, beyin yapısı ve kimyasındaki farklılıklar, çocukluk travmaları ve mizaç rol oynar. Tedavide bilişsel davranışçı terapi, özellikle kişinin korkularıyla adım adım yüzleştiği 'maruz bırakma ve tepki önleme' yöntemi ile bazı antidepresan ilaçlar kullanılır; ağır durumlarda tekrarlayan transkraniyal manyetik uyarım (rTMS) uygulanabilir."
+    },
+    {
+      "id": "hemoroid-uludag",
+      "konu": "Hemoroid (basur)",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hemoroid",
+        "basur",
+        "makatta meme",
+        "makattan et sarkması",
+        "makatta şişlik",
+        "makatta ağrı",
+        "dışkıda kan",
+        "tuvalet kağıdında kan",
+        "bant ligasyonu",
+        "basur ameliyatı",
+        "hemoroid evreleri",
+        "tromboze hemoroid"
+      ],
+      "baslik": "Hemoroidal Hastalık (hasta bilgilendirme)",
+      "kurum": "Bursa Uludağ Üniversitesi Sağlık Uygulama ve Araştırma Merkezi",
+      "tur": "universite",
+      "url": "http://sakur.uludag.edu.tr/dosya/FR-HYE-04-301-04.pdf",
+      "dil": "tr",
+      "ozet": "Hemoroid (halk arasında basur, makatta meme), makatın içindeki damarsal yapıların genişlemesidir; toplumun yaklaşık yarısında hayatın bir döneminde görülür. En bilinen nedeni kabızlığa bağlı ıkınmadır; ailesel yatkınlık, beslenme alışkanlıkları, alkol, gebelik ve uzun süre oturmak ya da ayakta kalmak da kolaylaştırır. Dış hemoroidler çoğunlukla az şikayet yapar, ancak içinde pıhtı oluşursa (tromboze hemoroid) şiddetli ağrı yapar, sertleşir ve morarır; bu durumda acil cerrahi gerekebilir. İç hemoroidlerde tipik belirti ağrısız, parlak kırmızı kanamadır; akıntı, kaşıntı, ele meme gelmesi, çamaşırın kirlenmesi ve makatta dolgunluk da görülür. İç hemoroid 4 dereceye ayrılır: 1. derecede yalnızca kanama olur, ilaç ve beslenme yeterlidir; 2. derecede ıkınınca dışarı çıkar ve kendiliğinden geri girer, çoğu zaman ilaç yeterlidir, gerekirse bant uygulanır; 3. derecede dışarı çıkan meme ancak elle itilerek girer ve cerrahi önerilir; 4. derecede meme sürekli dışarıdadır ve cerrahi gerekir. Bant ligasyonunda meme lastik bir bantla boğulur ve 7-10 günde düşer. Hemoroid kansere dönüşmez, ancak kanaması kolorektal kanser, polip, iltihabi bağırsak hastalığı veya bağırsak sarkmasıyla karışabileceği için muayene gerekir. Tedaviden sonra tekrarlayabilir; bol su, lifli beslenme, egzersiz, tuvalette ıkınmamak, düzenli tuvalet alışkanlığı ve uzun süre oturmaktan kaçınmak önerilir."
+    },
+    {
+      "id": "analfissur-uludag",
+      "konu": "Anal fissür (makat çatlağı)",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "anal fissür",
+        "makat çatlağı",
+        "makatta yırtık",
+        "anüste yırtık",
+        "tuvalette çok acıyor",
+        "dışkılarken ağrı",
+        "kakam acıyor",
+        "dışkıda kan",
+        "oturma banyosu",
+        "kabızlık"
+      ],
+      "baslik": "Anal Fissür (hasta bilgilendirme)",
+      "kurum": "Bursa Uludağ Üniversitesi Sağlık Uygulama ve Araştırma Merkezi",
+      "tur": "universite",
+      "url": "https://sakur.uludag.edu.tr/dosya/FR-HYE-04-301-01.pdf",
+      "dil": "tr",
+      "ozet": "Anal fissür (makat çatlağı), makatın iç yüzeyinden dışındaki cilde uzanan yırtıktır ve çoğunlukla sert dışkıyla zorlu ıkınma sırasında oluşur. Yırtık oluşunca makat kasları daha da sıkılaşır, dışkılama zorlaşır; kişi ağrı korkusuyla tuvaleti tuttukça dışkı sertleşir ve yırtık derinleşerek bir kısır döngü oluşur. Tipik belirtiler ağrılı ve kanamalı dışkılama, dışkının üzerine sıvanmış parlak kırmızı kan ve kabızlıktır; hastaların yarısı hemoroidi olduğunu düşünerek başvurur. Çoğu fissür kendiliğinden ya da basit tedaviyle iyileşir: lifli beslenme, dışkı yumuşatıcılar ve ılık oturma banyosu (küçük bir leğende ılık suda 5-10 dakika oturmak). Bu tedavilere rağmen bir aydan uzun süren fissürde iç makat kasını gevşetmek için kısa süren bir ameliyat önerilir; hasta genellikle aynı gün ya da ertesi gün taburcu olur."
+    },
+    {
+      "id": "analfissur-medlineplus",
+      "konu": "Anal fissür (makat çatlağı)",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "anal fissür",
+        "makat çatlağı",
+        "bebekte makatta kan",
+        "doğum sonrası makat ağrısı",
+        "oturma banyosu"
+      ],
+      "baslik": "Anal Fissure (Anal Fissür)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001130.htm",
+      "dil": "en",
+      "ozet": "Anal fissür, makatın iç yüzeyini kaplayan ince dokudaki küçük yarık ya da yırtıktır. İri ve sert dışkı, uzun süren ishal, bölgeye kan akışının azalması ve makat kaslarının aşırı gergin olması neden olabilir. Bebeklerde çok sık görülür ama her yaşta olur; doğum sonrası kadınlarda ve Crohn hastalığı olanlarda da sıktır. Ağrılı dışkılama ve dışkının üzerinde ya da tuvalet kağıdında kan görülür. Tanı makat muayenesiyle konur, gerekirse anoskopi ya da kolonoskopi yapılır. Çoğu fissür kendiliğinden iyileşir: lifli beslenme, bol sıvı, dışkı yumuşatıcılar ve günde 2-3 kez 10-15 dakika ılık oturma banyosu önerilir; uyuşturucu krem, vazelin, çinko oksit veya hidrokortizon krem rahatlatabilir. Geçmezse hekim reçeteli kremler, makat kasına botulinum toksini iğnesi ya da kası gevşeten küçük bir ameliyat önerebilir. Fissür çoğu zaman hızla iyileşir ama bir kez olanlarda tekrarlama olasılığı artar."
+    },
+    {
+      "id": "makattankanama-acibadem",
+      "konu": "Makattan kanama",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "makattan kanama",
+        "makattan kan gelmesi",
+        "dışkıda kan",
+        "kakada kan",
+        "tuvalette kan",
+        "tuvalet kağıdında kan",
+        "rektal kanama",
+        "kanlı dışkı",
+        "kolonoskopi",
+        "kolon kanseri"
+      ],
+      "baslik": "Makattan Kan Gelmesi: Nedenleri ve Tedavi Yöntemleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/makattan-kan-gelmesi/",
+      "dil": "tr",
+      "ozet": "Makattan kan gelmesi, tuvalet sonrası dışkıda, tuvalet kağıdında ya da klozette görülen kanamadır. Parlak kırmızı kan genellikle makat ya da kalın bağırsak kaynaklı, koyu kırmızı kan ise ince bağırsak kaynaklı kanamayı düşündürür. Başlıca nedenler hemoroid (basur), anal fissür (makat çatlağı), kolon polipleri, rektum ve kolon kanseri, Crohn ve ülseratif kolit gibi iltihabi bağırsak hastalıkları, divertikülit, enfeksiyonlar, ışın tedavisine bağlı bağırsak iltihabı ve damar anomalileridir. Makatta yanma ve kaşıntı, dışkılarken ağrı, karın ağrısı, tuvalet alışkanlığında değişiklik, kilo kaybı ve kansızlığa bağlı yorgunluk ve baş dönmesi eşlik edebilir. Tanıda makat muayenesi, kolonoskopi, dışkı ve kan testleri kullanılır; 45 yaş üzerindeyse erken değerlendirme önerilir. Tedavi nedene göre krem ve fitiller, kolonoskopi sırasında polip çıkarılması ya da cerrahidir; lifli beslenme, bol su ve düzenli egzersiz yardımcıdır. Baş dönmesi, bayılma, şiddetli karın ağrısı veya nefes darlığı eşlik ediyorsa acile gidilmelidir. Kanama 1 haftadan uzun sürerse, sık tekrarlarsa, miktarı fazlaysa ya da tuvalet alışkanlığı değiştiyse doktora başvurulmalıdır; ilk başvuru için Gastroenteroloji, gerektiğinde Genel Cerrahi uygundur."
+    },
+    {
+      "id": "makattankanama-medlineplus",
+      "konu": "Makattan kanama",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "makattan kanama",
+        "rektal kanama",
+        "siyah dışkı",
+        "katran gibi dışkı",
+        "dışkıda kan",
+        "kanlı dışkı"
+      ],
+      "baslik": "Rectal Bleeding (Makattan Kanama)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/007741.htm",
+      "dil": "en",
+      "ozet": "Makattan kanama, kanın makattan gelmesidir; tuvalet kağıdında, klozette ya da dışkı üzerinde çoğunlukla parlak kırmızı olarak görülür. Parlak kırmızı kan genellikle kalın bağırsak, rektum ya da makat kaynaklıdır; siyah, katran gibi dışkı ise yemek borusu, mide veya ince bağırsak gibi üst sindirim kanalından gelen ve sindirilirken koyulaşan kanı gösterir. Sık nedenler hemoroid, anal fissür ve (özellikle çocuklarda) kabızlıktır; daha ciddi nedenler arasında polipler, kolon, rektum veya makat kanseri, ülseratif kolit gibi iltihabi hastalıklar, divertiküloz, bağırsak enfeksiyonları ve bağırsak sarkması vardır. Baş dönmesi, bayılma veya tansiyon düşmesi gibi belirtilerle birlikte kanama acil tıbbi yardım gerektirir. Dışkıda taze kan, kanla birlikte karın ağrısı, dışkı renginde değişiklik, dışkılarken makat ağrısı, dışkı kaçırma veya açıklanamayan kilo kaybı varsa sağlık kuruluşuna başvurulmalıdır. Tanıda makat muayenesi, anoskopi, sigmoidoskopi veya kolonoskopi ve kan testleri kullanılır."
     }
   ],
   "kategoriler": [
