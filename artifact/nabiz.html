@@ -158,6 +158,27 @@ button { cursor: pointer; }
 .switch em { display: block; font-style: normal; color: var(--ink-2); font-size: 12.5px; }
 .settings { display: grid; gap: 12px; }
 .panel-foot { margin-top: auto; display: grid; gap: 10px; }
+.btn:disabled { opacity: .45; cursor: not-allowed; border-color: var(--line); color: inherit; }
+.profile-sum { font-size: 13.5px; line-height: 1.45; margin: 0 0 10px; }
+.profile-sum span { display: block; color: var(--ink-2); font-size: 12.5px; }
+.pform { display: grid; gap: 14px; }
+.pform label { display: grid; gap: 5px; font-size: 13px; color: var(--ink-2); font-weight: 500; }
+.pform input[type="number"], .pform select, .pform textarea { border: 1px solid var(--line); border-radius: 7px; padding: 8px 10px; background: var(--surface); font-size: 14px; color: var(--ink); width: 100%; }
+.pform textarea { resize: vertical; min-height: 58px; }
+.pform .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.pform .check { display: flex; gap: 8px; align-items: center; font-size: 13.5px; color: var(--ink); }
+.pform .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+/* Randevu / yönlendirme kutusu (aciliyet göstergesinin altında) */
+.care { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: -4px 0 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); font-size: 14px; }
+.care .dept { flex: 1 1 220px; }
+.care .dept span { display: block; font: 500 10.5px var(--f-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2); }
+.care .dept b { font-family: var(--f-display); font-size: 15px; }
+.care a.btn { text-decoration: none; color: var(--ink); }
+.care a.btn.primary { color: var(--accent-ink); }
+.care a.btn.er { background: var(--t-er); border-color: var(--t-er); color: #fff; }
+.care small { flex-basis: 100%; color: var(--ink-2); font-size: 12px; }
+.summary-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line); }
+.summary-doc { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
 
 /* ---------- Main ---------- */
 .main { display: flex; flex-direction: column; min-width: 0; min-height: 0; height: 100%; }
@@ -519,6 +540,12 @@ button { cursor: pointer; }
     </div>
 
     <section class="section">
+      <h2>Profilim</h2>
+      <p class="profile-sum" id="profileSum"></p>
+      <button class="btn full" id="profileBtn" type="button">Profili düzenle</button>
+    </section>
+
+    <section class="section">
       <h2>Aciliyet ölçeği</h2>
       <ul class="triage-scale">
         <li><span style="background:var(--t-home)"></span><div><b>Evde izlenebilir</b><em>Dinlenme, sıvı, gözlem</em></div></li>
@@ -551,6 +578,7 @@ button { cursor: pointer; }
     </section>
 
     <div class="panel-foot">
+      <button class="btn full" id="summaryBtn" type="button" disabled title="Önce asistanla bir konuşma yapın">Doktora götürülecek özet</button>
       <button class="btn full" id="newChat" type="button">Yeni sohbet</button>
     </div>
   </aside>
@@ -664,6 +692,10 @@ ACİLİYET: ayni-gun
 ACİLİYET: acil
 Genel bilgi sorularında (ör. bir ilacın ne işe yaradığı) bu satırı yazma.
 
+BÖLÜM SATIRI: Aciliyet "evde", "aile-hekimi" veya "ayni-gun" ise ikinci satır tam olarak "BÖLÜM: <klinik adı>" olsun. Klinik adını MHRS'deki (Merkezi Hekim Randevu Sistemi) adıyla yaz, ör. "BÖLÜM: Aile Hekimliği", "BÖLÜM: Kulak Burun Boğaz Hastalıkları", "BÖLÜM: Nöroloji", "BÖLÜM: İç Hastalıkları (Dahiliye)". İlk başvuru için aile hekimi uygunsa Aile Hekimliği yaz. "evde" için, belirtiler geçmezse gidilecek bölümü yaz. Aciliyet "acil" ise bu satırı yazma. Randevuyu sen alamazsın; kullanıcı MHRS veya ALO 182 üzerinden kendisi alır, sayfa bunun için düğme gösterir.
+
+Hasta profili: Mesajda <hasta_profili> verilirse yaşı, cinsiyeti, gebelik durumunu, kronik hastalıkları, düzenli ilaçları ve alerjileri her cevapta dikkate al; bunları yeniden sorma. Bir ilaçtan söz ederken profildeki alerjiler ve ilaçlarla çakışma ya da etkileşim varsa açıkça uyar.
+
 Acil durumlar: Göğüs ağrısı, nefes darlığı, inme belirtileri (yüzde kayma, kolda güçsüzlük, konuşma bozukluğu), bilinç kaybı, şiddetli kanama, anafilaksi, intihar düşüncesi, yüksek ateşle ense sertliği gibi bir tablo görürsen aciliyeti "acil" yap, ilk paragrafta kullanıcıyı hemen 112'yi aramaya veya en yakın acil servise gitmeye yönlendir, sonra kısa açıklamanı yap. İnme şüphesinde belirtilerin başlama saatini not etmelerini söyle. İntihar veya kendine zarar verme söz konusuysa 112'nin yanında yakınlarından destek istemesini öner ve şefkatli ol.
 
 Semptomlar: Önemli bilgi eksikse önce kısa netleştirici sorular sor (yaş, süre, şiddet, eşlik eden belirtiler, kronik hastalıklar, kullanılan ilaçlar). Olası nedenleri olasılık sırasıyla ve kesin teşhis gibi sunmadan açıkla. Hangi branşa gidilmesi gerektiğini ve hangi belirtiler çıkarsa durumun acile döneceğini söyle.
@@ -691,6 +723,8 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
 
   const STORE_CHAT = "nabiz.chat.v1";
   const STORE_DOCS = "nabiz.docs.v1";
+  const STORE_PROFILE = "nabiz.profile.v1";
+  const MHRS_URL = "https://www.mhrs.gov.tr/vatandas/";
   const MAX_HISTORY_BYTES = 180000;   // sample girdisi en fazla 256 KiB
   const MAX_DOC_CHARS = 60000;        // sohbete eklenen tek PDF metni
 
@@ -707,6 +741,8 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   // messages: {role:"user"|"assistant", content (Claude'a giden), text (ekranda), files?, sources?, triage?, error?}
   let messages = load(STORE_CHAT, []);
   let docs = load(STORE_DOCS, []);   // {id, name, chunks:[{page, text}]}
+  let profile = load(STORE_PROFILE, {});   // {yas, cinsiyet, gebe, kronik, ilaclar, alerjiler, notlar}
+  let downloads = null;
   let library = [];   // güvenilir kaynak kütüphanesi: {title, text, url, kind, kw}
   let pendingFiles = [];
   let sample = null;
@@ -774,7 +810,14 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     const m = firstLine.match(/^\**ACİLİYET:\s*([a-zçğıöşü-]+)\**\s*$/i);
     if (m) {
       const k = m[1].toLocaleLowerCase("tr-TR");
-      return { triage: TRIAGE[k] ? k : null, body: t.slice(firstLine.length).replace(/^\s+/, "") };
+      let body = t.slice(firstLine.length).replace(/^\s+/, "");
+      const line2 = body.split("\n", 1)[0], key2 = "BÖLÜM:";
+      if (!body.includes("\n") && line2.length < 80 && key2.startsWith(line2.slice(0, key2.length).toLocaleUpperCase("tr-TR"))) {
+        return { triage: TRIAGE[k] ? k : null, dept: null, body: "", partial: true };
+      }
+      const d = line2.match(/^\**BÖLÜM:\**\s*(.+?)\**\s*$/i);
+      if (d) body = body.slice(line2.length).replace(/^\s+/, "");
+      return { triage: TRIAGE[k] ? k : null, dept: d ? d[1].replace(/[*.]+$/, "").trim() : null, body };
     }
     return { triage: null, body: text };
   }
@@ -785,6 +828,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     el.welcome.hidden = messages.length > 0;
     el.app.classList.toggle("wide", messages.length === 0);
     messages.forEach((m, i) => el.thread.appendChild(m.role === "user" ? userNode(m) : botNode(m, i)));
+    updateSummaryBtn();
     scrollDown();
   }
 
@@ -825,8 +869,8 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
 
   function fillCard(card, text, sources, done = true) {
     card.replaceChildren();
-    const { triage, body } = splitTriage(text);
-    if (triage) card.appendChild(gauge(triage));
+    const { triage, dept, body } = splitTriage(text);
+    if (triage) { card.appendChild(gauge(triage)); const c = careBox(triage, dept); if (c) card.appendChild(c); }
     card.appendChild(renderMd(body, sources?.length || 0, done));
     const used = sources?.length ? [...new Set([...body.matchAll(/\[(\d+)\]/g)].map((x) => +x[1]))].filter((n) => n >= 1 && n <= sources.length) : [];
     if (used.length) {
@@ -875,6 +919,196 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     note.append(b, n);
     g.append(segs, note);
     return g;
+  }
+
+  // Randevu yönlendirmesi: önerilen bölüm, MHRS ve ALO 182; acilde 112
+  function careBox(key, dept) {
+    const box = document.createElement("div"); box.className = "care";
+    const link = (text, href, cls) => {
+      const a = document.createElement("a"); a.className = "btn " + (cls || ""); a.href = href; a.textContent = text;
+      if (href.startsWith("http")) { a.target = "_blank"; a.rel = "noopener"; }
+      return a;
+    };
+    if (key === "acil") {
+      const d = document.createElement("div"); d.className = "dept";
+      d.innerHTML = "<span>Şimdi yapın</span><b>112 Acil Çağrı</b>";
+      box.append(d, link("112'yi ara", "tel:112", "er"));
+      return box;
+    }
+    if (!dept) return null;
+    const d = document.createElement("div"); d.className = "dept";
+    const lab = document.createElement("span"); lab.textContent = key === "evde" ? "Geçmezse başvurulacak bölüm" : "Önerilen bölüm";
+    const b = document.createElement("b"); b.textContent = dept;
+    d.append(lab, b);
+    const note = document.createElement("small");
+    note.textContent = key === "ayni-gun"
+      ? "Bugün randevu bulamazsanız hastanenin acil servisine veya polikliniğine başvurun. Randevuyu MHRS'de e-Devlet ile siz alırsınız."
+      : "Randevuyu MHRS'de e-Devlet ile veya ALO 182'yi arayarak siz alırsınız; bu sayfa sizin adınıza işlem yapmaz.";
+    box.append(d, link("MHRS'den randevu al ↗", MHRS_URL, "primary"), link("ALO 182", "tel:182"), note);
+    return box;
+  }
+
+  // ------------------------------------------------------------------ Hasta profili
+  const PROFILE_FIELDS = [
+    ["kronik", "Kronik hastalıklar", "ör. tip 2 diyabet, hipertansiyon"],
+    ["ilaclar", "Düzenli kullandığım ilaçlar", "ör. Metformin 1000 mg sabah-akşam"],
+    ["alerjiler", "Alerjiler", "ör. penisilin, fıstık"],
+    ["notlar", "Diğer (ameliyatlar, aile öyküsü, sigara vb.)", "ör. 2019'da safra kesesi ameliyatı, sigara içmiyorum"],
+  ];
+  const clean = (v) => String(v ?? "").trim();
+  function profileText() {
+    const p = profile, out = [];
+    if (clean(p.yas)) out.push(`Yaş: ${clean(p.yas)}`);
+    if (clean(p.cinsiyet)) out.push(`Cinsiyet: ${clean(p.cinsiyet)}`);
+    if (p.gebe) out.push("Hamile veya emziriyor");
+    PROFILE_FIELDS.forEach(([k, label]) => { if (clean(p[k])) out.push(`${label}: ${clean(p[k])}`); });
+    return out.join("\n");
+  }
+  function renderProfile() {
+    const el2 = $("profileSum"); el2.replaceChildren();
+    const p = profile;
+    const bits = [clean(p.yas) && `${clean(p.yas)} yaş`, clean(p.cinsiyet), p.gebe && "hamile/emziriyor"].filter(Boolean);
+    if (!profileText()) {
+      el2.textContent = "Yaş, kronik hastalık, ilaç ve alerjilerinizi bir kez girin; her soruda dikkate alınır.";
+      el2.style.color = "var(--ink-2)";
+      $("profileBtn").textContent = "Profil oluştur";
+      return;
+    }
+    el2.style.color = "";
+    el2.textContent = bits.join(" · ") || "Profil";
+    [["ilaclar", "İlaç"], ["alerjiler", "Alerji"], ["kronik", "Kronik"]].forEach(([k, l]) => {
+      if (clean(p[k])) { const s = document.createElement("span"); s.textContent = `${l}: ${clean(p[k]).replace(/\s*\n\s*/g, ", ")}`; el2.appendChild(s); }
+    });
+    $("profileBtn").textContent = "Profili düzenle";
+  }
+  function profileForm() {
+    const f = document.createElement("form"); f.className = "pform";
+    f.innerHTML = `
+      <p class="muted" style="margin:0">Bu bilgiler yalnızca bu tarayıcıda saklanır ve soru sorduğunuzda asistana sizin Claude hesabınız üzerinden gönderilir. Boş bıraktığınız alanlar gönderilmez.</p>
+      <div class="row">
+        <label>Yaş<input type="number" name="yas" min="0" max="120" placeholder="ör. 41"></label>
+        <label>Cinsiyet<select name="cinsiyet"><option value="">Belirtmek istemiyorum</option><option>Kadın</option><option>Erkek</option></select></label>
+      </div>
+      <label class="check" id="gebeWrap"><input type="checkbox" name="gebe"> Hamileyim veya emziriyorum</label>
+      ${PROFILE_FIELDS.map(([k, label, ph]) => `<label>${label}<textarea name="${k}" placeholder="${ph}"></textarea></label>`).join("")}
+      <div class="actions"><button class="btn primary" type="submit">Kaydet</button><button class="btn" type="button" data-act="clear">Profili sil</button></div>`;
+    const F = f.elements;
+    F.yas.value = clean(profile.yas); F.cinsiyet.value = clean(profile.cinsiyet); F.gebe.checked = Boolean(profile.gebe);
+    PROFILE_FIELDS.forEach(([k]) => { F[k].value = clean(profile[k]); });
+    const gebeVis = () => { f.querySelector("#gebeWrap").hidden = F.cinsiyet.value !== "Kadın"; };
+    F.cinsiyet.addEventListener("change", gebeVis); gebeVis();
+    f.addEventListener("submit", (e) => {
+      e.preventDefault();
+      profile = { yas: clean(F.yas.value), cinsiyet: F.cinsiyet.value, gebe: F.cinsiyet.value === "Kadın" && F.gebe.checked };
+      PROFILE_FIELDS.forEach(([k]) => { profile[k] = clean(F[k].value); });
+      save(STORE_PROFILE, profile); renderProfile(); closeSheet();
+    });
+    f.querySelector('[data-act="clear"]').onclick = () => { profile = {}; save(STORE_PROFILE, profile); renderProfile(); closeSheet(); };
+    return f;
+  }
+
+  // ------------------------------------------------------------------ Doktora götürülecek özet
+  const SUMMARY_RULES = `Aşağıda bir kişinin Türkçe tıbbi bilgi asistanıyla yaptığı yazışma ve (varsa) kendi girdiği sağlık profili var. Bu kişinin muayeneye götürüp hekimine göstereceği kısa, düzenli bir ön bilgi özeti yaz.
+
+Kurallar:
+- Yalnızca yazışmada ve profilde geçen bilgileri kullan. Bilgi uydurma, tahmin etme; bilinmeyen alanlara "Belirtilmedi" yaz.
+- Teşhis koyma. Asistanın değerlendirmesini "asistanın ön değerlendirmesi" olarak, kesinlik bildirmeden aktar.
+- Hekime hitap eden, kısa, maddeli bir dil kullan; tıbbi terim kullanabilirsin.
+- Tahlil değerleri varsa Markdown tablosu olarak ver (Test | Değer | Birim | Referans). Kod bloğu kullanma.
+- Başka bir açıklama, giriş veya kapanış cümlesi yazma; yalnızca aşağıdaki başlıklarla özeti yaz.
+
+Başlıklar (bu sırayla, "##" ile):
+## Kişi bilgileri
+## Başvuru nedeni
+(şikayet, ne zaman başladı, süre, şiddet, seyir)
+## Eşlik eden belirtiler
+## Kronik hastalıklar ve düzenli ilaçlar
+## Alerjiler
+## Tahlil sonuçları
+## Asistanın ön değerlendirmesi
+(aciliyet düzeyi ve önerilen bölüm)
+## Hekime sorulacak sorular
+(kişinin yazışmadaki sorularından ve endişelerinden 3-5 kısa soru)`;
+
+  function transcript() {
+    return messages.filter((m) => !m.error).map((m) => {
+      if (m.role === "user") return `KİŞİ: ${m.text}${m.files?.length ? `\n(Ekler: ${m.files.join(", ")})` : ""}`;
+      const { triage, dept, body } = splitTriage(m.text || "");
+      const head = triage ? `[Aciliyet: ${TRIAGE[triage][1]}${dept ? ` · Önerilen bölüm: ${dept}` : ""}]\n` : "";
+      return `ASİSTAN: ${head}${body}`;
+    }).join("\n\n");
+  }
+
+  const esc = (t) => t.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  function summaryHtml(md, when) {
+    const body = DOMPurify.sanitize(marked.parse(md));
+    return `<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hasta ön bilgi özeti · ${esc(when)}</title>
+<style>
+body{font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;color:#16221e;background:#fff;max-width:760px;margin:32px auto;padding:0 20px}
+header{border-bottom:2px solid #0e6b57;padding-bottom:10px;margin-bottom:18px}
+header h1{font-size:22px;margin:0 0 4px}header p{margin:0;color:#4b5c56;font-size:13px}
+h2{font-size:16px;margin:20px 0 6px;color:#0e6b57}ul{padding-left:1.3em;margin:0 0 8px}p{margin:0 0 8px}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:4px 0 10px}th,td{border:1px solid #d6e0db;padding:5px 8px;text-align:left}th{background:#edf2ef}
+.warn{margin-top:24px;padding:10px 12px;border:1px solid #d6e0db;border-radius:8px;font-size:12.5px;color:#4b5c56}
+@media print{body{margin:0}.warn{break-inside:avoid}}
+</style></head><body>
+<header><h1>Hasta ön bilgi özeti</h1><p>Hazırlanma: ${esc(when)} · Nabız tıbbi bilgi asistanı</p></header>
+${body}
+<p class="warn">Bu özet, kişinin bir yapay zeka bilgi asistanıyla yaptığı yazışmadan otomatik olarak hazırlanmıştır. Tıbbi kayıt veya teşhis değildir; bilgiler kişinin kendi beyanına dayanır ve hekim tarafından doğrulanmalıdır.</p>
+</body></html>`;
+  }
+
+  let summaryCtrl = null;
+  async function openSummary() {
+    if (!sampleReady || !messages.some((m) => m.role === "assistant" && !m.error)) return;
+    const root = document.createElement("div");
+    const info = document.createElement("p"); info.className = "muted";
+    info.textContent = "Bu konuşmadan ve profilinizden muayenede hekiminize gösterebileceğiniz kısa bir özet hazırlanıyor.";
+    const doc = document.createElement("div"); doc.className = "summary-doc";
+    doc.appendChild(thinkingNode("Özet hazırlanıyor…"));
+    root.append(info, doc);
+    openSheet("Doktora götürülecek özet", root);
+    summaryCtrl?.abort(); summaryCtrl = new AbortController();
+    const ctrl = summaryCtrl;
+    const prof = profileText();
+    const input = `${SUMMARY_RULES}\n\n<hasta_profili>\n${prof || "Profil girilmemiş."}\n</hasta_profili>\n\n<yazisma>\n${transcript().slice(-120000)}\n</yazisma>`;
+    try {
+      const res = await sample(input, {
+        cache: false, signal: ctrl.signal, modelTier: "default",
+        onText: ({ text }) => { if (!ctrl.signal.aborted) doc.replaceChildren(renderMd(text, 0)); },
+      });
+      if (ctrl.signal.aborted) return;
+      doc.replaceChildren(renderMd(res.text, 0));
+      const when = new Date().toLocaleString("tr-TR", { dateStyle: "long", timeStyle: "short" });
+      const actions = document.createElement("div"); actions.className = "summary-actions";
+      const msg = document.createElement("span"); msg.className = "muted"; msg.style.margin = "0";
+      if (downloads) {
+        const b = document.createElement("button"); b.type = "button"; b.className = "btn primary"; b.textContent = "Özeti indir (yazdırılabilir)";
+        b.onclick = async () => {
+          msg.textContent = "";
+          try {
+            const day = new Date().toISOString().slice(0, 10);
+            await downloads.save({ filename: `hasta-ozeti-${day}.html`, data: summaryHtml(res.text, when) });
+            msg.textContent = "İndirildi. Dosyayı açıp yazdırabilir veya PDF olarak kaydedebilirsiniz.";
+          } catch (e) {
+            msg.textContent = e?.code === "declined" ? "" : "İndirme bu görünümde yapılamadı; metni seçip kopyalayabilirsiniz.";
+          }
+        };
+        actions.appendChild(b);
+      } else {
+        msg.textContent = "Bu görünümde indirme yok; metni seçip kopyalayabilirsiniz.";
+      }
+      const again = document.createElement("button"); again.type = "button"; again.className = "btn"; again.textContent = "Yeniden hazırla";
+      again.onclick = openSummary;
+      actions.append(again, msg);
+      root.appendChild(actions);
+    } catch (e) {
+      if (ctrl.signal.aborted || e?.code === "cancelled") return;
+      const er = document.createElement("div"); er.className = "msg-error";
+      er.textContent = errorText(e?.code || "upstream_error");
+      doc.replaceChildren(er);
+    }
   }
 
   // ------------------------------------------------------------------ Tahlil grafiği
@@ -943,6 +1177,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     $("sheetClose").focus();
   }
   function closeSheet() {
+    summaryCtrl?.abort(); summaryCtrl = null;
     $("sheet").hidden = true;
     $("sheetBody").replaceChildren();
     sheetReturn?.focus?.();
@@ -1478,6 +1713,8 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
       </label>
       <div><button class="btn primary" type="submit">Asistana sor</button></div>`;
     const g = (x) => f.querySelector("#" + id(x));
+    if (clean(profile.yas)) g("yas").value = clean(profile.yas);
+    if (["Kadın", "Erkek"].includes(profile.cinsiyet)) g("cins").value = profile.cinsiyet;
     g("sid").addEventListener("input", () => { g("out").textContent = g("sid").value + "/10"; });
     f.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -1745,6 +1982,12 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   }
 
   // ------------------------------------------------------------------ Gönderme
+  function updateSummaryBtn() {
+    const b = $("summaryBtn"); if (!b) return;
+    const ok = sampleReady && !busy && messages.some((m) => m.role === "assistant" && !m.error);
+    b.disabled = !ok;
+    b.title = ok ? "Bu konuşmadan hekiminize gösterebileceğiniz bir özet hazırlar" : "Önce asistanla bir konuşma yapın";
+  }
   function updateSend() {
     if (busy) return;
     el.send.disabled = !sampleReady || (!el.prompt.value.trim() && !pendingFiles.length);
@@ -1761,6 +2004,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
       ? '<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><rect width="14" height="14" rx="2" fill="currentColor"/></svg>'
       : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
     if (!on) updateSend();
+    updateSummaryBtn();
   }
 
   async function submit(text) {
@@ -1812,9 +2056,11 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     const turns = messages.filter((m) => !m.error).map((m) => ({ role: m.role, content: m.content }));
     // Uzayan sohbette en eski turları at (talimat turu her zaman kalır)
     const size = (arr) => new Blob([arr.map((t) => t.content).join("")]).size;
-    while (turns.length > 1 && size(turns) + RULES.length * 2 > MAX_HISTORY_BYTES) turns.shift();
+    while (turns.length > 1 && size(turns) + RULES.length * 2 + 4000 > MAX_HISTORY_BYTES) turns.shift();
     while (turns.length && turns[0].role !== "user") turns.shift();
-    return [{ role: "user", content: RULES }, ...turns];
+    const prof = profileText();
+    const head = prof ? `${RULES}\n\n<hasta_profili>\n${prof}\n</hasta_profili>` : RULES;
+    return [{ role: "user", content: head }, ...turns];
   }
 
   async function ask(images = [], notes = []) {
@@ -1916,6 +2162,8 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   });
   $("docAdd").onclick = () => el.docInput.click();
   el.docInput.onchange = () => { addDocs([...el.docInput.files]); el.docInput.value = ""; };
+  $("profileBtn").onclick = () => { el.app.classList.remove("panel-open"); openSheet("Sağlık profilim", profileForm()); };
+  $("summaryBtn").onclick = () => { el.app.classList.remove("panel-open"); openSummary(); };
   $("newChat").onclick = () => { controller?.abort(); messages = []; saveChat(); render(); el.app.classList.remove("panel-open"); el.prompt.focus(); };
   $("panelBtn").onclick = () => el.app.classList.toggle("panel-open");
   $("scrim").onclick = () => el.app.classList.remove("panel-open");
@@ -1932,6 +2180,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   messages = messages.filter((m) => !m.error);
   render();
   renderDocs();
+  renderProfile();
   loadLibrary();
 
   (async () => {
@@ -1941,6 +2190,8 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     try { imageLimits = (await sample.limits())?.images || null; } catch { imageLimits = null; }
     if (!imageLimits) el.fileInput.accept = "application/pdf";
     updateSend();
+    updateSummaryBtn();
+    try { downloads = await window.claude.use("downloads"); } catch { downloads = null; }
   })();
 })();
 </script>

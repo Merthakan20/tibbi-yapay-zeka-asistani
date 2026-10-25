@@ -23,6 +23,9 @@ Türkçe tıbbi bilgi asistanı. Kullanıcıyla Türkçe konuşulur.
 - 3D vücut haritası (Three.js r128, cdnjs + jsdelivr): `buildBody3D()`. Gerçek kas+kemik modeli `models/muscles.json` ve `models/bones.json` içinde **base64 GLB** olarak durur (artifact servisi .glb sunmuyor), `GLTFLoader.parse` ile açılır. Yüklenemezse kodla çizilen yedek model, WebGL yoksa 2D SVG harita (`makeBodySvg`) kullanılır. 16 bölge `REGIONS` dizisinde; organlar ayrı tıklanabilir, diğer bölgeler dokunulan noktanın konumundan bulunur.
 - Açılış ekranı 3 sütun: model | bölge ve şikayetler | şikayet formu (sağda, sticky).
 - Konu kütüphanesi: kategori kartları, konuya tıklayınca kaynaklar.
+- Hasta profili (`profile`, localStorage `nabiz.profile.v1`): yaş, cinsiyet, gebelik, kronik hastalık, ilaç, alerji. `trimmedTurns()` içinde talimat turuna `<hasta_profili>` olarak eklenir; şikayet formunu da doldurur.
+- Randevu yönlendirmesi: aciliyet satırından sonra `BÖLÜM: <MHRS klinik adı>` satırı → `careBox()` önerilen bölüm + MHRS linki + ALO 182; acilde 112 butonu. MHRS/e-Nabız'ın açık API'si yok, randevu kullanıcı adına alınamaz.
+- Doktora götürülecek özet: `openSummary()` yazışma + profilden `sample` ile özet yazar, `downloads` capability ile yazdırılabilir HTML indirir. Yayında capabilities: `{sample:{images:true}, downloads:true}`.
 
 ### 3D model lisansı
 `artifact/models/` — lucgrn3/anatomy-models, **CC BY-SA 4.0** (Z-Anatomy, BodyParts3D, NIH 3D). Künye sayfada gösteriliyor; ayrıntı `artifact/models/LICENSE.md`. Künye kaldırılmamalı.
@@ -45,16 +48,17 @@ Yeni bir oturumdan güncellerken `url` olarak yukarıdaki artifact linki verilir
 - Görsel: Chrome headless (`--use-angle=swiftshader --enable-unsafe-swiftshader`), model yüklemesi için klasörü `python3 -m http.server` ile sunmak gerekir (file:// fetch'e izin vermez).
 
 ## Nerede kaldık (2026-10-25)
-**Durum:** 106 konu / 211 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v12 (mesaj kutusu ve Yeni sohbet butonu ekrandan taşıyordu, düzeltildi).
+**Durum:** 106 konu / 211 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v13 — hasta profili, randevu yönlendirmesi (MHRS/182/112), doktora götürülecek özet eklendi.
 
 **Doğrulanmamış olanlar:**
+- v13 özellikleri yalnızca sahte cevapla yerelde test edildi; gerçek Claude'un `BÖLÜM:` satırını yazması, özet kalitesi ve indirme claude.ai'de denenmedi.
 - Asistan gerçek bir soruyu cevapladı (baş ağrısı, aciliyet göstergesi çalışıyor). Kaynak linkleri [1] o cevapta görülmedi.
 - 3D modelin son parlaklık ayarı (kas alpha 0.28) ve telefonda görünüm görülmedi.
 - 3D'de kol/bacak gibi bölgeler seçilince model üzerinde ayrıca vurgulanmıyor (yalnızca organlar).
 
 **Önerilen sonraki adımlar** (kullanıcıya sunuldu, seçim bekleniyor):
-1. Hasta profili (yaş, kronik hastalık, ilaçlar, alerjiler → her soruya otomatik eklenir) — önerilen
-2. Doktora götürülecek özet (indirilebilir) — önerilen
+1. Tahlil geçmişi + "e-Nabız'dan aktar" akışı (kullanıcı e-Nabız'dan indirdiği PDF'i yükler; tarihler arası grafik). Örnek e-Nabız PDF'i bekleniyor.
+2. Kaynak kütüphanesi baş ağrısı sorusunda kaynak bulamadı — arama/konu kapsamı incelenmeli.
 3. Sağlık günlüğü (tansiyon, şeker, kilo) ve grafikler
 4. İlaç etkileşim kontrolü
 5. Tahlil karşılaştırma (tarihler arası grafik)
