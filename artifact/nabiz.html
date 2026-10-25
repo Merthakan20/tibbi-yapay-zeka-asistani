@@ -157,15 +157,6 @@ button { cursor: pointer; }
 .switch em { display: block; font-style: normal; color: var(--ink-2); font-size: 12.5px; }
 .settings { display: grid; gap: 12px; }
 .panel-foot { margin-top: auto; display: grid; gap: 10px; }
-.er-card {
-  border: 1px solid var(--t-er);
-  background: var(--er-soft);
-  border-radius: 10px;
-  padding: 10px 12px;
-  font-size: 13px;
-  line-height: 1.45;
-}
-.er-card strong { font: 700 20px/1 var(--f-display); color: var(--t-er); display: block; margin-bottom: 4px; }
 
 /* ---------- Main ---------- */
 .main { display: flex; flex-direction: column; min-width: 0; height: 100%; }
@@ -560,7 +551,6 @@ button { cursor: pointer; }
 
     <div class="panel-foot">
       <button class="btn full" id="newChat" type="button">Yeni sohbet</button>
-      <div class="er-card"><strong>112</strong>Göğüs ağrısı, nefes darlığı, bilinç kaybı veya inme belirtisinde beklemeden arayın.</div>
     </div>
   </aside>
   <div class="scrim" id="scrim"></div>
@@ -579,7 +569,7 @@ button { cursor: pointer; }
 
     <div class="notice" role="note">
       <span class="notice-icon" aria-hidden="true">!</span>
-      <span>Bilgilendirme amaçlıdır, <b>muayenenin yerini tutmaz.</b> Acil durumda hemen <span class="n112">112</span>'yi arayın.</span>
+      <span>Bilgilendirme amaçlıdır, <b>muayenenin yerini tutmaz.</b> Göğüs ağrısı, nefes darlığı, bilinç kaybı veya inme belirtisinde beklemeden <span class="n112">112</span>'yi arayın.</span>
     </div>
     <div class="unavailable" id="unavailable" hidden>
       Asistan yalnızca claude.ai içinde açıldığında çalışır ve sorular sizin Claude hesabınız üzerinden yanıtlanır.
