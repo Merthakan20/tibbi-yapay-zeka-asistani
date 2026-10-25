@@ -25,6 +25,7 @@ Türkçe tıbbi bilgi asistanı. Kullanıcıyla Türkçe konuşulur.
 - Konu kütüphanesi: kategori kartları, konuya tıklayınca kaynaklar.
 - Hasta profili (`profile`, localStorage `nabiz.profile.v1`): ad soyad (yalnızca PDF'te, Claude'a gönderilmez), yaş, cinsiyet, gebelik, kronik hastalık, ilaç, alerji. `trimmedTurns()` içinde talimat turuna `<hasta_profili>` olarak eklenir; şikayet formunu da doldurur.
 - Randevu yönlendirmesi: aciliyet satırından sonra `BÖLÜM: <MHRS klinik adı>` satırı → `careBox()` önerilen bölüm + MHRS linki + ALO 182; acilde 112 butonu. MHRS/e-Nabız'ın açık API'si yok, randevu kullanıcı adına alınamaz.
+- Tahlil geçmişi (`openLabs()`, localStorage `nabiz.labs.v1`): e-Nabız/laboratuvar PDF'i veya fotoğrafı `sample.json` + `EXTRACT_RULES` ile okunur (biçime bağlı ayrıştırıcı yok; `anahtar` alanı farklı laboratuvarlardaki aynı testi eşler), kayıttan önce onay tablosu gösterilir, test başına tarih grafiği (`trendChart`, eksen değerlere göre; referans sınırı yalnızca yakınsa eksene girer). Sohbetteki tahlil grafiğinde "Tahlil geçmişime ekle", doktor özetinde `<tahlil_gecmisi>`. Gerçek e-Nabız PDF'iyle henüz denenmedi.
 - Güvenlik testi (yalnızca sahip, `isOwner()`): panelde "Güvenlik testi" düğmesi; `RISK_CASES` (23 vaka) gerçek akışla `sample`'a sorulur, kurallarla puanlanır, `db`'de `guvenlik/<runId>/sonuclar/<id>` altına yazılır (kural: kök read/write owner). Claude sonuçları `ArtifactData list` ile okur. Yayında capabilities: `{sample:{images:true}, downloads:true, user:{}, db:{rules:[{path:"",read:"owner",write:"owner"}]}}`.
 - Doktora götürülecek özet: `openSummary()` yazışma + profilden `sample` ile özet yazar, `downloads` capability ile PDF indirir (pdfmake 0.2.10, cdnjs, ilk tıklamada yüklenir; Roboto Türkçe karakterleri destekler; yüklenemezse yazdırılabilir HTML). 
 
@@ -52,7 +53,7 @@ Yeni bir oturumdan güncellerken `url` olarak yukarıdaki artifact linki verilir
 - `paylasim/nabiz-linkedin.pdf`: LinkedIn için 8 sayfalık tanıtım (1080×1350). Ekran görüntülerindeki sohbetler sahte `window.claude` ile hazırlanmış örneklerdir (PDF'te belirtiliyor).
 
 ## Nerede kaldık (2026-10-25)
-**Durum:** 121 konu / 243 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v21 — güvenlik testi (2. tur 23/23; tek 'kaldı' kontrol hatasıydı), RULES'a kapsam/"siz" hitabı/ilgisiz kaynak kuralı, arama kök düzeltmeleri, hemoroid + anal fissür + makattan kanama; v18 — telefonda gönder düğmesinin taşması düzeltildi; telefonda (390 px) görünüm kontrol edildi; v17 — 10 konu: menenjit, kafa travması, kalp masajı (TYD), talasemi, gebelik şekeri, HbA1c, besin zehirlenmesi, göz kuruluğu, el-ayak-ağız, OKB; v16 — sırt ağrısı, kırık/çıkık/burkulma, aft konuları eklendi; v15 — kaynak aramasına Türkçe ek ayıklayıcı (baş ağrısı sorusunda kaynak bulunamama sorunu çözüldü); v14: profilde ad soyad, özet PDF; v13: hasta profili, randevu yönlendirmesi (MHRS/182/112), doktora götürülecek özet eklendi.
+**Durum:** 124 konu / 249 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v22 — tahlil geçmişi + e-Nabız aktarımı, elektrolit konuları (sodyum, potasyum); v21 — güvenlik testi (2. tur 23/23; tek 'kaldı' kontrol hatasıydı), RULES'a kapsam/"siz" hitabı/ilgisiz kaynak kuralı, arama kök düzeltmeleri, hemoroid + anal fissür + makattan kanama; v18 — telefonda gönder düğmesinin taşması düzeltildi; telefonda (390 px) görünüm kontrol edildi; v17 — 10 konu: menenjit, kafa travması, kalp masajı (TYD), talasemi, gebelik şekeri, HbA1c, besin zehirlenmesi, göz kuruluğu, el-ayak-ağız, OKB; v16 — sırt ağrısı, kırık/çıkık/burkulma, aft konuları eklendi; v15 — kaynak aramasına Türkçe ek ayıklayıcı (baş ağrısı sorusunda kaynak bulunamama sorunu çözüldü); v14: profilde ad soyad, özet PDF; v13: hasta profili, randevu yönlendirmesi (MHRS/182/112), doktora götürülecek özet eklendi.
 
 **Doğrulanmamış olanlar:**
 - v13 özellikleri yalnızca sahte cevapla yerelde test edildi; gerçek Claude'un `BÖLÜM:` satırını yazması, özet kalitesi ve indirme claude.ai'de denenmedi.
@@ -61,11 +62,11 @@ Yeni bir oturumdan güncellerken `url` olarak yukarıdaki artifact linki verilir
 - 3D'de kol/bacak gibi bölgeler seçilince model üzerinde ayrıca vurgulanmıyor (yalnızca organlar).
 
 **Önerilen sonraki adımlar** (kullanıcıya sunuldu, seçim bekleniyor):
-1. Tahlil geçmişi + "e-Nabız'dan aktar" akışı (kullanıcı e-Nabız'dan indirdiği PDF'i yükler; tarihler arası grafik). Örnek e-Nabız PDF'i bekleniyor.
+1. ~~Tahlil geçmişi + e-Nabız aktarımı~~ (v22). Gerçek bir e-Nabız PDF'iyle denenmeli.
 2. ~~Baş ağrısı sorusunda kaynak bulunamaması~~ (v15'te çözüldü; v16'da sırt ağrısı, kırık/burkulma, aft eklendi).
 3. Sağlık günlüğü (tansiyon, şeker, kilo) ve grafikler
 4. İlaç etkileşim kontrolü
-5. Tahlil karşılaştırma (tarihler arası grafik)
+5. ~~Tahlil karşılaştırma~~ (tahlil geçmişiyle birlikte geldi)
 6. Çevrimdışı ilk yardım kartları
 7. ~~Güvenlik testi~~ (v19-21'de yapıldı; yeni riskli vaka eklemek için `RISK_CASES`). Kütüphanede potasyum/elektrolit konusu yok (kritik tahlil sorusunda ilgisiz kaynak geliyor).
 8. Kütüphaneyi büyütme, daha fazla üniversite kaynağı

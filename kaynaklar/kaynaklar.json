@@ -4919,6 +4919,133 @@
       "url": "https://medlineplus.gov/ency/article/007741.htm",
       "dil": "en",
       "ozet": "Makattan kanama, kanın makattan gelmesidir; tuvalet kağıdında, klozette ya da dışkı üzerinde çoğunlukla parlak kırmızı olarak görülür. Parlak kırmızı kan genellikle kalın bağırsak, rektum ya da makat kaynaklıdır; siyah, katran gibi dışkı ise yemek borusu, mide veya ince bağırsak gibi üst sindirim kanalından gelen ve sindirilirken koyulaşan kanı gösterir. Sık nedenler hemoroid, anal fissür ve (özellikle çocuklarda) kabızlıktır; daha ciddi nedenler arasında polipler, kolon, rektum veya makat kanseri, ülseratif kolit gibi iltihabi hastalıklar, divertiküloz, bağırsak enfeksiyonları ve bağırsak sarkması vardır. Baş dönmesi, bayılma veya tansiyon düşmesi gibi belirtilerle birlikte kanama acil tıbbi yardım gerektirir. Dışkıda taze kan, kanla birlikte karın ağrısı, dışkı renginde değişiklik, dışkılarken makat ağrısı, dışkı kaçırma veya açıklanamayan kilo kaybı varsa sağlık kuruluşuna başvurulmalıdır. Tanıda makat muayenesi, anoskopi, sigmoidoskopi veya kolonoskopi ve kan testleri kullanılır."
+    },
+    {
+      "id": "elektrolit-acibadem",
+      "konu": "Elektrolitler (sodyum, potasyum, kalsiyum, magnezyum)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "elektrolit",
+        "elektrolit dengesizliği",
+        "sodyum",
+        "potasyum",
+        "kalsiyum",
+        "magnezyum",
+        "klor",
+        "Na",
+        "elektrolit paneli",
+        "kas krampı"
+      ],
+      "baslik": "Elektrolit Dengesizliği Nedir? Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/elektrolit-dengesizligi-nedir-belirtileri-tedavisi/",
+      "dil": "tr",
+      "ozet": "Elektrolit dengesizliği, vücudun hayati işlevleri için gerekli sodyum, potasyum, kalsiyum ve magnezyum gibi minerallerin kandaki düzeylerinin olması gereken aralığın dışına çıkmasıdır. Başlıcaları sodyum düşüklüğü (hiponatremi), potasyum yüksekliği (hiperkalemi), kalsiyumun düşük ya da yüksek olması ve magnezyum eksikliği veya fazlalığıdır. Sıvı kaybı, böbrek hastalıkları, kusma ve ishal, diyabet ve hormon bozuklukları ile ilaç yan etkileri sık nedenlerdir. Kas krampları, düzensiz kalp ritmi, yorgunluk, halsizlik, baş dönmesi, bulantı, kafa karışıklığı ve nöbet görülebilir. Tanı elektrolit paneli (sodyum, potasyum, klorür, bikarbonat, kalsiyum, magnezyum), idrar ve böbrek testleri ile EKG ile konur. Tedavi nedene göre damardan sıvı ve elektrolit verilmesi, beslenme düzenlemesi, ilaç ve doz ayarı ile altta yatan hastalığın tedavisidir. Bilinç bulanıklığı, kalp ritim bozukluğu veya çarpıntı, nöbet ya da sodyum düzeyinde ani değişiklik acil müdahale gerektirir."
+    },
+    {
+      "id": "elektrolit-medlineplus",
+      "konu": "Elektrolitler (sodyum, potasyum, kalsiyum, magnezyum)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "elektrolit paneli",
+        "sodyum",
+        "potasyum",
+        "klorür",
+        "bikarbonat",
+        "kalsiyum",
+        "magnezyum",
+        "fosfor"
+      ],
+      "baslik": "Electrolyte Panel (Elektrolit Paneli)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/lab-tests/electrolyte-panel/",
+      "dil": "en",
+      "ozet": "Elektrolit paneli kandaki önemli mineralleri ölçer: sodyum vücuttaki sıvı miktarını ve sinir-kas işleyişini, potasyum hücrelerin, kalbin ve kasların çalışmasını, klorür sıvı dengesi, kan hacmi ve tansiyonu, bikarbonat vücudun asit-baz dengesini düzenler; kalsiyum ve fosfat kemik ve dişler, magnezyum kas, sinir ve kalp işlevi için gereklidir. Test çoğunlukla rutin kontrollerde ya da sıvı, elektrolit veya asit-baz dengesizliğinden şüphelenildiğinde istenir. Bulantı, kusma, kafa karışıklığı, huzursuzluk, halsizlik, düzensiz kalp atışı, ishal veya kabızlık, baş ağrısı, kas krampları ve uyuşma-karıncalanma dengesizlik belirtisi olabilir. Anormal sonuçlar böbrek, kalp, karaciğer ve akciğer hastalıkları, diyabet, sıvı kaybı ve emilim bozukluklarından kaynaklanabilir; idrar söktürücüler, steroidler, bazı antibiyotikler ve kemoterapi ilaçları da sonuçları değiştirebilir. Kusma, ishal ya da antasit ve tansiyon ilaçları gibi etkenler değerleri etkiler."
+    },
+    {
+      "id": "hiperkalemi-acibadem",
+      "konu": "Potasyum yüksekliği (hiperkalemi)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "potasyum yüksek",
+        "potasyum yüksekliği",
+        "hiperkalemi",
+        "potasyum",
+        "tuz ikamesi",
+        "EKG",
+        "böbrek yetmezliği"
+      ],
+      "baslik": "Potasyum Yüksekliği (Hiperkalemi) Nedir? Potasyum Yüksekliği Neden Olur?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/potasyum-yuksekligi-nedir/",
+      "dil": "tr",
+      "ozet": "Hiperkalemi, kandaki potasyumun 5,1 mmol/L'nin üzerine çıkmasıdır; sağlıklı aralık 3,5-5,0 mmol/L'dir. En sık nedeni fazla potasyumu atamayan böbrek yetmezliğidir; ACE inhibitörleri ve ARB'ler gibi potasyum tutan tansiyon ilaçları, kontrolsüz diyabet, sıvı kaybı, yanık, travma ve ameliyat gibi doku hasarları ile aşırı potasyum alımı da yol açabilir. Hafif yükseklik belirti vermeyebilir; kas güçsüzlüğü ve kramp, kalp ritim bozuklukları, bulantı, kusma ve nefes darlığı görülebilir. Potasyum hızla yükselirse ani kalp durması riski vardır ve tedavi edilmezse hayati tehlike oluşturur. Tanı kan testi, EKG (potasyumun kalbin iletim sistemine etkisini gösterir) ve böbrek testleriyle konur. Hastanede kalbi korumak için damardan kalsiyum, potasyumu hücre içine kaydıran insülin-şeker ve salbutamol gibi tedaviler ile potasyumu vücuttan atan idrar söktürücüler, bağlayıcı ilaçlar veya diyaliz uygulanır. Potasyumdan zengin yiyecekler ve potasyumlu tuz ikameleri ancak hekim yönlendirmesiyle düzenlenmelidir."
+    },
+    {
+      "id": "hiperkalemi-medlineplus",
+      "konu": "Potasyum yüksekliği (hiperkalemi)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hiperkalemi",
+        "potasyum yüksek",
+        "potasyum takviyesi",
+        "spironolakton",
+        "çarpıntı"
+      ],
+      "baslik": "High Potassium Level (Potasyum Yüksekliği)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001179.htm",
+      "dil": "en",
+      "ozet": "Hiperkalemi, kandaki potasyumun normalden yüksek olmasıdır. En önemli nedeni böbreklerin yeterince çalışmamasıdır; Addison hastalığı, geniş yanıklar, ACE inhibitörleri, ARB'ler ve spironolakton gibi tansiyon ilaçları, ilaç, alkol, nöbet, ameliyat veya yaralanmaya bağlı kas yıkımı, kansızlığın bazı türleri, ağır sindirim kanaması ve potasyum takviyesi ya da tuz ikamesiyle aşırı alım da neden olabilir. Çoğu zaman belirti vermez; göğüs ağrısı, nefes almada güçlük, bulantı veya kusma, çarpıntı, yavaş, zayıf ya da düzensiz nabız ve kalbin çok yavaşlaması ya da durmasıyla ani bayılma olabilir. Tanıda kan potasyum düzeyi, böbrek testleri ve EKG kullanılır; EKG'de değişiklik varsa acil tedavi gerekir. Acil tedavide damardan kalsiyum, insülin ile şeker, potasyumu atan ilaçlar, sodyum bikarbonat, idrar söktürücüler veya diyaliz kullanılır; beslenme ve ilaçlar da düzenlenir. Kusma, çarpıntı, güçsüzlük ya da nefes darlığı olursa, özellikle potasyum takviyesi kullananlar hemen sağlık kuruluşuna başvurmalıdır."
+    },
+    {
+      "id": "hiponatremi-acibadem",
+      "konu": "Sodyum düşüklüğü (hiponatremi)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "sodyum düşük",
+        "sodyum düşüklüğü",
+        "hiponatremi",
+        "sodyum",
+        "Na düşük",
+        "su zehirlenmesi",
+        "tuz eksikliği",
+        "bilinç bulanıklığı"
+      ],
+      "baslik": "Hiponatremi Nedir? Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/hiponatremi-nedir/",
+      "dil": "tr",
+      "ozet": "Hiponatremi, kandaki sodyumun normalin altına düşmesidir; normal düzey 135-145 mmol/L'dir. Sodyum sinir iletimi, kas işlevi ve hücreler arası sıvı dengesi için gereklidir. Hafif düşüklükte yorgunluk, baş ağrısı, bulantı ve dikkat dağınıklığı; orta düzeyde kas krampları, kusma, baş dönmesi ve zihin bulanıklığı; ağır düşüklükte bilinç değişikliği, nöbet, solunum bozukluğu ve koma görülebilir. İdrar söktürücüler ve bazı antidepresanlar gibi ilaçlar, aşırı su içme (su zehirlenmesi), kalp yetmezliği, böbrek hastalıkları, karaciğer sirozu, ADH hormonunun uygunsuz salgılanması (SIADH), tiroid bezinin az çalışması ve böbreküstü bezi yetmezliği başlıca nedenlerdir. Tanı kan ve idrar testleriyle, gerekirse beyin görüntülemesiyle konur. Acil durumlarda damardan sıvı ve sodyum verilir; diğer durumlarda sıvı kısıtlaması, ilaç düzenlemesi ve yakın takip uygulanır. Beyin ödemi en ciddi komplikasyonudur; ağır belirtiler görülürse hemen tıbbi yardım alınmalıdır."
+    },
+    {
+      "id": "hiponatremi-medlineplus",
+      "konu": "Sodyum düşüklüğü (hiponatremi)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hiponatremi",
+        "sodyum düşük",
+        "kan sodyumu",
+        "sporcu",
+        "aşırı su içmek"
+      ],
+      "baslik": "Low Blood Sodium (Sodyum Düşüklüğü)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000394.htm",
+      "dil": "en",
+      "ozet": "Hiponatremi, kandaki sodyumun normalden düşük olmasıdır; normal düzey genellikle 136-144 mmol/L'dir, laboratuvara göre biraz değişebilir. Hücre dışındaki sodyum azalınca su hücrelere geçer ve hücreler şişer; bu özellikle beyin hücreleri için tehlikelidir. İdrar söktürücüler, ishal, kusma, aşırı terleme, böbrek hastalığı, kalp yetmezliği, siroz, uygunsuz ADH salgısı (SIADH), geniş yanıklar ve bazı kanserler neden olabilir. Kafa karışıklığı, huzursuzluk, havale, yorgunluk, baş ağrısı, iştahsızlık, kas güçsüzlüğü veya kasılmaları ve bulantı-kusma görülür. Ağır durumda bilinç azalması, halüsinasyon, koma ve ölüm olabilir; 48 saatten kısa sürede gelişen (akut) düşüklük, yavaş gelişenden daha tehlikelidir. Tedavi nedene göre damardan sıvı, ilaçlar ve su kısıtlamasıdır. Yoğun egzersizde yalnızca su yerine elektrolit içeren sporcu içecekleri sodyumu korumaya yardımcı olur. Belirtiler varsa hemen tıbbi yardım alınmalıdır; hayatı tehdit eden bir acil duruma dönüşebilir."
     }
   ],
   "kategoriler": [

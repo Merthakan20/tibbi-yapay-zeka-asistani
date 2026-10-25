@@ -417,6 +417,38 @@ button { cursor: pointer; }
 .lab-chip.na { background: var(--surface-2); color: var(--ink-2); }
 .dot.ok { background: var(--t-home); } .dot.low, .dot.high { background: var(--t-today); } .dot.crit { background: var(--t-er); }
 .labs-wait { font-size: 13px; color: var(--ink-2); padding: 8px 0 12px; }
+/* ---------- Tahlil geçmişi ---------- */
+.lh-list { display: grid; gap: 8px; }
+.lh-item { display: grid; grid-template-columns: minmax(0, 1fr) 120px auto 70px; gap: 12px; align-items: center; text-align: left; border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 10px 12px; }
+.lh-item:hover { border-color: var(--accent); }
+.lh-name { font-weight: 500; font-size: 14px; line-height: 1.3; min-width: 0; }
+.lh-name small { display: block; font: 11px var(--f-mono); color: var(--ink-2); margin-top: 2px; }
+.lh-spark { width: 120px; height: 34px; display: block; }
+.lh-title { font: 600 18px var(--f-display); margin: 14px 0 4px; }
+.lh-chart { position: relative; margin: 6px 0 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); padding: 6px 4px 0; }
+.lh-svg { width: 100%; height: auto; display: block; touch-action: pan-y; }
+.lh-band { fill: var(--t-home); opacity: .14; }
+.lh-grid { stroke: var(--line); stroke-width: 1; }
+.lh-ax { font: 11px var(--f-mono); fill: var(--ink-2); }
+.lh-line { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.lh-dot { stroke: var(--surface); stroke-width: 2; fill: var(--ink-2); }
+.lh-dot.ok { fill: var(--t-home); } .lh-dot.low, .lh-dot.high { fill: var(--t-today); }
+.lh-dot.on { stroke: var(--ink); }
+.lh-spark .lh-dot { stroke-width: 1; }
+.lh-tip { position: absolute; transform: translateX(-50%); pointer-events: none; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 6px 9px; font-size: 12.5px; display: grid; gap: 2px; justify-items: start; box-shadow: var(--shadow); white-space: nowrap; }
+.lh-tip b { font: 600 14px var(--f-mono); color: var(--ink); }
+.lh-tip span:first-child { color: var(--ink-2); }
+.lh-table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+.lh-table th, .lh-table td { border-bottom: 1px solid var(--line); padding: 7px 8px; text-align: left; vertical-align: middle; }
+.lh-table th { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .05em; color: var(--ink-2); }
+.lh-table td { font-variant-numeric: tabular-nums; }
+.lh-save { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 13px; color: var(--ink-2); }
+.lh-save input { border: 1px solid var(--line); border-radius: 7px; padding: 5px 8px; background: var(--surface); color: var(--ink); font-size: 13px; }
+@media (max-width: 560px) {
+  .lh-item { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "ad deger" "grafik durum"; row-gap: 8px; }
+  .lh-item .lh-name { grid-area: ad; } .lh-item .lab-val { grid-area: deger; }
+  .lh-item .lh-spark { grid-area: grafik; } .lh-item .lab-chip { grid-area: durum; justify-self: end; }
+}
 @media (max-width: 560px) {
   .lab-row { grid-template-columns: 1fr auto; row-gap: 4px; }
   .lab-track { grid-column: 1 / -1; order: 3; }
@@ -545,6 +577,12 @@ button { cursor: pointer; }
       <h2>Profilim</h2>
       <p class="profile-sum" id="profileSum"></p>
       <button class="btn full" id="profileBtn" type="button">Profili düzenle</button>
+    </section>
+
+    <section class="section">
+      <h2>Tahlil geçmişim</h2>
+      <p class="profile-sum" id="labsSum"></p>
+      <button class="btn full" id="labsBtn" type="button">Tahlil geçmişini aç</button>
     </section>
 
     <section class="section">
@@ -729,6 +767,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   const STORE_CHAT = "nabiz.chat.v1";
   const STORE_DOCS = "nabiz.docs.v1";
   const STORE_PROFILE = "nabiz.profile.v1";
+  const STORE_LABS = "nabiz.labs.v1";
   const MHRS_URL = "https://www.mhrs.gov.tr/vatandas/";
   const MAX_HISTORY_BYTES = 180000;   // sample girdisi en fazla 256 KiB
   const MAX_DOC_CHARS = 60000;        // sohbete eklenen tek PDF metni
@@ -746,6 +785,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   // messages: {role:"user"|"assistant", content (Claude'a giden), text (ekranda), files?, sources?, triage?, error?}
   let messages = load(STORE_CHAT, []);
   let docs = load(STORE_DOCS, []);   // {id, name, chunks:[{page, text}]}
+  let labs = load(STORE_LABS, []);   // tahlil geçmişi
   let profile = load(STORE_PROFILE, {});   // {ad, yas, cinsiyet, gebe, kronik, ilaclar, alerjiler, notlar}; ad Claude'a gönderilmez
   let downloads = null;
   let library = [];   // güvenilir kaynak kütüphanesi: {title, text, url, kind, kw}
@@ -777,7 +817,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
       const pre = code.closest("pre") || code;
       let rows = null;
       try { rows = JSON.parse(code.textContent); } catch {}
-      if (Array.isArray(rows) && rows.length) pre.replaceWith(labChart(rows));
+      if (Array.isArray(rows) && rows.length) { const c = labChart(rows); if (done) c.appendChild(labSaveBar(rows.filter((x) => x && x.test))); pre.replaceWith(c); }
       else if (!done) { const w = document.createElement("div"); w.className = "labs-wait"; w.textContent = "Tahlil grafiği hazırlanıyor…"; pre.replaceWith(w); }
     });
     box.querySelectorAll("table").forEach((t) => {
@@ -1031,6 +1071,7 @@ Başlıklar (bu sırayla, "##" ile):
 ## Kronik hastalıklar ve düzenli ilaçlar
 ## Alerjiler
 ## Tahlil sonuçları
+(yazışmadaki tahliller; <tahlil_gecmisi> verildiyse son değerleri ve önemli değişimleri de tarihleriyle ekle)
 ## Asistanın ön değerlendirmesi
 (aciliyet düzeyi ve önerilen bölüm)
 ## Hekime sorulacak sorular
@@ -1144,7 +1185,8 @@ ${body}
     summaryCtrl?.abort(); summaryCtrl = new AbortController();
     const ctrl = summaryCtrl;
     const prof = profileText();
-    const input = `${SUMMARY_RULES}\n\n<hasta_profili>\n${prof || "Profil girilmemiş."}\n</hasta_profili>\n\n<yazisma>\n${transcript().slice(-120000)}\n</yazisma>`;
+    const hist = labsText();
+    const input = `${SUMMARY_RULES}\n\n<hasta_profili>\n${prof || "Profil girilmemiş."}\n</hasta_profili>${hist ? `\n\n<tahlil_gecmisi>\n${hist}\n</tahlil_gecmisi>` : ""}\n\n<yazisma>\n${transcript().slice(-120000)}\n</yazisma>`;
     try {
       const res = await sample(input, {
         cache: false, signal: ctrl.signal, modelTier: "default",
@@ -1245,6 +1287,286 @@ ${body}
       row.append(name, val, track, chip); wrap.appendChild(row);
     });
     return wrap;
+  }
+
+  // ------------------------------------------------------------------ Tahlil geçmişi (e-Nabız / laboratuvar PDF'i)
+  // Değerler yalnızca bu tarayıcıda saklanır: {id, tarih: "YYYY-MM-DD", test, anahtar, deger, birim, alt, ust, kaynak}
+  const todayIso = () => { const d = new Date(); return new Date(d - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); };
+  const labDate = (iso) => new Date(iso + "T00:00:00").toLocaleDateString("tr-TR", { day: "numeric", month: "short", year: "numeric" });
+  const labState = (v, lo, hi) => (v === null || (lo === null && hi === null)) ? "na" : lo !== null && v < lo ? "low" : hi !== null && v > hi ? "high" : "ok";
+  const LAB_LABEL = { ok: "Normal", low: "Düşük", high: "Yüksek", na: "—" };
+  const labKey = (r) => slug(String(r.anahtar || r.test || "")) || "test";
+  function saveLabs() { if (!save(STORE_LABS, labs)) toastLabs("Tahlil geçmişi bu tarayıcıda saklanamadı."); renderLabsSum(); }
+  let toastLabs = () => {};
+
+  // Aynı test, tarih ve değer ikinci kez eklenmez
+  function addLabRows(rows, kaynak) {
+    let added = 0;
+    rows.forEach((r) => {
+      const row = { id: Date.now().toString(36) + Math.random().toString(36).slice(2, 7), tarih: r.tarih, test: String(r.test).trim(), anahtar: labKey(r),
+        deger: num(r.deger) ?? String(r.deger ?? "").trim(), birim: r.birim ? String(r.birim) : "", alt: num(r.alt), ust: num(r.ust), kaynak: kaynak || "" };
+      if (!row.test || !/^\d{4}-\d{2}-\d{2}$/.test(row.tarih || "")) return;
+      if (labs.some((x) => x.anahtar === row.anahtar && x.tarih === row.tarih && String(x.deger) === String(row.deger))) return;
+      labs.push(row); added++;
+    });
+    if (added) saveLabs();
+    return added;
+  }
+  function labGroups() {
+    const m = new Map();
+    labs.forEach((r) => { if (!m.has(r.anahtar)) m.set(r.anahtar, []); m.get(r.anahtar).push(r); });
+    m.forEach((arr) => arr.sort((a, b) => a.tarih.localeCompare(b.tarih)));
+    return [...m.entries()].sort((a, b) => b[1].at(-1).tarih.localeCompare(a[1].at(-1).tarih) || a[1][0].test.localeCompare(b[1][0].test, "tr"));
+  }
+  function renderLabsSum() {
+    const el2 = $("labsSum"); if (!el2) return;
+    const g = labGroups();
+    if (!g.length) { el2.textContent = "e-Nabız veya laboratuvar PDF'inizi ekleyin; değerlerinizin zaman içindeki değişimini grafikte görün."; el2.style.color = "var(--ink-2)"; return; }
+    const dates = [...new Set(labs.map((r) => r.tarih))].sort();
+    el2.style.color = "";
+    el2.textContent = `${g.length} test · ${dates.length} tarih`;
+    const s = document.createElement("span"); s.textContent = `Son tahlil: ${labDate(dates.at(-1))}`; el2.appendChild(s);
+  }
+  // Doktor özeti ve asistan için düz metin
+  function labsText(keys) {
+    return labGroups().filter(([k]) => !keys || keys.includes(k)).map(([, arr]) => {
+      const r0 = arr.at(-1), ref = r0.alt !== null || r0.ust !== null ? `, referans ${r0.alt ?? "—"}-${r0.ust ?? "—"}` : "";
+      return `- ${r0.test}${r0.birim ? ` (${r0.birim}${ref})` : ref ? ` (${ref.slice(2)})` : ""}: ` + arr.map((r) => `${r.tarih}: ${fmt(r.deger)}`).join("; ");
+    }).join("\n");
+  }
+
+  // Zaman içindeki değişim grafiği: tek seri, normal aralık bant olarak, nokta rengi duruma göre
+  function trendChart(arr, { mini = false } = {}) {
+    const pts = arr.filter((r) => typeof r.deger === "number");
+    const W = mini ? 120 : 640, H = mini ? 34 : 230, P = mini ? { l: 4, r: 4, t: 5, b: 5 } : { l: 46, r: 18, t: 16, b: 34 };
+    const NS = "http://www.w3.org/2000/svg", mk = (tag, a) => { const e = document.createElementNS(NS, tag); Object.entries(a).forEach(([k, v]) => e.setAttribute(k, v)); return e; };
+    const svg = mk("svg", { viewBox: `0 0 ${W} ${H}`, class: mini ? "lh-spark" : "lh-svg", role: "img" });
+    if (!pts.length) return svg;
+    const r0 = pts.at(-1), lo = r0.alt, hi = r0.ust;
+    const ts = pts.map((r) => +new Date(r.tarih + "T00:00:00"));
+    let t0 = Math.min(...ts), t1 = Math.max(...ts); if (t0 === t1) { t0 -= 864e5 * 15; t1 += 864e5 * 15; }
+    // Eksen ölçülen değerlere göre; referans sınırı yalnızca değerlere yakınsa eksene girer (ör. ferritin 7-21, aralık 15-150)
+    const data = pts.map((r) => r.deger);
+    let y0 = Math.min(...data), y1 = Math.max(...data);
+    const near = Math.max(y1 - y0, Math.abs(y1) * 0.25, 1e-9);
+    [lo, hi].forEach((b) => { if (b !== null && b >= y0 - near && b <= y1 + near) { y0 = Math.min(y0, b); y1 = Math.max(y1, b); } });
+    const pad = (y1 - y0 || Math.abs(y1) || 1) * 0.15; y0 -= pad; y1 += pad;
+    if (Math.min(...data) >= 0) y0 = Math.max(0, y0);
+    const X = (t) => P.l + ((t - t0) / (t1 - t0)) * (W - P.l - P.r), Y = (v) => H - P.b - ((v - y0) / (y1 - y0)) * (H - P.t - P.b);
+    svg.setAttribute("aria-label", `${r0.test}: ${pts.map((r) => `${labDate(r.tarih)} ${fmt(r.deger)}`).join(", ")}${lo !== null || hi !== null ? `; normal aralık ${lo ?? "—"} ile ${hi ?? "—"}` : ""}`);
+    if (lo !== null || hi !== null) {
+      const top = Y(Math.min(hi ?? y1, y1)), bot = Y(Math.max(lo ?? y0, y0));
+      if (bot > top) svg.appendChild(mk("rect", { x: P.l, y: top, width: W - P.l - P.r, height: Math.max(1, bot - top), class: "lh-band", rx: mini ? 2 : 3 }));
+    }
+    if (!mini) {
+      [y0 + (y1 - y0) * 0.1, (y0 + y1) / 2, y1 - (y1 - y0) * 0.1].forEach((v) => {
+        svg.appendChild(mk("line", { x1: P.l, x2: W - P.r, y1: Y(v), y2: Y(v), class: "lh-grid" }));
+        const t = mk("text", { x: P.l - 8, y: Y(v) + 4, class: "lh-ax", "text-anchor": "end" }); t.textContent = fmt(+v.toPrecision(3)); svg.appendChild(t);
+      });
+      const xs = pts.length > 2 ? [pts[0], pts.at(-1)] : pts;
+      xs.forEach((r, i) => { const t = mk("text", { x: X(+new Date(r.tarih + "T00:00:00")), y: H - 10, class: "lh-ax", "text-anchor": pts.length > 1 ? (i ? "end" : "start") : "middle" }); t.textContent = labDate(r.tarih); svg.appendChild(t); });
+    }
+    if (pts.length > 1) svg.appendChild(mk("polyline", { points: pts.map((r, i) => `${X(ts[i])},${Y(r.deger)}`).join(" "), class: "lh-line" }));
+    pts.forEach((r, i) => svg.appendChild(mk("circle", { cx: X(ts[i]), cy: Y(r.deger), r: mini ? 2.6 : 5, class: "lh-dot " + labState(r.deger, r.alt, r.ust), "data-i": i })));
+    if (!mini) svg._pts = pts.map((r, i) => ({ r, x: X(ts[i]), y: Y(r.deger) }));
+    return svg;
+  }
+  // Fareyle en yakın tarihin değerini gösteren ipucu
+  function withTooltip(svg) {
+    const wrap = document.createElement("div"); wrap.className = "lh-chart";
+    const tip = document.createElement("div"); tip.className = "lh-tip"; tip.hidden = true;
+    wrap.append(svg, tip);
+    const show = (ev) => {
+      const b = svg.getBoundingClientRect(), vb = svg.viewBox.baseVal, px = (ev.clientX - b.left) * vb.width / b.width;
+      const p = svg._pts?.reduce((a, c) => Math.abs(c.x - px) < Math.abs(a.x - px) ? c : a); if (!p) return;
+      const st = labState(p.r.deger, p.r.alt, p.r.ust);
+      tip.innerHTML = ""; const d = document.createElement("span"); d.textContent = labDate(p.r.tarih);
+      const v = document.createElement("b"); v.textContent = `${fmt(p.r.deger)} ${p.r.birim || ""}`;
+      const s = document.createElement("span"); s.textContent = LAB_LABEL[st]; s.className = "lab-chip " + st;
+      tip.append(d, v, s); tip.hidden = false;
+      const x = p.x * b.width / vb.width, y = p.y * b.height / vb.height;
+      tip.style.left = Math.min(Math.max(x, 70), b.width - 70) + "px"; tip.style.top = Math.max(0, y - 58) + "px";
+      svg.querySelectorAll(".lh-dot").forEach((c) => c.classList.toggle("on", c.cx.baseVal.value === p.x && c.cy.baseVal.value === p.y));
+    };
+    svg.addEventListener("pointermove", show); svg.addEventListener("pointerdown", show);
+    svg.addEventListener("pointerleave", () => { tip.hidden = true; svg.querySelectorAll(".lh-dot.on").forEach((c) => c.classList.remove("on")); });
+    return wrap;
+  }
+
+  const EXTRACT_RULES = `Aşağıdaki belge veya görseller bir kişinin tahlil sonuçlarıdır (e-Nabız çıktısı, hastane ya da özel laboratuvar raporu olabilir). Belgedeki TÜM tahlil sonuçlarını çıkar ve YALNIZCA bir JSON dizisi döndür, başka hiçbir şey yazma. Biçim:
+[{"tarih":"2025-03-14","test":"Hemoglobin","anahtar":"hemoglobin","deger":13.2,"birim":"g/dL","alt":12,"ust":16}]
+Kurallar:
+- tarih: o sonucun numune alma (yoksa onay/rapor) tarihi, YYYY-AA-GG biçiminde. Belgede farklı tarihlere ait sonuçlar varsa her sonucu kendi tarihiyle yaz. Tarih hiç yoksa null.
+- test: testin yaygın Türkçe adı (ör. "HGB" yerine "Hemoglobin", "Glukoz (açlık)").
+- anahtar: aynı test farklı laboratuvarlarda aynı çıksın diye küçük harfli, Türkçe karaktersiz kısa kimlik: ör. hemoglobin, hematokrit, lokosit, trombosit, mcv, ferritin, demir, b12, folat, d-vitamini, glukoz-aclik, hba1c, insulin, tsh, serbest-t4, kreatinin, ure, egfr, alt, ast, ggt, total-kolesterol, ldl, hdl, trigliserid, sodyum, potasyum, kalsiyum, crp, sedimantasyon, urik-asit, psa.
+- deger: sayısalsa sayı (ondalık ayırıcı nokta), değilse metin (ör. "negatif"). "<0.5" gibi değerleri metin olarak yaz.
+- alt ve ust: laboratuvarın referans aralığı (sayı); bir ucu yoksa null.
+- Okuyamadığın veya emin olmadığın değeri ekleme, tahmin etme. Belgede olmayan hiçbir şey ekleme.
+- Ad soyad, T.C. kimlik no, adres, telefon gibi kişisel bilgileri ASLA yazma.
+- Tahlil sonucu yoksa boş dizi [] döndür.`;
+
+  async function extractLabs(files, onStatus) {
+    const parts = [], images = [], names = [];
+    for (const f of files) {
+      names.push(f.name);
+      if (f.type === "application/pdf" || /\.pdf$/i.test(f.name)) {
+        const pages = await pdfPages(f);
+        const body = pages.map((p, i) => `--- Sayfa ${i + 1} ---\n${p}`).join("\n\n");
+        if (body.replace(/--- Sayfa \d+ ---/g, "").trim().length > 40) parts.push(`<belge ad="${f.name.replace(/"/g, "")}">\n${body.slice(0, MAX_DOC_CHARS)}\n</belge>`);
+        else if (imageLimits) images.push(...await pdfToImages(f, Math.max(1, imageLimits.maxCount - images.length)));
+        else throw { code: "images_unavailable" };
+      } else images.push(f);
+    }
+    if (imageLimits) images.splice(imageLimits.maxCount);
+    onStatus(`${names.join(", ")} okunuyor… Bu birkaç dakika sürebilir.`);
+    const input = `${EXTRACT_RULES}\n\n${parts.join("\n\n")}${images.length ? `\n\n(${images.length} sayfa görsel olarak eklendi.)` : ""}`;
+    const rows = await sample.json(input, { cache: false, modelTier: "default", ...(images.length ? { images } : {}) });
+    return { rows: Array.isArray(rows) ? rows.filter((r) => r && r.test) : [], kaynak: names.join(", ") };
+  }
+
+  function openLabs(focusKey) {
+    const root = document.createElement("div");
+    const info = document.createElement("p"); info.className = "muted";
+    info.textContent = "e-Nabız'dan indirdiğiniz tahlil PDF'ini (e-Nabız › Tahlillerim › PDF), başka bir laboratuvar raporunu veya fotoğrafını ekleyin. Belge, değerleri okumak için Claude hesabınıza gönderilir; okunan değerler yalnızca bu tarayıcıda saklanır.";
+    const bar = document.createElement("div"); bar.className = "summary-actions"; bar.style.cssText = "margin:0 0 14px;padding:0;border:0";
+    const input = document.createElement("input"); input.type = "file"; input.multiple = true; input.hidden = true;
+    input.accept = imageLimits ? ["application/pdf", ...(imageLimits.mediaTypes || [])].join(",") : "application/pdf";
+    const add = document.createElement("button"); add.type = "button"; add.className = "btn primary"; add.textContent = "+ PDF veya fotoğraf ekle";
+    add.disabled = !sampleReady; add.onclick = () => input.click();
+    const status = document.createElement("p"); status.className = "muted"; status.style.margin = "0 0 12px";
+    const body = document.createElement("div");
+    bar.append(add, input); root.append(info, bar, status, body);
+    toastLabs = (t) => { status.textContent = t; };
+    openSheet("Tahlil geçmişim", root);
+
+    let ctrlFiles = null;
+    input.onchange = async () => {
+      const files = [...input.files]; input.value = ""; if (!files.length) return;
+      add.disabled = true; ctrlFiles = files;
+      body.replaceChildren(thinkingNode("Tahlil değerleri okunuyor…"));
+      try {
+        const { rows, kaynak } = await extractLabs(files, (t) => { status.textContent = t; });
+        if (ctrlFiles !== files) return;
+        status.textContent = rows.length ? `${rows.length} değer okundu. Kontrol edip kaydedin; yanlış okunanların işaretini kaldırın.` : "Belgede tahlil sonucu bulunamadı.";
+        body.replaceChildren(rows.length ? reviewTable(rows, kaynak) : listView());
+      } catch (e) {
+        status.textContent = e?.code === "invalid_json" ? "Değerler okunamadı. Daha net bir PDF veya fotoğrafla tekrar deneyin." : errorText(e?.code || "upstream_error");
+        body.replaceChildren(listView());
+      } finally { add.disabled = !sampleReady; }
+    };
+
+    // Okunan değerleri kaydetmeden önce kullanıcıya göster
+    function reviewTable(rows, kaynak) {
+      const box = document.createElement("div");
+      const needDate = rows.some((r) => !/^\d{4}-\d{2}-\d{2}$/.test(r.tarih || ""));
+      let dateIn = null;
+      if (needDate) {
+        const l = document.createElement("label"); l.className = "pform"; l.style.marginBottom = "10px";
+        l.innerHTML = `<span style="font-size:13px;color:var(--ink-2)">Bazı değerlerin tarihi belgede yok. Tahlil tarihi:</span>`;
+        dateIn = document.createElement("input"); dateIn.type = "date"; dateIn.value = todayIso(); dateIn.max = dateIn.value;
+        dateIn.style.cssText = "border:1px solid var(--line);border-radius:7px;padding:7px 9px;background:var(--surface);color:var(--ink);max-width:200px";
+        l.appendChild(dateIn); box.appendChild(l);
+      }
+      const t = document.createElement("table"); t.className = "lh-table";
+      t.innerHTML = "<thead><tr><th></th><th>Tarih</th><th>Test</th><th>Değer</th><th>Referans</th></tr></thead>";
+      const tb = document.createElement("tbody");
+      rows.forEach((r, i) => {
+        const tr = document.createElement("tr");
+        const c = document.createElement("td"); const cb = document.createElement("input"); cb.type = "checkbox"; cb.checked = true; cb.dataset.i = i; c.appendChild(cb);
+        const cells = [r.tarih ? labDate(r.tarih) : "—", r.test, `${fmt(num(r.deger) ?? r.deger)} ${r.birim || ""}`, (num(r.alt) ?? num(r.ust)) !== null ? `${num(r.alt) ?? "—"} – ${num(r.ust) ?? "—"}` : "—"];
+        tr.appendChild(c); cells.forEach((x) => { const td = document.createElement("td"); td.textContent = x; tr.appendChild(td); }); tb.appendChild(tr);
+      });
+      t.appendChild(tb);
+      const wrap = document.createElement("div"); wrap.className = "tbl"; wrap.appendChild(t); box.appendChild(wrap);
+      const act = document.createElement("div"); act.className = "summary-actions";
+      const ok = document.createElement("button"); ok.type = "button"; ok.className = "btn primary"; ok.textContent = "Kaydet";
+      const no = document.createElement("button"); no.type = "button"; no.className = "btn"; no.textContent = "Vazgeç";
+      ok.onclick = () => {
+        const pick = [...tb.querySelectorAll("input:checked")].map((x) => ({ ...rows[+x.dataset.i] }));
+        pick.forEach((r) => { if (!/^\d{4}-\d{2}-\d{2}$/.test(r.tarih || "")) r.tarih = dateIn?.value || null; });
+        const n = addLabRows(pick, kaynak);
+        status.textContent = n ? `${n} değer tahlil geçmişinize eklendi.` : "Yeni değer eklenmedi (hepsi zaten kayıtlı ya da tarih eksik).";
+        body.replaceChildren(listView());
+      };
+      no.onclick = () => { status.textContent = ""; body.replaceChildren(listView()); };
+      act.append(ok, no); box.appendChild(act);
+      return box;
+    }
+
+    function listView() {
+      const g = labGroups(), box = document.createElement("div");
+      if (!g.length) { const p = document.createElement("p"); p.className = "muted"; p.textContent = "Henüz kayıtlı tahlil yok."; box.appendChild(p); return box; }
+      const ul = document.createElement("div"); ul.className = "lh-list";
+      g.forEach(([k, arr]) => {
+        const last = arr.at(-1), st = typeof last.deger === "number" ? labState(last.deger, last.alt, last.ust) : "na";
+        const b = document.createElement("button"); b.type = "button"; b.className = "lh-item";
+        const n = document.createElement("span"); n.className = "lh-name"; n.textContent = last.test;
+        const sub = document.createElement("small"); sub.textContent = `${arr.length} ölçüm · son ${labDate(last.tarih)}`; n.appendChild(sub);
+        const v = document.createElement("span"); v.className = "lab-val"; v.textContent = fmt(last.deger);
+        if (last.birim) { const u = document.createElement("small"); u.textContent = last.birim; v.appendChild(u); }
+        const chip = document.createElement("span"); chip.className = "lab-chip " + st; chip.textContent = LAB_LABEL[st];
+        b.append(n, trendChart(arr, { mini: true }), v, chip);
+        b.onclick = () => body.replaceChildren(detailView(k));
+        ul.appendChild(b);
+      });
+      const act = document.createElement("div"); act.className = "summary-actions";
+      const askAll = document.createElement("button"); askAll.type = "button"; askAll.className = "btn"; askAll.textContent = "Tüm geçmişi asistana yorumlat";
+      askAll.disabled = !sampleReady || busy; askAll.onclick = () => askTrend(null);
+      act.appendChild(askAll); box.append(ul, act);
+      return box;
+    }
+
+    function detailView(k) {
+      const arr = labGroups().find(([x]) => x === k)?.[1]; if (!arr) return listView();
+      const box = document.createElement("div");
+      const back = document.createElement("button"); back.type = "button"; back.className = "btn"; back.textContent = "← Tüm testler"; back.onclick = () => body.replaceChildren(listView());
+      const h = document.createElement("h3"); h.className = "lh-title"; h.textContent = arr.at(-1).test;
+      const ref = arr.at(-1); const sub = document.createElement("p"); sub.className = "muted";
+      sub.textContent = (ref.alt !== null || ref.ust !== null) ? `Yeşil bant: son tahlildeki normal aralık (${ref.alt ?? "—"} – ${ref.ust ?? "—"} ${ref.birim || ""}). Laboratuvarlar arasında aralık değişebilir.` : "Bu test için referans aralığı yok.";
+      box.append(back, h, sub);
+      if (arr.some((r) => typeof r.deger === "number")) box.appendChild(withTooltip(trendChart(arr)));
+      const t = document.createElement("table"); t.className = "lh-table";
+      t.innerHTML = "<thead><tr><th>Tarih</th><th>Değer</th><th>Referans</th><th>Durum</th><th></th></tr></thead>";
+      const tb = document.createElement("tbody");
+      [...arr].reverse().forEach((r) => {
+        const st = typeof r.deger === "number" ? labState(r.deger, r.alt, r.ust) : "na";
+        const tr = document.createElement("tr");
+        [labDate(r.tarih), `${fmt(r.deger)} ${r.birim || ""}`, (r.alt ?? r.ust) !== null ? `${r.alt ?? "—"} – ${r.ust ?? "—"}` : "—"].forEach((x) => { const td = document.createElement("td"); td.textContent = x; tr.appendChild(td); });
+        const sc = document.createElement("td"); const chip = document.createElement("span"); chip.className = "lab-chip " + st; chip.textContent = LAB_LABEL[st]; sc.appendChild(chip); tr.appendChild(sc);
+        const dc = document.createElement("td"); const del = document.createElement("button"); del.type = "button"; del.className = "icon-btn"; del.textContent = "✕";
+        del.setAttribute("aria-label", `${labDate(r.tarih)} tarihli değeri sil`);
+        del.onclick = () => { labs = labs.filter((x) => x.id !== r.id); saveLabs(); body.replaceChildren(labs.some((x) => x.anahtar === k) ? detailView(k) : listView()); };
+        dc.appendChild(del); tr.appendChild(dc); tb.appendChild(tr);
+      });
+      t.appendChild(tb); const wrap = document.createElement("div"); wrap.className = "tbl"; wrap.appendChild(t);
+      const act = document.createElement("div"); act.className = "summary-actions";
+      const ask = document.createElement("button"); ask.type = "button"; ask.className = "btn primary"; ask.textContent = "Bu değişimi asistana yorumlat";
+      ask.disabled = !sampleReady || busy; ask.onclick = () => askTrend([k]);
+      act.appendChild(ask); box.append(wrap, act);
+      return box;
+    }
+
+    function askTrend(keys) {
+      closeSheet();
+      submit(`Tahlil geçmişim (tarih: değer):\n${labsText(keys)}\n\nBu değerlerin zaman içindeki değişimini yorumlar mısın? Hangi değerler düzeliyor, hangileri kötüleşiyor, neye dikkat etmeliyim?`);
+    }
+
+    body.replaceChildren(focusKey ? detailView(focusKey) : listView());
+  }
+
+  // Sohbette çıkan tahlil grafiğini geçmişe kaydetme
+  function labSaveBar(rows) {
+    const bar = document.createElement("div"); bar.className = "lh-save";
+    const l = document.createElement("label"); l.textContent = "Tahlil tarihi ";
+    const d = document.createElement("input"); d.type = "date"; d.value = todayIso(); d.max = d.value; l.appendChild(d);
+    const b = document.createElement("button"); b.type = "button"; b.className = "btn"; b.textContent = "Tahlil geçmişime ekle";
+    const msg = document.createElement("span"); msg.className = "muted"; msg.style.margin = "0";
+    b.onclick = () => {
+      const n = addLabRows(rows.map((r) => ({ ...r, tarih: d.value, anahtar: r.anahtar || r.test })), "sohbet");
+      msg.textContent = n ? `${n} değer eklendi.` : "Bu değerler zaten kayıtlı.";
+    };
+    bar.append(l, b, msg);
+    return bar;
   }
 
   // ------------------------------------------------------------------ Kayan panel
@@ -2399,6 +2721,7 @@ ${body}
   });
   $("docAdd").onclick = () => el.docInput.click();
   el.docInput.onchange = () => { addDocs([...el.docInput.files]); el.docInput.value = ""; };
+  $("labsBtn").onclick = () => { el.app.classList.remove("panel-open"); openLabs(); };
   $("profileBtn").onclick = () => { el.app.classList.remove("panel-open"); openSheet("Sağlık profilim", profileForm()); };
   $("summaryBtn").onclick = () => { el.app.classList.remove("panel-open"); openSummary(); };
   $("riskBtn").onclick = () => { el.app.classList.remove("panel-open"); openRiskTest(); };
@@ -2419,6 +2742,7 @@ ${body}
   render();
   renderDocs();
   renderProfile();
+  renderLabsSum();
   loadLibrary();
 
   (async () => {
