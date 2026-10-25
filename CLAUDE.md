@@ -18,7 +18,7 @@ Türkçe tıbbi bilgi asistanı. Kullanıcıyla Türkçe konuşulur.
 - Sohbet: `sample()` ile, talimat metni `RULES` sabitinde. Cevabın ilk satırı `ACİLİYET: evde|aile-hekimi|ayni-gun|acil` olursa 4 basamaklı aciliyet göstergesi çizilir.
 - Tahlil grafiği: Claude değerleri ```` ```tahlil ```` JSON bloğunda verir, sayfa referans aralığı çubuklarına çevirir.
 - Tahlil yükleme: PDF metni pdf.js ile çıkarılır; taranmış PDF ve fotoğraflar görsel olarak gönderilir.
-- Kaynak kütüphanesi: `kaynaklar.json` sayfayla birlikte yayınlanır, BM25 ile aranır (anahtar kelimeler 3 kat ağırlıklı, en iyi sonucun %40'ının altı elenir). Cevaplarda [1], [2] kaynak linkleri.
+- Kaynak kütüphanesi: `kaynaklar.json` sayfayla birlikte yayınlanır, BM25 ile aranır (anahtar kelimeler 3 kat ağırlıklı, en iyi sonucun %40'ının altı elenir). Kelimeler `stem()` ile köke indirilir: Türkçe ekler ayıklanır ("başım ağrıyor" = "baş ağrısı"), sondaki d/t düşer, ğ→k, ilk 6 harf; "gün, hafta, yapmalıyım" gibi dolgu sözcükler (`FILLER`) atılır. Cevaplarda [1], [2] kaynak linkleri.
 - Kendi belgelerim: kullanıcı PDF/TXT/MD ekler, tarayıcıda (localStorage) saklanır.
 - 3D vücut haritası (Three.js r128, cdnjs + jsdelivr): `buildBody3D()`. Gerçek kas+kemik modeli `models/muscles.json` ve `models/bones.json` içinde **base64 GLB** olarak durur (artifact servisi .glb sunmuyor), `GLTFLoader.parse` ile açılır. Yüklenemezse kodla çizilen yedek model, WebGL yoksa 2D SVG harita (`makeBodySvg`) kullanılır. 16 bölge `REGIONS` dizisinde; organlar ayrı tıklanabilir, diğer bölgeler dokunulan noktanın konumundan bulunur.
 - Açılış ekranı 3 sütun: model | bölge ve şikayetler | şikayet formu (sağda, sticky).
@@ -40,26 +40,28 @@ Yeni bir oturumdan güncellerken `url` olarak yukarıdaki artifact linki verilir
 ### Kütüphaneye konu eklemek
 1. Her konu için 1 Türk kaynağı (saglik.gov.tr, Acıbadem, Medical Park, üniversite) + 1 MedlinePlus bulunur, özetler kendi cümlelerimizle yazılır.
 2. Kayıtlar bir JSON listesine yazılır, `.venv/bin/python kaynaklar/ekle.py dosya.json` ile eklenir (alanları doğrular, tarihi günceller).
-3. memorial.com.tr otomatik erişimi engelliyor (403) — kullanılmıyor.
+3. memorial.com.tr otomatik erişimi engelliyor (403) — kullanılmıyor. tektiklabilgielinde.saglik.gov.tr DNS'te çözülmüyor; ilk yardım için il/hastane saglik.gov.tr sayfaları kullanılıyor.
 4. Özetleri çıkaran model bazen sayı/ifade hatası yapıyor; sayılar kaynağıyla karşılaştırılmalı.
 
 ### Yerel test
 - JS sözdizimi: `<script>` bloğunu çıkarıp `node --check`.
 - Headless Chrome'u `perl -e 'alarm 80; exec @ARGV' ...` ile sınırla (macOS'ta `timeout` yok). `python3 -m http.server` charset göndermediği için Türkçe bozulur; sahte `window.claude` ile testte `file://` kullan. `nabiz.html` içinde `</body>` yok (servis ekler), test betiğini dosyanın sonuna ekle.
 - Görsel: Chrome headless (`--use-angle=swiftshader --enable-unsafe-swiftshader`), model yüklemesi için klasörü `python3 -m http.server` ile sunmak gerekir (file:// fetch'e izin vermez).
+- Headless Chrome pencereyi en az 500 px açar; telefon (390 px) için sayfayı 390 px genişlikte bir iframe içinde açıp görüntüyü ortadan kırp.
+- `paylasim/nabiz-linkedin.pdf`: LinkedIn için 8 sayfalık tanıtım (1080×1350). Ekran görüntülerindeki sohbetler sahte `window.claude` ile hazırlanmış örneklerdir (PDF'te belirtiliyor).
 
 ## Nerede kaldık (2026-10-25)
-**Durum:** 106 konu / 211 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v14 — profilde ad soyad, özet PDF; v13: hasta profili, randevu yönlendirmesi (MHRS/182/112), doktora götürülecek özet eklendi.
+**Durum:** 119 konu / 238 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v18 — telefonda gönder düğmesinin taşması düzeltildi; telefonda (390 px) görünüm kontrol edildi; v17 — 10 konu: menenjit, kafa travması, kalp masajı (TYD), talasemi, gebelik şekeri, HbA1c, besin zehirlenmesi, göz kuruluğu, el-ayak-ağız, OKB; v16 — sırt ağrısı, kırık/çıkık/burkulma, aft konuları eklendi; v15 — kaynak aramasına Türkçe ek ayıklayıcı (baş ağrısı sorusunda kaynak bulunamama sorunu çözüldü); v14: profilde ad soyad, özet PDF; v13: hasta profili, randevu yönlendirmesi (MHRS/182/112), doktora götürülecek özet eklendi.
 
 **Doğrulanmamış olanlar:**
 - v13 özellikleri yalnızca sahte cevapla yerelde test edildi; gerçek Claude'un `BÖLÜM:` satırını yazması, özet kalitesi ve indirme claude.ai'de denenmedi.
 - Asistan gerçek bir soruyu cevapladı (baş ağrısı, aciliyet göstergesi çalışıyor). Kaynak linkleri [1] o cevapta görülmedi.
-- 3D modelin son parlaklık ayarı (kas alpha 0.28) ve telefonda görünüm görülmedi.
+- Telefonda aciliyet göstergesinin etiketleri (AİLE HEKİMİ / AYNI GÜN) birbirine çok yakın.
 - 3D'de kol/bacak gibi bölgeler seçilince model üzerinde ayrıca vurgulanmıyor (yalnızca organlar).
 
 **Önerilen sonraki adımlar** (kullanıcıya sunuldu, seçim bekleniyor):
 1. Tahlil geçmişi + "e-Nabız'dan aktar" akışı (kullanıcı e-Nabız'dan indirdiği PDF'i yükler; tarihler arası grafik). Örnek e-Nabız PDF'i bekleniyor.
-2. Kaynak kütüphanesi baş ağrısı sorusunda kaynak bulamadı — arama/konu kapsamı incelenmeli.
+2. ~~Baş ağrısı sorusunda kaynak bulunamaması~~ (v15'te çözüldü; v16'da sırt ağrısı, kırık/burkulma, aft eklendi).
 3. Sağlık günlüğü (tansiyon, şeker, kilo) ve grafikler
 4. İlaç etkileşim kontrolü
 5. Tahlil karşılaştırma (tarihler arası grafik)

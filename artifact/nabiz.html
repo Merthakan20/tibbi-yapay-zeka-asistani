@@ -350,9 +350,10 @@ button { cursor: pointer; }
 }
 .composer.drag { border-color: var(--accent); background: var(--accent-soft); }
 .composer .pending { display: flex; flex-wrap: wrap; gap: 6px; padding: 2px 4px 0; }
-.composer-row { display: flex; align-items: flex-end; gap: 6px; }
+.composer-row { display: flex; align-items: flex-end; gap: 6px; min-width: 0; }  /* dar ekranda gönder düğmesi kutunun dışına taşmasın */
 #prompt {
   flex: 1;
+  min-width: 0;
   border: 0;
   background: transparent;
   resize: none;
@@ -1890,7 +1891,36 @@ ${body}
 
   // ------------------------------------------------------------------ Bilgi bankası (BM25)
   const STOP = new Set("ve veya ile de da ki bir bu şu o için gibi daha çok en mi mı mu mü ne nasıl neden ama fakat ise olan olarak olur olabilir var yok her hangi benim bana beni sen siz biz ben".split(" "));
-  const terms = (s) => (s.toLocaleLowerCase("tr-TR").match(/[\p{L}\p{N}]+/gu) || []).filter((w) => w.length > 1 && !STOP.has(w)).map((w) => w.slice(0, 5));
+  // Türkçe ekleri ayıkla ("başım ağrıyor" ile "baş ağrısı" aynı köke insin); I=ı/i/u/ü, A=a/e, D=d/t
+  const SUFFIXES = (() => {
+    const out = [], expand = (p) => {
+      const m = p.match(/[IAD]/);
+      if (!m) return out.push(p);
+      for (const c of { I: "ıiuü", A: "ae", D: "dt" }[m[0]]) expand(p.replace(m[0], c));
+    };
+    "Iyorum Iyorsun Iyoruz Iyorlar Iyor yor mIş DIr DIm DIn DIk DI mAk mA lAr lIk Ik sIz lI ylA lA DAn DA nIn In Im sI yA I A m".split(" ").forEach(expand);
+    return out.sort((a, b) => b.length - a.length);
+  })();
+  const DROPPED = { göğs: "göğüs", karn: "karın", ağz: "ağız", burn: "burun", boyn: "boyun", beyn: "beyin", omz: "omuz", bağır: "bağırsak" };
+  const stems = new Map();
+  function stem(w) {
+    if (stems.has(w)) return stems.get(w);
+    let s = w;
+    for (let i = 0; i < 3; i++) {
+      const suf = SUFFIXES.find((x) => s.endsWith(x) && s.length - x.length >= 3);
+      if (!suf) break;
+      s = s.slice(0, -suf.length).replace(/ğ$/, "k");
+    }
+    // Sondaki d/t düşer: "sırt/sırtım", "vücut/vücudu" geçmiş zaman ekiyle (-dı/-tı) karışmasın
+    s = DROPPED[s] || s;
+    if (s.length > 3) s = s.replace(/[dt]$/, "");
+    s = s.replace(/ğ$/, "k").slice(0, 6);
+    stems.set(w, s);
+    return s;
+  }
+  // Şikayeti anlatırken geçen, konuyu belirlemeyen sözcükler (kökleriyle karşılaştırılır)
+  const FILLER = new Set("gün hafta yıl saat dün bugün yapmalıyım yapayım oldum oluyor olmuş ediyor hissediyorum şey".split(" ").map(stem));
+  const terms = (s) => (s.toLocaleLowerCase("tr-TR").match(/[\p{L}\p{N}]+/gu) || []).filter((w) => w.length > 1 && !STOP.has(w)).map(stem).filter((t) => !FILLER.has(t));
 
   function chunkText(text) {
     text = text.replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
