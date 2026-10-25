@@ -163,8 +163,9 @@ button { cursor: pointer; }
 .profile-sum span { display: block; color: var(--ink-2); font-size: 12.5px; }
 .pform { display: grid; gap: 14px; }
 .pform label { display: grid; gap: 5px; font-size: 13px; color: var(--ink-2); font-weight: 500; }
-.pform input[type="number"], .pform select, .pform textarea { border: 1px solid var(--line); border-radius: 7px; padding: 8px 10px; background: var(--surface); font-size: 14px; color: var(--ink); width: 100%; }
+.pform input[type="text"], .pform input[type="number"], .pform select, .pform textarea { border: 1px solid var(--line); border-radius: 7px; padding: 8px 10px; background: var(--surface); font-size: 14px; color: var(--ink); width: 100%; }
 .pform textarea { resize: vertical; min-height: 58px; }
+.pform .field-note { font-style: normal; font-size: 12px; font-weight: 400; }
 .pform .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
 .pform .check { display: flex; gap: 8px; align-items: center; font-size: 13.5px; color: var(--ink); }
 .pform .actions { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -741,7 +742,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   // messages: {role:"user"|"assistant", content (Claude'a giden), text (ekranda), files?, sources?, triage?, error?}
   let messages = load(STORE_CHAT, []);
   let docs = load(STORE_DOCS, []);   // {id, name, chunks:[{page, text}]}
-  let profile = load(STORE_PROFILE, {});   // {yas, cinsiyet, gebe, kronik, ilaclar, alerjiler, notlar}
+  let profile = load(STORE_PROFILE, {});   // {ad, yas, cinsiyet, gebe, kronik, ilaclar, alerjiler, notlar}; ad Claude'a gönderilmez
   let downloads = null;
   let library = [];   // güvenilir kaynak kütüphanesi: {title, text, url, kind, kw}
   let pendingFiles = [];
@@ -968,14 +969,14 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     const el2 = $("profileSum"); el2.replaceChildren();
     const p = profile;
     const bits = [clean(p.yas) && `${clean(p.yas)} yaş`, clean(p.cinsiyet), p.gebe && "hamile/emziriyor"].filter(Boolean);
-    if (!profileText()) {
+    if (!profileText() && !clean(p.ad)) {
       el2.textContent = "Yaş, kronik hastalık, ilaç ve alerjilerinizi bir kez girin; her soruda dikkate alınır.";
       el2.style.color = "var(--ink-2)";
       $("profileBtn").textContent = "Profil oluştur";
       return;
     }
     el2.style.color = "";
-    el2.textContent = bits.join(" · ") || "Profil";
+    el2.textContent = [clean(p.ad), ...bits].filter(Boolean).join(" · ") || "Profil";
     [["ilaclar", "İlaç"], ["alerjiler", "Alerji"], ["kronik", "Kronik"]].forEach(([k, l]) => {
       if (clean(p[k])) { const s = document.createElement("span"); s.textContent = `${l}: ${clean(p[k]).replace(/\s*\n\s*/g, ", ")}`; el2.appendChild(s); }
     });
@@ -985,6 +986,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     const f = document.createElement("form"); f.className = "pform";
     f.innerHTML = `
       <p class="muted" style="margin:0">Bu bilgiler yalnızca bu tarayıcıda saklanır ve soru sorduğunuzda asistana sizin Claude hesabınız üzerinden gönderilir. Boş bıraktığınız alanlar gönderilmez.</p>
+      <label>Ad soyad<input type="text" name="ad" autocomplete="name" placeholder="ör. Ayşe Yılmaz"><em class="field-note">Adınız asistana gönderilmez; yalnızca doktora götüreceğiniz özette yazılır.</em></label>
       <div class="row">
         <label>Yaş<input type="number" name="yas" min="0" max="120" placeholder="ör. 41"></label>
         <label>Cinsiyet<select name="cinsiyet"><option value="">Belirtmek istemiyorum</option><option>Kadın</option><option>Erkek</option></select></label>
@@ -993,13 +995,13 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
       ${PROFILE_FIELDS.map(([k, label, ph]) => `<label>${label}<textarea name="${k}" placeholder="${ph}"></textarea></label>`).join("")}
       <div class="actions"><button class="btn primary" type="submit">Kaydet</button><button class="btn" type="button" data-act="clear">Profili sil</button></div>`;
     const F = f.elements;
-    F.yas.value = clean(profile.yas); F.cinsiyet.value = clean(profile.cinsiyet); F.gebe.checked = Boolean(profile.gebe);
+    F.ad.value = clean(profile.ad); F.yas.value = clean(profile.yas); F.cinsiyet.value = clean(profile.cinsiyet); F.gebe.checked = Boolean(profile.gebe);
     PROFILE_FIELDS.forEach(([k]) => { F[k].value = clean(profile[k]); });
     const gebeVis = () => { f.querySelector("#gebeWrap").hidden = F.cinsiyet.value !== "Kadın"; };
     F.cinsiyet.addEventListener("change", gebeVis); gebeVis();
     f.addEventListener("submit", (e) => {
       e.preventDefault();
-      profile = { yas: clean(F.yas.value), cinsiyet: F.cinsiyet.value, gebe: F.cinsiyet.value === "Kadın" && F.gebe.checked };
+      profile = { ad: clean(F.ad.value), yas: clean(F.yas.value), cinsiyet: F.cinsiyet.value, gebe: F.cinsiyet.value === "Kadın" && F.gebe.checked };
       PROFILE_FIELDS.forEach(([k]) => { profile[k] = clean(F[k].value); });
       save(STORE_PROFILE, profile); renderProfile(); closeSheet();
     });
@@ -1053,11 +1055,77 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin:4px 0 10px}th,td
 .warn{margin-top:24px;padding:10px 12px;border:1px solid #d6e0db;border-radius:8px;font-size:12.5px;color:#4b5c56}
 @media print{body{margin:0}.warn{break-inside:avoid}}
 </style></head><body>
-<header><h1>Hasta ön bilgi özeti</h1><p>Hazırlanma: ${esc(when)} · Nabız tıbbi bilgi asistanı</p></header>
+<header><h1>Hasta ön bilgi özeti</h1>${clean(profile.ad) ? `<p><b>Ad soyad:</b> ${esc(clean(profile.ad))}</p>` : ""}<p>Hazırlanma: ${esc(when)} · Nabız tıbbi bilgi asistanı</p></header>
 ${body}
 <p class="warn">Bu özet, kişinin bir yapay zeka bilgi asistanıyla yaptığı yazışmadan otomatik olarak hazırlanmıştır. Tıbbi kayıt veya teşhis değildir; bilgiler kişinin kendi beyanına dayanır ve hekim tarafından doğrulanmalıdır.</p>
 </body></html>`;
   }
+
+  // PDF: pdfmake yalnızca ilk indirmede yüklenir (Roboto yazı tipi Türkçe karakterleri içerir)
+  const loadScript = (src) => new Promise((res, rej) => {
+    const sc = document.createElement("script"); sc.src = src; sc.onload = res; sc.onerror = () => rej(new Error(src)); document.head.appendChild(sc);
+  });
+  let pdfReady = null;
+  function loadPdfMake() {
+    if (!pdfReady) {
+      const base = "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.10/";
+      pdfReady = loadScript(base + "pdfmake.min.js").then(() => loadScript(base + "vfs_fonts.js"))
+        .then(() => { if (!window.pdfMake?.createPdf) throw new Error("pdfmake"); return window.pdfMake; })
+        .catch((e) => { pdfReady = null; throw e; });
+    }
+    return pdfReady;
+  }
+  const decode = (t) => { const x = document.createElement("textarea"); x.innerHTML = t; return x.value; };
+  function pdfInline(tokens) {
+    return (tokens || []).map((t) => {
+      if (t.type === "strong") return { text: pdfInline(t.tokens), bold: true };
+      if (t.type === "em") return { text: pdfInline(t.tokens), italics: true };
+      if (t.type === "br") return "\n";
+      if (t.tokens?.length) return { text: pdfInline(t.tokens) };
+      return decode(t.text ?? t.raw ?? "");
+    });
+  }
+  function pdfBlocks(tokens) {
+    const out = [];
+    tokens.forEach((t) => {
+      if (t.type === "heading") out.push({ text: pdfInline(t.tokens), style: "h2" });
+      else if (t.type === "paragraph" || t.type === "text") out.push({ text: pdfInline(t.tokens || [t]), margin: [0, 0, 0, 6] });
+      else if (t.type === "list") {
+        const items = t.items.map((it) => { const b = pdfBlocks(it.tokens); return b.length === 1 ? b[0] : { stack: b }; });
+        out.push({ [t.ordered ? "ol" : "ul"]: items, margin: [0, 0, 0, 6] });
+      } else if (t.type === "table") {
+        const head = t.header.map((c) => ({ text: pdfInline(c.tokens), bold: true, fillColor: "#edf2ef" }));
+        const rows = t.rows.map((r) => r.map((c) => ({ text: pdfInline(c.tokens) })));
+        out.push({ table: { headerRows: 1, widths: head.map(() => "*"), body: [head, ...rows] }, layout: { hLineColor: "#d6e0db", vLineColor: "#d6e0db" }, fontSize: 10, margin: [0, 2, 0, 8] });
+      } else if (t.type === "code" || t.type === "blockquote") out.push({ text: decode(t.text || ""), margin: [0, 0, 0, 6] });
+    });
+    // Liste maddelerindeki tek paragrafın alt boşluğu kaldırılır
+    out.forEach((b) => (b.ul || b.ol || []).forEach((i) => { if (i.margin) i.margin = [0, 0, 0, 2]; }));
+    return out;
+  }
+  function summaryPdfDef(md, when) {
+    const name = clean(profile.ad);
+    return {
+      pageSize: "A4", pageMargins: [48, 56, 48, 64],
+      info: { title: "Hasta ön bilgi özeti" + (name ? " · " + name : ""), creator: "Nabız" },
+      defaultStyle: { font: "Roboto", fontSize: 11, lineHeight: 1.25, color: "#16221e" },
+      styles: { title: { fontSize: 18, bold: true }, h2: { fontSize: 13, bold: true, color: "#0e6b57", margin: [0, 10, 0, 4] } },
+      content: [
+        { text: "Hasta ön bilgi özeti", style: "title" },
+        name ? { text: [{ text: "Ad soyad: ", color: "#4b5c56" }, { text: name, bold: true }], margin: [0, 4, 0, 0] } : null,
+        { text: `Hazırlanma: ${when} · Nabız tıbbi bilgi asistanı`, fontSize: 9.5, color: "#4b5c56", margin: [0, 3, 0, 6] },
+        { canvas: [{ type: "line", x1: 0, y1: 0, x2: 499, y2: 0, lineWidth: 1.5, lineColor: "#0e6b57" }], margin: [0, 0, 0, 6] },
+        ...pdfBlocks(marked.lexer(md)),
+      ].filter(Boolean),
+      footer: (page, pages) => ({
+        margin: [48, 10, 48, 0], columns: [
+          { text: "Bu özet, kişinin bir yapay zeka bilgi asistanıyla yazışmasından otomatik hazırlanmıştır; tıbbi kayıt veya teşhis değildir, hekim tarafından doğrulanmalıdır.", fontSize: 8, color: "#4b5c56", width: "*" },
+          { text: `${page} / ${pages}`, fontSize: 8, color: "#4b5c56", width: 40, alignment: "right" },
+        ],
+      }),
+    };
+  }
+  const slug = (t) => t.toLocaleLowerCase("tr-TR").replace(/[çğıöşü]/g, (c) => ({ ç: "c", ğ: "g", ı: "i", ö: "o", ş: "s", ü: "u" })[c]).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
   let summaryCtrl = null;
   async function openSummary() {
@@ -1084,16 +1152,25 @@ ${body}
       const actions = document.createElement("div"); actions.className = "summary-actions";
       const msg = document.createElement("span"); msg.className = "muted"; msg.style.margin = "0";
       if (downloads) {
-        const b = document.createElement("button"); b.type = "button"; b.className = "btn primary"; b.textContent = "Özeti indir (yazdırılabilir)";
+        const b = document.createElement("button"); b.type = "button"; b.className = "btn primary"; b.textContent = "PDF olarak indir";
         b.onclick = async () => {
-          msg.textContent = "";
+          msg.textContent = "PDF hazırlanıyor…"; b.disabled = true;
+          const base = ["hasta-ozeti", slug(clean(profile.ad)), new Date().toISOString().slice(0, 10)].filter(Boolean).join("-");
+          let file;
           try {
-            const day = new Date().toISOString().slice(0, 10);
-            await downloads.save({ filename: `hasta-ozeti-${day}.html`, data: summaryHtml(res.text, when) });
-            msg.textContent = "İndirildi. Dosyayı açıp yazdırabilir veya PDF olarak kaydedebilirsiniz.";
+            const pm = await loadPdfMake();
+            const blob = await new Promise((ok) => pm.createPdf(summaryPdfDef(res.text, when)).getBlob(ok));
+            file = { filename: base + ".pdf", data: blob };
+          } catch (err) {
+            console.warn("PDF oluşturulamadı, HTML olarak indiriliyor", err);
+            file = { filename: base + ".html", data: summaryHtml(res.text, when) };
+          }
+          try {
+            await downloads.save(file);
+            msg.textContent = file.filename.endsWith(".pdf") ? "PDF indirildi." : "PDF oluşturulamadı; yazdırılabilir HTML olarak indirildi.";
           } catch (e) {
             msg.textContent = e?.code === "declined" ? "" : "İndirme bu görünümde yapılamadı; metni seçip kopyalayabilirsiniz.";
-          }
+          } finally { b.disabled = false; }
         };
         actions.appendChild(b);
       } else {
