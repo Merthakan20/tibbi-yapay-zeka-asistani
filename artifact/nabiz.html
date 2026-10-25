@@ -79,6 +79,7 @@ button { cursor: pointer; }
   height: 100%;
   display: grid;
   grid-template-columns: 300px 1fr;
+  grid-template-rows: minmax(0, 1fr); /* içerik uzasa da ekran yüksekliğinde kal */
 }
 
 /* ---------- Panel ---------- */
@@ -159,7 +160,7 @@ button { cursor: pointer; }
 .panel-foot { margin-top: auto; display: grid; gap: 10px; }
 
 /* ---------- Main ---------- */
-.main { display: flex; flex-direction: column; min-width: 0; height: 100%; }
+.main { display: flex; flex-direction: column; min-width: 0; min-height: 0; height: 100%; }
 .topbar {
   display: none;
   align-items: center; justify-content: space-between;

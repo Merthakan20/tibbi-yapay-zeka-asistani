@@ -45,10 +45,10 @@ Yeni bir oturumdan güncellerken `url` olarak yukarıdaki artifact linki verilir
 - Görsel: Chrome headless (`--use-angle=swiftshader --enable-unsafe-swiftshader`), model yüklemesi için klasörü `python3 -m http.server` ile sunmak gerekir (file:// fetch'e izin vermez).
 
 ## Nerede kaldık (2026-10-25)
-**Durum:** 106 konu / 211 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v11, commit `4757389`.
+**Durum:** 106 konu / 211 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v12 (mesaj kutusu ve Yeni sohbet butonu ekrandan taşıyordu, düzeltildi).
 
 **Doğrulanmamış olanlar:**
-- Asistanın gerçek bir soruya baştan sona cevap verdiği henüz test edilmedi (kullanıcının sayfada denemesi gerekiyor).
+- Asistan gerçek bir soruyu cevapladı (baş ağrısı, aciliyet göstergesi çalışıyor). Kaynak linkleri [1] o cevapta görülmedi.
 - 3D modelin son parlaklık ayarı (kas alpha 0.28) ve telefonda görünüm görülmedi.
 - 3D'de kol/bacak gibi bölgeler seçilince model üzerinde ayrıca vurgulanmıyor (yalnızca organlar).
 
