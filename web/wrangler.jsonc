@@ -1,0 +1,19 @@
+{
+  // Nabız web sürümü · Cloudflare Workers
+  "name": "nabiz",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": { "directory": "./dist", "binding": "ASSETS" },
+  "vars": {
+    // Model ve cevap uzunluğu buradan değişir (kod değişmeden). Fiyatlar: claude-opus-5 $5/$25, claude-sonnet-5 $2/$10 (1M token başına)
+    "MODEL": "claude-opus-5",
+    "MAX_TOKENS": "16000"
+  },
+  // Kötüye kullanım sınırı: IP başına 60 saniyede en fazla 8 istek
+  "ratelimits": [
+    { "name": "LIMITER", "namespace_id": "1001", "simple": { "limit": 8, "period": 60 } }
+  ],
+  "observability": { "enabled": true }
+  // ANTHROPIC_API_KEY gizli değişkendir: npx wrangler secret put ANTHROPIC_API_KEY
+}

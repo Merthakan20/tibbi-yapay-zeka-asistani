@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#0e1412}iframe{display:block;margin:0 auto;border:0;width:390px;height:844px}</style></head>
+<body><iframe id="f" src="/"></iframe><pre id="OUT" style="display:none"></pre><script>
+const step = new URLSearchParams(location.search).get("s"), out = {}, wait = (ms) => new Promise((r) => setTimeout(r, ms));
+if (step === "consent") localStorage.removeItem("nabiz.kvkk.v1");
+f.onload = async () => { try {
+  const w = f.contentWindow, d = w.document, $ = (q) => d.querySelector(q);
+  await wait(1200);
+  out.consentShown = Boolean($("#kvkk"));
+  out.okDisabledBeforeTick = $("#kvkkOk")?.disabled;
+  if (step !== "consent") {
+    if ($("#kvkk")) { $("#kvkkC").click(); $("#kvkkOk").click(); await wait(100); }
+    out.consentStored = Boolean(w.localStorage.getItem("nabiz.kvkk.v1"));
+    out.unavailableHidden = $("#unavailable").hidden;
+    out.riskBtnHidden = $("#riskBtn").hidden;
+  }
+  if (step === "chat") {
+    const p = $("#prompt"); p.value = "Başım ağrıyor, ne yapmalıyım?"; p.dispatchEvent(new Event("input"));
+    $("#sendBtn").click(); for (let i = 0; i < 40 && !d.querySelector("#sendBtn.send"); i++) await wait(250);
+    const card = [...d.querySelectorAll(".msg.bot .card")].at(-1);
+    out.gauge = Boolean(card?.querySelector(".gauge")); out.dept = card?.querySelector(".care .dept b")?.textContent;
+    out.answer = card?.querySelector(".md")?.textContent.slice(0, 80);
+    out.saved = JSON.parse(w.localStorage.getItem("nabiz.chat.v1") || "[]").length;
+  }
+  if (step === "labs") {
+    $("#labsBtn").click(); await wait(200);
+    const c = d.createElement("canvas"); /* uygulamanın penceresinde */ c.width = 40; c.height = 40; c.getContext("2d").fillRect(0, 0, 20, 20);
+    const blob = await new Promise((r) => c.toBlob(r, "image/png"));
+    const inp = $("#sheetBody input[type=file]"); const dt = new w.DataTransfer(); dt.items.add(new w.File([blob], "tahlil.png", { type: "image/png" })); inp.files = dt.files;
+    inp.dispatchEvent(new Event("change")); for (let i = 0; i < 40 && !d.querySelector("#sheetBody .lh-table"); i++) await wait(250);
+    out.status = [...d.querySelectorAll("#sheetBody p.muted")].map((x) => x.textContent).filter(Boolean).join(" | "); out.files = $("#sheetBody input[type=file]")?.files?.length;
+    out.reviewRows = d.querySelectorAll("#sheetBody .lh-table tbody tr").length;
+  }
+  OUT.textContent = JSON.stringify(out);
+  } catch (e) { out.error = String(e && (e.stack || e.message || e.code || JSON.stringify(e))); OUT.textContent = JSON.stringify(out); } };
+</script></body></html>

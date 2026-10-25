@@ -12,6 +12,7 @@ Türkçe tıbbi bilgi asistanı. Kullanıcıyla Türkçe konuşulur.
 | Sürüm | Dosyalar | Not |
 |---|---|---|
 | claude.ai artifact | `artifact/nabiz.html` (tek dosya) + `artifact/models/*.json` + `kaynaklar/kaynaklar.json` | Claude'a `sample` capability ile kullanıcının aboneliği üzerinden sorar. API anahtarı gerekmez. |
+| Web uygulaması (PWA, Cloudflare Workers) | `web/` (ayrıntı: `web/README.md`) | `nabiz.html` değişmeden sarılır; `bridge.js` `window.claude`'u taklit eder, `/api/sample` Anthropic API'ye gider (sizin API hesabınız). KVKK açık rıza penceresi. **Henüz yayınlanmadı** (API kredisi + Cloudflare hesabı bekleniyor). |
 | Streamlit + Claude API | `app.py`, `asistan/` | Çalışır ama API kredisi yok (2026-10-24'te bakiye 0). Canlı web araması yalnızca burada. |
 
 ### Sayfanın bileşenleri (`artifact/nabiz.html`)
@@ -34,6 +35,9 @@ Türkçe tıbbi bilgi asistanı. Kullanıcıyla Türkçe konuşulur.
 
 ## Sık işler
 
+### Web uygulamasını güncellemek
+`cd web && npm run deploy` (önce `npm test`). `build.mjs` claude.ai'ye özgü metinleri değiştirir; `nabiz.html`'de bu metinler değişirse derleme durur, `REPLACE` listesini güncelle.
+
 ### Sayfayı yayınlamak (aynı linki günceller)
 Artifact aracıyla `artifact/nabiz.html` yayınlanır; `files` içinde şunlar verilmeli:
 `kaynaklar.json` → `kaynaklar/kaynaklar.json`, `models/muscles.json`, `models/bones.json`, `models/LICENSE.md`.
@@ -53,7 +57,7 @@ Yeni bir oturumdan güncellerken `url` olarak yukarıdaki artifact linki verilir
 - `paylasim/nabiz-linkedin.pdf`: LinkedIn için 8 sayfalık tanıtım (1080×1350). Ekran görüntülerindeki sohbetler sahte `window.claude` ile hazırlanmış örneklerdir (PDF'te belirtiliyor).
 
 ## Nerede kaldık (2026-10-25)
-**Durum:** 124 konu / 249 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v22 — tahlil geçmişi + e-Nabız aktarımı, elektrolit konuları (sodyum, potasyum); v21 — güvenlik testi (2. tur 23/23; tek 'kaldı' kontrol hatasıydı), RULES'a kapsam/"siz" hitabı/ilgisiz kaynak kuralı, arama kök düzeltmeleri, hemoroid + anal fissür + makattan kanama; v18 — telefonda gönder düğmesinin taşması düzeltildi; telefonda (390 px) görünüm kontrol edildi; v17 — 10 konu: menenjit, kafa travması, kalp masajı (TYD), talasemi, gebelik şekeri, HbA1c, besin zehirlenmesi, göz kuruluğu, el-ayak-ağız, OKB; v16 — sırt ağrısı, kırık/çıkık/burkulma, aft konuları eklendi; v15 — kaynak aramasına Türkçe ek ayıklayıcı (baş ağrısı sorusunda kaynak bulunamama sorunu çözüldü); v14: profilde ad soyad, özet PDF; v13: hasta profili, randevu yönlendirmesi (MHRS/182/112), doktora götürülecek özet eklendi.
+**Durum:** 124 konu / 249 kaynak; 3D gerçek anatomi modeli; belirgin 112 uyarısı (üstte); şikayet formu sağda. Son sürüm: artifact v22 + `web/` (PWA, yerelde test edildi, yayın bekliyor) — tahlil geçmişi + e-Nabız aktarımı, elektrolit konuları (sodyum, potasyum); v21 — güvenlik testi (2. tur 23/23; tek 'kaldı' kontrol hatasıydı), RULES'a kapsam/"siz" hitabı/ilgisiz kaynak kuralı, arama kök düzeltmeleri, hemoroid + anal fissür + makattan kanama; v18 — telefonda gönder düğmesinin taşması düzeltildi; telefonda (390 px) görünüm kontrol edildi; v17 — 10 konu: menenjit, kafa travması, kalp masajı (TYD), talasemi, gebelik şekeri, HbA1c, besin zehirlenmesi, göz kuruluğu, el-ayak-ağız, OKB; v16 — sırt ağrısı, kırık/çıkık/burkulma, aft konuları eklendi; v15 — kaynak aramasına Türkçe ek ayıklayıcı (baş ağrısı sorusunda kaynak bulunamama sorunu çözüldü); v14: profilde ad soyad, özet PDF; v13: hasta profili, randevu yönlendirmesi (MHRS/182/112), doktora götürülecek özet eklendi.
 
 **Doğrulanmamış olanlar:**
 - v13 özellikleri yalnızca sahte cevapla yerelde test edildi; gerçek Claude'un `BÖLÜM:` satırını yazması, özet kalitesi ve indirme claude.ai'de denenmedi.
