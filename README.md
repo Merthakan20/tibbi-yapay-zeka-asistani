@@ -31,6 +31,7 @@ Güvenilir kaynaklara dayanan, Claude (Anthropic) ile çalışan Türkçe tıbbi
 
 | Sürüm | Kimler kullanabilir? | Maliyet |
 |---|---|---|
+| **Ücretsiz site** ([merthakan20.github.io/tibbi-yapay-zeka-asistani](https://merthakan20.github.io/tibbi-yapay-zeka-asistani/)) | Herkes, hesap gerekmez | Ücretsiz. Yapay zekâ yok: sorulara kütüphaneden kaynak özetleri gösterilir, tahlil değerleri elle girilip grafiği çizilir; "Asistana sor" claude.ai sürümünü açar |
 | **claude.ai sayfası** (`artifact/nabiz.html`) | Linki olan, ücretsiz bir Claude hesabı açmış herkes | Sorular ziyaretçinin kendi Claude hesabından yanıtlanır |
 | **Web uygulaması** (`web/`, telefona kurulabilir) | Hesap gerekmez | Yayınlayanın Anthropic API hesabından ücretlendirilir. Kod hazır, henüz yayında değil. |
 | **Streamlit** (`app.py`) | Yerelde çalıştıran geliştirici | Anthropic API kredisi gerekir; canlı web araması yalnızca burada |
@@ -51,7 +52,8 @@ Kullanıcı sorusu
 
 - **Tek dosya arayüz:** `artifact/nabiz.html`; harici kütüphaneler: marked, DOMPurify, pdf.js, Three.js, pdfmake.
 - **Kaynak araması:** Türkçe eklerini ayıklayan küçük bir kök bulucu ve BM25. Kaynak, sorudaki bir kelime kendi konusunda veya anahtar kelimelerinde geçiyorsa sonuç olur.
-- **Web sürümü:** Cloudflare Workers. Sayfa kodu değişmeden sarılır; küçük bir köprü (`web/static/bridge.js`) claude.ai'nin sayfaya sağladığı arayüzü taklit eder ve soruları API anahtarını gizli tutan sunucuya yönlendirir. IP başına hız sınırı ve KVKK açık rıza penceresi vardır. Ayrıntılar: [`web/README.md`](web/README.md).
+- **Ücretsiz site:** `node web/build.mjs --static` aynı sayfayı köprüsüz derler; her push'ta GitHub Actions ile GitHub Pages'e yayınlanır (`.github/workflows/pages.yml`). Asistana ulaşılamayınca sayfa kendiliğinden "kütüphane moduna" geçer.
+- **Asistanlı web sürümü:** Cloudflare Workers. Sayfa kodu değişmeden sarılır; küçük bir köprü (`web/static/bridge.js`) claude.ai'nin sayfaya sağladığı arayüzü taklit eder ve soruları API anahtarını gizli tutan sunucuya yönlendirir. IP başına hız sınırı ve KVKK açık rıza penceresi vardır. Ayrıntılar: [`web/README.md`](web/README.md).
 
 ## Güvenlik testi
 

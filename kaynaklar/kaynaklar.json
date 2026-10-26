@@ -2991,7 +2991,15 @@
         "sıcak su yanığı",
         "yanık derecesi",
         "yanıkta ilk yardım",
-        "kabarcık"
+        "kabarcık",
+        "kaynar su döküldü",
+        "kaynar su",
+        "haşlandı",
+        "kızgın yağ sıçradı",
+        "sıcak su döküldü",
+        "ütü değdi",
+        "elim yandı",
+        "sıcak çay döküldü"
       ],
       "baslik": "Yanık Nedir? Yanık Dereceleri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -3009,7 +3017,16 @@
         "yanık",
         "kimyasal yanık",
         "elektrik yanığı",
-        "güneş yanığı"
+        "güneş yanığı",
+        "kaynar su döküldü",
+        "kaynar su",
+        "haşlandı",
+        "haşlanma",
+        "kızgın yağ sıçradı",
+        "sıcak su döküldü",
+        "ütü değdi",
+        "elim yandı",
+        "sıcak çay döküldü"
       ],
       "baslik": "Burns (Yanıklar)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -4399,9 +4416,7 @@
         "ciltte morumsu döküntü",
         "boyun sertliği",
         "boynumu eğemiyorum",
-        "boyun tutulması",
-        "ışığa hassasiyet",
-        "yüksek ateş ve baş ağrısı"
+        "boyun tutulması"
       ],
       "baslik": "Meningokokal Hastalık",
       "kurum": "T.C. Sağlık Bakanlığı Aşı Portalı",
@@ -4423,9 +4438,7 @@
         "ense sertliği",
         "boyun sertliği",
         "boynumu eğemiyorum",
-        "boyun tutulması",
-        "ışığa hassasiyet",
-        "yüksek ateş ve baş ağrısı"
+        "boyun tutulması"
       ],
       "baslik": "Meningitis (Menenjit)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",

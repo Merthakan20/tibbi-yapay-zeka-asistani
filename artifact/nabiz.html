@@ -417,6 +417,11 @@ button { cursor: pointer; }
 .lab-chip.na { background: var(--surface-2); color: var(--ink-2); }
 .dot.ok { background: var(--t-home); } .dot.low, .dot.high { background: var(--t-today); } .dot.crit { background: var(--t-er); }
 .labs-wait { font-size: 13px; color: var(--ink-2); padding: 8px 0 12px; }
+/* ---------- Kütüphane modu ---------- */
+.lib-card .lib-head { font: 600 15px var(--f-display); margin: 0 0 4px; }
+.lib-card .src-card:first-of-type { border-top: 1px solid var(--line); }
+.lib-note { margin-top: 10px; padding: 12px 14px; border-radius: 10px; background: var(--bg); border: 1px solid var(--line); font-size: 14px; }
+.lib-note p { margin: 0; color: var(--ink-2); }
 /* ---------- Tahlil geçmişi ---------- */
 .lh-list { display: grid; gap: 8px; }
 .lh-item { display: grid; grid-template-columns: minmax(0, 1fr) 120px auto 70px; gap: 12px; align-items: center; text-align: left; border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 10px 12px; }
@@ -792,6 +797,9 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   let pendingFiles = [];
   let sample = null;
   let sampleReady = false;
+  // Kütüphane modu: asistana ulaşılamıyorsa (ör. ücretsiz web sitesi) sorulara kütüphaneden kaynaklar gösterilir
+  let libMode = false;
+  const ASISTAN_URL = window.NABIZ_ASISTAN_URL || "";
   let imageLimits = null;
   let busy = false;
   let controller = null;
@@ -872,7 +880,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
     el.thread.querySelectorAll(".msg").forEach((n) => n.remove());
     el.welcome.hidden = messages.length > 0;
     el.app.classList.toggle("wide", messages.length === 0);
-    messages.forEach((m, i) => el.thread.appendChild(m.role === "user" ? userNode(m) : botNode(m, i)));
+    messages.forEach((m, i) => el.thread.appendChild(m.role === "user" ? userNode(m) : m.lib ? libNode(m, i) : botNode(m, i)));
     updateSummaryBtn();
     scrollDown();
   }
@@ -1078,7 +1086,7 @@ Başlıklar (bu sırayla, "##" ile):
 (kişinin yazışmadaki sorularından ve endişelerinden 3-5 kısa soru)`;
 
   function transcript() {
-    return messages.filter((m) => !m.error).map((m) => {
+    return messages.filter((m) => !m.error && !m.lib).map((m) => {
       if (m.role === "user") return `KİŞİ: ${m.text}${m.files?.length ? `\n(Ekler: ${m.files.join(", ")})` : ""}`;
       const { triage, dept, body } = splitTriage(m.text || "");
       const head = triage ? `[Aciliyet: ${TRIAGE[triage][1]}${dept ? ` · Önerilen bölüm: ${dept}` : ""}]\n` : "";
@@ -1174,7 +1182,7 @@ ${body}
 
   let summaryCtrl = null;
   async function openSummary() {
-    if (!sampleReady || !messages.some((m) => m.role === "assistant" && !m.error)) return;
+    if (!sampleReady || !messages.some((m) => m.role === "assistant" && !m.error && !m.lib)) return;
     const root = document.createElement("div");
     const info = document.createElement("p"); info.className = "muted";
     info.textContent = "Bu konuşmadan ve profilinizden muayenede hekiminize gösterebileceğiniz kısa bir özet hazırlanıyor.";
@@ -1433,9 +1441,13 @@ Kurallar:
     input.accept = imageLimits ? ["application/pdf", ...(imageLimits.mediaTypes || [])].join(",") : "application/pdf";
     const add = document.createElement("button"); add.type = "button"; add.className = "btn primary"; add.textContent = "+ PDF veya fotoğraf ekle";
     add.disabled = !sampleReady; add.onclick = () => input.click();
+    if (!sampleReady) { add.title = "PDF'ten okumak için asistan gerekir"; add.hidden = libMode; }
+    const manual = document.createElement("button"); manual.type = "button"; manual.className = "btn"; manual.textContent = "+ Elle ekle";
+    manual.onclick = () => body.replaceChildren(manualForm());
     const status = document.createElement("p"); status.className = "muted"; status.style.margin = "0 0 12px";
     const body = document.createElement("div");
-    bar.append(add, input); root.append(info, bar, status, body);
+    bar.append(add, manual, input); root.append(info, bar, status, body);
+    if (libMode) info.textContent = "Tahlil değerlerinizi elle ekleyin; zaman içindeki değişimini grafikte görün. Değerler yalnızca bu tarayıcıda saklanır. PDF'ten otomatik okuma asistanlı sürümde var.";
     toastLabs = (t) => { status.textContent = t; };
     openSheet("Tahlil geçmişim", root);
 
@@ -1454,6 +1466,34 @@ Kurallar:
         body.replaceChildren(listView());
       } finally { add.disabled = !sampleReady; }
     };
+
+    // Elle tahlil girişi (yapay zekâ gerekmez)
+    function manualForm() {
+      const f = document.createElement("form"); f.className = "pform lh-manual";
+      const known = [...new Set(labs.map((x) => x.test).concat(["Hemoglobin", "Ferritin", "Glukoz (açlık)", "HbA1c", "TSH", "LDL kolesterol", "Kreatinin", "ALT", "B12 vitamini", "D vitamini", "Potasyum", "Sodyum"]))];
+      f.innerHTML = `
+        <div class="row"><label>Tarih<input type="date" name="tarih" required></label><label>Test<input type="text" name="test" list="lhTests" required placeholder="ör. Hemoglobin"></label></div>
+        <datalist id="lhTests">${known.map((t) => `<option value="${esc(t)}">`).join("")}</datalist>
+        <div class="row"><label>Değer<input type="text" name="deger" required inputmode="decimal" placeholder="ör. 12,4"></label><label>Birim<input type="text" name="birim" placeholder="ör. g/dL"></label></div>
+        <div class="row"><label>Referans alt<input type="text" name="alt" inputmode="decimal" placeholder="ör. 12"></label><label>Referans üst<input type="text" name="ust" inputmode="decimal" placeholder="ör. 16"></label></div>
+        <div class="actions"><button class="btn primary" type="submit">Kaydet</button><button class="btn" type="button" data-act="iptal">Vazgeç</button></div>`;
+      const F = f.elements; F.tarih.value = todayIso(); F.tarih.max = todayIso();
+      // Bilinen bir test seçilince son kaydın birim ve referansı önerilir
+      F.test.addEventListener("change", () => {
+        const prev = [...labs].reverse().find((x) => x.test.toLocaleLowerCase("tr-TR") === F.test.value.trim().toLocaleLowerCase("tr-TR"));
+        if (prev) { if (!F.birim.value) F.birim.value = prev.birim || ""; if (!F.alt.value && prev.alt !== null) F.alt.value = fmt(prev.alt); if (!F.ust.value && prev.ust !== null) F.ust.value = fmt(prev.ust); }
+      });
+      f.querySelector('[data-act="iptal"]').onclick = () => body.replaceChildren(listView());
+      f.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const prev = [...labs].reverse().find((x) => x.test.toLocaleLowerCase("tr-TR") === F.test.value.trim().toLocaleLowerCase("tr-TR"));
+        const n = addLabRows([{ tarih: F.tarih.value, test: F.test.value.trim(), anahtar: prev?.anahtar || F.test.value, deger: F.deger.value.trim(), birim: F.birim.value.trim(), alt: F.alt.value.trim(), ust: F.ust.value.trim() }], "elle");
+        status.textContent = n ? "Değer eklendi." : "Bu değer zaten kayıtlı ya da tarih eksik.";
+        body.replaceChildren(listView());
+      });
+      setTimeout(() => F.test.focus(), 50);
+      return f;
+    }
 
     // Okunan değerleri kaydetmeden önce kullanıcıya göster
     function reviewTable(rows, kaynak) {
@@ -1511,7 +1551,7 @@ Kurallar:
       });
       const act = document.createElement("div"); act.className = "summary-actions";
       const askAll = document.createElement("button"); askAll.type = "button"; askAll.className = "btn"; askAll.textContent = "Tüm geçmişi asistana yorumlat";
-      askAll.disabled = !sampleReady || busy; askAll.onclick = () => askTrend(null);
+      askAll.disabled = !sampleReady || busy; askAll.hidden = !sampleReady; askAll.onclick = () => askTrend(null);
       act.appendChild(askAll); box.append(ul, act);
       return box;
     }
@@ -1541,7 +1581,7 @@ Kurallar:
       t.appendChild(tb); const wrap = document.createElement("div"); wrap.className = "tbl"; wrap.appendChild(t);
       const act = document.createElement("div"); act.className = "summary-actions";
       const ask = document.createElement("button"); ask.type = "button"; ask.className = "btn primary"; ask.textContent = "Bu değişimi asistana yorumlat";
-      ask.disabled = !sampleReady || busy; ask.onclick = () => askTrend([k]);
+      ask.disabled = !sampleReady || busy; ask.hidden = !sampleReady; ask.onclick = () => askTrend([k]);
       act.appendChild(ask); box.append(wrap, act);
       return box;
     }
@@ -2122,7 +2162,7 @@ Kurallar:
     g("sid").addEventListener("input", () => { g("out").textContent = g("sid").value + "/10"; });
     f.addEventListener("submit", (e) => {
       e.preventDefault();
-      if (!sampleReady || busy) return;
+      if (busy || !(sampleReady || libMode)) return;
       const parts = [`${complaint} şikayetim var (${region.ad.toLocaleLowerCase("tr-TR")} bölgesi).`, `Süre: ${g("sure").value.toLocaleLowerCase("tr-TR")}.`, `Şiddet: ${g("sid").value}/10.`];
       if (g("yas").value) parts.push(`Yaş: ${g("yas").value}.`);
       if (g("cins").value) parts.push(`Cinsiyet: ${g("cins").value.toLocaleLowerCase("tr-TR")}.`);
@@ -2216,7 +2256,7 @@ Kurallar:
   function scrollDown() { el.chat.scrollTop = el.chat.scrollHeight; }
 
   // ------------------------------------------------------------------ Bilgi bankası (BM25)
-  const STOP = new Set("ve veya ile de da ki bir bu şu o için gibi daha çok en mi mı mu mü ne nasıl neden ama fakat ise olan olarak olur olabilir var yok her hangi benim bana beni sen siz biz ben kendi kendim kendimi kendime kendini kendine iyi yarın yarından bugün şimdi artık itibaren önce sonra biraz hep hepsi hepsini tane gibi istiyorum istemiyorum düşünüyorum hissediyorum gitsem gideyim yapayım alayım şey".split(" "));
+  const STOP = new Set("ve veya ile de da ki bir bu şu o için gibi daha çok en mi mı mu mü ne nasıl neden ama fakat ise olan olarak olur olabilir var yok her hangi benim bana beni sen siz biz ben kendi kendim kendimi kendime kendini kendine iyi yarın yarından bugün şimdi artık itibaren önce sonra biraz hep hepsi hepsini tane gibi istiyorum istemiyorum düşünüyorum hissediyorum gitsem gideyim yapayım alayım şey şikayetim şikayetimiz bölgesi süre şiddet başladı".split(" "));
   // Türkçe ekleri ayıkla ("başım ağrıyor" ile "baş ağrısı" aynı köke insin); I=ı/i/u/ü, A=a/e, D=d/t
   const SUFFIXES = (() => {
     const out = [], expand = (p) => {
@@ -2230,7 +2270,7 @@ Kurallar:
   // Düzensiz biçimler: ünlü düşmesi ("karnım" → karın) ve ünsüz yumuşaması ("kalbim" → kalp)
   const DROPPED = { göğs: "göğüs", karn: "karın", ağz: "ağız", burn: "burun", boyn: "boyun", beyn: "beyin", omz: "omuz", bağır: "bağırsak", kalb: "kalp" };
   // Bu kökler kısaltılmaz ("boyun" → "boy" olmasın, "makatımda" → "mak" olmasın)
-  const KEEP = new Set([...Object.values(DROPPED), "makat", "sırt", "kist"]);
+  const KEEP = new Set([...Object.values(DROPPED), "makat", "sırt", "kist", "yanık"]);
   const stems = new Map();
   function stem(w) {
     if (stems.has(w)) return stems.get(w);
@@ -2427,13 +2467,13 @@ Kurallar:
   // ------------------------------------------------------------------ Gönderme
   function updateSummaryBtn() {
     const b = $("summaryBtn"); if (!b) return;
-    const ok = sampleReady && !busy && messages.some((m) => m.role === "assistant" && !m.error);
+    const ok = sampleReady && !busy && messages.some((m) => m.role === "assistant" && !m.error && !m.lib);
     b.disabled = !ok;
     b.title = ok ? "Bu konuşmadan hekiminize gösterebileceğiniz bir özet hazırlar" : "Önce asistanla bir konuşma yapın";
   }
   function updateSend() {
     if (busy) return;
-    el.send.disabled = !sampleReady || (!el.prompt.value.trim() && !pendingFiles.length);
+    el.send.disabled = !(sampleReady || libMode) || (!el.prompt.value.trim() && !pendingFiles.length);
   }
 
   function setBusy(on) {
@@ -2451,7 +2491,8 @@ Kurallar:
   }
 
   async function submit(text) {
-    if (busy || !sampleReady) return;
+    if (busy || !(sampleReady || libMode)) return;
+    if (!sampleReady) return libraryAnswer(text);
     text = text.trim();
     const files = pendingFiles; pendingFiles = []; renderPending();
     if (!text && !files.length) return;
@@ -2495,8 +2536,56 @@ Kurallar:
     ask(images, notes);
   }
 
+  // Asistan yokken: sorunun kaynaklarını kütüphaneden göster (Claude'a hiçbir şey gönderilmez)
+  function libraryAnswer(text) {
+    text = text.trim();
+    const files = pendingFiles; pendingFiles = []; renderPending();
+    if (!text && !files.length) return;
+    el.prompt.value = ""; autosize(); updateSend();
+    const sources = text ? search(text, { useDocs: el.useDocs.checked, useLib: el.useLib.checked }) : [];
+    messages.push({ role: "user", lib: true, content: text, text: text || "(dosya)", files: files.map((f) => f.name) });
+    messages.push({ role: "assistant", lib: true, content: "", text: "", sources, dosya: files.length > 0 });
+    render(); saveChat();
+  }
+  function libNode(m, index) {
+    const wrap = document.createElement("div"); wrap.className = "msg bot";
+    const card = document.createElement("div"); card.className = "card lib-card";
+    const h = document.createElement("p"); h.className = "lib-head";
+    h.textContent = m.sources?.length ? "Kütüphaneden ilgili kaynaklar" : "Kütüphanede bu soruya uygun kaynak bulunamadı.";
+    card.appendChild(h);
+    (m.sources || []).forEach((s) => {
+      const box = document.createElement("div"); box.className = "src-card";
+      const kind = document.createElement("span"); kind.className = "kind"; kind.textContent = [KIND[s.kind], s.title.split(": ")[0]].filter(Boolean).join(" · ");
+      const t = s.url ? Object.assign(document.createElement("a"), { href: s.url, target: "_blank", rel: "noopener" }) : document.createElement("b");
+      t.textContent = (s.title.split(": ").slice(1).join(": ") || s.title) + (s.url ? " ↗" : "");
+      const x = document.createElement("p"); x.textContent = s.text;
+      box.append(kind, t, x); card.appendChild(box);
+    });
+    const note = document.createElement("div"); note.className = "lib-note";
+    const p = document.createElement("p");
+    p.textContent = (m.dosya ? "Bu sürüm eklediğiniz dosyayı okuyamaz. " : "") +
+      "Bu sürümde yapay zekâ asistanı yok; aciliyet değerlendirmesi, tahlil yorumu ve size özel cevap için asistanı kullanın. Göğüs ağrısı, nefes darlığı, bilinç kaybı veya inme belirtisinde beklemeden 112'yi arayın.";
+    note.appendChild(p);
+    if (ASISTAN_URL) {
+      const act = document.createElement("div"); act.className = "summary-actions"; act.style.cssText = "margin-top:8px;padding-top:0;border:0";
+      const go = Object.assign(document.createElement("a"), { href: ASISTAN_URL, target: "_blank", rel: "noopener", className: "btn primary", textContent: "Asistana sor (claude.ai) ↗" });
+      const q = messages[index - 1]?.role === "user" ? messages[index - 1].text : "";
+      act.appendChild(go);
+      if (q && navigator.clipboard) {
+        const cp = document.createElement("button"); cp.type = "button"; cp.className = "btn"; cp.textContent = "Sorumu kopyala";
+        cp.onclick = () => navigator.clipboard.writeText(q).then(() => { cp.textContent = "Kopyalandı"; }, () => {});
+        act.appendChild(cp);
+      }
+      const small = document.createElement("small"); small.className = "muted"; small.style.cssText = "flex-basis:100%;margin:0";
+      small.textContent = "Asistan, ücretsiz bir Claude hesabıyla claude.ai üzerinde çalışır.";
+      act.appendChild(small); note.appendChild(act);
+    }
+    card.appendChild(note); wrap.appendChild(card);
+    return wrap;
+  }
+
   function trimmedTurns() {
-    const turns = messages.filter((m) => !m.error).map((m) => ({ role: m.role, content: m.content }));
+    const turns = messages.filter((m) => !m.error && !m.lib).map((m) => ({ role: m.role, content: m.content }));
     // Uzayan sohbette en eski turları at (talimat turu her zaman kalır)
     const size = (arr) => new Blob([arr.map((t) => t.content).join("")]).size;
     while (turns.length > 1 && size(turns) + RULES.length * 2 + 4000 > MAX_HISTORY_BYTES) turns.shift();
@@ -2544,7 +2633,7 @@ Kurallar:
         const partial = Boolean(e.text) && code !== "refused";
         if (partial) messages.push({ role: "assistant", content: e.text, text: e.text, sources: last.sources, note: "Cevap yarıda kesildi." });
         messages.push({ role: "assistant", error: errorText(code), retry: !partial && !["not_granted", "sampling_disabled", "not_declared", "capability_disabled", "capability_removed", "session_expired"].includes(code) });
-        if (["not_granted", "sampling_disabled", "not_declared", "capability_disabled", "capability_removed"].includes(code)) { sampleReady = false; el.unavailable.hidden = false; }
+        if (["not_granted", "sampling_disabled", "not_declared", "capability_disabled", "capability_removed"].includes(code)) { sampleReady = false; libMode = true; el.unavailable.hidden = false; }
       }
     } finally {
       controller = null;
@@ -2717,7 +2806,7 @@ Kurallar:
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("sheet").hidden) closeSheet(); });
 
   $("examples").addEventListener("click", (e) => {
-    const b = e.target.closest(".example"); if (b && sampleReady) submit(b.dataset.q);
+    const b = e.target.closest(".example"); if (b && (sampleReady || libMode)) submit(b.dataset.q);
   });
   $("docAdd").onclick = () => el.docInput.click();
   el.docInput.onchange = () => { addDocs([...el.docInput.files]); el.docInput.value = ""; };
@@ -2747,7 +2836,7 @@ Kurallar:
 
   (async () => {
     sample = window.claude?.use ? await window.claude.use("sample") : null;
-    if (!sample) { el.unavailable.hidden = false; return; }
+    if (!sample) { el.unavailable.hidden = false; libMode = true; updateSend(); return; }
     sampleReady = true;
     try { imageLimits = (await sample.limits())?.images || null; } catch { imageLimits = null; }
     if (!imageLimits) el.fileInput.accept = "application/pdf";

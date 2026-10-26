@@ -42,7 +42,7 @@ try {
 
   // Statik dosyalar
   const index = await (await fetch(`${BASE}/`)).text();
-  ok("Ana sayfa sunuluyor", index.includes('<script src="/bridge.js">') && index.includes("manifest.webmanifest"));
+  ok("Ana sayfa sunuluyor", index.includes('<script src="bridge.js">') && index.includes("manifest.webmanifest"));
   ok("claude.ai metinleri uyarlandı", !index.includes("Sorularınız Claude hesabınız") && !index.includes("yalnızca claude.ai içinde") && index.includes("Aydınlatma metni"));
   for (const p of ["/kaynaklar.json", "/models/muscles.json", "/manifest.webmanifest", "/kvkk.html", "/icons/icon-512.png", "/icons/apple-touch-icon.png"]) {
     const r = await fetch(BASE + p); ok(`GET ${p}`, r.ok, String(r.status));
