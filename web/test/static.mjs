@@ -84,6 +84,30 @@ try {
   ok("Yapay zekâ düğmeleri gizli", r4.askHidden);
   await shot("st-tahlil.png");
 
+  const r6 = await js(`document.getElementById("sheetClose").click(); document.getElementById("logBtn").click(); await new Promise((r) => setTimeout(r, 200));
+    const wait = () => new Promise((r) => setTimeout(r, 120));
+    const fill = async (vals) => { const F = document.querySelector(".lg-form").elements; Object.entries(vals).forEach(([k, v]) => { F[k].value = v; }); document.querySelector(".lg-form button[type=submit]").click(); await wait(); };
+    await fill({ b: "128", k: "82", nabiz: "70", tarih: "2026-10-20", saat: "08:00" });
+    await fill({ b: "186", k: "121", tarih: "2026-10-27", saat: "08:10" });
+    const bp = { warn: document.querySelector("#sheetBody .er-warn")?.textContent || "", chip: document.querySelector(".lg-last .lab-chip")?.textContent, lines: document.querySelectorAll(".lg-line").length, rows: document.querySelectorAll("#sheetBody .lh-table tbody tr").length };
+    await fill({ b: "80", k: "90", tarih: "2026-10-27", saat: "09:00" });
+    const err = document.querySelector(".lg-err")?.textContent;
+    document.querySelector('.tab[data-tur="seker"]').click(); await wait();
+    await fill({ deger: "62", durum: "aclik", tarih: "2026-10-27", saat: "07:30" });
+    const sugarWarn = document.querySelector("#sheetBody .er-warn")?.textContent || "";
+    document.querySelector('.tab[data-tur="kilo"]').click(); await wait();
+    await fill({ kg: "81,4", tarih: "2026-10-01", saat: "07:00" }); await fill({ kg: "79,9", tarih: "2026-10-27", saat: "07:00" });
+    const kilo = document.querySelector(".lg-last")?.textContent;
+    return { bp, err, sugarWarn, kilo, stored: JSON.parse(localStorage.getItem("nabiz.log.v1")).length, sum: document.getElementById("logSum").textContent, askHidden: [...document.querySelectorAll("#sheetBody button")].every((b) => b.hidden || !/yorumlat/.test(b.textContent)) }`);
+  ok("Günlük: tansiyon kaydı ve iki seri grafik", r6.bp.rows === 2 && r6.bp.lines === 2, JSON.stringify(r6.bp).slice(0, 120));
+  ok("Günlük: 180/120 üstünde 112 uyarısı", /112/.test(r6.bp.warn) && r6.bp.chip === "Çok yüksek");
+  ok("Günlük: hatalı tansiyon reddedildi", /Büyük tansiyon/.test(r6.err || ""), r6.err);
+  ok("Günlük: düşük şeker uyarısı", /15 gram/.test(r6.sugarWarn));
+  ok("Günlük: kilo değişimi", /−?-?1,5 kg/.test(r6.kilo || ""), r6.kilo);
+  ok("Günlük: saklandı ve panel özeti", r6.stored === 5 && /5 ölçüm/.test(r6.sum), r6.sum);
+  ok("Günlük: yapay zekâ düğmesi gizli", r6.askHidden);
+  await shot("st-gunluk.png");
+
   const r5 = await js(`const reg = await navigator.serviceWorker.getRegistration(); return { scope: reg?.scope, models: performance.getEntriesByType("resource").some((e) => e.name.endsWith("models/muscles.json")) }`);
   ok("Çevrimdışı önbellek alt yolda kayıtlı", (r5.scope || "").endsWith(PREFIX), r5.scope);
   ok("3D model yüklendi", r5.models);

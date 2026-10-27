@@ -18,6 +18,8 @@
   --t-today: #c8621a;
   --t-er: #c4302b;
   --er-soft: #fbe9e7;
+  --c1: #0b8a68;
+  --c2: #3d6fb6;
   --shadow: 0 1px 2px rgba(22, 34, 30, .06), 0 4px 16px rgba(22, 34, 30, .05);
   --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --f-body: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -40,6 +42,8 @@
     --t-today: #f0884a;
     --t-er: #f2625b;
     --er-soft: #3a1c1a;
+    --c1: #2fa07f;
+    --c2: #6f8fdc;
     --shadow: 0 1px 2px rgba(0, 0, 0, .3);
   }
 }
@@ -59,6 +63,8 @@
   --t-today: #f0884a;
   --t-er: #f2625b;
   --er-soft: #3a1c1a;
+  --c1: #2fa07f;
+  --c2: #6f8fdc;
   --shadow: 0 1px 2px rgba(0, 0, 0, .3);
 }
 
@@ -460,6 +466,24 @@ button { cursor: pointer; }
 .lh-table th { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .05em; color: var(--ink-2); }
 .lh-table td { font-variant-numeric: tabular-nums; }
 .lh-save { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 13px; color: var(--ink-2); }
+.lab-chip.mid { background: var(--t-gp); }
+.lg-ref { stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 5 4; opacity: .7; }
+.lg-line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.lg-line.s1 { stroke: var(--c1); } .lg-line.s2 { stroke: var(--c2); stroke-dasharray: 6 4; }
+.lg-dot { stroke: var(--surface); stroke-width: 2; } .lg-dot.s1 { fill: var(--c1); } .lg-dot.s2 { fill: var(--c2); }
+.lg-dot.crit, .lg-dot.high { stroke: var(--t-er); stroke-width: 2.5; }
+.lg-lab { font: 600 12px var(--f-body); fill: var(--ink); }
+.lg-cap { font-size: 12.5px; margin: -6px 0 12px; }
+.lg-last { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; }
+.lg-last > span:first-child { flex-basis: 100%; font: 11px var(--f-mono); color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
+.lg-last b { font: 600 24px var(--f-mono); font-variant-numeric: tabular-nums; }
+.lg-last b small { font-size: 13px; font-weight: 400; color: var(--ink-2); }
+.lg-add { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin: 10px 0 14px; background: var(--surface); }
+.lg-add summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+.lg-add[open] summary { margin-bottom: 12px; }
+.lg-form input[type="date"], .lg-form input[type="time"] { border: 1px solid var(--line); border-radius: 7px; padding: 7px 9px; background: var(--surface); color: var(--ink); font-size: 14px; width: 100%; }
+.lg-err { color: var(--t-er); font-size: 13px; margin: 0; }
+.lg-note { display: block; color: var(--ink-2); font-size: 12px; }
 .lh-save input { border: 1px solid var(--line); border-radius: 7px; padding: 5px 8px; background: var(--surface); color: var(--ink); font-size: 13px; }
 @media (max-width: 560px) {
   .lh-item { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "ad deger" "grafik durum"; row-gap: 8px; }
@@ -600,6 +624,12 @@ button { cursor: pointer; }
       <h2>Tahlil geçmişim</h2>
       <p class="profile-sum" id="labsSum"></p>
       <button class="btn full" id="labsBtn" type="button">Tahlil geçmişini aç</button>
+    </section>
+
+    <section class="section">
+      <h2>Sağlık günlüğüm</h2>
+      <p class="profile-sum" id="logSum"></p>
+      <button class="btn full" id="logBtn" type="button">Tansiyon, şeker, kilo</button>
     </section>
 
     <section class="section">
@@ -785,6 +815,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   const STORE_DOCS = "nabiz.docs.v1";
   const STORE_PROFILE = "nabiz.profile.v1";
   const STORE_LABS = "nabiz.labs.v1";
+  const STORE_LOG = "nabiz.log.v1";
   const MHRS_URL = "https://www.mhrs.gov.tr/vatandas/";
   const MAX_HISTORY_BYTES = 180000;   // sample girdisi en fazla 256 KiB
   const MAX_DOC_CHARS = 60000;        // sohbete eklenen tek PDF metni
@@ -803,6 +834,7 @@ Bu mesajdan sonraki konuşma kullanıcıyla aranda geçiyor.`;
   let messages = load(STORE_CHAT, []);
   let docs = load(STORE_DOCS, []);   // {id, name, chunks:[{page, text}]}
   let labs = load(STORE_LABS, []);   // tahlil geçmişi
+  let healthLog = load(STORE_LOG, []);   // sağlık günlüğü (ev ölçümleri)
   let profile = load(STORE_PROFILE, {});   // {ad, yas, cinsiyet, gebe, kronik, ilaclar, alerjiler, notlar}; ad Claude'a gönderilmez
   let downloads = null;
   let library = [];   // güvenilir kaynak kütüphanesi: {title, text, url, kind, kw}
@@ -1092,6 +1124,8 @@ Başlıklar (bu sırayla, "##" ile):
 ## Alerjiler
 ## Tahlil sonuçları
 (yazışmadaki tahliller; <tahlil_gecmisi> verildiyse son değerleri ve önemli değişimleri de tarihleriyle ekle)
+## Ev ölçümleri
+(<saglik_gunlugu> verildiyse tansiyon, kan şekeri ve kilo için: ölçüm sayısı ve tarih aralığı, en düşük-en yüksek, son değer, belirgin eğilim; tek tek tüm ölçümleri listeleme. Yoksa "Belirtilmedi")
 ## Asistanın ön değerlendirmesi
 (aciliyet düzeyi ve önerilen bölüm)
 ## Hekime sorulacak sorular
@@ -1205,8 +1239,8 @@ ${body}
     summaryCtrl?.abort(); summaryCtrl = new AbortController();
     const ctrl = summaryCtrl;
     const prof = profileText();
-    const hist = labsText();
-    const input = `${SUMMARY_RULES}\n\n<hasta_profili>\n${prof || "Profil girilmemiş."}\n</hasta_profili>${hist ? `\n\n<tahlil_gecmisi>\n${hist}\n</tahlil_gecmisi>` : ""}\n\n<yazisma>\n${transcript().slice(-120000)}\n</yazisma>`;
+    const hist = labsText(), logs = logText();
+    const input = `${SUMMARY_RULES}\n\n<hasta_profili>\n${prof || "Profil girilmemiş."}\n</hasta_profili>${hist ? `\n\n<tahlil_gecmisi>\n${hist}\n</tahlil_gecmisi>` : ""}${logs ? `\n\n<saglik_gunlugu>\n${logs}\n</saglik_gunlugu>` : ""}\n\n<yazisma>\n${transcript().slice(-120000)}\n</yazisma>`;
     try {
       const res = await sample(input, {
         cache: false, signal: ctrl.signal, modelTier: "default",
@@ -1619,6 +1653,232 @@ Kurallar:
     };
     bar.append(l, b, msg);
     return bar;
+  }
+
+  // ------------------------------------------------------------------ Sağlık günlüğü (tansiyon, kan şekeri, kilo)
+  // Ölçümler yalnızca bu tarayıcıda saklanır: {id, tur, tarih: "YYYY-MM-DD", saat: "HH:MM", b, k, nabiz, deger, durum, kg, not}
+  // Asistana yalnızca kullanıcı "yorumlat" derse ya da doktor özeti hazırlanırken gönderilir.
+  const LOG_TYPES = {
+    tansiyon: { ad: "Tansiyon", birim: "mmHg" },
+    seker: { ad: "Kan şekeri", birim: "mg/dL" },
+    kilo: { ad: "Kilo", birim: "kg" },
+  };
+  const SUGAR_WHEN = { aclik: "Açlık", tokluk: "Tokluk (yemekten 2 saat sonra)", rastgele: "Rastgele" };
+  const nowTime = () => { const d = new Date(); return `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; };
+  const logTime = (r) => +new Date(`${r.tarih}T${r.saat || "12:00"}:00`);
+  const logSorted = (tur) => healthLog.filter((r) => r.tur === tur).sort((a, b) => logTime(a) - logTime(b));
+  const logValue = (r) => r.tur === "tansiyon" ? `${r.b}/${r.k}` : fmt(r.tur === "kilo" ? r.kg : r.deger);
+  // Durum eşikleri genel bilgilendirme içindir (hekimin kişiye özel hedefleri önceliklidir)
+  function logState(r) {
+    if (r.tur === "tansiyon") {
+      if (r.b >= 180 || r.k >= 120) return ["crit", "Çok yüksek"];
+      if (r.b >= 140 || r.k >= 90) return ["high", "Yüksek"];
+      if (r.b < 90 || r.k < 60) return ["low", "Düşük"];
+      if (r.b >= 120 || r.k >= 80) return ["mid", "Sınırda"];
+      return ["ok", "Normal"];
+    }
+    if (r.tur === "seker") {
+      const v = r.deger;
+      if (v < 54) return ["crit", "Çok düşük"];
+      if (v < 70) return ["low", "Düşük"];
+      if (v >= 300) return ["crit", "Çok yüksek"];
+      if (r.durum === "aclik") return v < 100 ? ["ok", "Normal"] : v < 126 ? ["mid", "Sınırda"] : ["high", "Yüksek"];
+      if (r.durum === "tokluk") return v < 140 ? ["ok", "Normal"] : v < 200 ? ["mid", "Sınırda"] : ["high", "Yüksek"];
+      return v < 200 ? ["ok", "Normal"] : ["high", "Yüksek"];
+    }
+    return ["na", "—"];
+  }
+  function logWarning(r) {
+    const [st, ] = logState(r);
+    if (r.tur === "tansiyon" && st === "crit") return "Tansiyonunuz çok yüksek (180/120 veya üzeri). Göğüs ağrısı, nefes darlığı, şiddetli baş ağrısı, görme ya da konuşma bozukluğu, kol veya bacakta güçsüzlük varsa hemen 112'yi arayın. Belirti yoksa birkaç dakika dinlenip tekrar ölçün; yine yüksekse aynı gün hekime başvurun.";
+    if (r.tur === "seker" && r.deger < 70) return "Kan şekeriniz düşük. Bilinciniz yerindeyse yaklaşık 15 gram hızlı şeker alın (ör. yarım su bardağı meyve suyu veya 3-4 kesme şeker), 15 dakika sonra tekrar ölçün. Bilinç bulanıklığı, nöbet ya da yutamama varsa 112'yi arayın.";
+    if (r.tur === "seker" && r.deger >= 300) return "Kan şekeriniz çok yüksek. Aynı gün hekiminize ulaşın; bulantı-kusma, karın ağrısı, nefeste meyve kokusu, aşırı susama veya bilinç bulanıklığı varsa 112'yi arayın.";
+    return "";
+  }
+  function saveLog() { if (!save(STORE_LOG, healthLog)) toastLog("Günlük bu tarayıcıda saklanamadı."); renderLogSum(); }
+  let toastLog = () => {};
+  function renderLogSum() {
+    const el2 = $("logSum"); if (!el2) return;
+    if (!healthLog.length) { el2.textContent = "Tansiyon, kan şekeri ve kilonuzu kaydedin; değişimini grafikte görün."; el2.style.color = "var(--ink-2)"; return; }
+    el2.style.color = "";
+    el2.textContent = `${healthLog.length} ölçüm`;
+    const last = [...healthLog].sort((a, b) => logTime(b) - logTime(a))[0];
+    const s = document.createElement("span"); s.textContent = `Son: ${LOG_TYPES[last.tur].ad} ${logValue(last)} · ${labDate(last.tarih)}`; el2.appendChild(s);
+  }
+  // Doktor özeti ve asistan için düz metin (tür başına en fazla son 40 ölçüm)
+  function logText(turler) {
+    return Object.keys(LOG_TYPES).filter((t) => !turler || turler.includes(t)).map((t) => {
+      const arr = logSorted(t).slice(-40); if (!arr.length) return "";
+      const line = (r) => `${r.tarih} ${r.saat || ""}`.trim() + `: ${logValue(r)} ${LOG_TYPES[t].birim}` +
+        (r.tur === "tansiyon" && r.nabiz ? `, nabız ${r.nabiz}` : "") + (r.tur === "seker" ? ` (${SUGAR_WHEN[r.durum] || "Rastgele"})` : "") + (r.not ? ` — ${r.not}` : "");
+      return `${LOG_TYPES[t].ad}:\n` + arr.map((r) => "- " + line(r)).join("\n");
+    }).filter(Boolean).join("\n\n");
+  }
+
+  // Ev ölçümü grafiği: bir veya iki seri (tansiyon: büyük/küçük), yatay eşik çizgileri, uçta doğrudan etiket
+  function logChart(arr, series, refs = []) {
+    // Dar ekranda daha dar çizilir; yazılar küçülmeden okunur
+    const narrow = window.innerWidth < 560, W = narrow ? 360 : 640, H = narrow ? 230 : 240, P = { l: 38, r: narrow ? 52 : 64, t: 14, b: 30 };
+    const NS = "http://www.w3.org/2000/svg", mk = (tag, a) => { const e = document.createElementNS(NS, tag); Object.entries(a).forEach(([k, v]) => e.setAttribute(k, v)); return e; };
+    const svg = mk("svg", { viewBox: `0 0 ${W} ${H}`, class: "lh-svg", role: "img" });
+    const ts = arr.map(logTime);
+    let t0 = Math.min(...ts), t1 = Math.max(...ts); if (t0 === t1) { t0 -= 864e5 * 3; t1 += 864e5 * 3; }
+    const vals = arr.flatMap((r) => series.map((s) => r[s.key]).filter((v) => typeof v === "number"));
+    let y0 = Math.min(...vals), y1 = Math.max(...vals);
+    const near = Math.max(y1 - y0, Math.abs(y1) * 0.2, 1);
+    const shown = refs.filter((v) => v >= y0 - near && v <= y1 + near);
+    shown.forEach((v) => { y0 = Math.min(y0, v); y1 = Math.max(y1, v); });
+    const pad = (y1 - y0 || Math.abs(y1) || 1) * 0.15; y0 = Math.max(0, y0 - pad); y1 += pad;
+    const X = (t) => P.l + ((t - t0) / (t1 - t0)) * (W - P.l - P.r), Y = (v) => H - P.b - ((v - y0) / (y1 - y0)) * (H - P.t - P.b);
+    svg.setAttribute("aria-label", arr.map((r) => `${labDate(r.tarih)} ${logValue(r)}`).join(", "));
+    [y0 + (y1 - y0) * 0.1, (y0 + y1) / 2, y1 - (y1 - y0) * 0.1].forEach((v) => {
+      svg.appendChild(mk("line", { x1: P.l, x2: W - P.r, y1: Y(v), y2: Y(v), class: "lh-grid" }));
+      const t = mk("text", { x: P.l - 8, y: Y(v) + 4, class: "lh-ax", "text-anchor": "end" }); t.textContent = fmt(Math.round(v)); svg.appendChild(t);
+    });
+    shown.forEach((v) => {
+      svg.appendChild(mk("line", { x1: P.l, x2: W - P.r, y1: Y(v), y2: Y(v), class: "lg-ref" }));
+      const t = mk("text", { x: W - P.r + 6, y: Y(v) + 4, class: "lh-ax" }); t.textContent = fmt(v); svg.appendChild(t);
+    });
+    const xs = arr.length > 2 ? [arr[0], arr.at(-1)] : arr;
+    xs.forEach((r, i) => { const t = mk("text", { x: X(logTime(r)), y: H - 10, class: "lh-ax", "text-anchor": arr.length > 1 ? (i ? "end" : "start") : "middle" }); t.textContent = labDate(r.tarih); svg.appendChild(t); });
+    series.forEach((s) => {
+      const pts = arr.map((r, i) => ({ r, x: X(ts[i]), v: r[s.key] })).filter((p) => typeof p.v === "number");
+      if (pts.length > 1) svg.appendChild(mk("polyline", { points: pts.map((p) => `${p.x},${Y(p.v)}`).join(" "), class: "lg-line " + s.cls }));
+      pts.forEach((p) => svg.appendChild(mk("circle", { cx: p.x, cy: Y(p.v), r: 4.5, class: "lg-dot " + s.cls + " " + logState(p.r)[0] })));
+      if (series.length > 1 && pts.length) { const last = pts.at(-1); const t = mk("text", { x: Math.min(last.x + 9, W - 4), y: Y(last.v) + 4, class: "lg-lab" }); t.textContent = s.ad; svg.appendChild(t); }
+    });
+    svg._pts = arr.map((r, i) => ({ r, x: X(ts[i]), y: Y(r[series[0].key]) }));
+    return svg;
+  }
+  function logTooltip(svg) {
+    const wrap = document.createElement("div"); wrap.className = "lh-chart";
+    const tip = document.createElement("div"); tip.className = "lh-tip"; tip.hidden = true;
+    wrap.append(svg, tip);
+    const show = (ev) => {
+      const b = svg.getBoundingClientRect(), vb = svg.viewBox.baseVal, px = (ev.clientX - b.left) * vb.width / b.width;
+      const p = svg._pts.reduce((a, c) => Math.abs(c.x - px) < Math.abs(a.x - px) ? c : a);
+      const [st, ad] = logState(p.r);
+      tip.innerHTML = ""; const d = document.createElement("span"); d.textContent = `${labDate(p.r.tarih)} ${p.r.saat || ""}`;
+      const v = document.createElement("b"); v.textContent = `${logValue(p.r)} ${LOG_TYPES[p.r.tur].birim}`;
+      tip.append(d, v);
+      if (st !== "na") { const s = document.createElement("span"); s.textContent = ad; s.className = "lab-chip " + st; tip.appendChild(s); }
+      tip.hidden = false;
+      const x = p.x * b.width / vb.width, y = p.y * b.height / vb.height;
+      tip.style.left = Math.min(Math.max(x, 70), b.width - 70) + "px"; tip.style.top = Math.max(0, y - 64) + "px";
+    };
+    svg.addEventListener("pointermove", show); svg.addEventListener("pointerdown", show);
+    svg.addEventListener("pointerleave", () => { tip.hidden = true; });
+    return wrap;
+  }
+
+  function openLog(tur = "tansiyon") {
+    const root = document.createElement("div");
+    const info = document.createElement("p"); info.className = "muted";
+    info.textContent = "Evde ölçtüğünüz tansiyon, kan şekeri ve kilonuzu kaydedin. Ölçümler yalnızca bu tarayıcıda saklanır. Durum etiketleri genel bilgilendirme içindir; hekiminizin size özel hedefleri önceliklidir.";
+    const tabs = document.createElement("div"); tabs.className = "tabs"; tabs.setAttribute("role", "tablist");
+    const status = document.createElement("p"); status.className = "muted"; status.style.margin = "0 0 10px";
+    const body = document.createElement("div");
+    Object.entries(LOG_TYPES).forEach(([k, t]) => {
+      const b = document.createElement("button"); b.type = "button"; b.className = "tab"; b.role = "tab"; b.dataset.tur = k; b.textContent = t.ad;
+      b.onclick = () => show(k); tabs.appendChild(b);
+    });
+    root.append(info, tabs, status, body);
+    toastLog = (t) => { status.textContent = t; };
+    openSheet("Sağlık günlüğüm", root);
+
+    function show(k) {
+      tur = k; status.textContent = "";
+      tabs.querySelectorAll(".tab").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tur === k)));
+      body.replaceChildren(view());
+    }
+
+    function form() {
+      const f = document.createElement("form"); f.className = "pform lg-form";
+      const when = `<label>Tarih<input type="date" name="tarih" required></label><label>Saat<input type="time" name="saat" required></label>`;
+      const fields = {
+        tansiyon: `<div class="row"><label>Büyük (sistolik)<input type="text" name="b" inputmode="numeric" required placeholder="ör. 125"></label><label>Küçük (diastolik)<input type="text" name="k" inputmode="numeric" required placeholder="ör. 80"></label><label>Nabız <span class="field-note">(isteğe bağlı)</span><input type="text" name="nabiz" inputmode="numeric" placeholder="ör. 72"></label></div>`,
+        seker: `<div class="row"><label>Kan şekeri (mg/dL)<input type="text" name="deger" inputmode="numeric" required placeholder="ör. 95"></label><label>Ne zaman?<select name="durum">${Object.entries(SUGAR_WHEN).map(([k, v]) => `<option value="${k}">${v}</option>`).join("")}</select></label></div>`,
+        kilo: `<div class="row"><label>Kilo (kg)<input type="text" name="kg" inputmode="decimal" required placeholder="ör. 72,5"></label></div>`,
+      }[tur];
+      f.innerHTML = `${fields}<div class="row">${when}</div><label>Not <span class="field-note">(isteğe bağlı: ilaç saati, belirti vb.)</span><input type="text" name="not" maxlength="120"></label>
+        <div class="actions"><button class="btn primary" type="submit">Kaydet</button></div><p class="lg-err" role="alert" hidden></p>`;
+      const F = f.elements; F.tarih.value = todayIso(); F.tarih.max = todayIso(); F.saat.value = nowTime();
+      const err = f.querySelector(".lg-err");
+      f.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const r = { id: Date.now().toString(36) + Math.random().toString(36).slice(2, 7), tur, tarih: F.tarih.value, saat: F.saat.value, not: F.not.value.trim() };
+        let bad = "";
+        if (tur === "tansiyon") {
+          r.b = num(F.b.value); r.k = num(F.k.value); r.nabiz = num(F.nabiz.value);
+          if (r.b === null || r.k === null || r.b < 60 || r.b > 260 || r.k < 30 || r.k > 160) bad = "Tansiyon değerlerini kontrol edin (ör. 125 / 80).";
+          else if (r.k >= r.b) bad = "Büyük tansiyon küçük tansiyondan yüksek olmalı.";
+          else if (r.nabiz !== null && (r.nabiz < 25 || r.nabiz > 250)) bad = "Nabız değerini kontrol edin.";
+        } else if (tur === "seker") {
+          r.deger = num(F.deger.value); r.durum = F.durum.value;
+          if (r.deger === null || r.deger < 20 || r.deger > 600) bad = "Kan şekeri değerini kontrol edin (mg/dL).";
+        } else {
+          r.kg = num(F.kg.value);
+          if (r.kg === null || r.kg < 2 || r.kg > 350) bad = "Kilo değerini kontrol edin.";
+        }
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(r.tarih)) bad = "Tarih girin.";
+        if (bad) { err.textContent = bad; err.hidden = false; return; }
+        healthLog.push(r); saveLog();
+        body.replaceChildren(view());
+        status.textContent = "Ölçüm kaydedildi.";
+      });
+      return f;
+    }
+
+    function view() {
+      const box = document.createElement("div");
+      const arr = logSorted(tur), last = arr.at(-1);
+      if (last) {
+        const [st, ad] = logState(last);
+        const head = document.createElement("div"); head.className = "lg-last";
+        const l = document.createElement("span"); l.textContent = `Son ölçüm · ${labDate(last.tarih)} ${last.saat || ""}`;
+        const v = document.createElement("b"); v.textContent = logValue(last); const u = document.createElement("small"); u.textContent = " " + LOG_TYPES[tur].birim; v.appendChild(u);
+        head.append(l, v);
+        if (st !== "na") { const c = document.createElement("span"); c.className = "lab-chip " + st; c.textContent = ad; head.appendChild(c); }
+        if (tur === "kilo" && arr.length > 1) { const d = +(last.kg - arr[0].kg).toFixed(1); const c = document.createElement("span"); c.className = "muted"; c.style.margin = "0"; c.textContent = `İlk ölçüme göre ${d > 0 ? "+" : ""}${fmt(d)} kg`; head.appendChild(c); }
+        box.appendChild(head);
+        const w = logWarning(last);
+        if (w) { const p = document.createElement("p"); p.className = "er-warn"; p.textContent = w; box.appendChild(p); }
+      }
+      const det = document.createElement("details"); det.className = "lg-add"; det.open = !arr.length;
+      const sm = document.createElement("summary"); sm.textContent = "+ Ölçüm ekle"; det.append(sm, form()); box.appendChild(det);
+      if (!arr.length) return box;
+      const series = tur === "tansiyon" ? [{ key: "b", ad: "Büyük", cls: "s1" }, { key: "k", ad: "Küçük", cls: "s2" }]
+        : [{ key: tur === "kilo" ? "kg" : "deger", ad: LOG_TYPES[tur].ad, cls: "s1" }];
+      const refs = tur === "tansiyon" ? [140, 90] : tur === "seker" ? [70] : [];
+      const cap = document.createElement("p"); cap.className = "muted lg-cap";
+      cap.textContent = tur === "tansiyon" ? "Kesikli çizgiler: 140 ve 90 mmHg (yüksek tansiyon sınırları)." : tur === "seker" ? "Kesikli çizgi: 70 mg/dL (altı düşük şeker)." : "";
+      box.appendChild(logTooltip(logChart(arr, series, refs)));
+      if (cap.textContent) box.appendChild(cap);
+      const t = document.createElement("table"); t.className = "lh-table";
+      t.innerHTML = `<thead><tr><th>Tarih</th><th>Değer</th><th>Durum</th><th></th></tr></thead>`;
+      const tb = document.createElement("tbody");
+      [...arr].reverse().forEach((r) => {
+        const tr = document.createElement("tr"); const [st, ad] = logState(r);
+        const d = document.createElement("td"); d.textContent = `${labDate(r.tarih)} ${r.saat || ""}`;
+        const v = document.createElement("td");
+        v.textContent = `${logValue(r)} ${LOG_TYPES[tur].birim}` + (r.nabiz ? ` · nabız ${r.nabiz}` : "") + (tur === "seker" ? ` · ${(SUGAR_WHEN[r.durum] || "").split(" ")[0]}` : "");
+        if (r.not) { const n = document.createElement("small"); n.className = "lg-note"; n.textContent = r.not; v.appendChild(n); }
+        const s = document.createElement("td"); if (st !== "na") { const c = document.createElement("span"); c.className = "lab-chip " + st; c.textContent = ad; s.appendChild(c); }
+        const x = document.createElement("td"); const del = document.createElement("button"); del.type = "button"; del.className = "icon-btn"; del.textContent = "✕";
+        del.setAttribute("aria-label", `${labDate(r.tarih)} ${r.saat || ""} ölçümünü sil`);
+        del.onclick = () => { healthLog = healthLog.filter((y) => y.id !== r.id); saveLog(); body.replaceChildren(view()); };
+        x.appendChild(del); tr.append(d, v, s, x); tb.appendChild(tr);
+      });
+      t.appendChild(tb); const wrap = document.createElement("div"); wrap.className = "tbl"; wrap.appendChild(t); box.appendChild(wrap);
+      const act = document.createElement("div"); act.className = "summary-actions";
+      const ask = document.createElement("button"); ask.type = "button"; ask.className = "btn primary"; ask.textContent = `${LOG_TYPES[tur].ad} ölçümlerimi asistana yorumlat`;
+      ask.hidden = !sampleReady; ask.disabled = !sampleReady || busy;
+      ask.onclick = () => { closeSheet(); submit(`Sağlık günlüğümdeki ${LOG_TYPES[tur].ad.toLocaleLowerCase("tr-TR")} ölçümlerim (evde ölçtüm):\n${logText([tur])}\n\nBu ölçümleri yorumlar mısın? Genel gidişat nasıl, dikkat etmem gereken bir şey var mı, ne zaman hekime görünmeliyim?`); };
+      act.appendChild(ask); box.appendChild(act);
+      return box;
+    }
+
+    show(tur);
   }
 
   // ------------------------------------------------------------------ Kayan panel
@@ -2848,6 +3108,7 @@ Kurallar:
   $("docAdd").onclick = () => el.docInput.click();
   el.docInput.onchange = () => { addDocs([...el.docInput.files]); el.docInput.value = ""; };
   $("labsBtn").onclick = () => { el.app.classList.remove("panel-open"); openLabs(); };
+  $("logBtn").onclick = () => { el.app.classList.remove("panel-open"); openLog(); };
   $("profileBtn").onclick = () => { el.app.classList.remove("panel-open"); openSheet("Sağlık profilim", profileForm()); };
   $("summaryBtn").onclick = () => { el.app.classList.remove("panel-open"); openSummary(); };
   $("riskBtn").onclick = () => { el.app.classList.remove("panel-open"); openRiskTest(); };
@@ -2869,6 +3130,7 @@ Kurallar:
   renderDocs();
   renderProfile();
   renderLabsSum();
+  renderLogSum();
   loadLibrary();
 
   (async () => {
