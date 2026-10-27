@@ -2,7 +2,7 @@
 
 `muscles.glb` ve `bones.glb`, [lucgrn3/anatomy-models](https://github.com/lucgrn3/anatomy-models)
 deposundaki modellerin sadeleştirilmiş (üçgen sayısı azaltılmış, meshopt sıkıştırması açılmış,
-parçaları birleştirilmiş) sürümleridir.
+parçaları birleştirilmiş) sürümleridir. 2026-10-27: sayfa malzemeyi kendisi çizdiği için kullanılmayan köşe renkleri (COLOR_0) çıkarıldı, üçgen sayısı meshoptimizer ile yaklaşık yarıya indirildi (kaslar 111 bin, kemikler 60 bin üçgen).
 
 Lisans: **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**
 https://creativecommons.org/licenses/by-sa/4.0/

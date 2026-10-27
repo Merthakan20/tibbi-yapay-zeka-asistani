@@ -1,6 +1,6 @@
 {
   "aciklama": "Güvenilir tıbbi kaynakların Türkçe özetleri. Özetler kaynak sayfalardan derlenmiştir; asıl metin için bağlantıya bakın.",
-  "guncelleme": "2026-10-25",
+  "guncelleme": "2026-10-27",
   "kaynaklar": [
     {
       "id": "hipertansiyon-hsgm",
@@ -5059,6 +5059,264 @@
       "url": "https://medlineplus.gov/ency/article/000394.htm",
       "dil": "en",
       "ozet": "Hiponatremi, kandaki sodyumun normalden düşük olmasıdır; normal düzey genellikle 136-144 mmol/L'dir, laboratuvara göre biraz değişebilir. Hücre dışındaki sodyum azalınca su hücrelere geçer ve hücreler şişer; bu özellikle beyin hücreleri için tehlikelidir. İdrar söktürücüler, ishal, kusma, aşırı terleme, böbrek hastalığı, kalp yetmezliği, siroz, uygunsuz ADH salgısı (SIADH), geniş yanıklar ve bazı kanserler neden olabilir. Kafa karışıklığı, huzursuzluk, havale, yorgunluk, baş ağrısı, iştahsızlık, kas güçsüzlüğü veya kasılmaları ve bulantı-kusma görülür. Ağır durumda bilinç azalması, halüsinasyon, koma ve ölüm olabilir; 48 saatten kısa sürede gelişen (akut) düşüklük, yavaş gelişenden daha tehlikelidir. Tedavi nedene göre damardan sıvı, ilaçlar ve su kısıtlamasıdır. Yoğun egzersizde yalnızca su yerine elektrolit içeren sporcu içecekleri sodyumu korumaya yardımcı olur. Belirtiler varsa hemen tıbbi yardım alınmalıdır; hayatı tehdit eden bir acil duruma dönüşebilir."
+    },
+    {
+      "id": "b12-medlineplus",
+      "konu": "B12 vitamini eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "B12 eksikliği",
+        "B12 düşük",
+        "pernisiyöz anemi",
+        "el ayak uyuşması",
+        "B12 iğnesi",
+        "metformin",
+        "vejetaryen",
+        "mide ameliyatı"
+      ],
+      "baslik": "Vitamin B12 Deficiency Anemia (B12 Eksikliği Anemisi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000574.htm",
+      "dil": "en",
+      "ozet": "B12 vitamini kırmızı kan hücresi yapımı ve sinirlerin sağlığı için gereklidir; eksik olduğunda kan azlığı (anemi) gelişebilir. En sık nedenlerden biri, mideden B12 emilimi için gereken maddenin yapılamadığı pernisiyöz anemidir. Mide veya ince bağırsak ameliyatları, Crohn ve çölyak hastalığı, balık tenyası, alkol, uzun süre mide asidi ilacı ya da metformin kullanımı, gülme gazı (nitröz oksit) ve hayvansal ürün içermeyen katı vejetaryen beslenme de eksikliğe yol açabilir. Belirtiler arasında yorgunluk, baş dönmesi, solukluk, nefes darlığı, ishal veya kabızlık ve şiş, kanayan diş etleri vardır. Sinirler etkilenirse el ve ayaklarda uyuşma-karıncalanma, denge kaybı, kafa karışıklığı ve unutkanlık görülebilir. Tanı tam kan sayımı, B12 düzeyi ve gerekirse metilmalonik asit (MMA) testiyle konur. Tedavi nedene göre tablet, çoğunlukla ayda bir yapılan iğne veya burun spreyiyle B12 vermektir; bazı kişilerde ömür boyu sürer. Tedavi gecikirse sinir hasarı kalıcı olabilir, bu yüzden uyuşma ve denge sorunu olanlar beklemeden hekime başvurmalıdır."
+    },
+    {
+      "id": "dvit-medlineplus",
+      "konu": "D vitamini eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "D vitamini",
+        "D vitamini eksikliği",
+        "D vitamini düşük",
+        "güneş ışığı",
+        "kemik erimesi",
+        "raşitizm",
+        "D vitamini fazlalığı",
+        "D vitamini dozu"
+      ],
+      "baslik": "Vitamin D (D Vitamini)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/vitamind.html",
+      "dil": "en",
+      "ozet": "D vitamini vücudun kalsiyumu emmesine yardım eder ve kemiklerin sağlığı için gereklidir; sinirler, kaslar ve bağışıklık sistemi de ona ihtiyaç duyar. Deri güneş ışığı aldığında D vitamini yapar; ayrıca yumurta sarısı, yağlı deniz balıkları ve karaciğer gibi besinlerden ve D vitamini eklenmiş süt ve tahıllardan alınır. Önerilen günlük miktar 0-12 ay bebeklerde 400 IU, 1-70 yaş arasında 600 IU, 71 yaş ve üzerinde 800 IU, gebe ve emzirenlerde 600 IU'dur. Yaşlılar, yalnızca anne sütü alan bebekler, koyu tenliler, Crohn veya çölyak gibi emilim sorunu olanlar, obezler ve mide küçültme (gastrik bypass) ameliyatı geçirenler eksiklik açısından risk altındadır. Eksiklik yetişkinlerde kemik erimesine (osteoporoz), çocuklarda raşitizme yol açabilir. Fazla miktarda takviye almak da zararlıdır ve D vitamini zehirlenmesine (hipervitaminoz D) neden olabilir; bu yüzden yüksek doz takviye hekim önerisiyle kullanılmalıdır."
+    },
+    {
+      "id": "tonsillit-medlineplus",
+      "konu": "Boğaz enfeksiyonu (tonsillit)",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "bademcik",
+        "bademcik iltihabı",
+        "tonsillit",
+        "boğaz ağrısı",
+        "yutkunamıyorum",
+        "beyaz iltihap",
+        "strep",
+        "bademcik ameliyatı"
+      ],
+      "baslik": "Tonsillitis (Bademcik İltihabı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/tonsillitis.html",
+      "dil": "en",
+      "ozet": "Tonsillit, boğazın arka kısmındaki bademciklerin iltihaplanmasıdır. En sık neden virüslerdir; bakteriler, özellikle streptokok (strep boğaz enfeksiyonu) da yol açabilir. Belirtiler şiddetli boğaz ağrısı, kızarık ve şiş bademcikler, bademcik üzerinde beyaz veya sarı tabaka, yutkunma güçlüğü, boyunda şiş bezeler, ateş ve ağız kokusudur. Hekim boğazı muayene eder; streptokok olup olmadığını anlamak için hızlı strep testi veya boğaz kültürü yapılabilir. Virüse bağlı tonsillitte antibiyotik işe yaramaz; dinlenme, sıvı alma ve ağrı kesiciler yardımcı olur. Streptokok varsa antibiyotik verilir ve kendinizi iyi hissetseniz bile kutunun tamamı bitirilmelidir. Sık tekrarlayan, antibiyotiğe yanıt vermeyen veya nefes almayı ve yutmayı engelleyen durumlarda bademcik ameliyatı (tonsillektomi) düşünülebilir. Boğaz ağrısı 2 günden uzun sürerse hekime gidilmelidir; nefes almada güçlük, ağızdan salya akması veya ciddi yutma güçlüğü varsa hemen acile başvurulmalıdır."
+    },
+    {
+      "id": "gastrit-medlineplus",
+      "konu": "Gastrit",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "gastrit",
+        "mide iltihabı",
+        "mide ağrısı",
+        "helikobakter",
+        "H. pylori",
+        "ağrı kesici mideye",
+        "siyah dışkı",
+        "endoskopi"
+      ],
+      "baslik": "Gastritis (Gastrit)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001150.htm",
+      "dil": "en",
+      "ozet": "Gastrit, mide iç yüzeyinin iltihaplanması veya şişmesidir; birden başlayabilir (akut) ya da uzun süre devam edebilir (kronik). En sık nedenler aspirin, ibuprofen ve naproksen gibi ağrı kesicilerin kullanılması, aşırı alkol ve Helicobacter pylori (H. pylori) bakterisidir; daha seyrek olarak bağışıklık sisteminin mideye saldırması veya safranın mideye kaçması gibi nedenler de olabilir. Çoğu kişide belirti yoktur; olduğunda iştahsızlık, bulantı-kusma ve üst karında ağrı görülür. Mide kanaması olursa siyah dışkı, kan kusma veya kahve telvesi gibi madde kusma görülür; bu durumda hemen acile gidilmelidir. Tanı için kan sayımı, H. pylori için nefes veya dışkı testi ve gerekirse biyopsi alınan endoskopi yapılır. Tedavi nedene göredir: soruna yol açan ilaç bırakılır veya değiştirilir; mide asidini azaltan antiasitler, H2 blokerleri, proton pompası inhibitörleri veya vonoprazan kullanılır, H. pylori varsa antibiyotik verilir. Uzun süreli gastrit kan kaybına ve mide kanseri riskinde artışa yol açabilir."
+    },
+    {
+      "id": "boyun-medlineplus",
+      "konu": "Boyun fıtığı ve boyun ağrısı",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "boyun ağrısı",
+        "boynum ağrıyor",
+        "boyun tutulması",
+        "boyun incinmesi",
+        "boyunluk",
+        "bilgisayar başında boyun",
+        "ense ağrısı"
+      ],
+      "baslik": "Neck Injuries and Disorders (Boyun Yaralanmaları ve Hastalıkları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/neckinjuriesanddisorders.html",
+      "dil": "en",
+      "ozet": "Boyun, kafayı taşıyan omurlar, kaslar, bağlar ve sinirlerden oluşur ve bu yapıların her biri ağrıya yol açabilir. Boyun ağrısının en sık nedeni kas zorlanmasıdır; uzun süre bilgisayar başında oturmak, ters pozisyonda uyumak veya egzersiz sırasında boynu zorlamak buna yol açabilir. Düşme, darbe ve arkadan çarpma tipi trafik kazalarında görülen ani öne-arkaya savrulma (whiplash) da boynu yaralayabilir. Boyun ağrısının çoğu kendiliğinden veya basit önlemlerle geçer; tedavide buz uygulaması, ağrı kesiciler, fizik tedavi ve kısa süre boyunluk kullanılabilir. Ameliyat nadiren gerekir."
+    },
+    {
+      "id": "vajinalmantar-medlineplus",
+      "konu": "Vajinal mantar enfeksiyonu",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "vajinal mantar",
+        "kandida",
+        "akıntı",
+        "peynir kesiği gibi akıntı",
+        "vajinada kaşıntı",
+        "genital kaşıntı",
+        "flukonazol"
+      ],
+      "baslik": "Vaginal Yeast Infection (Vajinal Mantar Enfeksiyonu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001511.htm",
+      "dil": "en",
+      "ozet": "Vajinal mantar enfeksiyonu çoğunlukla Candida albicans adlı mantarın aşırı çoğalmasıyla olur. Antibiyotik kullanımı, gebelik, obezite, diyabet ve bağışıklığın zayıflaması riski artırır. Cinsel yolla bulaşan bir hastalık sayılmaz. Belirtiler beyaz, kesilmiş peynir gibi koyu kıvamlı akıntı, vajina ve dış genital bölgede kaşıntı ve yanma, cinsel ilişki veya idrar yaparken ağrı ve kızarıklıktır. Tanı muayene ve akıntının mikroskopta incelenmesiyle (KOH testi) konur. Tedavide 1 ile 7 gün kullanılan mikonazol veya klotrimazol gibi vajinal krem ve fitiller ya da tek doz ağızdan flukonazol kullanılabilir; sık tekrarlayan enfeksiyonlarda daha uzun tedavi gerekebilir. İlk kez belirti yaşayanlar, tedaviye yanıt alamayanlar, enfeksiyonu sık tekrarlayanlar ve cinsel yolla bulaşan bir enfeksiyondan şüphelenenler kendi kendine ilaç kullanmak yerine hekime başvurmalıdır."
+    },
+    {
+      "id": "idrartahlili-medlineplus",
+      "konu": "Tam idrar tahlili",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "idrar tahlili",
+        "tam idrar",
+        "idrarda protein",
+        "idrarda kan",
+        "idrarda lökosit",
+        "idrarda nitrit",
+        "idrarda keton",
+        "idrarda şeker",
+        "dansite"
+      ],
+      "baslik": "Urinalysis (Tam İdrar Tahlili)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003579.htm",
+      "dil": "en",
+      "ozet": "Tam idrar tahlili idrarın üç yönden incelenmesidir: görünüşü (rengi ve berraklığı), mikroskop altında incelenmesi ve kimyasal şerit (dipstick) testi. Şerit testi idrarda kan, şeker (glukoz), protein, asitlik (pH), keton, bilirubin ve yoğunluk (dansite) gibi değerlere bakar. Normalde idrarda şeker, keton, protein ve bilirubin saptanmaz; hemoglobin, nitrit, kırmızı kan hücresi ve beyaz kan hücresi (lökosit) de bulunmaz. Anormal sonuçlar böbrek hastalığı, idrar yolu enfeksiyonu, böbrek taşı, iyi kontrol edilmeyen diyabet veya mesane ve böbrek kanseri gibi durumlara işaret edebilir; ancak tek başına tanı koymaz, hekim sonucu belirtiler ve diğer testlerle birlikte değerlendirir. Örnek genellikle genital bölge temizlendikten sonra idrarın orta kısmından alınır (temiz orta akım idrarı); bazı durumlarda 24 saatlik idrar toplanması istenir."
+    },
+    {
+      "id": "kene-medlineplus",
+      "konu": "Kırım-Kongo kanamalı ateşi (kene)",
+      "kategori": "Enfeksiyonlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "kene",
+        "kene ısırdı",
+        "kene yapıştı",
+        "kene nasıl çıkarılır",
+        "keneden korunma",
+        "pens ile kene",
+        "kene ısırığından sonra ateş"
+      ],
+      "baslik": "Tick Bites (Kene Isırıkları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/tickbites.html",
+      "dil": "en",
+      "ozet": "Keneler deriye tutunup kan emen küçük canlılardır ve ısırdıklarında bazı hastalıkları bulaştırabilirler. Kene vücuda yapışmışsa ucu ince bir cımbız veya pensle deriye olabildiğince yakın yerden tutulmalı, döndürmeden ve sıkıştırmadan, sabit ve eşit bir kuvvetle yukarı doğru çekilerek çıkarılmalıdır; ardından bölge ve eller temizlenmelidir. Korunmak için uzun otlu, çalılık alanlardan uzak durulmalı, DEET veya pikaridin içeren kovucular kullanılmalı, giysilere %0,5 permetrin uygulanabilir, pantolon paçaları çorabın içine sokulmalı ve doğadan dönünce her gün tüm vücut kene açısından kontrol edilmelidir. Kene ısırığından sonraki haftalarda ateş, titreme, kas ağrısı veya döküntü olursa hekime başvurulmalıdır."
+    },
+    {
+      "id": "burunkanamasi-medlineplus",
+      "konu": "Burun kanaması",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "burun kanaması",
+        "burnum kanıyor",
+        "burun kanaması nasıl durur",
+        "burnunu sıkmak",
+        "kan sulandırıcı",
+        "kuru hava"
+      ],
+      "baslik": "Nosebleed (Burun Kanaması)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003106.htm",
+      "dil": "en",
+      "ozet": "Burun kanaması çoğunlukla burnun ön kısmındaki küçük damarlardan olur ve genellikle ciddi değildir. Soğuk algınlığı, kuru hava, burun karıştırma, burna darbe, kan sulandırıcı ilaçlar ve burun açıcı spreylerin aşırı kullanımı sık nedenlerdir. Kanama olduğunda oturun ve başınızı hafifçe öne eğin; böylece kan boğaza kaçmaz. Burnun yumuşak kısmını iki parmakla sıkıca sıkın ve tam 10 dakika bırakmadan tutun; burun köküne soğuk uygulama da yardımcı olur. Başı arkaya atmayın, uzanmayın ve burnun içine gazlı bez tıkamayın. Kanama durduktan sonra birkaç saat burun sümkürülmemeli. Kanama 20 dakikadan uzun sürerse, kafa yaralanmasından sonra başladıysa, burun kırılmış olabilirse veya kişi kan sulandırıcı kullanıyorsa acile başvurulmalıdır. Sık tekrarlayan kanamalar hekimce değerlendirilmelidir; nemlendirici ve tuzlu su (serum fizyolojik) spreyi önlemeye yardımcı olur."
+    },
+    {
+      "id": "bogulma-medlineplus",
+      "konu": "Yabancı cisim ve boğulma (Heimlich)",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "boğulma",
+        "boğazına bir şey kaçtı",
+        "nefes yoluna kaçtı",
+        "Heimlich",
+        "çocuk boğuluyor",
+        "yemek kaçtı"
+      ],
+      "baslik": "Choking (Boğulma)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/choking.html",
+      "dil": "en",
+      "ozet": "Boğulma, yiyecek veya bir cismin nefes borusunu tıkayıp beyne oksijen gitmesini engellemesidir. Oksijensiz geçen 4 dakikadan uzun süre beyin hasarına veya ölüme yol açabileceği için hızlı müdahale gerekir. Yetişkinlerde ilk yardım olarak sırta vurma ve karına baskı (Heimlich manevrası) uygulanır; 1 yaşından küçük bebeklerde ise farklı bir yöntem kullanılır ve karına baskı yapılmaz. Kişi bilincini kaybederse kalp masajı ve suni solunum (temel yaşam desteği) başlatılmalıdır. Küçük çocuklar sosis, kuruyemiş, bütün üzüm, bozuk para ve küçük oyuncak parçaları ile boğulma açısından özellikle risk altındadır. Bu ilk yardım tekniklerinin bir kursta uygulamalı öğrenilmesi önerilir."
+    },
+    {
+      "id": "koah-koc",
+      "konu": "KOAH",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "KOAH",
+        "sigara öksürüğü",
+        "sabah balgamı",
+        "nefes darlığı",
+        "hırıltı",
+        "tezek dumanı",
+        "nefes açıcı",
+        "oksijen tüpü"
+      ],
+      "baslik": "KOAH (Kronik Obstrüktif Akciğer Hastalığı)",
+      "kurum": "Koç Üniversitesi Hastanesi",
+      "tur": "universite",
+      "url": "https://www.kuh.ku.edu.tr/gogus-hastaliklari/koah",
+      "dil": "tr",
+      "ozet": "KOAH, hava yollarının kalıcı olarak daraldığı ve zamanla ilerleyen bir akciğer hastalığıdır; yetişkinlerde yaklaşık 10 kişiden birinde görülür ve dünyada ölüm nedenleri arasında üçüncü sıradadır. Hastaların yaklaşık %80'inde sigara içme öyküsü vardır. Tezek ve odun gibi biyolojik yakıtların dumanı, iş yerinde toz ve kimyasallar, hava kirliliği, pasif içicilik ve kalıtsal alfa-1 antitripsin eksikliği de neden olabilir. Belirtiler nefes darlığı, uzun süren öksürük ve balgam, hırıltılı solunum ve göğüste sıkışma hissidir; ileri evrede dudak ve tırnaklarda morarma görülebilir. Tanı nefes testi (spirometri) ile konur. Tedavinin en önemli adımı sigarayı bırakmaktır; ilaç olarak nefes açıcı inhaler (solunan) ilaçlar kullanılır ve bunlar bağımlılık yapmaz. İleri evrede uzun süreli oksijen tedavisi, haftada 5 gün 30 dakikalık fiziksel aktivite ve akciğer rehabilitasyonu önerilir. Grip, zatürre ve COVID-19 aşıları, 50 yaş üstünde zona aşısı önerilir. Balgam miktarı artarsa, rengi ve kıvamı değişirse ya da nefes darlığı belirgin artarsa (alevlenme) beklemeden hekime başvurulmalıdır."
+    },
+    {
+      "id": "gerilimbasagrisi-acibadem",
+      "konu": "Gerilim tipi baş ağrısı",
+      "kategori": "Beyin ve sinir",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "gerilim tipi baş ağrısı",
+        "stres baş ağrısı",
+        "başımda bant gibi",
+        "başımı sıkıyor",
+        "iki taraflı baş ağrısı",
+        "ense ağrısı",
+        "ekran baş ağrısı",
+        "ilaç aşırı kullanım baş ağrısı"
+      ],
+      "baslik": "Gerilim Tipi Baş Ağrısı Nedir? Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/gerilim-tipi-bas-agrisi-nedir/",
+      "dil": "tr",
+      "ozet": "Gerilim tipi baş ağrısı en sık görülen baş ağrısı türüdür. Genellikle başın iki yanında, başı bir bant gibi saran baskı veya sıkışma şeklinde hissedilir; hafif veya orta şiddettedir ve migrendeki gibi zonklamaz. Bulantı nadirdir ve günlük işler çoğunlukla sürdürülebilir. Ataklar 30 dakika ile birkaç gün arasında sürebilir. Stres, boyun ve omuz kaslarında gerginlik, uykusuzluk, göz yorgunluğu, uzun süre ekrana bakmak, açlık, kafein, depresyon ve kaygı ile kötü duruş tetikleyebilir. Tanı çoğunlukla muayene ve öyküyle konur; görüntüleme nadiren gerekir. Tedavide ağrı kesiciler kullanılabilir, ancak ayda çok sayıda gün ağrı kesici almak ilaç aşırı kullanımına bağlı baş ağrısına yol açabilir. Stres yönetimi, fizik tedavi ve bilişsel davranışçı terapi sık tekrarlayan ağrılarda yardımcıdır. Evde dinlenme, ılık duş veya boyuna sıcak uygulama, nefes egzersizleri, düzenli uyku, yeterli su içme, kafeini azaltma ve masaj rahatlatabilir."
     }
   ],
   "kategoriler": [

@@ -20,7 +20,7 @@ Güvenilir kaynaklara dayanan, Claude (Anthropic) ile çalışan Türkçe tıbbi
 
 - **Aciliyet göstergesi:** Her şikayet 4 basamakta değerlendirilir: evde izlem, aile hekimi, aynı gün doktor, acil (112).
 - **Randevu yönlendirmesi:** Gidilecek bölümü MHRS'deki adıyla önerir; MHRS, ALO 182 ve 112'ye tek dokunuşla yönlendirir. Randevuyu kullanıcı adına almaz.
-- **Kaynaklı cevaplar:** 124 konu ve 249 kaynak özetinden oluşan kütüphaneye dayanır (Sağlık Bakanlığı, üniversite hastaneleri, özel hastaneler, MedlinePlus). Bilginin yanında `[1]`, `[2]` ile kaynak linki verir.
+- **Kaynaklı cevaplar:** 124 konu ve 261 kaynak özetinden oluşan kütüphaneye dayanır (Sağlık Bakanlığı, üniversite hastaneleri, özel hastaneler, MedlinePlus). Bilginin yanında `[1]`, `[2]` ile kaynak linki verir.
 - **Tahlil yorumu:** PDF ya da fotoğraf yüklenir; değerler referans aralığı çubuklarına dönüşür, düşük/yüksek/kritik değerler renkle ayrılır.
 - **Tahlil geçmişi ve e-Nabız aktarımı:** e-Nabız'dan veya laboratuvardan indirilen PDF okunur, kaydetmeden önce kullanıcıya onaylatılır; her test için tarihler arası grafik çizilir.
 - **3D vücut haritası:** Gerçek kas ve kemik modeli üzerinde ağrıyan bölgeye dokunup şikayet seçilir.
