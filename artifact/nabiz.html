@@ -466,6 +466,23 @@ button { cursor: pointer; }
 .lh-table th { font: 500 11px var(--f-mono); text-transform: uppercase; letter-spacing: .05em; color: var(--ink-2); }
 .lh-table td { font-variant-numeric: tabular-nums; }
 .lh-save { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 13px; color: var(--ink-2); }
+.ix-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 10px; }
+.ix-chips .chip { font-size: 13px; }
+.ix-add { display: flex; gap: 8px; margin-bottom: 10px; }
+.ix-add input { flex: 1; min-width: 0; border: 1px solid var(--line); border-radius: 7px; padding: 8px 10px; background: var(--surface); color: var(--ink); font-size: 14px; }
+.ix-check { display: flex; gap: 8px; align-items: center; font-size: 13.5px; margin: 0 0 12px; }
+.ix-out { margin-top: 14px; }
+.ix-sum { font: 600 16px var(--f-display); margin: 0 0 8px; }
+.ix-table { margin-bottom: 6px; }
+.ix-unk { color: var(--t-today); }
+.ix-h { font: 600 15px var(--f-display); margin: 16px 0 8px; }
+.ix-card { border: 1px solid var(--line); border-left: 4px solid var(--line); border-radius: 10px; background: var(--surface); padding: 10px 12px; margin-bottom: 8px; }
+.ix-card.crit { border-left-color: var(--t-er); } .ix-card.high { border-left-color: var(--t-today); } .ix-card.mid { border-left-color: var(--t-gp); }
+.ix-head { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+.ix-head b { font-size: 14.5px; }
+.ix-card p { margin: 6px 0 0; font-size: 14px; line-height: 1.45; }
+.ix-card .ix-do { color: var(--ink-2); }
+.ix-disc { margin-top: 14px; }
 .aid-top { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-bottom: 12px; }
 .aid-top p { margin: 0; flex: 1 1 260px; font-size: 13px; }
 a.btn.er { background: var(--t-er); border-color: var(--t-er); color: #fff; text-decoration: none; font-weight: 600; }
@@ -640,6 +657,11 @@ a.btn.er { background: var(--t-er); border-color: var(--t-er); color: #fff; text
       <h2>Profilim</h2>
       <p class="profile-sum" id="profileSum"></p>
       <button class="btn full" id="profileBtn" type="button">Profili düzenle</button>
+    </section>
+
+    <section class="section">
+      <h2>İlaçlarım</h2>
+      <button class="btn full" id="interactBtn" type="button">İlaç etkileşimi kontrolü</button>
     </section>
 
     <section class="section">
@@ -1910,6 +1932,137 @@ Kurallar:
     show(tur);
   }
 
+  // ------------------------------------------------------------------ İlaç etkileşimi kontrolü
+  // Açık ve güvenilir bir Türkçe etkileşim veri tabanı tarayıcıdan kullanılamadığı için kontrolü asistan yapar;
+  // sonuç her zaman "yapay zekâ değerlendirmesi" olarak, eczacı/hekim uyarısıyla gösterilir.
+  const INTERACT_RULES = `Sen dikkatli bir klinik eczacı gibi çalışıyorsun. Aşağıda bir kişinin birlikte kullandığı ilaçlar ve (varsa) sağlık profili var. İlaç etkileşimlerini kontrol et ve YALNIZCA bir JSON nesnesi döndür, başka hiçbir şey yazma. Biçim:
+{"ilaclar":[{"girilen":"Coraspin 100 mg","etken":"asetilsalisilik asit","grup":"kan pulcuklarını engelleyici","taninamadi":false}],
+ "etkilesimler":[{"a":"Coraspin 100 mg","b":"Majezik","derece":"orta","sonuc":"Kanama riski artar.","ne_yapmali":"Birlikte kullanmadan önce hekiminize veya eczacınıza danışın; siyah dışkı, kolay morarma gibi kanama belirtilerine dikkat edin."}],
+ "ayni_etken":[{"ilaclar":["Parol","Minoset Plus"],"etken":"parasetamol","aciklama":"İkisi de parasetamol içerir; birlikte alınırsa günlük doz aşılabilir."}],
+ "besin":[{"ilac":"Coumadin","neyle":"alkol","aciklama":"..."}],
+ "profil":[{"ilac":"Majezik","aciklama":"Gebelikte, özellikle son üç ayda kullanılmamalıdır; hekiminize danışın."}],
+ "not":""}
+Kurallar:
+- "girilen" alanına kullanıcının yazdığını aynen yaz. Türkiye'deki ticari adları etken maddeye çevir. Bir ilacı tanımıyorsan veya emin değilsen "taninamadi": true yap, etken alanını boş bırak ve o ilaç için etkileşim yazma.
+- Yalnızca standart ilaç başvuru kaynaklarında yer alan, klinik olarak bilinen etkileşimleri yaz. Emin olmadığın, kuramsal veya çok zayıf etkileşimleri yazma. Etkileşim uydurma.
+- derece: "ciddi" (genellikle birlikte kullanılmamalı ya da yakın hekim takibi gerekir), "orta" (doz ayarı veya takip gerekebilir), "hafif" (çoğunlukla sorun olmaz, dikkat yeterli).
+- Aynı etken maddeyi içeren birden fazla ilaç varsa "ayni_etken" içinde mutlaka belirt (çift doz riski).
+- "besin": yalnızca önemli besin, alkol veya bitkisel ürün etkileşimleri (ör. greyfurt, alkol, sarı kantaron).
+- "profil": profil verildiyse yaş, gebelik/emzirme, kronik hastalık veya alerji nedeniyle önemli uyarılar. Alerji listesinde geçen bir ilaç veya aynı gruptan ilaç varsa mutlaka yaz.
+- "sonuc", "ne_yapmali" ve "aciklama" kısa, sade Türkçe olsun; okuyana "siz" diye hitap et.
+- ASLA "ilacı bırakın" ya da "dozunu değiştirin" deme; bunun yerine hekime veya eczacıya danışmayı öner. Ciddi bir etkileşimde ilaçların hekime danışmadan kendi kendine bırakılmaması gerektiğini de belirt.
+- Teşhis koyma, tedavi önerme. Kişisel bilgi yazma.
+- Etkileşim yoksa ilgili dizileri boş bırak.`;
+
+  let interactCtrl = null;
+  function openInteract() {
+    const root = document.createElement("div");
+    const info = document.createElement("p"); info.className = "muted";
+    info.textContent = "Birlikte kullandığınız ilaçları (ticari adı veya etken maddesi) ekleyin. Asistan bilinen etkileşimleri, aynı etken maddenin iki kez alınmasını ve profilinize göre önemli uyarıları kontrol eder. Bu bir yapay zekâ değerlendirmesidir; eczacı ve hekim kontrolünün yerini tutmaz.";
+    root.appendChild(info);
+    if (!sampleReady) {
+      const p = document.createElement("p"); p.className = "er-warn";
+      p.textContent = "İlaç etkileşimi kontrolü asistan gerektirir. Bu sürümde asistan yok; eczacınıza danışabilir veya asistanlı sürümü kullanabilirsiniz.";
+      root.appendChild(p);
+      if (window.NABIZ_ASISTAN_URL) { const a = document.createElement("a"); a.className = "btn primary"; a.href = window.NABIZ_ASISTAN_URL; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Asistanlı sürümü aç ↗"; root.appendChild(a); }
+      openSheet("İlaç etkileşimi kontrolü", root);
+      return;
+    }
+    const drugs = clean(profile.ilaclar).split(/\s*(?:\n|,|;)\s*/).filter(Boolean).slice(0, 12);
+    const chips = document.createElement("div"); chips.className = "ix-chips";
+    const row = document.createElement("form"); row.className = "ix-add";
+    const input = document.createElement("input"); input.type = "text"; input.placeholder = "ör. Coraspin 100, Majezik, Parol"; input.maxLength = 60; input.setAttribute("aria-label", "İlaç adı");
+    const add = document.createElement("button"); add.type = "submit"; add.className = "btn"; add.textContent = "Ekle";
+    row.append(input, add);
+    const useProf = document.createElement("label"); useProf.className = "ix-check";
+    const cb = document.createElement("input"); cb.type = "checkbox"; cb.checked = Boolean(profileText());
+    useProf.append(cb, " Profilimi de dikkate al (yaş, gebelik, hastalıklar, alerjiler)");
+    if (!profileText()) useProf.hidden = true;
+    const go = document.createElement("button"); go.type = "button"; go.className = "btn primary"; go.textContent = "Etkileşimleri kontrol et";
+    const msg = document.createElement("p"); msg.className = "muted"; msg.style.margin = "8px 0 0";
+    const out = document.createElement("div"); out.className = "ix-out";
+    root.append(chips, row, useProf, go, msg, out);
+    openSheet("İlaç etkileşimi kontrolü", root);
+
+    const draw = () => {
+      chips.replaceChildren(...drugs.map((d, i) => {
+        const c = document.createElement("span"); c.className = "chip";
+        const t = document.createElement("span"); t.textContent = d;
+        const x = document.createElement("button"); x.type = "button"; x.className = "x"; x.textContent = "✕"; x.setAttribute("aria-label", d + " ilacını çıkar");
+        x.onclick = () => { drugs.splice(i, 1); draw(); };
+        c.append(t, x); return c;
+      }));
+      if (!drugs.length) { const e = document.createElement("span"); e.className = "muted"; e.style.margin = "0"; e.textContent = "Henüz ilaç eklenmedi."; chips.appendChild(e); }
+      go.disabled = drugs.length < 2 || busy;
+      msg.textContent = drugs.length < 2 ? "Kontrol için en az 2 ilaç ekleyin." : "";
+    };
+    row.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const v = clean(input.value).replace(/\s+/g, " ");
+      if (v && drugs.length < 12 && !drugs.some((d) => d.toLocaleLowerCase("tr-TR") === v.toLocaleLowerCase("tr-TR"))) drugs.push(v);
+      input.value = ""; input.focus(); draw();
+    });
+    go.onclick = async () => {
+      interactCtrl?.abort(); interactCtrl = new AbortController(); const ctrl = interactCtrl;
+      go.disabled = true; msg.textContent = "";
+      out.replaceChildren(thinkingNode("İlaçlar kontrol ediliyor…"));
+      const prof = cb.checked ? profileText() : "";
+      const input2 = `${INTERACT_RULES}\n\n<ilaclar>\n${drugs.map((d) => "- " + d).join("\n")}\n</ilaclar>${prof ? `\n\n<hasta_profili>\n${prof}\n</hasta_profili>` : ""}`;
+      try {
+        const r = await sample.json(input2, { cache: false, modelTier: "complex", signal: ctrl.signal });
+        if (ctrl.signal.aborted) return;
+        out.replaceChildren(interactResult(r && typeof r === "object" ? r : {}, drugs.slice()));
+      } catch (e) {
+        if (ctrl.signal.aborted) return;
+        out.replaceChildren();
+        msg.textContent = e?.code === "invalid_json" ? "Sonuç okunamadı, tekrar deneyin." : errorText(e?.code || "upstream_error");
+      } finally { go.disabled = drugs.length < 2; }
+    };
+    draw();
+    setTimeout(() => input.focus(), 50);
+  }
+
+  const IX_DEGREE = { ciddi: ["crit", "Ciddi"], orta: ["high", "Orta"], hafif: ["mid", "Hafif"] };
+  function interactResult(r, drugs) {
+    const arr = (x) => Array.isArray(x) ? x.filter((y) => y && typeof y === "object") : [];
+    const ilaclar = arr(r.ilaclar), ix = arr(r.etkilesimler).filter((x) => IX_DEGREE[x.derece]),
+      dup = arr(r.ayni_etken), food = arr(r.besin), prof = arr(r.profil);
+    ix.sort((a, b) => Object.keys(IX_DEGREE).indexOf(a.derece) - Object.keys(IX_DEGREE).indexOf(b.derece));
+    const box = document.createElement("div");
+    const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; };
+    const serious = ix.filter((x) => x.derece === "ciddi").length;
+    box.appendChild(el("p", "ix-sum", ix.length || dup.length
+      ? `${ix.length} etkileşim${serious ? ` (${serious} ciddi)` : ""}${dup.length ? ` · ${dup.length} aynı etken madde uyarısı` : ""}`
+      : "Bu ilaçlar arasında bilinen önemli bir etkileşim bulunamadı."));
+    if (!ix.length && !dup.length) box.appendChild(el("p", "muted", "Bu, hiç etkileşim olmadığı anlamına gelmez. Yeni bir ilaca başlamadan önce eczacınıza mutlaka söyleyin."));
+
+    // Tanınan etken maddeler
+    if (ilaclar.length) {
+      const t = el("table", "lh-table ix-table"); t.innerHTML = "<thead><tr><th>Girdiğiniz</th><th>Etken madde</th></tr></thead>";
+      const tb = el("tbody");
+      ilaclar.forEach((x) => { const tr = el("tr"); tr.append(el("td", "", clean(x.girilen)), el("td", x.taninamadi ? "ix-unk" : "", x.taninamadi ? "Tanınamadı; bu ilaç kontrol edilemedi" : clean(x.etken) + (x.grup ? ` (${clean(x.grup)})` : ""))); tb.appendChild(tr); });
+      t.appendChild(tb); const w = el("div", "tbl"); w.appendChild(t); box.appendChild(w);
+    }
+    const section = (title, items, render) => { if (!items.length) return; box.appendChild(el("h3", "ix-h", title)); items.forEach((x) => box.appendChild(render(x))); };
+    section("Aynı etken madde", dup, (x) => { const c = el("div", "ix-card crit"); const h = el("div", "ix-head"); h.append(el("b", "", (x.ilaclar || []).map(clean).join(" + ")), el("span", "lab-chip crit", "Çift doz")); c.append(h, el("p", "", clean(x.aciklama))); return c; });
+    section("İlaç-ilaç etkileşimleri", ix, (x) => {
+      const [cls, ad] = IX_DEGREE[x.derece]; const c = el("div", "ix-card " + cls); const h = el("div", "ix-head");
+      h.append(el("b", "", `${clean(x.a)} + ${clean(x.b)}`), el("span", "lab-chip " + cls, ad));
+      c.append(h, el("p", "", clean(x.sonuc)));
+      if (clean(x.ne_yapmali)) c.appendChild(el("p", "ix-do", clean(x.ne_yapmali)));
+      return c;
+    });
+    section("Besin, alkol ve bitkisel ürünler", food, (x) => { const c = el("div", "ix-card"); const h = el("div", "ix-head"); h.append(el("b", "", `${clean(x.ilac)} + ${clean(x.neyle)}`)); c.append(h, el("p", "", clean(x.aciklama))); return c; });
+    section("Profilinize göre", prof, (x) => { const c = el("div", "ix-card high"); const h = el("div", "ix-head"); h.append(el("b", "", clean(x.ilac))); c.append(h, el("p", "", clean(x.aciklama))); return c; });
+    if (clean(r.not)) box.appendChild(el("p", "muted", clean(r.not)));
+    box.appendChild(el("p", "er-warn ix-disc", "Bu bir yapay zekâ değerlendirmesidir ve hata içerebilir. İlaçlarınızı hekiminize danışmadan bırakmayın veya dozunu değiştirmeyin; eczacınıza ve prospektüse başvurun. Nefes darlığı, yüz-dudak şişmesi, bayılma, şiddetli kanama gibi belirtilerde 112'yi arayın."));
+    const act = el("div", "summary-actions");
+    const ask = el("button", "btn", "Sohbette ayrıntılı sor"); ask.type = "button"; ask.disabled = busy;
+    ask.onclick = () => { closeSheet(); submit(`Şu ilaçları birlikte kullanıyorum: ${drugs.join(", ")}. Aralarında etkileşim var mı, nelere dikkat etmeliyim?`); };
+    act.appendChild(ask); box.appendChild(act);
+    return box;
+  }
+
   // ------------------------------------------------------------------ İlk yardım kartları
   // İçerik kütüphanedeki ilk yardım kaynaklarının özetlerinden yazıldı (kaynak bağlantıları kartta); sayfanın içinde
   // durduğu için ağ gerektirmez (ücretsiz sitede çevrimdışı önbellekle internet yokken de açılır).
@@ -1987,6 +2140,7 @@ Kurallar:
   function closeSheet() {
     summaryCtrl?.abort(); summaryCtrl = null;
     riskCtrl?.abort(); riskCtrl = null;
+    interactCtrl?.abort(); interactCtrl = null;
     $("sheet").hidden = true;
     $("sheetBody").replaceChildren();
     sheetReturn?.focus?.();
@@ -3202,6 +3356,7 @@ Kurallar:
   $("docAdd").onclick = () => el.docInput.click();
   el.docInput.onchange = () => { addDocs([...el.docInput.files]); el.docInput.value = ""; };
   $("labsBtn").onclick = () => { el.app.classList.remove("panel-open"); openLabs(); };
+  $("interactBtn").onclick = () => { el.app.classList.remove("panel-open"); openInteract(); };
   $("aidBtn").onclick = () => { el.app.classList.remove("panel-open"); openAid(); };
   $("logBtn").onclick = () => { el.app.classList.remove("panel-open"); openLog(); };
   $("profileBtn").onclick = () => { el.app.classList.remove("panel-open"); openSheet("Sağlık profilim", profileForm()); };

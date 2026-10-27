@@ -108,6 +108,10 @@ try {
   ok("Günlük: yapay zekâ düğmesi gizli", r6.askHidden);
   await shot("st-gunluk.png");
 
+  const r8 = await js(`document.getElementById("sheetClose").click(); document.getElementById("interactBtn").click(); await new Promise((r) => setTimeout(r, 200));
+    return { warn: document.querySelector("#sheetBody .er-warn")?.textContent || "", link: document.querySelector("#sheetBody a.btn")?.href, form: Boolean(document.querySelector(".ix-add")) }`);
+  ok("İlaç etkileşimi: asistansız sürümde yönlendirme", /asistan gerektirir/.test(r8.warn) && r8.link === "https://claude.ai/artifact/Sfo2aqbSsn4ie9zMLLiFd6" && !r8.form);
+
   const r5 = await js(`const reg = await navigator.serviceWorker.getRegistration(); return { scope: reg?.scope, models: performance.getEntriesByType("resource").some((e) => e.name.endsWith("models/muscles.json")) }`);
   ok("Çevrimdışı önbellek alt yolda kayıtlı", (r5.scope || "").endsWith(PREFIX), r5.scope);
   ok("3D model yüklendi", r5.models);

@@ -23,6 +23,7 @@ Güvenilir kaynaklara dayanan, Claude (Anthropic) ile çalışan Türkçe tıbbi
 - **Kaynaklı cevaplar:** 124 konu ve 261 kaynak özetinden oluşan kütüphaneye dayanır (Sağlık Bakanlığı, üniversite hastaneleri, özel hastaneler, MedlinePlus). Bilginin yanında `[1]`, `[2]` ile kaynak linki verir.
 - **Tahlil yorumu:** PDF ya da fotoğraf yüklenir; değerler referans aralığı çubuklarına dönüşür, düşük/yüksek/kritik değerler renkle ayrılır.
 - **Tahlil geçmişi ve e-Nabız aktarımı:** e-Nabız'dan veya laboratuvardan indirilen PDF okunur, kaydetmeden önce kullanıcıya onaylatılır; her test için tarihler arası grafik çizilir.
+- **İlaç etkileşimi kontrolü:** Birlikte kullanılan ilaçlar (ticari adıyla da) girilir; asistan etken maddeleri, bilinen etkileşimleri derecesiyle, aynı etken maddenin iki kez alınmasını, besin/alkol ve profile göre uyarıları gösterir. Yapay zekâ değerlendirmesidir; eczacı ve hekim kontrolünün yerini tutmaz.
 - **İlk yardım kartları:** Kalp masajı, boğulma, kalp krizi, inme, nöbet, alerjik şok, yanık, zehirlenme, şeker düşmesi, sıcak çarpması, kırık, kafa çarpması, burun kanaması, hayvan ısırığı ve kene için kısa adımlar; 112/114'ü tek dokunuşla arama. Kaynaklıdır; ücretsiz site telefona eklendiğinde internet yokken de açılır.
 - **Sağlık günlüğü:** Evde ölçülen tansiyon, kan şekeri ve kilo kaydedilir; grafikte gösterilir, çok yüksek/düşük değerlerde ne yapılacağı yazılır. İstenirse asistana yorumlatılır, doktor özetine eklenir.
 - **3D vücut haritası:** Gerçek kas ve kemik modeli üzerinde ağrıyan bölgeye dokunup şikayet seçilir.
