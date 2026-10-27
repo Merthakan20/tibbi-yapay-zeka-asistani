@@ -6,3 +6,6 @@ __pycache__/
 # Kişisel tıbbi belgeler depoya girmesin
 belgeler/*
 !belgeler/.gitkeep
+
+# Claude Code proje notları (yalnızca bu bilgisayarda)
+CLAUDE.md
