@@ -39,7 +39,7 @@ const REPLACE_WORKER = [
 ];
 const REPLACE_STATIC = [
   ["Sorularınız Claude hesabınız üzerinden yanıtlanır. Sohbet ve belgeler yalnızca bu tarayıcıda saklanır.",
-   "Bu site tamamen tarayıcınızda çalışır; yazdıklarınız hiçbir yere gönderilmez. Sohbet, profil ve tahlil geçmişi yalnızca bu cihazda tutulur."],
+   "Bu site tamamen tarayıcınızda çalışır; yazdıklarınız hiçbir yere gönderilmez. Sohbet, profil, tahlil geçmişi ve sağlık günlüğü yalnızca bu cihazda tutulur."],
   ["Asistan yalnızca claude.ai içinde açıldığında çalışır ve sorular sizin Claude hesabınız üzerinden yanıtlanır.",
    `<b>Ücretsiz sürüm:</b> asistan yok, sorularınıza kütüphaneden kaynaklar gösterilir. <a href="${ASISTAN_URL}" target="_blank" rel="noopener" style="color:var(--accent);white-space:nowrap">Asistanlı sürüm ↗</a>`],
   ["Bu bilgiler yalnızca bu tarayıcıda saklanır ve soru sorduğunuzda asistana sizin Claude hesabınız üzerinden gönderilir. Boş bıraktığınız alanlar gönderilmez.",

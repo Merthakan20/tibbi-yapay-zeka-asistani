@@ -114,6 +114,19 @@ try {
   ok("Sunucuya API isteği gitmedi", !requests.some((x) => x.includes("/api/")));
   const missing = notFound.filter((p) => !p.endsWith("/favicon.ico"));   // tarayıcının kendiliğinden istediği favicon.ico hariç
   ok("Eksik dosya yok (404)", missing.length === 0, missing.join(", "));
+
+  // İlk yardım kartları: internet yokken (servis çalışanı önbelleğinden) açılmalı
+  await cdp("Network.enable");
+  await cdp("Network.emulateNetworkConditions", { offline: true, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
+  await cdp("Page.reload", { ignoreCache: false }); await sleep(2500);
+  const r7 = await js(`document.getElementById("tab-aid").click(); await new Promise((r) => setTimeout(r, 150));
+    const cards = document.querySelectorAll("#panel-aid .aid-card"); document.querySelector('#panel-aid .aid-card[data-aid="tyd"]').click(); await new Promise((r) => setTimeout(r, 200));
+    const d = document.querySelector("#sheetBody .aid-detail");
+    return { cards: cards.length, shown: !document.getElementById("panel-aid").hidden, title: d?.querySelector(".aid-title")?.textContent, steps: d?.querySelectorAll(".aid-steps li").length, tel: d?.querySelector(".aid-tels a")?.getAttribute("href"), src: d?.querySelectorAll(".aid-src a").length }`);
+  ok("Çevrimdışı: sayfa ve ilk yardım kartları açıldı", r7?.shown && r7.cards === 15, JSON.stringify(r7));
+  ok("İlk yardım kartı: adımlar, 112 ve kaynak", r7?.steps >= 5 && r7.tel === "tel:112" && r7.src === 2);
+  await shot("st-ilkyardim.png");
+  await cdp("Network.emulateNetworkConditions", { offline: false, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
   ws.close();
 } catch (e) { console.error(e); failed++; }
 finally { chrome.kill(); server.close(); console.log(failed ? `\n${failed} kontrol BAŞARISIZ` : "\nStatik site kontrolleri geçti"); process.exit(failed ? 1 : 0); }
