@@ -2818,7 +2818,7 @@ Kurallar:
   function scrollDown() { el.chat.scrollTop = el.chat.scrollHeight; }
 
   // ------------------------------------------------------------------ Bilgi bankası (BM25)
-  const STOP = new Set("ve veya ile de da ki bir bu şu o için gibi daha çok en mi mı mu mü ne nasıl neden ama fakat ise olan olarak olur olabilir var yok her hangi benim bana beni sen siz biz ben kendi kendim kendimi kendime kendini kendine iyi yarın yarından bugün şimdi artık itibaren önce sonra biraz hep hepsi hepsini tane gibi istiyorum istemiyorum düşünüyorum hissediyorum gitsem gideyim yapayım alayım şey şikayetim şikayetimiz bölgesi süre şiddet başladı çıktı gelir nedir neler nelerdir nelerde".split(" "));
+  const STOP = new Set("ve veya ile de da ki bir bu şu o için gibi daha çok en mi mı mu mü ne nasıl neden ama fakat ise olan olarak olur olabilir var yok her hangi benim bana beni sen siz biz ben kendi kendim kendimi kendime kendini kendine iyi yarın yarından bugün şimdi artık itibaren önce sonra biraz hep hepsi hepsini tane gibi istiyorum istemiyorum düşünüyorum hissediyorum gitsem gideyim yapayım alayım şey şikayetim şikayetimiz bölgesi süre şiddet başladı çıktı gelir nedir neler nelerdir nelerde birkaç sürekli".split(" "));
   // Türkçe ekleri ayıkla ("başım ağrıyor" ile "baş ağrısı" aynı köke insin); I=ı/i/u/ü, A=a/e, D=d/t
   const SUFFIXES = (() => {
     const out = [], expand = (p) => {
@@ -2832,7 +2832,7 @@ Kurallar:
   // Düzensiz biçimler: ünlü düşmesi ("karnım" → karın) ve ünsüz yumuşaması ("kalbim" → kalp)
   const DROPPED = { göğs: "göğüs", karn: "karın", ağz: "ağız", burn: "burun", boyn: "boyun", beyn: "beyin", omz: "omuz", bağır: "bağırsak", kalb: "kalp" };
   // Bu kökler kısaltılmaz ("boyun" → "boy" olmasın, "makatımda" → "mak" olmasın)
-  const KEEP = new Set([...Object.values(DROPPED), "makat", "sırt", "kist", "yanık", "vitamin", "kansız"]);
+  const KEEP = new Set([...Object.values(DROPPED), "makat", "sırt", "kist", "yanık", "vitamin", "kansız", "çarpıntı"]);
   const stems = new Map();
   function stem(w) {
     if (stems.has(w)) return stems.get(w);
@@ -2856,7 +2856,8 @@ Kurallar:
   const FILLER = new Set("gün hafta yıl saat dün bugün yapmalıyım yapayım oldum oluyor olmuş ediyor hissediyorum şey".split(" ").map(stem));
   // "hepatit B/C" tek harf atıldığında birbirine karışmasın: hbv / hcv
   // INR, HIV gibi Latin kısaltmalar Türkçe kuralıyla "ınr" olmasın; kullanıcı "inr" yazınca da eşleşsin
-  const terms = (s) => (s.replace(/\b[A-Z][A-Z0-9]+\b/g, (m) => m.toLowerCase()).toLocaleLowerCase("tr-TR").replace(/hepatit\s+([bc])(?!\p{L})/gu, (_, x) => `hepatit h${x}v`).match(/[\p{L}\p{N}]+/gu) || []).filter((w) => w.length > 1 && !STOP.has(w)).map(stem).filter((t) => !FILLER.has(t));
+  // Şikayet formunun eklediği "(göz, kulak, burun bölgesi)" kısmı aramayı saptırmasın: bölge adındaki kelimeler başka konuları getiriyordu
+  const terms = (s) => (s.replace(/\([^()]*bölgesi\)/g, " ").replace(/\b\d+\s*\/\s*10\b/g, " ").replace(/\b[A-Z][A-Z0-9]+\b/g, (m) => m.toLowerCase()).toLocaleLowerCase("tr-TR").replace(/hepatit\s+([bc])(?!\p{L})/gu, (_, x) => `hepatit h${x}v`).match(/[\p{L}\p{N}]+/gu) || []).filter((w) => w.length > 1 && !STOP.has(w)).map(stem).filter((t) => !FILLER.has(t));
 
   function chunkText(text) {
     text = text.replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
@@ -2878,6 +2879,7 @@ Kurallar:
 
   const KIND = { resmi: "Resmi kurum", universite: "Üniversite", dernek: "Meslek derneği", ozel: "Özel hastane", uluslararasi: "Uluslararası" };
 
+  const POPULATIONS = [["gebelik", "gebe", "hamile", "hamileyim", "lohusa", "doğum"], ["bebek", "bebeğim", "çocuk", "çocuğum", "çocuklarda", "yenidoğan", "oğlum", "oğlumun", "kızım", "kızımın"]].map((g) => [...new Set(g.flatMap((w) => terms(w)))]);
   function search(query, { useDocs = true, useLib = true } = {}, k = 5) {
     const all = [];
     if (useDocs) docs.forEach((d) => d.chunks.forEach((c) => all.push({ title: c.page ? `${d.name} (s. ${c.page})` : d.name, text: c.text })));
@@ -2895,7 +2897,15 @@ Kurallar:
     const df = new Map(); tfs.forEach((m) => m.forEach((_, t) => df.set(t, (df.get(t) || 0) + 1)));
     const lens = tfs.map((m) => [...m.values()].reduce((a, b) => a + b, 0));
     const avg = lens.reduce((a, b) => a + b, 0) / lens.length || 1;
-    const q = [...new Set(terms(query))], N = all.length, k1 = 1.5, b = 0.75;
+    const qAll = terms(query), q = [...new Set(qAll)], N = all.length, k1 = 1.5, b = 0.75;
+    // Yan yana iki sözcük bir anahtar ifadede de yan yana geçiyorsa ("baş ağrısı") ek puan:
+    // tek tek eşleşen ama ilgisiz kaynaklar ("sırt ağrısı" + "masa başı") öne geçmesin
+    const pair = (a, b2) => a + " " + b2;
+    const qPairs = new Set(qAll.slice(1).map((t, i) => pair(qAll[i], t)));
+    // Gebelik/bebek/çocuk gibi belirli bir gruba özel konular, soruda o grup geçmiyorsa geri planda kalsın
+    // ("kusuyorum" diyen yetişkine gebelik bulantısı ilk sırada çıkmasın)
+    const popQ = POPULATIONS.map((g) => g.some((t) => q.includes(t)));
+    const idfOf = (t) => Math.log(1 + (N - (df.get(t) || 0) + 0.5) / ((df.get(t) || 0) + 0.5));
     const hits = all.map((c, i) => {
       // Kütüphane kaynağı yalnızca özet metninde geçen bir sözcükle (ör. "kendi") eşleşmesin
       if (kws[i] && !q.some((t) => kws[i].has(t))) return { s: 0, c };
@@ -2905,6 +2915,11 @@ Kurallar:
         const idf = Math.log(1 + (N - df.get(t) + 0.5) / (df.get(t) + 0.5));
         s += idf * f * (k1 + 1) / (f + k1 * (1 - b + b * lens[i] / avg));
       }
+      if (qPairs.size && c.phrases) {
+        const seen = new Set();
+        for (const ph of c.phrases) { const pt = terms(ph); for (let j = 1; j < pt.length; j++) { const pr = pair(pt[j - 1], pt[j]); if (qPairs.has(pr) && !seen.has(pr)) { seen.add(pr); s += 1.5 * (idfOf(pt[j - 1]) + idfOf(pt[j])) / 2; } } }
+      }
+      if (c.topic) { const tt = terms(c.topic); POPULATIONS.forEach((g, gi) => { if (!popQ[gi] && g.some((t) => tt.includes(t))) s *= 0.5; }); }
       return { s, c };
     }).filter((x) => x.s > 0).sort((a, b) => b.s - a.s).slice(0, k);
     // En iyi eşleşmenin yanında çok zayıf kalan sonuçları ele
@@ -2919,7 +2934,7 @@ Kurallar:
       const data = await res.json();
       library = (data.kaynaklar || []).map((k) => ({
         title: `${k.kurum}: ${k.baslik}`, text: k.ozet, url: k.url, kind: k.tur, kurum: k.kurum, baslik: k.baslik,
-        kw: [k.konu, ...(k.anahtar_kelimeler || [])].join(" "), topic: k.konu, category: k.kategori || "Diğer", er: Boolean(k.acil),
+        kw: [k.konu, ...(k.anahtar_kelimeler || [])].join(" "), phrases: [k.konu, ...(k.anahtar_kelimeler || [])], topic: k.konu, category: k.kategori || "Diğer", er: Boolean(k.acil),
       }));
       const counts = {};
       library.forEach((k) => { counts[k.kind] = (counts[k.kind] || 0) + 1; });

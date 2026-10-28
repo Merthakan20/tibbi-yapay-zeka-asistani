@@ -76,7 +76,11 @@
         "insülin direnci",
         "çok su içme",
         "sık idrar",
-        "ağız kuruluğu"
+        "ağız kuruluğu",
+        "şekerim yüksek",
+        "kan şekerim yüksek",
+        "susama",
+        "çok su içmek"
       ],
       "baslik": "Tip 2 Diyabet Nedir, Belirtileri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -97,7 +101,11 @@
         "açlık kan şekeri",
         "prediyabet",
         "bulanık görme",
-        "uyuşma"
+        "uyuşma",
+        "şekerim yüksek",
+        "kan şekerim yüksek",
+        "susama",
+        "çok su içmek"
       ],
       "baslik": "Tip 2 Diyabet Nedir? Tip 2 Diyabet Belirtileri Nelerdir?",
       "kurum": "Medical Park Hastaneleri",
@@ -116,7 +124,11 @@
         "diyabet",
         "A1C",
         "kan şekeri",
-        "insülin"
+        "insülin",
+        "şekerim yüksek",
+        "kan şekerim yüksek",
+        "susama",
+        "çok su içmek"
       ],
       "baslik": "Diabetes Type 2 (Tip 2 Diyabet)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -164,7 +176,10 @@
         "burun akıntısı",
         "hapşırma",
         "boğaz ağrısı",
-        "titreme"
+        "titreme",
+        "burnum akıyor",
+        "üşüme ve titreme",
+        "ateşim var"
       ],
       "baslik": "Mevsimsel grip, soğuk algınlığı nedir?",
       "kurum": "T.C. Sağlık Bakanlığı Arnavutköy Devlet Hastanesi",
@@ -188,7 +203,10 @@
         "burun akıntısı",
         "hapşırma",
         "boğaz ağrısı",
-        "titreme"
+        "titreme",
+        "burnum akıyor",
+        "üşüme ve titreme",
+        "ateşim var"
       ],
       "baslik": "Grip Belirtileri Nelerdir? Gribe Ne İyi Gelir, Nasıl Geçer?",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -211,7 +229,10 @@
         "burun akıntısı",
         "hapşırma",
         "boğaz ağrısı",
-        "titreme"
+        "titreme",
+        "burnum akıyor",
+        "üşüme ve titreme",
+        "ateşim var"
       ],
       "baslik": "Flu (Grip)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -274,7 +295,9 @@
         "ağza acı su gelmesi",
         "göğüste yanma",
         "geğirme",
-        "boğazda yanma"
+        "boğazda yanma",
+        "hazımsızlık",
+        "midede dolgunluk"
       ],
       "baslik": "Gastroözofageal Reflü (GERD) ve Tedavi Yöntemleri",
       "kurum": "T.C. Sağlık Bakanlığı Koşuyolu Yüksek İhtisas Eğitim ve Araştırma Hastanesi",
@@ -297,7 +320,9 @@
         "endoskopi",
         "mide ekşimesi",
         "geğirme",
-        "boğazda yanma"
+        "boğazda yanma",
+        "hazımsızlık",
+        "midede dolgunluk"
       ],
       "baslik": "Gastroözofageal Reflü (GÖRH) Nedir?",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -319,7 +344,9 @@
         "yutma güçlüğü",
         "mide ekşimesi",
         "geğirme",
-        "boğazda yanma"
+        "boğazda yanma",
+        "hazımsızlık",
+        "midede dolgunluk"
       ],
       "baslik": "GERD (Gastroözofageal Reflü Hastalığı)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -848,7 +875,10 @@
         "SGPT",
         "SGOT",
         "karaciğer yağlanması",
-        "hepatit"
+        "hepatit",
+        "karaciğer değerleri yüksek",
+        "karaciğer değerleri",
+        "koyu renkli idrar"
       ],
       "ozet": "Karaciğer enzimleri karaciğer hücrelerinden salınan ve organın durumunu yansıtan proteinlerdir; ALT ve AST'nin yükselmesi hücre hasarına işaret eder. Yükselmenin nedenleri arasında alkol, viral hepatitler, ilaç yan etkileri, karaciğer yağlanması, safra kesesi hastalıkları, siroz ve otoimmün hastalıklar vardır. Tanıda kan testleri, ultrason ve gerekirse biyopsi kullanılır. Tedavi altta yatan nedeni ortadan kaldırmaya yöneliktir; sağlıklı beslenme, egzersiz ve alkolü bırakma önerilir. Düzenli doktor kontrolü önemlidir; tedavi edilmeyen yüksek enzimler karaciğer yetmezliğine kadar ilerleyebilir."
     },
@@ -870,7 +900,10 @@
         "ALP",
         "bilirubin",
         "albümin",
-        "sarılık"
+        "sarılık",
+        "karaciğer değerleri yüksek",
+        "karaciğer değerleri",
+        "koyu renkli idrar"
       ],
       "ozet": "Karaciğer fonksiyon testleri kanda albümin, total protein, alkalen fosfataz (ALP), ALT, AST, GGT, bilirubin, LDH ve protrombin zamanı gibi değerleri ölçer; karaciğer hastalığının tanısı, hasarın değerlendirilmesi ve tedavinin izlenmesi için kullanılır. Bulantı, iştahsızlık, yorgunluk, sarılık, karında şişlik, koyu renkli idrar ve kaşıntı karaciğer hasarını düşündüren belirtilerdir. Ailede karaciğer hastalığı, alkol bağımlılığı, obezite, diyabet ve hepatit teması risk faktörüdür. Koldan kan alınarak yapılır; bazen 10-12 saat açlık istenir. Anormal sonuçlar karaciğer iltihabı, hepatit, safra yolu sorunları veya ilaca bağlı hasar gibi durumlara işaret edebilir ve doktorla değerlendirilmelidir."
     },
@@ -1052,7 +1085,9 @@
         "bacakta şişlik",
         "ödem",
         "çabuk yorulma",
-        "kalp büyümesi"
+        "kalp büyümesi",
+        "eforla nefes darlığı",
+        "merdiven çıkınca nefes darlığı"
       ],
       "baslik": "Kalp Yetmezliği Belirtileri ve Tedavi Yöntemleri",
       "kurum": "T.C. Sağlık Bakanlığı Şanlıurfa İl Sağlık Müdürlüğü",
@@ -1071,7 +1106,9 @@
         "BNP",
         "ödem",
         "kilo artışı",
-        "yatınca nefes darlığı"
+        "yatınca nefes darlığı",
+        "eforla nefes darlığı",
+        "merdiven çıkınca nefes darlığı"
       ],
       "baslik": "Heart Failure (Kalp Yetmezliği)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -1229,7 +1266,8 @@
         "hapşırma",
         "göz kaşıntısı",
         "burun akıntısı",
-        "bahar alerjisi"
+        "bahar alerjisi",
+        "burnum akıyor"
       ],
       "baslik": "Saman Nezlesi Nedir? Saman Nezlesi Belirtileri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -1247,7 +1285,9 @@
         "saman nezlesi",
         "polen",
         "alerji aşısı",
-        "burun spreyi"
+        "burun spreyi",
+        "burnum akıyor",
+        "burun akıntısı"
       ],
       "baslik": "Hay Fever (Saman Nezlesi)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -1268,7 +1308,11 @@
         "üst karın ağrısı",
         "bulantı",
         "şişkinlik",
-        "mide yanması"
+        "mide yanması",
+        "hazımsızlık",
+        "midede dolgunluk",
+        "bulantı ve kusma",
+        "midem bulanıyor"
       ],
       "baslik": "Gastrit Nedir? Gastrit Belirtileri Nelerdir? Gastrite Ne İyi Gelir?",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -1309,7 +1353,8 @@
         "H. pylori",
         "nefes testi",
         "ağrı kesici",
-        "mide ağrısı"
+        "mide ağrısı",
+        "siyah dışkı"
       ],
       "baslik": "Peptic Ulcer (Peptik Ülser)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -1369,7 +1414,9 @@
         "kusma",
         "norovirüs",
         "besin zehirlenmesi",
-        "sıvı kaybı"
+        "sıvı kaybı",
+        "bulantı ve kusma",
+        "midem bulanıyor"
       ],
       "baslik": "Gastroenterit Nedir? Belirtileri, Nedenleri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -1388,7 +1435,9 @@
         "sulu dışkı",
         "ORS",
         "ağızdan sıvı tedavisi",
-        "kronik ishal"
+        "kronik ishal",
+        "bulantı ve kusma",
+        "midem bulanıyor"
       ],
       "baslik": "Diarrhea (İshal)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -1654,7 +1703,9 @@
         "el titremesi",
         "kilo kaybı",
         "çarpıntı",
-        "göz büyümesi"
+        "göz büyümesi",
+        "istemsiz kilo kaybı",
+        "ellerde titreme"
       ],
       "baslik": "Hipertiroidi Nedir? Hipertiroidi Belirtileri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -1673,7 +1724,9 @@
         "Graves",
         "tiroid nodülü",
         "beta bloker",
-        "sıcağa tahammülsüzlük"
+        "sıcağa tahammülsüzlük",
+        "istemsiz kilo kaybı",
+        "ellerde titreme"
       ],
       "baslik": "Hyperthyroidism (Hipertiroidi)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -1952,7 +2005,8 @@
         "gece uyanma",
         "erken uyanma",
         "uyku ilacı",
-        "uyku hijyeni"
+        "uyku hijyeni",
+        "uykum gelmiyor"
       ],
       "baslik": "Uykusuzluk (İnsomnia) Nedir? Uykusuzluk Tedavisi",
       "kurum": "Medical Park Hastaneleri",
@@ -1970,7 +2024,9 @@
         "uykusuzluk",
         "insomnia",
         "uyku çalışması",
-        "davranışçı terapi"
+        "davranışçı terapi",
+        "uykum gelmiyor",
+        "uyuyamıyorum"
       ],
       "baslik": "Insomnia (Uykusuzluk)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -1990,7 +2046,9 @@
         "siyatik",
         "bacağa vuran ağrı",
         "bacakta uyuşma",
-        "disk kayması"
+        "disk kayması",
+        "belim tutuldu",
+        "bel tutulması"
       ],
       "baslik": "Bel Fıtığı Belirtileri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -2008,7 +2066,9 @@
         "disk fıtığı",
         "bel fıtığı",
         "siyatik",
-        "MR"
+        "MR",
+        "belim tutuldu",
+        "bel tutulması"
       ],
       "baslik": "Herniated Disk (Disk Fıtığı)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -2067,7 +2127,9 @@
         "eklem ağrısı",
         "dizde çıtırtı",
         "kalça ağrısı",
-        "artroz"
+        "artroz",
+        "merdiven inerken diz ağrısı",
+        "dizde su toplanması"
       ],
       "baslik": "Osteoartrit Nedir? Belirtileri, Nedenleri ve Tedavi Yöntemleri",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -2085,7 +2147,9 @@
         "osteoartrit",
         "kıkırdak",
         "sabah tutukluğu",
-        "eklem enjeksiyonu"
+        "eklem enjeksiyonu",
+        "merdiven inerken diz ağrısı",
+        "dizde su toplanması"
       ],
       "baslik": "Osteoarthritis (Osteoartrit)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -2181,7 +2245,8 @@
         "belden kasığa vuran ağrı",
         "idrarda kan",
         "kum dökme",
-        "ESWL"
+        "ESWL",
+        "kasık ağrısı"
       ],
       "baslik": "Böbrek Taşı Belirtileri, Nedenleri ve Tedavi Yöntemleri",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -2199,7 +2264,8 @@
         "böbrek taşı",
         "idrarda kan",
         "ateş ve titreme",
-        "taş düşürme"
+        "taş düşürme",
+        "kasık ağrısı"
       ],
       "baslik": "Kidney Stones (Böbrek Taşları)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -2257,7 +2323,10 @@
         "GFR",
         "diyaliz",
         "ödem",
-        "idrar azalması"
+        "idrar azalması",
+        "göz kapağında şişlik",
+        "köpüklü idrar",
+        "bacaklarda şişlik"
       ],
       "baslik": "Böbrek Yetmezliği Nedir? Böbrek Yetmezliği Belirtileri ve Nedenleri",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -2275,7 +2344,10 @@
         "kronik böbrek hastalığı",
         "diyabet",
         "tansiyon",
-        "tuz kısıtlaması"
+        "tuz kısıtlaması",
+        "göz kapağında şişlik",
+        "köpüklü idrar",
+        "bacaklarda şişlik"
       ],
       "baslik": "Chronic Kidney Disease (Kronik Böbrek Hastalığı)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -2431,7 +2503,9 @@
         "ateş düşürücü",
         "yüksek ateş",
         "havale",
-        "ateş kaç derece"
+        "ateş kaç derece",
+        "bebeğim ateşlendi",
+        "ateşlendi"
       ],
       "baslik": "Ateş",
       "kurum": "T.C. Sağlık Bakanlığı İzmir Dr. Behçet Uz Çocuk Hastanesi",
@@ -2449,7 +2523,9 @@
         "ateş",
         "aspirin çocuklara verilmez",
         "febril konvülsiyon",
-        "sıvı"
+        "sıvı",
+        "bebeğim ateşlendi",
+        "ateşlendi"
       ],
       "baslik": "Fever (Ateş)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -2546,7 +2622,9 @@
         "hiçbir şeyden keyif alamama",
         "umutsuzluk",
         "antidepresan",
-        "intihar düşüncesi"
+        "intihar düşüncesi",
+        "depresyondayım",
+        "kendine zarar verme düşüncesi"
       ],
       "baslik": "Depresyon Nedir? Depresyon Belirtileri Nelerdir?",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -2564,7 +2642,10 @@
         "depresyon",
         "psikoterapi",
         "antidepresan",
-        "intihar"
+        "intihar",
+        "depresyondayım",
+        "kendine zarar verme düşüncesi",
+        "intihar düşüncesi"
       ],
       "baslik": "Depression (Depresyon)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -2624,7 +2705,9 @@
         "cilt kuruluğu",
         "kızarıklık",
         "pullanma",
-        "bebekte egzama"
+        "bebekte egzama",
+        "ciltte kaşıntı",
+        "kaşınıyorum"
       ],
       "baslik": "Atopik Dermatit Nedir? Atopik Dermatit Belirtileri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -2642,7 +2725,9 @@
         "egzama",
         "dermatit",
         "kaşıntı",
-        "nemlendirici"
+        "nemlendirici",
+        "ciltte kaşıntı",
+        "kaşınıyorum"
       ],
       "baslik": "Eczema (Egzama)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -2738,7 +2823,9 @@
         "kabarık kaşıntılı döküntü",
         "alerji",
         "antihistaminik",
-        "dudak şişmesi"
+        "dudak şişmesi",
+        "ciltte kaşıntı",
+        "kaşınıyorum"
       ],
       "baslik": "Kurdeşen (Ürtiker) Nedir? Kurdeşen Neden Olur?",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -2756,7 +2843,9 @@
         "kurdeşen",
         "ürtiker",
         "anjiyoödem",
-        "boğazda şişlik"
+        "boğazda şişlik",
+        "ciltte kaşıntı",
+        "kaşınıyorum"
       ],
       "baslik": "Hives (Kurdeşen)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -3161,7 +3250,9 @@
         "uykuda nefes durması",
         "gündüz uyuklama",
         "CPAP",
-        "sabah baş ağrısı"
+        "sabah baş ağrısı",
+        "horluyorum",
+        "horlamak"
       ],
       "baslik": "Uyku Apnesi Nedir? Uyku Apnesi Belirtileri, Nedenleri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -3179,7 +3270,9 @@
         "uyku apnesi",
         "obstrüktif",
         "horlama",
-        "trafik kazası"
+        "trafik kazası",
+        "horluyorum",
+        "horlamak"
       ],
       "baslik": "Sleep Apnea (Uyku Apnesi)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -3334,7 +3427,10 @@
         "insülin",
         "çok su içme",
         "yatak ıslatma",
-        "kilo kaybı"
+        "kilo kaybı",
+        "susama",
+        "çok su içmek",
+        "istemsiz kilo kaybı"
       ],
       "baslik": "Tip 1 Diyabet Nedir? Tip 1 Diyabet Hakkında Her Şey",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -3352,7 +3448,10 @@
         "tip 1 diyabet",
         "insülin pompası",
         "A1C",
-        "otoimmün"
+        "otoimmün",
+        "susama",
+        "çok su içmek",
+        "istemsiz kilo kaybı"
       ],
       "baslik": "Diabetes Type 1 (Tip 1 Diyabet)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -4670,7 +4769,9 @@
         "tavuk zehirlenmesi",
         "bozuk yemek",
         "yemekten sonra kusma",
-        "toplu zehirlenme"
+        "toplu zehirlenme",
+        "bulantı ve kusma",
+        "midem bulanıyor"
       ],
       "baslik": "Besin Zehirlenmeleri ve Korunma Yolları",
       "kurum": "T.C. Sağlık Bakanlığı Kırklareli İl Sağlık Müdürlüğü",
@@ -4689,7 +4790,9 @@
         "besin zehirlenmesi",
         "sıvı kaybı",
         "kusma",
-        "ishal"
+        "ishal",
+        "bulantı ve kusma",
+        "midem bulanıyor"
       ],
       "baslik": "Foodborne Illness (Besin Zehirlenmesi)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -5139,7 +5242,11 @@
         "H. pylori",
         "ağrı kesici mideye",
         "siyah dışkı",
-        "endoskopi"
+        "endoskopi",
+        "hazımsızlık",
+        "midede dolgunluk",
+        "bulantı ve kusma",
+        "midem bulanıyor"
       ],
       "baslik": "Gastritis (Gastrit)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -7094,7 +7201,8 @@
         "Hodgkin",
         "ağrısız lenf bezi",
         "gece terlemesi kilo kaybı",
-        "boyunda ağrısız şişlik"
+        "boyunda ağrısız şişlik",
+        "istemsiz kilo kaybı"
       ],
       "baslik": "Lenf Kanseri (Lenfoma) Nedir? Lenfoma Belirtileri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -7111,7 +7219,8 @@
       "anahtar_kelimeler": [
         "lenfoma",
         "Hodgkin dışı lenfoma",
-        "lenfoma belirtileri"
+        "lenfoma belirtileri",
+        "istemsiz kilo kaybı"
       ],
       "baslik": "Lymphoma (Lenfoma)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -7290,7 +7399,8 @@
         "hepatit A aşısı",
         "çocukta sarılık",
         "kirli su",
-        "gözlerim sarardı"
+        "gözlerim sarardı",
+        "koyu renkli idrar"
       ],
       "baslik": "Hepatit A Hastalığı",
       "kurum": "T.C. Sağlık Bakanlığı Aşı Portalı",
@@ -7307,7 +7417,8 @@
       "anahtar_kelimeler": [
         "hepatit A",
         "HAV",
-        "seyahatte hepatit"
+        "seyahatte hepatit",
+        "koyu renkli idrar"
       ],
       "baslik": "Hepatitis A (Hepatit A)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -8039,12 +8150,11 @@
       "acil": false,
       "anahtar_kelimeler": [
         "gebelikte bulantı",
-        "hamilelikte bulantı",
-        "hamilelikte kusma",
         "sabah bulantısı",
         "aşerme",
         "hiperemezis",
-        "hamileyim sürekli kusuyorum"
+        "hamileyken kusma",
+        "hamile"
       ],
       "baslik": "Hamilelikte Mide Bulantısı Ne Zaman Başlar?",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -8063,8 +8173,7 @@
         "zencefil",
         "B6 vitamini gebelik",
         "hamilelikte sıvı tutamıyorum",
-        "hamilelikte kusma",
-        "hamilelikte bulantı"
+        "hamileyken bulantı"
       ],
       "baslik": "Morning Sickness (Gebelik Bulantısı)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
