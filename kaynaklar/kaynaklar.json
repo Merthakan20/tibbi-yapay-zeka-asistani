@@ -7715,6 +7715,485 @@
       "url": "https://medlineplus.gov/lab-tests/prothrombin-time-test-and-inr-ptinr/",
       "dil": "en",
       "ozet": "PT/INR testi, bir kan örneğinde pıhtı oluşmasının kaç saniye sürdüğünü ölçer; INR farklı laboratuvarların sonuçlarını karşılaştırılabilir hale getirir. Varfarinin etkisini izlemek, açıklanamayan ağır kanama veya kolay morarmayı araştırmak, pıhtılaşma bozukluklarını değerlendirmek, karaciğer sağlığını kontrol etmek ve ameliyattan önce pıhtılaşmanın normal olduğunu doğrulamak için yapılır. INR çok düşükse kan fazla kolay pıhtılaşır ve tehlikeli pıhtı riski artar; çok yüksekse kan geç pıhtılaşır ve tehlikeli kanama riski artar. Yeşil yapraklı sebzeler gibi K vitamini içeren besinler, soya ve kanola yağı, çok yağlı beslenme, alkol ve bazı ilaçlar ile takviyeler sonucu etkileyebilir."
+    },
+    {
+      "id": "isitmekaybi-acibadem",
+      "konu": "İşitme kaybı ve ani işitme kaybı",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "işitme kaybı",
+        "ani işitme kaybı",
+        "kulağım duymuyor",
+        "bir kulağım birden duymaz oldu",
+        "duyma azlığı",
+        "sağırlık",
+        "kulakta dolgunluk"
+      ],
+      "baslik": "Ani İşitme Kaybında Hızla Doktora Gidin",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/saglikli-yasam/ani-isitme-kaybinda-hizla-doktora-gidin/",
+      "dil": "tr",
+      "ozet": "Ani işitme kaybı, 72 saat içinde gelişen ve işitme testinde ardışık üç frekansta 30 dB'den fazla kayıpla tanımlanan, iç kulak dokularının zarar gördüğü bir durumdur; genellikle tek kulağı etkiler. İşitmede ani azalmanın yanında hastaların yaklaşık %70'inde kulak çınlaması, kulakta dolgunluk ve uğultu görülür. Virüs enfeksiyonları, damar hastalıkları, bağışıklık sorunları, yüksek ses, bazı antibiyotikler ve kemoterapi ilaçları, sigara, alkol ve alerjik hastalıklar rol oynayabilir. İlk 3 gün çok önemlidir: bu sürede başlanan tedaviyle tam veya tama yakın iyileşme sağlanabilir, gecikme iyileşme şansını azaltır; bu nedenle işitme birden azalırsa beklemeden hekime başvurulmalıdır. Tedavide önce ilaç kullanılır, yanıt alınamazsa hiperbarik oksijen tedavisi uygulanabilir."
+    },
+    {
+      "id": "isitmekaybi-medlineplus",
+      "konu": "İşitme kaybı ve ani işitme kaybı",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "işitme kaybı",
+        "işitme cihazı",
+        "koklear implant",
+        "gürültüye bağlı işitme kaybı",
+        "yaşlılıkta işitme kaybı",
+        "kulağım duymuyor",
+        "duymakta zorlanıyorum"
+      ],
+      "baslik": "Hearing Problems and Deafness (İşitme Sorunları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/hearingdisordersanddeafness.html",
+      "dil": "en",
+      "ozet": "İşitme kaybının iki ana türü vardır: iç kulağın veya işitme sinirinin hasar gördüğü ve genellikle kalıcı olan tür ile sesin iç kulağa ulaşamadığı, çoğu zaman tedavi veya ameliyatla düzelebilen tür. Kalıtım, kulak enfeksiyonu ve menenjit gibi hastalıklar, yaralanmalar, bazı ilaçlar, uzun süre yüksek sese maruz kalmak ve yaşlanma nedenler arasındadır. İşitme sorunları duymayı zorlaştırır ve konuşmaları takip etmeyi güçleştirir. Tanı işitme testleriyle (odyometri) konur. Tedavide işitme cihazları, koklear implant, özel eğitim, bazı ilaçlar ve ameliyat kullanılır. Gürültüden korunmak işitme kaybını önlemeye yardımcı olur."
+    },
+    {
+      "id": "seskisikligi-acibadem",
+      "konu": "Ses kısıklığı",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ses kısıklığı",
+        "sesim kısıldı",
+        "sesim çıkmıyor",
+        "larenjit",
+        "ses telleri",
+        "sesim gitti",
+        "boğuk ses"
+      ],
+      "baslik": "Ses Kısıklığına Ne İyi Gelir? Ses Kısıklığı Neden Olur?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/ses-kisikligi/",
+      "dil": "tr",
+      "ozet": "Ses kısıklığı çoğunlukla gırtlak enfeksiyonları ve ses tellerindeki sorunlardan kaynaklanır; kısa süreli kısıklık soğuk algınlığı gibi basit nedenlerle olur, uzun süreli kısıklık ise ciddi bir durumun işareti olabilir. Üst solunum yolu enfeksiyonları, reflü, sigara ve pasif içicilik, yüksek sesle konuşma veya şarkı söyleme, nörolojik hastalıklar ve alerjiler başlıca nedenlerdir. Sesi dinlendirmek (fısıldamaktan da kaçınarak), bol sıvı içmek, ortamı nemli tutmak ve boğaz ağrısı varsa ılık tuzlu suyla gargara yapmak yardımcı olur. Kısıklık 1 haftadan uzun sürerse kulak burun boğaz uzmanına görünmek gerekir. Sesin tamamen gitmesi, yutkunma güçlüğü ve nefes darlığı hekime başvurmayı gerektirir."
+    },
+    {
+      "id": "seskisikligi-medlineplus",
+      "konu": "Ses kısıklığı",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ses kısıklığı",
+        "gırtlak kanseri",
+        "çocukta ses kısıklığı",
+        "sesim kısıldı",
+        "sesim çıkmıyor"
+      ],
+      "baslik": "Hoarseness (Ses Kısıklığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003054.htm",
+      "dil": "en",
+      "ozet": "Ses kısıklığında konuşurken ses çıkarmak zorlaşır; ses zayıf, hırıltılı, çatlak veya boğuk olur. En sık neden soğuk algınlığı gibi üst solunum yolu enfeksiyonlarıdır ve genellikle 2 hafta içinde geçer; reflü, alerjiler, uzun süren öksürük, sesi fazla kullanmak (bağırmak, şarkı söylemek), yoğun sigara ve alkol de neden olabilir; nadir ama ciddi bir neden gırtlak kanseridir. Kısıklık geçene kadar yalnızca gerektiğinde konuşmak, bol sıvı içmek, nemlendirici kullanmak, fısıldamaktan, bağırmaktan ve şarkı söylemekten kaçınmak, sigarayı bırakmak ve burun açıcı ilaçlardan uzak durmak önerilir. Nefes alma veya yutmada güçlük olursa, küçük çocuklarda kısıklıkla birlikte salya akması varsa hemen, çocuklarda 1 haftadan, yetişkinlerde 2-3 haftadan uzun süren kısıklıkta ise hekime başvurulmalıdır."
+    },
+    {
+      "id": "kulakkiri-acibadem",
+      "konu": "Kulak kiri tıkanması (buşon)",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kulak kiri",
+        "buşon",
+        "kulağım tıkandı",
+        "kulak tıkanıklığı",
+        "kulak çubuğu",
+        "kulak temizliği",
+        "kulak mumu"
+      ],
+      "baslik": "Kulak Kiri (Buşon) Nedir? Kulak Kiri Nasıl Temizlenir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/kulak-kiri-buson/",
+      "dil": "tr",
+      "ozet": "Kulak kiri dış kulak yolunu toza, mikroplara ve suya karşı koruyan doğal bir salgıdır. Fazla salgı, dar kulak yolu, kulaklık ve kulak çubuğu kullanımı ile yaşa bağlı kuruluk kirin birikip yolu tıkamasına (buşon) yol açabilir. Kulakta dolgunluk, boğuk duyma, işitme azalması, çınlama, ağrı, kaşıntı ve baş dönmesi görülebilir. Evde hekimin önerdiği kulak damlası veya gliserin ya da mineral yağ içeren yumuşatıcı damlalar birkaç gün kullanılabilir. Kulak çubuğu kiri daha da içeri ittiği, kulak mumu ise yanık riski taşıdığı için kesinlikle kullanılmamalı; vakumlu temizleme cihazlarından da kaçınılmalıdır. Hekim kulağı yıkayarak, aspiratörle veya küretle temizleyebilir. Kulak zarında delik veya enfeksiyon varsa önce hekim kontrolü gerekir."
+    },
+    {
+      "id": "kulakkiri-medlineplus",
+      "konu": "Kulak kiri tıkanması (buşon)",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kulak kiri",
+        "kulak damlası",
+        "kulak yıkama"
+      ],
+      "baslik": "Ear Wax (Kulak Kiri)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000979.htm",
+      "dil": "en",
+      "ozet": "Kulak kiri toz, bakteri ve mikropları yakalayarak kulağı korur ve kulak yolunun hassas derisini sudan kaynaklanan tahrişten korur. Kir yolu tıkarsa kulak ağrısı, dolgunluk hissi, çınlama ve giderek artabilen kısmi işitme kaybı olabilir. Kiri yumuşatmak için bebek yağı, eczanede satılan kulak damlaları, gliserin veya mineral yağ damlatılabilir; ardından vücut ısısındaki suyla, şırıngayla kulak yolunun duvarına doğru nazikçe yıkanabilir. Kulak yoluna asla pamuklu çubuk sokulmamalı, diş temizliği için yapılan basınçlı su cihazları kullanılmamalıdır; kulak zarında delik olabilecekse yıkama yapılmamalı ve damla kullanılmamalıdır. Kiri kendiniz çıkaramıyorsanız, rahatsızlık, yakın zamanda kulak ameliyatı, olası zar deliği varsa ya da temizlikten sonra akıntı, ağrı, ateş veya geçmeyen işitme kaybı olursa hekime başvurulmalıdır."
+    },
+    {
+      "id": "genizeti-acibadem",
+      "konu": "Çocuklarda geniz eti",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "geniz eti",
+        "adenoid",
+        "çocuğum ağzı açık uyuyor",
+        "çocukta horlama",
+        "geniz eti ameliyatı",
+        "burnundan nefes alamıyor",
+        "genizden konuşma"
+      ],
+      "baslik": "Geniz Eti Nedir? Geniz Eti Ameliyatı (Adenoidektomi) Nasıl Yapılır?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/geniz-eti-adenoid/",
+      "dil": "tr",
+      "ozet": "Geniz eti, burun boşluğunun arkasında yer alan ve bağışıklık sisteminin parçası olan lenf dokusudur. En aktif olduğu dönem 3-7 yaştır; 7-8 yaşlarında küçülmeye başlar ve ergenlikte işlevini yitirir. Büyüdüğünde sürekli burun tıkanıklığı ve ağızdan nefes alma, horlama ve uykuda nefes durması, sık kulak enfeksiyonları, işitme azalması, ses değişikliği ve yutma güçlüğü görülebilir. Tedavi edilmezse kalıcı solunum ve işitme sorunları, yüz kemiklerinin anormal gelişimi ('adenoid yüzü'), konuşma ve okul başarısında gerileme olabilir. Tanı ince kamerayla yapılan endoskopik muayene, röntgen veya işitme testleriyle konur. Horlama, uyku apnesi, sık orta kulak enfeksiyonu veya ciddi burun tıkanıklığında ameliyat düşünülür; çocuk genellikle aynı gün taburcu olur ve birkaç günde normal yaşama döner."
+    },
+    {
+      "id": "genizeti-medlineplus",
+      "konu": "Çocuklarda geniz eti",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "geniz eti",
+        "adenoidektomi",
+        "çocukta uyku apnesi",
+        "ağzı açık uyumak",
+        "çocukta horlama"
+      ],
+      "baslik": "Enlarged Adenoids (Büyümüş Geniz Eti)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001649.htm",
+      "dil": "en",
+      "ozet": "Geniz eti, burun ile boğaz arasında, üst solunum yolunda bulunan ve bademciklere benzeyen bir lenf dokusudur; mikropları yakalayarak enfeksiyonları önlemeye yardım eder. Büyüme sırasında geniz etinin büyümesi normal olabilir; enfeksiyonlar şişmesine yol açar ve kişi hasta değilken de büyük kalabilir. Burun tıkandığı için çocuklar çoğunlukla ağızdan nefes alır; bu ağız kokusu, dudak çatlaması ve ağız kuruluğuna yol açar. Horlama, huzursuz uyku, uykuda nefes durmaları (uyku apnesi) ve daha sık kulak enfeksiyonu görülebilir. Geniz eti ağızdan görülemediği için özel bir aynayla veya burundan sokulan ince bir kamerayla bakılır; uyku apnesi düşünülürse röntgen veya uyku testi yapılabilir. Geniz eti yaşla küçüldüğü için çoğu çocukta tedavi gerekmez; enfeksiyonda antibiyotik veya burun spreyi verilebilir, belirtiler ağır ya da kalıcıysa ameliyatla alınması düşünülür. Çocuk burnundan nefes almakta zorlanıyorsa hekime başvurulmalıdır."
+    },
+    {
+      "id": "metaboliksendrom-temd",
+      "konu": "Metabolik sendrom",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "metabolik sendrom",
+        "bel çevresi",
+        "göbek yağlanması",
+        "karın bölgesi yağlanması",
+        "trigliserid yüksek",
+        "HDL düşük",
+        "insülin direnci"
+      ],
+      "baslik": "Metabolik Sendrom",
+      "kurum": "Türkiye Endokrinoloji ve Metabolizma Derneği",
+      "tur": "dernek",
+      "url": "https://temd.org.tr/halk/hastaliklar/metabolik-sendrom",
+      "dil": "tr",
+      "ozet": "Metabolik sendrom, kalp-damar hastalıkları ve tip 2 diyabet riskini artıran durumların bir arada bulunmasıdır. Tanı için şu ölçütlerden en az üçü gerekir: bel çevresinin kadında 90 cm, erkekte 100 cm veya üzerinde olması, trigliserid yüksekliği, kan basıncı yüksekliği, HDL kolesterol düşüklüğü ve diyabet düzeyine ulaşmamış kan şekeri yüksekliği. Obezitenin yaygın olması nedeniyle Türkiye'de toplumun yaklaşık %30-35'inde görülür. Tip 2 diyabet, inme, kalp ve damar tıkanıklıkları, böbrek yetmezliği, kalp yetmezliği ve uzuv kaybı riskini artırır. Tedavide sağlıklı beslenme, kilo verme ve egzersiz esastır; gerektiğinde uzman tarafından kişiye özel planlanan ilaçlar kullanılır."
+    },
+    {
+      "id": "metaboliksendrom-medlineplus",
+      "konu": "Metabolik sendrom",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "metabolik sendrom",
+        "trigliserid 150",
+        "açlık şekeri 100",
+        "göbek yağlanması",
+        "bel çevresi"
+      ],
+      "baslik": "Metabolic Syndrome (Metabolik Sendrom)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/metabolicsyndrome.html",
+      "dil": "en",
+      "ozet": "Metabolik sendrom, kalp hastalığı, diyabet ve diğer sağlık sorunları için risk etkenlerinin bir arada bulunmasıdır ve şu ölçütlerden en az üçüyle tanımlanır: geniş bel çevresi, 150 mg/dL veya üzeri trigliserid, kadınlarda 50, erkeklerde 40 mg/dL'nin altında HDL kolesterol, 130/85 mmHg veya üzeri tansiyon ve 100 mg/dL veya üzeri açlık kan şekeri. Fazla kilo ve obezite, hareketsizlik, insülin direnci, ileri yaş ve kalıtsal yatkınlık rol oynar. Kalp-damar hastalığı, diyabet ve inme riskini artırır; risk, bulunan etken sayısı arttıkça yükselir. En önemli tedavi kalp dostu bir yaşam tarzıdır: sağlıklı beslenme, kilo kontrolü, stresle başa çıkma, düzenli egzersiz ve sigarayı bırakmak. Yaşam tarzı değişiklikleri yetmezse ilaç gerekebilir."
+    },
+    {
+      "id": "diyabetikayak-cekerek",
+      "konu": "Diyabetik ayak ve ayak bakımı",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "diyabetik ayak",
+        "şeker ayağı",
+        "ayakta yara",
+        "ayak bakımı diyabet",
+        "ayağımda yara geçmiyor",
+        "ayaklarım uyuşuyor şeker",
+        "diyabet ayak uyuşması"
+      ],
+      "baslik": "Diyabette Ayak Bakımı Önemlidir",
+      "kurum": "T.C. Sağlık Bakanlığı Çekerek Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://cekerekdh.saglik.gov.tr/TR-248084/diyabette-ayak-bakimi-onemlidir.html",
+      "dil": "tr",
+      "ozet": "Uzun süreli diyabette yüksek kan şekeri sinirlere zarar vererek ayak sorunlarına yol açar; kontrolsüz şeker enfeksiyon riskini de artırır. Ayaklar her gün yıkanmalı ve özellikle parmak araları iyice kurulanmalıdır. Çoraplar her gün değiştirilmeli, pamuklu veya yünlü çorap tercih edilmelidir. Çatlakları önlemek için deri nemlendiricisi kullanılmalı, tırnaklar düzenli ve dikkatli kesilmelidir. Sıkı bağcıklı ve dar ayakkabılardan kaçınılmalı, ayağa uygun ayakkabı seçilmelidir. Ayakta herhangi bir yara, kızarıklık, döküntü veya olağandışı bir değişiklik fark edilirse en ufak şüphede hekime başvurulmalıdır."
+    },
+    {
+      "id": "diyabetikayak-medlineplus",
+      "konu": "Diyabetik ayak ve ayak bakımı",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "diyabetik ayak",
+        "kangren",
+        "ayak ülseri",
+        "amputasyon"
+      ],
+      "baslik": "Diabetic Foot (Diyabetik Ayak)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/diabeticfoot.html",
+      "dil": "en",
+      "ozet": "Yüksek kan şekeri ayaklardaki sinirlere ve damarlara zarar verir; ayakta uyuşma ve his azalması olur, bu yüzden yaralar geç fark edilir ve zor iyileşir; enfeksiyon, kangren ve ayağın kesilmesi (amputasyon) gelişebilir. Ayaklar her gün kesik, kızarıklık ve deri değişikliği açısından kontrol edilmeli; ılık su ve sabunla yıkanmalı ama suda bekletilmemeli; parmak aralarına pudra, diğer yerlere losyon sürülmelidir. Nasır ve sertliklerin nasıl temizleneceği hekime sorulmalı, tırnaklar düz kesilmelidir. Her zaman ayağa uygun ayakkabı ve çorap ya da terlik giyilmeli, yalınayak yürünmemeli ve ayaklar aşırı sıcak ve soğuktan korunmalıdır. Birkaç günde iyileşmeyen yara, kızarık veya sıcak deri, kurumuş kan içeren nasır ya da kararmış, kötü kokulu doku varsa hemen hekime başvurulmalıdır. Kan şekerinin kontrolü ve düzenli ayak bakımı en önemli korunma yollarıdır."
+    },
+    {
+      "id": "prolaktin-acibadem",
+      "konu": "Prolaktin yüksekliği",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "prolaktin",
+        "prolaktin yüksek",
+        "süt hormonu",
+        "memeden süt gelmesi",
+        "hiperprolaktinemi",
+        "prolaktinoma",
+        "hipofiz tümörü"
+      ],
+      "baslik": "Prolaktin (LTH) Nedir? Düşüklüğü ve Yüksekliği Ne Anlama Gelir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/prolaktin-nedir/",
+      "dil": "tr",
+      "ozet": "Prolaktin, hipofiz bezinden salgılanan ve süt üretimini sağlayan bir hormondur; cinsel sağlık, metabolizma ve bağışıklık üzerinde de etkilidir. Normal değer gebe olmayan kadınlarda 4-25 ng/mL, erkeklerde 3-20 ng/mL'dir. Hipofizde prolaktin salgılayan iyi huylu tümör (prolaktinoma), tiroid tembelliği, böbrek yetmezliği, polikistik over sendromu, bazı antidepresan, tansiyon ve bulantı ilaçları, gebelik ve stres prolaktini yükseltebilir. Kadınlarda adet düzensizliği veya adet görmeme, kısırlık ve memeden süt gelmesi; erkeklerde testosteron düşüklüğü, cinsel istek kaybı, sertleşme sorunu ve kısırlık görülebilir."
+    },
+    {
+      "id": "prolaktin-medlineplus",
+      "konu": "Prolaktin yüksekliği",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "prolaktinoma",
+        "hipofiz adenomu",
+        "galaktore",
+        "kabergolin"
+      ],
+      "baslik": "Prolactinoma (Prolaktinoma)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000336.htm",
+      "dil": "en",
+      "ozet": "Prolaktinoma, prolaktin hormonu üreten iyi huylu (kanser olmayan) bir hipofiz tümörüdür; hipofiz adenomlarının yaklaşık %50'sini oluşturur, en sık 20'li ve 30'lu yaşlarda ve kadınlarda görülür. Kadınlarda memeden anormal süt gelmesi, adet düzensizliği veya adet görmeme, kısırlık ve cinsel istekte azalma; erkeklerde cinsel istek kaybı, sertleşme sorunu, memelerde büyüme ve kısırlık görülebilir; her iki cinsiyette baş ağrısı ve görme değişiklikleri olabilir. Tanıda kanda prolaktin düzeyi, hipofiz MR'ı ve tiroid testleri kullanılır; tiroid tembelliği prolaktinomayı taklit edebilir. Tedavide ilaçlar çoğunlukla başarılıdır; tümörü küçükken bulunan bazı hastalar 2-3 yıl sonra ilacı bırakabilir. İlaca yanıt vermeyen veya ağır belirti veren durumlarda ameliyat ya da radyoterapi uygulanır."
+    },
+    {
+      "id": "paratiroid-acibadem",
+      "konu": "Paratiroid hastalıkları (kalsiyum yüksekliği)",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "paratiroid",
+        "hiperparatiroidi",
+        "PTH yüksek",
+        "parathormon",
+        "kalsiyum yüksek",
+        "paratiroid adenomu",
+        "hiperkalsemi"
+      ],
+      "baslik": "Paratiroid Bezi Hastalıkları Nedir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/paratiroid-bezi-hastaliklari-nedir/",
+      "dil": "tr",
+      "ozet": "Paratiroid bezleri tiroidin arkasında bulunan dört küçük bezdir; kalsiyum ve fosfor dengesini düzenleyen parathormonu (PTH) salgılarlar. En sık hastalık, fazla PTH salgılanması ve kalsiyumun yükselmesiyle seyreden hiperparatiroididir; az PTH salgılanması (hipoparatiroidi) ise kalsiyumu düşürür. Paratiroid adenomu bezin iyi huylu büyümesidir; paratiroid kanseri nadirdir. Kemik ağrısı ve kemik erimesi, böbrek taşı, kas krampları ve seğirme, yorgunluk, hafıza sorunları ve kas güçsüzlüğü görülebilir. Tanıda kanda kalsiyum ve PTH ölçümü, ultrason ve paratiroid sintigrafisi kullanılır. Tedavide ameliyat (paratiroidektomi), ilaç ve mineral desteği uygulanır."
+    },
+    {
+      "id": "paratiroid-medlineplus",
+      "konu": "Paratiroid hastalıkları (kalsiyum yüksekliği)",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hiperparatiroidi",
+        "paratiroid ameliyatı",
+        "yüksek kalsiyum böbrek taşı"
+      ],
+      "baslik": "Hyperparathyroidism (Hiperparatiroidi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001215.htm",
+      "dil": "en",
+      "ozet": "Hiperparatiroidi, boyundaki paratiroid bezlerinden birinin veya birkaçının fazla parathormon (PTH) üretmesidir. Vakaların yaklaşık %80'i iyi huylu tümörlerden kaynaklanır; genellikle 40-65 yaşları arasında başlar ve kadınlarda daha sık görülür. Baş-boyun bölgesine radyasyon ve MEN I gibi kalıtsal sendromlar risk etkenleridir. Birçok kişide belirti yoktur; olduğunda kemik ağrısı, kafa karışıklığı, depresyon, yorgunluk, kemik kırılganlığı, sık idrara çıkma, böbrek taşı ve bulantı görülebilir. Tanıda kanda kalsiyum, PTH, D vitamini, fosfor, magnezyum ve böbrek testleri, 24 saatlik idrar ve görüntüleme kullanılır. Hafif durumlarda düzenli kontrol, bol sıvı ve egzersiz yeterli olabilir; aşırı çalışan bezlerin ameliyatla alınması da bir seçenektir. Tedavi edilmezse kemiklerde zayıflama, yüksek tansiyon, kalp hastalığı, böbrek taşı ve kronik böbrek hastalığı gelişebilir."
+    },
+    {
+      "id": "gebelikbulanti-acibadem",
+      "konu": "Gebelikte bulantı ve kusma",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "gebelikte bulantı",
+        "hamilelikte bulantı",
+        "hamilelikte kusma",
+        "sabah bulantısı",
+        "aşerme",
+        "hiperemezis",
+        "hamileyim sürekli kusuyorum"
+      ],
+      "baslik": "Hamilelikte Mide Bulantısı Ne Zaman Başlar?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/saglikli-yasam/hamilelikte-mide-bulantisi-ne-zaman-baslar/",
+      "dil": "tr",
+      "ozet": "Gebelikte bulantı genellikle 6. haftada başlar, 8-10. haftalarda en yoğun hale gelir ve ikinci üç ayda (14. hafta civarı) azalır ya da geçer. Başlıca nedeni hormon değişiklikleridir; hCG hormonu 9-12. haftalarda en yüksek düzeye ulaşır, östrojen ve progesteron da sindirim sistemini etkiler. Az ve sık öğünler, zencefil çayı, limon veya nane, bol sıvı, kuru kraker gibi hafif yiyecekler, yatağın başını yüksek tutmak ve stresi azaltmak rahatlatabilir. Aşırı kusma sıvı kaybına ve kilo kaybına yol açıyorsa (hiperemezis gravidarum) tıbbi müdahale gerekir; kanlı kusma, şiddetli karın ağrısı, koyu renkli idrar ve baş dönmesi olursa hekime başvurulmalıdır."
+    },
+    {
+      "id": "gebelikbulanti-medlineplus",
+      "konu": "Gebelikte bulantı ve kusma",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "gebelik bulantısı",
+        "zencefil",
+        "B6 vitamini gebelik",
+        "hamilelikte sıvı tutamıyorum",
+        "hamilelikte kusma",
+        "hamilelikte bulantı"
+      ],
+      "baslik": "Morning Sickness (Gebelik Bulantısı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003119.htm",
+      "dil": "en",
+      "ozet": "Gebelik bulantısı çoğunlukla gebeliğin ilk ayında başlar ve 14-16. haftaya (3. veya 4. ay) kadar sürer. Kesin nedeni bilinmez; erken gebelikteki hormon değişiklikleri veya kan şekerinin düşmesi rol oynayabilir; stres, yorgunluk, yolculuk ve bazı yiyecekler artırabilir. Uyanınca kraker veya kuru ekmek yemek, 1-2 saatte bir küçük atıştırmalıklar, kuruyemiş, peynir ve yoğurt gibi protein ve kompleks karbonhidratlar, zencefil çayı veya zencefilli şekerler, tam tahıl, kuruyemiş ve baklagillerden B6 vitamini ve akupresür bileklikleri yardımcı olabilir. Günde 3'ten fazla kusma ya da yiyecek ve sıvıyı midede tutamama, idrarın koyu renkli olması veya çok seyrek idrara çıkma, aşırı kilo kaybı, kusmukta kan ya da kahve telvesi gibi madde varsa hekime başvurulmalıdır."
+    },
+    {
+      "id": "dogumsonrasidepresyon-acibadem",
+      "konu": "Doğum sonrası depresyon",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "doğum sonrası depresyon",
+        "lohusalık depresyonu",
+        "lohusa sendromu",
+        "annelik hüznü",
+        "doğumdan sonra ağlıyorum",
+        "bebeğimi sevemiyorum",
+        "postpartum depresyon"
+      ],
+      "baslik": "Postpartum (Doğum Sonrası) Depresyon Nedir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/dogum-sonrasi-depresyonun-belirtileri/",
+      "dil": "tr",
+      "ozet": "Doğum yapan kadınların %85'e varan bölümünde ruhsal dalgalanmalar görülebilir; doğum sonrası hüzün (annelik hüznü) beklenen ve anormal olmayan bir durumdur ve tedavisiz iki hafta içinde düzelir. Belirtiler iki haftadan uzun sürerse, özellikle doğumdan sonraki ilk üç ayda ortaya çıkarsa doğum sonrası depresyon düşünülür; depresyon ilk bir yıl içinde de gelişebilir. Klasik depresyon belirtilerine ek olarak şaşkınlık, kontrol edilemeyen ağlamalar, yoğun suçluluk duyguları, bebeğe ilgisizlik veya bebeğe zarar verme düşünceleri görülebilir. Daha önce depresyon yaşamış, tıbbi hastalığı olan, yeterli sosyal destek alamayan veya ekonomik zorluk yaşayan annelerde risk daha yüksektir. Tedaviyi psikiyatrist, depresyonun şiddetini ve emzirmeyi göz önüne alarak planlar; aile üyelerinin annenin ruhsal durumunu yakından izlemesi çok önemlidir."
+    },
+    {
+      "id": "dogumsonrasidepresyon-medlineplus",
+      "konu": "Doğum sonrası depresyon",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "doğum sonrası depresyon",
+        "baby blues",
+        "emzirirken antidepresan",
+        "doğumdan sonra ağlamak",
+        "lohusalık depresyonu"
+      ],
+      "baslik": "Postpartum Depression (Doğum Sonrası Depresyon)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/007215.htm",
+      "dil": "en",
+      "ozet": "Doğumdan sonraki bir iki hafta içinde görülen hüzün (baby blues) neredeyse her zaman tedavisiz kısa sürede geçer. Doğum sonrası depresyon ise doğumdan hemen sonra veya bir yıla kadar sonra, çoğunlukla ilk 3 ayda başlar. Üzgün veya çökkün ruh hali, huzursuzluk, iştah değişiklikleri, değersizlik duygusu, içe kapanma, ilgi kaybı, dikkat sorunları, yorgunluk, kaygı, uyku sorunları ve intihar düşünceleri görülebilir; anne kendine veya bebeğine bakmakta zorlanabilir ya da bebekle yalnız kalmaktan korkabilir. 25 yaşından genç olmak, madde kullanımı, plansız gebelik, önceden ruhsal hastalık, gebelikte stresli olaylar, ailede ruhsal hastalık, eşle sorunlu ilişki, maddi sıkıntılar ve destek eksikliği riski artırır. Tedavide emzirmeye uygun antidepresanlar, bilişsel davranışçı ve kişilerarası terapi ve destek grupları kullanılır. Hüzün 2 haftadan uzun sürerse, belirtiler ağırlaşırsa, anne kendine veya bebeğe bakamıyorsa ya da kendine veya bebeğine zarar verme düşünceleri varsa hemen yardım alınmalıdır (112)."
+    },
+    {
+      "id": "dogumkontrol-ankarasehir",
+      "konu": "Doğum kontrol yöntemleri",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "doğum kontrol",
+        "doğum kontrol hapı",
+        "spiral",
+        "rahim içi araç",
+        "korunma yöntemleri",
+        "aile planlaması",
+        "tüp ligasyonu",
+        "gebelikten korunma"
+      ],
+      "baslik": "Aile Planlaması",
+      "kurum": "T.C. Sağlık Bakanlığı Ankara Bilkent Şehir Hastanesi",
+      "tur": "resmi",
+      "url": "https://ankarasehir.saglik.gov.tr/TR-658449/aile-planlamasi.html",
+      "dil": "tr",
+      "ozet": "Aile planlaması, ailelerin istedikleri zamanda ve sayıda çocuk sahibi olabilmelerini sağlayan bir hizmettir. Gebelikten korunmak için doğum kontrol hapları, rahim içi araç (spiral), aylık veya üç aylık iğneler, deri altına yerleştirilen implantlar ve kalıcı bir yöntem olan tüplerin bağlanması (laparoskopik tüp ligasyonu) kullanılabilir. Hastanelerin aile planlaması birimlerinde bu yöntemlerle ilgili muayene ve danışmanlık ile evlilik öncesi danışmanlık hizmeti verilir."
+    },
+    {
+      "id": "dogumkontrol-medlineplus",
+      "konu": "Doğum kontrol yöntemleri",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "doğum kontrolü",
+        "kondom",
+        "acil kontrasepsiyon",
+        "ertesi gün hapı",
+        "vazektomi"
+      ],
+      "baslik": "Birth Control (Doğum Kontrolü)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/birthcontrol.html",
+      "dil": "en",
+      "ozet": "Doğum kontrolü, gebeliği önlemek için ilaç, araç veya ameliyat kullanılmasıdır. Bariyer yöntemler (erkek ve kadın kondomu, sünger, sperm öldürücüler, diyafram, rahim ağzı başlığı), hormonal yöntemler (hap, bant, vajinal halka, iğne, implant), uzun etkili rahim içi araçlar (3-10 yıl), kalıcı yöntemler (kadında tüplerin bağlanması, erkekte vazektomi), doğal yöntemler ve acil kontrasepsiyon vardır; acil kontrasepsiyon için bakırlı rahim içi araç veya hormonlu haplar ilişkiden sonraki 120 saat içinde kullanılabilir. Gebeliğin yanında cinsel yolla bulaşan enfeksiyonlardan da koruyan yöntemler yalnızca kondomlardır. Yöntem seçerken sağlık durumu, cinsel ilişki sıklığı, partner sayısı, maliyet, yan etkiler ve ileride çocuk isteği gibi etkenler hekimle konuşulmalıdır."
+    },
+    {
+      "id": "kisirlik-acibadem",
+      "konu": "Kısırlık (infertilite)",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kısırlık",
+        "infertilite",
+        "çocuğumuz olmuyor",
+        "hamile kalamıyorum",
+        "tüp bebek",
+        "aşılama",
+        "sperm sayısı düşük",
+        "gebe kalamama"
+      ],
+      "baslik": "Kısırlık (İnfertilite) Nedir? Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/kisirlik/",
+      "dil": "tr",
+      "ozet": "Kısırlık, düzenli ve korunmasız cinsel ilişkiye rağmen bir yıl içinde gebelik olmamasıdır; 35 yaş üstü kadınlarda bu süre 6 aydır. Dünyada çiftlerin %10-15'ini etkiler. Kadında yumurtlama bozuklukları, tüp tıkanıklığı, endometriozis, miyomlar, polikistik over sendromu, tiroid hastalıkları ve 35 yaşından sonra azalan yumurta kalitesi; erkekte düşük sperm sayısı veya hareketliliği, sperm şekil bozuklukları, hormon dengesizlikleri, varikosel, enfeksiyonlar ve genetik etkenler neden olabilir. Sigara, alkol, uyuşturucu, obezite, aşırı stres ve çevresel zehirler riski artırır. Tanıda sperm analizi, hormon testleri, ultrason ve rahim filmi (HSG) kullanılır. Tedavi nedene göre ilaç, ameliyat, aşılama (IUI) veya tüp bebek (IVF) olabilir."
+    },
+    {
+      "id": "kisirlik-medlineplus",
+      "konu": "Kısırlık (infertilite)",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "infertilite",
+        "erkek kısırlığı",
+        "tekrarlayan düşük",
+        "çocuğumuz olmuyor",
+        "hamile kalamamak"
+      ],
+      "baslik": "Infertility (Kısırlık)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/infertility.html",
+      "dil": "en",
+      "ozet": "Kısırlık, sık ve korunmasız ilişkiye rağmen bir yılda (35 yaş ve üzerindeyse 6 ayda) gebe kalamamaktır; tekrarlayan düşükler de kısırlık kapsamında değerlendirilir. Kadınlarda yumurtlamanın olmaması (çoğunlukla polikistik over sendromuna bağlı), tüplerin tıkanması veya hasarı, miyom ve endometriozis gibi rahim sorunları, yaşla birlikte yumurta yapımındaki sorunlar ve hormon dengesizlikleri; erkeklerde düşük sperm sayısı, spermlerin az hareketli olması, sperm kanallarının tıkanması ve hormon dengesizlikleri neden olabilir. Sigara, yoğun alkol kullanımı, çok fazla kilolu veya çok zayıf olmak ve ileri yaş riski artırır. Tanıda sağlık öyküsü, muayene, kan ve görüntüleme testleri ile erkekte meni analizi yapılır. Tedavide altta yatan nedenin tedavisi, ilaçlar, yardımcı üreme teknikleri ve ameliyat kullanılır. Sigarayı bırakmak, alkolü sınırlamak ve sağlıklı kilo korunmaya yardımcı olur."
     }
   ],
   "kategoriler": [
