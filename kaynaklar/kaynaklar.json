@@ -6287,6 +6287,490 @@
       "url": "https://medlineplus.gov/ency/article/007265.htm",
       "dil": "en",
       "ozet": "Tiroid nodülü, boynun önündeki tiroid bezinde oluşan bir yumrudur; iyi huylu veya kanserli, sıvı dolu ya da katı, tek veya çok sayıda, hormon üreten veya üretmeyen olabilir. Çok yaygındır; kadınlarda daha sık görülür ve yaşla artar. Hashimoto hastalığı ve iyot eksikliği bilinen nedenlerdir, ancak çoğu zaman neden bulunamaz. Nodüllerin yalnızca küçük bir kısmı kanserdir; nodülün sert olması veya çevre dokulara yapışık olması, ailede tiroid kanseri, ses değişikliği, 20 yaşından küçük ya da 70 yaşından büyük olmak, radyasyona maruz kalmış olmak ve erkek cinsiyet riski artırır. Çoğu belirti vermez; büyük nodüller boyunda şişlik, ses kısıklığı, ağrı, nefes alma veya yutma güçlüğü yapabilir. Tanıda TSH ve diğer tiroid testleri, ultrason, tiroid sintigrafisi ve ince iğne biyopsisi kullanılır. Kanserli, belirti veren veya biyopsisi kesin sonuç vermeyen nodüllerde ameliyat önerilir; belirtisiz ve büyümeyen iyi huylu nodüller 6-12 ayda bir ultrasonla izlenir."
+    },
+    {
+      "id": "piyelonefrit-acibadem",
+      "konu": "Böbrek iltihabı (piyelonefrit)",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "böbrek iltihabı",
+        "piyelonefrit",
+        "böbrek enfeksiyonu",
+        "böbreğime iltihap indi",
+        "yan ağrısı ve ateş",
+        "titreme ile ateş",
+        "böğür ağrısı ateş",
+        "titreme",
+        "titreyerek ateş",
+        "böbrek ağrısı ateş"
+      ],
+      "baslik": "Böbrek İltihabı Nedir? Böbrek İltihabı Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/bobrek-iltihabi/",
+      "dil": "tr",
+      "ozet": "Böbrek iltihabı (piyelonefrit), çoğunlukla idrar yolu enfeksiyonunun böbreklere yayılmasıyla gelişen bir enfeksiyondur; en sık E. coli bakterisi neden olur. Böbrek taşı gibi idrar akışını engelleyen durumlar riski artırır; diyabetliler, yaşlılar, bağışıklığı zayıf olanlar ve anatomik yapı nedeniyle kadınlar daha sık etkilenir. Yüksek ateş, titreme, bel veya sırt ağrısı, sık idrara çıkma ve yanma, bulantı-kusma, bulanık, kanlı ya da kötü kokulu idrar ve halsizlik görülür. Tanıda kan ve idrar testleri, idrar kültürü, ultrason ve gerekirse BT veya MR kullanılır. Tedavide genellikle 7-14 gün antibiyotik verilir ve bol sıvı (günde 1,5-2 litre su) önerilir; ağır durumlarda hastaneye yatırılıp damardan tedavi gerekir. Tedavi edilmezse kana yayılan enfeksiyon (sepsis), böbrek yetmezliği ve kalıcı böbrek hasarı gelişebilir. Bol su içmek, hijyene dikkat etmek ve idrarı tutmamak korunmaya yardımcı olur."
+    },
+    {
+      "id": "piyelonefrit-medlineplus",
+      "konu": "Böbrek iltihabı (piyelonefrit)",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "böbrek enfeksiyonu",
+        "piyelonefrit",
+        "yaşlıda idrar yolu enfeksiyonu",
+        "damardan antibiyotik",
+        "titreme",
+        "titreyerek ateş",
+        "yüksek ateş ve bel ağrısı"
+      ],
+      "baslik": "Urinary Tract Infection - Adults (Böbrek Enfeksiyonu Bölümü)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000521.htm",
+      "dil": "en",
+      "ozet": "İdrar yolu enfeksiyonu böbreklere yayılırsa titreme, gece terlemesi, yorgunluk ve genel kötülük hissi, 38,3°C'nin üzerinde ateş, yan, sırt veya kasık ağrısı, ciltte kızarıklık ve sıcaklık, bulantı-kusma ve bazen şiddetli karın ağrısı görülür; yaşlılarda bilinç değişikliği veya kafa karışıklığı tek belirti olabilir. Diyabet, ileri yaş, mesanenin tam boşalamaması, idrar sondası, böbrek taşı, uzun süre hareketsizlik, gebelik ve yakın zamanda idrar yollarına yapılan işlemler riski artırır. Tanıda idrar tahlili, idrar kültürü, kan testleri ve gerekirse BT veya böbrek ultrasonu kullanılır. Hafif böbrek enfeksiyonunda, gebelerde ve diyabetlilerde antibiyotik çoğunlukla 7-14 gün sürer; yaşlılar, böbrek taşı olanlar, yakın zamanda ameliyat olanlar ve ağır hastalığı bulunanlar hastaneye yatırılıp damardan sıvı ve antibiyotikle tedavi edilir. Sırt veya yan ağrısı, titreme, ateş, kusma ya da antibiyotikten sonra tekrarlayan belirtilerde hekime başvurulmalıdır."
+    },
+    {
+      "id": "aam-medicalpark",
+      "konu": "Aşırı aktif mesane (sık ve ani sıkışma)",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "aşırı aktif mesane",
+        "sık idrara çıkma",
+        "çok sık tuvalete gidiyorum",
+        "sıkışma hissi",
+        "tuvalete yetişemiyorum",
+        "gece idrara kalkma",
+        "ani idrar hissi"
+      ],
+      "baslik": "Aşırı Aktif Mesane Nedir? Aşırı Aktif Mesane Belirtileri ve Tedavisi",
+      "kurum": "Medical Park Hastaneleri",
+      "tur": "ozel",
+      "url": "https://www.medicalpark.com.tr/saglik-rehberi/asiri-aktif-mesane",
+      "dil": "tr",
+      "ozet": "Aşırı aktif mesane, mesanenin normalden fazla çalışmasıdır: mesane normalde yaklaşık 500 cc idrar depolayabilirken, bu durumda daha az idrar birikmişken kontrol edilemeyen kasılmalar olur. Ani gelen ve ertelenemeyen idrar hissi, tuvalete yetişememe, idrar kaçırma, gün içinde sık idrara çıkma ve gece uykudan uyanıp tuvalete gitme başlıca belirtilerdir. Doğum sonrası pelvik taban hasarı, bel fıtığı, Parkinson veya felç gibi sinir hastalıkları, obezite, menopoz, idrar yolu enfeksiyonu, aşırı kafein, bazı ilaçlar, diyabet, kabızlık ve multipl skleroz neden veya risk etkeni olabilir. Tanıda muayene, idrar tahlili, ürodinamik testler, ultrason ve gerekirse sistoskopi kullanılır. Tedavide yaşam tarzı değişiklikleri, kilo kontrolü, gazlı içecek ve baharatlı besinlerden kaçınma ve pelvik taban egzersizleri öne çıkar; cerrahi son seçenektir."
+    },
+    {
+      "id": "aam-medlineplus",
+      "konu": "Aşırı aktif mesane (sık ve ani sıkışma)",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "aşırı aktif mesane",
+        "sıkışma tipi idrar kaçırma",
+        "mesane eğitimi",
+        "kegel egzersizi",
+        "sık tuvalete gitmek",
+        "tuvalete yetişememek"
+      ],
+      "baslik": "Overactive Bladder (Aşırı Aktif Mesane)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/overactivebladder.html",
+      "dil": "en",
+      "ozet": "Aşırı aktif mesane, mesanenin idrarı yanlış zamanda sıkıp boşaltmasıdır. Şu belirtilerden iki veya daha fazlası varsa düşünülür: günde 8 veya daha fazla ya da gece 2 veya daha fazla idrara çıkmak, aniden gelen ve hemen tuvalete gitmeyi gerektiren güçlü idrar hissi, ani sıkışmadan sonra idrar kaçırmak. Sinir sorunları, çok fazla sıvı içmek veya çok fazla kafein almak neden olabilir; çoğu zaman neden bulunamaz. Tedavide mesane eğitimi, pelvik taban (Kegel) egzersizleri ve mesane kaslarını ve sinirleri yatıştıran tablet, şurup veya bant şeklinde ilaçlar kullanılır; bu ilaçlar ağız ve göz kuruluğu ile kabızlık yapabilir. Belirtiler için hekime başvurup kişiye uygun tedavi planı yapılmalıdır."
+    },
+    {
+      "id": "enurezis-medicalpark",
+      "konu": "Çocuklarda alt ıslatma (enürezis)",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "alt ıslatma",
+        "enürezis",
+        "çocuğum altını ıslatıyor",
+        "gece altını ıslatma",
+        "yatak ıslatma",
+        "çiş kaçırma çocuk",
+        "alt ıslatma alarmı"
+      ],
+      "baslik": "Alt Islatma (Enürezis) Nedir? Tedavisi Nelerdir?",
+      "kurum": "Medical Park Hastaneleri",
+      "tur": "ozel",
+      "url": "https://www.medicalpark.com.tr/saglik-rehberi/alt-islatma-enurezis",
+      "dil": "tr",
+      "ozet": "Enürezis (alt ıslatma), 5 yaşından büyük çocukların gece ya da hem gece hem gündüz altını ıslatmasıdır; sıklığı yaşla azalır ve erkek çocuklarda daha sık görülür. Hiç kuru dönemi olmayanlarda birincil, 6 ay kuru kaldıktan sonra yeniden başlayanlarda ikincil enürezis denir. Çocukların %97-98'inde organik bir neden yoktur; kalıtım (iki ebeveyn de altını ıslattıysa çocukta görülme sıklığı %77), uyanma güçlüğü, gece idrarı azaltan hormonun (ADH) yetersizliği ve küçük mesane kapasitesi rol oynar; idrar yolu enfeksiyonu, şeker hastalığı ve uyku apnesi de neden olabilir. Akşamları sıvı, kola ve kafeinli içecekler ile tuzlu besinler kısıtlanmalı, kabızlık varsa beslenme düzenlenmeli ve çocuk gün içinde 2 saatte bir tuvalete gitmeye teşvik edilmelidir. Çocuk kesinlikle cezalandırılmamalı; kuru geceler ödüllendirilebilir. Alt ıslatma alarmı en az 6-8 hafta kullanıldığında %65-75 başarı sağlar; desmopresin gibi ilaçlar da kullanılabilir. 5 yaşından sonra en az 3 ay boyunca haftada 2 kez tekrarlayan ıslatma hekimce değerlendirilmelidir."
+    },
+    {
+      "id": "enurezis-medlineplus",
+      "konu": "Çocuklarda alt ıslatma (enürezis)",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "alt ıslatma",
+        "enürezis",
+        "yatak ıslatma alarmı",
+        "desmopresin"
+      ],
+      "baslik": "Bedwetting (Alt Islatma)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://www.medlineplus.gov/ency/patientinstructions/000703.htm",
+      "dil": "en",
+      "ozet": "Gece alt ıslatma (noktürnal enürezis), 5-6 yaşından sonra bir çocuğun ayda ikiden fazla geceleri yatağını ıslatmasıdır. Hiç sürekli kuru kalamamış çocuklarda genellikle gece üretilen idrar mesanenin alabileceğinden fazladır ve çocuk mesane dolunca uyanmaz; en az 6 ay kuru kaldıktan sonra yeniden başlayan ıslatmaya ikincil enürezis denir. Omuriliğin alt kısmındaki sorunlar, idrar yollarının doğumsal bozuklukları, idrar yolu enfeksiyonu ve diyabet nadir fiziksel nedenlerdir. Gündüz ve akşam düzenli tuvalet alışkanlığı, yatmadan önce tuvalete gitmek, yatmadan birkaç saat önce sıvıyı biraz azaltmak ve kuru geceleri ödüllendirmek önerilir. Alt ıslatma alarmı her gece kullanıldığında en iyi sonucu verir ve birkaç ay sürebilir; 3 hafta kuru kalındıktan sonra 2 hafta daha sürdürülür. Gece idrarını azaltan desmopresin kullanılabilir. İdrar yaparken ağrı, ateş veya idrarda kan varsa, 6 ay kuru kaldıktan sonra ıslatma yeniden başladıysa ya da evde alınan önlemler işe yaramadıysa hekime başvurulmalıdır."
+    },
+    {
+      "id": "hematuri-acibadem",
+      "konu": "İdrarda kan (hematüri)",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "idrarda kan",
+        "hematüri",
+        "idrardan kan geliyor",
+        "kırmızı idrar",
+        "pembe idrar",
+        "kanlı idrar",
+        "ağrısız idrarda kan"
+      ],
+      "baslik": "İdrardan Kan Gelmesi (Hematüri) Nedir? İdrar Kan Neden Olur?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/hematuri/",
+      "dil": "tr",
+      "ozet": "Hematüri, idrarda kan hücrelerinin bulunmasıdır; idrarı pembe, kırmızı veya kahverengiye çevirebilir. Çıplak gözle görülen kanamaya makroskopik, yalnızca laboratuvar incelemesinde saptanana mikroskopik hematüri denir. İdrar yolu enfeksiyonları, böbrek taşları, prostat hastalıkları, mesane veya böbrek kanserleri, darbe, yoğun egzersiz, böbrek iltihabı (glomerülonefrit), polikistik böbrek hastalığı, kanama bozuklukları ve bazı ilaçlar neden olabilir. İdrar yaparken yanma veya ağrı, sık idrara çıkma, karın ya da bel ağrısı eşlik edebilir; ancak hematüri bazen tamamen ağrısızdır ve yalnızca rutin testlerde fark edilir. Tanıda idrar tahlili ve kültürü, kan testleri, ultrason, BT ürografi, sistoskopi ve gerekirse biyopsi kullanılır. Tedavi nedene göredir: antibiyotik, taş tedavisi, cerrahi veya kemoterapi gerekebilir."
+    },
+    {
+      "id": "hematuri-medlineplus",
+      "konu": "İdrarda kan (hematüri)",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "idrarda kan",
+        "hematüri",
+        "idrarda pıhtı",
+        "pancar idrar rengi"
+      ],
+      "baslik": "Urine - Bloody (İdrarda Kan)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003138.htm",
+      "dil": "en",
+      "ozet": "İdrarda kan (hematüri) yalnızca testlerde saptanacak kadar az olabilir ya da idrarı ve tuvalet suyunu kırmızı-pembe gösterecek kadar belirgin olabilir. Mesane veya böbrek kanseri, mesane, böbrek, prostat veya idrar kanalı enfeksiyonları, böbrek iltihabı (glomerülonefrit), böbrek veya mesane taşları, polikistik böbrek hastalığı ve yakın zamanda yapılan idrar yolu işlemleri nedenler arasındadır. Hemofili gibi kanama bozuklukları, aspirin ve varfarin gibi kan sulandırıcılar, orak hücre hastalığı ve trombosit düşüklüğü de kanamaya yol açabilir. Kadınlarda vajinal kanama idrara karışabilir; pancar ve bazı ilaçlar idrarı kırmızıya boyayıp kan gibi gösterebilir. Görünür kan varsa, özellikle idrar yaparken rahatsızlık, sık veya ani sıkışma ve açıklanamayan kilo kaybıyla birlikteyse hekime başvurulmalıdır. Ateş, bulantı, kusma, titreme, karın, yan veya sırt ağrısı, idrar yapamama ya da idrarda pıhtı varsa hemen tıbbi yardım alınmalıdır. Tanıda idrar tahlili ve kültürü, ultrason, BT, sistoskopi ve kan testleri kullanılır."
+    },
+    {
+      "id": "emboli-koc",
+      "konu": "Akciğer pıhtısı (pulmoner emboli)",
+      "kategori": "Solunum",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "akciğer embolisi",
+        "pulmoner emboli",
+        "akciğere pıhtı attı",
+        "akciğerde pıhtı",
+        "ani nefes darlığı",
+        "nefes darlığı ve bacakta şişlik",
+        "uçak yolculuğu sonrası nefes darlığı"
+      ],
+      "baslik": "Pulmoner Emboli (Akciğer Damarlarında Pıhtı)",
+      "kurum": "Koç Üniversitesi Hastanesi",
+      "tur": "universite",
+      "url": "https://www.kuh.ku.edu.tr/gogus-hastaliklari/pulmoner-emboli",
+      "dil": "tr",
+      "ozet": "Pulmoner emboli, akciğer damarlarının pıhtıyla tıkanmasıdır; kanın oksijen düzeyi düşer. Çoğunlukla bacak toplardamarlarında oluşan pıhtının kopup akciğer damarlarını tıkamasıyla gelişir. Yakın zamanda geçirilmiş ameliyat, uzun yatak istirahati, uzun yolculuk, kanser, kalıtsal pıhtılaşma yatkınlığı ve gebelik risk etkenleridir. Ani başlayan nefes darlığı, göğüs veya sırt ağrısı ve kanlı balgam başlıca belirtilerdir; pıhtı bacaktan geldiyse bacakta şişlik, kızarıklık ve ağrı da olabilir. Pıhtı çok büyükse kalp yetmezliğine ve ani ölüme yol açabileceği için bu belirtilerde beklemeden acile gidilmelidir (112). Tanı bacak damarlarının doppler ultrasonu ve ilaçlı akciğer tomografisiyle konur. Tedavinin temeli kan sulandırıcı ilaçlardır; ağır durumlarda pıhtı eritici ilaçlar gerekebilir ve tedavi uzun süre devam edebilir."
+    },
+    {
+      "id": "emboli-medlineplus",
+      "konu": "Akciğer pıhtısı (pulmoner emboli)",
+      "kategori": "Solunum",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "pulmoner emboli",
+        "akciğer embolisi",
+        "nefes alınca batan göğüs ağrısı",
+        "kan sulandırıcı",
+        "ani nefes darlığı",
+        "uzun yolculuk sonrası nefes darlığı"
+      ],
+      "baslik": "Pulmonary Embolism (Akciğer Embolisi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/pulmonaryembolism.html",
+      "dil": "en",
+      "ozet": "Pulmoner emboli, bir akciğer atardamarının aniden tıkanmasıdır; çoğunlukla bacaktaki derin ven trombozundan kopan bir pıhtının kan dolaşımıyla akciğere gitmesiyle olur. Ameliyatlar (özellikle eklem protezi), kanser, kalp ve akciğer hastalıkları, kırıklar, hormon içeren ilaçlar, gebelik ve doğum, uzun süre hareketsiz kalmak, 40 yaş üstü olmak, ailede pıhtı öyküsü ve obezite riski artırır. Nefes darlığı, hızlı soluma, öksürük veya derin nefesle artan göğüs ağrısı, hızlı kalp atışı, kan tükürme ve çok düşük tansiyon, sersemlik veya bayılma görülebilir; bazı kişilerde ciddi bir sorun çıkana kadar belirti olmaz. Pulmoner emboli hemen tedavi gerektiren bir durumdur. Tedavide pıhtının büyümesini önleyen kan sulandırıcılar, ağır durumlarda pıhtı eritici ilaçlar ve gerekirse kateterle pıhtı çıkarma veya toplardamara filtre yerleştirme uygulanır. Uzun oturmada bacakları hareket ettirmek, ameliyattan sonra erken hareket etmek ve gerekirse varis çorabı kullanmak korur."
+    },
+    {
+      "id": "akcigerca-acibadem",
+      "konu": "Akciğer kanseri",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "akciğer kanseri",
+        "akciğerde kitle",
+        "akciğerde nodül",
+        "sigara kanseri",
+        "kanlı balgam",
+        "geçmeyen öksürük kanser"
+      ],
+      "baslik": "Akciğer Kanseri Belirtileri Nelerdir? Neden Olur? Teşhis ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/akciger-kanseri/",
+      "dil": "tr",
+      "ozet": "Akciğer kanseri, akciğer dokusundaki hücrelerin kontrolsüz çoğalmasıyla oluşur. Hızlı ilerleyen küçük hücreli ve daha sık görülen küçük hücreli olmayan (adenokarsinom, skuamöz ve büyük hücreli) türleri vardır. Vakaların yaklaşık %85'inden sigara sorumludur; pasif içicilik, radon gazı, asbest, hava kirliliği ve genetik yatkınlık da riski artırır. Geçmeyen öksürük, nefes darlığı, göğüs ağrısı, kanlı balgam, ses kısıklığı, açıklanamayan kilo kaybı ve tekrarlayan akciğer enfeksiyonları başlıca belirtilerdir. Tanıda akciğer grafisi, BT, MR, PET-BT ve kesin tanı için biyopsi kullanılır; risk gruplarında düzenli tarama önemlidir. Tedavi evreye göre cerrahi, radyoterapi, kemoterapi, hedefe yönelik tedaviler ve immünoterapiyle yapılır."
+    },
+    {
+      "id": "akcigerca-medlineplus",
+      "konu": "Akciğer kanseri",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "akciğer kanseri",
+        "radon",
+        "asbest",
+        "akciğer kanseri taraması",
+        "kanlı balgam",
+        "sigara içenlerde öksürük"
+      ],
+      "baslik": "Lung Cancer (Akciğer Kanseri)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/lungcancer.html",
+      "dil": "en",
+      "ozet": "Akciğer kanserinin iki ana türü vardır: küçük hücreli ve daha sık görülen küçük hücreli olmayan akciğer kanseri. Sigara, erkeklerde yaklaşık her 10 vakanın 9'undan, kadınlarda 10 vakanın 8'inden sorumludur; pasif içicilik, ailede akciğer kanseri, iş yerinde asbest, arsenik, krom, nikel, kurum veya katran gibi maddelere maruz kalmak, radyasyon ve radon gazı, HIV enfeksiyonu ve hava kirliliği de riski artırır. Hastalık ilerleyene kadar belirti vermeyebilir; geçmeyen öksürük, göğüs ağrısı, kan tükürme, nefes darlığı, hırıltı, ses kısıklığı, iştahsızlık, açıklanamayan kilo kaybı, yorgunluk, yutma güçlüğü ve yüz-boyunda şişlik görülebilir. Taramada akciğer grafisi veya BT kullanılır; tanı için görüntüleme, laboratuvar testleri ve biyopsi yapılır, ardından evre belirlenir. Tedavi türe ve evreye göre cerrahi, kemoterapi, radyoterapi, hedefe yönelik tedavi ve immünoterapidir. Sigarayı bırakmak, iş yerindeki zararlı maddelerden korunmak ve evdeki radon düzeyini düşürmek riski azaltır."
+    },
+    {
+      "id": "kronikoksuruk-acibadem",
+      "konu": "Geçmeyen (kronik) öksürük",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kronik öksürük",
+        "geçmeyen öksürük",
+        "öksürüğüm geçmiyor",
+        "haftalardır öksürüyorum",
+        "kuru öksürük geçmiyor",
+        "geniz akıntısı öksürük",
+        "tansiyon ilacı öksürük"
+      ],
+      "baslik": "Kronik Öksürük (Geçmeyen Öksürük) Neden Olur?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/kronik-oksuruk-gecmeyen-oksuruk-neden-olur/",
+      "dil": "tr",
+      "ozet": "Kronik öksürük, yetişkinlerde 8 haftadan, çocuklarda 4 haftadan uzun süren öksürüktür ve genellikle altta yatan bir sağlık sorununun belirtisidir. Vakaların %90'ından fazlasında neden geniz akıntısı, astım veya reflüdür. Grip, zatürre veya COVID-19 sonrası gibi enfeksiyonlar, sigara ve hava kirliliği, kronik bronşit ve KOAH, bazı tansiyon ilaçları (ACE inhibitörleri), alerjiler ve sinüzit de neden olabilir. Kanlı balgam, kilo kaybı, göğüs ağrısı, nefes darlığı ve giderek şiddetlenen öksürük tehlike işaretleridir. Tanıda kan testleri, akciğer grafisi, BT, solunum testi (spirometri), gerekirse bronkoskopi, alerji testleri ve reflü ölçümü kullanılır. Tedavi nedene göredir: astımda inhaler ilaçlar, reflüde asit düzenleyiciler, enfeksiyonda uygun ilaçlar ve sigarayı bırakmak. 8 haftayı geçen öksürükte, özellikle tehlike işaretleri varsa hekime başvurulmalıdır."
+    },
+    {
+      "id": "kronikoksuruk-medlineplus",
+      "konu": "Geçmeyen (kronik) öksürük",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "öksürük",
+        "uzun süren öksürük",
+        "öksürüğe ne iyi gelir",
+        "kanlı öksürük"
+      ],
+      "baslik": "Cough (Öksürük)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003072.htm",
+      "dil": "en",
+      "ozet": "Uzun süren öksürüğün sık nedenleri alerjiler, astım, KOAH, soğuk algınlığı ve grip gibi virüs enfeksiyonları, zatürre ve akut bronşit, geniz akıntısıyla birlikte sinüzit, reflü, ACE inhibitörü veya ARB grubu tansiyon ilaçları, sigara veya pasif sigara dumanı, akciğer kanseri ve diğer akciğer hastalıklarıdır; bazen neden bulunamaz. Kuru öksürükte pastil, buhar (nemlendirici veya buharlı duş), bol sıvı içmek ve dumandan uzak durmak rahatlatır; alerjide polen yoğunken içeride kalmak yardımcı olur. Nefes darlığı, nefes almada güçlük veya yutmayı zorlaştıran şişlikte acil yardım çağrılmalıdır (112). 10-14 günden uzun süren öksürük, kanlı öksürük, ateş, tiz sesli solunum, koyu sarı-yeşil balgam ya da aniden başlayan şiddetli öksürükte hemen hekime başvurulmalıdır. Hekime öksürüğün ne zaman başladığını, nasıl ses çıkardığını, neyle arttığını veya azaldığını ve eşlik eden belirtileri anlatmak tanıyı kolaylaştırır."
+    },
+    {
+      "id": "bogmaca-asi",
+      "konu": "Boğmaca",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "boğmaca",
+        "pertussis",
+        "nöbet şeklinde öksürük",
+        "öksürürken boğuluyor",
+        "bebekte öksürük nöbeti",
+        "karma aşı",
+        "gebelikte boğmaca aşısı"
+      ],
+      "baslik": "Boğmaca (Pertussis)",
+      "kurum": "T.C. Sağlık Bakanlığı Aşı Portalı",
+      "tur": "resmi",
+      "url": "https://asi.saglik.gov.tr/asi-ile-oenlenebilir-hastaliklar/bogmaca-pertussis.html",
+      "dil": "tr",
+      "ozet": "Boğmaca, Bordetella pertussis bakterisinin yaptığı, solunum yollarını tutan ve çok bulaşıcı bir hastalıktır; hasta kişinin burun ve boğazından saçılan damlacıkların solunmasıyla bulaşır. Temastan 7-10 gün sonra hapşırma, burun akıntısı, hafif ateş ve öksürükle başlar; ilerleyen dönemde ağır öksürük nöbetleri gelişir. Zatürre, kulak enfeksiyonu, sıvı kaybı, havale, kaburga kırıkları ve ağır vakalarda ölüm görülebilir. En sık ve en ağır bir yaşın altındaki bebeklerde görülür; çok küçük bebeklerin hastanede bakımı gerekebilir. Antibiyotik özellikle hastalığın ilk iki haftasında etkilidir. Korunmanın tek etkili yolu aşıdır: aşılar Ulusal Aşı Takvimi'ndeki zamanlarda yapılır, gebelikte ve erişkinlerde de hatırlatma dozları önerilir. Hasta kişilerin bebeklerle temasından kaçınılmalıdır."
+    },
+    {
+      "id": "bogmaca-medlineplus",
+      "konu": "Boğmaca",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "boğmaca",
+        "Tdap aşısı",
+        "bebekte nefes durması",
+        "öksürük sonrası kusma"
+      ],
+      "baslik": "Whooping Cough (Boğmaca)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/whoopingcough.html",
+      "dil": "en",
+      "ozet": "Boğmaca, Bordetella pertussis bakterisinin yaptığı bir hastalıktır; öksürük, hapşırık ve yakın temasla bulaşır ve kişi öksürük başladıktan sonra yaklaşık 2 hafta bulaştırıcıdır. İlk 1-2 hafta burun akıntısı, hafif ateş ve ara sıra öksürükle soğuk algınlığına benzer; ardından arka arkaya hızlı öksürük nöbetleri, nöbet sonunda tiz bir 'öğürme' sesi, kusma ve bitkinlik gelişir. Öksürük nöbetleri 10 hafta veya daha uzun sürebilir. 1 yaşından küçük bebeklerin yaklaşık yarısı hastaneye yatırılır; bebekler az öksürebilir, bunun yerine nefes durması (apne) ve morarma görülebilir. Tedavi antibiyotiktir ve erken başlanması önemlidir; hastalığın 3. haftasından sonra antibiyotik yararlı olmayabilir. Çocuklara DTaP, ergen ve yetişkinlere Tdap aşısı yapılır; ailenin ve bebeğin korunması için gebelikte de aşı önerilir."
+    },
+    {
+      "id": "retina-acibadem",
+      "konu": "Retina yırtılması ve dekolmanı",
+      "kategori": "Göz",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "retina dekolmanı",
+        "retina yırtığı",
+        "gözde ışık çakması",
+        "gözümde perde var",
+        "gözde uçuşan siyah noktalar",
+        "görme alanında kararma",
+        "sinek uçuşması"
+      ],
+      "baslik": "Retina Dekolmanı ve Retina Yırtılması Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/retina-dekolmani-ve-retina-yirtilmasi/",
+      "dil": "tr",
+      "ozet": "Retina dekolmanı, gözün ışığı algılayan tabakası olan retinanın göz küresinin iç yüzeyinden ayrılmasıdır ve genellikle retinadaki yırtıklardan başlar. Işık çakmaları, görmede azalma, görme alanında kayıplar ve gözün önünde uçuşan siyah noktalar başlıca belirtilerdir. Yüksek miyopi (6 numara ve üzeri), ileri yaş, göz yaralanmaları, katarakt ameliyatı sonrası sorunlar ve ailesel yatkınlık riski artırır. Tedavi geciktikçe kalıcı görme kaybı riski arttığı için acil müdahale gerekir. Tanı göz muayenesi ve görüntülemeyle konur. Yalnızca yırtık varsa lazerle onarılabilir; dekolmanda göz içi sıvısının alındığı vitrektomi, göze dışarıdan silikon şerit yerleştirilen skleral çökertme ya da göz içine gaz verilen pnömatik retinopeksi uygulanır."
+    },
+    {
+      "id": "retina-medlineplus",
+      "konu": "Retina yırtılması ve dekolmanı",
+      "kategori": "Göz",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "retina dekolmanı",
+        "uçuşan cisimler arttı",
+        "ışık çakması",
+        "görmede perde"
+      ],
+      "baslik": "Retinal Detachment (Retina Dekolmanı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/retinaldetachment.html",
+      "dil": "en",
+      "ozet": "Retina dekolmanının uyarı işaretleri, gözün önünde uçuşan noktaların sayısında artış, gözde ışık çakmaları ve görme alanının bir kısmını kapatan perde görünümüdür. Retina dekolmanı acil bir durumdur; hızla tedavi edilmezse kalıcı görme kaybına yol açabilir, bu belirtilerde beklemeden göz acil servisine başvurulmalıdır. 40 yaşından sonra ve erkeklerde daha sık görülür; çok yüksek miyopi, ailede retina dekolmanı, geçirilmiş katarakt ameliyatı, göz yaralanmaları ve diğer göz hastalıkları riski artırır. Tedavide farklı türde ameliyatlar uygulanır."
+    },
+    {
+      "id": "makula-koc",
+      "konu": "Sarı nokta hastalığı (makula dejenerasyonu)",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "sarı nokta",
+        "sarı nokta hastalığı",
+        "makula dejenerasyonu",
+        "yaşa bağlı makula",
+        "çizgiler eğri görünüyor",
+        "merkezi görme kaybı",
+        "göz içi iğne"
+      ],
+      "baslik": "Sarı Nokta Hastalığı (Makula Dejenerasyonu)",
+      "kurum": "Koç Üniversitesi Hastanesi",
+      "tur": "universite",
+      "url": "https://www.kuh.ku.edu.tr/goz-hastaliklari/sari-nokta-hastaligi-makula-dejenerasyonu",
+      "dil": "tr",
+      "ozet": "Sarı nokta hastalığı (makula dejenerasyonu), retinanın keskin görmeyi sağlayan merkezini etkileyen ve gelişmiş ülkelerde 65 yaş üstünde en sık körlük nedeni olan bir hastalıktır; risk özellikle 55 yaşından sonra artar. Yavaş ilerleyen kuru tipte retina altında atık maddeler birikir; daha hızlı ve ağır seyreden yaş tipte retina altında anormal damarlar gelişir. Sigara önemli bir risk etkenidir; A, C, E vitaminleri, beta karoten, çinko, yeşil yapraklı sebzeler ve balıktan zengin beslenme koruyucu olabilir. Merkezi görmede kayıp, düz çizgileri kırık veya eğri görme, okumada zorluk, daha fazla ışığa ihtiyaç duyma ve renkleri soluk görme belirtilerdir. Tanıda göz dibi muayenesi, Amsler testi, optik koherens tomografi (OCT) ve anjiyografi kullanılır. Yaş tipte göz içine ilaç iğneleri (VEGF inhibitörleri), lazer veya fotodinamik tedavi uygulanır; ileri evrede büyüteçler ve teleskopik gözlükler yardımcı olur. Düzenli göz muayenesi erken tanı için çok önemlidir."
+    },
+    {
+      "id": "makula-medlineplus",
+      "konu": "Sarı nokta hastalığı (makula dejenerasyonu)",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "makula dejenerasyonu",
+        "AMD",
+        "kuru tip",
+        "yaş tip",
+        "AREDS",
+        "düz çizgileri eğri görmek",
+        "merkezi görme kaybı"
+      ],
+      "baslik": "Macular Degeneration (Makula Dejenerasyonu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/maculardegeneration.html",
+      "dil": "en",
+      "ozet": "Yaşa bağlı makula dejenerasyonu, keskin merkezi görmeyi bozan ve 60 yaş üstünde önemli bir görme kaybı nedeni olan bir hastalıktır. Kuru tipte makuladaki ışığa duyarlı hücreler yavaşça bozulur ve merkezi görme giderek azalır; düz çizgilerin eğri görünmesi erken bir belirtidir. Yaş tipte makulanın altında anormal damarlar gelişir, bu damarlardan sızan kan ve sıvı hızlı hasar yapar; bulanık görme sık bir erken belirtidir. Tanıda gözbebeği büyütülerek muayene, floresein anjiyografi ve biyomikroskop muayenesi kullanılır. Tedavide göz içine ilaç iğneleri ve AREDS/AREDS2 vitamin-mineral destekleri kullanılır; tedavi görme kaybını yavaşlatır, ancak kaybedilen görmeyi geri getirmez. Sigarayı bırakmak ve sağlıklı beslenmek riski azaltabilir."
+    },
+    {
+      "id": "kirmakusuru-acibadem",
+      "konu": "Miyopi, hipermetropi ve astigmat (kırma kusurları)",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "miyop",
+        "miyopi",
+        "hipermetrop",
+        "astigmat",
+        "gözlük",
+        "uzağı göremiyorum",
+        "yakını göremiyorum",
+        "lazer göz ameliyatı",
+        "göz numarası"
+      ],
+      "baslik": "Refraksiyon Bozukluğu Nedir? Refraksiyon Bozukluğu Tedavisi Nasıl Yapılır?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/astigmat-miyop-ve-hipermetrop/",
+      "dil": "tr",
+      "ozet": "Kırma kusurları (refraksiyon bozuklukları), ışığın retinaya doğru odaklanamaması sonucu oluşan görme sorunlarıdır. Miyopide uzaktaki, hipermetropide yakındaki cisimler bulanık görülür; astigmatta her mesafede bulanıklık olur; presbiyopide ise yaşla birlikte yakını görmek zorlaşır. Görmede netlik kaybı, baş ağrısı, göz yorgunluğu, baş dönmesi ve çift görme belirtiler arasındadır. Gözün şeklindeki farklılıklar, kalıtım, ekran kullanımı ve ileri yaş rol oynar. Tanı göz muayenesi, görme testi ve otorefraktometre ölçümüyle konur. Tedavide gözlük veya kontakt lens, uygun kişilerde lazer (LASIK/PRK) ya da göz içi lens uygulanır. Erken tanı ve tedavi özellikle çocuklarda görmenin normal gelişimi için önemlidir."
+    },
+    {
+      "id": "kirmakusuru-medlineplus",
+      "konu": "Miyopi, hipermetropi ve astigmat (kırma kusurları)",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kırma kusuru",
+        "presbiyopi",
+        "yakın gözlüğü",
+        "45 yaş yakını görememe"
+      ],
+      "baslik": "Refractive Errors (Kırma Kusurları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/refractiveerrors.html",
+      "dil": "en",
+      "ozet": "Kırma kusurları, gözün şeklinin ışığın retinaya doğru odaklanmasını engellemesiyle oluşur; göz küresinin uzunluğu, saydam tabakanın (kornea) şekli veya merceğin esnekliğini yitirmesi neden olabilir. Dört ana tür vardır: uzaktaki cisimlerin bulanık göründüğü miyopi, yakındaki cisimlerin bulanık göründüğü hipermetropi, her mesafede bulanık veya çarpık görmeye yol açan astigmatizma ve genellikle 45 yaş civarında başlayan, yakını görmeyi zorlaştıran presbiyopi. En sık belirti bulanık görmedir; çift görme, puslu görme, ışıkların çevresinde hale ve parlama, gözleri kısma ihtiyacı, baş ağrısı, göz yorgunluğu ve odaklanma güçlüğü de olabilir. Tanı, farklı mesafelerde gözlükle ve gözlüksüz görmeyi ölçen kapsamlı bir göz muayenesiyle konur. Tedavide gözlük, kontakt lens ve uygun kişilerde lazer göz ameliyatı kullanılır."
+    },
+    {
+      "id": "sasilik-koc",
+      "konu": "Şaşılık",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "şaşılık",
+        "göz kayması",
+        "gözü kayıyor",
+        "bebeğimin gözü kayıyor",
+        "şaşı göz",
+        "çift görme",
+        "şaşılık ameliyatı"
+      ],
+      "baslik": "Göz Kayması (Şaşılık): Nedenleri ve Tedavisi",
+      "kurum": "Koç Üniversitesi Hastanesi",
+      "tur": "universite",
+      "url": "https://www.kuh.ku.edu.tr/goz-hastaliklari/goz-kaymasi-sasilik",
+      "dil": "tr",
+      "ozet": "Şaşılık, gözlerin aynı yöne hizalanmaması nedeniyle bir nesneye aynı anda bakılamamasıdır. Gözün içe kaydığı türler (bebeklik çağı şaşılığı ve 2 yaşından büyük çocuklarda en sık görülen, gözün odaklanmasıyla ilişkili akomodatif şaşılık) ve gözün dışa kaydığı ekzotropya vardır. Çocuklarda nedeni çoğunlukla bilinmez; yetişkinlerde diyabet, felç, beyin yaralanması, tiroid hastalığı ve tümörler neden olabilir. Gözlerin farklı yönlere bakması başlıca belirtidir; yetişkinlerde çift görme olur, çocuklarda ise göz tembelliği gelişme riski vardır. Tedavide gözlük, göz tembelliği varsa kapama tedavisi, göz egzersizleri ve gerektiğinde ameliyat uygulanır; şaşılık cerrahisiyle ilgilenen bir göz hekimine başvurulmalıdır."
+    },
+    {
+      "id": "sasilik-medlineplus",
+      "konu": "Şaşılık",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "şaşılık",
+        "strabismus",
+        "göz kası ameliyatı",
+        "çocukta çift görme"
+      ],
+      "baslik": "Strabismus (Şaşılık)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001004.htm",
+      "dil": "en",
+      "ozet": "Şaşılıkta iki göz aynı yöne bakmaz ve aynı anda aynı nesneye odaklanamaz. Her gözün çevresindeki altı kas birlikte çalışamadığında beyin iki farklı görüntü alır; çocuklarda beyin zayıf gözden gelen görüntüyü bastırabilir ve göz tembelliği (ambliyopi) gelişebilir. Çocukluk çağı şaşılıklarının yarısından fazlası doğuştandır; yetişkinlerde diyabet, felç, Graves hastalığı, beyin yaralanması veya görme kaybı neden olabilir. Ailede şaşılık ve hipermetropi risk etkenleridir. Gözlerde kayma, çift görme, gözlerin uyumsuz hareket etmesi, görme veya derinlik algısı kaybı görülebilir; çocuklar çift görmeyi fark etmeyebilir. Önce gözlük verilir, güçlü göz kapatılarak zayıf göz çalıştırılır; gerekirse göz kaslarını düzelten ameliyat yapılır. Tedavinin başarısı yaşla azalır; göz tembelliği 11 yaşına kadar tedavi edilmezse büyük olasılıkla kalıcı olur. Çocuğunuzun gözü kayıyorsa, çift görüyorsa veya görmekte zorlanıyorsa hekime başvurun."
     }
   ],
   "kategoriler": [
