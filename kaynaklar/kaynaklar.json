@@ -5802,6 +5802,491 @@
       "url": "https://medlineplus.gov/colorectalcancer.html",
       "dil": "en",
       "ozet": "Kalın bağırsak (kolorektal) kanseri, kolon veya rektum dokusunda gelişen kanserdir. Yaş ilerledikçe risk artar; kişisel veya ailede kolorektal kanser ya da polip (adenom) öyküsü, FAP ve Lynch sendromu gibi kalıtsal hastalıklar, 8 yıldan uzun süren ülseratif kolit veya Crohn hastalığı, günde 3 veya daha fazla alkollü içki, sigara ve obezite risk etkenleridir. Birkaç günden uzun süren bağırsak alışkanlığı değişikliği, dışkıda parlak kırmızı ya da koyu renkli kan, sık gaz, şişkinlik, kramp, açıklanamayan kilo kaybı ve yorgunluk belirtiler arasındadır. Taramada kolonoskopi, sigmoidoskopi ve dışkı testleri kullanılır; ABD'de çoğu uzman taramaya 45 yaşında başlayıp en az 75 yaşına kadar sürdürmeyi önerir. Tedavi evreye göre cerrahi, kemoterapi, radyoterapi, hedefe yönelik tedavi ve immünoterapidir. Sigara içmemek, alkolü sınırlamak, kiloyu kontrol etmek, düzenli egzersiz ve taramada poliplerin alınması riski azaltır."
+    },
+    {
+      "id": "losemi-thd",
+      "konu": "Lösemi (kan kanseri)",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "lösemi",
+        "kan kanseri",
+        "ALL",
+        "akut lösemi",
+        "çocukta lösemi",
+        "lösemi belirtileri",
+        "kemik iliği biyopsisi",
+        "blast"
+      ],
+      "baslik": "Akut Lenfoblastik Lösemi",
+      "kurum": "Türk Hematoloji Derneği",
+      "tur": "dernek",
+      "url": "https://www.thd.org.tr/thd_halk/?sayfa=akut_lenfoblastik",
+      "dil": "tr",
+      "ozet": "Akut lenfoblastik lösemi (ALL), lenfoblast denen olgunlaşmamış kan hücrelerinin kontrolsüz ve aşırı çoğalmasıyla oluşan bir kan kanseridir. Çocukluk çağı lösemilerinin %80'ini oluşturur ve en sık 3-7 yaşlarında görülür; erişkinlerde akut lösemilerin %20'si ALL'dir. Çoğu hastada belirgin bir neden bulunmaz; radyasyon, benzen, bazı ilaçlar ve kemoterapi ilaçları ile Down sendromu gibi genetik durumlar riski artırabilir. Kansızlığa bağlı halsizlik, kolay yorulma ve nefes darlığı, deride morluklar ve kırmızı noktalar, burun ve diş eti kanaması, ateş ve sık enfeksiyon, lenf bezlerinde büyüme, kemik-eklem ağrıları, bulantı ve kusma görülebilir. Kan sayımında kansızlık ve trombosit düşüklüğü gibi bozukluklar saptanır; kesin tanı kemik iliği incelemesiyle konur. Tedavi kemoterapiyle yapılır; başlangıç (remisyon) tedavisi 4-8 hafta, idame tedavisi 2-3 yıl sürer. Hastaların %75-85'inde remisyon sağlanır; 5 yıl boyunca hastalığı tekrarlamayanlar iyileşmiş kabul edilir."
+    },
+    {
+      "id": "losemi-medlineplus",
+      "konu": "Lösemi (kan kanseri)",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "lösemi",
+        "AML",
+        "KLL",
+        "KML",
+        "kan kanseri belirtileri"
+      ],
+      "baslik": "Leukemia (Lösemi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/leukemia.html",
+      "dil": "en",
+      "ozet": "Lösemi, kemik iliğinde başlayan kan hücresi kanserleridir: kemik iliği çok sayıda anormal hücre (çoğunlukla beyaz kan hücresi) üretir, bu hücreler birikerek sağlıklı kan hücrelerinin yerini alır. Hızlı ilerleyen akut ve yavaş ilerleyen kronik türleri; lenfositleri tutan lenfositik ve olgunlaşmamış hücreleri tutan miyeloid türleri vardır. Akut lenfositik lösemi (ALL) çocuklarda en sık görülen kanserdir; akut miyeloid lösemi (AML) daha çok yaşlılarda, kronik lenfositik (KLL) ve kronik miyeloid lösemi (KML) daha çok orta yaş ve sonrasında görülür. Risk yaşla artar ve lösemi en sık 60 yaşından sonra görülür. Yorgunluk, ateş veya gece terlemesi, kolay morarma ya da kanama, kilo kaybı, iştahsızlık ve deride küçük kırmızı noktalar (peteşi) belirtiler arasındadır. Tanıda muayene, tam kan sayımı, kemik iliği incelemesi, genetik testler ve görüntüleme kullanılır. Tedavide kemoterapi, radyoterapi, kök hücre nakli ve hedefe yönelik tedaviler uygulanır."
+    },
+    {
+      "id": "lenf-acibadem",
+      "konu": "Lenf bezi şişliği",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "lenf bezi şişmesi",
+        "lenf bezi",
+        "lenfadenopati",
+        "boyunda bez",
+        "boynumda şişlik var",
+        "koltuk altında şişlik",
+        "kasıkta şişlik",
+        "bezelerim şişti"
+      ],
+      "baslik": "Lenf Bezi Şişmesi (Lenfadenopati) Nedir? Belirtileri ve Nedenleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/lenf-bezi-sismesi-lenfadenopati-nedir/",
+      "dil": "tr",
+      "ozet": "Lenf bezleri, bağışıklık sisteminin zararlı maddeleri süzen ve yok eden fasulye biçimli küçük parçalarıdır; boyunda, çene altında, koltuk altında, kasıkta, göğüs ve karın içinde gruplar halinde bulunur. Şişmelerinin en sık nedeni virüs, bakteri, mantar veya parazit enfeksiyonlarıdır; lupus, romatoid artrit ve sarkoidoz gibi bağışıklık hastalıkları, lenfoma veya kanser yayılımı, ilaç ve alerji tepkileri de neden olabilir. Enfeksiyona bağlı bezeler genellikle ağrılı, hassas ve kızarıktır; sert, hareketsiz ve hızla büyüyen bezeler daha ciddi bir nedeni düşündürür. Şişlik 2-4 haftadan uzun sürerse, hızla büyürse, köprücük kemiğinin üstünde çıkarsa ya da ateş, gece terlemesi veya açıklanamayan kilo kaybı eşlik ederse hekime başvurulmalıdır. Tanıda muayene, kan testleri, ultrason, BT veya MR ve gerekirse biyopsi kullanılır; tedavi nedene göredir."
+    },
+    {
+      "id": "lenf-medlineplus",
+      "konu": "Lenf bezi şişliği",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "lenf bezi şişmesi",
+        "şişmiş bezeler",
+        "çocukta lenf bezi",
+        "boyunda bezeler"
+      ],
+      "baslik": "Swollen Lymph Nodes (Lenf Bezi Şişmesi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003097.htm",
+      "dil": "en",
+      "ozet": "Lenf bezleri en kolay kasıkta, koltuk altında, boynun iki yanında, çene ve çene ucunun altında, kulak arkasında ve başın arkasında ele gelir. Şişmelerinin en sık nedeni enfeksiyonlardır: soğuk algınlığı, grip, kulak enfeksiyonu, diş sorunları, bademcik iltihabı, öpücük hastalığı (mononükleoz) ve deri enfeksiyonları. Daha seyrek olarak HIV ve romatoid artrit gibi bağışıklık hastalıkları ile lösemi, Hodgkin ve Hodgkin dışı lenfoma gibi kanserler neden olabilir; kanser çoğu zaman önce yakındaki lenf bezine yayılır. Ağrılı lenf bezleri genellikle vücudun bir enfeksiyonla savaştığını gösterir ve ağrı çoğunlukla birkaç gün içinde kendiliğinden geçer. Bezeler birkaç haftadan uzun sürer veya büyümeye devam ederse, kızarık ve hassassa, sert ya da düzensiz hissediliyorsa, ateş, gece terlemesi veya açıklanamayan kilo kaybı varsa ve çocuklarda çapı 1 santimetreden büyük bezelerde hekime başvurulmalıdır."
+    },
+    {
+      "id": "magnezyum-acibadem",
+      "konu": "Magnezyum eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "magnezyum",
+        "magnezyum eksikliği",
+        "hipomagnezemi",
+        "kas krampı",
+        "bacak krampları",
+        "magnezyum düşük",
+        "göz seğirmesi"
+      ],
+      "baslik": "Magnezyum Eksikliği (Hipomagnezemi) Belirtileri ve Nedenleri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/magnezyum-eksikligi-belirtileri-ve-nedenleri/",
+      "dil": "tr",
+      "ozet": "Magnezyum vücutta 300'den fazla enzim sisteminde görev alır; kasların ve sinirlerin çalışmasında, enerji üretiminde ve kan basıncının düzenlenmesinde önemlidir. Kan düzeyi yetişkinlerde 1,6-2,6 mg/dL, 1-19 yaş arasında 1,65-2,45 mg/dL kabul edilir. Yetersiz beslenme, aşırı alkol, böbrek hastalıkları, diyabet, kronik ishal ve bağırsak hastalıkları ile idrar söktürücüler, mide koruyucular (proton pompası inhibitörleri) ve bazı antibiyotikler eksikliğe yol açabilir. Kas krampları, yorgunluk, iştahsızlık, baş dönmesi, karıncalanma, kalp ritim bozuklukları, uyku sorunları ve kaygı görülebilir. Yaşlılar, menopoz sonrası kadınlar, kronik hastalığı olanlar ve yoğun fiziksel aktivite yapanlar risk altındadır. Tanı kan testiyle konur. Ispanak gibi yeşil yapraklı sebzeler, badem gibi kuruyemişler, tam tahıllar, muz, avokado ve kabak çekirdeği iyi kaynaklardır; takviye hekim kontrolünde kullanılmalıdır. Ciddi ritim bozukluğu veya nöbet varsa acil tıbbi yardım gerekir."
+    },
+    {
+      "id": "magnezyum-medlineplus",
+      "konu": "Magnezyum eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "magnezyum eksikliği",
+        "hipomagnezemi",
+        "magnezyum testi"
+      ],
+      "baslik": "Magnesium Deficiency (Magnezyum Eksikliği)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000315.htm",
+      "dil": "en",
+      "ozet": "Magnezyum eksikliği, kandaki magnezyumun normalden düşük olmasıdır; normal düzey 1,6-2,6 mg/dL (0,66-1,07 mmol/L) kabul edilir. Alkol kullanımı, kronik ishal, kontrolsüz diyabet gibi aşırı idrara çıkmaya yol açan durumlar, böbrek tübül hastalıkları, çölyak gibi emilim bozuklukları, yetersiz beslenme ve pankreatit neden olabilir. İdrar söktürücüler, proton pompası inhibitörleri (mide koruyucular), siklosporin, takrolimus, sisplatin, amfoterisin ve aminoglikozid antibiyotikler gibi ilaçlar da magnezyumu düşürebilir. Gözlerde istemsiz hareket, havale (nöbet), yorgunluk, kas spazmı veya krampları, kas güçsüzlüğü ve uyuşma görülebilir. Tanıda kan magnezyum düzeyi ölçülür; EKG, kalsiyum, potasyum ve idrar magnezyumu testleri istenebilir. Tedavide ağızdan veya damardan magnezyum ve sıvı verilir. Ağır eksiklik kalp ve solunum durmasına yol açabilecek hayati bir acil durumdur; belirtiler varsa hemen hekime başvurulmalıdır."
+    },
+    {
+      "id": "retinopati-baskent",
+      "konu": "Diyabetik retinopati (şekere bağlı göz hasarı)",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "diyabetik retinopati",
+        "şeker gözü",
+        "şeker hastalığı göz",
+        "diyabet göz muayenesi",
+        "retina hasarı",
+        "gözüme şeker vurdu"
+      ],
+      "baslik": "Diyabetik Retinopati",
+      "kurum": "Başkent Üniversitesi Konya Hastanesi",
+      "tur": "universite",
+      "url": "https://konya.baskenthastaneleri.com/tr/saglik-rehberi/diyabetik-retinopati",
+      "dil": "tr",
+      "ozet": "Diyabetik retinopati, şeker hastalığına bağlı olarak gözün en iç tabakası olan ağ tabakada (retina) gelişen hasardır. Erken (proliferatif olmayan) ve ileri (proliferatif) evreleri vardır. Diyabetin süresi en önemli risk etkenidir; 15 yılı aşan diyabette risk %75'e ulaşır. Kötü kan şekeri kontrolü, yüksek tansiyon, yüksek kan yağları, diyabete bağlı böbrek hastalığı ve gebelik riski artırır. Erken evrelerde belirti vermez; ileri evrede bulanık görme, ani görme kaybı ve göz önünde uçuşmalar olabilir. Tip 2 diyabette ilk göz muayenesi tanı konduğunda, tip 1 diyabette ise 10 yaşından büyüklerde tanıdan sonraki ilk 5 yıl içinde yapılmalı; sonrasında en az yılda bir kez tekrarlanmalıdır. Tedavide lazer, göz içine ilaç iğnesi ve vitrektomi ameliyatı kullanılır. Kan şekerinin iyi kontrolü, sağlıklı beslenme, sigarayı bırakmak ve kilo kontrolü korunmada önemlidir."
+    },
+    {
+      "id": "retinopati-medlineplus",
+      "konu": "Diyabetik retinopati (şekere bağlı göz hasarı)",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "diyabetik retinopati",
+        "makula ödemi",
+        "diyabet katarakt",
+        "göz önünde perde"
+      ],
+      "baslik": "Diabetic Eye Problems (Diyabete Bağlı Göz Sorunları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/diabeticeyeproblems.html",
+      "dil": "en",
+      "ozet": "Yüksek kan şekeri gözdeki damarlara ve göz merceğine zarar vererek ciddi görme sorunlarına yol açabilir. Diyabetik retinopati retina damarlarının hasarıdır ve ABD'de yetişkin körlüğünün başlıca nedenidir; hasarlı damarlardan sızan sıvı görmenin merkezini (makula) şişirebilir (diyabetik makula ödemi). Diyabetliler ayrıca glokom ve daha erken yaşta katarakt açısından risk altındadır. Erken evrelerde genellikle belirti olmadığı için düzenli, gözbebeği büyütülerek yapılan göz muayenesi gerekir. Görüşte birden çok sayıda yeni nokta veya koyu dalgalı iplikler belirmesi ya da görme alanının bir kısmını perde gibi kapatan gölge acil durumdur. Diyabetin uzun sürmesi, kan şekeri ve tansiyonun iyi kontrol edilmemesi, gebelik, yüksek kolesterol ve tütün kullanımı riski artırır. Kan şekeri, tansiyon ve kolesterolün kontrolü korur; tedavide lazer, göz içi iğneler, ameliyat ve göz damlaları kullanılır, ancak sorunlar tekrarlayabilir."
+    },
+    {
+      "id": "ambliyopi-koc",
+      "konu": "Göz tembelliği (ambliyopi)",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "göz tembelliği",
+        "tembel göz",
+        "ambliyopi",
+        "göz kapama tedavisi",
+        "çocuğumun gözü kayıyor",
+        "şaşılık",
+        "çocukta göz muayenesi"
+      ],
+      "baslik": "Göz Tembelliği",
+      "kurum": "Koç Üniversitesi Hastanesi",
+      "tur": "universite",
+      "url": "https://www.kuh.ku.edu.tr/goz-hastaliklari/goz-tembelligi",
+      "dil": "tr",
+      "ozet": "Göz tembelliği (ambliyopi), erken çocuklukta görme gelişiminin bir gözde yeterince olmamasıdır; nadiren iki gözü birden etkiler. Görme doğumdan itibaren yaklaşık 7 yaşına kadar gelişir. En sık neden gözlerdeki kas dengesizliği (şaşılık) ile iki göz arasındaki numara farkıdır (miyopi, hipermetropi, astigmatizma); katarakt gibi görmeyi engelleyen durumlar da neden olabilir. Gözlerde kayma, derinlik algısında zayıflık, gözü kısma veya kapatma ve başı eğme görülebilir; belirti olmayabileceği için tanı ancak muayeneyle konur. Bebeklerde ilk göz muayenesinin doğumdan sonraki 72. saatte, ikincisinin 6-8. haftada yapılması önerilir. Tedavide numara gözlükle düzeltilir, iyi gören göz günde 2-6 saat kapatılır ya da damlayla bulanıklaştırılır; katarakt veya şaşılıkta ameliyat gerekebilir. Erken tanı ve tedavi kalıcı görme kaybını önlemek için çok önemlidir."
+    },
+    {
+      "id": "ambliyopi-medlineplus",
+      "konu": "Göz tembelliği (ambliyopi)",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ambliyopi",
+        "göz tembelliği",
+        "göz bandı",
+        "kapama"
+      ],
+      "baslik": "Amblyopia (Göz Tembelliği)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001014.htm",
+      "dil": "en",
+      "ozet": "Ambliyopi (göz tembelliği), bir gözle net görme yeteneğinin kaybıdır ve çocuklarda en sık görülen görme sorunudur. Çocuklukta o gözden beyne giden sinir yolu yeterince gelişmediğinde ortaya çıkar. En sık neden şaşılıktır; çocukluk çağı kataraktı ve özellikle bir gözde daha belirgin olan hipermetropi, miyopi veya astigmatizma da neden olabilir. Gözlerin içe veya dışa kayması, gözlerin birlikte çalışmaması, derinliği iyi algılayamama ve bir gözde görme azlığı görülebilir. Tanı genellikle kapsamlı bir göz muayenesiyle konur. Tedavide önce altta yatan göz sorunu düzeltilir; ardından beynin zayıf gözü kullanması için sağlam göz kapatılır ya da damla veya gözlükle bulanıklaştırılır. 5 yaşından önce tedavi edilen çocukların görmesi neredeyse her zaman normale yakın düzeye döner; 10 yaşından sonra tedavi edilenlerde ise ancak kısmen düzelir. Tedavi gecikirse görme kaybı kalıcı olabilir."
+    },
+    {
+      "id": "bruselloz-hsgm",
+      "konu": "Malta humması (bruselloz)",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "brusella",
+        "bruselloz",
+        "Malta humması",
+        "mal hastalığı",
+        "peynir hastalığı",
+        "çiğ süt",
+        "köy peyniri",
+        "dalgalı ateş"
+      ],
+      "baslik": "Bruselloz",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/zoonotik-ve-vektorel-hastaliklar/bruselloz.html",
+      "dil": "tr",
+      "ozet": "Bruselloz (Malta humması), sığır, koyun ve keçi gibi hayvanlardan ve ürünlerinden insanlara bulaşan bir hastalıktır; halk arasında mal hastalığı, koyun hastalığı veya peynir hastalığı olarak da bilinir ve Brucella bakterileri neden olur. En sık bulaşma yolu pastörize edilmemiş süt, peynir ve kaymak gibi ürünlerin tüketilmesidir; hasta hayvanın dokuları ve atıklarıyla doğrudan temas da bulaştırabilir. Ortalama 2-4 haftalık kuluçka döneminden sonra ateş, gece terlemesi, kas ve eklem ağrısı, iştahsızlık, kilo kaybı ve baş ağrısı görülür. Hastalık kronikleşirse kemik, sinir sistemi ve karaciğer tutulabilir. Tedavi uzun süreli ve birden fazla antibiyotikle yapılır. Korunmak için kaynağı belli hayvansal ürünler, pastörize edilmiş veya kaynatılmış süt ürünleri tercih edilmeli; salamura peynirler en az 3 ay bekletilmeli, hayvanlar aşılanmalıdır. Ateş ve enfeksiyon belirtilerinde sağlık kuruluşuna başvurulmalıdır."
+    },
+    {
+      "id": "bruselloz-medlineplus",
+      "konu": "Malta humması (bruselloz)",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "bruselloz",
+        "brusella tedavisi",
+        "pastörize süt",
+        "Malta humması",
+        "çiğ süt",
+        "köy peyniri"
+      ],
+      "baslik": "Brucellosis (Bruselloz)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000597.htm",
+      "dil": "en",
+      "ozet": "Bruselloz, Brucella bakterilerinin yaptığı bir enfeksiyondur. Enfekte et veya hayvan eşiyle (plasenta) temas, pastörize edilmemiş peynir yemek ya da çiğ süt içmekle bulaşır. Öğleden sonraları yükselen ateş, titreme, karın ve sırt ağrısı, yorgunluk, baş ağrısı, eklem ve kas ağrısı, iştahsızlık, bezelerde şişlik, güçsüzlük ve kilo kaybı görülebilir. Tanıda kan testleri ve kan, kemik iliği, idrar veya beyin omurilik sıvısı kültürleri kullanılır. Tedavide doksisiklin, streptomisin, gentamisin veya rifampin gibi antibiyotikler çoğunlukla 6 hafta boyunca, komplikasyon varsa daha uzun süre verilir. Kemik ve eklem enfeksiyonu, beyin iltihabı, kalp iç zarı iltihabı ve menenjit gelişebilir. Korunmak için yalnızca pastörize süt ürünleri tüketilmeli, et işlerken koruyucu gözlük ve giysi kullanılmalı ve sığırlar aşılanmalıdır; insanlar için aşı yoktur."
+    },
+    {
+      "id": "hpv-hsgm",
+      "konu": "HPV ve rahim ağzı kanseri",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "HPV",
+        "HPV aşısı",
+        "rahim ağzı kanseri",
+        "serviks kanseri",
+        "HPV testi",
+        "smear",
+        "ilişki sonrası kanama",
+        "adet dışı kanama"
+      ],
+      "baslik": "Serviks (Rahim Ağzı) Kanseri Farkındalık Ayı",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/haberler-kanser/serviks-rahim-agzi-kanseri-farkindalik-ayi.html",
+      "dil": "tr",
+      "ozet": "Rahim ağzı (serviks) kanserinin neredeyse tamamı Human Papilloma Virüsü'nün (HPV) bazı tiplerinden kaynaklanır; ancak HPV enfeksiyonu geçiren herkeste kanser gelişmez. HPV enfeksiyonu, sigara, çok eşlilik, çok doğum yapmak, erken yaşta cinsel ilişki ve bağışıklığın baskılanması risk etkenleridir. Erken dönemde genellikle belirti yoktur; alışılmadık vajinal akıntı, adet dışı kanama, uzun ve ağır adet kanaması ve cinsel ilişki sırasında kanama ciddi bir duruma işaret edebilir. Türkiye'de 30-65 yaş arası sağlıklı kadınlar 5 yılda bir HPV-DNA testiyle taranır; tarama Sağlıklı Hayat Merkezleri, KETEM'ler ve Aile Sağlığı Merkezlerinde ücretsizdir. Dünya Sağlık Örgütü 9-14 yaş arası kız ve erkek çocuklara HPV aşısı önerir. Düzenli tarama, güvenli cinsel ilişki ve sigara içmemek de korunmaya yardımcı olur."
+    },
+    {
+      "id": "hpv-medlineplus",
+      "konu": "HPV ve rahim ağzı kanseri",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "HPV",
+        "genital siğil",
+        "HPV aşısı",
+        "kondom HPV"
+      ],
+      "baslik": "HPV (İnsan Papilloma Virüsü)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/hpv.html",
+      "dil": "en",
+      "ozet": "HPV (insan papilloma virüsü) 200'den fazla virüsten oluşan bir gruptur ve bazıları cinsel temasla bulaşır. Cinsel olarak aktif hemen herkes bir noktada HPV ile karşılaşır; çoğu kişide bağışıklık sistemi enfeksiyonu sorun yaratmadan kontrol eder. Düşük riskli tipler genital siğillere yol açabilir. Yüksek riskli tipler uzun süre kalırsa hücre değişikliklerine ve rahim ağzı, anüs, boğaz, vulva, vajina ve penis kanserlerine neden olabilir; bunlar genellikle kanser ya da kanser öncesi değişiklik gelişene kadar belirti vermez. Kadınlarda rahim ağzından alınan hücrelerle Pap testi ve/veya HPV testi yapılır; anormal sonuçta kolposkopiyle inceleme yapılır. Aşı, cinsel yaşam başlamadan önce yapıldığında en etkilidir; 26 yaşından büyük ve aşısız olanlar aşının yararını hekimleriyle konuşabilir. Lateks kondomun doğru kullanımı HPV bulaşma riskini büyük ölçüde azaltır, ancak tamamen ortadan kaldırmaz."
+    },
+    {
+      "id": "sigara-alo171",
+      "konu": "Sigarayı bırakma",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "sigarayı bırakmak",
+        "sigara bırakma",
+        "ALO 171",
+        "171",
+        "sigara bırakma polikliniği",
+        "nikotin bağımlılığı",
+        "sigarayı nasıl bırakırım",
+        "tütün"
+      ],
+      "baslik": "ALO 171 Sigara Bırakma Danışma Hattı",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/alo-171.html",
+      "dil": "tr",
+      "ozet": "ALO 171 Sigara Bırakma Danışma Hattı, sigarayı bırakmak isteyenleri motive etmek, nasıl bırakacakları konusunda yardımcı olmak ve sigara bırakma hizmeti veren birimler hakkında bilgi vermek için 2010'da kurulmuştur. Hat haftanın 7 günü, 24 saat canlı operatörlerle hizmet verir; sabit hatlardan ücretsizdir, cep telefonundan arandığında operatör tarifesi uygulanır. Arayan kişinin nikotin bağımlılık düzeyi bir ölçekle belirlenir: düşük-orta düzeyde bağımlılığı olanlara kişiye özel bir sigara bırakma planı hazırlanır; yüksek bağımlılığı olanlar hekim gözetiminde hizmet veren sigara bırakma polikliniklerine yönlendirilir ve randevu alınmasına yardım edilir. Plan yapan kişiler bir yıl boyunca 6 kez geri aranarak desteklenir."
+    },
+    {
+      "id": "sigara-medlineplus",
+      "konu": "Sigarayı bırakma",
+      "kategori": "Solunum",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "sigarayı bırakma",
+        "nikotin bandı",
+        "nikotin yoksunluğu",
+        "elektronik sigara",
+        "sigara bırakınca"
+      ],
+      "baslik": "Quitting Smoking (Sigarayı Bırakma)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/quittingsmoking.html",
+      "dil": "en",
+      "ozet": "Sigarayı bırakınca kısa sürede kalp hızı ve tansiyon düşer, kandaki karbonmonoksit azalır, dolaşım düzelir, öksürük ve hırıltı azalır, tat ve koku duyusu geri gelir; zamanla kanser riski her yıl biraz daha azalır ve yaşam süresi uzar. Bırakırken veya azaltırken sinirlilik, kaygı, duygu durum dalgalanmaları, kilo alma ve uyku sorunları gibi yoksunluk belirtileri görülebilir. Bir bırakma tarihi belirlemek ve hekimle konuşmak önerilir; danışmanlık ile sigara bırakma ilaçlarının birlikte kullanılması en başarılı yöntemdir. Nikotin yerine koyma ürünleri ve bağımlılığı azaltan ilaçlar yardımcı olur; egzersiz sigara isteğiyle baş etmeye yardım eder. Elektronik sigaraya geçmenin bırakmaya yardım ettiği kanıtlanmamıştır ve sağlığa etkileri hâlâ araştırılmaktadır."
+    },
+    {
+      "id": "pisik-cekerek",
+      "konu": "Bebeklerde pişik",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "pişik",
+        "bebekte pişik",
+        "pişik kremi",
+        "bebeğin poposu kızardı",
+        "bez dermatiti",
+        "pişik nasıl geçer"
+      ],
+      "baslik": "Bebeğinizin Bakımı",
+      "kurum": "T.C. Sağlık Bakanlığı Çekerek Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://cekerekdh.saglik.gov.tr/TR-248012/bebeginizin-bakimi.html",
+      "dil": "tr",
+      "ozet": "Pişik oluşmasını önlemek için bebeğin bezi her emzirmeden önce kontrol edilmeli ve kirlendiğinde değiştirilmelidir. Bebek kaka yaptığında belden aşağısını yıkamak daha uygundur. Bebeğin poposunda kızarıklık fark edilirse her bez değişiminde koruyucu bir pişik kremi sürmek yararlıdır. Kızarıklık ilerler ve ciltte açılma, yara gibi bütünlüğün bozulduğu alanlar oluşursa hekime danışılmalı ve önerilen tedavi edici kremler kullanılmalıdır."
+    },
+    {
+      "id": "pisik-medlineplus",
+      "konu": "Bebeklerde pişik",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "pişik",
+        "mantarlı pişik",
+        "kandida pişik",
+        "çinko oksit",
+        "pudra bebek"
+      ],
+      "baslik": "Diaper Rash (Pişik)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000964.htm",
+      "dil": "en",
+      "ozet": "Pişik en sık 4-15 aylık bebeklerde görülür. Sıcak ve nemli bez altında kolay üreyen kandida mantarı çok sık bir nedendir; temizliğin yetersiz olması, antibiyotik kullanımı ve sık dışkılama riski artırır. Dışkıdaki asitler, idrardan oluşan amonyak, sıkı bezler ve temizlik ürünlerine tepki de pişiğe yol açabilir. Parlak kırmızı ve yayılan kızarıklık, genital bölgede pullanma, sivilce, kabarcık, yara ve ana kızarıklığın çevresinde küçük noktalar görülebilir. Bez, çiş ve kakadan sonra sık değiştirilmeli; bölge su ve yumuşak bir bezle ovmadan temizlenip tamamen kurutulmalıdır. Kuru cilde çinko oksit veya vazelin içeren kremler sürülebilir; mantar pişiğinde mantar kremleri kullanılır. Alkollü veya parfümlü ıslak mendil kullanılmamalı; pudra (talk) bebeğin akciğerlerine kaçabileceği için kullanılmamalıdır. Pişik 2-3 günde düzelmez veya kötüleşirse, bez bölgesinin dışına yayılırsa, bebekte ateş varsa ya da pişik doğumdan sonraki ilk 6 haftada çıktıysa hekime başvurulmalıdır."
+    },
+    {
+      "id": "alkol-yesilay",
+      "konu": "Alkol bağımlılığı",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "alkol bağımlılığı",
+        "alkolizm",
+        "içkiyi bırakmak",
+        "alkolü bırakamıyorum",
+        "AMATEM",
+        "115",
+        "alkol yoksunluğu",
+        "Yeşilay Danışmanlık Merkezi"
+      ],
+      "baslik": "Alkol Bağımlılığı Nedir, Nasıl Başlar, Nasıl Tedavi Edilir?",
+      "kurum": "Yeşilay",
+      "tur": "dernek",
+      "url": "https://www.yesilay.org.tr/medya/makaleler/alkol-bagimliligi-nedir-nasil-baslar-nasil-tedavi-edilir/",
+      "dil": "tr",
+      "ozet": "Alkol bağımlılığı, alkol kullanımı üzerinde kontrolün kaybedildiği ve kişinin günlük işlevselliğinin belirgin şekilde bozulduğu uzun süreli bir beyin hastalığıdır. Alkol kesildiğinde titreme, terleme ve uykusuzluktan havale (epileptik nöbet) ve deliryuma kadar değişen yoksunluk belirtileri görülebilir. Uzun süreli alkol kullanımı karaciğer hastalıklarına, kalp sorunlarına, kanserlere ve beyin hasarına yol açar; trafik kazaları, şiddet ve intihar girişimleri riskini artırır. Tedavi, yoksunluk belirtilerinin ilaç ve destekle giderildiği arındırma döneminden sonra bireysel ve grup terapisi, aile eğitimi ve ilaç tedavisiyle sürdürülür; AMATEM'lerde ayaktan ya da yatarak tedavi yapılabilir. Yeşilay Danışmanlık Merkezi (YEDAM) 115 numaralı hattan ücretsiz psikososyal destek verir."
+    },
+    {
+      "id": "alkol-medlineplus",
+      "konu": "Alkol bağımlılığı",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "alkol kullanım bozukluğu",
+        "aşırı içme",
+        "alkol yoksunluk nöbeti",
+        "içki bırakınca titreme",
+        "alkolü bırakmak",
+        "alkol bağımlılığı"
+      ],
+      "baslik": "Alcohol Use Disorder (Alkol Kullanım Bozukluğu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/alcoholusedisorderaud.html",
+      "dil": "en",
+      "ozet": "Alkol kullanım bozukluğu; güçlü içme isteği, içmeye başlayınca durduramama ve içmediğinde kaygılı ve huzursuz hissetmeyle seyreden, hafiften ağıra değişebilen bir hastalıktır. Son bir yılda planlanandan fazla içmek, azaltma girişimlerinin başarısız olması, ilişkilerin, işin veya okulun bozulması, içkiliyken tehlikeli durumlara girmek ve içmeyince uykusuzluk, titreme, sinirlilik, kaygı, bulantı ve terleme gibi yoksunluk belirtileri işaretleri arasındadır. Risk ne kadar, ne sıklıkta ve ne hızla içildiğine bağlıdır; birkaç saat içinde erkeklerde 5, kadınlarda 4 veya daha fazla içki içmek riski artırır. Ağır içicilik kanser, siroz dahil karaciğer hastalığı, beyin ve organ hasarı riskini artırır, gebelikte bebeğe zarar verir ve kaza, yaralanma ve intihar kaynaklı ölüm riskini yükseltir. Ağır yoksunlukta ateş, havale ve halüsinasyon görülebilir. Tedavide ilaçlar, davranışçı terapiler ve destek grupları kullanılır."
+    },
+    {
+      "id": "gunes-hsgm",
+      "konu": "Güneş yanığı ve güneşten korunma",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "güneş yanığı",
+        "güneşten korunma",
+        "güneş kremi",
+        "cilt kanseri",
+        "ben değişikliği",
+        "melanom",
+        "solaryum",
+        "güneşte yandım",
+        "güneşte yanmak"
+      ],
+      "baslik": "Cilt Kanseri Farkındalık Ayı",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/haberler-kanser/cilt-kanseri-farkindalik-ayi.html",
+      "dil": "tr",
+      "ozet": "Güneşten gelen ultraviyole (UV) ışınlar cilt hücrelerine zarar vererek cilt kanserine yol açabilir; özellikle 10.00-16.00 saatleri arasında güneşte kalmak riski ciddi şekilde artırır. Uzun ve yoğun güneşe maruz kalanlar, çocuklukta güneş yanığı geçirenler, ailesinde cilt kanseri olanlar, solaryum gibi yapay UV kaynaklarını kullananlar ve açık tenliler risk altındadır. Korunmak için koruyucu giysiler, geniş spektrumlu ve yüksek koruma faktörlü güneş kremi, şapka ve güneş gözlüğü kullanılmalıdır. Ciltte yeni çıkan ya da boyutu, şekli veya rengi değişen benler erken tanı için hekime gösterilmelidir."
+    },
+    {
+      "id": "gunes-medlineplus",
+      "konu": "Güneş yanığı ve güneşten korunma",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "güneş yanığı",
+        "güneşte yandım",
+        "güneş yanığına ne iyi gelir",
+        "SPF",
+        "su toplayan güneş yanığı"
+      ],
+      "baslik": "Sunburn (Güneş Yanığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003227.htm",
+      "dil": "en",
+      "ozet": "Güneş yanığında cilt kızarık, hassas ve dokunulunca sıcaktır; etkisi birkaç saatte başlar, tam olarak 24 saat veya daha sonra ortaya çıkar. Kabarcıklar saatler-günler içinde oluşabilir; ağrı güneşten 6-48 saat sonra en şiddetlidir. Serin banyo, yağ içermeyen nemlendirici, ibuprofen veya parasetamol, kortizonlu krem, bol pamuklu giysi ve bol su içmek rahatlatır. Benzokain veya lidokain içeren ürünler, tereyağı, vazelin ve yağlı ürünler kullanılmamalı, kabarcıklar koparılmamalı, çocuklara aspirin verilmemelidir. Yanıkla birlikte ateş, bayılma, baş dönmesi, hızlı nabız, aşırı susama, soluk ve nemli cilt, bulantı, ışıkta göz ağrısı ya da ağır kabarcıklar varsa hemen hekime başvurulmalıdır. Korunmak için SPF 30 veya daha yüksek geniş spektrumlu güneş kremi bolca sürülmeli, 2 saatte bir ve yüzme veya terlemeden sonra yenilenmeli; güneşin en güçlü olduğu saatlerde güneşten uzak durulmalıdır. Güneş hasarı çoğu zaman kalıcıdır; çocuklukta alınan güneş ileride cilt kanseri riskini artırır."
+    },
+    {
+      "id": "nodul-acibadem",
+      "konu": "Tiroid nodülü",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "tiroid nodülü",
+        "tiroidde nodül",
+        "guatr",
+        "boyunda şişlik",
+        "tiroid biyopsisi",
+        "ince iğne biyopsisi",
+        "soğuk nodül",
+        "sıcak nodül",
+        "tiroidimde nodül",
+        "nodül çıktı"
+      ],
+      "baslik": "Tiroid Nodülü Nedir? Tiroid Nodülü Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/tiroid-nodulleri/",
+      "dil": "tr",
+      "ozet": "Tiroid nodülü, tiroid bezinde oluşan sıvı dolu veya katı kitlelerdir; çoğu iyi huyludur ve belirti vermez. Dünya genelinde en sık neden iyot eksikliğidir; genetik yatkınlık, tiroid iltihabı (tiroidit), guatr, kist ve adenomlar da neden olabilir. Büyüyen nodüller boyunda şişlik, yutma güçlüğü, nefes darlığı ve ses kısıklığına; hormon üreten nodüller çarpıntı, kilo kaybı ve terlemeye yol açabilir. Hormon üretmeyen (soğuk) nodüllerde kanser riski yaklaşık %5'tir; hızlı büyüme, sertlik, düzensiz kenarlar, ses kısıklığı ve yutma güçlüğü şüpheli özelliklerdir. Tanıda TSH ve diğer tiroid testleri, ultrason, ince iğne aspirasyon biyopsisi ve tiroid sintigrafisi kullanılır. Tedavi nodülün özelliğine göre takip, ilaç, radyoaktif iyot veya ameliyattır; 40 mm'den büyük ya da kanserli nodüllerde ameliyat düşünülür. Düzenli ultrason ve hormon takibi önemlidir."
+    },
+    {
+      "id": "nodul-medlineplus",
+      "konu": "Tiroid nodülü",
+      "kategori": "Hormon ve metabolizma",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "tiroid nodülü",
+        "tiroid kanseri",
+        "tiroid ultrasonu",
+        "tiroidimde nodül",
+        "nodül çıktı"
+      ],
+      "baslik": "Thyroid Nodule (Tiroid Nodülü)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/007265.htm",
+      "dil": "en",
+      "ozet": "Tiroid nodülü, boynun önündeki tiroid bezinde oluşan bir yumrudur; iyi huylu veya kanserli, sıvı dolu ya da katı, tek veya çok sayıda, hormon üreten veya üretmeyen olabilir. Çok yaygındır; kadınlarda daha sık görülür ve yaşla artar. Hashimoto hastalığı ve iyot eksikliği bilinen nedenlerdir, ancak çoğu zaman neden bulunamaz. Nodüllerin yalnızca küçük bir kısmı kanserdir; nodülün sert olması veya çevre dokulara yapışık olması, ailede tiroid kanseri, ses değişikliği, 20 yaşından küçük ya da 70 yaşından büyük olmak, radyasyona maruz kalmış olmak ve erkek cinsiyet riski artırır. Çoğu belirti vermez; büyük nodüller boyunda şişlik, ses kısıklığı, ağrı, nefes alma veya yutma güçlüğü yapabilir. Tanıda TSH ve diğer tiroid testleri, ultrason, tiroid sintigrafisi ve ince iğne biyopsisi kullanılır. Kanserli, belirti veren veya biyopsisi kesin sonuç vermeyen nodüllerde ameliyat önerilir; belirtisiz ve büyümeyen iyi huylu nodüller 6-12 ayda bir ultrasonla izlenir."
     }
   ],
   "kategoriler": [
