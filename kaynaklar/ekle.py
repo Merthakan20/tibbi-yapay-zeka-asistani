@@ -10,7 +10,7 @@ from datetime import date
 from pathlib import Path
 
 ALANLAR = ["id", "konu", "kategori", "acil", "anahtar_kelimeler", "baslik", "kurum", "tur", "url", "dil", "ozet"]
-TURLER = {"resmi", "universite", "ozel", "uluslararasi"}
+TURLER = {"resmi", "universite", "dernek", "ozel", "uluslararasi"}
 
 KURUMLAR = {
     "ML": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",

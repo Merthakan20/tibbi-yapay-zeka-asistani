@@ -1,6 +1,6 @@
 {
   "aciklama": "Güvenilir tıbbi kaynakların Türkçe özetleri. Özetler kaynak sayfalardan derlenmiştir; asıl metin için bağlantıya bakın.",
-  "guncelleme": "2026-10-27",
+  "guncelleme": "2026-10-28",
   "kaynaklar": [
     {
       "id": "hipertansiyon-hsgm",
@@ -5317,6 +5317,491 @@
       "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/gerilim-tipi-bas-agrisi-nedir/",
       "dil": "tr",
       "ozet": "Gerilim tipi baş ağrısı en sık görülen baş ağrısı türüdür. Genellikle başın iki yanında, başı bir bant gibi saran baskı veya sıkışma şeklinde hissedilir; hafif veya orta şiddettedir ve migrendeki gibi zonklamaz. Bulantı nadirdir ve günlük işler çoğunlukla sürdürülebilir. Ataklar 30 dakika ile birkaç gün arasında sürebilir. Stres, boyun ve omuz kaslarında gerginlik, uykusuzluk, göz yorgunluğu, uzun süre ekrana bakmak, açlık, kafein, depresyon ve kaygı ile kötü duruş tetikleyebilir. Tanı çoğunlukla muayene ve öyküyle konur; görüntüleme nadiren gerekir. Tedavide ağrı kesiciler kullanılabilir, ancak ayda çok sayıda gün ağrı kesici almak ilaç aşırı kullanımına bağlı baş ağrısına yol açabilir. Stres yönetimi, fizik tedavi ve bilişsel davranışçı terapi sık tekrarlayan ağrılarda yardımcıdır. Evde dinlenme, ılık duş veya boyuna sıcak uygulama, nefes egzersizleri, düzenli uyku, yeterli su içme, kafeini azaltma ve masaj rahatlatabilir."
+    },
+    {
+      "id": "trombosit-acibadem",
+      "konu": "Trombosit düşüklüğü (trombositopeni)",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "trombosit düşüklüğü",
+        "trombositopeni",
+        "trombosit düşük",
+        "PLT düşük",
+        "kolay morarma",
+        "ciltte mor lekeler",
+        "diş eti kanaması",
+        "ITP"
+      ],
+      "baslik": "Trombosit Düşüklüğü (Trombositopeni) Nedir? Nedenleri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/trombosit-dusuklugu-trombositopeni-nedir/",
+      "dil": "tr",
+      "ozet": "Trombositler kanın pıhtılaşmasını sağlayan kan hücresi parçacıklarıdır; sayılarının normalin altına inmesine trombositopeni denir. Kemik iliği hastalıkları (lösemi, lenfoma, aplastik anemi), bağışıklık sisteminin trombositleri yıkması (ITP), dang, hepatit ve HIV gibi virüs enfeksiyonları, bazı antibiyotikler ve kemoterapi, dalak büyümesi, B12 ve folat eksikliği ile yoğun alkol kullanımı neden olabilir. Kolay morarma, deride kırmızı-mor noktalar ve lekeler, burun ve diş eti kanaması, küçük yaralarda uzun süren kanama görülebilir; ağır düşüklükte beyin kanaması gibi ciddi kanamalar olabilir. Tanı tam kan sayımıyla (hemogram) konur. Tedavi altta yatan nedene göredir; kortizon ilaçları, trombosit nakli veya dalağın alınması gerekebilir. Açıklanamayan kanama veya morarma olanlar hekime başvurmalıdır."
+    },
+    {
+      "id": "trombosit-medlineplus",
+      "konu": "Trombosit düşüklüğü (trombositopeni)",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "trombositopeni",
+        "trombosit düşüklüğü",
+        "peteşi",
+        "morluk",
+        "kanama bozukluğu"
+      ],
+      "baslik": "Thrombocytopenia (Trombosit Düşüklüğü)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000586.htm",
+      "dil": "en",
+      "ozet": "Trombositopeni, kandaki trombosit (pıhtılaşma hücresi) sayısının anormal derecede düşük olmasıdır. Üç ana mekanizmayla olur: kemik iliğinin yeterli trombosit yapamaması, trombositlerin dolaşımdan hızla yok edilmesi ya da dalak veya karaciğerde tutulmaları. Aplastik anemi, lösemi, vitamin eksiklikleri, enfeksiyonlar, kemoterapi, bağışıklık kaynaklı trombositopeni (ITP), büyümüş dalak ve siroz nedenler arasındadır. Birçok kişide belirti yoktur; olduğunda ağız ve diş etinde kanama, morluklar, burun kanaması ve özellikle bacaklarda küçük kırmızı noktalar (peteşi) görülür. Tanıda kan sayımı, pıhtılaşma testleri, kan yayması ve gerekirse kemik iliği incelemesi yapılır. Tedavi nedene göredir; kanamayı önlemek veya durdurmak için trombosit nakli gerekebilir. En önemli tehlike beyinde veya mide-bağırsakta ağır kanamadır; açıklanamayan kanama veya morarmada hekime başvurulmalıdır."
+    },
+    {
+      "id": "folat-medicalpark",
+      "konu": "Folik asit (folat) eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "folik asit",
+        "folat",
+        "B9 vitamini",
+        "folik asit eksikliği",
+        "gebelikte folik asit",
+        "folat düşük"
+      ],
+      "baslik": "Folik Asit Nedir? Folik Asit Eksikliği Belirtileri Nelerdir?",
+      "kurum": "Medical Park Hastaneleri",
+      "tur": "ozel",
+      "url": "https://www.medicalpark.com.tr/saglik-rehberi/folik-asit-nedir",
+      "dil": "tr",
+      "ozet": "Folik asit, B9 vitamininin (folat) yapay biçimidir; hücre yenilenmesi, DNA yapımı ve kırmızı kan hücresi üretimi için gereklidir, gebelikte bebeğin beyin ve omurilik gelişimini korur. Yetersiz beslenme, bağırsaktan emilim bozuklukları, gebelik ve emzirme gibi ihtiyacın arttığı dönemler, alkol, bazı ilaçlar ve kronik hastalıklar eksikliğe yol açabilir. Halsizlik, solukluk, nefes darlığı, unutkanlık, ağız yaraları, dilde hassasiyet ve iştahsızlık görülebilir. Gebelikte eksiklik bebekte nöral tüp (beyin-omurilik) kusurlarının riskini artırır; bu nedenle takviyeye gebelikten önce başlanması önerilir. Günlük ihtiyaç yaklaşık 400 mikrogramdır. Yeşil yapraklı sebzeler, mercimek gibi baklagiller, portakal, karaciğer ve tam tahıllar iyi kaynaklardır. Takviye hekim kontrolünde kullanılmalıdır."
+    },
+    {
+      "id": "folat-medlineplus",
+      "konu": "Folik asit (folat) eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "folat eksikliği anemisi",
+        "folik asit eksikliği",
+        "makrositer anemi",
+        "MCV yüksek"
+      ],
+      "baslik": "Folate-deficiency Anemia (Folat Eksikliği Anemisi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000551.htm",
+      "dil": "en",
+      "ozet": "Folat eksikliği anemisi, bir B vitamini olan folatın yetersizliğine bağlı olarak kırmızı kan hücrelerinin azalmasıdır; hücreler normalden büyük (makrosit) olur. Yiyeceklerle yeterli folat alınmaması, hemolitik anemi, uzun süreli alkol kullanımı ve fenitoin, metotreksat, sülfasalazin, triamteren, trimetoprim-sülfametoksazol, barbitüratlar gibi bazı ilaçlar neden olabilir. Alkol kullananlar, az taze sebze-meyve yiyenler, gebeler, zayıflama diyeti yapanlar ve yaşlılar risk altındadır. Yorgunluk, güçsüzlük, baş ağrısı, solukluk ve ağızda-dilde yara görülebilir. Tanı kan sayımı ve kırmızı hücre folat düzeyiyle konur. Tedavide ağızdan, iğneyle veya damardan folik asit verilir ve yeşil yapraklı sebze ile turunçgilleri artıran beslenme önerilir. Kadınların gebelikten önce başlayıp gebeliğin ilk 3 ayı boyunca günde 400-800 mikrogram folik asit alması önerilir."
+    },
+    {
+      "id": "arpacik-koc",
+      "konu": "Arpacık",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "arpacık",
+        "göz kapağında şişlik",
+        "göz kapağında sivilce",
+        "şalazyon",
+        "gözümde arpacık çıktı",
+        "kirpik dibinde şişlik"
+      ],
+      "baslik": "Arpacık",
+      "kurum": "Koç Üniversitesi Hastanesi",
+      "tur": "universite",
+      "url": "https://www.kuh.ku.edu.tr/goz-hastaliklari/arpacik",
+      "dil": "tr",
+      "ozet": "Arpacık, göz kapağındaki yağ bezlerinin çoğunlukla stafilokok bakterisiyle enfekte olmasıdır. Dış arpacık kirpik dibinde sivilceye benzer şekilde başlar; iç arpacık kapağın içindeki yağ bezinde oluşur. Sağlıksız beslenme, uykusuzluk, makyajı çıkarmadan uyumak, lens hijyenine dikkat etmemek ve zayıf bağışıklık riski artırır. Gözde batma, sulanma, ışığa hassasiyet, çapaklanma, kapakta ağrı ve kızarıklık, şişliğin ortasında sarı iltihap görülebilir. Arpacık çoğunlukla kendiliğinden geçme eğilimindedir; 48 saat içinde düzelme olmazsa sağlık kuruluşuna başvurulmalıdır. Tedavide antibiyotikli damla veya krem, gerekirse tablet kullanılır. Tedavi edilmeyen arpacık kalıcı bir şişliğe (şalazyon) dönüşebilir; bu durumda küçük bir cerrahi işlem gerekebilir."
+    },
+    {
+      "id": "arpacik-medlineplus",
+      "konu": "Arpacık",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "arpacık",
+        "şalazyon",
+        "göz kapağı şişliği",
+        "sıcak kompres göz"
+      ],
+      "baslik": "Eyelid Bump (Göz Kapağında Şişlik: Arpacık ve Şalazyon)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001009.htm",
+      "dil": "en",
+      "ozet": "Arpacık, göz kapağı kenarında kirpiğin kapakla birleştiği yerdeki bir yağ bezinin iltihaplanmasıdır; bez tıkanır ve içinde bakteri çoğalır. Bez tamamen tıkanırsa şalazyon oluşur; büyük şalazyon görmeyi etkileyebilir. Kırmızı, şiş bir kabarıklığın yanında gözde kum batması hissi, ışığa hassasiyet, sulanma ve kapakta hassasiyet olabilir. Evde günde 4 kez, 10'ar dakika ılık ve ıslak bir bez uygulanır; iyileşene kadar lens ve göz makyajı kullanılmaz. Arpacık sıkılmamalı, kendiliğinden açılması beklenmelidir; çoğu kendiliğinden düzelir. Görme sorunu olursa, şişlik 1-2 hafta içinde kötüleşirse, çok büyür veya ağrılı olursa, kabarcık, kabuklanma, yaygın kızarıklık, aşırı ışık hassasiyeti, kanama ya da sık tekrarlama varsa hekime başvurulmalıdır."
+    },
+    {
+      "id": "verem-hsgm",
+      "konu": "Verem (tüberküloz)",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "verem",
+        "tüberküloz",
+        "TB",
+        "geçmeyen öksürük",
+        "üç haftadır öksürüyorum",
+        "kanlı balgam",
+        "gece terlemesi",
+        "BCG aşısı",
+        "verem savaş dispanseri"
+      ],
+      "baslik": "Tüberkülozdan Korunma",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/tuberkulozdan-korunma.html",
+      "dil": "tr",
+      "ozet": "Verem (tüberküloz) bulaşıcı bir hastalıktır. 2-3 haftadan uzun süren öksürüğü olan ve akciğer bulguları antibiyotik tedavisiyle düzelmeyen kişilerde verem araştırılmalıdır. Türkiye'de veremin tanı ve tedavisi ücretsizdir. Tedavide başlangıçta 4 ilaç, devam döneminde en az 2 ilaç kullanılır; ilaçların düzenli ve yeterli süre alınması iyileşme için şarttır. Bebeklere doğumdan 2 ay sonra BCG aşısı yapılır. Hastayla temas edenler taranır ve izlenir; yüksek riskli kişilere 6 ay süreyle koruyucu ilaç önerilir. Bulaşmayı azaltmak için hasta cerrahi maske kullanmalı, ortam sık havalandırılmalı ve güneş ışığı alması sağlanmalıdır."
+    },
+    {
+      "id": "verem-medlineplus",
+      "konu": "Verem (tüberküloz)",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "verem",
+        "tüberküloz",
+        "latent tüberküloz",
+        "PPD",
+        "verem testi",
+        "balgamda kan",
+        "geçmeyen öksürük",
+        "uzun süren öksürük"
+      ],
+      "baslik": "Tuberculosis (Verem)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/tuberculosis.html",
+      "dil": "en",
+      "ozet": "Verem, Mycobacterium tuberculosis bakterisinin yaptığı, çoğunlukla akciğeri, bazen böbrek, omurga ve beyni tutan bir hastalıktır. Hasta kişi öksürdüğünde, hapşırdığında, konuştuğunda havaya yayılan parçacıklarla bulaşır; dokunma, öpüşme veya ortak tabakla bulaşmaz ve en çok birlikte yaşanan ya da çalışılan kişilere geçer. Gizli (latent) veremde mikrop vücutta olduğu halde hastalık yapmaz ve bulaştırmaz; aktif hastalıkta ateş, titreme, gece terlemesi, istemsiz kilo kaybı, iştahsızlık, halsizlik ve akciğer tutulumunda 3 haftadan uzun süren öksürük, kanlı balgam ve göğüs ağrısı olur. HIV taşıyanlar, son 2 yılda enfekte olanlar, diyabetliler, bağışıklığı baskılayan ilaç kullananlar, 5 yaş altı çocuklar ve yaşlılar risk altındadır. Tanıda deri veya kan testi, gerekirse balgam ve akciğer filmi kullanılır. Gizli verem 3-9 ay, aktif verem genellikle 4-9 ay antibiyotikle tedavi edilir; doz atlamak ilaç direncine yol açar."
+    },
+    {
+      "id": "hepatitc-hsgm",
+      "konu": "Hepatit C",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hepatit C",
+        "HCV",
+        "anti-HCV",
+        "sarılık",
+        "karaciğer iltihabı",
+        "kan yoluyla bulaşan"
+      ],
+      "baslik": "Hepatit C",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/hastaliklar/hepatit-c.html",
+      "dil": "tr",
+      "ozet": "Hepatit C, karaciğer hücrelerine zarar veren bir virüs enfeksiyonudur; Türkiye'de yaklaşık %1 oranında görülür. Kuluçka süresi 2 hafta ile 6 ay arasındadır ve hastalık sıklıkla kronikleşir. Kan ve kan ürünleri, organ nakli, uyuşturucu kullanımında ortak enjektör, steril olmayan enjeksiyon ve kozmetik işlemlerle bulaşır; gebelikte anneden bebeğe geçiş düşük orandadır (%5'in altında). Kalıtsal değildir ve emzirmeyle bulaşmaz. Çoğu kişide belirti yoktur; iştahsızlık, bulantı, kusma, karın ağrısı ve nadiren sarılık görülebilir. Tanı anti-HCV testi ve doğrulayıcı testlerle (HCV-PCR) konur. Doğrudan etkili antiviral ilaçlarla 8-12 haftalık tedavi çoğu hastada kür sağlar. Aşısı yoktur; korunmada kan ürünlerinin taranması, güvenli enjeksiyon ve tek kullanımlık malzeme önemlidir."
+    },
+    {
+      "id": "hepatitc-medlineplus",
+      "konu": "Hepatit C",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hepatit C",
+        "HCV",
+        "siroz",
+        "karaciğer kanseri",
+        "hepatit testi"
+      ],
+      "baslik": "Hepatitis C (Hepatit C)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/hepatitisc.html",
+      "dil": "en",
+      "ozet": "Hepatit C, hepatit C virüsünün yaptığı karaciğer iltihabıdır. Akut dönem 6 aya kadar sürer; bazı kişilerde vücut virüsü temizler, ancak çoğu kişide enfeksiyon kronikleşir ve tedavi edilmezse ömür boyu sürebilir. Enfekte kanla temasla bulaşır: ortak enjektör, iğne batması, steril olmayan dövme veya piercing aletleri, ortak jilet veya diş fırçası, anneden bebeğe ve korunmasız cinsel ilişki. Çoğu kişide belirti olmaz; bazılarında temastan 1-3 ay sonra koyu idrar, yorgunluk, ateş, açık renkli dışkı, eklem ağrısı, iştahsızlık, bulantı, karın ağrısı veya sarılık görülür. Kronik hastalık yıllarca belirtisiz kalıp siroz, karaciğer yetmezliği ve karaciğer kanserine yol açabilir. Antiviral ilaçlar çoğu kişide hastalığı tamamen iyileştirir. Aşısı yoktur; enjektör ve kişisel eşyaları paylaşmamak ve kondom kullanmak korur."
+    },
+    {
+      "id": "covid-saglik",
+      "konu": "COVID-19",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "COVID-19",
+        "koronavirüs",
+        "korona",
+        "covid",
+        "tat ve koku kaybı",
+        "SARS-CoV-2"
+      ],
+      "baslik": "COVID-19 Nedir?",
+      "kurum": "T.C. Sağlık Bakanlığı",
+      "tur": "resmi",
+      "url": "https://covid19.saglik.gov.tr/tr-66300/covid-19-nedir-.html",
+      "dil": "tr",
+      "ozet": "COVID-19, SARS-CoV-2 virüsünün yaptığı, ilk kez Aralık 2019'da tespit edilen bir solunum yolu hastalığıdır. En sık belirtiler ateş, öksürük ve nefes darlığıdır; ağır vakalarda zatürre ve solunum yetmezliği gelişebilir. Hasta kişinin öksürük ve hapşırıkla saçtığı damlacıkların solunmasıyla ve bu damlacıkların bulaştığı yüzeylere dokunduktan sonra ellerin yüze götürülmesiyle bulaşır. 60 yaş ve üzerindekiler ile kalp hastalığı, yüksek tansiyon, diyabet veya kanser gibi kronik hastalığı olanlar ağır hastalık açısından risk altındadır. Korunmada elleri en az 20 saniye yıkamak, hasta kişilerle yakın temastan kaçınmak ve öksürürken ağzı-burnu kapatmak önemlidir."
+    },
+    {
+      "id": "covid-medlineplus",
+      "konu": "COVID-19",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "COVID-19",
+        "korona",
+        "covid testi",
+        "Paxlovid",
+        "uzun covid"
+      ],
+      "baslik": "Coronavirus Disease 2019 (COVID-19)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/007768.htm",
+      "dil": "en",
+      "ozet": "COVID-19, SARS-CoV-2 virüsünün yaptığı ateş, öksürük ve nefes darlığına yol açan bir solunum yolu hastalığıdır; çoğu kişide hafif-orta seyreder. Yakın temasta konuşma, öksürük ve nefesle çıkan damlacıklarla, kötü havalandırılan kapalı ortamlarda havadan da bulaşır; yüzeylerden bulaşma seyrektir. Belirtiler temastan 2-14 gün sonra, çoğunlukla 5. gün civarında başlar; belirtisiz kişiler de bulaştırabilir. Ateş, titreme, öksürük, nefes darlığı, yorgunluk, kas ağrısı, baş ağrısı, tat-koku kaybı, boğaz ağrısı, burun tıkanıklığı, bulantı ve ishal görülebilir. Nefes almada güçlük, geçmeyen göğüs ağrısı veya baskı, bilinç bulanıklığı, uyanamama, dudak veya yüzde morarma acil durumdur (112). Yaşlılar ve kronik hastalığı olanlar risk altındadır. Hafif-orta hastalıkta yüksek riskli kişilere ilk 5-7 gün içinde antiviral ilaç verilebilir. Aşı, hastayken evde kalmak, maske, el hijyeni ve havalandırma korur."
+    },
+    {
+      "id": "kolik-behcetuz",
+      "konu": "Bebeklerde kolik (gaz sancısı)",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kolik",
+        "gaz sancısı",
+        "bebek çok ağlıyor",
+        "bebeğim akşamları ağlıyor",
+        "bebekte gaz",
+        "infantil kolik",
+        "durmadan ağlayan bebek"
+      ],
+      "baslik": "Nedensiz Ağlama (İnfantil Kolik)",
+      "kurum": "T.C. Sağlık Bakanlığı İzmir Dr. Behçet Uz Çocuk Hastanesi",
+      "tur": "resmi",
+      "url": "https://behcetuzch.saglik.gov.tr/TR-107600/nedensiz-aglama-infantil-kolik.html",
+      "dil": "tr",
+      "ozet": "İnfantil kolik, sağlıklı bir bebeğin haftada 3 günden fazla, günde 3 saatten uzun süren, genellikle öğleden sonra ve akşam saatlerinde ortaya çıkan nedensiz ağlama nöbetleridir. Bebeklerin yaklaşık %20-30'unda görülür; doğumdan sonraki 2-3. haftada başlar ve ilk 3-4 ayda sona erer. Nöbet sırasında karın şişkin, vücut gergin olabilir. Sinir ve sindirim sisteminin henüz olgunlaşmamış olması, inek sütü alerjisi, annenin gaz yapıcı besinler (lahana, karnabahar, inek sütü) tüketmesi ve düzensiz, sık beslenme rol oynayabilir. Annenin gaz yapıcı besinlerden kaçınması, bebeğin beslenmeden sonra gazının çıkarılması, çok sık beslenmekten kaçınılması ve bebeğin kucağa alınıp sakinleştirilmesi önerilir. Güçlü ilaçlardan kaçınılmalı; bebeğin makatına termometre sokmak çoğunlukla gereksiz ve zararlıdır."
+    },
+    {
+      "id": "kolik-medlineplus",
+      "konu": "Bebeklerde kolik (gaz sancısı)",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kolik",
+        "bebek ağlaması",
+        "bebeği sakinleştirme",
+        "kundak",
+        "bebeği sarsmak"
+      ],
+      "baslik": "Colic and Crying - Self-care (Kolik ve Ağlama)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000753.htm",
+      "dil": "en",
+      "ozet": "Bebek günde 3 saatten uzun ağlıyorsa kolik olabilir; kolik bir hastalıktan kaynaklanmaz ve bu bebekler iyi beslenip normal kilo alır. Genellikle 3. hafta civarında başlar, 4-6. haftalarda en yoğun hale gelir, 12. haftada günde 1 saatin altına iner; çoğu bebekte 3-4 ayda geçer. Gaz, açlık, fazla beslenme, bazı besinlere hassasiyet ve aşırı uyarılma rol oynayabilir. Kundaklamak, kucağa alıp sallamak, şarkı söylemek, dik tutmak, emzik, araba gezintisi ve beyaz gürültü bebeği rahatlatabilir; bebek uyanıkken karın üstü yatırılabilir. Emziren anneye kafein, çikolata ve süt ürünlerini azaltması önerilebilir. Sabrınızın tükendiğini hissederseniz yakınlarınızdan yardım isteyin; bebeği sarsabileceğinizi ya da ona zarar verebileceğinizi hissederseniz hemen yardım alın. Ağlama aşırıysa, kolik 3 ayda geçmediyse, davranış aniden değiştiyse veya ateş, kusma, ishal ya da kanlı dışkı varsa hekime başvurun."
+    },
+    {
+      "id": "asi-portal",
+      "konu": "Çocukluk dönemi aşıları",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "aşı takvimi",
+        "bebek aşıları",
+        "çocuk aşıları",
+        "karma aşı",
+        "KKK aşısı",
+        "aşı kartı",
+        "aşı ne zaman",
+        "aşı kaçırdım"
+      ],
+      "baslik": "Aşı Takvimi",
+      "kurum": "T.C. Sağlık Bakanlığı Aşı Portalı",
+      "tur": "resmi",
+      "url": "https://asi.saglik.gov.tr/bagisiklama-programi-ve-asi-takvimi/asi-takvimi.html",
+      "dil": "tr",
+      "ozet": "Türkiye'de çocukluk dönemi bağışıklama programında 13 hastalığa karşı rutin aşı yapılır: difteri, boğmaca, tetanos, çocuk felci, hepatit B, hepatit A, Haemophilus influenzae tip b, tüberküloz (verem), kızamık, kabakulak, kızamıkçık, suçiçeği ve pnömokok. Aşılar doğumdan itibaren belirli aylarda uygulanır; güncel aşı takvimi ve aşı kartı Sağlık Bakanlığı Aşı Portalı'nda yayımlanır."
+    },
+    {
+      "id": "asi-medlineplus",
+      "konu": "Çocukluk dönemi aşıları",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "çocuk aşıları",
+        "aşı güvenli mi",
+        "aşı otizm",
+        "aşı yan etkisi",
+        "toplum bağışıklığı"
+      ],
+      "baslik": "Childhood Immunization (Çocukluk Çağı Aşıları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/childhoodimmunization.html",
+      "dil": "en",
+      "ozet": "Aşılar bağışıklık sistemine zararlı mikropları tanımayı ve onlarla savaşmayı öğretir; bebekler bazı ağır hastalıklarla kendi başına baş edemediği için aşılar onları hastalığı geçirmeden korur. Aşılar öldürülmüş veya zayıflatılmış mikrop ya da mikrop parçaları içerir; vücut bunu hatırlar ve daha sonra karşılaşınca mikroba saldırır. Aşılanan çocuklar, aşı olamayan kişileri de korur (toplum bağışıklığı). Aşılar onaydan önce kapsamlı testlerden geçer ve güvenlidir; bilimsel çalışmalar aşılarla otizm arasında bir bağlantı bulmamıştır ve aşılar bağışıklık sistemini aşırı yüklemez. Çocukluk aşıları suçiçeği, COVID-19, difteri, grip, hepatit A ve B, kızamık, kabakulak, boğmaca, çocuk felci, rotavirüs ve tetanoza karşı korur. Aşıların takvimde belirtilen zamanda yapılması, çocuğun hastalıkla karşılaşmadan önce korunmasını sağlar."
+    },
+    {
+      "id": "tssb-tpd",
+      "konu": "Travma sonrası stres bozukluğu (TSSB)",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "travma sonrası stres bozukluğu",
+        "TSSB",
+        "travma",
+        "deprem sonrası",
+        "kaza sonrası korku",
+        "kabus görüyorum",
+        "olayı tekrar tekrar yaşıyorum",
+        "irkilme"
+      ],
+      "baslik": "Travma Sonrası Stres Bozukluğu",
+      "kurum": "Türkiye Psikiyatri Derneği",
+      "tur": "dernek",
+      "url": "https://psikiyatri.org.tr/halka-yonelik/28/travma-sonrasi-stres-bozuklugu",
+      "dil": "tr",
+      "ozet": "Travma sonrası stres bozukluğu (TSSB), kişinin kendisinin ya da bir yakınının ölüm veya yaralanma tehdidiyle karşılaştığı ve korku, dehşet ya da çaresizlik yaşadığı olaylardan sonra gelişebilen bir ruhsal rahatsızlıktır. Deprem, sel ve yangın gibi afetler, savaş, işkence, tecavüz, iş ve trafik kazaları, beklenmedik ölümler ve ciddi hastalıklar tetikleyebilir. Olayın rahatsız edici biçimde tekrar tekrar hatırlanması, olayı hatırlatan yer ve konuşmalardan kaçınma, sürekli tetikte olma, ani seslerle irkilme ve uyku sorunları başlıca belirtilerdir. Belirtiler genellikle olaydan sonraki günlerde başlar ve birçok kişide birkaç hafta içinde düzelir; bazı kişilerde aylarca, hatta yıllarca sürebilir. Kadınlarda, daha önce travma yaşamış ya da ruhsal hastalığı olanlarda risk daha yüksektir. Depresyon, kaygı bozuklukları ve madde kullanımı eşlik edebilir. Antidepresan ilaçlar ve bilişsel-davranışçı terapi etkilidir."
+    },
+    {
+      "id": "tssb-medlineplus",
+      "konu": "Travma sonrası stres bozukluğu (TSSB)",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "TSSB",
+        "PTSD",
+        "flashback",
+        "travma tedavisi",
+        "kabuslar"
+      ],
+      "baslik": "Post-Traumatic Stress Disorder (TSSB)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/posttraumaticstressdisorder.html",
+      "dil": "en",
+      "ozet": "TSSB, korkutucu bir olayı yaşadıktan veya gördükten sonra bazı kişilerde gelişen bir ruh sağlığı sorunudur; savaş, doğal afet, trafik kazası, cinsel saldırı veya bir yakının ani ölümü tetikleyebilir. Belirtiler dört grupta toplanır: olayı yeniden yaşama (geri dönüşler, kabuslar, korkutucu düşünceler), kaçınma, aşırı uyarılmışlık (kolay irkilme, gerginlik, uyku güçlüğü, öfke patlamaları) ve düşünce-duygu değişiklikleri (unutkanlık, olumsuz düşünceler, suçluluk, ilgi kaybı, dikkat sorunları). Belirtiler 4 haftadan uzun sürer ve iş ya da ev yaşamını bozarsa TSSB olabilir; tanı için en az bir ay sürmesi gerekir. Kadın olmak, çocuklukta travma, olay sırasında yoğun korku ve çaresizlik, uzun süren olaylar, sosyal desteğin az olması ve önceden ruhsal hastalık riski artırır. Konuşma terapisi belirtileri yönetmeyi ve tetikleyicileri tanımayı öğretir; antidepresanlar ve uyku-kabus sorunları için ilaçlar yardımcı olur."
+    },
+    {
+      "id": "bipolar-tpd",
+      "konu": "Bipolar bozukluk",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "bipolar",
+        "bipolar bozukluk",
+        "iki uçlu bozukluk",
+        "manik depresif",
+        "mani",
+        "duygu durum dalgalanması",
+        "lityum"
+      ],
+      "baslik": "Bipolar Bozukluk (İkiuçlu Bozukluk, Manik Depresif Hastalık)",
+      "kurum": "Türkiye Psikiyatri Derneği",
+      "tur": "dernek",
+      "url": "https://psikiyatri.org.tr/halka-yonelik/22/bipolar-bozukluk-ikiuclu-bozukluk-manik-depresif-hastalik",
+      "dil": "tr",
+      "ozet": "Bipolar (iki uçlu) bozukluk, taşkınlık (mani) ve çökkünlük (depresyon) dönemleriyle seyreden bir ruhsal hastalıktır; toplumda yaklaşık %2-3 oranında görülür ve ortalama 20-25 yaşlarında başlar. Mani döneminde abartılı büyüklük düşünceleri, uyku ihtiyacının azalması, aşırı hızlı araç kullanma veya aşırı para harcama gibi dürtüsel davranışlar görülür. Depresyon döneminde mutsuzluk, karamsarlık, umutsuzluk, eskiden zevk alınan şeylerden zevk alamama ve intihar düşünceleri olabilir. Kalıtım, beyindeki kimyasal ileti bozuklukları ve stresli olaylar rol oynar. Tedavide lityum, bazı epilepsi ilaçları ve antipsikotikler gibi duygu durum düzenleyiciler; yaşam düzeni, stres yönetimi ve psikoterapiyle birlikte kullanılır."
+    },
+    {
+      "id": "bipolar-medlineplus",
+      "konu": "Bipolar bozukluk",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "bipolar",
+        "hipomani",
+        "siklotimi",
+        "bipolar ilaç bırakma"
+      ],
+      "baslik": "Bipolar Disorder (Bipolar Bozukluk)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/bipolardisorder.html",
+      "dil": "en",
+      "ozet": "Bipolar bozukluk, yoğun duygu durum dalgalanmalarına yol açan bir duygu durum hastalığıdır; mani, depresyon veya karma dönemler görülür. Mani döneminde aşırı coşku ve enerji, düşüncelerin hızlanması, uyku ihtiyacının azalması, riskli davranışlar ve kendini aşırı önemli görme; depresyon döneminde üzüntü, umutsuzluk, içe kapanma, enerji azlığı, uyku ve iştah değişiklikleri, ölüm veya intihar düşünceleri olabilir. Hipomani, maninin daha hafif biçimidir. Bipolar I'de mani dönemleri en az 7 gün sürer; Bipolar II'de depresyon ve hipomani dönemleri olur; siklotimide hafif dalgalanmalar yetişkinlerde en az 2 yıl sürer. Nedeni tam bilinmez; kalıtım, beyin yapısı ve çevresel etkenler rol oynar. Tedavide ilaçlar, konuşma terapisi, gerektiğinde beyin uyarım tedavileri ve sağlıklı yaşam düzenlemeleri kullanılır. İlaçlar düzenli alınmalı, hekime danışmadan bırakılmamalıdır; intihar düşüncelerinde hemen yardım alınmalıdır (112)."
+    },
+    {
+      "id": "ppi-medicalpark",
+      "konu": "Mide koruyucu ilaçlar (PPI)",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "mide koruyucu",
+        "mide koruyucu ilaç",
+        "PPI",
+        "pantoprazol",
+        "lansoprazol",
+        "esomeprazol",
+        "omeprazol",
+        "mide ilacı uzun süre"
+      ],
+      "baslik": "Mide Koruyucu Zararları Nelerdir?",
+      "kurum": "Medical Park Hastaneleri",
+      "tur": "ozel",
+      "url": "https://www.medicalpark.com.tr/saglik-rehberi/mide-koruyucu-zararlari",
+      "dil": "tr",
+      "ozet": "Mide koruyucu ilaçlar (proton pompası inhibitörleri, PPI) mide asidini azaltarak ülser oluşumunu engeller; reflü hastalığında, düzenli ilaç kullananlarda midenin korunmasında ve romatizma ilaçlarının mideye yan etkilerini önlemede kullanılır. Uzun süreli kullanımda B12 vitamini eksikliği, kalsiyum ve magnezyum düzeylerinde düşme ve böbrek sorunları riskinin artması gibi yan etkiler bildirilmiştir. Hekim önerisiyle kullanılan mide koruyucu yine hekim kontrolünde bırakılmalıdır; ilacın birden kesilmesi mide yanması ve asitliğin geri tepmesine yol açabilir. Gebelikte hekim onayı olmadan kullanılmamalıdır."
+    },
+    {
+      "id": "ppi-medlineplus",
+      "konu": "Mide koruyucu ilaçlar (PPI)",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "omeprazol",
+        "mide koruyucu",
+        "reçetesiz mide ilacı",
+        "mide yanması ilacı",
+        "PPI yan etkileri"
+      ],
+      "baslik": "Omeprazole (Omeprazol)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/druginfo/meds/a693050.html",
+      "dil": "en",
+      "ozet": "Omeprazol bir proton pompası inhibitörüdür (PPI) ve midede yapılan asit miktarını azaltır. Reflü hastalığı, yemek borusu hasarı, ülserler ve midenin aşırı asit yaptığı durumların tedavisinde kullanılır. Reçetesiz olarak sık mide yanmasında (haftada en az 2 gün) sabahları yemekten en az 1 saat önce, 14 gün boyunca günde bir kez alınır; 14 günden uzun kullanılmamalı ve bu kür 4 ayda birden sık tekrarlanmamalıdır. Sık yan etkiler kabızlık, gaz, bulantı, ishal, kusma ve baş ağrısıdır. PPI kullananlarda bilek, kalça ve omurga kırığı riski artabilir; özellikle yüksek dozda veya 1 yıl ve daha uzun kullanımda. Uzun kullanımda magnezyum, kalsiyum, potasyum ve B12 vitamini düşebilir; sulu ağır ishal, döküntü, düzensiz kalp atışı veya kas kasılmalarında hekime başvurulmalıdır. Demir takviyeleri ve sarı kantaron gibi ürünlerle etkileşebilir; kullandığınız tüm ilaçları hekim ve eczacınıza söyleyin."
+    },
+    {
+      "id": "kolon-hsgm",
+      "konu": "Kalın bağırsak (kolon) kanseri ve tarama",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kolon kanseri",
+        "kalın bağırsak kanseri",
+        "kolorektal kanser",
+        "gaitada gizli kan",
+        "kolonoskopi",
+        "kanser taraması",
+        "KETEM",
+        "meme kanseri taraması",
+        "rahim ağzı kanseri taraması"
+      ],
+      "baslik": "Kanser Taramaları",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/kanser-taramalari.html",
+      "dil": "tr",
+      "ozet": "Türkiye'de Sağlık Bakanlığı, Dünya Sağlık Örgütü önerileriyle uyumlu olarak üç kanserde ulusal tarama yapar. Kalın bağırsak (kolorektal) kanseri için 50-70 yaş arası kadın ve erkeklere 2 yılda bir gaitada gizli kan testi ve 10 yılda bir kolonoskopi yapılır. Meme kanseri için 40-69 yaş arası kadınlara mamografi ve klinik muayene uygulanır, kendi kendine meme muayenesi konusunda bilgi verilir. Rahim ağzı (serviks) kanseri için 30-65 yaş arası kadınlara HPV-DNA testi yapılır. Taramalar kanseri belirti vermeden, erken evrede yakalamayı amaçlar."
+    },
+    {
+      "id": "kolon-medlineplus",
+      "konu": "Kalın bağırsak (kolon) kanseri ve tarama",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kolon kanseri",
+        "rektum kanseri",
+        "dışkıda kan",
+        "bağırsak alışkanlığı değişti",
+        "polip",
+        "kolonoskopi"
+      ],
+      "baslik": "Colorectal Cancer (Kalın Bağırsak Kanseri)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/colorectalcancer.html",
+      "dil": "en",
+      "ozet": "Kalın bağırsak (kolorektal) kanseri, kolon veya rektum dokusunda gelişen kanserdir. Yaş ilerledikçe risk artar; kişisel veya ailede kolorektal kanser ya da polip (adenom) öyküsü, FAP ve Lynch sendromu gibi kalıtsal hastalıklar, 8 yıldan uzun süren ülseratif kolit veya Crohn hastalığı, günde 3 veya daha fazla alkollü içki, sigara ve obezite risk etkenleridir. Birkaç günden uzun süren bağırsak alışkanlığı değişikliği, dışkıda parlak kırmızı ya da koyu renkli kan, sık gaz, şişkinlik, kramp, açıklanamayan kilo kaybı ve yorgunluk belirtiler arasındadır. Taramada kolonoskopi, sigmoidoskopi ve dışkı testleri kullanılır; ABD'de çoğu uzman taramaya 45 yaşında başlayıp en az 75 yaşına kadar sürdürmeyi önerir. Tedavi evreye göre cerrahi, kemoterapi, radyoterapi, hedefe yönelik tedavi ve immünoterapidir. Sigara içmemek, alkolü sınırlamak, kiloyu kontrol etmek, düzenli egzersiz ve taramada poliplerin alınması riski azaltır."
     }
   ],
   "kategoriler": [

@@ -483,6 +483,9 @@ button { cursor: pointer; }
 .ix-card p { margin: 6px 0 0; font-size: 14px; line-height: 1.45; }
 .ix-card .ix-do { color: var(--ink-2); }
 .ix-disc { margin-top: 14px; }
+.ix-drugs { font: 12px var(--f-mono); color: var(--ink-2); text-align: right; }
+.ix-list { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 5px; font-size: 14px; line-height: 1.45; }
+.ix-list b { font-weight: 600; }
 .aid-top { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-bottom: 12px; }
 .aid-top p { margin: 0; flex: 1 1 260px; font-size: 13px; }
 a.btn.er { background: var(--t-er); border-color: var(--t-er); color: #fff; text-decoration: none; font-weight: 600; }
@@ -2055,7 +2058,19 @@ Kurallar:
       if (clean(x.ne_yapmali)) c.appendChild(el("p", "ix-do", clean(x.ne_yapmali)));
       return c;
     });
-    section("Besin, alkol ve bitkisel ürünler", food, (x) => { const c = el("div", "ix-card"); const h = el("div", "ix-head"); h.append(el("b", "", `${clean(x.ilac)} + ${clean(x.neyle)}`)); c.append(h, el("p", "", clean(x.aciklama))); return c; });
+    // Aynı besin için farklı ilaçlardan gelen uyarılar tek kartta (ör. alkol her ilaç için ayrı tekrar etmesin)
+    const foodKey = (n) => /alkol/i.test(n) ? "Alkol" : /greyfurt/i.test(n) ? "Greyfurt" : /kantaron/i.test(n) ? "Sarı kantaron" : clean(n).replace(/^./, (c) => c.toLocaleUpperCase("tr-TR"));
+    const foodGroups = [];
+    food.forEach((x) => { const k = foodKey(x.neyle); let g = foodGroups.find((y) => y.k === k); if (!g) foodGroups.push(g = { k, items: [] }); g.items.push(x); });
+    section("Besin, alkol ve bitkisel ürünler", foodGroups, (g) => {
+      const c = el("div", "ix-card"); const h = el("div", "ix-head");
+      const title = g.items.length === 1 ? clean(g.items[0].neyle).replace(/^./, (c) => c.toLocaleUpperCase("tr-TR")) : g.k;
+      h.append(el("b", "", title), el("span", "ix-drugs", [...new Set(g.items.map((x) => clean(x.ilac)))].join(" · ")));
+      c.appendChild(h);
+      if (g.items.length === 1) c.appendChild(el("p", "", clean(g.items[0].aciklama)));
+      else { const ul = el("ul", "ix-list"); g.items.forEach((x) => { const li = el("li"); li.append(el("b", "", clean(x.ilac) + ": "), clean(x.aciklama)); ul.appendChild(li); }); c.appendChild(ul); }
+      return c;
+    });
     section("Profilinize göre", prof, (x) => { const c = el("div", "ix-card high"); const h = el("div", "ix-head"); h.append(el("b", "", clean(x.ilac))); c.append(h, el("p", "", clean(x.aciklama))); return c; });
     if (clean(r.not)) box.appendChild(el("p", "muted", clean(r.not)));
     box.appendChild(el("p", "er-warn ix-disc", "Bu bir yapay zekâ değerlendirmesidir ve hata içerebilir. İlaçlarınızı hekiminize danışmadan bırakmayın veya dozunu değiştirmeyin; eczacınıza ve prospektüse başvurun. Nefes darlığı, yüz-dudak şişmesi, bayılma, şiddetli kanama gibi belirtilerde 112'yi arayın."));
@@ -2839,7 +2854,8 @@ Kurallar:
   }
   // Şikayeti anlatırken geçen, konuyu belirlemeyen sözcükler (kökleriyle karşılaştırılır)
   const FILLER = new Set("gün hafta yıl saat dün bugün yapmalıyım yapayım oldum oluyor olmuş ediyor hissediyorum şey".split(" ").map(stem));
-  const terms = (s) => (s.toLocaleLowerCase("tr-TR").match(/[\p{L}\p{N}]+/gu) || []).filter((w) => w.length > 1 && !STOP.has(w)).map(stem).filter((t) => !FILLER.has(t));
+  // "hepatit B/C" tek harf atıldığında birbirine karışmasın: hbv / hcv
+  const terms = (s) => (s.toLocaleLowerCase("tr-TR").replace(/hepatit\s+([bc])(?!\p{L})/gu, (_, x) => `hepatit h${x}v`).match(/[\p{L}\p{N}]+/gu) || []).filter((w) => w.length > 1 && !STOP.has(w)).map(stem).filter((t) => !FILLER.has(t));
 
   function chunkText(text) {
     text = text.replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
@@ -2859,7 +2875,7 @@ Kurallar:
     return out.filter(Boolean);
   }
 
-  const KIND = { resmi: "Resmi kurum", universite: "Üniversite", ozel: "Özel hastane", uluslararasi: "Uluslararası" };
+  const KIND = { resmi: "Resmi kurum", universite: "Üniversite", dernek: "Meslek derneği", ozel: "Özel hastane", uluslararasi: "Uluslararası" };
 
   function search(query, { useDocs = true, useLib = true } = {}, k = 5) {
     const all = [];
