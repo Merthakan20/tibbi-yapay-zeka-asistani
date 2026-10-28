@@ -6898,7 +6898,7 @@
         "takviye edici gıda",
         "vitamin hapı",
         "bitkisel ürün",
-        "takviye kullanmalı mıyım"
+        "takviye kullanmak"
       ],
       "baslik": "Takviye Edici Gıdaların Bilinçli ve Güvenli Tüketimi",
       "kurum": "T.C. Tarım ve Orman Bakanlığı (Güvenilir Gıda)",
@@ -7236,6 +7236,485 @@
       "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/anemi-nedir-kansizlik-belirtileri-nelerdir-kansizliga-ne-iyi-gelir/",
       "dil": "tr",
       "ozet": "Anemi (kansızlık), kandaki kırmızı kan hücresi veya hemoglobin düzeyinin düşmesidir; hemoglobinin kadınlarda 12 g/dL'nin, erkeklerde 13,5 g/dL'nin altında olması anemi kabul edilir. En sık türü demir eksikliği anemisidir; B12 veya folik asit eksikliğine bağlı megaloblastik anemi, orak hücreli anemi, kemik iliği yetmezliğine bağlı aplastik anemi, hücrelerin erken yıkıldığı hemolitik anemi ve kronik hastalık anemisi diğer türlerdir. Adet veya sindirim sisteminden kan kaybı, beslenme eksiklikleri, böbrek hastalığı ve kanser gibi kronik hastalıklar, kalıtsal nedenler ve kemik iliği hastalıkları yol açabilir. Yorgunluk, solukluk, baş dönmesi, nefes darlığı, çarpıntı, el ve ayaklarda soğukluk ve dikkat dağınıklığı görülür. Tanı tam kan sayımı, ferritin ve gerekirse hemoglobin elektroforeziyle konur; tedavi nedene göredir. Göğüs ağrısı, hızlı kalp atışı, şiddetli nefes darlığı veya bayılma varsa beklemeden hekime başvurulmalıdır."
+    },
+    {
+      "id": "tetanoz-arsuz",
+      "konu": "Tetanoz",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "tetanoz",
+        "tetanos",
+        "tetanoz aşısı",
+        "paslı çivi battı",
+        "çivi battı",
+        "kirli yara",
+        "yaralandım aşı gerekir mi",
+        "çene kilitlenmesi"
+      ],
+      "baslik": "Tetanoz",
+      "kurum": "T.C. Sağlık Bakanlığı Arsuz Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://arsuzdh.saglik.gov.tr/TR-1335792/tetanoz.html",
+      "dil": "tr",
+      "ozet": "Tetanoz, toprakta, tozda ve hayvan dışkısında bulunan Clostridium tetani bakterisinin yaptığı ciddi bir enfeksiyondur. Kişiden kişiye bulaşmaz; bakteri açık, özellikle derin ve kirli yaralardan vücuda girer. Belirtiler genellikle yaralanmadan 3-21 gün sonra başlar: çene kaslarında sertlik, kas spazmları, yutma güçlüğü, nefes almada zorluk, ateş ve huzursuzluk. Tedavi edilmezse solunum güçlüğü ve ölüme yol açabilir; tedavi hastanede yapılır. Aşı bebeklikte başlar ve çocuklukta düzenli olarak yapılır; erişkinlerde her 10 yılda bir yenilenir. Yaralanmada yara hemen bol su ve sabunla temizlenmeli, derin ve kirli yaralar için tıbbi yardım alınmalıdır; son tetanoz aşısının üzerinden 5 yıldan fazla geçtiyse ek aşı gerekir ve hekim gerekli görürse tetanoz immünglobulini uygular."
+    },
+    {
+      "id": "tetanoz-medlineplus",
+      "konu": "Tetanoz",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "tetanoz",
+        "tetanoz rapeli",
+        "yanık sonrası tetanoz",
+        "çivi battı",
+        "paslı çivi"
+      ],
+      "baslik": "Tetanus (Tetanoz)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/tetanus.html",
+      "dil": "en",
+      "ozet": "Tetanoz, toprak, tükürük, toz ve gübrede yaşayan Clostridium bakterilerinin yaptığı bir enfeksiyondur; bakteri çiviye basmak gibi derin kesiklerden veya yanıklardan vücuda girer. Çoğunlukla tüm vücutta ağrılı kas kasılmalarına yol açar ve çenenin kilitlenmesine neden olabilir; bu durumda ağız açılamaz ve yutkunulamaz. Tetanoz acil bir durumdur ve hastanede tedavi gerekir. Aşıyla önlenebilir: aşı çocukluk çağı rutin aşıları arasında yapılır, yetişkinlerin her 10 yılda bir hatırlatma dozu olması gerekir. Ciddi bir kesik veya yanıktan sonra hatırlatma dozu gerekip gerekmediği hekime sorulmalıdır. Yaranın hemen ve doğru şekilde temizlenip bakımının yapılması tetanozu önlemeye yardımcı olur."
+    },
+    {
+      "id": "hepatita-asi",
+      "konu": "Hepatit A",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hepatit A",
+        "sarılık",
+        "bulaşıcı sarılık",
+        "hepatit A aşısı",
+        "çocukta sarılık",
+        "kirli su",
+        "gözlerim sarardı"
+      ],
+      "baslik": "Hepatit A Hastalığı",
+      "kurum": "T.C. Sağlık Bakanlığı Aşı Portalı",
+      "tur": "resmi",
+      "url": "https://asi.saglik.gov.tr/asi-ile-oenlenebilir-hastaliklar/hepatit-a-hastaligi.html",
+      "dil": "tr",
+      "ozet": "Hepatit A, hepatit A virüsünün yaptığı bir karaciğer enfeksiyonudur. Esas olarak dışkıyla kirlenmiş su ve besinlerle bulaşır; cinsel yolla da geçebilir. Virüsle karşılaştıktan 15-50 gün (ortalama 28 gün) sonra halsizlik, iştahsızlık, bulantı, ishal, ateş, sarılık ve koyu renkli idrar görülür. 6 yaşından küçük çocuklarda genellikle hafif geçer, erişkinlerde belirtiler daha belirgindir ve yaş ilerledikçe hastalık ağırlaşır. Özgül bir tedavisi yoktur; yakınmalara göre destek tedavisi verilir ve hastaların gereksiz ilaç, alkol ve bitkisel ürün kullanmaması önerilir. Ölü virüs içeren aşısı Ulusal Aşı Takvimi'nde yer alır. El yıkama, temiz ve iyi pişmiş yiyecekler, suyun klorlanması veya 10 dakika kaynatılması korunmada önemlidir."
+    },
+    {
+      "id": "hepatita-medlineplus",
+      "konu": "Hepatit A",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hepatit A",
+        "HAV",
+        "seyahatte hepatit"
+      ],
+      "baslik": "Hepatitis A (Hepatit A)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/hepatitisa.html",
+      "dil": "en",
+      "ozet": "Hepatit A, enfekte dışkıyla kirlenmiş yiyecek veya suyla ya da hepatit A'lı biriyle yakın temasla bulaşır. Belirtiler enfeksiyondan 2-7 hafta sonra başlar: koyu idrar, ishal, yorgunluk, ateş, sarılık, bulantı ve karın ağrısı. Belirtiler genellikle 2 aydan kısa sürer, ancak bazı kişiler 6 aya kadar hasta kalabilir. Gelişmekte olan ülkelere seyahat, enfekte biriyle cinsel temas, madde kullanımı ve hepatit A'lı biriyle aynı evde yaşamak riski artırır. Hepatit A kısa süreli (akut) bir enfeksiyondur; çoğu kişi birkaç haftada tedavisiz iyileşir. Özgül bir tedavisi yoktur; dinlenmek, bol sıvı içmek ve sağlıklı beslenmek iyileşmeye yardım eder. En iyi korunma yolu hepatit A aşısıdır; tuvaletten sonra elleri iyice yıkamak da önemlidir."
+    },
+    {
+      "id": "cybe-hsgm",
+      "konu": "Cinsel yolla bulaşan enfeksiyonlar",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "cinsel yolla bulaşan hastalık",
+        "zührevi hastalık",
+        "bel soğukluğu",
+        "gonore",
+        "akıntı ve yanma",
+        "cinsel hastalık testi",
+        "klamidya",
+        "frengi"
+      ],
+      "baslik": "Gonore (Bel Soğukluğu)",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/hastaliklar/gonore.html",
+      "dil": "tr",
+      "ozet": "Gonore (bel soğukluğu), Neisseria gonorrhoeae bakterisinin yaptığı ve cinsel yolla bulaşan yaygın hastalıklardan biridir; penis, vajina, ağız ve anüs temasıyla yayılır, normal doğumda anneden bebeğe geçebilir. Erkeklerde temastan 2-7 gün sonra idrar yolundan iltihaplı akıntı ve idrar yaparken yanma olur; erkeklerin yaklaşık %10'unda hiç belirti olmaz. Kadınlarda anormal vajinal akıntı ve ilişki sonrası kanama görülebilir, ancak kadınların yarısında belirti yoktur. Tedavi edilmezse kadınlarda kısırlık ve dış gebelik riskine yol açan pelvik iltihaba, erkeklerde kısırlığa neden olabilir; kana ve eklemlere yayılması hayatı tehdit edebilir. Tanı enfekte bölgeden alınan sürüntüyle konur ve antibiyotikle tedavi edilir; cinsel partnerin de muayene edilip gerekirse tedavi edilmesi gerekir. Lateks kondomun her seferinde doğru kullanılması riski azaltır; belirti görülürse hemen hekime başvurulmalıdır."
+    },
+    {
+      "id": "cybe-medlineplus",
+      "konu": "Cinsel yolla bulaşan enfeksiyonlar",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "cinsel yolla bulaşan enfeksiyon",
+        "CYBE",
+        "klamidya",
+        "frengi",
+        "trikomonas",
+        "genital yara"
+      ],
+      "baslik": "Sexually Transmitted Infections (Cinsel Yolla Bulaşan Enfeksiyonlar)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/sexuallytransmittedinfections.html",
+      "dil": "en",
+      "ozet": "Cinsel yolla bulaşan enfeksiyonlar cinsel temasla kişiden kişiye geçer; klamidya, gonore, frengi, uçuk (herpes), HPV, HIV ve trikomonas dahil 20'den fazla türü vardır. Vajinal, oral veya anal ilişkiyle bulaşırlar; herpes ve HPV deri temasıyla da geçebilir; bazıları gebelik ve doğumda bebeğe, kan nakli veya ortak iğneyle de bulaşabilir. Birçoğu belirti vermediği için ancak testle anlaşılır; belirti olduğunda genital akıntı, yara, idrar yaparken ağrı ve ateş görülebilir. Bakteri ve parazitlere bağlı olanlar antibiyotikle, virüslere bağlı olanlar antiviral ilaçlarla tedavi edilir. Tedavi edilmezse kısırlık gibi ciddi sorunlara ve bebeğe bulaşmaya yol açabilir. Kondom riski büyük ölçüde azaltır ama tamamen ortadan kaldırmaz; partnerlerin test edilmesi, HPV ve hepatit B aşıları da korur."
+    },
+    {
+      "id": "kizil-acibadem",
+      "konu": "Kızıl",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kızıl",
+        "kızıl hastalığı",
+        "çilek dil",
+        "zımpara gibi döküntü",
+        "çocukta döküntü ve ateş",
+        "beta mikrobu",
+        "streptokok"
+      ],
+      "baslik": "Kızıl Hastalığı Nedir? Kızıl Hastalığının Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/kizil-hastaligi/",
+      "dil": "tr",
+      "ozet": "Kızıl, A grubu streptokok bakterisinin yaptığı ve genellikle 5-15 yaş arası çocuklarda görülen bulaşıcı bir enfeksiyondur; her yaşta olabilir. Öksürük, hapşırık ve doğrudan temasla bulaşır; kuluçka süresi 2-5 gündür. Ani yüksek ateş, boğaz ağrısı, kırmızı ve kabarık 'çilek dil', göğüs ve karından başlayıp tüm vücuda yayılan kırmızı döküntüler ve boyunda şişmiş lenf bezleri görülür. Tanıda boğaz kültürü ve hızlı antijen testi kullanılır. Antibiyotikle tedavi edilir; belirtiler genellikle 5-10 günde düzelir ve antibiyotik başlandıktan 24 saat sonra bulaştırıcılık azalır. Erken ve uygun tedavi edilmezse kalp ve böbrekler gibi organlarda ciddi sorunlara yol açabilir."
+    },
+    {
+      "id": "kizil-medlineplus",
+      "konu": "Kızıl",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kızıl",
+        "akut romatizmal ateş",
+        "deri soyulması",
+        "çilek dil",
+        "çocukta döküntü ve ateş"
+      ],
+      "baslik": "Scarlet Fever (Kızıl)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000974.htm",
+      "dil": "en",
+      "ozet": "Kızıl, boğaz enfeksiyonuna da yol açan A grubu streptokok bakterisinin yaptığı bir çocukluk çağı hastalığıdır. Hasta kişiyle doğrudan temasla veya öksürük ve nefesle çıkan damlacıklarla bulaşır. Ateş, boğaz ağrısı ve önce boyun ve göğüste başlayıp tüm vücuda yayılan döküntü görülür; dil kırmızı ve şiş olur ('çilek dil'), döküntü solarken deri soyulabilir; karın ağrısı, titreme, baş ağrısı, kas ağrısı ve kusma da olabilir. Tanıda muayene, boğaz kültürü ve hızlı strep testi kullanılır. Antibiyotik bakteriyi öldürür ve belirtiler hızla düzelir, ancak döküntü 2-3 hafta sürebilir. Akut romatizmal ateş, kulak enfeksiyonu, böbrek ve karaciğer hasarı, zatürre ve sinüzit komplikasyonlar arasındadır. Belirtiler olursa, antibiyotikten sonraki 24 saatte düzelme olmazsa veya yeni belirtiler çıkarsa hekime başvurulmalıdır."
+    },
+    {
+      "id": "yemebozuklugu-tpd",
+      "konu": "Yeme bozuklukları",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "yeme bozukluğu",
+        "anoreksiya",
+        "bulimiya",
+        "tıkınırcasına yeme",
+        "kusarak kilo vermek",
+        "kilo almaktan korkuyorum",
+        "aşırı yiyip kusmak"
+      ],
+      "baslik": "Yeme Bozuklukları",
+      "kurum": "Türkiye Psikiyatri Derneği",
+      "tur": "dernek",
+      "url": "https://psikiyatri.org.tr/halka-yonelik/32/yeme-bozukluklari",
+      "dil": "tr",
+      "ozet": "Yeme bozukluklarının üç ana türü anoreksiya nervoza, bulimiya nervoza ve tıkınırcasına yeme bozukluğudur; hepsi psikiyatrik hastalıklardır. Genç kızlarda anoreksiyanın binde bir, bulimiyanın yüzde bir oranında görüldüğü bildirilir; erkeklerde nadirdir ve kadın-erkek oranı yaklaşık 10'a 1'dir. Anoreksiya için en riskli dönem 14-15 yaş, bulimiya için 18-19 yaştır. Kalp ritim bozuklukları, elektrolit dengesizliği, kemik erimesi, diş hasarı ve ani ölüm riski vardır; anoreksiya ve bulimiya tüm psikiyatrik hastalıklar içinde en ölümcül olanlardır. Tedavi psikiyatrist yönetiminde psikoterapi, aile terapisi ve ilaç desteğiyle yapılır; ağır durumlarda hastaneye yatış gerekebilir."
+    },
+    {
+      "id": "yemebozuklugu-medlineplus",
+      "konu": "Yeme bozuklukları",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "yeme bozukluğu",
+        "anoreksiya nervoza",
+        "bulimiya nervoza",
+        "beden algısı",
+        "kilo almaktan korkmak",
+        "yemek yiyememek"
+      ],
+      "baslik": "Eating Disorders (Yeme Bozuklukları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/eatingdisorders.html",
+      "dil": "en",
+      "ozet": "Başlıca yeme bozuklukları, yemeği aşırı kısıtlamanın görüldüğü anoreksiya nervoza, aşırı yemenin ardından kusma veya müshil gibi yollarla çıkarmanın yapıldığı bulimiya nervoza ve ABD'de en sık görülen tıkınırcasına yeme bozukluğudur. Tıkınırcasına yemede kısa sürede, çoğu zaman gizlice çok miktarda yemek yenir ve ardından suçluluk duyulur; anoreksiyada yemekten aşırı kaçınma, bozuk beden algısı ve kilo almaktan yoğun korku vardır. Herkeste görülebilir, ancak kadınlarda daha sıktır ve çoğunlukla ergenlik veya genç yetişkinlikte başlar. Kalp ve böbrek hasarı, kemik incelmesi, ağır sıvı kaybı, diş çürümesi ve elektrolit bozuklukları gelişebilir; anoreksiya tüm ruhsal hastalıklar içinde ölüm oranı en yüksek olanıdır. Tedavi psikoterapi, beslenme danışmanlığı ve tıbbi izlemi içeren bir ekiple yapılır; antidepresanlar yardımcı olabilir, ağır durumlarda hastanede tedavi gerekir."
+    },
+    {
+      "id": "yas-acibadem",
+      "konu": "Yas ve kayıp",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "yas",
+        "yas süreci",
+        "yakınımı kaybettim",
+        "babam öldü",
+        "annemi kaybettim",
+        "kayıp acısı",
+        "ölüm sonrası üzüntü",
+        "yas evreleri"
+      ],
+      "baslik": "Yas Ne Demek? Yas Evreleri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/yas-ne-demek/",
+      "dil": "tr",
+      "ozet": "Yas, sevilen birinin ya da hayatı etkileyen önemli bir şeyin kaybedilmesine verilen doğal duygusal tepkilerin bütünüdür; yalnızca ölümle değil, boşanma, ciddi hastalık ve işten çıkarılma gibi kayıplarla da yaşanabilir. Genellikle inkar ve şok, öfke, pazarlık, depresyon ve kabullenme evrelerinden geçilir. Üzüntü, şok, öfke, suçluluk ve kaygı ile yorgunluk ve uyku sorunları normal yas tepkileridir. Yasın kesin bir süresi yoktur; kaybın niteliğine, kültürel inançlara, kişinin dayanıklılığına ve sosyal desteğe göre değişir. Duyguları ifade etmek, aile, arkadaş veya bir uzmandan destek almak, yeterli uyku, dengeli beslenme ve hafif etkinliklerle günlük düzeni sürdürmek ve bu dönemde büyük kararlar almaktan kaçınmak önerilir. Yas yoğun ve uzun sürer, günlük yaşamı zorlaştırır ya da başa çıkmak güçleşirse psikolog veya psikiyatristten destek alınmalıdır."
+    },
+    {
+      "id": "yas-medlineplus",
+      "konu": "Yas ve kayıp",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "yas",
+        "uzamış yas",
+        "yas danışmanlığı",
+        "yakınını kaybetmek",
+        "ölüm acısı"
+      ],
+      "baslik": "Bereavement (Yas)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/bereavement.html",
+      "dil": "en",
+      "ozet": "Yas zihinsel, bedensel, sosyal ve duygusal tepkileri içerir: öfke, suçluluk, kaygı, üzüntü ve umutsuzluk ile uyku ve iştah değişiklikleri ve hastalanma görülebilir. Yasın süresi ölen kişiye ne kadar yakın olunduğuna, ölümün beklenip beklenmediğine ve kişisel etkenlere bağlıdır; belirli bir süresi yoktur. Arkadaşlar, aile ve inanç toplulukları destek kaynaklarıdır; birçok kişi için yas danışmanlığı veya terapisi önerilir. Uzamış yas bozukluğu uzman desteği gerektiren ayrı bir durumdur."
+    },
+    {
+      "id": "stres-acibadem",
+      "konu": "Stres ve stresle başa çıkma",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "stres",
+        "stresliyim",
+        "stres belirtileri",
+        "stresle başa çıkma",
+        "kronik stres",
+        "gerginlik",
+        "iş stresi",
+        "tükenmişlik"
+      ],
+      "baslik": "Stres Nedir? Belirtileri ve Yönetim Yöntemleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/stres/",
+      "dil": "tr",
+      "ozet": "Stres, kişinin tehdit, baskı veya zorlayıcı durumlara verdiği bedensel ve ruhsal tepkidir. Sınav veya sunum gibi ani olaylara verilen kısa süreli tepkiye akut stres, uzun süren ve yaşamı sürekli etkileyen strese kronik stres denir. Yorgunluk, uyku sorunları, kas ağrıları ve gerginlik, baş ağrısı, sinirlilik, dikkat dağınıklığı, çarpıntı, hızlı nefes alma ve mide sorunları görülebilir. Kronik stres bağışıklığı zayıflatır, yüksek tansiyon ve kalp krizi riskini artırır, reflü ve mide ülserini tetikleyebilir. Düzenli egzersiz, meditasyon ve derin nefes teknikleri, yeterli ve kaliteli uyku, sosyal destek, zaman yönetimi, hobiler ve doğada vakit geçirmek başa çıkmaya yardım eder. Belirtiler sürerse profesyonel yardım alınması önerilir."
+    },
+    {
+      "id": "stres-medlineplus",
+      "konu": "Stres ve stresle başa çıkma",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "stres",
+        "stres yönetimi",
+        "stres ve sağlık",
+        "stresliyim",
+        "gerginlik"
+      ],
+      "baslik": "Stress (Stres)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/stress.html",
+      "dil": "en",
+      "ozet": "Stres, beynin ve vücudun zorlu durumlara verdiği tepkidir. Kısa süreli stres yararlı olabilir; örneğin trafikte birden önünüze kırılan bir araca karşı dikkatli olmanızı sağlar. Haftalarca veya aylarca süren kronik streste ise vücut sürekli tehdit altındaymış gibi davranır ve bu sağlığa zarar verir. Uzun süreli stres bağışıklığı zayıflatarak sık hastalanmaya, mide sorunlarına, baş ağrısına ve uyku bozukluklarına yol açabilir; depresyon, kaygı, kalp hastalığı, yüksek tansiyon ve diyabete katkıda bulunur. Düzenli egzersiz (günde 30 dakikalık bir yürüyüş bile iyi gelir), nefes egzersizi ve meditasyon gibi rahatlatıcı etkinlikler, yeterli uyku, kafeini azaltmak, işleri önceliklendirmek ve aile ile arkadaşlardan destek almak yardımcı olur. Ağır belirtiler 2 haftadan uzun sürerse hekime başvurulmalı; intihar düşünceleri, baş edememe hissi veya artan madde kullanımı varsa hemen yardım alınmalıdır (112)."
+    },
+    {
+      "id": "sizofreni-acibadem",
+      "konu": "Şizofreni",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "şizofreni",
+        "sesler duyuyor",
+        "hayal görüyor",
+        "sanrı",
+        "halüsinasyon",
+        "psikoz",
+        "antipsikotik",
+        "takip edildiğini düşünüyor"
+      ],
+      "baslik": "Şizofreni Nedir? Şizofreni Belirtileri ve Tedavi Yöntemleri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/sizofreni/",
+      "dil": "tr",
+      "ozet": "Şizofreni, kişinin gerçeklik algısını bozarak düşünce, duygu ve davranışlarında derin değişikliklere yol açan bir ruhsal hastalıktır; erken tanı ve uygun tedaviyle yönetilebilir ve hastaların çoğu toplumda bağımsız yaşayabilir. Genellikle 16-30 yaşları arasında başlar. Kalıtsal yatkınlık, beyindeki dopamin ve serotonin dengesizliği, çevresel stres, travmalar, madde kullanımı ve beyindeki yapısal farklılıklar rol oynar. Sanrılar, halüsinasyonlar, dağınık konuşma ve garip davranışlar (pozitif belirtiler); içe kapanma, isteksizlik ve duygusal tepkisizlik (negatif belirtiler) ile bellek, dikkat ve karar verme sorunları görülür. Tanı psikiyatrik değerlendirme, fizik ve nörolojik muayene, gerekirse beyin görüntüleme ve laboratuvar testleriyle konur. Tedavi antipsikotik ilaçlar, bilişsel davranışçı terapi, psikososyal destek ve gerektiğinde hastaneye yatıştır; tedavinin düzenli sürdürülmesi ve ailenin desteği çok önemlidir. Kişi kendisi veya başkaları için tehlikeli davranışlar gösterirse hemen tıbbi yardım alınmalıdır."
+    },
+    {
+      "id": "sizofreni-medlineplus",
+      "konu": "Şizofreni",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "şizofreni",
+        "psikotik belirtiler",
+        "negatif belirtiler",
+        "sesler duymak",
+        "hayal görmek"
+      ],
+      "baslik": "Schizophrenia (Şizofreni)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/schizophrenia.html",
+      "dil": "en",
+      "ozet": "Şizofreni, düşünmeyi, algılamayı ve günlük işlevselliği etkileyen ciddi bir beyin hastalığıdır; kişi halüsinasyonlar, sanrılar ve dağınık konuşma yaşayabilir, iş sürdürmekte veya kendine bakmakta zorlanabilir. Belirtiler genellikle 16-30 yaşları arasında başlar; erkeklerde kadınlardan daha erken ortaya çıkar ve 45 yaşından sonra nadiren başlar. Belirtiler üç grupta toplanır: halüsinasyon, sanrı, dağınık düşünce ve olağandışı hareketler gibi psikotik belirtiler; duyguları ifade etmede ve günlük işlevlerde güçlük, içe kapanma gibi negatif belirtiler; bilgiyi işleme, karar verme ve dikkatte sorunlar gibi bilişsel belirtiler. Kesin nedeni bilinmez; kalıtım, çevresel etkenler ve beyin kimyası rol oynar. İlaçlar birçok belirtiyi kontrol eder; uygun ilacı bulmak zaman alabilir. Terapi, aile eğitimi, rehabilitasyon ve beceri eğitimi de tedavinin parçasıdır. İlaç, hekimin önerdiği süre boyunca kesilmeden kullanılmalıdır."
+    },
+    {
+      "id": "ferritin-acibadem",
+      "konu": "Ferritin ve demir testleri",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ferritin",
+        "ferritin düşük",
+        "ferritin yüksek",
+        "demir deposu",
+        "ferritin kaç olmalı",
+        "demir testi"
+      ],
+      "baslik": "Ferritin Nedir? Ferritin Düşüklüğü ve Yüksekliği Neden Olur?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/ferritin-nedir/",
+      "dil": "tr",
+      "ozet": "Ferritin, vücudun demiri güvenli şekilde depolamasını sağlayan bir proteindir; kandaki düzeyi demir depolarını gösterir. Normal değer yetişkin erkeklerde 24-336 ng/mL, kadınlarda 24-307 ng/mL kabul edilir. Yetersiz beslenme, yoğun adet kanaması, gebelik, uzun süreli kan kaybı ve demir emilim sorunları ferritini düşürür; yorgunluk, halsizlik, saç dökülmesi, baş dönmesi, nefes darlığı ve solukluk görülebilir. Demir birikimi hastalığı (hemokromatoz), enfeksiyonlar, karaciğer hastalıkları, fazla demir takviyesi ve romatoid artrit ferritini yükseltir; enfeksiyon ve iltihap da ferritini yükseltebilir. Test için 12 saat açlık önerilir. Tedavi nedene göre demir takviyesi, beslenme düzenlemesi ya da demir fazlalığında kan alma veya demir bağlayıcı ilaçlardır."
+    },
+    {
+      "id": "ferritin-medlineplus",
+      "konu": "Ferritin ve demir testleri",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ferritin testi",
+        "hemokromatoz",
+        "demir fazlalığı"
+      ],
+      "baslik": "Ferritin Blood Test (Ferritin Testi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/lab-tests/ferritin-blood-test/",
+      "dil": "en",
+      "ozet": "Ferritin testi, demire bağlanıp onu depolayan protein olan ferritinin kandaki düzeyini ölçer ve vücutta ne kadar demir depolandığını gösterir. Demir depolarının yeterli olup olmadığını anlamak, demir eksikliği anemisi veya demir birikimi (hemokromatoz) tanısını koymak ve kanser, böbrek hastalığı ya da bağışıklık hastalıkları gibi demir düzeyini etkileyen kronik durumları izlemek için istenir. Düşük ferritin demir eksikliğini gösterir. Yüksek ferritin demir fazlalığına bağlı olabileceği gibi iltihap, bağışıklık hastalıkları, karaciğer hastalığı, kanser, obezite, alkol kullanım bozukluğu veya tiroidin fazla çalışmasından da kaynaklanabilir. Hekim 12 saat açlık isteyebilir; test genellikle sabah yapılır. Enfeksiyon veya ameliyata bağlı iltihap ve bazı ilaçlar sonucu etkileyebilir."
+    },
+    {
+      "id": "psa-acibadem",
+      "konu": "PSA testi (prostat)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "PSA",
+        "PSA yüksek",
+        "PSA testi",
+        "prostat kanseri",
+        "serbest PSA",
+        "PSA kaç olmalı",
+        "prostat taraması"
+      ],
+      "baslik": "PSA Nedir? PSA Testi Neden Yapılır? Değerleri Nasıl Olmalıdır?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/psa-testi/",
+      "dil": "tr",
+      "ozet": "PSA (prostata özgü antijen), prostat bezinin salgıladığı bir proteindir; kandaki düzeyi prostat kanseri taramasında, iyi huylu prostat büyümesi ve prostat iltihabının değerlendirilmesinde ve tedavi takibinde kullanılır. Yaşa göre üst sınırlar 40-49 yaşta 2,5, 50-59 yaşta 3,5, 60-69 yaşta 4,5, 70 yaş üstünde 6,5 ng/mL olarak verilir; genel olarak 4 ng/mL'nin üzeri uyarı işareti kabul edilir. Prostat enfeksiyonu, iyi huylu büyüme, prostat kanseri, yakın zamanda cinsel ilişki, prostat biyopsisi ve idrar yolu enfeksiyonu PSA'yı yükseltebilir. Yüksek PSA her zaman kanser anlamına gelmez; tanı için serbest PSA, MR ve parmakla muayene gibi ek incelemeler gerekir."
+    },
+    {
+      "id": "psa-medlineplus",
+      "konu": "PSA testi (prostat)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "PSA testi",
+        "prostat kanseri taraması",
+        "prostat biyopsisi"
+      ],
+      "baslik": "Prostate-Specific Antigen (PSA) Test",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/lab-tests/prostate-specific-antigen-psa-test/",
+      "dil": "en",
+      "ozet": "PSA testi, prostat bezinin yaptığı PSA proteininin kandaki düzeyini ölçer. Taramanın olası yararı, saldırgan kanserleri erken bulup tedavi edebilmektir. Riskleri ise testin kanseri iyi huylu durumlardan ayıramaması ve hiç zarar vermeyecek yavaş büyüyen kanserleri bulup gereksiz tedaviye yol açabilmesidir; tedavinin sertleşme sorunu ve idrar veya dışkı kaçırma gibi yan etkileri olabilir. Tarama kararı yaşa (risk 50 yaşından sonra artar), ailede prostat kanseri öyküsüne, genel sağlık durumuna ve kişisel tercihlere göre hekimle birlikte verilmelidir. Yüksek PSA prostat kanserini ya da prostat iltihabı veya prostat büyümesi gibi kanser dışı bir durumu gösterebilir. Testten 24 saat önce boşalma olmamalıdır, çünkü PSA'yı yükseltebilir. Yüksek sonuçta test tekrarlanabilir, parmakla rektal muayene, idrar testi veya biyopsi yapılabilir; kanser tanısını kesinleştiren tek yöntem biyopsidir."
+    },
+    {
+      "id": "glukoz-acibadem",
+      "konu": "Kan şekeri testleri (açlık ve şeker yükleme)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "açlık kan şekeri",
+        "açlık şekeri",
+        "tokluk şekeri",
+        "şeker yükleme testi",
+        "OGTT",
+        "glukoz",
+        "açlık şekerim 110",
+        "kan şekeri kaç olmalı"
+      ],
+      "baslik": "Tokluk ve Açlık Kan Şekeri Değerleri Ne Olmalı?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/tokluk-ve-aclik-kan-sekeri-ne-olmali/",
+      "dil": "tr",
+      "ozet": "Yetişkinlerde açlık kan şekerinin normal aralığı 70-100 mg/dL'dir (1-12 yaş çocuklarda 60-100 mg/dL); açlık şekerinin 126 mg/dL'nin üzerinde olması diyabeti gösterir. Yemekten 2 saat sonra ölçülen tokluk şekeri normalde 140 mg/dL'nin altındadır; 140-199 mg/dL arası prediyabet (gizli şeker), 200 mg/dL ve üzeri diyabet kabul edilir. Şeker yükleme testinde (oral glukoz tolerans testi) en az 8 saatlik açlıktan sonra belirli miktarda şekerli su içilir ve 2. saatte kan şekeri ölçülür. Kan şekerinin 70 mg/dL'nin altına inmesi düşük şeker (hipoglisemi) açısından endişe vericidir. Diyabetlilerde hedef genellikle açlıkta 80-130, toklukta 180 mg/dL'nin altıdır."
+    },
+    {
+      "id": "glukoz-medlineplus",
+      "konu": "Kan şekeri testleri (açlık ve şeker yükleme)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kan şekeri testi",
+        "rastgele kan şekeri",
+        "glukoz tolerans testi"
+      ],
+      "baslik": "Blood Glucose Test (Kan Şekeri Testi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+      "dil": "en",
+      "ozet": "Kan şekeri testleri kandaki glukoz düzeyini ölçer. Açlık kan şekeri testi en az 8 saat su dışında hiçbir şey yiyip içmeden yapılır. Rastgele kan şekeri testi yemekten sonra bile, günün herhangi bir saatinde yapılabilir. Oral glukoz tolerans testinde aç karnına kan alınır, ardından şekerli bir sıvı içilir ve genellikle sonraki 2-3 saat boyunca yaklaşık saatte bir kan örneği alınır. Sonuçların anlamı hangi testin yapıldığına, diğer test sonuçlarına ve kişinin sağlık öyküsüne bağlıdır; prediyabet ve diyabet tanısı hekim tarafından bu bilgilerle birlikte konur."
+    },
+    {
+      "id": "inr-acibadem",
+      "konu": "Pıhtılaşma testi (PT/INR)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "INR",
+        "PT",
+        "protrombin zamanı",
+        "INR yüksek",
+        "INR kaç olmalı",
+        "coumadin INR",
+        "varfarin INR",
+        "pıhtılaşma testi"
+      ],
+      "baslik": "Protrombin Zamanı (PT) Nedir? Yüksekliği ve Düşüklüğü",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/protrombin-zamani/",
+      "dil": "tr",
+      "ozet": "Protrombin zamanı (PT), kanın pıhtılaşma süresini saniye cinsinden ölçer; INR ise laboratuvarlar arasındaki farkları ortadan kaldıran standart bir değerdir. Kan sulandırıcı kullanmayan yetişkinlerde PT 9,3-12,5 saniye, INR 0,8-1,1 kabul edilir. Varfarin kullananlarda hedef INR çoğu durumda 2,0-3,0, mekanik kalp kapağı olanlarda 2,5-3,5'tir. Yüksek PT/INR kanın yavaş pıhtılaştığını gösterir; karaciğer hastalıkları, K vitamini eksikliği, varfarin gibi kan sulandırıcılar ve pıhtılaşma faktörü eksiklikleri neden olabilir. Düşük PT/INR ise kanın hızlı pıhtılaştığını ve inme, kalp krizi veya toplardamar pıhtısı riskinin arttığını gösterir. K vitamini ve aspirin gibi bazı ilaçlar sonucu etkileyebilir. Test kan sulandırıcı tedavinin takibinde, kanama bozukluğu şüphesinde, karaciğer hastalığında ve ameliyat öncesinde yapılır."
+    },
+    {
+      "id": "inr-medlineplus",
+      "konu": "Pıhtılaşma testi (PT/INR)",
+      "kategori": "Tahliller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "PT/INR",
+        "INR düşük",
+        "varfarin takibi",
+        "K vitamini ve varfarin"
+      ],
+      "baslik": "Prothrombin Time Test and INR (PT/INR)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/lab-tests/prothrombin-time-test-and-inr-ptinr/",
+      "dil": "en",
+      "ozet": "PT/INR testi, bir kan örneğinde pıhtı oluşmasının kaç saniye sürdüğünü ölçer; INR farklı laboratuvarların sonuçlarını karşılaştırılabilir hale getirir. Varfarinin etkisini izlemek, açıklanamayan ağır kanama veya kolay morarmayı araştırmak, pıhtılaşma bozukluklarını değerlendirmek, karaciğer sağlığını kontrol etmek ve ameliyattan önce pıhtılaşmanın normal olduğunu doğrulamak için yapılır. INR çok düşükse kan fazla kolay pıhtılaşır ve tehlikeli pıhtı riski artar; çok yüksekse kan geç pıhtılaşır ve tehlikeli kanama riski artar. Yeşil yapraklı sebzeler gibi K vitamini içeren besinler, soya ve kanola yağı, çok yağlı beslenme, alkol ve bazı ilaçlar ile takviyeler sonucu etkileyebilir."
     }
   ],
   "kategoriler": [

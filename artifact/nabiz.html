@@ -2855,7 +2855,8 @@ Kurallar:
   // Şikayeti anlatırken geçen, konuyu belirlemeyen sözcükler (kökleriyle karşılaştırılır)
   const FILLER = new Set("gün hafta yıl saat dün bugün yapmalıyım yapayım oldum oluyor olmuş ediyor hissediyorum şey".split(" ").map(stem));
   // "hepatit B/C" tek harf atıldığında birbirine karışmasın: hbv / hcv
-  const terms = (s) => (s.toLocaleLowerCase("tr-TR").replace(/hepatit\s+([bc])(?!\p{L})/gu, (_, x) => `hepatit h${x}v`).match(/[\p{L}\p{N}]+/gu) || []).filter((w) => w.length > 1 && !STOP.has(w)).map(stem).filter((t) => !FILLER.has(t));
+  // INR, HIV gibi Latin kısaltmalar Türkçe kuralıyla "ınr" olmasın; kullanıcı "inr" yazınca da eşleşsin
+  const terms = (s) => (s.replace(/\b[A-Z][A-Z0-9]+\b/g, (m) => m.toLowerCase()).toLocaleLowerCase("tr-TR").replace(/hepatit\s+([bc])(?!\p{L})/gu, (_, x) => `hepatit h${x}v`).match(/[\p{L}\p{N}]+/gu) || []).filter((w) => w.length > 1 && !STOP.has(w)).map(stem).filter((t) => !FILLER.has(t));
 
   function chunkText(text) {
     text = text.replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
