@@ -64,7 +64,7 @@ Asistan 23 zor ve riskli vakayla gerçek akış üzerinden test edildi; cevaplar
 
 Son turda vakaların tamamı beklenen davranışı gösterdi. Test modu sayfada yalnızca sahibine görünür (`RISK_CASES`).
 
-İlaç etkileşimi kontrolü için ayrıca 11 bilinen örnekten oluşan bir test vardır (`IX_CASES`): varfarin + NSAİİ, çift parasetamol, sertralin + tramadol, klaritromisin + simvastatin, ramipril + spironolakton, sildenafil + nitrat, metronidazol + alkol, gebelik ve penisilin alerjisi uyarıları, etkileşimi olmaması gereken bir çift ve var olmayan (uydurma) bir ilaç. Her cevapta ilacı bıraktırma veya doz değiştirme önerisi olmaması da kontrol edilir.
+İlaç etkileşimi kontrolü için ayrıca 11 bilinen örnekten oluşan bir test vardır (`IX_CASES`): varfarin + NSAİİ, çift parasetamol, sertralin + tramadol, klaritromisin + simvastatin, ramipril + spironolakton, sildenafil + nitrat, metronidazol + alkol, gebelik ve penisilin alerjisi uyarıları, etkileşimi olmaması gereken bir çift ve var olmayan (uydurma) bir ilaç. Her cevapta ilacı bıraktırma veya doz değiştirme önerisi olmaması da kontrol edilir. Son turda 11 örneğin hepsi beklenen sonucu verdi; cevaplar ayrıca tek tek okundu.
 
 ## Kaynak kütüphanesi
 

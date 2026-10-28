@@ -2035,6 +2035,9 @@ Kurallar:
       ? `${ix.length} etkileşim${serious ? ` (${serious} ciddi)` : ""}${dup.length ? ` · ${dup.length} aynı etken madde uyarısı` : ""}`
       : "Bu ilaçlar arasında bilinen önemli bir etkileşim bulunamadı."));
     if (!ix.length && !dup.length) box.appendChild(el("p", "muted", "Bu, hiç etkileşim olmadığı anlamına gelmez. Yeni bir ilaca başlamadan önce eczacınıza mutlaka söyleyin."));
+    // Tanınmayan ilaç varsa kontrol eksiktir; "etkileşim bulunamadı" güven vermesin
+    const unk = ilaclar.filter((x) => x.taninamadi).map((x) => clean(x.girilen)).filter(Boolean);
+    if (unk.length) box.appendChild(el("p", "er-warn", `${unk.join(", ")} tanınamadı; ${unk.length > 1 ? "bu ilaçların" : "bu ilacın"} etkileşimleri kontrol edilemedi. Kutudaki adı veya etken maddesini kontrol edip yeniden ekleyin ya da eczacınıza sorun.`));
 
     // Tanınan etken maddeler
     if (ilaclar.length) {
