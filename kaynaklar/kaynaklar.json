@@ -452,7 +452,10 @@
         "göğsüm sıkışıyor",
         "göğüs sıkışması",
         "kola vuran ağrı",
-        "çeneye vuran ağrı"
+        "çeneye vuran ağrı",
+        "göğüs ve çene ağrısı",
+        "göğsüm ve çenem ağrıyor",
+        "kola ve çeneye yayılan ağrı"
       ],
       "baslik": "Kalp Krizi Belirtileri Nelerdir? Kalp Krizi Nedenleri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -475,7 +478,10 @@
         "göğsüm sıkışıyor",
         "göğüs sıkışması",
         "kola vuran ağrı",
-        "çeneye vuran ağrı"
+        "çeneye vuran ağrı",
+        "göğüs ve çene ağrısı",
+        "göğsüm ve çenem ağrıyor",
+        "kola ve çeneye yayılan ağrı"
       ],
       "baslik": "Heart Attack (Kalp Krizi)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -4459,7 +4465,7 @@
     {
       "id": "aft-acibadem",
       "konu": "Aft ve ağız yarası",
-      "kategori": "Kulak burun boğaz",
+      "kategori": "Ağız ve diş",
       "acil": false,
       "anahtar_kelimeler": [
         "aft",
@@ -4483,7 +4489,7 @@
     {
       "id": "aft-medlineplus",
       "konu": "Aft ve ağız yarası",
-      "kategori": "Kulak burun boğaz",
+      "kategori": "Ağız ve diş",
       "acil": false,
       "anahtar_kelimeler": [
         "aft",
@@ -8502,6 +8508,201 @@
       "url": "https://medlineplus.gov/ency/article/003090.htm",
       "dil": "en",
       "ozet": "Yetişkinde ağızdan ölçülen sıcaklık günün saatine göre 37,2-37,5°C'yi aşıyorsa ateş olabilir. Solunum, idrar ve sindirim yolu enfeksiyonları, bağışıklık ve iltihaplı hastalıklar, lenfoma ve lösemi gibi kanserler, pıhtılar ve bazı ilaçlar neden olabilir. Hafif ateşte bol sıvı ve dinlenme yeterli olabilir; parasetamol 4-6 saatte bir, ibuprofen 6-8 saatte bir kullanılabilir; çocuklara hekim önermedikçe aspirin verilmez. 40,6°C veya üzerindeki ve tedaviye yanıt vermeyen ateşte, 39,4°C'de kalan veya yükselmeye devam eden ateşte, 48-72 saatten uzun süren ateşte, yeni döküntü veya morluk, ense sertliği ya da idrar yaparken ağrı varsa hemen hekime başvurulmalıdır. Ateşle birlikte bilinç bulanıklığı, nefes almada güçlük, çok şiddetli baş ağrısı veya ense sertliği varsa 112 aranmalıdır."
+    },
+    {
+      "id": "disagrisi-avcilaradsm",
+      "konu": "Diş ağrısı ve diş çürüğü",
+      "kategori": "Ağız ve diş",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "diş ağrısı",
+        "dişim ağrıyor",
+        "diş çürüğü",
+        "çürük diş",
+        "dişim çürüdü",
+        "dolgu",
+        "diş apsesi",
+        "dişte oyuk"
+      ],
+      "baslik": "Diş Çürümesi",
+      "kurum": "T.C. Sağlık Bakanlığı Avcılar Ağız ve Diş Sağlığı Merkezi",
+      "tur": "resmi",
+      "url": "https://avcilaradsm.saglik.gov.tr/TR-11933/dis-curumesi.html",
+      "dil": "tr",
+      "ozet": "Diş çürüğü, dişte oyuklar açarak dişin yapısını bozan ve kendiliğinden iyileşmeyen bir hastalıktır. Oluşması için üç etken birlikte bulunur: çürümeye yatkın diş yüzeyi, ağızdaki bakteriler ve şekerli yiyecek artıkları. Bakteriler şekerleri dişe yapışan plağa dönüştürür ve oluşan asit diş minesini aşındırır; oyuk giderek büyür. Çürük ilerledikçe diş ağrımaya başlar, ileri aşamada diş özünde (sinirinde) enfeksiyon ve apse gelişebilir. Yemeklerden sonra dişleri fırçalamak, diş ipi kullanmak, flordan yararlanmak ve şekerli yiyecekleri sınırlamak çürüğü önler. Yılda en az iki kez diş hekimi muayenesi önerilir; erken fark edilen çürükte dişin kaybı önlenebilir."
+    },
+    {
+      "id": "disagrisi-medlineplus",
+      "konu": "Diş ağrısı ve diş çürüğü",
+      "kategori": "Ağız ve diş",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "diş ağrısı",
+        "dişim ağrıyor",
+        "diş ağrısına ne iyi gelir",
+        "yüzüm şişti diş",
+        "diş apsesi"
+      ],
+      "baslik": "Toothaches (Diş Ağrısı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003067.htm",
+      "dil": "en",
+      "ozet": "Diş ağrısının başlıca nedenleri diş çürüğü, apseli diş, dişin aşınması, kırılması veya darbe alması, çene ya da ağız yaralanması, sinüs enfeksiyonu ve kulak ağrısıdır; kalp krizi de çene ağrısıyla kendini gösterebilir. Diş hekimine hemen ulaşılamıyorsa reçetesiz ağrı kesici kullanılabilir. Düzenli diş ipi kullanmak, florürlü diş macunuyla fırçalamak, düzenli profesyonel temizlik ve az şekerli beslenme diş ağrısının çoğunu önler. Şiddetli diş ağrısında, bir iki günden uzun süren ağrıda veya ağrıya ateş, kulak ağrısı ya da ağzı geniş açarken ağrı eşlik ediyorsa diş hekimine veya hekime başvurulmalıdır. Diş ağrısı nedenlerinin çoğunda diş hekimi doğru başvuru yeridir."
+    },
+    {
+      "id": "disetikanamasi-acibadem",
+      "konu": "Diş eti kanaması ve diş eti hastalığı",
+      "kategori": "Ağız ve diş",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "diş eti kanaması",
+        "diş etim kanıyor",
+        "diş fırçalarken kanama",
+        "diş eti iltihabı",
+        "diş taşı",
+        "diş eti şişmesi",
+        "gingivit"
+      ],
+      "baslik": "Diş Eti Kanaması Nedir? Diş Eti Kanaması Neden Olur? Ne İyi Gelir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/dis-eti-kanamasi/",
+      "dil": "tr",
+      "ozet": "Diş eti kanamasının en sık nedeni dişlerde biriken plak ve diş taşının yol açtığı diş eti iltihabıdır (gingivit); iltihaplı diş eti kızarır, şişer ve kolay kanar. Tedavi edilmezse diş etini ve dişi taşıyan dokuları etkileyen ileri diş eti hastalığına (periodontitis) dönüşebilir. Çok sert fırçalama, gebelikteki hormon değişiklikleri, kan sulandırıcı ilaçlar, C veya K vitamini eksikliği, diyabet ve lösemi de kanamaya neden olabilir. Günde 2 kez yumuşak fırçayla fırçalamak, her gün diş ipi kullanmak, 6 ayda bir diş hekimine gitmek, dengeli beslenmek ve tütün ürünlerinden uzak durmak yardımcı olur. Şiddetli ya da uzun süren diş eti kanamasında veya başka açıklanamayan belirtiler eşlik ediyorsa diş hekimine başvurulmalıdır."
+    },
+    {
+      "id": "disetikanamasi-medlineplus",
+      "konu": "Diş eti kanaması ve diş eti hastalığı",
+      "kategori": "Ağız ve diş",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "diş eti hastalığı",
+        "periodontitis",
+        "diş sallanması",
+        "dişim sallanıyor",
+        "diş eti çekilmesi"
+      ],
+      "baslik": "Gum Disease (Diş Eti Hastalığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/gumdisease.html",
+      "dil": "en",
+      "ozet": "Diş eti hastalığının hafif biçimi olan diş eti iltihabında (gingivit) diş etleri kızarır, şişer ve kolay kanar; günlük fırçalama, diş ipi kullanımı ve diş hekiminde düzenli temizlikle genellikle geri döndürülebilir. Tedavi edilmezse periodontitise ilerler: diş etleri dişlerden ayrılarak enfekte cepler oluşturur ve tedavi edilmediğinde dişi taşıyan kemik, diş eti ve bağ dokusu yıkılır; dişler sallanabilir ve kaybedilebilir. Sigara ve diyabet diş eti hastalığı riskini artırır. İleri durumlarda diş eti tedavileri ve cerrahi işlemler uygulanır."
+    },
+    {
+      "id": "agizkokusu-acibadem",
+      "konu": "Ağız kokusu",
+      "kategori": "Ağız ve diş",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ağız kokusu",
+        "ağzım kokuyor",
+        "nefes kokusu",
+        "kötü ağız kokusu",
+        "dil temizliği",
+        "bademcik taşı"
+      ],
+      "baslik": "Ağız Kokusu Neden Olur? Ağız Kokusu Nasıl Geçer?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/saglikli-yasam/agiz-kokusu/",
+      "dil": "tr",
+      "ozet": "Ağız kokusunun çoğu ağız içinden kaynaklanır: yetersiz ağız temizliği, diş çürükleri, diş eti hastalıkları, bademcik taşları ve iyi temizlenmeyen protezler. Dişler arasında kalan yemek artıkları dişlerin, diş etlerinin ve dilin üzerinde bakteri üremesine yol açar. Reflü, diyabet, böbrek ve karaciğer yetmezliği, sinüzit ve solunum yolu enfeksiyonları, sarımsak-soğan gibi besinler ve tütün kullanımı da neden olabilir. Günde 2 kez 2 dakika florürlü macunla fırçalamak, her gün diş ipi kullanmak, dili temizlemek, bol su içmek ve şekersiz sakız çiğnemek yardımcı olur. Koku uzun sürerse ya da diş etlerinde ağrı, kanama veya hassasiyet eşlik ederse diş hekimine başvurulmalıdır."
+    },
+    {
+      "id": "agizkokusu-medlineplus",
+      "konu": "Ağız kokusu",
+      "kategori": "Ağız ve diş",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ağız kokusu",
+        "nefes kokusu",
+        "ağız gargarası"
+      ],
+      "baslik": "Breath Odor (Ağız Kokusu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003058.htm",
+      "dil": "en",
+      "ozet": "Ağız kokusunun en sık nedeni yetersiz ağız ve diş bakımıdır; çürük ve apseli dişler, diş eti hastalığı, sarımsak, soğan, lahana gibi besinler, sigara, sinüs ve boğaz enfeksiyonları da kokuya yol açar. Reflü ve diyabete bağlı ketoasidoz gibi bazı hastalıklar da ağız kokusuyla kendini gösterebilir. Özellikle diş ipi kullanımıyla iyi ağız bakımı yapmak ve sigarayı bırakmak önerilir; maydanoz veya güçlü bir nane geçici olarak rahatlatabilir. Gargaralar kokunun altta yatan nedenini tedavi etmez. Belirgin bir neden olmadan süren ağız kokusunda ya da ateş, öksürük veya burun akıntısıyla birlikte yüz ağrısı gibi solunum yolu enfeksiyonu belirtilerinde hekime başvurulmalıdır."
+    },
+    {
+      "id": "bruksizm-acibadem",
+      "konu": "Diş sıkma ve gıcırdatma (bruksizm)",
+      "kategori": "Ağız ve diş",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "diş sıkma",
+        "diş gıcırdatma",
+        "bruksizm",
+        "uykuda diş gıcırdatma",
+        "gece plağı",
+        "dişlerde aşınma"
+      ],
+      "baslik": "Diş Sıkma (Bruksizm) Tedavisi Nasıl Yapılır?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/dis-sikma-bruksizm-tedavisi-nasil-yapilir/",
+      "dil": "tr",
+      "ozet": "Bruksizm, dişlerin sıkılması veya gıcırdatılmasıdır; gündüz de uykuda da görülebilir. En önemli tetikleyici strestir; genetik yatkınlık, çenenin dengeli kapanmasını bozan dolgu veya restorasyonlar, kapanış bozukluğu, diş eksiklikleri, bazı antidepresanlar, alkol ve sigara da rol oynar. Dişlerde aşınma, çatlak ve kırıklar, diş hassasiyeti, sabahları çene ağrısı ve yorgunluk, kalitesiz uyku ve tekrarlayan diş eti sorunları görülebilir; uzun vadede çene eklemi sorunlarına yol açabilir. Tedavide kişinin durumu fark etmesi, kişiye özel gece plağı (okluzal splint), sıcak uygulama ve fizyoterapi kullanılır. Dişlerde aşınma, hassasiyet veya çene ağrısı varsa diş hekimine danışılmalıdır."
+    },
+    {
+      "id": "bruksizm-medlineplus",
+      "konu": "Diş sıkma ve gıcırdatma (bruksizm)",
+      "kategori": "Ağız ve diş",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "diş gıcırdatma",
+        "bruksizm",
+        "diş koruyucu plak"
+      ],
+      "baslik": "Bruxism (Diş Gıcırdatma)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001413.htm",
+      "dil": "en",
+      "ozet": "Bruksizm, dişlerin birbiri üzerinde ileri geri kaydırılarak gıcırdatılmasıdır; birçok kişide günlük stres tetikleyicidir, çene hizasındaki bozukluk, duruş, beslenme ve uyku alışkanlıkları da katkıda bulunabilir. Baş ağrısı, özellikle sabahları çene ağrısı ve kaslarda hassasiyet, diş hassasiyeti, kulak ağrısı ve uyku bozukluğu yapabilir; ses yanında uyuyanı rahatsız edecek kadar yüksek olabilir. Ağrıyan çene kaslarına buz veya sıcak uygulamak, sert yiyeceklerden ve sakızdan kaçınmak, bol su içmek, yeterli uyumak, germe egzersizleri ve gevşeme teknikleriyle stresi azaltmak yardımcı olur. İyi oturan bir diş koruyucu plak gıcırdatmanın etkilerini azaltır. Yemek yemekte zorlanma veya ağzı açamama varsa hemen, kendi kendine bakıma rağmen birkaç haftada düzelmeyen belirtilerde diş hekimine başvurulmalıdır."
+    },
+    {
+      "id": "ceneeklemi-acibadem",
+      "konu": "Çene eklemi rahatsızlığı",
+      "kategori": "Ağız ve diş",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "çene ağrısı",
+        "çene eklemi",
+        "çenem ağrıyor",
+        "çene kilitlenmesi",
+        "çenemden ses geliyor",
+        "çene tıklaması",
+        "ağzımı açamıyorum",
+        "TME"
+      ],
+      "baslik": "Çene Eklemi Ağrısı Nedir? Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://acibadem.com.tr/ilgi-alani/cene-eklemi-agrisi-nedir-tedavisi",
+      "dil": "tr",
+      "ozet": "Çene eklemi (temporomandibular eklem, TME) rahatsızlığı, alt çeneyi kafatasına bağlayan ve konuşma, çiğneme, esneme gibi işlevlerde görev alan eklemde ağrı ve işlev bozukluğudur. Çene, kulak çevresi, şakak ve başta ağrı, ağız açıp kapamada kısıtlılık, eklemden klik veya çıtırtı sesi, çiğnerken yorulma ve kulak çevresinde basınç hissi görülebilir. Diş sıkma ve gıcırdatma, çene yaralanmaları, stres ve kaygı, dişlerin yanlış kapanması, romatizmal hastalıklar, kötü duruş ve uzun süre sakız çiğneme neden olabilir. Yumuşak gıdalar, sıcak veya soğuk kompres, sakızdan ve geniş esnemeden kaçınmak, stres yönetimi ve çene egzersizleri yardımcı olur. Tedavide gece plağı, ilaç, fizik tedavi, eklem içi enjeksiyon ve nadiren cerrahi kullanılır; diş hekimi, çene cerrahı veya kulak burun boğaz uzmanına başvurulabilir."
+    },
+    {
+      "id": "ceneeklemi-medlineplus",
+      "konu": "Çene eklemi rahatsızlığı",
+      "kategori": "Ağız ve diş",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "çene eklemi",
+        "çene ağrısı",
+        "çene kilitlenmesi",
+        "TME bozukluğu"
+      ],
+      "baslik": "TMJ Disorders (Çene Eklemi Rahatsızlıkları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001227.htm",
+      "dil": "en",
+      "ozet": "Çene eklemi rahatsızlıklarında ısırma ve çiğnemede güçlük, eklemden tık, patlama veya sürtünme sesi, yüzde künt ağrı, kulak ağrısı, baş ağrısı, çenede ağrı ve hassasiyet, çenenin kilitlenmesi ve ağzı açıp kapamada zorluk görülebilir. Çoğu kişide neden bilinmez; çeneye binen yük, özellikle bilgisayar başında kötü duruş, stres, diş gıcırdatma, kötü beslenme ve uykusuzluk katkıda bulunabilir. Yumuşak gıdalar, çene kaslarına hafif germe ve masaj, esneme, şarkı söyleme ve sakız çiğnemekten kaçınmak, yüze nemli sıcak veya soğuk uygulamak, stres azaltma ve düzenli egzersiz önerilir. Tedavide reçetesiz ağrı kesiciler, kas gevşeticiler, ısırma plakları ve nadiren enjeksiyonlar kullanılır; cerrahiye nadiren gerek duyulur. Çoğu kişi iyileşir. Yemek yemekte veya ağzı açmakta zorlanılıyorsa hemen hekime başvurulmalıdır."
     }
   ],
   "kategoriler": [
@@ -8519,6 +8720,7 @@
     "Cilt",
     "Göz",
     "Kulak burun boğaz",
+    "Ağız ve diş",
     "Enfeksiyonlar",
     "Kan",
     "Vitamin ve mineraller",

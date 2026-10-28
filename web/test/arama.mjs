@@ -52,6 +52,11 @@ const CASES = [
   ["hamileyim kanamam var", /Gebelikte kanama/],
   ["elimi bıçakla kestim kan durmuyor", /Kesik/],
   ["akrep soktu", /Yılan ve akrep/],
+  ["göğsüm ve çenem ağrıyor", /Kalp krizi/],
+  ["sol kolum ve çenem ağrıyor", /Kalp krizi/],
+  ["dişim ağrıyor", /Diş ağrısı/],
+  ["diş etim kanıyor", /Diş eti/],
+  ["çenem ağrıyor ağzımı açamıyorum", /Çene eklemi/],
 ];
 
 let fail = 0;
