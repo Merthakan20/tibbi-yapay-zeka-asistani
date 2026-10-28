@@ -41,11 +41,17 @@ const CASES = [
   ["Başım ağrıyor, ışıktan rahatsız oluyorum", /Migren|baş ağrısı/],
   ["kusuyorum", /İshal|Gastrit|zehirlenme/],
   ["hamileyim sürekli kusuyorum", /Gebelik/],
-  ["bebeğim ateşlendi", /ateş/],
+  ["bebeğim ateşlendi", /Çocuklarda ateş/],
   ["inr değerim yüksek", /INR/],
   ["hepatit C bulaşır mı", /Hepatit C/],
   ["paslı çivi battı", /Tetanoz/],
   ["köy peyniri yedim ateşim var", /bruselloz/],
+  ["ateşim var", /Yetişkinde ateş/],
+  ["4 yaşındaki oğlumun ateşi var", /Çocuklarda ateş/],
+  ["kendimi öldürmek istiyorum", /İntihar/],
+  ["hamileyim kanamam var", /Gebelikte kanama/],
+  ["elimi bıçakla kestim kan durmuyor", /Kesik/],
+  ["akrep soktu", /Yılan ve akrep/],
 ];
 
 let fail = 0;

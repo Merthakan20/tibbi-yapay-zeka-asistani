@@ -18,6 +18,10 @@
   --t-today: #c8621a;
   --t-er: #c4302b;
   --er-soft: #fbe9e7;
+  --fig-a: #f6dcc8;
+  --fig-a-line: #a9724f;
+  --fig-b: #cfe5dc;
+  --fig-b-line: #2f7d67;
   --c1: #0b8a68;
   --c2: #3d6fb6;
   --shadow: 0 1px 2px rgba(22, 34, 30, .06), 0 4px 16px rgba(22, 34, 30, .05);
@@ -42,6 +46,10 @@
     --t-today: #f0884a;
     --t-er: #f2625b;
     --er-soft: #3a1c1a;
+    --fig-a: #4a3a30;
+    --fig-a-line: #d6a585;
+    --fig-b: #1f3d34;
+    --fig-b-line: #6cc7a8;
     --c1: #2fa07f;
     --c2: #6f8fdc;
     --shadow: 0 1px 2px rgba(0, 0, 0, .3);
@@ -63,6 +71,10 @@
   --t-today: #f0884a;
   --t-er: #f2625b;
   --er-soft: #3a1c1a;
+  --fig-a: #4a3a30;
+  --fig-a-line: #d6a585;
+  --fig-b: #1f3d34;
+  --fig-b-line: #6cc7a8;
   --c1: #2fa07f;
   --c2: #6f8fdc;
   --shadow: 0 1px 2px rgba(0, 0, 0, .3);
@@ -486,44 +498,62 @@ button { cursor: pointer; }
 .ix-drugs { font: 12px var(--f-mono); color: var(--ink-2); text-align: right; }
 .ix-list { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 5px; font-size: 14px; line-height: 1.45; }
 .ix-list b { font-weight: 600; }
-.aid-top { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-bottom: 12px; }
-.aid-top p { margin: 0; flex: 1 1 260px; font-size: 13px; }
+.aid-top { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin-bottom: 14px; padding: 12px 14px; border-radius: 12px; background: var(--er-soft); }
+.aid-top p { margin: 0; flex: 1 1 240px; font-size: 13px; color: var(--ink-2); }
 a.btn.er { background: var(--t-er); border-color: var(--t-er); color: #fff; text-decoration: none; font-weight: 600; }
-.aid-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 8px; }
-.aid-card { display: grid; gap: 3px; align-content: start; text-align: left; border: 1px solid var(--line); border-left: 4px solid var(--accent); background: var(--surface); border-radius: 10px; padding: 10px 12px; color: var(--ink); }
-.aid-card.er { border-left-color: var(--t-er); }
-.aid-card:hover { border-color: var(--accent); }
-.aid-card b { font: 600 14.5px var(--f-display); }
-.aid-card span { font-size: 12.5px; color: var(--ink-2); line-height: 1.35; }
-.aid-title { font: 700 21px var(--f-display); margin: 14px 0 0; }
-.aid-detail h3 { font: 600 16px var(--f-display); margin: 18px 0 8px; }
-.aid-detail .er-warn { margin: 10px 0; font-size: 14.5px; line-height: 1.45; }
-.aid-tels { display: flex; gap: 8px; flex-wrap: wrap; }
-.aid-tels a { font-size: 16px; padding: 10px 18px; }
-.aid-steps { margin: 0; padding-left: 22px; display: grid; gap: 8px; font-size: 15px; line-height: 1.5; }
-.aid-steps li, .aid-dont li { color: var(--ink); }
-.aid-steps li::marker { font: 600 14px var(--f-mono); color: var(--accent); }
-.aid-dont { margin: 0; padding-left: 20px; display: grid; gap: 6px; font-size: 14.5px; line-height: 1.45; list-style: "✕  "; }
-.aid-dont li::marker { color: var(--t-er); font-weight: 700; }
-.aid-fig { margin: 12px 0 4px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); padding: 8px; }
-.aid-fig svg { display: block; width: 100%; max-width: 460px; height: auto; margin: 0 auto; }
-.aid-fig .f-body { fill: var(--surface-2); stroke: var(--ink-2); stroke-width: 1.5; }
+.aid-ico { flex: none; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); }
+.aid-ico svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.er .aid-ico { background: var(--er-soft); color: var(--t-er); }
+.aid-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(236px, 1fr)); gap: 10px; }
+.aid-card { position: relative; display: flex; gap: 12px; align-items: center; text-align: left; border: 1px solid var(--line); background: var(--surface); border-radius: 14px; padding: 12px 14px; color: var(--ink); box-shadow: var(--shadow); cursor: pointer; transition: border-color .15s, transform .15s; }
+.aid-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+.aid-card.er:hover { border-color: var(--t-er); }
+.aid-card .aid-txt { display: grid; gap: 2px; min-width: 0; }
+.aid-card b { font: 600 15px var(--f-display); line-height: 1.2; }
+.aid-card .aid-txt span { font-size: 12.5px; color: var(--ink-2); line-height: 1.35; }
+.aid-pill { position: absolute; top: 8px; right: 10px; font: 600 10.5px var(--f-mono); letter-spacing: .02em; color: var(--t-er); }
+.aid-card.er .aid-txt { padding-right: 22px; }
+.aid-legend { margin: 12px 0 0; font-size: 12px; color: var(--ink-2); }
+.aid-detail { display: grid; gap: 0; }
+.aid-detail > .btn { justify-self: start; }
+.aid-head { display: flex; gap: 14px; align-items: center; margin: 14px 0 4px; }
+.aid-head .aid-ico { width: 56px; height: 56px; border-radius: 16px; }
+.aid-head .aid-ico svg { width: 32px; height: 32px; }
+.aid-title { font: 700 22px var(--f-display); margin: 0; line-height: 1.15; }
+.aid-sub { margin: 3px 0 0; font-size: 13.5px; color: var(--ink-2); }
+.aid-detail h3 { display: flex; align-items: center; gap: 8px; font: 600 16px var(--f-display); margin: 20px 0 10px; }
+.aid-detail .er-warn { margin: 12px 0 10px; font-size: 14.5px; line-height: 1.5; padding: 10px 12px; }
+.aid-tels { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 2px; }
+.aid-tels a { font-size: 16px; padding: 11px 20px; border-radius: 12px; }
+.aid-steps { margin: 0; padding: 0; list-style: none; counter-reset: aid; display: grid; gap: 10px; }
+.aid-steps li { counter-increment: aid; position: relative; padding: 2px 0 0 40px; min-height: 28px; font-size: 15px; line-height: 1.5; color: var(--ink); }
+.aid-steps li::before { content: counter(aid); position: absolute; left: 0; top: 0; width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); font: 600 13.5px var(--f-mono); }
+.aid-dont { margin: 0; padding: 12px 14px; list-style: none; display: grid; gap: 8px; border-radius: 12px; background: var(--er-soft); }
+.aid-dont li { position: relative; padding-left: 30px; font-size: 14.5px; line-height: 1.45; color: var(--ink); }
+.aid-dont li::before { content: "✕"; position: absolute; left: 0; top: 1px; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; background: var(--t-er); color: #fff; font-size: 11px; font-weight: 700; }
+.aid-fig { margin: 14px 0 6px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface-2); padding: 10px; }
+.aid-fig svg { display: block; width: 100%; max-width: 480px; height: auto; margin: 0 auto; }
+.aid-fig .f-body { fill: var(--fig-a); stroke: var(--fig-a-line); stroke-width: 1.5; }
+.aid-fig .f-body2 { fill: var(--fig-b); stroke: var(--fig-b-line); stroke-width: 1.5; }
 .aid-fig .f-line { fill: none; stroke: var(--ink-2); stroke-width: 1.5; stroke-linecap: round; }
-.aid-fig .f-leg { fill: none; stroke: var(--ink-2); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; }
-.aid-fig .f-arm { stroke: var(--ink-2); stroke-width: 7; stroke-linecap: round; }
-.aid-fig .f-hand { fill: var(--accent); stroke: var(--accent); opacity: .9; }
+.aid-fig .f-leg { fill: none; stroke: var(--fig-a-line); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; }
+.aid-fig .f-arm { stroke: var(--fig-b-line); stroke-width: 7; stroke-linecap: round; }
+.aid-fig .f-hand { fill: var(--fig-b-line); stroke: var(--fig-b-line); }
 .aid-fig .f-dot { fill: var(--ink-2); }
 .aid-fig .f-act { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; }
 .aid-fig .f-act-head { fill: var(--accent); }
 .aid-fig .f-lead { stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 3 3; }
 .aid-fig .f-water { fill: none; stroke: #4aa3df; stroke-width: 3; stroke-linecap: round; }
+.aid-fig .f-blood { fill: var(--t-er); }
+.aid-fig .f-cloth { fill: var(--surface); stroke: var(--ink-2); stroke-width: 1.2; }
 .aid-fig .f-tick { fill: #7a4a2a; }
 .aid-fig .f-tool { fill: none; stroke: var(--ink); stroke-width: 3; stroke-linecap: round; }
 .aid-fig .f-txt { fill: var(--ink); font: 500 12.5px var(--f-body); }
 .aid-fig .f-no { fill: var(--t-er); font: 600 12px var(--f-body); }
 .aid-fig .f-alarm { fill: var(--t-er); font: 700 15px var(--f-display); }
-.aid-src { margin-top: 18px; font-size: 12.5px; color: var(--ink-2); }
+.aid-src { margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 12.5px; color: var(--ink-2); }
 .aid-src a { color: var(--accent); }
+@media (max-width: 560px) { .aid-grid { grid-template-columns: 1fr; gap: 8px; } .aid-card { padding: 10px 12px; } .aid-ico { width: 38px; height: 38px; } .aid-title { font-size: 20px; } }
 .lab-chip.mid { background: var(--t-gp); }
 .lg-ref { stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 5 4; opacity: .7; }
 .lg-line { fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
@@ -2108,6 +2138,7 @@ Kurallar:
     {"id": "inme", "ad": "İnme (felç)", "kisa": "Yüzde kayma, kolda güçsüzlük, konuşma bozukluğu", "tel": ["112"], "acil": "Yüzde, kolda veya bacakta aniden başlayan güçsüzlük ya da uyuşma, konuşma güçlüğü, ani görme kaybı, denge kaybı veya çok şiddetli baş ağrısı varsa hemen 112'yi arayın.", "adimlar": ["Kişiden gülümsemesini (yüzde kayma var mı), iki kolunu kaldırmasını (biri düşüyor mu) ve basit bir cümle söylemesini (konuşma bozuk mu) isteyin.", "Bunlardan biri bile varsa hemen 112'yi arayın; beyin hücreleri dakikalar içinde zarar görür.", "Belirtiler geçse bile hastaneye gidin; durum ilerleyebilir."], "yapmayin": ["Belirtilerin kendiliğinden geçmesini beklemeyin."], "kaynak": [{"k": "T.C. Sağlık Bakanlığı Aksaray İl Sağlık Müdürlüğü", "u": "https://aksarayism.saglik.gov.tr/TR-263827/inmefelcnedir-nelere-dikkat-edilmelidir.html"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/stroke.html"}]},
     {"id": "nobet", "ad": "Nöbet (sara)", "kisa": "Kasılma, bilinç kaybı", "tel": ["112"], "acil": "Nöbet 5 dakikadan uzun sürerse, nöbetler arka arkaya gelirse, bilinç geri gelmezse veya kişinin ilk nöbetiyse 112'yi arayın.", "adimlar": ["Kişiyi güvenli bir yere yatırın, çevresindeki sert ve keskin eşyaları uzaklaştırın.", "Nöbetin başladığı zamanı not edin.", "Kasılmalar bitince kişiyi yan çevirerek nefes almasını kolaylaştırın.", "Kendine gelene kadar yanında kalın."], "yapmayin": ["Hareketlerini zorla durdurmaya çalışmayın.", "Ağzına hiçbir şey (kaşık, parmak, su) sokmayın."], "kaynak": [{"k": "T.C. Sağlık Bakanlığı Bakırköy Prof. Dr. Mazhar Osman Ruh Sağlığı ve Sinir Hastalıkları EAH", "u": "https://bakirkoyruhsinireah.saglik.gov.tr/TR,101813/epilepsi.html"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/epilepsy.html"}]},
     {"id": "anafilaksi", "ad": "Alerjik şok (anafilaksi)", "kisa": "Dudak-dil şişmesi, nefes darlığı", "tel": ["112"], "acil": "Arı sokması, besin veya ilaçtan sonra dudak, dil ya da boğazda şişme, nefes almada zorluk, hırıltı, baş dönmesi veya bayılma varsa hemen 112'yi arayın.", "adimlar": ["112'yi arayın.", "Kişinin adrenalin oto-enjektörü (kalemi) varsa hemen uyluğun dış yan yüzüne uygulayın.", "Kişiyi sırtüstü yatırıp bacaklarını kaldırın; nefes yolunu kontrol edin.", "Kişi bilincini kaybeder ve normal nefes almazsa kalp masajına başlayın."], "yapmayin": ["Nefes almakta zorlanan kişiye ağızdan bir şey vermeyin."], "kaynak": [{"k": "Acıbadem Sağlık Grubu", "u": "https://www.acibadem.com.tr/ilgi-alani/anafilaksi/"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/ency/article/000844.htm"}]},
+    {"id": "kanama", "ad": "Kesik ve kanama", "kisa": "Kesik, derin yara, durmayan kanama", "tel": ["112"], "acil": "Kanama çok fazlaysa, fışkırıyorsa ya da 10 dakika bastırmaya rağmen durmuyorsa 112'yi arayın. Derin, yüzde olan veya kenarları ayrık duran yaralar dikiş gerektirebilir; aynı gün sağlık kuruluşuna gidin.", "adimlar": ["Mümkünse eldiven giyin ya da elinizle yara arasına temiz bir poşet veya bez koyun.", "Temiz bir bez veya gazlı bezle yaranın üzerine doğrudan ve sürekli bastırın.", "Bez kanla ıslanırsa kaldırmayın; üzerine ikinci bir bez koyup bastırmaya devam edin, sonra bandajla sarın.", "Kırık şüphesi yoksa kanayan kolu veya bacağı kalp seviyesinden yukarı kaldırın.", "Kişi solgunlaşır, terler veya başı dönerse sırtüstü yatırıp bacaklarını kaldırın (şok pozisyonu) ve üzerini örtün; 112'yi arayın.", "Kanama durunca küçük kesikleri sabun ve suyla yıkayıp temiz bir bandajla kapatın. Tetanoz aşınızın güncel olup olmadığını sorun (genellikle 10 yılda bir yapılır).", "Sonraki günlerde kızarıklık, şişlik, artan ağrı, irin veya ateş olursa (enfeksiyon belirtisi) hekime başvurun."], "yapmayin": ["Islanan ilk bezi kaldırmayın; pıhtı bozulur ve kanama artar.", "Turnikeyi (sıkı bağ) yalnızca uzuv kopmasında veya bastırmaya rağmen durmayan hayati kanamada kullanın.", "İç kanama şüphesinde kişiye ağızdan yiyecek veya içecek vermeyin."], "kaynak": [{"k": "T.C. Sağlık Bakanlığı Göynük Devlet Hastanesi", "u": "https://goynukdh.saglik.gov.tr/TR-740969/kanamalarda-ilk-yardim.html"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/ency/article/000043.htm"}]},
     {"id": "yanik", "ad": "Yanık", "kisa": "Sıcak su, ateş, kimyasal", "tel": ["112"], "acil": "Geniş alanı kaplayan, derin (kabarcıklı ya da beyaz-kömürleşmiş), yüz, el, ayak, kasık veya eklemlerdeki yanıklarda ve bilinç bulanıklığında 112'yi arayın ya da acile gidin.", "adimlar": ["Yanık bölgeyi hemen 10-15 dakika serin akan suyla soğutun.", "Yanık bölgeyi temiz bir bezle gevşekçe örtün.", "Ağrı ve kızarıklıkla sınırlı küçük yanıklar evde izlenebilir; kabarcıklı veya geniş yanıklarda hekime başvurun."], "yapmayin": ["Buz uygulamayın.", "Diş macunu, yoğurt, yağ gibi şeyler sürmeyin.", "Kabarcıkları patlatmayın."], "kaynak": [{"k": "Acıbadem Sağlık Grubu", "u": "https://www.acibadem.com.tr/ilgi-alani/yanik-tedavisi/"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/burns.html"}]},
     {"id": "zehirlenme", "ad": "Zehirlenme", "kisa": "İlaç, temizlik ürünü, mantar, gaz", "tel": ["112", "114"], "acil": "Zehirlenme şüphesinde 112'yi veya Ulusal Zehir Danışma Merkezi'ni (114) arayın; bilinç bulanıklığı, nefes darlığı veya nöbet varsa hemen 112.", "adimlar": ["Ağız yoluyla: bilinci kontrol edin, ağzını suyla çalkalatın.", "Bilinci kapalıysa kişiyi yan yatırın (koma pozisyonu).", "Gaz soluma (karbonmonoksit, klor): ortamı havalandırın, kişiyi temiz havaya çıkarın ve yarı oturur pozisyonda tutun.", "Deriye bulaşma: kirlenen giysileri çıkarın, bölgeyi 15-20 dakika bol suyla yıkayın."], "yapmayin": ["Yakıcı bir madde (çamaşır suyu, kireç çözücü gibi) içildiyse kesinlikle kusturmayın.", "Bilinci kapalı kişiye ağızdan bir şey vermeyin."], "kaynak": [{"k": "T.C. Sağlık Bakanlığı Göynük Devlet Hastanesi", "u": "https://goynukdh.saglik.gov.tr/TR-740959/zehirlenmelerde-ilk-yardim.html"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/poisoning.html"}]},
     {"id": "hipoglisemi", "ad": "Şeker düşmesi", "kisa": "Titreme, terleme, açlık hissi", "tel": ["112"], "acil": "Bilinç bulanıklığı, nöbet veya bayılma varsa ya da belirtiler düzelmiyorsa 112'yi arayın.", "adimlar": ["Ölçebiliyorsanız kan şekerini ölçün (genellikle 70 mg/dL'nin altı düşüktür).", "Kişinin bilinci yerindeyse 15-20 gram hızlı şeker verin: meyve suyu, glikoz tableti veya kesme şeker.", "15 dakika sonra yeniden ölçün; hâlâ 70'in altındaysa aynı şeyi tekrarlayın.", "Kişinin glukagon kiti varsa ve bilinci bozuksa, kullanmayı bilen biri uygulayabilir."], "yapmayin": ["Bilinci kapalı kişiye ağızdan yiyecek veya içecek vermeyin."], "kaynak": [{"k": "Acıbadem Sağlık Grubu", "u": "https://www.acibadem.com.tr/ilgi-alani/hipoglisemi/"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/hypoglycemia.html"}]},
@@ -2115,23 +2146,49 @@ Kurallar:
     {"id": "kirik", "ad": "Kırık, çıkık, burkulma", "kisa": "Şekil bozukluğu, şişlik, uzvu kullanamama", "tel": ["112"], "acil": "Kırık veya çıkık şüphesinde 112'yi arayarak tıbbi yardım isteyin; özellikle kemik deriyi delmişse (açık kırık) ya da yaralı hareket edemiyorsa.", "adimlar": ["Yaralıyı ve yaralı bölgeyi gereksiz yere hareket ettirmeyin.", "Açık kırıkta yarayı temiz bir bezle örtün.", "Bölgeyi sert bir malzemeyle (tahta, karton, rulo gazete) bulunduğu konumda sabitleyin; mümkünse yukarı kaldırın.", "Sabitlenen uzvun nabzını ve cilt rengini sık sık kontrol edin.", "Burkulmada: eklemi dinlendirin, bandajla sarın, yukarı kaldırın ve soğuk uygulayın."], "yapmayin": ["Kırığı veya çıkığı yerine oturtmaya çalışmayın.", "Yaralıya ağızdan bir şey vermeyin."], "kaynak": [{"k": "T.C. Sağlık Bakanlığı Göynük Devlet Hastanesi", "u": "https://goynukdh.saglik.gov.tr/TR-740964/kirik--cikik-ve-burkulmalarda-ilk-yardim.html"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/sprainsandstrains.html"}]},
     {"id": "kafa", "ad": "Kafa çarpması", "kisa": "Düşme, darbe, beyin sarsıntısı", "tel": ["112"], "acil": "Bilinç kaybı, artan uyku hali ya da uyandırmakta güçlük, tekrarlayan kusma, nöbet, şiddetli veya artan baş ağrısı, kol-bacakta güçsüzlük, konuşma bozukluğu, kulak ya da burundan kan/sıvı gelmesi, göz bebeklerinin farklı büyüklükte olması varsa hemen 112'yi arayın.", "adimlar": ["Darbe yerindeki şişliğe araya bez koyarak buz uygulayın.", "Kişiyi ilk 24 saat yalnız bırakmayın; uyuyorsa 2 saatte bir uyandırıp kontrol edin.", "Belirtiler saatler, hatta günler sonra çıkabilir; yukarıdaki işaretlerden biri olursa hastaneye gidin.", "İyileşene kadar spor ve yoğun ekran/ders çalışmayı azaltın."], "yapmayin": ["En az 3 gün alkol almayın.", "İlk 24 saat hekimin önerdiği dışında yatıştırıcı veya güçlü ağrı kesici kullanmayın."], "kaynak": [{"k": "Kahramanmaraş Sütçü İmam Üniversitesi", "u": "https://www.ksu.edu.tr/depo/belgeler/AS.YD.01%20KAFA%20TRAVMASI%20GE%C3%87%C4%B0REN%20HASTALARDA%20D%C4%B0KKAT%20ED%C4%B0LMES%C4%B0%20GEREKEN%20TEDB%C4%B0RLER_1711081007271213.pdf"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/concussion.html"}]},
     {"id": "burun", "ad": "Burun kanaması", "kisa": "Burundan kan gelmesi", "tel": [], "acil": "Kanama 20 dakikadan uzun sürerse, kafa yaralanmasından sonra başladıysa, burun kırılmış olabilirse veya kişi kan sulandırıcı kullanıyorsa acile başvurun.", "adimlar": ["Dik oturun ve başınızı hafifçe öne eğin.", "Burnun yumuşak kısmını başparmak ve işaret parmağınızla sıkın; 10-15 dakika hiç bırakmadan tutun.", "Burun köküne soğuk kompres uygulayabilirsiniz.", "Kanama durduktan sonra birkaç saat burnunuzu sümkürmeyin."], "yapmayin": ["Başınızı geriye atmayın ve uzanmayın; kan boğaza kaçar.", "Burnun içine gazlı bez tıkamayın."], "kaynak": [{"k": "Acıbadem Sağlık Grubu", "u": "https://www.acibadem.com.tr/ilgi-alani/burun-kanamasi/"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/ency/article/003106.htm"}]},
+    {"id": "yilan", "ad": "Yılan ve akrep sokması", "kisa": "Diş izi, şişlik, yanıcı ağrı", "tel": ["112", "114"], "acil": "Yılan veya akrep sokmasında 112'yi arayın ya da kişiyi hemen en yakın sağlık kuruluşuna götürün; nefes darlığı, bayılma, kusma veya kas krampları varsa vakit kaybetmeyin. Ulusal Zehir Danışma Merkezi: 114.", "adimlar": ["Kişiyi sakinleştirin; olabildiğince az hareket etmesini sağlayın.", "Şişme olacağı için yüzük, saat, bilezik gibi sıkan eşyaları hemen çıkarın.", "Sokulan kolu veya bacağı hareket etmeyecek şekilde gevşekçe sabitleyin (atel).", "Akrep sokmasında yeri sabun ve suyla yıkayın; bezle sarılmış soğuk kompresi 10 dakika uygulayıp 10 dakika ara vererek kullanabilirsiniz.", "Kişiyi hızla sağlık kuruluşuna ulaştırın; yol boyunca bilincini ve nefesini izleyin.", "Hayvanın görünüşünü aklınızda tutmaya çalışın, ama yakalamak için zaman kaybetmeyin ve kendinizi tehlikeye atmayın."], "yapmayin": ["Turnike (sıkı bağ) uygulamayın.", "Yarayı kesmeyin, zehri ağızla emmeye çalışmayın.", "Yılan sokmasına buz koymayın; yoğurt, diş macunu gibi şeyler sürmeyin.", "Ağızdan yiyecek, içecek veya ilaç vermeyin."], "kaynak": [{"k": "T.C. Sağlık Bakanlığı Arsuz Devlet Hastanesi", "u": "https://arsuzdh.saglik.gov.tr/TR-1335836/yilan-ve-akrep-sokmasi.html"}, {"k": "MedlinePlus: yılan ısırığı", "u": "https://medlineplus.gov/ency/article/000031.htm"}, {"k": "MedlinePlus: akrep sokması", "u": "https://medlineplus.gov/ency/article/002850.htm"}]},
     {"id": "isirik", "ad": "Hayvan ısırığı", "kisa": "Köpek, kedi ısırığı veya tırmalaması", "tel": [], "acil": "Isırık veya tırmalamadan sonra vakit kaybetmeden bir sağlık kuruluşuna gidin; kuduz belirtileri başladıktan sonra tedavisi yoktur.", "adimlar": ["Yarayı hemen bol su ve sabunla iyice yıkayın.", "Antiseptik sürün ve temiz bir bezle örtün.", "Aynı gün sağlık kuruluşuna gidin; hekim kuduz aşısı gerekip gerekmediğine karar verir.", "Aşı programına başlandıysa dozları eksiksiz tamamlayın."], "yapmayin": ["Küçük bir çizik diye aşıyı ertelemeyin."], "kaynak": [{"k": "T.C. Sağlık Bakanlığı Aşı Portalı", "u": "https://asi.saglik.gov.tr/asi-ile-oenlenebilir-hastaliklar/kuduz.html"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/rabies.html"}]},
     {"id": "kene", "ad": "Kene tutunması", "kisa": "Deriye yapışmış kene", "tel": [], "acil": "Kene tutunduktan sonraki 10 gün içinde ateş, halsizlik, kas ağrısı, bulantı, kusma, ishal veya kanama olursa hemen sağlık kuruluşuna başvurun.", "adimlar": ["Keneye çıplak elle dokunmayın; eldiven, bez veya poşet kullanın.", "İnce uçlu bir cımbız veya pensle kenenin deriye en yakın yerinden tutun.", "Döndürmeden ve sıkıştırmadan, sabit bir kuvvetle yukarı doğru çekin.", "Bölgeyi ve ellerinizi temizleyin. Çıkaramıyorsanız sağlık kuruluşuna gidin.", "Sonraki 10 gün kendinizi ateş ve halsizlik açısından izleyin."], "yapmayin": ["Kenenin üzerine sigara, kolonya veya yağ gibi maddeler dökmeyin."], "kaynak": [{"k": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü", "u": "https://hsgm.saglik.gov.tr/tr/zoonotik-ve-vektorel-hastaliklar/kkka.html"}, {"k": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)", "u": "https://medlineplus.gov/tickbites.html"}]}
   ];
+  // Kart ikonları (24×24, çizgi; renk karttan gelir)
+  const AID_ICON = {
+    tyd: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M3 12h4l1.5-3 2.5 6 1.5-3H21"/>',
+    bogulma: '<circle cx="12" cy="6" r="3.2"/><path d="M8 21v-6.5a4 4 0 0 1 8 0V21"/><path d="M9.5 14.5h5"/><path d="M12 12.5v4"/>',
+    kalpkrizi: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M13 8.5l-2.5 4h3L11 16"/>',
+    inme: '<path d="M12 3a8 8 0 0 0-8 8v1.5c0 1 .8 1.5 1.5 1.5H7v3a2 2 0 0 0 2 2h2v2"/><path d="M12 3a8 8 0 0 1 8 8"/><path d="M14 9.5l-2 3h3l-2 3.5"/>',
+    nobet: '<path d="M13 2L5 13.5h6L10 22l8-11.5h-6z"/>',
+    anafilaksi: '<rect x="9" y="2.5" width="6" height="13" rx="2"/><path d="M12 15.5v3"/><path d="M10 21.5h4"/><path d="M9 7h6"/>',
+    yanik: '<path d="M12 21c-3.9 0-7-2.7-7-6.5 0-3.4 2.6-5.4 3.5-8.5 1.8 1.3 2.4 2.8 2.5 4 1.2-.7 2.3-2.6 2-6.5 3.3 2.2 6 5.8 6 11 0 3.8-3.1 6.5-7 6.5z"/><path d="M12 21c-1.7 0-3-1.2-3-2.9 0-1.6 1.3-2.4 2-4 1.2.8 4 2.1 4 4 0 1.7-1.3 2.9-3 2.9z"/>',
+    zehirlenme: '<path d="M9 2.5h6"/><path d="M10 2.5v4.2L6.2 12A5.5 5.5 0 0 0 11 20.5h2a5.5 5.5 0 0 0 4.8-8.5L14 6.7V2.5"/><path d="M9.5 14l5 4M14.5 14l-5 4"/>',
+    hipoglisemi: '<path d="M12 3s-6 6.6-6 11a6 6 0 0 0 12 0c0-4.4-6-11-6-11z"/><path d="M9.5 15.5h5"/>',
+    sicak: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/>',
+    kirik: '<path d="M7.5 3.5a2.2 2.2 0 0 0-3 3 2.2 2.2 0 0 0 1.4 3.6L10 14l1-1-1.5-2.5 1.5-1.5"/><path d="M16.5 20.5a2.2 2.2 0 0 0 3-3 2.2 2.2 0 0 0-1.4-3.6L14 10l-1 1 1.5 2.5L13 15"/>',
+    kafa: '<path d="M7 20v-3.5A7 7 0 1 1 19 12l1.5 3H18v2.5a2 2 0 0 1-2 2h-1.5V21"/><path d="M5 4l1.3 1.3M2.5 8.5h1.8M8.5 1.8V3.5"/>',
+    burun: '<path d="M11 3c0 4-3.5 8.5-3.5 11.5a3 3 0 0 0 3 3H14"/><path d="M16.5 15.5s-2 2.3-2 3.6a2 2 0 0 0 4 0c0-1.3-2-3.6-2-3.6z"/>',
+    kanama: '<path d="M12 3s-6 6.6-6 11a6 6 0 0 0 12 0c0-4.4-6-11-6-11z"/><path d="M9 14.5a3 3 0 0 0 3 3"/>',
+    yilan: '<path d="M4 18c2.5 0 3-2.5 5.5-2.5S12 18 14.5 18s3-4 1-6-6.5-1.5-6.5-5A3 3 0 0 1 15 6"/><path d="M15 6h3l1.5 1.2L18 8.4h-3"/><path d="M19.5 7.2l1.5-.7M19.5 7.2l1.5.7"/>',
+    isirik: '<circle cx="6" cy="10" r="1.8"/><circle cx="10" cy="6" r="1.8"/><circle cx="14" cy="6" r="1.8"/><circle cx="18" cy="10" r="1.8"/><path d="M12 11c-3 0-5.5 3.5-5.5 6a2.4 2.4 0 0 0 3 2.3c1.1-.3 1.9-.5 2.5-.5s1.4.2 2.5.5a2.4 2.4 0 0 0 3-2.3c0-2.5-2.5-6-5.5-6z"/>',
+    kene: '<ellipse cx="12" cy="14" rx="4" ry="5"/><circle cx="12" cy="7.5" r="1.8"/><path d="M8.3 11.5L4 9.5M8 14H3.5M8.3 16.5L4.5 19M15.7 11.5L20 9.5M16 14h4.5M15.7 16.5l3.8 2.5"/>',
+  };
+  const aidIcon = (id) => { const d = document.createElement("span"); d.className = "aid-ico"; d.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true">${AID_ICON[id] || AID_ICON.tyd}</svg>`; return d; };
   function buildAidGrid() {
     const box = document.createElement("div"); box.className = "aid";
     const top = document.createElement("div"); top.className = "aid-top";
     const call = document.createElement("a"); call.className = "btn er"; call.href = "tel:112"; call.textContent = "112'yi ara";
-    const p = document.createElement("p"); p.className = "muted"; p.textContent = "Kısa ilk yardım adımları. Kartlar sayfanın içindedir; sayfa açıksa internet gerekmez. Bir ilk yardım kursunun yerini tutmaz.";
+    const p = document.createElement("p"); p.textContent = "Kısa ilk yardım adımları. Kartlar sayfanın içindedir; sayfa açıksa internet gerekmez. Bir ilk yardım kursunun yerini tutmaz.";
     top.append(call, p);
     const grid = document.createElement("div"); grid.className = "aid-grid";
     FIRST_AID.forEach((c) => {
       const b = document.createElement("button"); b.type = "button"; b.className = "aid-card" + (c.tel.length ? " er" : ""); b.dataset.aid = c.id;
+      const t = document.createElement("span"); t.className = "aid-txt";
       const h = document.createElement("b"); h.textContent = c.ad;
       const k = document.createElement("span"); k.textContent = c.kisa;
-      b.append(h, k); b.onclick = () => openAid(c.id); grid.appendChild(b);
+      t.append(h, k); b.append(aidIcon(c.id), t);
+      if (c.tel.length) { const pill = document.createElement("span"); pill.className = "aid-pill"; pill.textContent = c.tel[0]; b.appendChild(pill); }
+      b.onclick = () => openAid(c.id); grid.appendChild(b);
     });
-    box.append(top, grid);
+    const leg = document.createElement("p"); leg.className = "aid-legend"; leg.textContent = "Kırmızı kartlar: ağır durumda 112 gerekir. Yeşil kartlar: çoğu evde başlanır, belirtilen durumlarda sağlık kuruluşuna gidilir.";
+    box.append(top, grid, leg);
     return box;
   }
   // İlk yardım şemaları: kendi çizimimiz (SVG, sayfanın içinde; internetsiz de görünür). Yalnızca karttaki adımları gösterir.
@@ -2142,8 +2199,8 @@ Kurallar:
       <circle class="f-body" cx="48" cy="128" r="17"/>
       <rect class="f-body" x="66" y="114" width="190" height="32" rx="14"/>
       <rect class="f-body" x="250" y="120" width="70" height="22" rx="10"/>
-      <circle class="f-body" cx="176" cy="34" r="13"/>
-      <path class="f-body" d="M160 50 h32 l6 36 h-44 z"/>
+      <circle class="f-body2" cx="176" cy="34" r="13"/>
+      <path class="f-body2" d="M160 50 h32 l6 36 h-44 z"/>
       <line class="f-arm" x1="168" y1="84" x2="168" y2="104"/><line class="f-arm" x1="184" y1="84" x2="184" y2="104"/>
       <ellipse class="f-hand" cx="176" cy="108" rx="18" ry="6"/>
       <path class="f-act" d="M214 70 v34"/><path class="f-act-head" d="M207 98 l7 10 l7 -10 z"/>
@@ -2152,9 +2209,9 @@ Kurallar:
     </svg>`,
     bogulma: `<svg viewBox="0 0 340 200" role="img" aria-label="Heimlich: yardım eden kişi arkaya geçer, kollarını kişinin beline sarar, yumruğu göbek ile göğüs kemiği arasına koyar ve içe-yukarı doğru ani baskı yapar">
       <line class="f-line" x1="40" y1="190" x2="300" y2="190"/>
-      <circle class="f-body" cx="118" cy="34" r="17"/>
-      <path class="f-body" d="M98 56 h36 l4 72 h-44 z"/>
-      <rect class="f-body" x="98" y="128" width="16" height="62" rx="6"/><rect class="f-body" x="118" y="128" width="16" height="62" rx="6"/>
+      <circle class="f-body2" cx="118" cy="34" r="17"/>
+      <path class="f-body2" d="M98 56 h36 l4 72 h-44 z"/>
+      <rect class="f-body2" x="98" y="128" width="16" height="62" rx="6"/><rect class="f-body2" x="118" y="128" width="16" height="62" rx="6"/>
       <circle class="f-body" cx="176" cy="40" r="17"/>
       <path class="f-body" d="M158 62 h34 q6 30 2 66 h-38 z"/>
       <rect class="f-body" x="158" y="128" width="16" height="62" rx="6"/><rect class="f-body" x="176" y="128" width="16" height="62" rx="6"/>
@@ -2205,6 +2262,36 @@ Kurallar:
       <text class="f-txt" x="192" y="96">Deriye en yakın</text><text class="f-txt" x="192" y="111">yerden tutun</text>
       <text class="f-no" x="192" y="162">✕ Sigara, kolonya, yağ</text>
     </svg>`,
+    kanama: `<svg viewBox="0 0 340 190" role="img" aria-label="Kanayan yaraya temiz bezle doğrudan ve sürekli bastırılır, ıslanan bez kaldırılmadan üstüne yenisi konur, kol kalp seviyesinden yukarı kaldırılır; 10 dakikada durmazsa 112">
+      <path class="f-body" d="M14 150 L150 104 q14 -4 20 6 l6 12 q4 10 -8 14 L30 182 q-14 4 -18 -10 z"/>
+      <ellipse class="f-body" cx="186" cy="110" rx="20" ry="15"/>
+      <path class="f-blood" d="M88 140 q6 6 0 14 q-6 -8 0 -14 z"/>
+      <rect class="f-cloth" x="66" y="118" width="54" height="22" rx="4" transform="rotate(-18 93 129)"/>
+      <rect class="f-cloth" x="70" y="108" width="50" height="20" rx="4" transform="rotate(-18 95 118)"/>
+      <rect class="f-body2" x="70" y="76" width="54" height="30" rx="12" transform="rotate(-18 97 91)"/>
+      <line class="f-arm" x1="104" y1="76" x2="132" y2="26"/>
+      <path class="f-act" d="M52 30 v52"/><path class="f-act-head" d="M45 76 l7 10 l7 -10 z"/>
+      <path class="f-act" d="M214 148 q-6 -26 -16 -32"/><path class="f-act-head" d="M206 110 l-12 2 l4 10 z"/>
+      <text class="f-txt" x="150" y="24">Doğrudan, sürekli bastırın</text>
+      <text class="f-txt" x="150" y="40">Bez ıslanınca kaldırmayın,</text>
+      <text class="f-txt" x="150" y="55">üstüne yenisini koyun</text>
+      <text class="f-txt" x="222" y="152">Kalp seviyesinden</text><text class="f-txt" x="222" y="167">yukarı kaldırın</text>
+      <text class="f-alarm" x="150" y="84">10 dk'da durmazsa → 112</text>
+    </svg>`,
+    yilan: `<svg viewBox="0 0 340 190" role="img" aria-label="Yılan veya akrep sokmasında kişi sakin ve hareketsiz tutulur, yüzük ve saat çıkarılır, kol veya bacak gevşekçe sabitlenir; turnike, kesme, emme ve buz yapılmaz">
+      <rect class="f-cloth" x="20" y="126" width="196" height="12" rx="3"/>
+      <path class="f-body" d="M20 102 h176 v24 h-176 z"/>
+      <ellipse class="f-body" cx="206" cy="114" rx="18" ry="15"/>
+      <circle class="f-blood" cx="110" cy="108" r="3"/><circle class="f-blood" cx="124" cy="108" r="3"/>
+      <path class="f-line" d="M102 98 q15 -12 30 0" stroke-dasharray="3 3"/>
+      <path class="f-line" d="M46 96 v36 M70 96 v36 M160 96 v36 M182 96 v36" stroke-width="3"/>
+      <text class="f-txt" x="88" y="84">Diş izi, şişlik</text>
+      <text class="f-txt" x="20" y="160">Gevşek atel · yüzük, saat çıkarılır</text>
+      <text class="f-txt" x="20" y="176">Sakin, hareketsiz · hızla hastaneye</text>
+      <text class="f-txt" x="20" y="30">Kol/bacak hareket etmesin:</text>
+      <text class="f-txt" x="20" y="46">gevşekçe sabitleyin</text>
+      <text class="f-no" x="238" y="96">✕ Turnike</text><text class="f-no" x="238" y="114">✕ Kesme</text><text class="f-no" x="238" y="132">✕ Ağızla emme</text><text class="f-no" x="238" y="150">✕ Buz, yoğurt</text>
+    </svg>`,
     inme: `<svg viewBox="0 0 340 150" role="img" aria-label="İnme belirtileri: yüzde kayma, bir kolun düşmesi, konuşma bozukluğu; biri bile varsa 112">
       <circle class="f-body" cx="60" cy="60" r="34"/>
       <circle class="f-dot" cx="48" cy="52" r="3"/><circle class="f-dot" cx="72" cy="52" r="3"/>
@@ -2224,7 +2311,11 @@ Kurallar:
     const box = document.createElement("div"); box.className = "aid-detail";
     const back = document.createElement("button"); back.type = "button"; back.className = "btn"; back.textContent = "← Tüm kartlar";
     back.onclick = () => openAid();
+    const head = document.createElement("div"); head.className = "aid-head" + (c.tel.length ? " er" : "");
+    const hw = document.createElement("div");
     const h0 = document.createElement("h2"); h0.className = "aid-title"; h0.textContent = c.ad;
+    const sub = document.createElement("p"); sub.className = "aid-sub"; sub.textContent = c.kisa;
+    hw.append(h0, sub); head.append(aidIcon(c.id), hw);
     const warn = document.createElement("p"); warn.className = "er-warn"; warn.textContent = c.acil;
     const tels = document.createElement("div"); tels.className = "aid-tels";
     c.tel.forEach((n) => { const a = document.createElement("a"); a.className = "btn er"; a.href = "tel:" + n; a.textContent = n === "114" ? "114 Zehir Danışma" : n + "'yi ara"; tels.appendChild(a); });
@@ -2236,9 +2327,9 @@ Kurallar:
     c.yapmayin.forEach((t) => { const li = document.createElement("li"); li.textContent = t; ul.appendChild(li); });
     const src = document.createElement("p"); src.className = "aid-src"; src.textContent = "Kaynak: ";
     c.kaynak.forEach((k, i) => { const a = document.createElement("a"); a.href = k.u; a.target = "_blank"; a.rel = "noopener"; a.textContent = k.k; if (i) src.append(" · "); src.appendChild(a); });
-    box.append(back, h0, warn);
-    if (AID_FIG[c.id]) { const fig = document.createElement("figure"); fig.className = "aid-fig"; fig.innerHTML = AID_FIG[c.id]; box.appendChild(fig); }
+    box.append(back, head, warn);
     if (c.tel.length) box.appendChild(tels);
+    if (AID_FIG[c.id]) { const fig = document.createElement("figure"); fig.className = "aid-fig"; fig.innerHTML = AID_FIG[c.id]; box.appendChild(fig); }
     box.append(h1, ol, h2, ul, src);
     return box;
   }
@@ -2984,6 +3075,8 @@ Kurallar:
   const KIND = { resmi: "Resmi kurum", universite: "Üniversite", dernek: "Meslek derneği", ozel: "Özel hastane", uluslararasi: "Uluslararası" };
 
   const POPULATIONS = [["gebelik", "gebe", "hamile", "hamileyim", "lohusa", "doğum"], ["bebek", "bebeğim", "çocuk", "çocuğum", "çocuklarda", "yenidoğan", "oğlum", "oğlumun", "kızım", "kızımın"]].map((g) => [...new Set(g.flatMap((w) => terms(w)))]);
+  // Çocukla ilgili soruda "yetişkinde" konuları geri planda kalır
+  const ADULT = ["yetişkin", "yetişkinde", "erişkin"].flatMap((w) => terms(w));
   function search(query, { useDocs = true, useLib = true } = {}, k = 5) {
     const all = [];
     if (useDocs) docs.forEach((d) => d.chunks.forEach((c) => all.push({ title: c.page ? `${d.name} (s. ${c.page})` : d.name, text: c.text })));
@@ -3023,7 +3116,7 @@ Kurallar:
         const seen = new Set();
         for (const ph of c.phrases) { const pt = terms(ph); for (let j = 1; j < pt.length; j++) { const pr = pair(pt[j - 1], pt[j]); if (qPairs.has(pr) && !seen.has(pr)) { seen.add(pr); s += 1.5 * (idfOf(pt[j - 1]) + idfOf(pt[j])) / 2; } } }
       }
-      if (c.topic) { const tt = terms(c.topic); POPULATIONS.forEach((g, gi) => { if (!popQ[gi] && g.some((t) => tt.includes(t))) s *= 0.5; }); }
+      if (c.topic) { const tt = terms(c.topic); POPULATIONS.forEach((g, gi) => { if (!popQ[gi] && g.some((t) => tt.includes(t))) s *= 0.5; }); if (popQ[1] && ADULT.some((t) => tt.includes(t))) s *= 0.5; }
       return { s, c };
     }).filter((x) => x.s > 0).sort((a, b) => b.s - a.s).slice(0, k);
     // En iyi eşleşmenin yanında çok zayıf kalan sonuçları ele

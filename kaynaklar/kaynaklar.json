@@ -8303,6 +8303,205 @@
       "url": "https://medlineplus.gov/infertility.html",
       "dil": "en",
       "ozet": "Kısırlık, sık ve korunmasız ilişkiye rağmen bir yılda (35 yaş ve üzerindeyse 6 ayda) gebe kalamamaktır; tekrarlayan düşükler de kısırlık kapsamında değerlendirilir. Kadınlarda yumurtlamanın olmaması (çoğunlukla polikistik over sendromuna bağlı), tüplerin tıkanması veya hasarı, miyom ve endometriozis gibi rahim sorunları, yaşla birlikte yumurta yapımındaki sorunlar ve hormon dengesizlikleri; erkeklerde düşük sperm sayısı, spermlerin az hareketli olması, sperm kanallarının tıkanması ve hormon dengesizlikleri neden olabilir. Sigara, yoğun alkol kullanımı, çok fazla kilolu veya çok zayıf olmak ve ileri yaş riski artırır. Tanıda sağlık öyküsü, muayene, kan ve görüntüleme testleri ile erkekte meni analizi yapılır. Tedavide altta yatan nedenin tedavisi, ilaçlar, yardımcı üreme teknikleri ve ameliyat kullanılır. Sigarayı bırakmak, alkolü sınırlamak ve sağlıklı kilo korunmaya yardımcı olur."
+    },
+    {
+      "id": "intihar-manisarsh",
+      "konu": "İntihar düşünceleri ve kriz",
+      "kategori": "Ruh sağlığı",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "intihar",
+        "intihar düşüncesi",
+        "kendimi öldürmek istiyorum",
+        "yaşamak istemiyorum",
+        "ölmek istiyorum",
+        "kendine zarar verme",
+        "intihar etmek istiyor",
+        "kriz"
+      ],
+      "baslik": "İntihar Düşüncesinde Olanlara Psikolojik Destek",
+      "kurum": "T.C. Sağlık Bakanlığı Manisa Ruh Sağlığı ve Hastalıkları Hastanesi",
+      "tur": "resmi",
+      "url": "https://manisarsh.saglik.gov.tr/TR-1035563/intihar-dusuncesinde-olanlara-psikolojik-destek.html",
+      "dil": "tr",
+      "ozet": "İntihar edenlerin yaklaşık %80'i bu düşüncelerinden daha önce çevresindeki kişilere söz etmiştir; bu nedenle intihardan bahsetmek ciddiye alınması gereken bir uyarıdır. İntihar düşüncelerinden söz etmek, yaşamak için bir neden olmadığını düşünmek, öfkeli davranışlar ve intikam duyguları uyarı işaretleri arasındadır. Bu düşünceleri yaşayan birine şefkatle yaklaşılmalı, yalnız bırakılmamalı ve mutlaka bir ruh sağlığı uzmanına yönlendirilmelidir. Depresyon en sık nedendir ve ruhsal hastalıklar tedavi edilebilir. Hastanelerin psikososyal destek ve krize müdahale birimleri destek verir. Hemen tehlike varsa 112 aranmalıdır."
+    },
+    {
+      "id": "intihar-medlineplus",
+      "konu": "İntihar düşünceleri ve kriz",
+      "kategori": "Ruh sağlığı",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "intihar",
+        "intihar riski",
+        "intihar uyarı işaretleri",
+        "intihar düşüncesi olan birine yardım"
+      ],
+      "baslik": "Suicide (İntihar)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/suicide.html",
+      "dil": "en",
+      "ozet": "Depresyon, madde kullanımı, ailede ruhsal hastalık veya intihar öyküsü, ateşli silaha erişim, istismar öyküsü, kronik hastalık ve stresli yaşam olayları intihar riskini artırır; 15-24 yaş ile 60 yaş üstünde risk daha yüksektir. Ölmek veya kendini öldürmek istediğinden söz etmek, plan yapmak ya da yöntem aramak, umutsuzluk, dayanılmaz acı hissi, içe kapanma, ani duygu durum değişiklikleri, tehlikeli davranışlar ve yakınlarıyla vedalaşmak uyarı işaretleridir. Böyle birine yardım için beş adım önerilir: intihar düşüncesini doğrudan sorun; yöntemlere erişimini kaldırarak güvende tutun; düşüncelerini ve duygularını dikkatle dinleyin; bir sağlık kuruluşuna veya kriz hattına bağlanmasını sağlayın; kriz geçtikten sonra da iletişimi sürdürün. Acil durumda 112 aranmalıdır. İntihar, müdahale ve tedaviyle önlenebilir."
+    },
+    {
+      "id": "gebelikkanama-acibadem",
+      "konu": "Gebelikte kanama ve düşük belirtileri",
+      "kategori": "Kadın sağlığı",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "gebelikte kanama",
+        "hamilelikte kanama",
+        "düşük belirtileri",
+        "düşük tehdidi",
+        "hamileyim kanamam var",
+        "lekelenme",
+        "dış gebelik"
+      ],
+      "baslik": "Düşük Nedir? Düşük Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/dusuk-nedir-dusuk-belirtileri-nelerdir/",
+      "dil": "tr",
+      "ozet": "Düşük, gebeliğin ilk 20 haftasında kendiliğinden sona ermesidir; düşüklerin önemli bir bölümü ilk üç ayda olur ve çoğunlukla embriyonun gelişim sorunlarıyla ilişkilidir. Erken gebelikte her kanama düşük anlamına gelmez; hafif lekelenme normal gebeliklerde de görülebilir, dış gebelik de kanamayla seyredebilir. Vajinal kanama ve kasık krampları başlıca belirtilerdir; bel ağrısı, pıhtılı akıntı, doku gelmesi ve gebelik belirtilerinde azalma da olabilir. Kısa sürede artan kanama, şiddetli kasık ağrısı, bayılma, baş dönmesi, omuz ağrısı, ateş ve kötü kokulu akıntı acil değerlendirme gerektirir. Kromozom sorunları, rahim yapısındaki farklılıklar, kontrolsüz diyabet, tiroid hastalığı, pıhtılaşma bozuklukları, ağır enfeksiyonlar, sigara ve alkol, ileri anne yaşı ve aşırı kafein riski artırır."
+    },
+    {
+      "id": "gebelikkanama-medlineplus",
+      "konu": "Gebelikte kanama ve düşük belirtileri",
+      "kategori": "Kadın sağlığı",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "gebelikte kanama",
+        "hamilelikte kanama",
+        "plasenta önde",
+        "plasenta ayrılması",
+        "yerleşme kanaması"
+      ],
+      "baslik": "Vaginal Bleeding in Pregnancy (Gebelikte Vajinal Kanama)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003264.htm",
+      "dil": "en",
+      "ozet": "Döllenmeden 10-14 gün sonra görülen hafif lekelenme, embriyonun rahme yerleşmesine bağlı olabilir ve genellikle zararsızdır. Ancak ilk 3 aydaki kanama düşüğün veya dış gebeliğin belirtisi olabileceği için hemen hekime haber verilmelidir. Gebeliğin 4-9. aylarındaki kanama plasentanın rahim ağzını örtmesi (plasenta previa), plasentanın erken ayrılması, düşük veya bebeğe ait damarların açıkta olması gibi ciddi durumları gösterebilir; rahim ağzı polipleri, enfeksiyon, ilişkiye bağlı tahriş ve doğumun başlaması da kanamaya yol açabilir. Gebelikte her vajinal kanamada hekime başvurulmalı ve olası bir acil durum gibi davranılmalıdır; plasenta previası olan biri kanarsa hemen hastaneye gitmelidir. Hekim izin verene kadar cinsel ilişkiden kaçınılmalı, önerildiği şekilde dinlenilmeli ve hekime danışmadan ilaç kullanılmamalıdır."
+    },
+    {
+      "id": "kanama-goynuk",
+      "konu": "Kesik ve kanamalarda ilk yardım",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "kanama",
+        "kesik",
+        "elimi kestim",
+        "kan durmuyor",
+        "kanamada ilk yardım",
+        "yara kanıyor",
+        "bıçak kesiği",
+        "cam kesiği",
+        "iç kanama"
+      ],
+      "baslik": "Kanamalarda İlk Yardım",
+      "kurum": "T.C. Sağlık Bakanlığı Göynük Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://goynukdh.saglik.gov.tr/TR-740969/kanamalarda-ilk-yardim.html",
+      "dil": "tr",
+      "ozet": "Kanama, damar bütünlüğünün bozulmasıyla kanın vücut içine veya dışına çıkmasıdır; dış kanamalar, iç kanamalar ve kulak, burun, ağız gibi doğal deliklerden kanamalar olarak ayrılır. Dış kanamada yaranın üzerine doğrudan bastırılır; kanama durmazsa ilk bez kaldırılmadan üzerine ikinci bir bez konarak bası artırılır ve bandajla sarılarak bası sürdürülür. Gerekirse kanayan yere en yakın basınç noktasına bastırılır, kanayan bölge kalp seviyesinden yukarıda tutulur, kişiye şok pozisyonu verilir ve yaşam bulguları 2-3 dakikada bir kontrol edilir. Turnike yalnızca uzuv kopması, diğer yöntemlerin yetmediği durumlar, uzun taşıma veya çok sayıda yaralı olması gibi özel durumlarda uygulanır. İç kanama şüphesinde bilinç ve solunum kontrol edilir, ayaklar yaklaşık 30 cm kaldırılır, kişi hareket ettirilmez, ağızdan yiyecek veya içecek verilmez ve 112 aranır."
+    },
+    {
+      "id": "kanama-medlineplus",
+      "konu": "Kesik ve kanamalarda ilk yardım",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "kesik",
+        "delici yara",
+        "dikiş gerekir mi",
+        "yara enfeksiyonu",
+        "çivi battı yara"
+      ],
+      "baslik": "Cuts and Puncture Wounds (Kesik ve Delici Yaralar)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000043.htm",
+      "dil": "en",
+      "ozet": "Küçük bir kesikte önce eller sabunla yıkanır, kesik hafif sabun ve suyla iyice temizlenir, kanama doğrudan bastırılarak durdurulur, ardından antibakteriyel merhem ve temiz bir bandaj uygulanır. Küçük delici yaralar 5 dakika akan suyun altında durulanıp sabunla yıkanır; yarada yabancı cisim olup olmadığına kurcalamadan bakılır. 0,64 santimetreden (çeyrek inç) derin, yüzde olan veya kemiğe ulaşan yaralar dikiş gerektirebilir. Tetanoz aşısı genellikle her 10 yılda bir önerilir. Yarada sıcaklık, kızarıklık, ağrı, ateş, şişlik, kırmızı çizgiler veya irinli akıntı enfeksiyon belirtisidir. Kanama ağırsa veya 10 dakika bastırmaya rağmen durmuyorsa 112 aranmalıdır."
+    },
+    {
+      "id": "yilanakrep-arsuz",
+      "konu": "Yılan ve akrep sokması",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "yılan sokması",
+        "yılan ısırdı",
+        "akrep sokması",
+        "akrep soktu",
+        "zehirli hayvan",
+        "yılan soktu ne yapmalı",
+        "turnike"
+      ],
+      "baslik": "Yılan ve Akrep Sokması",
+      "kurum": "T.C. Sağlık Bakanlığı Arsuz Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://arsuzdh.saglik.gov.tr/TR-1335836/yilan-ve-akrep-sokmasi.html",
+      "dil": "tr",
+      "ozet": "Yılan ve akrep sokması, zehirli türlerin deriden zehir vermesidir; Türkiye'de özellikle sıcak aylarda ve kırsal bölgelerde görülür. Yılan sokmasında iki diş izi, şişlik, ağrı ve morarma ile baş dönmesi, bulantı, terleme, nefes darlığı ve bayılma hissi olabilir. Akrep sokmasında sokulan yerde ağrı, yanma ve şişlik ile terleme, bulantı, kusma ve kas krampları görülebilir. Kişi sakinleştirilmeli, olabildiğince hareket ettirilmemeli ve hızla sağlık kuruluşuna götürülmelidir; akrep sokmasında soğuk kompres uygulanabilir. Turnike yapılmamalı, yara ağızla emilmemeli ve kesilmemeli, buz konmamalı, yoğurt veya diş macunu gibi şeyler sürülmemelidir. Korunmak için uzun pantolon ve kapalı ayakkabı giyilmeli, çalı ve kayalık alanlardan uzak durulmalı, ev çevresi temiz tutulmalıdır."
+    },
+    {
+      "id": "yilanakrep-medlineplus",
+      "konu": "Yılan ve akrep sokması",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "yılan ısırığı",
+        "yılan zehri",
+        "panzehir"
+      ],
+      "baslik": "Snake Bites (Yılan Isırıkları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000031.htm",
+      "dil": "en",
+      "ozet": "Yılan ısırığında kişi sakinleştirilmeli ve ısırıkların acil serviste etkili şekilde tedavi edilebildiği söylenerek rahatlatılmalıdır. Hareketi kısıtlanmalı, ısırılan bölge kalp hizasında tutulmalı, şişme olacağı için yüzük gibi sıkan eşyalar çıkarılmalı ve hareketi sınırlamak için gevşek bir atel yapılabilir. Yaşam bulguları ve şok belirtileri izlenmeli, hemen tıbbi yardım alınmalıdır (112, Ulusal Zehir Danışma Merkezi 114); güvenliyse yılanın görünüşü not edilebilir. Turnike uygulanmamalı, soğuk kompres veya buz konmamalı, yara kesilmemeli, zehir ağızla emilmemeli, hekime danışmadan uyarıcı veya ağrı kesici verilmemeli ve ağızdan hiçbir şey verilmemelidir. Belirtiler türe göre değişir: şişlik, renk değişikliği, kanama, uyuşma, güçsüzlük, nefes darlığı, bulantı ve doku hasarı görülebilir; bazı ısırıklar başta ağrısız olduğu için yanıltıcı olabilir."
+    },
+    {
+      "id": "yetiskinates-acibadem",
+      "konu": "Yetişkinde ateş",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ateş",
+        "ateşim var",
+        "ateşim çıktı",
+        "yüksek ateş",
+        "ateş kaç derece",
+        "ateş düşürmek",
+        "ateşlendim",
+        "vücut ısısı"
+      ],
+      "baslik": "Ateş Nedir? Ateş Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/ates-nedir-ates-belirtileri/",
+      "dil": "tr",
+      "ozet": "Ateş, bağışıklık sisteminin tetiklediği ve vücut iç sıcaklığının normalin üzerine çıkmasıyla oluşan bir tepkidir; sağlıklı bir kişide vücut sıcaklığı 36,5-37,5°C arasındadır. Ateş ağızdan, koltuk altından, kulaktan veya bebeklerde en güvenilir yol olan makattan ölçülebilir. Virüs ve bakteri enfeksiyonları, aşı sonrası tepkiler, bağışıklık ve iltihaplı hastalıklar ile bazı ilaçlar başlıca nedenlerdir. Evde bol sıvı almak, hafif giysiler giymek, odayı uygun sıcaklıkta tutmak, ılık duş almak ve dinlenmek yardımcı olur. Ateş 39°C'nin üzerine çıkarsa, 3 günden uzun sürerse ya da ense sertliği, ciltte döküntü, bilinç değişikliği veya nöbet eşlik ederse hekime başvurulmalıdır; bebek ve yaşlılarda daha düşük ateşte (38,5°C ve üzeri) dikkatli olunmalıdır."
+    },
+    {
+      "id": "yetiskinates-medlineplus",
+      "konu": "Yetişkinde ateş",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ateş",
+        "yetişkinde ateş",
+        "ateş düşürücü"
+      ],
+      "baslik": "Fever (Yetişkinde Ateş)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003090.htm",
+      "dil": "en",
+      "ozet": "Yetişkinde ağızdan ölçülen sıcaklık günün saatine göre 37,2-37,5°C'yi aşıyorsa ateş olabilir. Solunum, idrar ve sindirim yolu enfeksiyonları, bağışıklık ve iltihaplı hastalıklar, lenfoma ve lösemi gibi kanserler, pıhtılar ve bazı ilaçlar neden olabilir. Hafif ateşte bol sıvı ve dinlenme yeterli olabilir; parasetamol 4-6 saatte bir, ibuprofen 6-8 saatte bir kullanılabilir; çocuklara hekim önermedikçe aspirin verilmez. 40,6°C veya üzerindeki ve tedaviye yanıt vermeyen ateşte, 39,4°C'de kalan veya yükselmeye devam eden ateşte, 48-72 saatten uzun süren ateşte, yeni döküntü veya morluk, ense sertliği ya da idrar yaparken ağrı varsa hemen hekime başvurulmalıdır. Ateşle birlikte bilinç bulanıklığı, nefes almada güçlük, çok şiddetli baş ağrısı veya ense sertliği varsa 112 aranmalıdır."
     }
   ],
   "kategoriler": [
