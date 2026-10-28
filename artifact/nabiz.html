@@ -505,6 +505,23 @@ a.btn.er { background: var(--t-er); border-color: var(--t-er); color: #fff; text
 .aid-steps li::marker { font: 600 14px var(--f-mono); color: var(--accent); }
 .aid-dont { margin: 0; padding-left: 20px; display: grid; gap: 6px; font-size: 14.5px; line-height: 1.45; list-style: "✕  "; }
 .aid-dont li::marker { color: var(--t-er); font-weight: 700; }
+.aid-fig { margin: 12px 0 4px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); padding: 8px; }
+.aid-fig svg { display: block; width: 100%; max-width: 460px; height: auto; margin: 0 auto; }
+.aid-fig .f-body { fill: var(--surface-2); stroke: var(--ink-2); stroke-width: 1.5; }
+.aid-fig .f-line { fill: none; stroke: var(--ink-2); stroke-width: 1.5; stroke-linecap: round; }
+.aid-fig .f-leg { fill: none; stroke: var(--ink-2); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; }
+.aid-fig .f-arm { stroke: var(--ink-2); stroke-width: 7; stroke-linecap: round; }
+.aid-fig .f-hand { fill: var(--accent); stroke: var(--accent); opacity: .9; }
+.aid-fig .f-dot { fill: var(--ink-2); }
+.aid-fig .f-act { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; }
+.aid-fig .f-act-head { fill: var(--accent); }
+.aid-fig .f-lead { stroke: var(--ink-2); stroke-width: 1; stroke-dasharray: 3 3; }
+.aid-fig .f-water { fill: none; stroke: #4aa3df; stroke-width: 3; stroke-linecap: round; }
+.aid-fig .f-tick { fill: #7a4a2a; }
+.aid-fig .f-tool { fill: none; stroke: var(--ink); stroke-width: 3; stroke-linecap: round; }
+.aid-fig .f-txt { fill: var(--ink); font: 500 12.5px var(--f-body); }
+.aid-fig .f-no { fill: var(--t-er); font: 600 12px var(--f-body); }
+.aid-fig .f-alarm { fill: var(--t-er); font: 700 15px var(--f-display); }
 .aid-src { margin-top: 18px; font-size: 12.5px; color: var(--ink-2); }
 .aid-src a { color: var(--accent); }
 .lab-chip.mid { background: var(--t-gp); }
@@ -2117,6 +2134,92 @@ Kurallar:
     box.append(top, grid);
     return box;
   }
+  // İlk yardım şemaları: kendi çizimimiz (SVG, sayfanın içinde; internetsiz de görünür). Yalnızca karttaki adımları gösterir.
+  // Renkler temadan gelir: .f-body vücut, .f-line çizgi, .f-act yapılacak hareket (ok), .f-txt yazı, .f-no yapılmayacak
+  const AID_FIG = {
+    tyd: `<svg viewBox="0 0 340 190" role="img" aria-label="Kalp masajı: kişi sırtüstü yatar, iki el üst üste göğsün ortasına konur, kollar dik tutularak göğüs 5 santim bastırılır">
+      <line class="f-line" x1="10" y1="152" x2="330" y2="152"/>
+      <circle class="f-body" cx="48" cy="128" r="17"/>
+      <rect class="f-body" x="66" y="114" width="190" height="32" rx="14"/>
+      <rect class="f-body" x="250" y="120" width="70" height="22" rx="10"/>
+      <circle class="f-body" cx="176" cy="34" r="13"/>
+      <path class="f-body" d="M160 50 h32 l6 36 h-44 z"/>
+      <line class="f-arm" x1="168" y1="84" x2="168" y2="104"/><line class="f-arm" x1="184" y1="84" x2="184" y2="104"/>
+      <ellipse class="f-hand" cx="176" cy="108" rx="18" ry="6"/>
+      <path class="f-act" d="M214 70 v34"/><path class="f-act-head" d="M207 98 l7 10 l7 -10 z"/>
+      <text class="f-txt" x="222" y="80">5 cm, dakikada</text><text class="f-txt" x="222" y="95">100-120 bası</text>
+      <text class="f-txt" x="92" y="176">Göğsün ortası · kollar dik · 30 bası : 2 soluk</text>
+    </svg>`,
+    bogulma: `<svg viewBox="0 0 340 200" role="img" aria-label="Heimlich: yardım eden kişi arkaya geçer, kollarını kişinin beline sarar, yumruğu göbek ile göğüs kemiği arasına koyar ve içe-yukarı doğru ani baskı yapar">
+      <line class="f-line" x1="40" y1="190" x2="300" y2="190"/>
+      <circle class="f-body" cx="118" cy="34" r="17"/>
+      <path class="f-body" d="M98 56 h36 l4 72 h-44 z"/>
+      <rect class="f-body" x="98" y="128" width="16" height="62" rx="6"/><rect class="f-body" x="118" y="128" width="16" height="62" rx="6"/>
+      <circle class="f-body" cx="176" cy="40" r="17"/>
+      <path class="f-body" d="M158 62 h34 q6 30 2 66 h-38 z"/>
+      <rect class="f-body" x="158" y="128" width="16" height="62" rx="6"/><rect class="f-body" x="176" y="128" width="16" height="62" rx="6"/>
+      <line class="f-arm" x1="134" y1="76" x2="194" y2="100"/>
+      <circle class="f-hand" cx="198" cy="100" r="9"/>
+      <path class="f-act" d="M232 116 q-10 -4 -18 -18"/><path class="f-act-head" d="M208 102 l2 -12 l10 6 z"/>
+      <text class="f-txt" x="226" y="70">İçe ve yukarı</text><text class="f-txt" x="226" y="85">ani baskı</text>
+      <text class="f-txt" x="226" y="134">Yumruk: göbeğin</text><text class="f-txt" x="226" y="149">üstü, göğüs</text><text class="f-txt" x="226" y="164">kemiğinin altı</text>
+      <text class="f-txt" x="88" y="14">Arkaya geçin</text>
+    </svg>`,
+    nobet: `<svg viewBox="0 0 340 160" role="img" aria-label="Nöbet bitince kişi yan yatırılır: üstteki bacak dizden bükülür, el yanağın altında, ağız yere doğru">
+      <line class="f-line" x1="10" y1="130" x2="330" y2="130"/>
+      <circle class="f-body" cx="52" cy="104" r="16"/>
+      <rect class="f-body" x="40" y="118" width="34" height="9" rx="4"/>
+      <rect class="f-body" x="70" y="92" width="120" height="34" rx="15"/>
+      <rect class="f-body" x="186" y="112" width="128" height="15" rx="7"/>
+      <path class="f-leg" d="M190 100 L232 72 L276 106"/>
+      <text class="f-txt" x="80" y="40">Yan yatırın · ağız yere doğru</text>
+      <text class="f-txt" x="80" y="56">Üstteki bacak dizden bükülü</text>
+      <text class="f-txt" x="80" y="72">El yanağın altında</text>
+    </svg>`,
+    burun: `<svg viewBox="0 0 340 170" role="img" aria-label="Burun kanamasında dik oturulur, baş hafif öne eğilir, burnun yumuşak kısmı iki parmakla 10-15 dakika sıkılır">
+      <g transform="rotate(18 110 90)">
+        <circle class="f-body" cx="110" cy="80" r="42"/>
+        <path class="f-body" d="M150 70 l20 26 l-22 4 z"/>
+        <ellipse class="f-hand" cx="162" cy="92" rx="9" ry="6"/>
+        <path class="f-body" d="M96 122 h30 v40 h-30 z"/>
+      </g>
+      <path class="f-act" d="M70 36 q40 -26 82 -4"/><path class="f-act-head" d="M146 26 l12 6 l-10 8 z"/>
+      <text class="f-txt" x="196" y="54">Hafif öne eğilin</text>
+      <text class="f-txt" x="196" y="96">Burnun yumuşak</text><text class="f-txt" x="196" y="111">kısmını sıkın:</text><text class="f-txt" x="196" y="126">10-15 dakika</text>
+      <text class="f-no" x="196" y="152">✕ Baş geriye atılmaz</text>
+    </svg>`,
+    yanik: `<svg viewBox="0 0 340 170" role="img" aria-label="Yanık bölge 10-15 dakika serin akan su altında tutulur; buz, diş macunu, yoğurt sürülmez">
+      <path class="f-line" d="M60 20 h60 v18 h-20 v12 h-20 v-12 h-20 z"/>
+      <path class="f-water" d="M90 52 q-4 30 0 52 M84 54 q-4 28 0 50 M96 54 q4 28 0 50"/>
+      <path class="f-body" d="M20 112 q40 -10 110 -4 q20 2 26 12 q-6 10 -26 10 q-70 6 -110 -4 z"/>
+      <text class="f-txt" x="176" y="62">Serin akan su</text><text class="f-txt" x="176" y="78">10-15 dakika</text>
+      <text class="f-no" x="176" y="118">✕ Buz, diş macunu,</text><text class="f-no" x="176" y="134">yoğurt, yağ</text><text class="f-no" x="176" y="150">✕ Kabarcık patlatılmaz</text>
+    </svg>`,
+    kene: `<svg viewBox="0 0 340 180" role="img" aria-label="Kene ince uçlu cımbızla deriye en yakın yerinden tutulur ve döndürmeden düz yukarı çekilir">
+      <path class="f-body" d="M10 140 q160 -10 320 0 v34 h-320 z"/>
+      <ellipse class="f-tick" cx="120" cy="128" rx="14" ry="10"/>
+      <path class="f-line" d="M110 134 l-10 8 M116 137 l-4 10 M124 137 l4 10 M130 134 l10 8"/>
+      <path class="f-tool" d="M114 122 l-20 -100 M126 122 l20 -100 M94 22 q26 -10 52 0"/>
+      <path class="f-act" d="M176 120 v-80"/><path class="f-act-head" d="M169 46 l7 -10 l7 10 z"/>
+      <text class="f-txt" x="192" y="52">Düz yukarı çekin,</text><text class="f-txt" x="192" y="67">döndürmeyin</text>
+      <text class="f-txt" x="192" y="96">Deriye en yakın</text><text class="f-txt" x="192" y="111">yerden tutun</text>
+      <text class="f-no" x="192" y="162">✕ Sigara, kolonya, yağ</text>
+    </svg>`,
+    inme: `<svg viewBox="0 0 340 150" role="img" aria-label="İnme belirtileri: yüzde kayma, bir kolun düşmesi, konuşma bozukluğu; biri bile varsa 112">
+      <circle class="f-body" cx="60" cy="60" r="34"/>
+      <circle class="f-dot" cx="48" cy="52" r="3"/><circle class="f-dot" cx="72" cy="52" r="3"/>
+      <path class="f-line" d="M42 72 q10 3 18 2 q10 2 16 12"/><path class="f-line" d="M66 50 q6 4 10 4"/>
+      <text class="f-txt" x="34" y="120">Yüz</text>
+      <circle class="f-body" cx="170" cy="40" r="14"/><rect class="f-body" x="158" y="56" width="24" height="44" rx="8"/>
+      <line class="f-arm" x1="158" y1="62" x2="128" y2="52"/><line class="f-arm" x1="182" y1="62" x2="210" y2="76"/>
+      <text class="f-txt" x="156" y="120">Kol</text>
+      <path class="f-body" d="M248 30 h70 q8 0 8 8 v28 q0 8 -8 8 h-46 l-14 12 v-12 h-10 q-8 0 -8 -8 v-28 q0 -8 8 -8 z"/>
+      <text class="f-txt" x="262" y="56">a.. ba..</text>
+      <text class="f-txt" x="258" y="120">Konuşma</text>
+      <text class="f-alarm" x="96" y="144">Biri bile varsa → 112</text>
+    </svg>`,
+  };
+
   function aidCard(c) {
     const box = document.createElement("div"); box.className = "aid-detail";
     const back = document.createElement("button"); back.type = "button"; back.className = "btn"; back.textContent = "← Tüm kartlar";
@@ -2134,6 +2237,7 @@ Kurallar:
     const src = document.createElement("p"); src.className = "aid-src"; src.textContent = "Kaynak: ";
     c.kaynak.forEach((k, i) => { const a = document.createElement("a"); a.href = k.u; a.target = "_blank"; a.rel = "noopener"; a.textContent = k.k; if (i) src.append(" · "); src.appendChild(a); });
     box.append(back, h0, warn);
+    if (AID_FIG[c.id]) { const fig = document.createElement("figure"); fig.className = "aid-fig"; fig.innerHTML = AID_FIG[c.id]; box.appendChild(fig); }
     if (c.tel.length) box.appendChild(tels);
     box.append(h1, ol, h2, ul, src);
     return box;
