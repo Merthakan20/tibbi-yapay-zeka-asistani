@@ -33,6 +33,9 @@ for k in yeni:
     assert k["kategori"] in veri["kategoriler"], f"{k['id']}: bilinmeyen kategori {k['kategori']}"
     kayit = {a: k[a] for a in ALANLAR}
     if k["id"] in mevcut:
+        # Aynı id yalnızca aynı konunun kaydını günceller; başka konudaysa çakışmadır (eski kaydı silerdi)
+        eski = veri["kaynaklar"][mevcut[k["id"]]]
+        assert eski["konu"] == k["konu"], f"{k['id']}: bu id zaten '{eski['konu']}' konusunda kullanılıyor; farklı bir id seçin"
         veri["kaynaklar"][mevcut[k["id"]]] = kayit
     else:
         mevcut[k["id"]] = len(veri["kaynaklar"])

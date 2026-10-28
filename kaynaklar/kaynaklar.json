@@ -5750,7 +5750,7 @@
         "omeprazol",
         "mide koruyucu",
         "reçetesiz mide ilacı",
-        "mide yanması ilacı",
+        "reflü ilacı",
         "PPI yan etkileri"
       ],
       "baslik": "Omeprazole (Omeprazol)",
@@ -6771,6 +6771,471 @@
       "url": "https://medlineplus.gov/ency/article/001004.htm",
       "dil": "en",
       "ozet": "Şaşılıkta iki göz aynı yöne bakmaz ve aynı anda aynı nesneye odaklanamaz. Her gözün çevresindeki altı kas birlikte çalışamadığında beyin iki farklı görüntü alır; çocuklarda beyin zayıf gözden gelen görüntüyü bastırabilir ve göz tembelliği (ambliyopi) gelişebilir. Çocukluk çağı şaşılıklarının yarısından fazlası doğuştandır; yetişkinlerde diyabet, felç, Graves hastalığı, beyin yaralanması veya görme kaybı neden olabilir. Ailede şaşılık ve hipermetropi risk etkenleridir. Gözlerde kayma, çift görme, gözlerin uyumsuz hareket etmesi, görme veya derinlik algısı kaybı görülebilir; çocuklar çift görmeyi fark etmeyebilir. Önce gözlük verilir, güçlü göz kapatılarak zayıf göz çalıştırılır; gerekirse göz kaslarını düzelten ameliyat yapılır. Tedavinin başarısı yaşla azalır; göz tembelliği 11 yaşına kadar tedavi edilmezse büyük olasılıkla kalıcı olur. Çocuğunuzun gözü kayıyorsa, çift görüyorsa veya görmekte zorlanıyorsa hekime başvurun."
+    },
+    {
+      "id": "kalsiyum-acibadem",
+      "konu": "Kalsiyum ve kemik sağlığı",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kalsiyum",
+        "kalsiyum eksikliği",
+        "kalsiyum düşük",
+        "kalsiyum takviyesi",
+        "kalsiyum nelerde var",
+        "kemik sağlığı",
+        "hipokalsemi"
+      ],
+      "baslik": "Kalsiyum Nedir? Kalsiyum Eksikliği Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/saglikli-yasam/kalsiyum-nedir-kalsiyum-eksikligi-belirtileri/",
+      "dil": "tr",
+      "ozet": "Kalsiyum, kemik ve diş sağlığının yanında kasların ve sinirlerin çalışması, kanın pıhtılaşması, kalp ritminin düzenlenmesi ve kas kasılması için gerekli bir mineraldir. Yetişkinlerin günlük ihtiyacı 1000-1500 mg civarındadır; çocuklar, gebeler ve yaşlılarda ihtiyaç daha yüksektir. Yetersiz beslenme, D vitamini eksikliği, bağırsak hastalıkları, hormon bozuklukları, böbrek sorunları ve bazı ilaçlar eksikliğe yol açabilir. Kas krampları, kemiklerin zayıflaması, diş sorunları, uyku bozukluğu, uyuşma ve karıncalanma görülebilir. Süt ürünleri, yeşil yapraklı sebzeler, balık, kuru fasulye, badem, tofu ve susam iyi kaynaklardır. Menopoz sonrası kadınlar, gebeler, yaşlılar, veganlar ve laktoz intoleransı olanlarda takviye gerekebilir."
+    },
+    {
+      "id": "kalsiyum-medlineplus",
+      "konu": "Kalsiyum ve kemik sağlığı",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kalsiyum",
+        "günlük kalsiyum ihtiyacı",
+        "kalsiyum sitrat",
+        "kalsiyum karbonat"
+      ],
+      "baslik": "Calcium (Kalsiyum)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/calcium.html",
+      "dil": "en",
+      "ozet": "Kalsiyum güçlü kemikler için ve kasların hareketi, sinirlerin beyinle vücut arasında ileti taşıması, damarların çalışması ve hormonların salgılanması için gereklidir. Önerilen günlük miktar 0-6 ay bebeklerde 200 mg, 7-12 ayda 260 mg, 1-3 yaşta 700 mg, 4-8 yaşta 1000 mg, 9-18 yaşta 1300 mg, 19-50 yaş yetişkinlerde 1000 mg, 51-70 yaş arasında erkeklerde 1000 mg, kadınlarda 1200 mg, 71 yaş ve üzerinde 1200 mg'dır; gebe veya emziren ergenlerde 1300 mg, yetişkinlerde 1000 mg'dır. Süt, peynir, yoğurt, lahana ve brokoli gibi yeşil sebzeler, kılçığıyla yenen konserve sardalya ve somon ile kalsiyum eklenmiş yiyecekler iyi kaynaklardır. Yetersiz alım kemik erimesine (osteoporoz), çocuklarda raşitizme ve kemik yumuşamasına (osteomalazi) yol açar. Takviyeler bazı kişilerde gaz, şişkinlik ve kabızlık yapabilir; vücut tek seferde en iyi 500 mg veya daha azını emer. Kalsiyum sitrat aç karnına iyi emilir, kalsiyum karbonat ise yemekle alınmalıdır."
+    },
+    {
+      "id": "cinko-acibadem",
+      "konu": "Çinko eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "çinko",
+        "çinko eksikliği",
+        "çinko takviyesi",
+        "tırnakta beyaz leke",
+        "tat ve koku kaybı",
+        "yaralar geç iyileşiyor"
+      ],
+      "baslik": "Çinko Ne İşe Yarar? Çinko Eksikliği Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/saglikli-yasam/cinko-ne-ise-yarar-cinko-eksikligi-belirtileri/",
+      "dil": "tr",
+      "ozet": "Çinko bağışıklık sistemini güçlendiren, hücre yenilenmesini sağlayan bir mineraldir; DNA ve protein yapımında, yara iyileşmesinde, tat ve koku duyusunda, saç ve tırnak sağlığında ve hormon dengesinde görev alır. Günlük ihtiyaç kadınlarda 9 mg, erkeklerde 11 mg, çocuklarda yaşa göre 3-8 mg, gebe ve emzirenlerde 10-13 mg civarındadır. Kırmızı et, istiridye, balık, tavuk, yoğurt, süt, nohut, kuru fasulye, kaju, badem ve tam buğday iyi kaynaklardır. Yetersiz beslenme, Crohn ve çölyak gibi bağırsak hastalıkları, kronik hastalıklar, vegan beslenme, ileri yaş, bazı ilaçlar ve uzun süreli ishal eksikliğe yol açabilir. Saç dökülmesi, cilt kuruluğu, sık enfeksiyon, dikkat dağınıklığı, tat ve koku kaybı, tırnaklarda beyaz lekeler ve erkeklerde cinsel işlev sorunları görülebilir. Fazla çinko halsizlik, ağrı, bulantı ve kusmaya yol açabilir."
+    },
+    {
+      "id": "cinko-medlineplus",
+      "konu": "Çinko eksikliği",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "çinko",
+        "çinko fazlalığı",
+        "günlük çinko ihtiyacı"
+      ],
+      "baslik": "Zinc in Diet (Beslenmede Çinko)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/002416.htm",
+      "dil": "en",
+      "ozet": "Çinko bağışıklık sisteminin çalışması, hücre bölünmesi, büyüme, yara iyileşmesi, karbonhidratların yıkılması ve koku-tat duyusu için gereklidir; gebelik, bebeklik ve çocuklukta büyümeyi destekler ve insülinin etkisini artırır. En iyi kaynaklar hayvansal proteinlerdir: sığır, domuz ve kuzu eti balıktan, tavuğun koyu eti açık etinden daha fazla çinko içerir; kuruyemiş, tam tahıllar, baklagiller ve maya da kaynaktır, ancak bitkisel besinlerdeki çinko daha az emilir. Eksiklikte sık enfeksiyon, erkeklerde hormon yetersizliği, saç dökülmesi, iştahsızlık, tat ve koku sorunları, ciltte yaralar, büyüme geriliği, gece görme güçlüğü ve yaraların geç iyileşmesi görülebilir. Fazla çinko 3-10 saat içinde ishal, karın krampı ve kusmaya yol açabilir; uzun süre fazla alınması bakır, demir veya magnezyum eksikliğine neden olabilir. Önerilen günlük miktar 14 yaş üstü erkeklerde 11 mg, 19 yaş üstü kadınlarda 8 mg, gebelerde 11 mg, emzirenlerde 12 mg'dır."
+    },
+    {
+      "id": "cvit-acibadem",
+      "konu": "C vitamini",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "C vitamini",
+        "C vitamini eksikliği",
+        "skorbüt",
+        "diş eti kanaması",
+        "kuşburnu",
+        "C vitamini takviyesi"
+      ],
+      "baslik": "C Vitamini (Askorbik Asit) Nedir? Faydaları, Eksikliği ve Kaynakları",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/c-vitamini/",
+      "dil": "tr",
+      "ozet": "C vitamini kolajen yapımını destekler, bağışıklık sistemini güçlendirir, antioksidan olarak hücreleri korur ve demirin emilimini artırır. Günlük ihtiyaç kadınlarda 75 mg, erkeklerde 90 mg, gebelerde 85 mg, emzirenlerde 120 mg'dır. Portakal, limon, çilek, kivi, kırmızı biber, brokoli, ıspanak ve kuşburnu iyi kaynaklardır. Eksiklikte diş eti kanaması, sürekli yorgunluk, saç dökülmesi, kuru cilt ve kilo kaybı görülebilir; ağır eksiklik tedavi edilmezse ciddi sonuçları olabilen skorbüt hastalığına yol açar. Fazla alım bulantı, ishal ve kramplara yol açabilir; günde 2000 mg üzerindeki dozlarda böbrek taşı riski artar."
+    },
+    {
+      "id": "cvit-medlineplus",
+      "konu": "C vitamini",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "C vitamini",
+        "C vitamini soğuk algınlığı",
+        "C vitamini fazlası"
+      ],
+      "baslik": "Vitamin C (C Vitamini)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/002404.htm",
+      "dil": "en",
+      "ozet": "C vitamini kolajen yapımında, yara iyileşmesinde, kıkırdak, kemik ve dişlerin korunmasında ve demirin emiliminde görev alır; antioksidan olarak serbest radikallerin verdiği hasarı engeller. En iyi kaynaklar çiğ veya pişirilmemiş meyve ve sebzelerdir: turunçgiller, kivi, çilek, kavun, brokoli, biber, ıspanak ve domates. Eksiklikte (skorbüt) kansızlık, diş eti kanaması, kolay morarma, kuru ve pullu cilt, diş minesinde zayıflama, yaraların geç iyileşmesi ve eklem şişliği görülür. Günde 2000 mg'ı aşan dozlar mide rahatsızlığı, ishal ve nadiren böbrek taşı yapabilir. Önerilen günlük miktar 19 yaş üstü erkeklerde 90 mg, kadınlarda 75 mg'dır; sigara içenler buna 35 mg eklemelidir. Çoğu kişide C vitamini takviyesi soğuk algınlığına yakalanma riskini azaltmaz; düzenli kullanım hastalığın süresini biraz kısaltabilir, ancak soğuk algınlığı başladıktan sonra başlamak yarar sağlamaz."
+    },
+    {
+      "id": "takviye-tarim",
+      "konu": "Vitamin ve gıda takviyeleri",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "takviye",
+        "gıda takviyesi",
+        "vitamin takviyesi",
+        "multivitamin",
+        "takviye edici gıda",
+        "vitamin hapı",
+        "bitkisel ürün",
+        "takviye kullanmalı mıyım"
+      ],
+      "baslik": "Takviye Edici Gıdaların Bilinçli ve Güvenli Tüketimi",
+      "kurum": "T.C. Tarım ve Orman Bakanlığı (Güvenilir Gıda)",
+      "tur": "resmi",
+      "url": "https://guvenilirgida.tarimorman.gov.tr/Haber/Detay/17132",
+      "dil": "tr",
+      "ozet": "Takviye edici gıdalar, normal beslenmeyi desteklemek amacıyla konsantre vitamin, mineral veya besleyici etkisi olan başka maddeler içeren tablet, kapsül, pastil, toz ve sıvı ürünlerdir. İlaç değildir; bir hastalığı önlemek veya tedavi etmek için kullanılmamalıdır ve yeterli, dengeli beslenmenin yerini tutmaz. Zayıflatma, cinsel performansı artırma ve hastalığı önleme gibi iddialarla satılmaları yasaktır. Ürün etiketi okunmalı ve önerilen günlük doz aşılmamalıdır. Tarım ve Orman Bakanlığı tarafından onaylanmış ürünlerin listesine ggbs.tarim.gov.tr adresinden ulaşılabilir."
+    },
+    {
+      "id": "takviye-medlineplus",
+      "konu": "Vitamin ve gıda takviyeleri",
+      "kategori": "Vitamin ve mineraller",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "besin takviyesi",
+        "takviye ilaç etkileşimi",
+        "doğal ürün güvenli mi",
+        "ameliyat öncesi takviye"
+      ],
+      "baslik": "Dietary Supplements (Besin Takviyeleri)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/dietarysupplements.html",
+      "dil": "en",
+      "ozet": "Besin takviyeleri vitaminler, mineraller, bitkiler ve diğer pek çok ürünü kapsar; hap, kapsül, toz, içecek ve bar şeklinde bulunur. Takviyeler ilaçların geçtiği testlerden geçmek zorunda değildir. Bazı kişilerin takviyeye ihtiyacı olabilir: örneğin kemik sağlığı için kalsiyum ve D vitamini, gebelikte doğumsal kusurları önlemek için folik asit. Takviyelerin ilaçlarla etkileşmesi, etikette önerilenden fazla alınması ve ameliyat sırasında sorun çıkarması başlıca risklerdir. Kullandığınız takviyeleri hekiminize söyleyin, dozu aşmayın ve ameliyattan önce hekiminize danışın; 'doğal' olması daha güvenli veya daha iyi olduğu anlamına gelmez."
+    },
+    {
+      "id": "statin-acibadem",
+      "konu": "Kolesterol ilaçları (statinler)",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kolesterol ilacı",
+        "statin",
+        "atorvastatin",
+        "rosuvastatin",
+        "kolesterol ilacı zararlı mı",
+        "kolesterol ilacını bırakmak"
+      ],
+      "baslik": "Kolesterol Hakkında Doğru Bilinen Yanlışlar",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/saglikli-yasam/kolesterol-hakkinda-dogru-bilinen-yanlislar/",
+      "dil": "tr",
+      "ozet": "Kolesterol düşürücü ilaçlar (statinler) yan etki açısından oldukça güvenli ilaçlardır. Yüksek dozlarda karaciğer enzimlerinde geçici yükselme yapabilirler; kalıcı karaciğer hasarı yalnızca önceden karaciğer hastalığı olanlarda gelişebilir. Bu ilaçlar cinsel işlevi baskılamaz; damar sağlığını iyileştirerek cinsel işleve olumlu katkı bile sağlayabilir. Kalp hastalarında kolesterol normale inse bile ilaç nadiren kesilir; ilaç bırakılırsa değerler yeniden yükselir ve risk devam eder. Yaşam tarzı değişiklikleri kolesterolü önemli ölçüde düşürebilir ancak zaman alır; tedavi kişiye göre belirlenmelidir."
+    },
+    {
+      "id": "statin-medlineplus",
+      "konu": "Kolesterol ilaçları (statinler)",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "statin",
+        "statin kas ağrısı",
+        "statin greyfurt",
+        "LDL düşürücü"
+      ],
+      "baslik": "Statins (Statinler)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/statins.html",
+      "dil": "en",
+      "ozet": "Statinler, yüksek kolesterol tedavisinde en sık kullanılan ilaçlardır; karaciğerin LDL ('kötü') kolesterol yapımını yavaşlatır ve kandaki LDL'yi temizleme yeteneğini artırır, böylece damarlarda plak oluşumunu yavaşlatır; trigliseridi de düşürebilir. Yaşam tarzı değişiklikleri yetmediğinde hekim tarafından önerilir. Nadiren kas hasarı olabilir; kas ağrısı başka bir statine geçince düzelebilir. Karaciğer testlerinde anormallik görülebilir ancak gerçek karaciğer hasarı çok nadirdir. Özellikle fazla kilolu, obez, prediyabetli veya metabolik sendromu olanlarda tip 2 diyabet riskini biraz artırabilir. Greyfurt ve suyu bazı statinlerin karaciğerde yıkımını etkiler. Gebelikte, emzirmede ve bazı karaciğer hastalıklarında önerilmez. İlacı kendi kendinize bırakmamalısınız; bu ciddi sorunlara ve nadiren ölüme yol açabilir."
+    },
+    {
+      "id": "tansiyonilac-acibadem",
+      "konu": "Tansiyon ilaçları",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "tansiyon ilacı",
+        "tansiyon ilaçları",
+        "idrar söktürücü",
+        "beta bloker",
+        "ACE inhibitörü",
+        "kalsiyum kanal blokeri",
+        "tansiyon ilacı öksürük",
+        "tansiyon ilacını bırakmak"
+      ],
+      "baslik": "Yüksek Tansiyonu Düşürmenin Doğal Yolları ve Etkili Çözümler",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/tansiyonu-ne-dusurur/",
+      "dil": "tr",
+      "ozet": "Yüksek tansiyon tedavisinde başlıca beş ilaç grubu kullanılır: vücuttaki fazla sıvıyı atarak tansiyonu düşüren ve çoğu zaman ilk seçenek olan idrar söktürücüler (diüretikler); kalp hızını yavaşlatan beta blokerler; damarları genişleten ve kalp krizi ile inme riskini azaltan ACE inhibitörleri; damar duvarının gevşemesine yardım eden kalsiyum kanal blokerleri ve damarları daraltan hormonun etkisini engelleyen anjiyotensin reseptör blokerleri. Tedavi kişiye özeldir ve hekim kontrolünde yürütülmelidir. İlaçla birlikte günlük tuzun 5-6 gramla sınırlanması, haftada en az 150 dakika orta yoğunlukta egzersiz, iyi uyku ve stres yönetimi önerilir."
+    },
+    {
+      "id": "tansiyonilac-medlineplus",
+      "konu": "Tansiyon ilaçları",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "tansiyon ilacı yan etkisi",
+        "diüretik",
+        "ARB",
+        "tansiyon ilacı baş dönmesi"
+      ],
+      "baslik": "High Blood Pressure Medications (Tansiyon İlaçları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/007484.htm",
+      "dil": "en",
+      "ozet": "İdrar söktürücüler (diüretikler) böbreklerin vücuttan tuz atmasına yardım ederek damarlardaki sıvıyı azaltır; ACE inhibitörleri damarları daraltan anjiyotensin II yapımını azaltır; anjiyotensin reseptör blokerleri (ARB) bu maddenin etkisini engeller; kalsiyum kanal blokerleri damar duvarındaki kalsiyumu azaltarak damarları gevşetir; beta blokerler kalbin daha yavaş ve daha az güçle atmasını sağlar ve artık genellikle diğerleri yetmediğinde kullanılır. Alfa blokerler, merkezi etkili ilaçlar, damar genişleticiler ve renin inhibitörleri diğer seçeneklerdir. Öksürük, ishal veya kabızlık, baş dönmesi, sertleşme sorunu, yorgunluk, baş ağrısı, bulantı, döküntü ve kilo değişikliği yan etkiler arasındadır. Dozu kendi kendinize değiştirmeyin ve ilacı bırakmayın; yan etkileri hekiminize bildirin, doz ayarı çoğu zaman yardımcı olur. Besinler, takviyeler ve diğer ilaçlarla etkileşimleri hekiminizle konuşun. Tansiyonun tedavisi kalp hastalığı, inme, böbrek hastalığı ve görme kaybını önler."
+    },
+    {
+      "id": "antidepresan-acibadem",
+      "konu": "Antidepresan ilaçlar",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "antidepresan",
+        "depresyon ilacı",
+        "antidepresan bağımlılık yapar mı",
+        "antidepresan ne zaman etki eder",
+        "antidepresanı bırakmak",
+        "SSRI",
+        "sertralin",
+        "essitalopram"
+      ],
+      "baslik": "Antidepresan Nedir, Nasıl Kullanılır?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/antidepresan-nedir/",
+      "dil": "tr",
+      "ozet": "Antidepresanlar beyindeki serotonin, dopamin ve noradrenalin gibi kimyasal ileticilerin dengesini düzenleyen ilaçlardır. Eski nesil ilaçların yan etkileri daha fazladır; SSRI, SNRI ve atipik antidepresanlar gibi yeni nesil ilaçlar daha az yan etki yapar. Depresyonun yanında kaygı bozukluğu, travma sonrası stres bozukluğu, obsesif kompulsif bozukluk, uyku sorunları ve kronik ağrıda da kullanılır. Etkinin 4-8 hafta içinde başlaması, tam etkinin 6-12 haftada görülmesi beklenir. Baş ağrısı, ağız kuruluğu, cinsel sorunlar, kilo alma, uyku hali, bulantı ve ishal yan etkiler arasındadır. Tedavi genellikle 6 ay ile 1 yıl sürer; tekrarlayan depresyonda daha uzun olabilir. İlaç kesinlikle aniden bırakılmamalıdır; hekim gözetiminde en az 4 hafta içinde yavaş yavaş azaltılmazsa yoksunluk belirtileri görülebilir."
+    },
+    {
+      "id": "antidepresan-medlineplus",
+      "konu": "Antidepresan ilaçlar",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "antidepresan",
+        "SNRI",
+        "bupropion",
+        "antidepresan intihar düşüncesi",
+        "antidepresan yan etkisi"
+      ],
+      "baslik": "Commonly Prescribed Antidepressants and How They Work (Antidepresanlar)",
+      "kurum": "MedlinePlus Magazine (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://magazine.medlineplus.gov/article/commonly-prescribed-antidepressants-and-how-they-work",
+      "dil": "en",
+      "ozet": "Antidepresanlar depresyon ve kaygı gibi ruhsal sorunların belirtilerini hafifletir; bazen kronik ağrı ve uyku bozukluklarında da kullanılır. Duygu durumu, uyku, iştah ve ağrı algısını düzenleyen serotonin, noradrenalin ve dopamin gibi kimyasal ileticilerin düzeyini ve etkinliğini değiştirerek çalışırlar. En sık yazılan grup SSRI'lardır (fluoksetin, sitalopram, sertralin, paroksetin, essitalopram) ve genellikle diğerlerinden daha az yan etki yapar; SNRI'lar (venlafaksin, duloksetin), atipik antidepresanlar (bupropion, mirtazapin, trazodon) ve eski ilaçlar (trisiklikler, MAO inhibitörleri) diğer gruplardır. Tam etki için genellikle 4-8 hafta düzenli kullanmak gerekir. Bulantı, kusma, kilo alma, ishal, uyku hali ve cinsel sorunlar görülebilir; bazı kişilerde hafiftir ve vücut alıştıkça geçer. Özellikle çocuk, ergen ve genç yetişkinlerde yeni ortaya çıkan veya artan intihar düşüncelerinde hemen yardım alınmalıdır (112). İlaç değişikliği yapmadan önce hekime danışılmalıdır."
+    },
+    {
+      "id": "kortizon-acibadem",
+      "konu": "Kortizonlu ilaçlar",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kortizon",
+        "kortizonlu ilaç",
+        "kortizon yan etkileri",
+        "kortizon iğnesi",
+        "kortizonlu krem",
+        "prednizolon",
+        "kortizonu bırakmak"
+      ],
+      "baslik": "Kortizon Nedir, Ne İçin Kullanılır? Kortizon Yan Etkileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/saglik-sozlugu/kortizon-nedir/",
+      "dil": "tr",
+      "ozet": "Kortizon, vücudun kendi ürettiği kortizol hormonunun yapay biçimidir; iltihabı azaltır ve bağışıklık sistemini baskılar. Romatoid artrit gibi romatizmal hastalıklarda, alerjik tepkiler ve astımda, egzama ve sedef gibi deri hastalıklarında, lupus ve ülseratif kolit gibi bağışıklık hastalıklarında ve omurga-sinir sorunlarında kullanılır. Tablet, iğne, krem, merhem, inhaler ve burun spreyi biçimleri vardır. Kısa süreli kullanımda baş ağrısı, huzursuzluk, bulantı, uyku sorunları ve akne; uzun süreli kullanımda kilo alma, kemik erimesi, kas güçsüzlüğü, kalp-damar sorunları ve glokom görülebilir. Kortizon aniden bırakılmamalı, doz hekim kontrolünde yavaş yavaş azaltılmalıdır. Enfeksiyon, yüksek tansiyon, diyabet ve gebelikte dikkatli kullanılmalıdır."
+    },
+    {
+      "id": "kortizon-medlineplus",
+      "konu": "Kortizonlu ilaçlar",
+      "kategori": "İlaçlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kortikosteroid",
+        "steroid",
+        "prednizon",
+        "anabolik steroid"
+      ],
+      "baslik": "Steroids (Kortikosteroidler)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/steroids.html",
+      "dil": "en",
+      "ozet": "Kortikosteroidler, böbreküstü bezlerinin hastalık ve yaralanma stresine karşı ürettiği hormonlara benzeyen ilaçlardır; zararlı etkileri olabilen anabolik steroidlerden farklıdır. Artrit, astım, lupus ve multipl skleroz gibi bağışıklık hastalıkları, egzama ve döküntü gibi deri hastalıkları ve bazı kanser türlerinde kullanılır. Prednizon gibi tablet, astım için solunan ilaç, kortizon iğnesi veya epidural enjeksiyon ve göz damlası şeklinde verilebilir. Güçlü ilaçlardır ve kemiklerin zayıflaması ile katarakt gibi yan etkileri olabilir; bu nedenle genellikle mümkün olan en kısa süre kullanılırlar. İlacın güvenli şekilde nasıl bırakılacağı hekimle planlanmalıdır."
+    },
+    {
+      "id": "lenfoma-acibadem",
+      "konu": "Lenfoma (lenf kanseri)",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "lenfoma",
+        "lenf kanseri",
+        "Hodgkin",
+        "ağrısız lenf bezi",
+        "gece terlemesi kilo kaybı",
+        "boyunda ağrısız şişlik"
+      ],
+      "baslik": "Lenf Kanseri (Lenfoma) Nedir? Lenfoma Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/lenf-kanseri-lenfoma/",
+      "dil": "tr",
+      "ozet": "Lenfoma (lenf kanseri), lenfosit denen beyaz kan hücrelerinin anormal çoğalmasıyla oluşan bir kanserdir; Hodgkin lenfoma ve çok sayıda alt türü olan Hodgkin dışı lenfoma olmak üzere iki ana türü vardır. Genetik yatkınlık, bağışıklık sistemi bozuklukları, EBV gibi virüs enfeksiyonları, radyasyon ve kimyasal maddeler risk etkenleridir. Boyun, koltuk altı veya kasıkta ağrısız lenf bezi şişliği, açıklanamayan kilo kaybı, gece terlemesi ve sürekli yorgunluk başlıca belirtilerdir. Tanıda lenf bezi biyopsisi, kan testleri, BT, MR ve PET taraması kullanılır. Tedavide kemoterapi, radyoterapi, immünoterapi, hedefe yönelik tedaviler, kök hücre nakli ve CAR-T hücre tedavisi uygulanır; erken tanı tedavi başarısını belirgin şekilde artırır."
+    },
+    {
+      "id": "lenfoma-medlineplus",
+      "konu": "Lenfoma (lenf kanseri)",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "lenfoma",
+        "Hodgkin dışı lenfoma",
+        "lenfoma belirtileri"
+      ],
+      "baslik": "Lymphoma (Lenfoma)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/lymphoma.html",
+      "dil": "en",
+      "ozet": "Lenfomanın iki ana türü Hodgkin hastalığı ve Hodgkin dışı lenfomalardır; Hodgkin dışı lenfoma, T veya B hücresi denen bir beyaz kan hücresi türünün anormal hale gelmesiyle başlar. Bağışıklık sisteminin zayıf olması ve bazı enfeksiyonlar riski artırır. Boyun, koltuk altı veya kasıkta ağrısız büyümüş lenf bezleri, açıklanamayan kilo kaybı, ateş, gece terlemesi, öksürük, nefes almada güçlük veya göğüs ağrısı, geçmeyen yorgunluk ve güçsüzlük ile karında ağrı veya şişlik görülebilir. Tanıda muayene, kan testleri, akciğer filmi ve biyopsi kullanılır. Tedavide kemoterapi, radyoterapi, hedefe yönelik ve biyolojik tedaviler uygulanır; belirti vermeyen bazı hastalarda hemen tedaviye başlamadan yakın izlem yapılabilir."
+    },
+    {
+      "id": "hemofili-acibadem",
+      "konu": "Hemofili",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hemofili",
+        "kanama hastalığı",
+        "kanın pıhtılaşmaması",
+        "faktör 8",
+        "faktör 9",
+        "eklem içi kanama",
+        "durmayan kanama"
+      ],
+      "baslik": "Hemofili Nedir? Hemofili Hastalığı Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/hemofili-hastaligi/",
+      "dil": "tr",
+      "ozet": "Hemofili, kanın pıhtılaşma faktörlerinin eksikliğinden kaynaklanan nadir, kalıtsal bir hastalıktır; kanın pıhtılaşma yeteneği azalır ya da tamamen bozulur ve yaralanmalarda kanama durmaz. En sık türü faktör VIII eksikliğine bağlı hemofili A, daha nadir olanı faktör IX eksikliğine bağlı hemofili B'dir. X kromozomuyla geçtiği için çoğunlukla erkeklerde görülür, kadınlar genellikle taşıyıcıdır; taşıyıcı anne ve sağlıklı babanın erkek çocuklarının %50'si hemofilili doğabilir. Sık burun kanaması, kolay morarma, eklem içi kanamalar, diş çekiminden sonra uzun süren kanama ve küçük yaralanmalarda bile ciddi kanama görülür. Baş ağrısı ve kusmayla beliren beyin kanaması, şiddetli karın ağrısı ve kanlı idrar veya dışkı hayati tehlike işaretleridir. Tanı pıhtılaşma testleri, faktör düzeyleri ve genetik testlerle konur; tedavide eksik faktör damardan yerine konur ve düzenli tedaviyle kanamalar kontrol altına alınır."
+    },
+    {
+      "id": "hemofili-medlineplus",
+      "konu": "Hemofili",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hemofili",
+        "hemofili A",
+        "hemofili B",
+        "pıhtılaşma faktörü"
+      ],
+      "baslik": "Hemophilia (Hemofili)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/hemophilia.html",
+      "dil": "en",
+      "ozet": "Hemofili, X kromozomundaki gen değişikliklerinin pıhtılaşma faktörlerinin yapımını bozmasıyla oluşur; kalıtsal olmayan ve vücudun pıhtılaşma faktörlerine karşı antikor üretmesiyle gelişen türüne edinsel hemofili denir. Erkeklerde tek bir değişmiş X kromozomu yeterli olduğu için çoğunlukla erkekleri etkiler. Hemofili A'da faktör VIII, hemofili B'de faktör IX eksiktir. Eklem içi kanamalar, morarma, kas ve yumuşak doku kanamaları, ağız ve diş eti kanaması, sünnet veya iğne sonrası kanama, burun kanaması ve idrarda ya da dışkıda kan görülebilir; ağır hemofilide beyin kanaması beyin hasarına yol açabilir ve hayatı tehdit edebilir. Tanıda aile öyküsü, muayene ve faktör düzeylerini ölçen pıhtılaşma testleri kullanılır. En iyi tedavi, eksik pıhtılaşma faktörünün iğneyle yerine konmasıdır; bu tedavi kanama olduğunda ya da kanamayı önlemek için düzenli olarak yapılabilir."
+    },
+    {
+      "id": "kanbagisi-kizilay",
+      "konu": "Kan bağışı",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kan bağışı",
+        "kan vermek",
+        "kimler kan verebilir",
+        "kaç ayda bir kan verilir",
+        "Kızılay",
+        "kan bağışı şartları",
+        "dövme sonrası kan vermek"
+      ],
+      "baslik": "Kan Hizmetleri - Sıkça Sorulan Sorular",
+      "kurum": "Türk Kızılay Kan Hizmetleri",
+      "tur": "dernek",
+      "url": "https://www.kanver.org/EKutuphane/sss",
+      "dil": "tr",
+      "ozet": "Türk Kızılay'a göre 19-65 yaş arasında (ilk kez bağış yapacaklarda 19-60 yaş), en az 50 kilogram ağırlığında sağlıklı kişiler kan bağışı yapabilir. Erkekler 90 günde bir, kadınlar 120 günde bir kan verebilir. Bağış toplam yaklaşık 30-35 dakika sürer ve bir ünite kan alınır; bir bağış 3 hastanın tedavisinde kullanılabilir. Hepatit B veya C geçirenler kalıcı olarak kan veremez; hepatit A veya E geçirenler 12 ay beklemelidir; dövme yaptıranlar belirli bir süre ertelenir ve ilaç kullananların durumu hekimce değerlendirilir. Bağıştan önce sağlık sorgulama formu eksiksiz doldurulmalı, bağıştan sonra morarmayı önlemek için iğne yerine bastırılmalıdır. Kullanılan malzemeler tek kullanımlık olduğundan bağışçıya hastalık bulaşma riski yoktur."
+    },
+    {
+      "id": "kanbagisi-medlineplus",
+      "konu": "Kan bağışı",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kan nakli",
+        "transfüzyon",
+        "kan bağışı güvenli mi",
+        "trombosit nakli"
+      ],
+      "baslik": "Blood Transfusion and Donation (Kan Nakli ve Bağışı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/bloodtransfusionanddonation.html",
+      "dil": "en",
+      "ozet": "Her yıl milyonlarca kişi hayat kurtaran kan nakli alır. Hastalara tam kan ya da yalnızca bir bileşeni verilebilir: dokulara oksijen taşıyan kırmızı kan hücreleri, kanamanın kontrolüne yardım eden trombositler veya ağır yanık, karaciğer yetmezliği ve ağır enfeksiyonlarda kullanılan plazma. Kan bankaları bağışlanan kanı sıkı testlerden geçirir; kan nakliyle virüs bulaşma riski düşüktür. Çoğu kişide kan nakli sorunsuz geçer, ancak nakil tepkileri görülebilir. Planlı bir ameliyattan önce kişinin kendi kanı önceden alınıp saklanabilir."
+    },
+    {
+      "id": "kansizlik-medlineplus",
+      "konu": "Kansızlık (anemi)",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "anemi",
+        "kansızlık nedenleri",
+        "hemolitik anemi",
+        "kronik hastalık anemisi"
+      ],
+      "baslik": "Anemia (Kansızlık)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/anemia.html",
+      "dil": "en",
+      "ozet": "Anemide kan vücuda yeterince oksijen taşıyamaz; en sık neden, kırmızı kan hücrelerinde oksijeni taşıyan hemoglobinin yapımı için gereken demirin yetersizliğidir. Anemi kan kaybı, kırmızı kan hücresi yapımının azalması veya bu hücrelerin hızla yıkılmasıyla gelişir: ağır adet kanaması, gebelik, ülser, kalın bağırsak polipi veya kanseri, demir, folik asit veya B12 eksikliği, orak hücre hastalığı, talasemi, aplastik anemi ve G6PD eksikliği nedenler arasındadır. Ağır adet, gebelik, yetersiz beslenme, kronik böbrek hastalığı, kanser tedavisi ve kalıtsal hastalıklar riski artırır. Yorgunluk, üşüme, baş dönmesi, sinirlilik, nefes darlığı ve baş ağrısı görülebilir. Tanıda muayene, tam kan sayımı, demir testleri ve gerekirse kemik iliği incelemesi kullanılır. Tedavi türe göre demir, B12 iğnesi, beslenme değişikliği veya altta yatan nedenin tedavisidir."
+    },
+    {
+      "id": "kansizlik-acibadem",
+      "konu": "Kansızlık (anemi)",
+      "kategori": "Kan",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kansızlık",
+        "anemi",
+        "hemoglobin düşük",
+        "kansızlığa ne iyi gelir",
+        "kan değerim düşük",
+        "halsizlik solukluk",
+        "kan azlığı"
+      ],
+      "baslik": "Anemi (Kansızlık) Nedir? Kansızlık Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/anemi-nedir-kansizlik-belirtileri-nelerdir-kansizliga-ne-iyi-gelir/",
+      "dil": "tr",
+      "ozet": "Anemi (kansızlık), kandaki kırmızı kan hücresi veya hemoglobin düzeyinin düşmesidir; hemoglobinin kadınlarda 12 g/dL'nin, erkeklerde 13,5 g/dL'nin altında olması anemi kabul edilir. En sık türü demir eksikliği anemisidir; B12 veya folik asit eksikliğine bağlı megaloblastik anemi, orak hücreli anemi, kemik iliği yetmezliğine bağlı aplastik anemi, hücrelerin erken yıkıldığı hemolitik anemi ve kronik hastalık anemisi diğer türlerdir. Adet veya sindirim sisteminden kan kaybı, beslenme eksiklikleri, böbrek hastalığı ve kanser gibi kronik hastalıklar, kalıtsal nedenler ve kemik iliği hastalıkları yol açabilir. Yorgunluk, solukluk, baş dönmesi, nefes darlığı, çarpıntı, el ve ayaklarda soğukluk ve dikkat dağınıklığı görülür. Tanı tam kan sayımı, ferritin ve gerekirse hemoglobin elektroforeziyle konur; tedavi nedene göredir. Göğüs ağrısı, hızlı kalp atışı, şiddetli nefes darlığı veya bayılma varsa beklemeden hekime başvurulmalıdır."
     }
   ],
   "kategoriler": [
