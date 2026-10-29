@@ -9230,6 +9230,277 @@
       "url": "https://medlineplus.gov/ency/patientinstructions/000684.htm",
       "dil": "en",
       "ozet": "Menisküs, dizde amortisör görevi gören C biçimli kıkırdaktır ve her dizde iki tane vardır. Dizi burkmak veya aşırı bükmek, koşarken, sıçrayıp yere inerken veya dönerken aniden durup yön değiştirmek, diz çökmek, çömelip ağır bir şey kaldırmak, diz bağlarının yırtılması ya da dize darbe almak yırtığa neden olabilir. Yaralanma anında 'patlama' hissi olabilir; eklemin içinde basınçla artan ağrı, ertesi gün veya hareketten sonra ortaya çıkan şişlik, yürürken ağrı, dizde kilitlenme veya takılma ve çömelmekte zorluk görülür. Hafif yırtıklar dinlenme ve kendi kendine bakımla düzelebilir; diğer yırtıklarda ya da genç kişilerde menisküsü onarmak veya düzeltmek için diz artroskopisi gerekebilir."
+    },
+    {
+      "id": "gebelikbelirti-acibadem",
+      "konu": "Gebelik belirtileri ve gebelik testi",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "hamilelik belirtileri",
+        "gebelik belirtileri",
+        "hamile miyim",
+        "adetim gecikti",
+        "regl gecikmesi",
+        "gebelik testi",
+        "hamilelik testi",
+        "yerleşme kanaması"
+      ],
+      "baslik": "Hamilelik Belirtileri Nelerdir? Hamilelikte (Gebelikte) İlk Belirtiler",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/hamilelik-gebelik-belirtileri-nelerdir-nasil-anlasilir/",
+      "dil": "tr",
+      "ozet": "Hamilelik belirtileri genellikle 4-6. haftalarda başlar; adet gecikmesi ilk işaretlerden biridir. Göğüslerde hassasiyet ve yorgunluk daha erken hissedilebilir, bulantı çoğunlukla sonraki haftalarda belirginleşir; sık idrara çıkma, koku ve tat değişiklikleri, şişkinlik, kabızlık, akıntıda artış ve duygusal dalgalanmalar da görülebilir. Gebeliğin rahme yerleştiği dönemde hafif bir kanama olabilir, ancak her gebelikte görülmez. Evde gebelik testi adet gecikmesinin ilk gününden itibaren yapılabilir; sonuç negatif çıkmasına rağmen adet başlamazsa birkaç gün sonra test tekrarlanmalıdır; son korunmasız ilişkiden en az 21 gün sonra yapılan test güvenilirdir. Kan beta-hCG testi daha erken bilgi verebilir. Şiddetli veya tek taraflı karın ağrısı, yoğun kanama, bayılma ve omuz ucunda ağrı dış gebelik açısından acil değerlendirme gerektirir."
+    },
+    {
+      "id": "gebelikbelirti-medlineplus",
+      "konu": "Gebelik belirtileri ve gebelik testi",
+      "kategori": "Kadın sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "gebelik testi",
+        "beta hcg",
+        "test negatif ama adet olmadım",
+        "hamilelik testi ne zaman yapılır"
+      ],
+      "baslik": "Pregnancy Test (Gebelik Testi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/lab-tests/pregnancy-test/",
+      "dil": "en",
+      "ozet": "Gebeliğin sık görülen erken belirtileri adet gecikmesi (en sık), göğüslerde şişlik ve hassasiyet, yorgunluk, sık idrara çıkma, sabah bulantısı ve kusma ile karında şişkinliktir. Evde yapılan idrar gebelik testleri adet gecikmesinden bir iki hafta sonra yapıldığında %97-99 doğrudur; sabahın ilk idrarıyla yapılması önerilir. Test çok erken yapılırsa vücut henüz yeterli hCG hormonu üretmemiş olabilir ve gebe olunduğu halde sonuç negatif çıkabilir; bu durumda test bir hafta sonra tekrarlanmalıdır. Kan testleri gebeliği adet gecikmesinden önce de gösterebilir. Ev testi pozitif çıkarsa en kısa sürede hekime başvurulmalı; iki negatif sonuca rağmen gebelikten şüpheleniliyorsa yine hekime danışılmalıdır."
+    },
+    {
+      "id": "sertlesme-acibadem",
+      "konu": "Sertleşme sorunu (erektil disfonksiyon)",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "sertleşme sorunu",
+        "sertleşme bozukluğu",
+        "erektil disfonksiyon",
+        "iktidarsızlık",
+        "ereksiyon sorunu",
+        "cinsel isteksizlik erkek"
+      ],
+      "baslik": "Sertleşme Sorunu Nedir? Sertleşme Sorunu Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/sertlesme-bozuklugu/",
+      "dil": "tr",
+      "ozet": "Sertleşme bozukluğu, cinsel ilişki için peniste yeterli sertliğin sağlanamaması veya sürdürülememesidir; 40 yaş üstü erkeklerin yarısı kadarında görülebilir. Damar sertliği, yüksek tansiyon ve damar hastalıkları, diyabet ve yüksek kolesterol, inme, MS ve epilepsi gibi sinir sistemi hastalıkları, tiroid ve diğer hormon bozuklukları, depresyon ve performans kaygısı, bazı ilaçlar, kanser tedavileri ve ameliyatlar neden olabilir. Penise giden kan akımının yetersizliğini gösterebileceği için kalp hastalığının erken belirtisi olabilir. Tedavide ilaçlar, iğneler, vakum cihazları ve penil protez kullanılır; ilaçlar hekim denetiminde kullanılmalıdır, nitrat grubu kalp ilacı kullananlar bu ilaçları kullanamaz ve önce altta yatan hastalık tedavi edilmelidir. Üroloji uzmanına başvurulması önerilir."
+    },
+    {
+      "id": "sertlesme-medlineplus",
+      "konu": "Sertleşme sorunu (erektil disfonksiyon)",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "erektil disfonksiyon",
+        "sertleşme sorunu",
+        "iktidarsızlık"
+      ],
+      "baslik": "Erectile Dysfunction (Sertleşme Sorunu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/erectiledysfunction.html",
+      "dil": "en",
+      "ozet": "Sertleşme sorunu (erektil disfonksiyon), erkekte sertleşmeyi sağlamakta veya sürdürmekte güçlük çekilmesidir ve sık görülen bir cinsel işlev bozukluğudur. Yaşla daha sık görülür ama yaşlanmanın olağan bir sonucu değildir; damarların daralması veya diyabete bağlı sinir hasarı gibi altta yatan bir sağlık sorununun işareti olabilir ve kalp hastalığıyla ilişkili olabilir. Birçok erkekte ilaç tedavisi yeterlidir; egzersizi artırmak, kilo vermek ve sigarayı bırakmak gibi yaşam değişiklikleri, kegel egzersizleri, testosteron tedavisi, vakum cihazları ve penil implantlar da seçenekler arasındadır. Hekime başvurulmazsa altta yatan sorunlar tedavisiz kalabileceğinden tedaviye başlamadan önce hekime danışılmalıdır."
+    },
+    {
+      "id": "bebekishal-behcetuz",
+      "konu": "Bebek ve çocukta ishal, kusma ve sıvı kaybı",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "bebeğim ishal oldu",
+        "çocuğum kusuyor",
+        "bebekte ishal",
+        "çocukta ishal",
+        "bebekte kusma",
+        "sıvı kaybı",
+        "ağızdan sıvı tedavisi",
+        "ORS",
+        "bıngıldak çöktü"
+      ],
+      "baslik": "İshal",
+      "kurum": "T.C. Sağlık Bakanlığı SBÜ Dr. Behçet Uz Çocuk Hastalıkları ve Cerrahisi EAH",
+      "tur": "resmi",
+      "url": "https://behcetuzch.saglik.gov.tr/TR-107609/ishal.html",
+      "dil": "tr",
+      "ozet": "İshal, bağırsak hareketlerinin artması ve bağırsak içeriğinin emiliminin azalmasıyla dışkı miktarının fazlalaşmasıdır; asıl tehlike sıvı kaybıdır. Hafif sıvı kaybında çocuk canlı ve aktiftir, gözler çökük değildir, gözyaşı vardır, ağız ve dil nemlidir. Orta sıvı kaybında gözler içeri çökmüş, gözyaşı yok, ağız ve dil kurudur; vücut ağırlığının %5-10'u kaybedilmiştir. Ağır sıvı kaybında çocuk dalgındır, çimdiklenen deri çok zor eski haline döner ve ağırlığın %10'undan fazlası kaybedilmiştir. Evde eczanelerde bulunan ağızdan sıvı tedavisi tozu (ORS) verilmeli, anne sütü alan bebek emzirilmeye devam etmeli, 6 aydan büyük çocukta ek gıdalar sürdürülmeli, meyve suyu ve ishal kesici ilaç verilmemelidir. Ağızdan sıvı alamayacak kadar kusma veya ishal, kanlı dışkı, el ve ayakların soğuk ve soluk olması gibi şok bulguları, yüksek ateş veya günde 10'dan fazla kusma ya da ishal varsa hastaneye başvurulmalıdır."
+    },
+    {
+      "id": "bebekishal-medlineplus",
+      "konu": "Bebek ve çocukta ishal, kusma ve sıvı kaybı",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "bebekte ishal",
+        "bebekte sıvı kaybı",
+        "bebek bezi ıslanmıyor"
+      ],
+      "baslik": "Diarrhea in Infants (Bebeklerde İshal)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000691.htm",
+      "dil": "en",
+      "ozet": "Bebek dışkısı normalde yumuşak ve cıvıktır; ishalde dışkı sayısı aniden artar veya dışkı tamamen sulu olur ve çoğu zaman kendiliğinden geçen viral enfeksiyonlardan kaynaklanır. Ağlarken gözyaşının az olması veya hiç olmaması, her zamankinden az ıslak bez, hareketsizlik, huzursuzluk, ağız kuruluğu, çimdiklenince geri dönmeyen deri ve çökük gözler ya da bıngıldak sıvı kaybı belirtileridir. Emzirme veya mama tam koyulukta sürdürülmeli, gerekirse hekime danışarak ağızdan sıvı tedavisi verilmelidir; kusan bebekte 10-15 dakikada bir 1 çay kaşığı (5 ml) gibi küçük miktarlarla başlanır. Elma suyu, süt ürünleri, kızartmalar ve meyve sularından kaçınılmalıdır. 3 aydan küçük bebekte ishal, 6 saattir ıslak bez olmaması, 2-3 günden uzun süren ateş ve ishal, 8 saatte 8'den fazla dışkı, 24 saatten uzun süren kusma, dışkıda kan, sümük veya irin, belirgin hareketsizlik ya da karın ağrısı varsa hekime başvurulmalıdır."
+    },
+    {
+      "id": "asiyanetki-portal",
+      "konu": "Aşı yan etkileri",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "aşı yan etkileri",
+        "aşı sonrası ateş",
+        "aşı yeri şişti",
+        "aşıdan sonra kolum ağrıyor",
+        "aşı sonrası istenmeyen etki",
+        "aşı reaksiyonu"
+      ],
+      "baslik": "Aşı Sonrası İstenmeyen Etkiler",
+      "kurum": "T.C. Sağlık Bakanlığı Aşı Portalı",
+      "tur": "resmi",
+      "url": "https://asi.saglik.gov.tr/asie.html",
+      "dil": "tr",
+      "ozet": "Aşıdan sonra iğne yerinde ağrı, şişlik ve kızarıklık tüm aşılarda değişen oranlarda (%5-60) görülebilir ve genellikle 24-48 saatte kendiliğinden düzelir; soğuk uygulama ve ağrı kesici önerilir. Ateş, baş ağrısı, kas ağrısı ve iştahsızlık da aşıya göre değişen sıklıkta görülür; örneğin altılı karma aşıdan sonra %20-40 sıklıktadır ve 48-72 saatte düzelir. Hepatit A aşısından sonra %5'ten az sıklıkla ishal ve kusma görülebilir, 48 saatte düzelir; kızamık-kızamıkçık-kabakulak aşısından sonra %2-5 oranında 7-10. günde başlayan ve yaklaşık 2 gün süren döküntü olabilir. Aşı sonrası istenmeyen bir etki fark edildiğinde hekime başvurulmalıdır; bildirimler il sağlık müdürlüğü ve Sağlık Bakanlığı tarafından incelenir."
+    },
+    {
+      "id": "asiyanetki-medlineplus",
+      "konu": "Aşı yan etkileri",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "aşı güvenliği",
+        "aşılar güvenli mi",
+        "aşı otizm yapar mı"
+      ],
+      "baslik": "Vaccine Safety (Aşı Güvenliği)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/vaccinesafety.html",
+      "dil": "en",
+      "ozet": "Aşıların en sık yan etkileri kolda ağrı, yorgunluk veya hafif ateştir; bunlar genellikle birkaç gün içinde geçer ve çoğu zaman vücudun bağışıklık kazandığını gösterir. Ağır alerjik tepki gibi ciddi yan etkiler çok nadirdir ve her aşının olası yan etkileri farklıdır. Aşılar onaylanmadan önce laboratuvar çalışmaları ve binlerce gönüllüyle yapılan klinik araştırmalarla sıkı biçimde test edilir; onaydan sonra da üretim partileri test edilir ve güvenlik izlenmeye devam eder. Pek çok bilimsel çalışma aşılar ile otizm arasında bir bağlantı bulmamıştır."
+    },
+    {
+      "id": "eriskinasi-portal",
+      "konu": "Erişkin aşıları",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "erişkin aşıları",
+        "yetişkin aşıları",
+        "tetanos aşısı ne zaman",
+        "grip aşısı",
+        "zatürre aşısı",
+        "pnömokok aşısı",
+        "yaşlılara aşı",
+        "gebelikte aşı"
+      ],
+      "baslik": "Erişkin Aşılama",
+      "kurum": "T.C. Sağlık Bakanlığı Aşı Portalı",
+      "tur": "resmi",
+      "url": "https://asi.saglik.gov.tr/kimlere-asi-yapilir/eriskin-asilama.html",
+      "dil": "tr",
+      "ozet": "Daha önce aşılandığı kayıtlı olmayan erişkinlere 3 doz erişkin tipi difteri-tetanos (Td) aşısı yapılır; aşı serisini tamamlamış herkes 10 yılda bir Td aşısı olmalıdır. Grip aşısı 65 yaş ve üzerindekilere ücretsiz, kronik hastalığı olanlara sağlık raporuyla reçeteli olarak ve tüm sağlık çalışanlarına uygulanır. 65 yaş ve üzerindekilere zatürre, kan iltihabı ve menenjit gibi ciddi hastalıklardan korunmak için iki doz pnömokok aşısı önerilir. Kızamık-kızamıkçık-kabakulak aşısı gebe olmayan erişkinlere dört hafta arayla uygulanır. Gebelere tetanos ve grip aşısı önerilir; tetanos aşısı doğumdan en az 1 ay önce tamamlanmalıdır. Hepatit A ve B ile pnömokok aşıları risk gruplarına ücretsiz uygulanır."
+    },
+    {
+      "id": "eriskinasi-medlineplus",
+      "konu": "Erişkin aşıları",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "aşılar",
+        "aşı nasıl çalışır",
+        "yetişkin aşı takvimi"
+      ],
+      "baslik": "Vaccines (Aşılar)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/immunization.html",
+      "dil": "en",
+      "ozet": "Aşılar bağışıklık sistemine zararlı mikropları tanımayı ve onlara karşı savunmayı öğretir; iğne, sıvı, hap veya burun spreyi biçiminde olabilir ve virüs ile bakterilerin yaptığı hastalıklardan korur. Erişkinlerin hangi aşıları olması gerektiği yaşa, sağlık durumuna ve tıbbi geçmişe göre değişir; sağlık otoriteleri her yaş grubu için önerilen aşı takvimleri yayımlar. Aşılar onaylanmadan önce kapsamlı güvenlik testlerinden geçer."
+    },
+    {
+      "id": "seyahat-saglik",
+      "konu": "Seyahat sağlığı",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "seyahat sağlığı",
+        "yurt dışı seyahat aşı",
+        "seyahat aşıları",
+        "sıtma ilacı",
+        "sarı humma aşısı",
+        "hac umre aşısı",
+        "seyahat ishali"
+      ],
+      "baslik": "Seyahat Sağlığı El Kitabı Yayımlandı",
+      "kurum": "T.C. Sağlık Bakanlığı",
+      "tur": "resmi",
+      "url": "https://www.saglik.gov.tr/TR-2034/seyahat-sagligi-el-kitabi-yayimlandi.html",
+      "dil": "tr",
+      "ozet": "Yurt dışı seyahatte sağlık sorunlarıyla karşılaşmamak için seyahat öncesinde sağlık danışmanlığı alınmalıdır; mümkünse seyahatten 4-8 hafta önce Seyahat Sağlığı Merkezlerine başvurulmalı, seyahate günler kalmış olsa bile başvuru yapılabilir. Bu merkezlerde sağlık muayenesi, seyahat aşıları, sıtmaya karşı koruyucu ilaçlar ve yolculukta karşılaşılabilecek sağlık sorunlarıyla ilgili öneriler sunulur. Gidilecek ülkeye özgü riskler hakkında 7/24 hizmet veren Seyahat Sağlığı Danışma Hattı (444 77 34) aranabilir ve seyahatsagligi.gov.tr adresinden güncel bilgi alınabilir."
+    },
+    {
+      "id": "seyahat-medlineplus",
+      "konu": "Seyahat sağlığı",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "seyahat sağlığı",
+        "uçak yolculuğu pıhtı",
+        "musluk suyu içilir mi",
+        "jet lag"
+      ],
+      "baslik": "Traveler's Health (Seyahat Sağlığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/travelershealth.html",
+      "dil": "en",
+      "ozet": "Aşıların çoğunun etkili olması zaman aldığından seyahatten 4-6 hafta önce hekime görünülmelidir; gereken aşılar gidilecek yere, mevsime, yaşa, sağlık durumuna ve önceki aşılara göre değişir. Gelişmekte olan ülkelerde musluk suyu virüs, bakteri ve parazit içerebileceğinden yalnızca şişe veya arıtılmış su içilmeli, gerekirse su kaynatılmalıdır; yalnızca iyice pişmiş ve sıcak servis edilen yiyecekler yenmeli, yıkanmamış veya kabuğu soyulmamış çiğ meyve ve sebzelerden kaçınılmalıdır. Sivrisinek ve diğer böcek ısırıklarından korunmak, seyahat ishaline dikkat etmek gerekir; uzun uçak yolculukları bacak toplardamarlarında pıhtı (derin ven trombozu) riskini artırır."
+    },
+    {
+      "id": "dusme-hsgm",
+      "konu": "Yaşlılarda düşme ve ev güvenliği",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "yaşlılarda düşme",
+        "annem düştü",
+        "babam düştü",
+        "düşme riski",
+        "ev kazaları yaşlı",
+        "baston yürüteç",
+        "banyoda tutunma barı"
+      ],
+      "baslik": "Güvenli Çevre: Yaşlılık Döneminde Ev Kazalarının Önlenmesi",
+      "kurum": "T.C. Sağlık Bakanlığı Halk Sağlığı Genel Müdürlüğü",
+      "tur": "resmi",
+      "url": "https://hsgm.saglik.gov.tr/tr/yasli-sagligi/guvenli-cevre.html",
+      "dil": "tr",
+      "ozet": "Yaşlılık döneminde yaralanmaların çoğu evde olur ve büyük kısmı bilgisizlik, tedbirsizlik ve ihmal gibi önlenebilir nedenlerden kaynaklanır. İşitme cihazı, gözlük ve baston gibi yardımcı araçlar yaşa bağlı yetersizlikleri giderir; üç ayaklı baston ve yürüteç dengeyi destekleyerek düşmeleri azaltır. Merdivenin başında ve sonunda elektrik düğmesi bulunmalı, zemin kaymaz malzemeden olmalı, kayabilecek halı ve kilim serilmemelidir. Banyoda 90-100 cm yükseklikte, 4-5 cm çapında tutunma barları, oturaklı duş ve kaymayan fayans tercih edilmeli; merdiven basamakları en fazla 14 cm yüksekliğinde ve 28-30 cm derinliğinde ve kaymaz olmalıdır. İlaçlar serin, doğrudan ışık almayan yerlerde ve kendi kutularında saklanmalıdır."
+    },
+    {
+      "id": "dusme-medlineplus",
+      "konu": "Yaşlılarda düşme ve ev güvenliği",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "düşme",
+        "yaşlılarda düşme",
+        "kalça kırığı yaşlı",
+        "düşmeyi önleme"
+      ],
+      "baslik": "Falls (Düşmeler)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/falls.html",
+      "dil": "en",
+      "ozet": "Yaşlılarda düşme riski daha yüksektir ve düştüklerinde özellikle kemik erimesi varsa kemik kırılma olasılığı artar; özellikle kalça kırığı sakatlığa ve bağımsızlığın kaybına yol açabilir. Denge bozukluğu, baş dönmesi, kafa karışıklığı veya yavaşlık yapan ilaçlar, görme sorunları, alkol, bacaklarda güçsüzlük, düşük tansiyon, diyabet ve sinir hasarı gibi kronik hastalıklar, yavaşlayan refleksler ve takılmaya neden olan eşyalar riski artırır. Düzenli egzersiz kasları güçlendirip dengeyi geliştirerek ve kemikleri sağlam tutarak düşme riskini azaltır; düzenli göz muayenesi, evdeki tehlikelerin kaldırılması ve tırabzan takılması, yeterli kalsiyum ve D vitamini alınması önerilir."
     }
   ],
   "kategoriler": [

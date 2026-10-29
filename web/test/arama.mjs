@@ -67,6 +67,10 @@ const CASES = [
   ["kasığımda şişlik var öksürünce artıyor", /Kasık fıtığı/],
   ["hıçkırığım geçmiyor", /Hıçkırık/],
   ["dizim kilitlendi", /Menisküs/],
+  ["adetim gecikti hamile miyim", /Gebelik belirtileri/],
+  ["bebeğim ishal oldu", /Bebek ve çocukta ishal/],
+  ["aşıdan sonra kolum şişti", /Aşı yan etkileri/],
+  ["annem düştü", /düşme/],
   [form("Bende değişiklik", "cilt"), /Benler/],
 ];
 
