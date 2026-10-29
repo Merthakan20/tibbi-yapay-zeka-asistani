@@ -1,6 +1,6 @@
 {
   "aciklama": "Güvenilir tıbbi kaynakların Türkçe özetleri. Özetler kaynak sayfalardan derlenmiştir; asıl metin için bağlantıya bakın.",
-  "guncelleme": "2026-10-29",
+  "guncelleme": "2026-10-30",
   "kaynaklar": [
     {
       "id": "hipertansiyon-hsgm",
@@ -9501,6 +9501,194 @@
       "url": "https://medlineplus.gov/falls.html",
       "dil": "en",
       "ozet": "Yaşlılarda düşme riski daha yüksektir ve düştüklerinde özellikle kemik erimesi varsa kemik kırılma olasılığı artar; özellikle kalça kırığı sakatlığa ve bağımsızlığın kaybına yol açabilir. Denge bozukluğu, baş dönmesi, kafa karışıklığı veya yavaşlık yapan ilaçlar, görme sorunları, alkol, bacaklarda güçsüzlük, düşük tansiyon, diyabet ve sinir hasarı gibi kronik hastalıklar, yavaşlayan refleksler ve takılmaya neden olan eşyalar riski artırır. Düzenli egzersiz kasları güçlendirip dengeyi geliştirerek ve kemikleri sağlam tutarak düşme riskini azaltır; düzenli göz muayenesi, evdeki tehlikelerin kaldırılması ve tırabzan takılması, yeterli kalsiyum ve D vitamini alınması önerilir."
+    },
+    {
+      "id": "testis-acibadem",
+      "konu": "Testis ağrısı ve testis torsiyonu",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "testis ağrısı",
+        "testisim ağrıyor",
+        "yumurtalık ağrısı erkek",
+        "testis şişmesi",
+        "testis torsiyonu",
+        "epididimit",
+        "orşit"
+      ],
+      "baslik": "Testis Ağrısı Nedir? Testis Ağrısı Neden Olur?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/testis-agrisi/",
+      "dil": "tr",
+      "ozet": "Testis ağrısının başlıca nedenleri testisin kendi etrafında dönmesi (torsiyon), sperm kanallarının iltihabı (epididimit), testis iltihabı (orşit), darbe ve yaralanmalar, kasık fıtığı, testis çevresindeki damarların genişlemesi (varikosel) ve kasığa yansıyan böbrek taşı ağrısıdır. Ani ve şiddetli ağrı acil müdahale gerektirebilir; özellikle torsiyon zamanında tedavi edilmezse testis kaybedilebilir. Ani başlayan şiddetli ağrı, morarma, şişlik veya dayanılmaz ağrıda ve çocuklarda her testis ağrısında hemen hekime başvurulmalıdır. Torsiyonda ani ve şiddetli ağrı, şişlik, bulantı ve kusma, testisin normalden yukarıda durması ve torbada kızarıklık görülür; en sık ergenlik döneminde olur. Acil olmayan hafif ağrılarda dinlenme, soğuk kompres, ağrı kesici ve destekleyici iç çamaşırı yardımcı olabilir."
+    },
+    {
+      "id": "testis-medlineplus",
+      "konu": "Testis ağrısı ve testis torsiyonu",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "testis torsiyonu",
+        "ani testis ağrısı",
+        "testis ameliyatı"
+      ],
+      "baslik": "Testicular Torsion (Testis Torsiyonu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000517.htm",
+      "dil": "en",
+      "ozet": "Testis torsiyonu, testisi taşıyan kordonun dönerek kan akımını kesmesidir; en sık yaşamın ilk yılında ve ergenliğin başında görülür, ancak daha ileri yaşlarda da olabilir. Bir testiste ani ve şiddetli ağrı, torbanın bir tarafında şişlik, bulantı veya kusma başlıca belirtilerdir. Tedavisi ameliyattır: kordon geri çevrilir ve testis torbanın iç duvarına dikilir; diğer testis de genellikle önlem olarak sabitlenir. Ameliyat 6 saat içinde yapılırsa testisin çoğu kurtarılabilir; kan akımı 6 saatten uzun süre azalırsa testisin alınması gerekme olasılığı artar. Belirtiler olduğunda vakit kaybetmeden acil servise gidilmelidir."
+    },
+    {
+      "id": "pankreatit-acibadem",
+      "konu": "Pankreatit (pankreas iltihabı)",
+      "kategori": "Sindirim",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "pankreatit",
+        "pankreas iltihabı",
+        "akut pankreatit",
+        "sırta vuran karın ağrısı",
+        "kuşak gibi karın ağrısı",
+        "pankreas"
+      ],
+      "baslik": "Akut Pankreatit Nedir? Akut Pankreatit Belirtileri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/akut-pankreatit/",
+      "dil": "tr",
+      "ozet": "Akut pankreatit, pankreasın ani iltihaplanmasıdır ve şiddetli karın ağrısı, bulantı ve kusmayla seyreder. Batı Avrupa'da olguların %90'ından safra taşları ve aşırı alkol tüketimi sorumludur; enfeksiyonlar, bazı ilaçlar ve kalıtsal bozukluklar da neden olabilir. Ağrı genellikle aniden başlar, karnın üst kısmındadır ve sıklıkla kuşak gibi sırta yayılır. Hastalar hastanede tedavi edilmelidir; tedavinin temeli ağrı kontrolü ve damardan sıvı verilmesidir. Ağır olgular yoğun bakım gerektirebilir ve hastaların %20-25'inde cerrahi girişim gerekir."
+    },
+    {
+      "id": "pankreatit-medlineplus",
+      "konu": "Pankreatit (pankreas iltihabı)",
+      "kategori": "Sindirim",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "pankreatit",
+        "kronik pankreatit",
+        "yağlı dışkı"
+      ],
+      "baslik": "Pancreatitis (Pankreatit)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/pancreatitis.html",
+      "dil": "en",
+      "ozet": "Akut pankreatit aniden başlar ve tedaviyle genellikle birkaç günde düzelir; kronik pankreatit ise düzelmez, giderek kötüleşir ve pankreasta kalıcı hasar bırakır. Akut pankreatit sıklıkla safra taşlarından kaynaklanır; kronik pankreatit çoğunlukla uzun süreli alkol kullanımına bağlıdır, kistik fibrozis, kalıtsal hastalıklar, kanda yüksek kalsiyum veya yağ, bazı ilaçlar ve bağışıklık sistemi hastalıkları da neden olabilir. Akut pankreatitte karnın üst kısmında şiddetli ağrı, bulantı ve kusma olur; kronik pankreatitte bulantı, kusma, kilo kaybı ve yağlı dışkı görülür. Her iki tür de başlangıçta hastanede damardan sıvı ve ağrı tedavisi gerektirir; kronik pankreatitte ayrıca sindirim enzimi ilaçları, beslenme değişiklikleri ve sigara ile alkolün bırakılması gerekir. Her iki biçim de ciddidir ve komplikasyonlara yol açabilir."
+    },
+    {
+      "id": "siroz-acibadem",
+      "konu": "Karaciğer sirozu",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "siroz",
+        "karaciğer sirozu",
+        "karında su toplanması",
+        "asit",
+        "karaciğer yetmezliği",
+        "karaciğer nakli"
+      ],
+      "baslik": "Siroz Nedir? Siroz Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/siroz/",
+      "dil": "tr",
+      "ozet": "Siroz, karaciğer dokusunun hasar görerek yerini nedbe dokusuna bıraktığı ilerleyici ve kronik bir hastalıktır. Uzun süreli alkol kullanımı, hepatit B ve C, alkole bağlı olmayan yağlı karaciğer hastalığı, otoimmün hepatit ve bazı kalıtsal hastalıklar başlıca nedenlerdir. Erken dönemde belirti vermeyebilir ya da yorgunluk, iştahsızlık, kilo kaybı ve bulantı olabilir; ileri dönemde sarılık, karında sıvı birikmesi, bacaklarda şişlik, kolay morarma ve kanama, kan kusma veya siyah dışkı ve kafa karışıklığı-unutkanlık görülür. Karaciğer yetmezliği, portal hipertansiyon, karaciğer kanseri, böbrek yetmezliği ve enfeksiyonlar gelişebilir. Hastalık geri döndürülemez; tedavi nedeni kontrol etmeye ve ilerlemeyi yavaşlatmaya yöneliktir, ileri durumlarda karaciğer nakli gerekebilir. Alkolü sınırlamak, hepatit B aşısı, sağlıklı beslenme ve egzersiz korunmaya yardımcı olur."
+    },
+    {
+      "id": "siroz-medlineplus",
+      "konu": "Karaciğer sirozu",
+      "kategori": "Sindirim",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "siroz",
+        "karaciğer sirozu",
+        "özofagus varisi"
+      ],
+      "baslik": "Cirrhosis (Siroz)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000255.htm",
+      "dil": "en",
+      "ozet": "Siroz, karaciğerin nedbeleşerek işlevini yitirmesidir ve kronik karaciğer hastalığının son evresidir. En sık nedenleri hepatit B veya C, uzun süreli aşırı alkol kullanımı ve şişmanlık, yüksek tansiyon, diyabet ve yüksek kolesterolle ilişkili yağlı karaciğer hastalığıdır. Erken dönemde yorgunluk, iştahsızlık, bulantı ve deride örümcek ağı gibi damarlar; ileri dönemde sıvı birikmesi, sarılık, kolay morarma ve sindirim kanalı damarlarından kanama görülür. Karında su toplanması, yemek borusunda genişlemiş damarlar (varis) ve kanama, portal hipertansiyon, böbrek yetmezliği, karaciğer kanseri ve kafa karışıklığı (hepatik ensefalopati) gelişebilir. Alkol tamamen bırakılmalı, az tuzlu ve az yağlı beslenilmeli, grip, COVID-19, hepatit A-B ve pnömokok aşıları yaptırılmalı ve kullanılan tüm ilaç, bitki ve takviyeler hekime söylenmelidir. Kan kusma, makattan kanama, 38,3°C üzeri ateş, karında belirgin şişme, artan kafa karışıklığı veya hızla artan sarılıkta hemen 112 aranmalıdır."
+    },
+    {
+      "id": "hiv-ofdh",
+      "konu": "HIV ve AIDS",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "HIV",
+        "AIDS",
+        "HIV testi",
+        "HIV nasıl bulaşır",
+        "HIV bulaşır mı",
+        "aids belirtileri"
+      ],
+      "baslik": "HIV / AİDS",
+      "kurum": "T.C. Sağlık Bakanlığı Of Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://ofdh.saglik.gov.tr/TR-190097/hiv--aids.html",
+      "dil": "tr",
+      "ozet": "HIV, bağışıklık sistemini bozan virüstür; virüsün vücutta bulunması AIDS demek değildir ve HIV ile yaşayan kişi yıllarca hastalanmadan sağlıklı yaşayabilir. AIDS, HIV'in ilerlemiş evresinde ender görülen enfeksiyonların ve kanserlerin bir arada ortaya çıkmasıdır. HIV prezervatifsiz vajinal veya anal cinsel ilişkiyle, ortak kullanılan enjektörlerle, gebelik, doğum ya da anne sütüyle anneden bebeğe ve enfekte kan nakliyle bulaşır. Dokunma, sarılma, el sıkışma, nezaket öpücüğü, aynı havuz, tuvalet, tabak ve çatal-bıçağı paylaşmak, öksürük, hapşırık, gözyaşı, böcek veya hayvan ısırığıyla bulaşmaz. HIV ilaçları virüsün çoğalmasını engeller ama virüsü tamamen yok edemez; genellikle üç veya daha fazla ilaç birlikte kullanılır. Henüz etkili bir aşı yoktur; korunmada prezervatif kullanımı önemlidir."
+    },
+    {
+      "id": "hiv-medlineplus",
+      "konu": "HIV ve AIDS",
+      "kategori": "Enfeksiyonlar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "HIV",
+        "HIV tedavisi",
+        "PEP",
+        "PrEP",
+        "temas sonrası koruma"
+      ],
+      "baslik": "HIV and AIDS (HIV ve AIDS)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/hiv.html",
+      "dil": "en",
+      "ozet": "HIV, enfeksiyonla savaşan akyuvarları yok ederek bağışıklık sistemine zarar veren bir virüstür; AIDS bu hasarın ağırlaştığı son evredir. En sık korunmasız cinsel ilişkiyle, ayrıca ortak iğne kullanımı, kan teması ve gebelik, doğum veya emzirme sırasında anneden bebeğe bulaşır. Erken dönemde 2-4 hafta süren ateş, titreme, döküntü, gece terlemesi, kas ağrıları, boğaz ağrısı, yorgunluk ve lenf bezi şişmesi olabilir; sonraki dönemde belirti olmayabilir. Kan testiyle tanı konur. Antiretroviral tedavi (ART) HIV'i kronik, kontrol edilebilir bir hastalığa dönüştürür ve bulaştırma riskini azaltır; erken başlayıp düzenli kullanan çoğu kişi uzun ve sağlıklı yaşar. Prezervatif, yüksek risk taşıyanlarda günlük koruyucu ilaç (PrEP) ve olası bir temastan sonra 72 saat içinde başlanması gereken acil koruyucu tedavi (PEP) bulaşmayı önler."
+    },
+    {
+      "id": "basiyarasi-acibadem",
+      "konu": "Bası yarası (yatak yarası)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "yatak yarası",
+        "bası yarası",
+        "dekubit",
+        "kuyruk sokumunda yara",
+        "yatalak hasta bakımı",
+        "havalı yatak"
+      ],
+      "baslik": "Yatak Yarası (Bası Yarası) Nedir, Tedavisi Nasıl Yapılır?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/yatak-yarasi-tedavisi-nasil-yapilir/",
+      "dil": "tr",
+      "ozet": "Yatak yarası (bası yarası), kemik çıkıntıların üzerindeki deri ve deri altı dokularda basınç ve sürtünmeye bağlı gelişen yaralardır. Hareketi azalmış, felçli veya yatağa bağlı kişilerde, bilinci kapalı hastalarda, uzun ameliyat geçirenlerde ve hareketi kısıtlı yaşlılarda görülür; en sık kuyruk sokumu, kalçalar, topuklar, kürek kemikleri, omuz başları, baş ve ayak bileği çıkıntılarında oluşur. Yatan hasta 2 saati geçmeyen aralıklarla, oturan hasta yaklaşık 45 dakikada bir pozisyon değiştirmeli; basınç azaltıcı yatak kullanılmalı, başı gerekmedikçe 30 dereceden fazla kaldırılmamalı, cilt temiz ve kuru tutulmalı, proteinli beslenmeye dikkat edilmelidir. Tedavide yara temizliği, enfeksiyonda antibiyotik, negatif basınçlı kapama ve gerekirse cerrahi uygulanır. Enfeksiyon belirtileri veya ateş olursa hekime başvurulmalıdır."
+    },
+    {
+      "id": "basiyarasi-medlineplus",
+      "konu": "Bası yarası (yatak yarası)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "bası yarası",
+        "yatak yarası önleme",
+        "tekerlekli sandalye yara"
+      ],
+      "baslik": "Pressure Sores (Bası Yaraları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/pressuresores.html",
+      "dil": "en",
+      "ozet": "Bası yaraları, uzun süre aynı pozisyonda kalmaya bağlı deri hasarıdır ve sıklıkla ayak bilekleri, topuklar ve kalçalar gibi kemikli bölgelerde oluşur. Yatağa bağlı olanlar, tekerlekli sandalye kullananlar ve kendi pozisyonunu değiştiremeyenler risk altındadır. Deriyi temiz ve kuru tutmak, pozisyonu iki saatte bir değiştirmek ve yastık gibi basıncı azaltan ürünler kullanmak önler. İleri evre yaralar yavaş iyileştiği için erken tedavi önemlidir; bası yaraları bazıları hayatı tehdit eden ciddi enfeksiyonlara yol açabilir."
     }
   ],
   "kategoriler": [

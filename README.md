@@ -20,7 +20,7 @@ Güvenilir kaynaklara dayanan, Claude (Anthropic) ile çalışan Türkçe tıbbi
 
 - **Aciliyet göstergesi:** Her şikayet 4 basamakta değerlendirilir: evde izlem, aile hekimi, aynı gün doktor, acil (112).
 - **Randevu yönlendirmesi:** Gidilecek bölümü MHRS'deki adıyla önerir; MHRS, ALO 182 ve 112'ye tek dokunuşla yönlendirir. Randevuyu kullanıcı adına almaz.
-- **Kaynaklı cevaplar:** 227 konu ve 467 kaynak özetinden oluşan kütüphaneye dayanır (Sağlık Bakanlığı, üniversite hastaneleri, meslek dernekleri, özel hastaneler, MedlinePlus). Bilginin yanında `[1]`, `[2]` ile kaynak linki verir.
+- **Kaynaklı cevaplar:** 232 konu ve 477 kaynak özetinden oluşan kütüphaneye dayanır (Sağlık Bakanlığı, üniversite hastaneleri, meslek dernekleri, özel hastaneler, MedlinePlus). Bilginin yanında `[1]`, `[2]` ile kaynak linki verir.
 - **Tahlil yorumu:** PDF ya da fotoğraf yüklenir; değerler referans aralığı çubuklarına dönüşür, düşük/yüksek/kritik değerler renkle ayrılır.
 - **Tahlil geçmişi ve e-Nabız aktarımı:** e-Nabız'dan veya laboratuvardan indirilen PDF okunur, kaydetmeden önce kullanıcıya onaylatılır; her test için tarihler arası grafik çizilir.
 - **İlaç etkileşimi kontrolü:** Birlikte kullanılan ilaçlar (ticari adıyla da) girilir; asistan etken maddeleri, bilinen etkileşimleri derecesiyle, aynı etken maddenin iki kez alınmasını, besin/alkol ve profile göre uyarıları gösterir. Yapay zekâ değerlendirmesidir; eczacı ve hekim kontrolünün yerini tutmaz.

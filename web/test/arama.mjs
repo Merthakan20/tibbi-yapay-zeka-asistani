@@ -71,6 +71,9 @@ const CASES = [
   ["bebeğim ishal oldu", /Bebek ve çocukta ishal/],
   ["aşıdan sonra kolum şişti", /Aşı yan etkileri/],
   ["annem düştü", /düşme/],
+  ["testisim aniden ağrıyor", /Testis/],
+  ["sırtıma vuran şiddetli karın ağrısı", /Pankreatit|Safra/],
+  ["hiv nasıl bulaşır", /HIV/],
   [form("Bende değişiklik", "cilt"), /Benler/],
 ];
 
