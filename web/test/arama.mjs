@@ -79,6 +79,8 @@ const CASES = [
   ["ayaklarım şişiyor", /ödem/],
   ["erken boşalma", /Erken boşalma/],
   ["renk körlüğü", /Renk körlüğü/],
+  ["çocuğumda bit var", /Baş biti/],
+  ["tüm ailede gece kaşıntı var", /Uyuz/],
   [form("Bende değişiklik", "cilt"), /Benler/],
 ];
 

@@ -2932,7 +2932,7 @@ Kurallar:
   function scrollDown() { el.chat.scrollTop = el.chat.scrollHeight; }
 
   // ------------------------------------------------------------------ Bilgi bankası (BM25)
-  const STOP = new Set("ve veya ile de da ki bir bu şu o için gibi daha çok en mi mı mu mü ne nasıl neden ama fakat ise olan olarak olur olabilir var yok her hangi benim bana beni bende benden bence benimle sen siz biz ben kendi kendim kendimi kendime kendini kendine iyi yarın yarından bugün şimdi artık itibaren önce sonra biraz hep hepsi hepsini tane gibi istiyorum istemiyorum düşünüyorum hissediyorum gitsem gideyim yapayım alayım şey şikayetim şikayetimiz bölgesi süre şiddet başladı çıktı gelir nedir neler nelerdir nelerde birkaç sürekli".split(" "));
+  const STOP = new Set("ve veya ile de da ki bir bu şu o için gibi daha çok en mi mı mu mü ne nasıl neden ama fakat ise olan olarak olur olabilir var yok her hangi benim bana beni bende benden bence benimle bitti bitmedi bitiyor bitince bitmeden bitirdim sen siz biz ben kendi kendim kendimi kendime kendini kendine iyi yarın yarından bugün şimdi artık itibaren önce sonra biraz hep hepsi hepsini tane gibi istiyorum istemiyorum düşünüyorum hissediyorum gitsem gideyim yapayım alayım şey şikayetim şikayetimiz bölgesi süre şiddet başladı çıktı gelir nedir neler nelerdir nelerde birkaç sürekli".split(" "));
   // Türkçe ekleri ayıkla ("başım ağrıyor" ile "baş ağrısı" aynı köke insin); I=ı/i/u/ü, A=a/e, D=d/t
   const SUFFIXES = (() => {
     const out = [], expand = (p) => {
