@@ -3040,7 +3040,7 @@ Kurallar:
   // Düzensiz biçimler: ünlü düşmesi ("karnım" → karın) ve ünsüz yumuşaması ("kalbim" → kalp)
   const DROPPED = { göğs: "göğüs", karn: "karın", ağz: "ağız", burn: "burun", boyn: "boyun", beyn: "beyin", omz: "omuz", bağır: "bağırsak", kalb: "kalp" };
   // Bu kökler kısaltılmaz ("boyun" → "boy" olmasın, "makatımda" → "mak" olmasın)
-  const KEEP = new Set([...Object.values(DROPPED), "makat", "sırt", "kist", "yanık", "vitamin", "kansız", "çarpıntı"]);
+  const KEEP = new Set([...Object.values(DROPPED), "makat", "sırt", "kist", "yanık", "vitamin", "kansız", "çarpıntı", "kasık"]);
   const stems = new Map();
   function stem(w) {
     if (stems.has(w)) return stems.get(w);
