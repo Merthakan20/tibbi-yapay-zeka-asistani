@@ -551,6 +551,11 @@ a.btn.er { background: var(--t-er); border-color: var(--t-er); color: #fff; text
 .aid-fig .f-txt { fill: var(--ink); font: 500 12.5px var(--f-body); }
 .aid-fig .f-no { fill: var(--t-er); font: 600 12px var(--f-body); }
 .aid-fig .f-alarm { fill: var(--t-er); font: 700 15px var(--f-display); }
+.aid-photo { margin: 14px 0 6px; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--surface-2); }
+.aid-photo img { display: block; width: 100%; max-height: 340px; object-fit: cover; background: var(--surface-2); }
+.aid-photo figcaption { display: grid; gap: 2px; padding: 8px 12px 10px; font-size: 13.5px; color: var(--ink); }
+.aid-photo small { font-size: 11.5px; color: var(--ink-2); }
+.aid-photo small a { color: var(--ink-2); }
 .aid-src { margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 12.5px; color: var(--ink-2); }
 .aid-src a { color: var(--accent); }
 @media (max-width: 560px) { .aid-grid { grid-template-columns: 1fr; gap: 8px; } .aid-card { padding: 10px 12px; } .aid-ico { width: 38px; height: 38px; } .aid-title { font-size: 20px; } }
@@ -2193,6 +2198,8 @@ Kurallar:
     box.append(top, grid, leg);
     return box;
   }
+  // İlk yardım fotoğrafları: Wikimedia Commons, serbest lisanslı (künye kartta). Dosyalar ilkyardim/ klasöründe, 720 px'e küçültüldü.
+  const AID_PHOTO = {"tyd": {"alt": "Eğitim mankeninde kalp masajı: eller göğsün ortasında üst üste.", "cap": "Eğitim mankeninde temel yaşam desteği çalışması", "by": "US Army Africa from Vicenza, Italy", "lic": "CC BY 2.0", "licurl": "https://creativecommons.org/licenses/by/2.0", "page": "https://commons.wikimedia.org/wiki/File:Dil_Chora_Hospital,_Dire_Dawa,_Ethiopia,_2010_(5117158873).jpg"}, "bogulma": {"alt": "Eğitim mankeninde Heimlich: yardım eden kişi arkada, kollarını bele sarmış, yumruğu göbeğin hemen üstünde.", "cap": "Eğitim mankeninde Heimlich çalışması", "by": "Sgt. 1st Class Malcolm McClendon", "lic": "Kamu malı", "licurl": "", "page": "https://commons.wikimedia.org/wiki/File:Angeline_Sanchez,_a_newly_joined_Texas_State_Guardsman,_practices_the_Heimlich_Maneuver_on_a_dummy.jpg"}, "nobet": {"alt": "Yan yatırılmış kişi: üstteki bacak dizden bükülü, baş hafif geride, ağız yere doğru.", "cap": "Yan yatırma (koma pozisyonu), 3D görsel", "by": "Grummelbacke", "lic": "CC0", "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "page": "https://commons.wikimedia.org/wiki/File:Stabile_seitenlage.png"}, "anafilaksi": {"alt": "Adrenalin oto-enjektörü uyluğun dış yan yüzüne dik olarak bastırılıyor.", "cap": "Adrenalin kaleminin uyluğa uygulanması", "by": "AngelHM", "lic": "CC BY-SA 4.0", "licurl": "https://creativecommons.org/licenses/by-sa/4.0", "page": "https://commons.wikimedia.org/wiki/File:Adrenalina_autoinyector7.JPG"}, "kene": {"alt": "Kene ince uçlu cımbızla deriye en yakın yerinden tutuluyor.", "cap": "Kenenin cımbızla çıkarılması", "by": "Sarwar Z, Osborne AF, Shah C, Rathore MH.", "lic": "CC BY 4.0", "licurl": "https://creativecommons.org/licenses/by/4.0", "page": "https://commons.wikimedia.org/wiki/File:Tick_paralysis.jpg"}, "bocek": {"alt": "Bal arısı sokarken: iğne deride kalır, kazıyarak çıkarılır.", "cap": "Bal arısının iğnesi deride kalır", "by": "Waugsberg", "lic": "CC BY-SA 3.0", "licurl": "http://creativecommons.org/licenses/by-sa/3.0/", "page": "https://commons.wikimedia.org/wiki/File:Stechende_Biene_12a.jpg"}, "sicak": {"alt": "Sıcak çarpması tatbikatı: kişi gölgeye alınmış, ekip onu soğutuyor.", "cap": "Sıcak çarpması tatbikatı: gölgeye alma ve soğutma", "by": "BLM Nevada", "lic": "Kamu malı", "licurl": "", "page": "https://commons.wikimedia.org/wiki/File:Advanced_treatment_for_heat_illness_(27377402910).jpg"}, "kirik": {"alt": "Kolu üçgen sargıyla askıya alınmış bir çocuk (eski bir ilk yardım dersinden).", "cap": "Kırık şüphesinde kolu askıyla sabitleme (eski bir ilk yardım dersi)", "by": "State Government Photographer", "lic": "CC0", "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "page": "https://commons.wikimedia.org/wiki/File:First_Aid_Class(GN00134).jpg"}, "hipoglisemi": {"alt": "Kan şekeri ölçüm cihazı, test şeritleri ve iğne kalemi.", "cap": "Kan şekeri ölçüm seti", "by": "Confidence24", "lic": "CC BY-SA 4.0", "licurl": "https://creativecommons.org/licenses/by-sa/4.0", "page": "https://commons.wikimedia.org/wiki/File:Accu-Answer_blood_glucose_meter_with_accessories.jpg"}};
   // İlk yardım şemaları: kendi çizimimiz (SVG, sayfanın içinde; internetsiz de görünür). Yalnızca karttaki adımları gösterir.
   // Renkler temadan gelir: .f-body vücut, .f-line çizgi, .f-act yapılacak hareket (ok), .f-txt yazı, .f-no yapılmayacak
   const AID_FIG = {
@@ -2342,7 +2349,21 @@ Kurallar:
     c.kaynak.forEach((k, i) => { const a = document.createElement("a"); a.href = k.u; a.target = "_blank"; a.rel = "noopener"; a.textContent = k.k; if (i) src.append(" · "); src.appendChild(a); });
     box.append(back, head, warn);
     if (c.tel.length) box.appendChild(tels);
-    if (AID_FIG[c.id]) { const fig = document.createElement("figure"); fig.className = "aid-fig"; fig.innerHTML = AID_FIG[c.id]; box.appendChild(fig); }
+    const svgFig = () => { const fig = document.createElement("figure"); fig.className = "aid-fig"; fig.innerHTML = AID_FIG[c.id]; return fig; };
+    const ph = AID_PHOTO[c.id];
+    if (ph) {
+      // Gerçek fotoğraf; yüklenemezse (çevrimdışı, dosya yok) varsa çizime, yoksa hiçbir şeye düşer
+      const fig = document.createElement("figure"); fig.className = "aid-photo";
+      const img = document.createElement("img"); img.src = "ilkyardim/" + c.id + ".jpg"; img.alt = ph.alt; img.loading = "lazy"; img.decoding = "async";
+      img.onerror = () => { if (AID_FIG[c.id]) fig.replaceWith(svgFig()); else fig.remove(); };
+      const cap = document.createElement("figcaption");
+      const t = document.createElement("span"); t.textContent = ph.cap;
+      const cr = document.createElement("small"); cr.append("Görsel: " + ph.by + " · ");
+      const lic = document.createElement(ph.licurl ? "a" : "span"); lic.textContent = ph.lic; if (ph.licurl) { lic.href = ph.licurl; lic.target = "_blank"; lic.rel = "noopener"; }
+      const src = document.createElement("a"); src.href = ph.page; src.target = "_blank"; src.rel = "noopener"; src.textContent = "Wikimedia Commons";
+      cr.append(lic, " · ", src);
+      cap.append(t, cr); fig.append(img, cap); box.appendChild(fig);
+    } else if (AID_FIG[c.id]) box.appendChild(svgFig());
     box.append(h1, ol, h2, ul, src);
     return box;
   }

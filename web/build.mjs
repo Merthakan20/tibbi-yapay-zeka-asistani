@@ -2,7 +2,7 @@
 //   node build.mjs           → web/dist  Cloudflare Workers sürümü: asistan sunucu üzerinden (API anahtarı gerekir)
 //   node build.mjs --static  → web/site  Ücretsiz statik site (GitHub Pages): asistan yok, sorulara kütüphaneden
 //                                        kaynaklar gösterilir, "Asistana sor" claude.ai sürümünü açar
-import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, copyFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, copyFileSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -104,13 +104,18 @@ writeFileSync(join(out, "index.html"), html);
 const lib = readFileSync(join(root, "kaynaklar/kaynaklar.json"));
 writeFileSync(join(out, "kaynaklar.json"), lib);
 for (const f of ["muscles.json", "bones.json", "LICENSE.md"]) copyFileSync(join(root, "artifact/models", f), join(out, "models", f));
+// İlk yardım fotoğrafları (kartlarda; çevrimdışı önbelleğe de alınır)
+cpSync(join(root, "artifact/ilkyardim"), join(out, "ilkyardim"), { recursive: true });
+const aidPhotos = readdirSync(join(root, "artifact/ilkyardim")).filter((f) => f.endsWith(".jpg")).sort().map((f) => "ilkyardim/" + f);
 if (STATIC) writeFileSync(join(out, ".nojekyll"), "");   // GitHub Pages dosyaları olduğu gibi sunsun
 
 // Çevrimdışı önbellek: sürüm her yayında değişir; açılışta önbelleğe alınacak dosyalar hedefe göre
 const shell = STATIC
-  ? ["./", "kaynaklar.json", "manifest.webmanifest", "icons/icon-192.png"]
-  : ["./", "bridge.js", "kaynaklar.json", "manifest.webmanifest", "kvkk.html", "icons/icon-192.png"];
-const surum = createHash("sha256").update(html).update(lib).update(readFileSync(join(here, "static/bridge.js"))).digest("hex").slice(0, 12);
+  ? ["./", "kaynaklar.json", "manifest.webmanifest", "icons/icon-192.png", ...aidPhotos]
+  : ["./", "bridge.js", "kaynaklar.json", "manifest.webmanifest", "kvkk.html", "icons/icon-192.png", ...aidPhotos];
+const hash = createHash("sha256").update(html).update(lib).update(readFileSync(join(here, "static/bridge.js")));
+for (const f of aidPhotos) hash.update(readFileSync(join(out, f)));
+const surum = hash.digest("hex").slice(0, 12);
 const swPath = join(out, "sw.js");
 writeFileSync(swPath, readFileSync(swPath, "utf8").replaceAll("__SURUM__", surum).replaceAll("__SHELL__", JSON.stringify(shell)));
 console.log(`web/${STATIC ? "site" : "dist"} hazır · ${STATIC ? "ücretsiz statik site" : "Workers sürümü"} · sürüm ${surum}`);
