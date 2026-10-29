@@ -74,6 +74,11 @@ const CASES = [
   ["testisim aniden ağrıyor", /Testis/],
   ["sırtıma vuran şiddetli karın ağrısı", /Pankreatit|Safra/],
   ["hiv nasıl bulaşır", /HIV/],
+  ["sol bacağım şişti ağrıyor", /ven trombozu/],
+  ["sağ bacağım şişti", /ven trombozu/],
+  ["ayaklarım şişiyor", /ödem/],
+  ["erken boşalma", /Erken boşalma/],
+  ["renk körlüğü", /Renk körlüğü/],
   [form("Bende değişiklik", "cilt"), /Benler/],
 ];
 

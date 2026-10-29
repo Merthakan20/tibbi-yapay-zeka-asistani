@@ -1135,7 +1135,11 @@
         "tek bacakta şişlik",
         "baldır ağrısı",
         "pulmoner emboli",
-        "akciğer pıhtısı"
+        "akciğer pıhtısı",
+        "sol bacağım şişti",
+        "sağ bacağım şişti",
+        "bacağım şişti ağrıyor",
+        "baldırımda ağrı ve şişlik"
       ],
       "baslik": "Derin Ven Trombozu Nedir? Belirtileri Nelerdir?",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -1154,7 +1158,11 @@
         "D-dimer",
         "Doppler",
         "kan sulandırıcı",
-        "uzun yolculuk"
+        "uzun yolculuk",
+        "sol bacağım şişti",
+        "sağ bacağım şişti",
+        "bacağım şişti ağrıyor",
+        "baldırımda ağrı ve şişlik"
       ],
       "baslik": "Deep Vein Thrombosis (Derin Ven Trombozu)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -1233,7 +1241,9 @@
         "alında baskı",
         "geniz akıntısı",
         "burun tıkanıklığı",
-        "koyu burun akıntısı"
+        "koyu burun akıntısı",
+        "sinüs",
+        "sinüs baş ağrısı"
       ],
       "baslik": "Sinüzit Nedir? Sinüzit Belirtileri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -1251,7 +1261,9 @@
         "sinüzit",
         "akut sinüzit",
         "kronik sinüzit",
-        "geniz akıntısı"
+        "geniz akıntısı",
+        "sinüs",
+        "sinüs baş ağrısı"
       ],
       "baslik": "Sinusitis (Sinüzit)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -2948,7 +2960,9 @@
         "üre",
         "BUN",
         "eGFR",
-        "böbrek fonksiyon testi"
+        "böbrek fonksiyon testi",
+        "böbrek değerleri",
+        "böbrek değerleri yüksek"
       ],
       "baslik": "Kreatinin Nedir? Kreatinin Düşüklüğü ve Yüksekliği Nedir?",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -2966,7 +2980,9 @@
         "kreatinin testi",
         "eGFR",
         "24 saatlik idrar",
-        "böbrek hastalığı"
+        "böbrek hastalığı",
+        "böbrek değerleri",
+        "böbrek değerleri yüksek"
       ],
       "baslik": "Creatinine Test (Kreatinin Testi)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -9689,6 +9705,189 @@
       "url": "https://medlineplus.gov/pressuresores.html",
       "dil": "en",
       "ozet": "Bası yaraları, uzun süre aynı pozisyonda kalmaya bağlı deri hasarıdır ve sıklıkla ayak bilekleri, topuklar ve kalçalar gibi kemikli bölgelerde oluşur. Yatağa bağlı olanlar, tekerlekli sandalye kullananlar ve kendi pozisyonunu değiştiremeyenler risk altındadır. Deriyi temiz ve kuru tutmak, pozisyonu iki saatte bir değiştirmek ve yastık gibi basıncı azaltan ürünler kullanmak önler. İleri evre yaralar yavaş iyileştiği için erken tedavi önemlidir; bası yaraları bazıları hayatı tehdit eden ciddi enfeksiyonlara yol açabilir."
+    },
+    {
+      "id": "erkenbosalma-acibadem",
+      "konu": "Erken boşalma",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "erken boşalma",
+        "prematür ejakülasyon",
+        "çabuk boşalıyorum",
+        "cinsel ilişkide erken boşalma"
+      ],
+      "baslik": "Erken Boşalma Nedir? Erken Boşalma Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/erken-bosalma-nedir-tedavisi/",
+      "dil": "tr",
+      "ozet": "Erken boşalma, cinsel ilişkide istenenden çok önce, çoğunlukla bir dakikadan kısa sürede boşalmadır; tanı için yakınmanın en az altı ay sürmesi gerekir. Gevşek tanımlarla erkeklerin %20-30'u yaşamlarının bir döneminde yaşar, katı ölçütlerle sıklık %5 civarındadır. İlk deneyimlerden beri süren (yaşam boyu) ve sonradan gelişen (edinilmiş) türleri vardır. Performans kaygısı, depresyon ve özgüven eksikliği gibi psikolojik nedenlerin yanı sıra serotonin düzeyinde azalma, prostat iltihabı, tiroidin fazla çalışması ve düşük testosteron rol oynayabilir. Tedavide dur-başla ve sıkma gibi davranışsal teknikler, pelvik taban (kegel) egzersizleri, cinsel danışmanlık veya çift terapisi ve ilaçlar kullanılır; ilaçlar mutlaka uzman önerisiyle kullanılmalıdır. Üroloji (androloji) uzmanına başvurulabilir."
+    },
+    {
+      "id": "erkenbosalma-medlineplus",
+      "konu": "Erken boşalma",
+      "kategori": "Böbrek ve idrar yolları",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "erken boşalma",
+        "erken boşalma tedavisi"
+      ],
+      "baslik": "Premature Ejaculation (Erken Boşalma)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001524.htm",
+      "dil": "en",
+      "ozet": "Erken boşalma, erkeğin cinsel ilişkide istediğinden önce orgazma ulaşmasıdır; psikolojik etkenler veya fiziksel sorunlar neden olabilir ve çoğu zaman tedavisiz de düzelir. Dur-başla yönteminde uyarı boşalmaya yaklaşınca yaklaşık 30 saniye durdurulur; sıkma yönteminde boşalma yaklaşınca penis başı hafifçe sıkılıp 30 saniye ara verilir. Hekim boşalma süresini uzatan bazı antidepresanlar, uyarıyı azaltan lokal uyuşturucu krem veya spreyler ya da sertleşme ilaçları önerebilir; davranışsal yöntemlerle ilacın birlikte kullanılması etkilidir. Çoğu erkek eğitim ve pratikle boşalmayı kontrol etmeyi öğrenir; uzun süren durumlarda kaygı veya depresyon değerlendirilmelidir. Yöntemlere rağmen sürerse hekime başvurulmalıdır."
+    },
+    {
+      "id": "renkkorlugu-acibadem",
+      "konu": "Renk körlüğü",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "renk körlüğü",
+        "daltonizm",
+        "renkleri ayırt edemiyorum",
+        "kırmızı yeşil karıştırıyorum",
+        "ishihara testi",
+        "renk testi"
+      ],
+      "baslik": "Renk Körlüğü Nedir? Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/renk-korlugu-nedir/",
+      "dil": "tr",
+      "ozet": "Renk körlüğü, renklerin veya renkler arasındaki farkların algılanamadığı bir görme bozukluğudur ve retinadaki koni hücrelerinin bozukluğundan kaynaklanır. Çoğunlukla kalıtsaldır ve X kromozomu üzerinden geçer; şekere bağlı retina hasarı, glokom, sarı nokta hastalığı, katarakt ve sinir sistemi hastalıkları da sonradan renk görmeyi bozabilir. Kırmızı-yeşil (daltonizm), mavi-sarı ve renklerin yalnızca siyah, beyaz ve gri tonlarında görüldüğü tam renk körlüğü türleri vardır. Tanıda en sık Ishihara testi kullanılır. Kesin bir tedavisi yoktur; özel filtreli gözlükler, lensler ve uygulamalar yardımcı olabilir. Renk görmede ani değişiklik olursa göz hekimine başvurulmalıdır."
+    },
+    {
+      "id": "renkkorlugu-medlineplus",
+      "konu": "Renk körlüğü",
+      "kategori": "Göz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "renk körlüğü",
+        "renk görme bozukluğu"
+      ],
+      "baslik": "Color Blindness (Renk Körlüğü)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/colorblindness.html",
+      "dil": "en",
+      "ozet": "Renk körlüğü, kişinin renkleri çoğu insandan farklı görmesine ve belirli renk aralıklarını ayırt edememesine yol açan bir görme bozukluğudur. En sık kırmızı-yeşil türü görülür ve erkeklerde kadınlardan daha sıktır; mavi-sarı renk görme bozukluğu ve hiç renk görememe daha nadirdir. Çoğunlukla kalıtsaldır ve renk görme testiyle tanı konur. Tedavisi yoktur, ancak çoğu kişi uyum sağlar ve durum günlük etkinliklerini kısıtlamaz."
+    },
+    {
+      "id": "kildonmesi-acibadem",
+      "konu": "Kıl dönmesi (pilonidal sinüs)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kıl dönmesi",
+        "pilonidal sinüs",
+        "kuyruk sokumunda şişlik",
+        "kuyruk sokumunda akıntı",
+        "kıl kisti",
+        "kuyruk sokumu ağrısı"
+      ],
+      "baslik": "Kıl Dönmesi Nedir? Kıl Dönmesi Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/kil-donmesi/",
+      "dil": "tr",
+      "ozet": "Kıl dönmesi (pilonidal sinüs), kılların deri dışına çıkmak yerine deri altına doğru uzamasıyla oluşan, en sık kuyruk sokumunda görülen bir sorundur. Genç erkeklerde, kıvırcık, kalın ve sert kıllı kişilerde, uzun süre oturanlarda ve dar giysi giyenlerde daha sıktır. Kızarıklık, şişlik, ağrı, kaşıntı, sivilceye benzeyen iltihaplı çıkıntılar ve irin dolu kabarcıklar görülür; enfeksiyon gelişirse apse oluşabilir. Hafif durumlarda antibiyotik ve sıcak kompres, ileri durumlarda apsenin boşaltılması veya kistin ameliyatla çıkarılması uygulanır. Düzenli temizlik, bölgeyi kuru tutmak, dar giysilerden kaçınmak ve kılların lazerle alınması korunmaya yardımcı olur. Ateş, şiddetli ağrı ve belirgin şişlikte hekime başvurulmalıdır."
+    },
+    {
+      "id": "kildonmesi-medlineplus",
+      "konu": "Kıl dönmesi (pilonidal sinüs)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "pilonidal kist",
+        "kıl dönmesi ameliyatı",
+        "pilonidal apse"
+      ],
+      "baslik": "Pilonidal Sinus Disease (Kıl Dönmesi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003253.htm",
+      "dil": "en",
+      "ozet": "Pilonidal kist, kalçaların arasındaki kıvrımda bir kıl kökünün çevresinde oluşan sıvı dolu bir cebdir; deride içinde koyu bir nokta ya da kıl bulunan küçük bir çukur gibi görünebilir. Küçük çukurdan irin akması, hareket ettikten veya bir süre oturduktan sonra bölgede hassasiyet ve kuyruk sokumu yakınında sıcak, ağrılı, şiş bir alan görülebilir; kist enfekte olursa pilonidal apse adını alır. Belirti vermeyen kistin hemen tedavisi gerekmez. Enfekte kistte en sık tedavi, muayenehanede kesilerek boşaltılmasıdır; sorun tekrarlarsa kist günübirlik ameliyatla çıkarılabilir. İlk ameliyattan sonra kişilerin yaklaşık yarısında tekrarlar."
+    },
+    {
+      "id": "madde-amatem",
+      "konu": "Madde bağımlılığı",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "madde bağımlılığı",
+        "uyuşturucu",
+        "uyuşturucu bağımlılığı",
+        "AMATEM",
+        "bağımlılık tedavisi",
+        "bağımlılık",
+        "esrar",
+        "hap bağımlılığı"
+      ],
+      "baslik": "AMATEM (Madde Bağımlılığı Tedavi Merkezi)",
+      "kurum": "T.C. Sağlık Bakanlığı SBÜ Bursa Yüksek İhtisas EAH",
+      "tur": "resmi",
+      "url": "https://bursayuksekihtisaseah.saglik.gov.tr/TR,227463/amatem-madde-bagimliligi-tedavi-merkezi.html",
+      "dil": "tr",
+      "ozet": "AMATEM (Alkol ve Madde Bağımlılığı Tedavi Merkezi), madde bağımlılığından kurtulmak isteyen kişilere tedavi hizmeti sunan, devlet hastanelerine bağlı merkezlerdir. Tedavi poliklinikte ayaktan ya da hastanede yatarak yapılabilir. Bağımlılıkla ilgili bilgi ve yönlendirme için Alo 191 hattı aranabilir. Bağımlılık tedavi edilebilir bir hastalıktır ve tedaviye başvurmak için bir merkeze ya da psikiyatri polikliniğine gidilebilir."
+    },
+    {
+      "id": "madde-medlineplus",
+      "konu": "Madde bağımlılığı",
+      "kategori": "Ruh sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "bağımlılık belirtileri",
+        "madde kullanımı",
+        "aşırı doz"
+      ],
+      "baslik": "Drug Use and Addiction (Madde Kullanımı ve Bağımlılık)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/druguseandaddiction.html",
+      "dil": "en",
+      "ozet": "Madde bağımlılığı, verdiği zarara rağmen kişinin maddeyi tekrar tekrar kullanmasına yol açan kronik bir beyin hastalığıdır; tekrarlanan kullanım beynin işleyişini değiştirir ve hastalık nüks edebilir. Arkadaşlardan ve aileden uzaklaşma, kişisel bakımı ihmal etme, ani duygu durum değişiklikleri, uyku ve yeme düzeninde değişiklik, randevuları kaçırma, iş ya da okul başarısında düşme ve eskiden sevilen etkinliklere ilgi kaybı uyarı işaretleridir. Kalıtım, depresyon veya dikkat eksikliği gibi tedavi edilmemiş ruhsal hastalıklar, aile sorunları, arkadaş çevresinin etkisi ve maddeyle erken yaşta tanışma riski artırır. İlaç tedavisiyle danışmanlığın birlikte kullanılması çoğu kişide en iyi sonucu verir; bireysel veya grup terapisi, yoksunluk ve isteği azaltan ilaçlar ve ağır durumlarda yatılı programlar uygulanır. Aşırı dozda hemen 112 aranmalıdır."
+    },
+    {
+      "id": "odem-acibadem",
+      "konu": "Ayak ve bacak şişmesi (ödem)",
+      "kategori": "Kalp ve damar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ödem",
+        "ayaklarım şişiyor",
+        "ayak şişmesi",
+        "bacak şişmesi",
+        "ayak bileği şişmesi",
+        "ayaklarda şişlik",
+        "ödem atma"
+      ],
+      "baslik": "Ödem Nedir? Vücutta Ödem Belirtileri, Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/odem-nedir/",
+      "dil": "tr",
+      "ozet": "Ödem, vücut dokularında sıvı birikmesiyle oluşan şişliktir ve en sık ayak, bacak, el ve yüzde görülür. Uzun süre ayakta kalmak veya hareketsizlik, fazla tuz, gebelik, ilaç yan etkileri, kalp yetmezliği, böbrek ve karaciğer hastalıkları, toplardamar yetmezliği ve pıhtı neden olabilir. Parmakla bastırılınca çukur kalması, ani kilo artışı, şişlik ve gerginlik hissi görülür. Bacakları kalp seviyesinin üstüne kaldırmak, tuzu azaltmak, düzenli yürümek, yeterli su içmek ve varis çorabı kullanmak yardımcı olur. Tek bacakta ağrılı şişlik (pıhtı belirtisi olabilir), nefes darlığı veya göğüs ağrısı varsa acil başvurulmalıdır; ilk başvuru için iç hastalıkları uzmanı uygundur."
+    },
+    {
+      "id": "odem-medlineplus",
+      "konu": "Ayak ve bacak şişmesi (ödem)",
+      "kategori": "Kalp ve damar",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ayak bileğim şişti",
+        "iki bacakta şişlik"
+      ],
+      "baslik": "Foot, Leg, and Ankle Swelling (Ayak, Bacak ve Ayak Bileği Şişmesi)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003104.htm",
+      "dil": "en",
+      "ozet": "Ayak, bacak ve ayak bileği şişmesinin nedenleri arasında fazla kilo, bacakta pıhtı, ileri yaş, bacak enfeksiyonu, toplardamar yetmezliği, yaralanma veya ameliyat, uzun süre oturmak, hormon ilaçları ve kalp, böbrek veya karaciğer yetmezliği vardır. Uzanırken bacakları yastıklarla kalp seviyesinin üstüne kaldırmak, bacak egzersizi yapmak, az tuzlu beslenmek, varis çorabı giymek, yolculukta sık mola vermek, uylukları sıkan giysilerden kaçınmak ve gerekirse kilo vermek yardımcı olur. Nefes darlığı veya göğüste baskı ve sıkışma şeklinde ağrı varsa hemen 112 aranmalıdır. Kalp veya böbrek hastalığı olanlarda şişlik artarsa, yalnızca tek bacak şiş, kırmızı veya sıcaksa, ateş varsa, gebelikte ani veya şiddetli şişlik olursa ya da evde önlemler işe yaramazsa hekime başvurulmalıdır."
     }
   ],
   "kategoriler": [
