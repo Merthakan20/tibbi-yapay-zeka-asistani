@@ -57,6 +57,11 @@ const CASES = [
   ["dişim ağrıyor", /Diş ağrısı/],
   ["diş etim kanıyor", /Diş eti/],
   ["çenem ağrıyor ağzımı açamıyorum", /Çene eklemi/],
+  ["bende ateş var", /ateş/],
+  ["tırnağım etime battı", /Batık tırnak/],
+  ["elimde siğil çıktı", /Siğil/],
+  ["benlerim büyüdü rengi değişti", /Benler/],
+  [form("Bende değişiklik", "cilt"), /Benler/],
 ];
 
 let fail = 0;

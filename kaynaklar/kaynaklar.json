@@ -1,6 +1,6 @@
 {
   "aciklama": "Güvenilir tıbbi kaynakların Türkçe özetleri. Özetler kaynak sayfalardan derlenmiştir; asıl metin için bağlantıya bakın.",
-  "guncelleme": "2026-10-28",
+  "guncelleme": "2026-10-29",
   "kaynaklar": [
     {
       "id": "hipertansiyon-hsgm",
@@ -4057,7 +4057,6 @@
         "parmak arası kaşıntı",
         "ayakta soyulma",
         "tinea pedis",
-        "tırnak mantarı",
         "ayak kokusu"
       ],
       "baslik": "Ayak Mantarı Nedir? Ayak Mantarına Ne İyi Gelir ve Nasıl Geçer?",
@@ -8703,6 +8702,269 @@
       "url": "https://medlineplus.gov/ency/article/001227.htm",
       "dil": "en",
       "ozet": "Çene eklemi rahatsızlıklarında ısırma ve çiğnemede güçlük, eklemden tık, patlama veya sürtünme sesi, yüzde künt ağrı, kulak ağrısı, baş ağrısı, çenede ağrı ve hassasiyet, çenenin kilitlenmesi ve ağzı açıp kapamada zorluk görülebilir. Çoğu kişide neden bilinmez; çeneye binen yük, özellikle bilgisayar başında kötü duruş, stres, diş gıcırdatma, kötü beslenme ve uykusuzluk katkıda bulunabilir. Yumuşak gıdalar, çene kaslarına hafif germe ve masaj, esneme, şarkı söyleme ve sakız çiğnemekten kaçınmak, yüze nemli sıcak veya soğuk uygulamak, stres azaltma ve düzenli egzersiz önerilir. Tedavide reçetesiz ağrı kesiciler, kas gevşeticiler, ısırma plakları ve nadiren enjeksiyonlar kullanılır; cerrahiye nadiren gerek duyulur. Çoğu kişi iyileşir. Yemek yemekte veya ağzı açmakta zorlanılıyorsa hemen hekime başvurulmalıdır."
+    },
+    {
+      "id": "batiktirnak-acibadem",
+      "konu": "Batık tırnak",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "batık tırnak",
+        "tırnak batması",
+        "tırnağım etime battı",
+        "ayak başparmağı tırnak",
+        "tırnak iltihabı",
+        "tırnak kenarı şişti"
+      ],
+      "baslik": "Tırnak Batması Nedir? Belirtileri, Nedenleri ve Tedavi Yöntemleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/tirnak-batmasi/",
+      "dil": "tr",
+      "ozet": "Tırnak batması, tırnak kenarının çevresindeki yumuşak dokuya doğru büyümesidir ve çoğunlukla ayak başparmağında görülür. Tırnağı yuvarlak veya çok derin kesmek, dar ve sıkı ayakkabılar, ayak yaralanmaları, genetik yatkınlık ve mantar enfeksiyonları başlıca nedenlerdir; sporcular ve uzun süre ayakta kalanlarda daha sık görülür. Tırnak çevresinde ağrı, hassasiyet, şişlik ve kızarıklık olur; enfeksiyon gelişirse irin, kötü koku ve şiddetli ağrı eklenir. Evde ayağı günde 3-4 kez 15-20 dakika ılık sabunlu suda bekletmek, tırnakları düz kesmek ve rahat ayakkabı giymek yardımcı olur. Enfeksiyon belirtileri, şiddetli ağrı veya yürümede zorluk varsa dermatoloji ya da ortopedi uzmanına başvurulmalıdır."
+    },
+    {
+      "id": "batiktirnak-medlineplus",
+      "konu": "Batık tırnak",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "batık tırnak",
+        "tırnak batması ameliyatı"
+      ],
+      "baslik": "Ingrown Toenail (Batık Tırnak)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001237.htm",
+      "dil": "en",
+      "ozet": "Batık tırnakta ayak tırnağının kenarı parmak derisinin içine doğru büyür; en sık ayak başparmağı etkilenir ve tırnak çevresinde ağrı, kızarıklık ve şişlik olur. En sık nedenler uygun olmayan ayakkabılar ve tırnağın çok kısa ya da kenarları yuvarlak kesilmesidir; doğuştan kıvrık tırnaklar ve parmağın darbe alması da yol açabilir. Evde ayak mümkünse günde 3-4 kez ılık suda bekletilir, ardından kuru tutulur; tırnak kenarının altına suyla veya antiseptikle ıslatılmış pamuk ya da diş ipi yerleştirilebilir. Düzelmezse tırnağın batan kısmı uyuşturularak çıkarılır; tırnağın yeniden uzaması 2-4 ay sürer. Şiddetli ağrı, kızarıklık, şişlik veya ateş varsa ya da diyabet, sinir hasarı veya dolaşım bozukluğu olan biriyseniz hekime başvurun. Korunmak için tırnaklar düz kesilmeli, parmaklara yer bırakan ayakkabı giyilmeli ve ayaklar temiz ve kuru tutulmalıdır."
+    },
+    {
+      "id": "nasir-acibadem",
+      "konu": "Nasır",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "nasır",
+        "ayağımda nasır var",
+        "nasır nasıl geçer",
+        "topukta sertleşme",
+        "deri kalınlaşması"
+      ],
+      "baslik": "Nasır Nedir? Nasır Nasıl Geçer? Nasır Neden Olur ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/nasir-bakimi/",
+      "dil": "tr",
+      "ozet": "Nasır, deride basınç ve sürtünmeye karşı gelişen yoğun keratinleşme, yani kalınlaşmadır; vücudun dış baskılara karşı bir savunma tepkisidir. Dar ayakkabılar, basış bozuklukları, uzun süre ayakta durmak ve genetik yatkınlık başlıca nedenlerdir. Deride sertleşme ve kalınlaşma, ayak parmaklarında ağrı, parmak aralarında kızarıklık ve topukta ağrılı katmanlaşma görülebilir. Nemlendirici kremler, ponza taşıyla hafifçe ovmak, uygun ayakkabı ve pamuklu çorap yardımcı olur. Nasır kendi kendine kesilmemeli, asitli bantlar ve yakılar bilinçsizce uygulanmamalıdır; şeker hastalarında yaralanma riski yüksektir. Ağrılı ve sert, kanayan veya enfekte nasırlarda ya da basış bozukluğu varsa hekime başvurulmalıdır."
+    },
+    {
+      "id": "nasir-medlineplus",
+      "konu": "Nasır",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "nasır",
+        "nasır bandı",
+        "elde nasır"
+      ],
+      "baslik": "Corns and Calluses (Nasır)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001232.htm",
+      "dil": "en",
+      "ozet": "Nasırlar deriye sürekli binen basınç veya sürtünmeye karşı gelişen kalınlaşmalardır: ayak parmaklarının üstünde ya da yanında olanlar çoğunlukla uygun olmayan ayakkabılardan, el içinde ve ayak tabanında olanlar ise tekrarlayan sürtünmeden kaynaklanır. Daha iyi oturan ayakkabılar giymek ve eczanelerde bulunan halka biçimli nasır pedleri kullanmak yardımcı olur. Nasırlar nadiren ciddidir ve uygun bakımla düzelir. Diyabeti veya sinir hasarı olanlar ayaklarını düzenli kontrol etmeli ve ayak sorunu fark ettiklerinde hekime başvurmalıdır. Tedaviye rağmen düzelmeyen nasırlarda ya da süren ağrı, kızarıklık, sıcaklık veya akıntı varsa hekime başvurulmalıdır."
+    },
+    {
+      "id": "sigil-acibadem",
+      "konu": "Siğil",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "siğil",
+        "elimde siğil çıktı",
+        "ayak tabanında siğil",
+        "siğil dondurma",
+        "siğil bulaşır mı",
+        "et beni"
+      ],
+      "baslik": "Siğil Nedir ve Nerede Çıkar? Siğil Neden Olur?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://acibadem.com.tr/ilgi-alani/sigil-nedir-sigil-nasil-gecer",
+      "dil": "tr",
+      "ozet": "Siğiller, insan papilloma virüsünün (HPV) neden olduğu, deride veya mukozalarda görülen küçük, sert ve genellikle kabarık lezyonlardır; el, ayak, yüz ve genital bölgede çıkabilir. Yaygın siğiller el, parmak ve tırnak çevresinde; düz siğiller yüz, boyun ve kolda çok sayıda; ayak tabanı siğilleri basınçla içe doğru büyüyerek yürürken ağrı yapar; genital siğiller cinsel temasla bulaşır. Virüs doğrudan deri temasıyla ya da havlu, tıraş bıçağı, havuz kenarı gibi yüzeylerle bulaşır; deride açık yara varsa risk artar. Tedavide salisilik asitli ürünler, sıvı azotla dondurma (kriyoterapi), lazer ve cerrahi kullanılır. Siğilin kökü deri altında kalabileceği için kaşınmamalı, kesilmemeli veya koparılmamalıdır; geçmeyen siğillerde dermatoloğa başvurulmalıdır."
+    },
+    {
+      "id": "sigil-medlineplus",
+      "konu": "Siğil",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "siğil",
+        "HPV siğil",
+        "tırnak dibinde siğil"
+      ],
+      "baslik": "Warts (Siğil)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000885.htm",
+      "dil": "en",
+      "ozet": "Siğiller, 150'den fazla türü olan insan papilloma virüsünün (HPV) yaptığı, genellikle ağrısız deri büyümeleridir; elde yaygın siğil, yüzde düz siğil, ayak tabanında plantar siğil, tırnak altı ve çevresinde siğiller ve genital siğiller görülür. Doğrudan temasla, özellikle cinsel temasla ve aynı kişide vücudun bir yerinden diğerine yayılabilir. Çoğu zararsızdır ve 2 yıl içinde kendiliğinden geçer. Reçetesiz siğil ilaçları deri nemliyken siğil törpülendikten sonra haftalar veya aylar boyunca her gün uygulanıp bantla kapatılır; bu ilaçlar yüzde ve genital bölgede kullanılmamalıdır. Diyabet veya zayıf bağışıklığı olanlar, kırmızı çizgilenme, irin, akıntı veya ateş gibi enfeksiyon belirtileri, durmayan kanama, renk veya görünüm değişikliği, ağrılı siğiller ve anal ya da genital siğiller için hekime başvurulmalıdır."
+    },
+    {
+      "id": "tirnakmantari-acibadem",
+      "konu": "Tırnak mantarı",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "tırnak mantarı",
+        "tırnağım sarardı",
+        "tırnak kalınlaşması",
+        "tırnak sararması",
+        "onikomikoz",
+        "tırnağım kırılıyor"
+      ],
+      "baslik": "Tırnak Mantarı Nedir? Tırnak Mantarı Nasıl Geçer?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/tirnak-mantari/",
+      "dil": "tr",
+      "ozet": "Tırnak mantarı (onikomikoz), tırnakta sararma, kahverengileşme veya beyazlaşma, kalınlaşma, kırılma ve parçalanma yapan bir enfeksiyondur; tırnak çevresinde hassasiyet, kötü koku ve tırnağın yatağından ayrılması da görülebilir. Nemli ayak ortamı, sıkı ayakkabılar ve ortak duş-havuz alanlarında çıplak ayakla yürümek başlıca nedenlerdir; diyabet, zayıf bağışıklık, ileri yaş ve tırnak yaralanmaları riski artırır. Kişiden kişiye bulaşma görece nadirdir ama olabilir. Hafif durumlarda tırnağa sürülen ilaçlar, yaygın enfeksiyonda ağızdan alınan mantar ilaçları kullanılır; ilaç tedavisi 6-12 hafta sürer, tam iyileşme 4 ayı aşabilir; dirençli durumlarda lazer veya tırnağın çıkarılması uygulanabilir. Ayakları kuru tutmak, ter emen çorap giymek, ortak alanlarda terlik kullanmak ve steril tırnak araçları istemek korur. Diyabetliler ve ağrı ya da kalınlaşma olanlar dermatoloğa başvurmalıdır."
+    },
+    {
+      "id": "tirnakmantari-medlineplus",
+      "konu": "Tırnak mantarı",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "tırnak mantarı",
+        "tırnak mantarı ilacı",
+        "el tırnağında mantar"
+      ],
+      "baslik": "Fungal Nail Infection (Tırnak Mantarı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001330.htm",
+      "dil": "en",
+      "ozet": "Tırnak mantarında tırnak kırılganlaşır, şekli bozulur, kenarları ufalanır, altında kalıntı birikir, tırnak gevşer, parlaklığını kaybeder, kalınlaşır ve kenarında beyaz veya sarı çizgiler oluşur. Diyabet, damar ve sinir hastalıkları, tırnak yaralanmaları, sürekli nemli kalan deri, bağışıklık sorunları, aile öyküsü ve ayağın hava almasını engelleyen ayakkabılar riski artırır. Ağızdan alınan mantar ilaçları ayak tırnaklarında yaklaşık 2-3 ay, el tırnaklarında daha kısa süre kullanılır ve tedavi sırasında karaciğer testleriyle izlenir; mantarı kişilerin yaklaşık yarısında temizler ve başarılı tedaviden sonra da geri dönebilir. Lazer daha az etkilidir; bazen tırnak çıkarılır. Manikür-pedikür araçlarını paylaşmamak ve deriyi temiz ve kuru tutmak korur. Enfeksiyon geçmezse ya da parmaklar ağrılı, kırmızı olur veya irin akarsa hekime başvurulmalıdır."
+    },
+    {
+      "id": "kepek-acibadem",
+      "konu": "Kepek (seboreik dermatit)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "kepek",
+        "kepek sorunu",
+        "saç derisi kaşıntısı",
+        "saçımda kepek var",
+        "kafa derisi pullanma",
+        "kepek şampuanı"
+      ],
+      "baslik": "Kepek Neden Olur, Nasıl Geçer?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/saglikli-yasam/kepek-neden-olur-nasil-gecer/",
+      "dil": "tr",
+      "ozet": "Kepeğin en yaygın belirtisi beyaz, yağlı ölü derilerin omuzlara pul pul dökülmesidir. Genellikle genç erişkinlikte başlar ve orta yaş boyunca sürebilir; erkeklerde ve yağlı saç derisi olanlarda daha sık görülür. Çinko ve B vitamini yönünden yetersiz beslenme ve bazı nörolojik hastalıklar seboreik dermatit riskini artırabilir. Hafif bir temizleyici şampuan, reçetesiz kepek şampuanları ve yağlı saçta sık yıkama yardımcı olur; kepek çoğu zaman doktora gitmeyi gerektirmez. Reçetesiz şampuanlar birkaç hafta kullanıldıktan sonra kaşıntı veya kırmızı kabarıklıklar sürüyorsa cilt doktoruna başvurulmalıdır."
+    },
+    {
+      "id": "kepek-medlineplus",
+      "konu": "Kepek (seboreik dermatit)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "seboreik dermatit",
+        "kepek",
+        "kaşta pullanma",
+        "yüzde yağlı pullanma"
+      ],
+      "baslik": "Seborrheic Dermatitis (Seboreik Dermatit)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000963.htm",
+      "dil": "en",
+      "ozet": "Seboreik dermatit, halk arasında kepek olarak bilinen yaygın bir iltihaplı deri hastalığıdır; saç derisi, kaşlar, göz kapakları, burun kıvrımları ve göğüs gibi yağlı bölgelerde pullanmaya yol açar. Kesin nedeni bilinmez; yağ bezlerinin etkinliği, deride yaşayan Malassezia mayaları, deri bariyerindeki değişiklikler ve kalıtım rol oynar; stres, aşırı hava koşulları, yağlı deri, alkol, şişmanlık ve bazı nörolojik hastalıklar riski artırır. Pullu ve yağlı alanlar, beyaz pullanma ya da sarımsı yapışkan kepek, kaşıntı ve hafif kızarıklık görülür. Önce salisilik asit, katran, çinko, resorsinol, ketokonazol veya selenyum sülfür içeren reçetesiz kepek şampuanları etiketine uygun kullanılır; ağır durumlarda hekim daha güçlü ilaçlar önerebilir. Güneş ışığı bazı kişilerde düzelme sağlar. Kendi kendine bakımla düzelmezse ya da alanlar sıvı veya irin akıtır, kabuklanır, çok kızarır veya ağrırsa hekime başvurulmalıdır."
+    },
+    {
+      "id": "ben-acibadem",
+      "konu": "Benler ve cilt kanseri",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "ben",
+        "ben kontrolü",
+        "ben kanser mi",
+        "ben büyümesi",
+        "bendeki değişiklik",
+        "melanom",
+        "cilt kanseri",
+        "ABCDE kuralı"
+      ],
+      "baslik": "Benler Kanser Habercisi mi? Cilt Kanseri Belirtilerini Tanıyın",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/saglikli-yasam/benler-kanser-habercisi-mi/",
+      "dil": "tr",
+      "ozet": "Benler genellikle zararsızdır, ancak nadiren cilt kanserine dönüşebilir; en ciddi cilt kanseri türü melanomdur. ABCDE kuralına göre benin iki yarısının birbirine benzememesi (asimetri), kenarlarının düzensiz olması, tek bende çok sayıda renk bulunması, çapının 6 milimetreden büyük olması ve zamanla değişmesi (kabuklanma, kaşınma, kabarma, yara, ağrı, kızarıklık) uyarı işaretidir; kanama, kuru-pullu yüzey ve sertleşme de dikkat gerektirir. Açık ten rengi, hayatında en az bir kez şiddetli ve su toplayan güneş yanığı geçirmiş olmak, güneş ve solaryumdan gelen morötesi ışınlar, çok sayıda veya düzensiz ben, aile öyküsü ve zayıf bağışıklık riski artırır. Yüksek koruma faktörlü güneş kremi, güneşin yoğun olduğu saatlerden kaçınmak, koruyucu giysi, şapka ve gözlük kullanmak ve solaryumdan uzak durmak korur. Bu belirtiler görülürse vakit kaybetmeden hekime başvurulmalıdır."
+    },
+    {
+      "id": "ben-medlineplus",
+      "konu": "Benler ve cilt kanseri",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "melanom",
+        "cilt kanseri belirtileri",
+        "ben değişikliği",
+        "deri kanseri"
+      ],
+      "baslik": "Melanoma (Melanom)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000850.htm",
+      "dil": "en",
+      "ozet": "Melanom riski açık tenli, mavi-yeşil gözlü, kızıl veya sarı saçlı kişilerde, güneşli veya yüksek rakımlı yerlerde yaşayanlarda, çocuklukta su toplayan güneş yanığı geçirenlerde, bronzlaşma cihazı kullananlarda, yakın akrabasında melanom olanlarda, düzensiz veya çok sayıda beni olanlarda ve bağışıklığı zayıf olanlarda daha yüksektir. ABCDE sistemi: asimetri, düzensiz kenarlar, bir bölgeden diğerine değişen renk (açık kahve, kahverengi, siyah, bazen beyaz, kırmızı veya mavi), genellikle 5 milimetreden büyük çap ve görünümün sürekli değişmesi. Kanayan veya renk değiştiren ben, yara ya da kitle ve vücuttaki diğer benlerden belirgin şekilde farklı görünen ben (çirkin ördek yavrusu işareti) de dikkat gerektirir. Deri ayda bir aynayla kontrol edilmelidir. Saat 10.00-16.00 arasında güneşten kaçınmak, koruyucu giysi giymek, güneşe çıkmadan en az 30 dakika önce SPF 30 veya üzeri geniş spektrumlu güneş kremi sürüp sık yenilemek ve solaryumdan uzak durmak korur. Yeni bir oluşum fark edilirse ya da var olan bir ben şekil, boyut veya renk değiştirir, ağrır, şişer, kanar veya kaşınırsa hekime başvurulmalıdır."
+    },
+    {
+      "id": "terleme-acibadem",
+      "konu": "Aşırı terleme (hiperhidroz)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "aşırı terleme",
+        "hiperhidroz",
+        "çok terliyorum",
+        "elim terliyor",
+        "koltuk altı terlemesi",
+        "ayak terlemesi",
+        "el terlemesi"
+      ],
+      "baslik": "Aşırı Terleme Nedenleri ve Tedavi Yöntemleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/asiri-terleme-nedenleri/",
+      "dil": "tr",
+      "ozet": "Aşırı terleme (hiperhidroz) iki türdür: birincil (primer) hiperhidroz genetik yatkınlığa bağlıdır ve avuç içi, ayak tabanı, koltuk altı ve yüz gibi belirli bölgelerde görülür; ikincil (sekonder) hiperhidroz ise altta yatan bir hastalığa bağlı, daha yaygın bir terlemedir. İkincil terlemenin nedenleri arasında tiroid bezinin fazla çalışması, kan şekeri dengesizlikleri, verem ve HIV gibi gece terlemesi yapan enfeksiyonlar, menopoz ve bazı ilaçlar (antidepresanlar, ağrı kesiciler) vardır. Tedavide alüminyum klorürlü ter önleyiciler, düşük elektrik akımıyla uygulanan iyontoforez, 6-12 ay etkili botoks enjeksiyonu ve ağır durumlarda cerrahi kullanılır. Gece terlemesi, açıklanamayan kilo kaybı, halsizlik ve ateş eşlik ediyorsa hekime başvurulmalı; göğüs ağrısıyla birlikte terleme varsa hemen yardım alınmalıdır."
+    },
+    {
+      "id": "terleme-medlineplus",
+      "konu": "Aşırı terleme (hiperhidroz)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "terleme",
+        "aşırı terleme",
+        "ter kokusu",
+        "terleyememe"
+      ],
+      "baslik": "Sweat (Ter ve Terleme)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/sweat.html",
+      "dil": "en",
+      "ozet": "Ter, derideki bezlerin ürettiği berrak, tuzlu bir sıvıdır ve vücut terleyerek kendini serinletir; en çok koltuk altı, ayaklar ve avuç içleri terler. Sıcakta, egzersizde, kaygıda, ateşte ve menopozda terlemek normaldir. Ter deri bakterileriyle karışınca koku oluşur; ter önleyiciler ve deodorantlar kokuyu kontrol etmeye yardımcı olur. Sık sık aşırı terlemeye hiperhidroz denir; tiroid veya sinir sistemi hastalıkları, kan şekeri düşüklüğü ya da başka bir sağlık sorunu neden olabilir. Yeterince terleyememe (anhidroz) ise vücudun aşırı ısınmasına yol açarak hayatı tehdit edebilir; sıvı kaybı, yanıklar ve deri ya da sinir hastalıkları neden olabilir."
     }
   ],
   "kategoriler": [
