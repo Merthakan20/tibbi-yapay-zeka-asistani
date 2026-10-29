@@ -8965,6 +8965,47 @@
       "url": "https://medlineplus.gov/sweat.html",
       "dil": "en",
       "ozet": "Ter, derideki bezlerin ürettiği berrak, tuzlu bir sıvıdır ve vücut terleyerek kendini serinletir; en çok koltuk altı, ayaklar ve avuç içleri terler. Sıcakta, egzersizde, kaygıda, ateşte ve menopozda terlemek normaldir. Ter deri bakterileriyle karışınca koku oluşur; ter önleyiciler ve deodorantlar kokuyu kontrol etmeye yardımcı olur. Sık sık aşırı terlemeye hiperhidroz denir; tiroid veya sinir sistemi hastalıkları, kan şekeri düşüklüğü ya da başka bir sağlık sorunu neden olabilir. Yeterince terleyememe (anhidroz) ise vücudun aşırı ısınmasına yol açarak hayatı tehdit edebilir; sıvı kaybı, yanıklar ve deri ya da sinir hastalıkları neden olabilir."
+    },
+    {
+      "id": "bocek-acibadem",
+      "konu": "Arı ve böcek sokması",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "arı sokması",
+        "arı soktu",
+        "eşek arısı",
+        "arı iğnesi",
+        "böcek sokması",
+        "böcek soktu",
+        "arı alerjisi",
+        "sokulan yer şişti"
+      ],
+      "baslik": "Arı Sokması Nedir? Arı Sokmasına Ne İyi Gelir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/ari-sokmasi/",
+      "dil": "tr",
+      "ozet": "Arı sokması, dişi arının iğnesini deriye batırıp zehrini bırakmasıdır. Sokulan yerde ani ağrı, yanma, kızarıklık, şişlik ve kaşıntı olur; ağrı genellikle 1-3 saatte azalır, yanma 24 saat içinde geçer. Önce arılardan uzak, güvenli bir yere geçilmeli; ciltte kalan iğne sıkılmadan kazınarak çıkarılmalı, bölge sabun ve suyla yıkanmalı, 10-20 dakika soğuk kompres uygulanmalı ve sokulan kol veya bacak yukarıda tutulmalıdır. Kaşıntı için antihistaminik, ağrı için ağrı kesici, hidrokortizonlu krem veya kalamin losyonu kullanılabilir. Dudak, dil veya boğazda şişme, nefes darlığı, yutma güçlüğü, baş dönmesi, bayılma veya bilinç değişikliği alerjik şok belirtisidir ve acil yardım gerektirir; ağız ya da boğaz içinden sokulmada hemen 112 aranmalıdır. Çok sayıda sokma tehlikeli olabilir; bulantı, kusma, ishal veya baş dönmesi gelişirse tıbbi değerlendirme gerekir. Arı alerjisi bilinen kişiler adrenalin kalemi taşımalıdır."
+    },
+    {
+      "id": "bocek-medlineplus",
+      "konu": "Arı ve böcek sokması",
+      "kategori": "Acil durumlar",
+      "acil": true,
+      "anahtar_kelimeler": [
+        "böcek ısırığı",
+        "böcek ısırdı",
+        "sivrisinek ısırığı",
+        "arı sokması",
+        "eşek arısı sokması"
+      ],
+      "baslik": "Insect Bites and Stings (Böcek Isırıkları ve Sokmaları)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/000033.htm",
+      "dil": "en",
+      "ozet": "Böcek ısırığı ve sokmalarının çoğu yerel tepki yapar: ağrı, kızarıklık, şişlik, kaşıntı, yanma, uyuşma veya karıncalanma. Karın ağrısı ya da kusma, göğüs ağrısı, yutma veya nefes almada güçlük, yüzde ya da ağızda şişme, bayılma, döküntü veya deride kızarma ciddi alerjik tepkinin (anafilaksi) belirtisidir. İlk yardımda iğne kredi kartı gibi düz kenarlı bir şeyin arkasıyla kazınarak çıkarılır; cımbız zehir kesesini sıkabileceği için kullanılmaz. Bölge sabun ve suyla yıkanır, beze sarılmış buz 10 dakika konup 10 dakika ara verilerek tekrarlanır, gerekirse antihistaminik veya kaşıntı kremi kullanılır ve sonraki günlerde enfeksiyon belirtileri izlenir. Nefes darlığı, hırıltı, boğazda sıkışma, yüzde şişme, güçsüzlük veya morarma varsa hemen 112 aranmalı, adrenalin kalemi varsa kullanılmalı, kişi sakin tutulup şok açısından izlenmeli ve gerekirse kalp masajı yapılmalıdır. Turnike uygulanmamalıdır. Açık havada parfümden ve koyu renkli giysilerden kaçınmak, yuvaların yakınında ani hareket etmemek ve dışarıda şekerli içeceklere dikkat etmek korur."
     }
   ],
   "kategoriler": [

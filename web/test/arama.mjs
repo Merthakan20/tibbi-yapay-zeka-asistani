@@ -61,6 +61,8 @@ const CASES = [
   ["tırnağım etime battı", /Batık tırnak/],
   ["elimde siğil çıktı", /Siğil/],
   ["benlerim büyüdü rengi değişti", /Benler/],
+  ["arı soktu", /Arı ve böcek/],
+  ["sivrisinek ısırdı", /böcek/],
   [form("Bende değişiklik", "cilt"), /Benler/],
 ];
 
