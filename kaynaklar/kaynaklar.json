@@ -509,7 +509,8 @@
         "ağzı kaydı",
         "yüzü kaydı",
         "dili dolaşıyor",
-        "bir tarafı tutmuyor"
+        "bir tarafı tutmuyor",
+        "yüz felci"
       ],
       "baslik": "İnme (felç) nedir? Nelere dikkat edilmelidir?",
       "kurum": "T.C. Sağlık Bakanlığı Aksaray İl Sağlık Müdürlüğü",
@@ -535,7 +536,8 @@
         "ağzı kaydı",
         "yüzü kaydı",
         "dili dolaşıyor",
-        "bir tarafı tutmuyor"
+        "bir tarafı tutmuyor",
+        "yüz felci"
       ],
       "baslik": "İnme (Felç) Nedir? İnme Neden Olur? İnme Belirtileri ve Tedavisi",
       "kurum": "Acıbadem Sağlık Grubu",
@@ -560,7 +562,8 @@
         "ağzı kaydı",
         "yüzü kaydı",
         "dili dolaşıyor",
-        "bir tarafı tutmuyor"
+        "bir tarafı tutmuyor",
+        "yüz felci"
       ],
       "baslik": "Stroke (İnme)",
       "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
@@ -10177,6 +10180,299 @@
       "url": "https://medlineplus.gov/headlice.html",
       "dil": "en",
       "ozet": "Bitler sürünerek hareket eder ve kişiden kişiye yakın temasla yayılır; nadiren şapka veya saç fırçası gibi eşyalarla da geçebilir. Kişisel temizlik ve hijyenin bit bulaşmasıyla ilgisi yoktur. Saçta gıdıklanma hissi, ısırıklara karşı alerjik tepkiye bağlı sık kaşıntı, kaşımaya bağlı (enfekte olabilen) yaralar ve bitler geceleri daha etkin olduğundan uyku bozukluğu görülebilir. Yumurtalar (sirkeler) kepek pulu büyüklüğündedir ve saç derisinin yakınında, özellikle ense ve kulak arkasında bulunur. Tedavide ilaçlı şampuan, krem veya losyon uygulandıktan sonra ölü bitler ve sirkeler sık dişli tarakla alınır; tarama 2-3 hafta boyunca 2-3 günde bir tekrarlanır."
+    },
+    {
+      "id": "vitiligo-acibadem",
+      "konu": "Vitiligo (ala hastalığı)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "vitiligo",
+        "ala hastalığı",
+        "ciltte beyaz lekeler",
+        "tende beyaz leke",
+        "renk kaybı cilt"
+      ],
+      "baslik": "Vitiligo Nedir? Vitiligo Nedenleri ve Tedavisi",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/vitiligo-nedir-tedavisi-nasil-yapilir/",
+      "dil": "tr",
+      "ozet": "Vitiligo, cilde renk veren melanosit hücrelerinin bozulmasıyla pigment kaybı sonucu beyaz lekelerin oluştuğu bir deri hastalığıdır; dünyada %0,5-2 oranında görülür. Bağışıklık sistemi melanin üreten hücrelere saldırır; olguların yaklaşık %30'unda ailede benzer öykü vardır. Bulaşıcı veya hayatı tehdit edici değildir. Sınırları net, süt beyazı lekeler en sık eller, yüz, dudak çevresi, dirsekler, dizler ve genital bölgede görülür; saçlarda beyazlaşma olabilir. Stres, güneş yanığı, deri yaralanmaları, kimyasallar ve tiroid hastalıkları tetikleyebilir. Tedavide kortizonlu kremler, dar bant UVB ışık tedavisi, yeni kremler ve cerrahi deri nakli kullanılır; yüksek faktörlü güneş kremi ve koruyucu giysi önerilir. Özgüven kaybı, kaygı ve depresyon sık görüldüğünden ruhsal destek de önemlidir."
+    },
+    {
+      "id": "vitiligo-medlineplus",
+      "konu": "Vitiligo (ala hastalığı)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "vitiligo",
+        "beyaz leke tedavisi"
+      ],
+      "baslik": "Vitiligo (Vitiligo)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/vitiligo.html",
+      "dil": "en",
+      "ozet": "Vitiligo, deriye renk veren hücrelerin yok olmasıyla deride beyaz lekelerin oluştuğu bir hastalıktır; gözleri, ağzı ve burnu da etkileyebilir. Kesin nedeni bilinmez; otoimmün hastalığı olanlarda daha sıktır ve kalıtsal etkenler rol oynayabilir. Genellikle 40 yaşından önce başlar ve güneş gören bölgelerde daha sık görülür; koyu tenli kişilerde ağız içinde de renk kaybı olabilir. Tedavide deriye sürülen ilaçlar, ışık tedavileri ve cerrahi yöntemler kullanılır; her tedavi herkese uygun değildir ve etkinlik, süre ve yan etkiler farklıdır. Güneş kremi, renk kaybı olan deriyi güneşten korur."
+    },
+    {
+      "id": "rozasea-acibadem",
+      "konu": "Gül hastalığı (rozasea)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "gül hastalığı",
+        "rozasea",
+        "rosacea",
+        "yüzde kızarıklık",
+        "yanaklarım kızarıyor",
+        "yüzde kılcal damar"
+      ],
+      "baslik": "Gül Hastalığı Nedir? Gül Hastalığı Neden Olur?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/gul-hastaligi-nedir/",
+      "dil": "tr",
+      "ozet": "Gül hastalığı (rozasea), özellikle yüzde kızarıklık, sivilce benzeri döküntüler ve damar genişlemesiyle seyreden kronik bir deri hastalığıdır. Genellikle 30-50 yaşları arasında, açık tenli kişilerde başlar; kadınlarda daha sık, erkeklerde daha ağır seyreder. Yüzde kalıcı kızarıklık, belirginleşen kılcal damarlar, sivilce benzeri kabarcıklar, yanma-batma hissi ve ileri durumlarda burunda kalınlaşma görülür; gözlerde kızarıklık, kuruluk ve tahriş olabilir. Güneş, stres, baharatlı yiyecekler, alkol, kafein, sıcak içecekler ve hormon değişiklikleri tetikleyebilir. Tedavide deriye sürülen kremler, antibiyotikler, lazer ve yaşam tarzı değişiklikleri kullanılır; hassas cilt temizleyicileri, hipoalerjenik nemlendirici ve SPF 30 ve üzeri güneş koruyucu önerilir. Erken tanı için dermatoloğa başvurulmalıdır."
+    },
+    {
+      "id": "rozasea-medlineplus",
+      "konu": "Gül hastalığı (rozasea)",
+      "kategori": "Cilt",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "rozasea",
+        "yüz kızarması sık"
+      ],
+      "baslik": "Rosacea (Gül Hastalığı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/rosacea.html",
+      "dil": "en",
+      "ozet": "Rozasea yüzde sık kızarma veya kızarıklık, deri altında ince kırmızı çizgiler, sivilceye benzer kabarcıklar, burunda şişlik ve alın, çene ve yanaklarda kalın deriye yol açabilir. En çok kadınlarda, açık tenli kişilerde ve orta-ileri yaştaki erişkinlerde görülür. Gözleri de etkileyerek kırmızı, kuru, kaşıntılı gözlere ve bazen görme sorunlarına neden olabilir. Sık kızaran veya ailesinde rozasea olan kişiler daha yatkındır; kesin nedeni bilinmez. Tedavisi yoktur, ancak ilaçlar ve bazen ameliyat yardımcı olur; uzun süreli ama tehlikeli olmayan bir durumdur ve kişinin kendi tetikleyicilerini bilmesi önemlidir."
+    },
+    {
+      "id": "otizm-acibadem",
+      "konu": "Otizm spektrum bozukluğu",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "otizm",
+        "otizm belirtileri",
+        "göz teması kurmuyor",
+        "ismine dönmüyor",
+        "konuşma gecikmesi",
+        "çocuğum konuşmuyor",
+        "otizm spektrum"
+      ],
+      "baslik": "Otizm Nedir? Otizm Belirtileri Nelerdir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/otizm-spektrum-bozuklugu-nedir-belirtileri-nelerdir/",
+      "dil": "tr",
+      "ozet": "Otizm spektrum bozukluğu, sosyal iletişimde güçlük ve sınırlı, tekrarlayıcı davranış ve ilgi alanlarıyla seyreden, özellikle ilk 3 yaşta ortaya çıkan, nörolojik temelli ve ömür boyu süren bir gelişimsel farklılıktır. Belirtiler genellikle 6-36 ay arasında başlar: 6. aya kadar gülümseme ve mutlu yüz ifadelerinin azlığı, 12. aya kadar ismine tepki vermeme ve göz teması kurmama, 14. aya kadar el sallamama ve işaret etmeme, 16-24. aylarda konuşma gecikmesi uyarıcı olabilir; tekrarlayıcı davranışlar ve rutinlere bağlılık sonradan belirginleşir. Kalıtım güçlü rol oynar; bilimsel araştırmalar aşılarla otizm arasında nedensel bir ilişki olmadığını açıkça göstermiştir. Erken tanı çocuğun sosyal, bilişsel ve iletişim becerilerini geliştirmede kritiktir; davranış ve iletişim terapileri, özel eğitim, konuşma ve uğraş terapisi ve aile desteği uygulanır. Çocuk psikiyatristi, çocuk nöroloğu veya gelişimsel pediatri uzmanına başvurulabilir."
+    },
+    {
+      "id": "otizm-medlineplus",
+      "konu": "Otizm spektrum bozukluğu",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "otizm",
+        "otizm taraması",
+        "otizm tedavisi"
+      ],
+      "baslik": "Autism Spectrum Disorder (Otizm Spektrum Bozukluğu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/autismspectrumdisorder.html",
+      "dil": "en",
+      "ozet": "Otizm spektrum bozukluğu olan kişilerde iletişim güçlükleri, göz temasından kaçınma, sınırlı ilgi alanları, tekrarlayıcı davranışlar ve kendi dünyasındaymış gibi görünme olabilir. Çocuk sağlığı kontrollerinde otizm taraması yapılmalı; belirti varsa uzmanlarca kapsamlı bir değerlendirme yapılır. Kesin nedeni bilinmez; kalıtsal ve çevresel etkenlerin birlikte rol oynadığı düşünülür. Tek bir standart tedavisi yoktur; davranış ve iletişim terapileri, beceri eğitimleri ve belirtileri yönetmek için ilaçlar kullanılır. Erken başlanan destek, çocuğun gelişme ve yeni beceriler öğrenme olanağını artırır."
+    },
+    {
+      "id": "emzirme-torbalidh",
+      "konu": "Emzirme ve anne sütü",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "emzirme",
+        "anne sütü",
+        "sütüm az",
+        "süt nasıl artar",
+        "bebek doyuyor mu",
+        "anne sütü saklama",
+        "emzik biberon"
+      ],
+      "baslik": "Anne Sütünün Önemi ve Başarılı Emzirme Eğitimi",
+      "kurum": "T.C. Sağlık Bakanlığı Torbalı Devlet Hastanesi",
+      "tur": "resmi",
+      "url": "https://torbalidh.saglik.gov.tr/TR-961306/anne-sutunun-onemi-ve-basarili-emzirme-egitimi.html",
+      "dil": "tr",
+      "ozet": "Bebekler ilk 6 ay yalnızca anne sütüyle beslenmeli, 6. aydan sonra anne sütüne ek olarak diğer besinlere geçilmelidir. Emzirmeye doğumdan hemen sonra, ideal olarak ilk yarım saat içinde başlanmalı; bebek her ağladığında ve en geç 2 saatte bir emzirilmelidir. Günde 6-7 kez açık renkli idrar yapması, 2-4 saatte bir emmek istemesi, normal kilo alması, iyi uyuması ve sakin olması bebeğin yeterli süt aldığını gösterir. Biberon ve emzik meme karışıklığına yol açıp süt üretimini azaltabileceği için kullanılmamalıdır. Sık emzirme, bol sıvı, dengeli beslenme ve stresin azaltılması sütü artırır. Sağılan süt oda sıcaklığında 3 saat, buzdolabında 3 gün, derin dondurucuda 3 ay saklanabilir. Annenin hastalığında da emzirme çoğunlukla sürdürülebilir; hekime bilgi verilmelidir."
+    },
+    {
+      "id": "emzirme-medlineplus",
+      "konu": "Emzirme ve anne sütü",
+      "kategori": "Çocuk sağlığı",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "emzirme",
+        "meme iltihabı",
+        "mastit",
+        "dil bağı"
+      ],
+      "baslik": "Breastfeeding (Emzirme)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/breastfeeding.html",
+      "dil": "en",
+      "ozet": "Anne sütü bebeğin büyüme ve gelişmesi için dengeli besinler içerir ve sık görülen çocukluk hastalıkları ile enfeksiyonlara karşı koruma sağlar; emziren kadınlarda bazı kanser türlerinin riski azalabilir. Sağlık sorunu olmayan kadınların bebeklerini en az ilk altı ay anne sütüyle beslemeleri önerilir. Süt azlığı, meme iltihabı (mastit), meme ucunda tahriş ve bebekte dil bağı sık karşılaşılan sorunlardır. Sağlık sorunu olan kadınların çoğu emzirebilir; belirli hastalıklar, ilaçlar, uyuşturucu veya alkol kullanımı gibi nadir durumlarda emzirmemek önerilebilir, bu nedenle hekime danışılmalıdır."
+    },
+    {
+      "id": "kokukaybi-acibadem",
+      "konu": "Koku kaybı (anosmi)",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "koku kaybı",
+        "koku alamıyorum",
+        "anosmi",
+        "tat alamıyorum",
+        "koku körlüğü",
+        "tat ve koku kaybı"
+      ],
+      "baslik": "Anosmi Nedir? Koku Körlüğü Belirtileri, Nedenleri ve Tedavi Yöntemleri",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/anosmi-nedir-koku-korlugu-belirtileri/",
+      "dil": "tr",
+      "ozet": "Anosmi, koku alma duyusunun tamamen kaybolmasıdır; kişi yiyeceklerin tadını da tam alamaz ve yaşam kalitesi düşer. Grip, nezle ve COVID-19 gibi üst solunum yolu enfeksiyonları, sinüzit ve burun polipleri, kafa travmaları ve sinir hasarı, uzun süreli sigara kullanımı ve bazı antibiyotik, antidepresan ve kemoterapi ilaçları başlıca nedenlerdir; Parkinson ve Alzheimer gibi hastalıkların erken belirtisi de olabilir. Koku alamayan kişi yangın, gaz kaçağı gibi tehlikeleri ve bozulmuş yiyecekleri fark edemeyebilir. Belirli kokuları düzenli koklamaya dayanan koku eğitimi iyileşmeyi hızlandırabilir; ilaç ve cerrahi altta yatan nedene göre uygulanır. Koku kaybı yaşayanların kulak burun boğaz uzmanına başvurması önerilir."
+    },
+    {
+      "id": "kokukaybi-medlineplus",
+      "konu": "Koku kaybı (anosmi)",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "koku alma bozukluğu",
+        "koku kaybı"
+      ],
+      "baslik": "Smell - Impaired (Koku Alma Bozukluğu)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003052.htm",
+      "dil": "en",
+      "ozet": "Koku alma bozukluğu, koku duyusunun kısmen veya tamamen kaybı ya da kokuların farklı algılanmasıdır. Havanın burnun üst kısmındaki koku alıcılarına ulaşmasını engelleyen durumlar veya bu alıcıların hasarı neden olur. Soğuk algınlığı ve saman nezlesi gibi burun alerjilerinde geçici koku kaybı sıktır; yaşla da bir miktar azalır. Burun polipleri, burun eğriliği ve tümörleri, burun, boğaz veya sinüs enfeksiyonları, hormon bozuklukları, bunama ve diğer sinir sistemi sorunları, beslenme eksiklikleri ve kafa yaralanması da yol açabilir. Koku duyusu tat almayı güçlendirdiği için koku kaybı olanların çoğu tat kaybından da yakınır. Çoğu durumda belirgin bir neden bulunmaz; tedavi nedene göre değişir."
+    },
+    {
+      "id": "halluks-acibadem",
+      "konu": "Halluks valgus (ayak başparmağında kemik çıkıntısı)",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "halluks valgus",
+        "ayakta kemik çıkıntısı",
+        "başparmakta çıkıntı",
+        "bunyon",
+        "ayak başparmağı eğriliği"
+      ],
+      "baslik": "Ayakta en sık rastlanan sorun Halluks valgus",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/ayakta-en-sik-rastlanan-sorun-halluks-valgus/",
+      "dil": "tr",
+      "ozet": "Halluks valgus, ayak başparmağının dışa doğru dönmesiyle birlikte birinci tarak kemiğinin iç tarafında çıkıntı oluşmasıdır; ayakkabı giymede zorluk ve başparmakta hareket kısıtlılığına yol açar. Kalıtım önemli rol oynar; özellikle 6-7 cm'den yüksek topuklu ve önü daralan ayakkabılar, düztabanlık, fazla kilo ve romatizmal hastalıklar riski artırır. Yürümede ve koşmada zorluk, başparmak ekleminde hareket kısıtlılığı ve ayakkabıyla artan ağrı görülür. Doğru ayakkabı seçimi, çıkıntıyı koruyan silikon aparatlar, tabanlık, kilo kontrolü ve egzersiz ilk tedavi seçenekleridir. Deformitenin açısı, eşlik eden şekil bozuklukları, süren ağrı ve yaşam kalitesindeki düşüşe göre ameliyat gerekebilir."
+    },
+    {
+      "id": "halluks-medlineplus",
+      "konu": "Halluks valgus (ayak başparmağında kemik çıkıntısı)",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "halluks valgus",
+        "bunyon ameliyatı"
+      ],
+      "baslik": "Bunions (Halluks Valgus)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001231.htm",
+      "dil": "en",
+      "ozet": "Bunyonda (halluks valgus) ayak başparmağı ikinci parmağa doğru eğilir ve ayağın iç kenarında bir çıkıntı oluşur. Aile öyküsü, doğuştan kemik dizilim bozukluğu ve dar, yüksek topuklu ayakkabılar risk etkenleridir. Başparmağın dibinde kızarık, kalınlaşmış deri, hareketi kısıtlı kemik çıkıntısı ve ayakkabı basısıyla artan ağrı olur; üst üste binen parmaklarda nasır gelişebilir. Önü geniş ayakkabılar çoğu zaman sorunu çözer; eczanelerde bulunan köpük pedler veya parmak ayırıcılar, baldır germe egzersizleri ve düztaban için tabanlıklar da yardımcı olur. Bu önlemlere rağmen ağrı sürerse başparmağı düzelten ve çıkıntıyı alan ameliyat yapılabilir. Süren ağrı, günlük işlerin etkilenmesi, enfeksiyon belirtileri veya parmakta sertlik olursa hekime başvurulmalıdır."
+    },
+    {
+      "id": "duztaban-acibadem",
+      "konu": "Düztabanlık",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "düztabanlık",
+        "düz taban",
+        "pes planus",
+        "ayak kavisi yok",
+        "ortopedik tabanlık",
+        "çocuğumun tabanı düz"
+      ],
+      "baslik": "Düztabanlık Belirtileri Nelerdir? Düztabanlık Nasıl Tedavi Edilir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/ilgi-alani/duztabanlik-nedir-duz-taban-belirtileri/",
+      "dil": "tr",
+      "ozet": "Düztabanlık (pes planus), ayak tabanındaki iç kavisin yeterince gelişmemesi veya çökmesiyle ayağın büyük kısmının yere tam temas etmesidir. Bebeklerde ve küçük çocuklarda kavis henüz gelişmediği için normaldir ve çoğu çocukta esnek düztabanlık zamanla kendiliğinden düzelir. Esnek tipte kavis dinlenirken görülür, yük binince kaybolur; katı tipte kavis hiç yoktur. Ayakta ağrı ve yorgunluk, topuk ağrısı, ayakkabının iç kenarının aşınması, diz veya bel ağrısı ve dengesizlik olabilir. Kalıtım, doğuştan bozukluklar, fazla kilo, yaşlanma, gebelik, yaralanma, tendon sorunları ve romatoid artrit neden olabilir. Belirti vermeyenlerde tedavi gerekmez; ağrı varsa ortopedik tabanlık, destekleyici ayakkabı, fizik tedavi ve güçlendirme egzersizleri kullanılır, cerrahi nadiren gerekir."
+    },
+    {
+      "id": "duztaban-medlineplus",
+      "konu": "Düztabanlık",
+      "kategori": "Kas ve iskelet",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "düztabanlık",
+        "çocukta düz taban"
+      ],
+      "baslik": "Flat Feet (Düztabanlık)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/001262.htm",
+      "dil": "en",
+      "ozet": "Düztabanlık, ayakta dururken ayağın normal kavisinin olmamasıdır ve bebeklerde ve küçük çocuklarda normaldir; çocuk büyüdükçe ayak dokuları sıkılaşır ve kavis genellikle 2-3 yaşına kadar oluşur. Parmak ucunda dururken kavis oluşan esnek düztabanlık genellikle tedavi gerektirmez; kavis oluşmayan katı düztabanlıkta ek tetkik ve tedavi gerekebilir. Çoğu kişide ağrı veya sorun olmaz; erişkinlerde uzun süre ayakta kalmak veya spordan sonra ayaklarda yorgunluk, ağrı ve ayak bileği ağrısı olabilir. Ağrısız durumlarda tedavi gerekmez; belirti varsa ayakkabı içine kavis desteği (tabanlık), özel ayakkabılar ve baldır germe egzersizleri yardımcı olur; ağır veya katı durumlarda ameliyat seçeneği vardır. Süren ayak ya da bacak ağrısında hekime başvurulmalıdır."
+    },
+    {
+      "id": "burunetimed-acibadem",
+      "konu": "Burun eti büyümesi ve burun eğriliği",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "burun eti",
+        "konka",
+        "burun eti büyümesi",
+        "burun eğriliği",
+        "septum deviasyonu",
+        "burnumdan nefes alamıyorum",
+        "burun tıkanıklığı"
+      ],
+      "baslik": "Konka Hipertrofisi (Burun Eti Büyümesi) Nedir?",
+      "kurum": "Acıbadem Sağlık Grubu",
+      "tur": "ozel",
+      "url": "https://www.acibadem.com.tr/hayat/konka-nedir-nasil-tedavi-edilir/",
+      "dil": "tr",
+      "ozet": "Konkalar (burun etleri), burunda havanın akışını, ısıtılmasını ve nemlendirilmesini sağlayan yapılardır; her burun boşluğunda 3 tane bulunur. Kalıtsal yatkınlık, enfeksiyon, alerji ve alerjik rinit ile sigara burun etlerinin büyümesine yol açabilir. Burun tıkanıklığı ve ağız açık uyuma, geniz akıntısı, yüzde dolgunluk hissi ve tekrarlayan sinüzit görülür. Önce enfeksiyon ve alerji tedavi edilir; yeterli olmazsa burun etleri lazer veya radyofrekans gibi yöntemlerle küçültülür, tam iyileşme yaklaşık 3-4 hafta sürer. Tedavisi aksatılan alerjik rinitte ve sigara içenlerde yeniden büyüme görülebilir."
+    },
+    {
+      "id": "burunetimed-medlineplus",
+      "konu": "Burun eti büyümesi ve burun eğriliği",
+      "kategori": "Kulak burun boğaz",
+      "acil": false,
+      "anahtar_kelimeler": [
+        "septoplasti",
+        "burun eğriliği ameliyatı",
+        "deviasyon"
+      ],
+      "baslik": "Septoplasty (Burun Eğriliği Ameliyatı)",
+      "kurum": "MedlinePlus (ABD Ulusal Tıp Kütüphanesi, NIH)",
+      "tur": "uluslararasi",
+      "url": "https://medlineplus.gov/ency/article/003012.htm",
+      "dil": "en",
+      "ozet": "Burnu iki boşluğa ayıran duvarın (septum) eğri olması burun yollarını kısmen tıkayabilir; bu kişiler sık ağızdan nefes alır ve burun ya da sinüs enfeksiyonlarına daha yatkın olabilir. Septoplasti, hava akımını engelleyen eğri septumu, kontrol edilemeyen burun kanamalarını veya burun tıkanıklığına bağlı horlamayı düzeltmek için yapılan ameliyattır. Burnun içinden yapılan kesiyle eğriliğe yol açan kıkırdak veya kemik düzeltilir, yerinden oynatılır ya da çıkarılır. Genel anestezide yaklaşık 1-1,5 saat sürer ve aynı gün taburcu olunur; yumuşak burun atelleri genellikle 24-36 saatte çıkarılır, birkaç gün hafif kanama ve şişlik olabilir. Çoğu ameliyatta septum düzelir ve nefes alma iyileşir."
     }
   ],
   "kategoriler": [

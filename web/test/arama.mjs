@@ -18,6 +18,7 @@ const form = (sikayet, bolge) => `${sikayet} şikayetim var (${bolge} bölgesi).
 // [soru, ilk sonucun konusu için beklenen desen]
 const CASES = [
   [form("Kolda ani güçsüzlük", "omuz ve kollar"), /İnme/],
+  [form("Kolda uyuşma", "omuz ve kollar"), /İnme/],
   [form("Konuşma bozukluğu", "baş ve beyin"), /İnme/],
   [form("Göğüs ağrısı", "kalp"), /Kalp krizi/],
   [form("Göğüste sıkışma", "kalp"), /Kalp krizi/],
@@ -81,6 +82,10 @@ const CASES = [
   ["renk körlüğü", /Renk körlüğü/],
   ["çocuğumda bit var", /Baş biti/],
   ["tüm ailede gece kaşıntı var", /Uyuz/],
+  ["yüz felci", /İnme/],
+  ["ağzım kaydı konuşamıyorum", /İnme/],
+  ["koku alamıyorum", /Koku kaybı|COVID/],
+  ["çocuğum göz teması kurmuyor", /Otizm/],
   [form("Bende değişiklik", "cilt"), /Benler/],
 ];
 
